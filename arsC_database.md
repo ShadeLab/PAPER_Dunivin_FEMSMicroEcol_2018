@@ -18,3 +18,7 @@
 | arsC_pI258_fam | Thioredoxin | | | | | | crystal incl |
 
 From the above table, I am now skeptical of the arsC_spx family as actually containing arsC since only one catalytic site is shared and there is no experimental evidence from the NCBI sequences presented to date that sequences from this protein family is an arsenate reductase. 
+
+The below tree shows the arsC (glutaredoxin) sequences according to NCBI. 
+
+![Image of arsC tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_family_tree.gif)
