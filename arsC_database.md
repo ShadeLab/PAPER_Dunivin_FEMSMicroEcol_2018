@@ -29,3 +29,43 @@ The below tree shows the arsC (glutaredoxin) sequences according to NCBI. Color 
 ![Image of arsC tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_family_tree.gif)
 
 Even the tree of the arsC (glutaredoxin) suggests that arsC_15kD and arsC_arsC are indeed separate from other protein families. With the above information considered, I would say that only protein families arsC_15kD and arsC_arsC are indeed indicative of glutaredoxin arsenate reductases. 
+
+### Current arsC FunGene database
+| Accession | Name | Prot Family | Lenth (aa) |
+| --------- | ----- | ------ | :-----: |
+| Q9CGN5_LACLA (Q9CGN5) | ykhE hypothetical protein | arsC_spx | 115 |
+| YQGZ_BACSU (P54503) | |
+| Q986E7_RHILO (Q986E7) | |
+| Q9A7S8_CAUCR (Q9A7S8) | |
+| Q9HXX5_PSEAE (Q9HXX5) | |
+| Y103_HAEIN (P44515) | |
+| Q9CM21_PASMU (Q9CM21) | |
+| YFFB_ECOLI (P24178) | |
+| Q9KQ54_VIBCH (Q9KQ54) | |
+| Q9JZ90_NEIMB (Q9JZ90) | |
+| Q9PH31_XYLFA (Q9PH31) | |
+| YUSI_BACSU (O32175) | |
+| Q9K785_BACHD (Q9K785) | |
+| Q9RY16_DEIRA (Q9RY16) | |
+| Q9A861_CAUCR (Q9A861) | |
+| Q9CJQ0_PASMU (Q9CJQ0) | |
+| Q9A083_STRP1 (Q9A083) | |
+| Q98J03_RHILO (Q98J03) | |
+| ARSC_SHIFL (P0AB97) | |
+| Q9CLS9_PASMU (Q9CLS9) | |
+| Q9KQ39_VIBCH (Q9KQ39) | |
+| YFGD_ECOLI (P76569) | |
+| Q9I508_PSEAE (Q9I508) | |
+| ARSC_NEIMB (P63622) | |
+| SPX_BACSU (O31602) | |
+| SPX_BACHD (Q9K8Z1) | |
+| SPX_STRP1 (P60381) | |
+| SPX1_LACLA (Q9CI20) | |
+| SPX_LACLM (P60376) | |
+| Q99XP2_STRP1 (Q99XP2) | |
+| Q9CFY7_LACLA (Q9CFY7) | |
+| Q9CH93_LACLA (Q9CH93) | |
+| Q9CFZ8_LACLA (Q9CFZ8) | |
+| Y176_UREPA (Q9PQW7) | |
+| Y127_MYCGE (P47373) | |
+| Y266_MYCPN (P75509) | |
