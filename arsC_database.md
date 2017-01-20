@@ -3,11 +3,11 @@
 ### Taylor Dunivin
 ## January 20, 2016
 ### Goals: 
-* Determine distinguishing features between types of arsC
+* Determine distinguishing features between types of *arsC*
 * Determine quality of FunGene database
-* Distinguish arsC from spxA
+* Distinguish *arsC* from *spxA*
 
-### arsC distinguishing features
+### *arsC* distinguishing features
 | NCBI protein family       | Type     | Feature 1      |  2 |  3 |  4 |  5 | Length (aa) |  Comments  |
 | ------------- | ----- | ----- | ----- | ----- | ----- | ---- | ------ | :---------------------: |
 | arsC_15kD    | Glutaredoxin | C (10) | |  N (56) | R (90) | F (103)| 111-112 | COG1393, nitrogenase assoc? |
