@@ -81,10 +81,17 @@ With the above table, I am not satisfied with the FunGene database for arsC. Lot
 ### Crystal structures of arsC (glutaredoxin)
 * E. coli arsC (glutaredoxin)
   * Martin, et al., 2001
-  * 141 amino acides
+  * __141__ amino acides
   * catalytic residues: C12, R60, R94, R107
   * similar to arsC_arsC NCBI group (listed as high quality in previous analysis (Jan 20)
   * sequence: MSNITIYHNPACGTSRNTLEMIRNSGTEPTIILYLENPPSRDELVKLIADMGISVRALLRKNVEPYEQLGLAEDKFTDDQLIDFMLQHPILINRPIVVTPLGTRLCRPSEVVLDILQDAQKGAFTKEDGEKVVDEAGKRLK
  
- * Other glutaredoxin arsC (uniprot)
-  * 
+ ### Alignment of trustworthy arsC sequence (crystal above) with current FunGene
+ * Sequences were aligned using MEGA7
+ * Maximum likelihood tree, 50 bootstraps (for speed)
+ * Sequences clustering with or near arsC were selected. 
+  * as expected, these sequences are generally "arsC_arsC" type
+  * one PRK10026 group was also included based on fit 
+  
+ * The below tree shows the resulting group of sequences with thioredoxin-dependent arsC from S.aureus included for bootstrapping. 
+  
