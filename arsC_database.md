@@ -95,3 +95,4 @@ With the above table, I am not satisfied with the FunGene database for arsC. Lot
   
  * The below tree shows the resulting group of sequences with thioredoxin-dependent arsC from S.aureus included for bootstrapping. 
   
+ ![maximum likelihood of arsC seed sequences](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_glut_boot.png)
