@@ -34,38 +34,38 @@ Even the tree of the arsC (glutaredoxin) suggests that arsC_15kD and arsC_arsC a
 | Accession | Name | Prot Family | Lenth (aa) |
 | --------- | ----- | ------ | :-----: |
 | Q9CGN5_LACLA (Q9CGN5) | ykhE hypothetical protein | arsC_spx | 115 |
-| YQGZ_BACSU (P54503) | |
-| Q986E7_RHILO (Q986E7) | |
-| Q9A7S8_CAUCR (Q9A7S8) | |
-| Q9HXX5_PSEAE (Q9HXX5) | |
-| Y103_HAEIN (P44515) | |
-| Q9CM21_PASMU (Q9CM21) | |
-| YFFB_ECOLI (P24178) | |
-| Q9KQ54_VIBCH (Q9KQ54) | |
-| Q9JZ90_NEIMB (Q9JZ90) | |
-| Q9PH31_XYLFA (Q9PH31) | |
-| YUSI_BACSU (O32175) | |
-| Q9K785_BACHD (Q9K785) | |
-| Q9RY16_DEIRA (Q9RY16) | |
-| Q9A861_CAUCR (Q9A861) | |
-| Q9CJQ0_PASMU (Q9CJQ0) | |
-| Q9A083_STRP1 (Q9A083) | |
-| Q98J03_RHILO (Q98J03) | |
-| ARSC_SHIFL (P0AB97) | |
-| Q9CLS9_PASMU (Q9CLS9) | |
-| Q9KQ39_VIBCH (Q9KQ39) | |
-| YFGD_ECOLI (P76569) | |
-| Q9I508_PSEAE (Q9I508) | |
-| ARSC_NEIMB (P63622) | |
-| SPX_BACSU (O31602) | |
-| SPX_BACHD (Q9K8Z1) | |
-| SPX_STRP1 (P60381) | |
-| SPX1_LACLA (Q9CI20) | |
-| SPX_LACLM (P60376) | |
-| Q99XP2_STRP1 (Q99XP2) | |
-| Q9CFY7_LACLA (Q9CFY7) | |
-| Q9CH93_LACLA (Q9CH93) | |
-| Q9CFZ8_LACLA (Q9CFZ8) | |
-| Y176_UREPA (Q9PQW7) | |
-| Y127_MYCGE (P47373) | |
-| Y266_MYCPN (P75509) | |
+| YQGZ_BACSU (P54503) | regulatory protein MgsR | arsC_spx | 126 |
+| Q986E7_RHILO (Q986E7) | arsenate reductase | arsC_YffB | 115 |
+| Q9A7S8_CAUCR (Q9A7S8) | arsenate reductase | arsC_YffB | 131 |
+| Q9HXX5_PSEAE (Q9HXX5) | arsenate reductase | arsC_YffB | 115 |
+| Y103_HAEIN (P44515) | arsenate reductase | arsC_YffB | 114 |
+| Q9CM21_PASMU (Q9CM21) | arsenate reductase | arsC | 114 |
+| YFFB_ECOLI (P24178) | arsenate reductase arsC | PRK10853 | 118 |
+| Q9KQ54_VIBCH (Q9KQ54) | arsenate reductase | arsC_YffB | 131 |
+| Q9JZ90_NEIMB (Q9JZ90) | arsenate reductase | arsC_YffB | 124 |
+| Q9PH31_XYLFA (Q9PH31) | arsenate reductase/ hypothet prot | (no specific) | 124 |
+| YUSI_BACSU (O32175) | thioredoxin/ hypothet prot | arsC_like | 118 |
+| Q9K785_BACHD (Q9K785) | hypothet prot/ arsenate reductase | arsC_like | 119 |
+| Q9RY16_DEIRA (Q9RY16) | arsenate reductase | arsC | 127 |
+| Q9A861_CAUCR (Q9A861) | arsenate reductase | arsC_arsC | 137 |
+| Q9CJQ0_PASMU (Q9CJQ0) | arsenate reductase | arsC_arsC | 134 |
+| Q9A083_STRP1 (Q9A083) | arsenate reductase | arsC_arsC | 146 |
+| Q98J03_RHILO (Q98J03) | arsenate reductase | (no specific) | 140 |
+| ARSC_SHIFL (P0AB97) | arsenate reductase | PRK10026 | 141 |
+| Q9CLS9_PASMU (Q9CLS9) | arsenate reductase | arsC | 116 |
+| Q9KQ39_VIBCH (Q9KQ39) | arsenate reductase | arsC_arsC | 116 |
+| YFGD_ECOLI (P76569) | arsenate reductase | arsC_arsC | 119 |
+| Q9I508_PSEAE (Q9I508) | arsenate reductase | arsC_arsC | 117 |
+| ARSC_NEIMB (P63622) | arsenate reductase | arsC | 117 |
+| SPX_BACSU (O31602) | regulatory protein Spx | spxA | 131 |
+| SPX_BACHD (Q9K8Z1) | regulatory protein Spx | spxA | 131 |
+| SPX_STRP1 (P60381) | regulatory protein Spx | spxA | 134 |
+| SPX1_LACLA (Q9CI20) | regulatory protein Spx/ arsenate reductase | (no specific) | 128 |
+| SPX_LACLM (P60376) | regulatory protein Spx/ arsenate reductase | (no specific) | 132 |
+| Q99XP2_STRP1 (Q99XP2) | arsenate reductase/spx/arsR | spxA | 132 |
+| Q9CFY7_LACLA (Q9CFY7) | regulatory protein Spx/ arsenate reductase | arsC_spx | 139 |
+| Q9CH93_LACLA (Q9CH93) | arsR/ arsenate reductase| arsC_spx | 142 |
+| Q9CFZ8_LACLA (Q9CFZ8) | hyp/spx-like/arsenate reductase | arsC | 125 |
+| Y176_UREPA (Q9PQW7) | hypothet/spx/arsR | arsC_related | 128 |
+| Y127_MYCGE (P47373) | regulatory/spx/hypothet| (no specific) | 145 |
+| Y266_MYCPN (P75509) | | | 145 |
