@@ -1,7 +1,7 @@
 
 #arsC database construction
 ### Taylor Dunivin
-## January 20, 2016
+## January 20, 2017
 ### Goals: 
 * Determine distinguishing features between types of *arsC*
 * Determine quality of FunGene database
@@ -69,3 +69,19 @@ Even the tree of the arsC (glutaredoxin) suggests that arsC_15kD and arsC_arsC a
 | Y176_UREPA (Q9PQW7) | hypothet/spx/arsR | arsC_related | 128 |
 | Y127_MYCGE (P47373) | regulatory/spx/hypothet| (no specific) | 145 |
 | Y266_MYCPN (P75509) | hypothet/spx| (no specific) | 145 |
+
+With the above table, I am not satisfied with the FunGene database for arsC. Lots of nonspecific sequences are included that have similar active sites are included, but I have not seen evidence that they are arsC and not spx. 
+
+
+## February 6, 2017
+### Goals: 
+* Begin constructing new arsC glutaredoxin database 
+* Determine length of arsC based on crystal structures
+
+### Crystal structures of arsC (glutaredoxin)
+* E. coli arsC (glutaredoxin)
+  * Martin, et al., 2001
+  * 141 amino acides
+  * catalytic residues: C12, R60, R94, R107
+  * similar to arsC_arsC NCBI group (listed as high quality in previous analysis (Jan 20)
+  * sequence: 
