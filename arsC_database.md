@@ -68,4 +68,4 @@ Even the tree of the arsC (glutaredoxin) suggests that arsC_15kD and arsC_arsC a
 | Q9CFZ8_LACLA (Q9CFZ8) | hyp/spx-like/arsenate reductase | arsC | 125 |
 | Y176_UREPA (Q9PQW7) | hypothet/spx/arsR | arsC_related | 128 |
 | Y127_MYCGE (P47373) | regulatory/spx/hypothet| (no specific) | 145 |
-| Y266_MYCPN (P75509) | | | 145 |
+| Y266_MYCPN (P75509) | hypothet/spx| (no specific) | 145 |
