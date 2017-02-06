@@ -84,4 +84,7 @@ With the above table, I am not satisfied with the FunGene database for arsC. Lot
   * 141 amino acides
   * catalytic residues: C12, R60, R94, R107
   * similar to arsC_arsC NCBI group (listed as high quality in previous analysis (Jan 20)
-  * sequence: 
+  * sequence: MSNITIYHNPACGTSRNTLEMIRNSGTEPTIILYLENPPSRDELVKLIADMGISVRALLRKNVEPYEQLGLAEDKFTDDQLIDFMLQHPILINRPIVVTPLGTRLCRPSEVVLDILQDAQKGAFTKEDGEKVVDEAGKRLK
+ 
+ * Other glutaredoxin arsC (uniprot)
+  * 
