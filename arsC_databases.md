@@ -126,3 +126,15 @@ With the above table, I am not satisfied with the FunGene database for arsC. Lot
  1. Protein BLAST crystal structure sequences
  2. Select protein group
  3. Examine resulting sequences for desired qualities
+ 4. Collect any extra sequences with >/=3 stars on UniProt (MUST contain 3 active sites)
+ 
+* NCBI's protein group for arsC (thioredoxin) is arsC_pI258_fam
+* According to the crystal structure publications, arsC (thioredoxin) is very similar to protein tyrosine phosphatases; however, there are distinguishing features, and they separate out in a ml tree
+
+The below maximum likelihood tree (50 bootstraps) shows arsC (thioredoxin) sequences. Crystal structures are shown with black squares. Glutaredoxin arsC from E.coli was included to highlight the separation between the arsCs and is indicated with an open square. Open circles show PTPases that have the potential to interfere with HMMs. 
+
+![maximum likelihood tree of arsC thiol](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_thio_boot.png)
+
+* Based on the above tree, I am not concerned about PTPases. It appears there are two clusters from the S.aureus arsC. As a cautionary measure since the second cluster of sequences were not ever confirmed through crystal structure, etc. I will remove them from the .seed sequences. The sequences are on the tree from Q74NT6 to C0ZEV2. Otherwise the tree looks good. 
+
+* I will also blast these sequences to be certain that they do not pick up extraneous sequences. 
