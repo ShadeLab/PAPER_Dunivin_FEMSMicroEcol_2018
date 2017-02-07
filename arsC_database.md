@@ -96,3 +96,33 @@ With the above table, I am not satisfied with the FunGene database for arsC. Lot
  * The below tree shows the resulting group of sequences with thioredoxin-dependent arsC from S.aureus included for bootstrapping. 
   
  ![maximum likelihood of arsC seed sequences](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_glut_boot.png)
+ 
+* I will also move sequence Q9CM21 PASMU as it does not cluster with the remaining arsC sequences. Additionally, it is only classified as NCBI arsC not arsC_arsC (so even they technically separate them). 
+ 
+* .seed sequences were submitted to the RDP to make a FunGene database for arsC (glutaredoxin)
+
+## February 7, 2017
+### Goals: 
+* Study the structure of arsC (thioredoxin) to look for potential problems (similar proteins, etc.)
+* Begin constructing new arsC thioredoxin database 
+* Determine length of arsC based on crystal structures
+
+### Crystal structures of arsC (thioredoxin)
+* S. aureus arsC (thioredoxin)
+ * Zegers, et al., 2001
+ * __131__ amino acids
+ * catalytic residues: C10, C82, C89
+ * sequence: MDKKTIYFICTGNSCRSQMAEGWGKEILGEGWNVYSAGIETHGVNPKAIEAMKEVDIDISNHTSDLIDNDILKQSDLVVTLCSDADNNCPILPPNVKKEHWGFDDPAGKEWSEFQRVRDEIKLAIEKFKLR
+ 
+* B. subtilis arsC (thioredoxin)
+* Bennett, et al., 2001
+* __134__ amino acids
+* catalytic residues: 
+* sequence 
+
+### Find other arsC (thioredoxin) sequences
+* Center search around quality (functional data, etc.), length (~131-124aa), and similarity to crystal structures (above)
+* Strategy
+ 1. Protein BLAST crystal structure sequences
+ 2. Select protein group
+ 3. Examine resulting sequences for desired qualities
