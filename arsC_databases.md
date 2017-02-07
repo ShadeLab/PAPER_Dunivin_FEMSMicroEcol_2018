@@ -135,6 +135,6 @@ The below maximum likelihood tree (50 bootstraps) shows arsC (thioredoxin) seque
 
 ![maximum likelihood tree of arsC thiol](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsC_thio_boot.png)
 
-* Based on the above tree, I am not concerned about PTPases. It appears there are two clusters from the S.aureus arsC. As a cautionary measure since the second cluster of sequences were not ever confirmed through crystal structure, etc. I will remove them from the .seed sequences. The sequences are on the tree from Q74NT6 to C0ZEV2. Otherwise the tree looks good. 
+* Based on the above tree, I am not concerned about PTPases. It appears there are two clusters from the S.aureus arsC. As a cautionary measure since the second cluster of sequences were not ever confirmed through crystal structure, etc. I will remove them from the .seed sequences. The sequences are on the tree from A7GP55 to C0ZEV2. Otherwise the tree looks good. 
 
 * I will also blast these sequences to be certain that they do not pick up extraneous sequences. 
