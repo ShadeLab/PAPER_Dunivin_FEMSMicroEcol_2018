@@ -36,38 +36,42 @@ Below is a tree for the protein superfamily ArsB_NhaD permease, and colors indic
 This protein group tells me that there are roughly three other permeases similar to ArsB that I should be weary of when constructing the database. I will put my greatest emphasis on YbiR since it clusters with ArsB. 
 
 ### Assessment of new arsB information
-ArsB from E. coli
-* Meng et al., 2004
-* offers protein function data (4 stars on Uniprot)
-* sequence in UniProt
-* 11 transmembrane domains
-* __429__ aa
-* >sequence
-MLLAGAIFVLTIVLVIWQPKGLGIGWSATLGAVLALVTGVVHPGDIPVVWNIVWNATAAF
-IAVIIISLLLDESGFFEWAALHVSRWGNGRGRLLFTWIVLLGAAVAALFANDGAALILTP
-IVIAMLLALGFSKGTTLAFVMAAGFIADTASLPLIVSNLVNIVSADFFGLGFREYASVMV
-PVDIAAIVATLVMLHLYFRKDIPQNYDMALLKSPAEAIKDPATFKTGWVVLLLLLVGFFV
-LEPLGIPVSAIAAVGALILFVVAKRGHAINTGKVLRGAPWQIVIFSLGMYLVVYGLRNAG
-LTEYLSGVLNVLADNGLWAATLGTGFLTAFLSSIMNNMPTVLVGALSIDGSTASGVIKEA
-MVYANVIGCDLGPKITPIGSLATLLWLHVLSQKNMTISWGYYFRTGIIMTLPVLFVTLAA
-LALRLSFTL
+1. ArsB from E. coli
+  * Meng et al., 2004
+  * offers protein function data (4 stars on Uniprot)
+  * sequence in UniProt
+  * 11 transmembrane domains
+  * __429__ aa
+  * >sequence
+  MLLAGAIFVLTIVLVIWQPKGLGIGWSATLGAVLALVTGVVHPGDIPVVWNIVWNATAAF
+  IAVIIISLLLDESGFFEWAALHVSRWGNGRGRLLFTWIVLLGAAVAALFANDGAALILTP
+  IVIAMLLALGFSKGTTLAFVMAAGFIADTASLPLIVSNLVNIVSADFFGLGFREYASVMV
+  PVDIAAIVATLVMLHLYFRKDIPQNYDMALLKSPAEAIKDPATFKTGWVVLLLLLVGFFV
+  LEPLGIPVSAIAAVGALILFVVAKRGHAINTGKVLRGAPWQIVIFSLGMYLVVYGLRNAG
+  LTEYLSGVLNVLADNGLWAATLGTGFLTAFLSSIMNNMPTVLVGALSIDGSTASGVIKEA
+  MVYANVIGCDLGPKITPIGSLATLLWLHVLSQKNMTISWGYYFRTGIIMTLPVLFVTLAA
+  LALRLSFTL
 
-Multiple sequences exist with 3 stars. I will include those in my preliminary tree analyses. 
+2. Multiple sequences exist with 3 stars. I will include those in my preliminary tree analyses. 
 
-In the PURPLE section of the NCBI tree, I went through and selected all sequences that had a publication related to arsenic/ protein function. These are listed below. I did NOT include sequences inferred from homology (e.g. during genome assembly). 
+3. In the PURPLE section of the NCBI tree, I went through and selected all sequences that had a publication related to arsenic/ protein function. These are listed below. I did NOT include sequences inferred from homology (e.g. during genome assembly). 
 
->ARSB_STAXY (Q01255)
-AUTHORS   Rosenstein,R., Peschel,A., Wieland,B. and Gotz,F.
-  TITLE     Expression and regulation of the antimonite, arsenite, and arsenate
-            resistance operon of Staphylococcus xylosus plasmid pSX267
-            
->ARSB2_ECOLX (P52146)
- AUTHORS   Bruhn,D.F., Li,J., Silver,S., Roberto,F. and Rosen,B.P.
-  TITLE     The arsenical resistance operon of IncN plasmid R46
+  * ARSB_STAXY (Q01255)
+    AUTHORS   Rosenstein,R., Peschel,A., Wieland,B. and Gotz,F.
+      TITLE     Expression and regulation of the antimonite, arsenite, and arsenate
+                resistance operon of Staphylococcus xylosus plasmid pSX267
 
->BAA24823.1 ArsB (plasmid) [Acidiphilium multivorum]
-AUTHORS   Suzuki,K., Wakao,N., Kimura,T., Sakka,K. and Ohmiya,K.
-  TITLE     Expression and regulation of the arsenic resistance operon of
-            Acidiphilium multivorum AIU 301 plasmid pKW301 in Escherichia coli
+  * ARSB2_ECOLX (P52146)
+   AUTHORS   Bruhn,D.F., Li,J., Silver,S., Roberto,F. and Rosen,B.P.
+    TITLE     The arsenical resistance operon of IncN plasmid R46
 
+  * BAA24823.1 ArsB (plasmid) [Acidiphilium multivorum]
+    AUTHORS   Suzuki,K., Wakao,N., Kimura,T., Sakka,K. and Ohmiya,K.
+      TITLE     Expression and regulation of the arsenic resistance operon of
+                Acidiphilium multivorum AIU 301 plasmid pKW301 in Escherichia coli
+
+### Tree of potential seed sequences
+I BLASTed sequences from Uniprot, the 3 NCBI recomended seq, old FunGene seq, and bootstraps to see if there would be any "contaminating" hits. Two aryl sulfatases popped up, so I selected those sequences to include in downstream analysis. 
+
+Below is a maximum likelihood tree with 50 bootstraps. The tree includes sequences used for the current FunGene database (upside down triangles), high quality sequences according to uniprot (black squares), one less quality seq from UniProt (open black square), acr3 arsenite efflux pump for bootstrapping (diamond), and potential contamination aryl sulfatases (triangle)
 ![arsB tree with seed sequences](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsB_boot.png)
