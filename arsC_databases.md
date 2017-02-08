@@ -137,4 +137,6 @@ The below maximum likelihood tree (50 bootstraps) shows arsC (thioredoxin) seque
 
 * Based on the above tree, I am not concerned about PTPases. It appears there are two clusters from the S.aureus arsC. As a cautionary measure since the second cluster of sequences were not ever confirmed through crystal structure, etc. I will remove them from the .seed sequences. The sequences are on the tree from A7GP55 to C0ZEV2. Otherwise the tree looks good. 
 
-* I will also blast these sequences to be certain that they do not pick up extraneous sequences. 
+* I will also blast these sequences to be certain that they do not pick up extraneous sequences.
+ * Blasting sequences showed they are highly specific
+ * Move forward with submitting these sequences to FunGene
