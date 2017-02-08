@@ -21,4 +21,34 @@
 * all existing sequences have low scores and are inferred only by protein homology
 * rather than catalytic residues, distinguishing features for *arsB* will likely be transmembrane domains (number and location)
 * will need to distinguish between NhaD and ArsB
+* ArsB is roughly 430 amino acids
+* ArsB has 8-13 transmembrane domains
+
+### Assessment of NCBI *arsB*
+Below is a tree for the protein superfamily ArsB_NhaD permease, and colors indicate groups as follows
+* red: SCL13_permease
+* green: P_permease
+* blue: YbiR_permease
+* purple: ArsB_permease
+
+![ncbi arsB tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsB_ncbi_grps.gif)
+
+This protein group tells me that there are roughly three other permeases similar to ArsB that I should be weary of when constructing the database. I will put my greatest emphasis on YbiR since it clusters with ArsB. 
+
+### Assessment of new arsB information
+ArsB from E. coli
+* Meng et al., 2004
+* offers protein function data
+* sequence in UniProt
+* 11 transmembrane domains
+* __429__ aa
+* >sequence
+MLLAGAIFVLTIVLVIWQPKGLGIGWSATLGAVLALVTGVVHPGDIPVVWNIVWNATAAF
+IAVIIISLLLDESGFFEWAALHVSRWGNGRGRLLFTWIVLLGAAVAALFANDGAALILTP
+IVIAMLLALGFSKGTTLAFVMAAGFIADTASLPLIVSNLVNIVSADFFGLGFREYASVMV
+PVDIAAIVATLVMLHLYFRKDIPQNYDMALLKSPAEAIKDPATFKTGWVVLLLLLVGFFV
+LEPLGIPVSAIAAVGALILFVVAKRGHAINTGKVLRGAPWQIVIFSLGMYLVVYGLRNAG
+LTEYLSGVLNVLADNGLWAATLGTGFLTAFLSSIMNNMPTVLVGALSIDGSTASGVIKEA
+MVYANVIGCDLGPKITPIGSLATLLWLHVLSQKNMTISWGYYFRTGIIMTLPVLFVTLAA
+LALRLSFTL
 
