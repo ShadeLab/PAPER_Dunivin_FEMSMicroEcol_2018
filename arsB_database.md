@@ -38,7 +38,7 @@ This protein group tells me that there are roughly three other permeases similar
 ### Assessment of new arsB information
 ArsB from E. coli
 * Meng et al., 2004
-* offers protein function data
+* offers protein function data (4 stars on Uniprot)
 * sequence in UniProt
 * 11 transmembrane domains
 * __429__ aa
@@ -51,4 +51,6 @@ LEPLGIPVSAIAAVGALILFVVAKRGHAINTGKVLRGAPWQIVIFSLGMYLVVYGLRNAG
 LTEYLSGVLNVLADNGLWAATLGTGFLTAFLSSIMNNMPTVLVGALSIDGSTASGVIKEA
 MVYANVIGCDLGPKITPIGSLATLLWLHVLSQKNMTISWGYYFRTGIIMTLPVLFVTLAA
 LALRLSFTL
+
+Multiple sequences exist with 3 stars. I will include those in my preliminary tree analyses. 
 
