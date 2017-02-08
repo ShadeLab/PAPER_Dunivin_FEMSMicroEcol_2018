@@ -70,3 +70,4 @@ AUTHORS   Suzuki,K., Wakao,N., Kimura,T., Sakka,K. and Ohmiya,K.
   TITLE     Expression and regulation of the arsenic resistance operon of
             Acidiphilium multivorum AIU 301 plasmid pKW301 in Escherichia coli
 
+![arsB tree with seed sequences](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsB_boot.png)
