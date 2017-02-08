@@ -54,3 +54,19 @@ LALRLSFTL
 
 Multiple sequences exist with 3 stars. I will include those in my preliminary tree analyses. 
 
+In the PURPLE section of the NCBI tree, I went through and selected all sequences that had a publication related to arsenic/ protein function. These are listed below. I did NOT include sequences inferred from homology (e.g. during genome assembly). 
+
+>ARSB_STAXY (Q01255)
+AUTHORS   Rosenstein,R., Peschel,A., Wieland,B. and Gotz,F.
+  TITLE     Expression and regulation of the antimonite, arsenite, and arsenate
+            resistance operon of Staphylococcus xylosus plasmid pSX267
+            
+>ARSB2_ECOLX (P52146)
+ AUTHORS   Bruhn,D.F., Li,J., Silver,S., Roberto,F. and Rosen,B.P.
+  TITLE     The arsenical resistance operon of IncN plasmid R46
+
+>BAA24823.1 ArsB (plasmid) [Acidiphilium multivorum]
+AUTHORS   Suzuki,K., Wakao,N., Kimura,T., Sakka,K. and Ohmiya,K.
+  TITLE     Expression and regulation of the arsenic resistance operon of
+            Acidiphilium multivorum AIU 301 plasmid pKW301 in Escherichia coli
+
