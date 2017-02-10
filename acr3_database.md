@@ -43,5 +43,8 @@ Other protein sequences were chosen from UniProt as long as they had
 * all potential seed sequences were used
 * E.coli arsB was used for bootstrapping
 * maximum likelihood tree with 50 bootstraps
+* highest quality sequences (publications) are indicated with black boxes
 
 ![acr3 tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/acr3_boot.png)
+
+Based on the above tree (distance) and blast results (acr3 not listed as specific protein hit, just yfeh), I removed sequences Q9X0Q5_THEMA. All other sequences were kept
