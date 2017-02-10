@@ -44,3 +44,4 @@ Other protein sequences were chosen from UniProt as long as they had
 * E.coli arsB was used for bootstrapping
 * maximum likelihood tree with 50 bootstraps
 
+![acr3 tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/acr3_boot.png)
