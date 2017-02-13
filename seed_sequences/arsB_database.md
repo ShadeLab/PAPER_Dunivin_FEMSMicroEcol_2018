@@ -31,7 +31,7 @@ Below is a tree for the protein superfamily ArsB_NhaD permease, and colors indic
 * blue: YbiR_permease
 * purple: ArsB_permease
 
-![ncbi arsB tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/arsB_ncbi_grps.gif)
+![ncbi arsB tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/arsB_ncbi_grps.gif)
 
 This protein group tells me that there are roughly three other permeases similar to ArsB that I should be weary of when constructing the database. I will put my greatest emphasis on YbiR since it clusters with ArsB. 
 
