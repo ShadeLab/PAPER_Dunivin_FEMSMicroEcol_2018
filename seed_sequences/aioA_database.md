@@ -31,4 +31,31 @@
  * MopB-CT-Arsenite-Ox 
 
 * MopB-Arsenite-Ox 
+  * The hot pink in the middle of the tree is expected AioA. All of the other colors show sequences belonging to the Mo-binding protein family. It may be difficult to distinguish between these proteins during analysis. I will need to be _highly_ specific. 
+  * ![aioA NCBI tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA.cgi.gif)
+  * Here is a zoomed in look at AioA sequences only
+  * ![aioA NCBI truncated](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA_truncated.gif)
+  * Analysis of quality/ confidence in NCBI's AioA sequences
+   * Crystal struct is there (Ellis)
+   * Similar prot w experimental evidence (AAR05656.1)
+   * All other sequences 1) cluster away from these two with high confidence and 2) have no supporting experimental evidence, so they will be excluded. 
+   
+* MopB-CT-Arsenite-Ox
+ * The dark orange (between red and yellow) is the arsenite oxidase-ct
+ * ![aioA_ct ncbi](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA_ct.gif)
+ * Once again, there are many Mo-contaminating proteins that I will need to be weary of
+ * Here's a zoomed in look at AioA_ct only
+ * ![aioA_ct ncbi truncated](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA_ct_truncated.gif)
+ * Analysis of quality/confidence in NCBI's AioA_ct sequences
+  * Crystal structure is included (Ellis)
+  * Similar prot w experimental evidence (AAR05656.1)
+  * All other sequences 1) cluster away from these two with high confidence and 2) have no supporting experimental evidence, so they will be excluded. 
+ 
+* Information from MopB-Arsenite-Ox and MopB-CT-Arsenite-Ox NCBI groups was the same
+
+* I am left with only three sequences total for AioA. I will plot them with a dissimilatory arsenate reductase to be sure that they at least separate from those sequences. 
+
+  
+
+
 
