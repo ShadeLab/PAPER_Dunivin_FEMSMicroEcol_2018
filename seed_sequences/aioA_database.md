@@ -56,8 +56,7 @@
 * I am left with only three sequences total for AioA. I will plot them with a dissimilatory arsenate reductase to be sure that they at least separate from those sequences. 
 
 ### ML Tree of aioA seeds + arxA bootstrap
-![aioA_seeds](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA_boot.pdf)
-
+* ![aioA seeds] (https://github.com/ShadeLab/Xander_arsenic/blob/master/images/aioA_boot.pdf)
 * Black box represents the sequence from aioA crystal structure; open circle is arxA for bootstrapping
 * The tree looks good overal. I am confident in the sequences chosen. I will examine the FunGene database once it is constructed to be sure that I capture enough diversity with these sequences. For now, I am more concerned about specificity. 
   
