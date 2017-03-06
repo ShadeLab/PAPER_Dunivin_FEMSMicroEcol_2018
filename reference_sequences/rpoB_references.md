@@ -26,4 +26,7 @@
 ```
 java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep.rpoB.v1.fa all.seqs.rpoB.v1.ids all.seqs.rpoB.v1.samples fungene_8.8_rpoB_10000_unaligned_protein_seqs11-15.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs36-40.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs16-20.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs41-45.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs21-25.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs6-10.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs26-30.fa  fungene_8.8_rpoB_3482_unaligned_protein_seqs46-47.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs31-35.fa  fungene_8.8_rpoB_9025_unaligned_protein_seqs1-5.fa
 ```
-
+* derep analysis
+ * Total sequences: 92507
+ * Unique sequences: 16501
+* This is still potentially too many sequences to move forward with. I will (hopefully) be able to reduce this number by looking at a tree. Perhaps I need to change the sequence cutoff? 
