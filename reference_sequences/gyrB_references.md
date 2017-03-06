@@ -37,3 +37,9 @@ java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep
   * Total sequences: 20982
   * Unique sequences: 4330
 * 4,000 is okay, but it still seems a bit high. I also want to check the diversity
+
+## Visualize diversity
+* Align sequences using MUSCLE v. 3.8.31
+```
+muscle -in derep.gyrB.v1.fa -out aligned.derep.gyrB.v1.fa 
+```
