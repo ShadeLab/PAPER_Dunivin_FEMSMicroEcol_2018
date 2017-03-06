@@ -13,9 +13,12 @@
   * 146173 existing sequences
 * Need to narrow down based on
   1. HMM coverage - typically don't go below 80%
-  2. Length (aa) - GyrB E. coli is 1193 aa
+  2. Length (aa) - RpoB is 1193 aa
   3. Score - based on where there is a large score drop off
 
 | Protein | Test # | min aa | min HMM coverage (%) | min HMM score |
 | --------- | ----- | ---------- | --------- | :-----: |
 | RpoB | 1 | 1175 | 30 | 1000 |
+
+* There is a low HMM coverage here because some of the seed sequences are >4000aa sequences, so even full length options (1193aa) have low HMM coverages
+* This leaves 93482 sequences for derep
