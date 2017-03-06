@@ -30,3 +30,12 @@ java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep
  * Total sequences: 92507
  * Unique sequences: 16501
 * This is still potentially too many sequences to move forward with. I will (hopefully) be able to reduce this number by looking at a tree. Perhaps I need to change the sequence cutoff? 
+* Max length: 2900
+* Avg length: 1348
+
+### Sequence alignemnt (submitted job)
+* MUSCLE v. 3.8.31
+
+```
+muscle -in derep.gyrB.v1.fa -out aligned.derep.gyrB.v1.fa 
+```
