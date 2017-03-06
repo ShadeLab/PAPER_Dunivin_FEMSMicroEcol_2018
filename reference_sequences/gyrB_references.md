@@ -24,7 +24,12 @@
 
 ## Dereplicate sequences
 * Use the RDP's derep function fom Clustering
+* Example code
 
 ```
 java -Xmx2g -jar /path/to/Clustering.jar derep -o derep.gyrB.fa all.seqs.gyrB.ids all.seqs.gyrB.samples file.1.fasta file.2.fasta 
+```
+* Actual code
+```
+java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep.gyrB.v1.fa all.seqs.gyrB.v1.ids all.seqs.gyrB.v1.samples fungene_8.8_gyrB_10000_unaligned_protein_seqs.fa fungene_8.8_gyrB_2100_unaligned_protein_seqs.fa fungene_8.8_gyrB_8882_unaligned_protein_seqs.fa 
 ```
