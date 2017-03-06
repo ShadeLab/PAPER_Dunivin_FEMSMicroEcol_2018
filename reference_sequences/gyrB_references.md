@@ -43,3 +43,5 @@ java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep
 ```
 muscle -in derep.gyrB.v1.fa -out aligned.derep.gyrB.v1.fa 
 ```
+* Max length: 1617
+* Avg length: 820
