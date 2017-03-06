@@ -22,3 +22,8 @@
 
 * There is a low HMM coverage here because some of the seed sequences are >4000aa sequences, so even full length options (1193aa) have low HMM coverages
 * This leaves 93482 sequences for derep
+* Derep sequences
+```
+java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep.rpoB.v1.fa all.seqs.rpoB.v1.ids all.seqs.rpoB.v1.samples fungene_8.8_rpoB_10000_unaligned_protein_seqs11-15.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs36-40.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs16-20.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs41-45.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs21-25.fa  fungene_8.8_rpoB_10000_unaligned_protein_seqs6-10.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs26-30.fa  fungene_8.8_rpoB_3482_unaligned_protein_seqs46-47.fa fungene_8.8_rpoB_10000_unaligned_protein_seqs31-35.fa  fungene_8.8_rpoB_9025_unaligned_protein_seqs1-5.fa
+```
+
