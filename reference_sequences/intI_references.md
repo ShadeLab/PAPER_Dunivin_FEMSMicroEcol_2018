@@ -31,7 +31,21 @@ java -Xmx2g -jar /mnt/research/rdp/public/RDPTools/Clustering.jar derep -o derep
 ### Aligning sequences
 Since there are not many sequences, I did not need to submit a job.
 ```
+module load MUSCLE/3.8.31
 muscle -in derep.intI.v1.fa -out aligned.derep.intI.v1.fa
 ```
+* Longest sequence (aa): 594
+* Avg length (aa): 346
 
+### Taylor Dunivin
+## March 13, 2017
+### Goals:
+* Make trees
+* Edit diverse gene ref lists
 
+### Make tree
+Since there are not many sequences, I did not need to submit a job.
+```
+module load raxml/8.0.6
+raxmlHPC -m PROTGAMMAJTTF -p 12345 -s aligned.derep.intI.v1.fa -n intI.v1
+```
