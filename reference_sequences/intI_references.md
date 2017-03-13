@@ -48,3 +48,9 @@ Since there are not many sequences, I did not need to submit a job.
 module load raxml/8.0.6
 raxmlHPC -m PROTGAMMAJTTF -p 12345 -s aligned.derep.intI.v1.fa -n intI.v1
 ```
+
+I visualized the trees using iTol
+* ![Parsimony tree](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.parsimony.intI.png)
+ * The tree will not show online since it is too large
+ * Git desktop will display it, and downloading it will also show it
+ * The tree looks good with no sequence removals apparently necessary
