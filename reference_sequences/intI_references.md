@@ -7,7 +7,6 @@
 * Make tree to detemine diversity of sequences
 * Assess (and repeat)
 
-## IntI
 ### Downloading from FunGene
 * IntI FunGene database already exists
   * authored by Carlos Rodriguez-Minguela
