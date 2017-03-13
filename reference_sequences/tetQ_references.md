@@ -56,3 +56,10 @@ I used iTol to visualize the RAxML tree (http://itol.embl.de/)
   * Only a couple of them are called tetQ in NCBI
   * They are quite different from the other sequences in the tree
   * I will leave them in during the initial analysis but will consider removing them if they appear to cause problems
+  
+### Make nucleotide sequence file to match derep amino acids
+Now that I have reduced the total number of sequences for proteins, I need to do the same for nucleotide sequences of tetQ. This cannot be done using derep because this will result in a different number of sequences. There are a couple of options to do this (considering headings have accession number and descriptor): 
+1. Download all nucleotide sequences from FunGene with the above specified cutoffs, find a way to delete all sequences that are not associated with remaining protein sequences. This would involve ignoring the accession number (different for protein and nucleotides) and looking only at the descriptor (the same for nucleotide and amino acid sequences). 
+2. Blast remaining amino acid sequences and obtain corresponding nucleotide sequences. 
+
+I am not sure how to accomplish either of these with .fa files. I will troubleshoot this before taking detailed notes. 
