@@ -37,7 +37,6 @@ muscle -in derep.intI.v1.fa -out aligned.derep.intI.v1.fa
 * Longest sequence (aa): 594
 * Avg length (aa): 346
 
-### Taylor Dunivin
 ## March 13, 2017
 ### Goals:
 * Make trees
