@@ -50,4 +50,9 @@ I used iTol to visualize the RAxML tree (http://itol.embl.de/)
 * ![tetQ bestTree](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.best.tetQ.pdf)
 * Based on this tree, I will remove CAD55718 as it is very distant from other sequences
 * parsimony
-* ![tetQ parismony](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.parsimony.tetq.png)
+ * ![tetQ parismony](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.parsimony.tetq.png)
+ * This tree also suggests I remove CAD55718
+ * I am also wondering whether to remove the cluster of sequences right after CAD55718
+  * Only a couple of them are called tetQ in NCBI
+  * They are quite different from the other sequences in the tree
+  * I will leave them in during the initial analysis but will consider removing them if they appear to cause problems
