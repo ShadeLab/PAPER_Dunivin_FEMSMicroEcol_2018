@@ -46,3 +46,8 @@ This gives the following outputs:
 * ```RAxML_result.tetq.v1```
 
 I used iTol to visualize the RAxML tree (http://itol.embl.de/)
+* bestTree
+* ![tetQ bestTree](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.best.tetQ.pdf)
+* Based on this tree, I will remove CAD55718 as it is very distant from other sequences
+* parsimony
+* ![tetQ parismony](https://github.com/ShadeLab/Xander_arsenic/blob/master/images/RAxML.parsimony.tetq.png)
