@@ -120,7 +120,7 @@ Dereplication complete: 134
 ### Make list of derep GI 
 * Output file ```all.seqs.tetQ.v2.ids``` contains GI of all sequences compiled together (replicates listed)
 * I want only the first "column" (GI) of each row to derep nucleotide sequences
- 1. Remove lines (http://www.miniwebtool.com/remove-line-numbers/) and sace as csv file
+ 1. Remove lines (http://www.miniwebtool.com/remove-line-numbers/) and save as csv file
  2. Extract one column using R
 ```
 module load R
