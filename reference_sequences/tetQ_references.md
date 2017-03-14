@@ -138,4 +138,22 @@ write.table(b, "first.seqs.tetQ.v2.ids", append= FALSE, quote=FALSE, row.names=F
  ```
 
 ### Derep nucleotide sequences based on protein
+I already have input and filter name files. 
+```
+module load bbmap
+filterbyname.sh in=fungene_8.8_tetQ_235_unaligned_nucleotide_seqs_v2.fa out=derep.nucl.tetQ.v2.fa names=first.seqs.tetQ.v2.ids include=t
+```
+Results
+```
+Input is being processed as unpaired
+Time:               0.263 seconds.
+Reads Processed:    234 	0.89k reads/sec
+Bases Processed:    450375 	1.71m bases/sec
+Reads Out:          55
+Bases Out:          105780
+```
 
+The remaining number are the number of expected sequences. Woo!
+__I now have the appropriate sequences to run Xander on TetQ__
+
+I will make a new folder ```xander.seqs``` to hold copies of the final sequences in xander format (with framebot.fa for protein sequences and nucl.fa for nucleotide sequences. 
