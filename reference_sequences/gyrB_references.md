@@ -46,6 +46,7 @@ muscle -in derep.gyrB.v1.fa -out aligned.derep.gyrB.v1.fa
 * Max length: 1617
 * Avg length: 820
 
+## March 15, 2017
 ## Make tree
 * Had to submid a job since there are so many sequences (4k)
 * Following .qsub was used
