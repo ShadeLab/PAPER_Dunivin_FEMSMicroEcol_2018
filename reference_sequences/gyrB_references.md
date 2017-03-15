@@ -45,3 +45,32 @@ muscle -in derep.gyrB.v1.fa -out aligned.derep.gyrB.v1.fa
 ```
 * Max length: 1617
 * Avg length: 820
+
+## Make tree
+* Had to submid a job since there are so many sequences (4k)
+* Following .qsub was used
+```
+#!/bin/bash -login
+ 
+### define resources needed:
+### walltime - how long you expect the job to run
+#PBS -l walltime=24:00:00
+ 
+### nodes:ppn - how many nodes & cores per node (ppn) that you require
+#PBS -l nodes=15:ppn=1
+ 
+### mem: amount of memory that the job will need
+#PBS -l mem=10gb
+ 
+### you can give your job a name for easier identification
+#PBS -N gyrB.raxml
+ 
+### load necessary modules, e.g.
+module load raxml/8.0.6
+ 
+### change to the working directory where your code is located
+cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/gyrB
+ 
+### call your executable
+raxmlHPC -m PROTGAMMAJTTF -p 12345 -s aligned.derep.gyrB.v1.fa -n gyrb.v1
+```
