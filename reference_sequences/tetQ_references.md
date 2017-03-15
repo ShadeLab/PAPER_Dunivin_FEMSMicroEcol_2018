@@ -1,5 +1,11 @@
 # TetQ: diverse gene references
 ### Taylor Dunivin
+
+## Table of contents
+* [March 6, 2017](https://github.com/ShadeLab/Xander_arsenic/blob/master/reference_sequences/tetQ_references.md#march-6-2017)
+* [March 14, 2017](https://github.com/ShadeLab/Xander_arsenic/blob/master/reference_sequences/tetQ_references.md#march-14-2017)
+* [March 15, 2017](https://github.com/ShadeLab/Xander_arsenic/blob/master/reference_sequences/tetQ_references.md#march-15-2017)
+
 ## March 6, 2017
 ### Goals: 
 * Obtain sets of relatively high quality sequences
