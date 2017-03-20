@@ -25,6 +25,7 @@ This file shows nucleotide accession, protein accession, and taxa_id information
 * I will only read columns of interest to reduce the file size
 
 ```
+module load GNU/4.9
 module load R/3.3.0
 R
 
@@ -47,19 +48,29 @@ ga=write.table(ga, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI
 Do not care about sequences in this step
 Want to get sequence identifier only AND separate accession number from descriptions (but keep the description)
 {insert steps to get seq names}
+```
+#remove sequence identifiers by extracting all lines starting with >
+grep '^>' fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.fa > nucl.seq.id.v1.txt
 
-Now that I have this files, I will load it into R and extract gene accession info based on it 
+#remove > (not part of identifier)
+sed '0~1s/^.\{1\}//g' nucl.seq.id.v1.txt >>nucl.seq.id.v1.final.txt
+```
+
+Now that I have a file with sequence identifier info only, I will load it into R and extract gene accession info based on it 
 
 ```
+module load GNU/4.9
 module load R/3.3.0
 R
 
 ##prep nucleotide sequence names
-#read in sequence identifiers from nucl fasta (from FunGene) 
-library(fread)
-nucl=fread("names.fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.txt”)
+#read in sequence identifiers from nucl fasta (from steps above) 
+nucl=read.csv("nucl.seq.id.v1.final.txt", col.names = paste0("V",seq_len(8)), fill = TRUE)
 
-#prep nucl df to have the appropriate columns and column names
+#remove location information in nucl (dont need it) so that only accno is in col 1
+nucl$V1=gsub(" location=.*", "", nucl$V1)
+
+#name columns in nucl to correspond with ga data
 
 ##extract relevant ga info based on nucl
 library(dplyr)
