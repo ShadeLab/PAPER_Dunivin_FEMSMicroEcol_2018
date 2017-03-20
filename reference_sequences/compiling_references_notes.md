@@ -27,6 +27,41 @@ This file shows nucleotide accession, protein accession, and taxa_id information
 ```
 module load R/3.3.0
 R
+
+#load data.table since it is good for reading in large datasets
 library("data.table")
-ga=fread("gene2accession", header=TRUE, select=c("tax_id", "GeneID", "protein_accession.version", "protein_gi", "genomic_nucleotide_accession.version", "genomic_nucleotide_gi"))
+
+##read in gene2accno data
+#read in file with accno information for protein and nucleotide sequences; only read necessary columns (save time/memory) (ONCE; ~10min)
+ga=fread("gene2accession", header=TRUE, select=c("#tax_id", "GeneID", "protein_accession.version", "protein_gi", "genomic_nucleotide_accession.version", "genomic_nucleotide_gi"))
+
+#remove version numbers from ga file (FunGene does not give .version in its accnos)
+ga=gsub(".*", "", ga$protein_accession.version)
+ga=gsub(".*", "", ga$genomic_nucleotide_accession.version)
+
+#since it is a time consuming process, write ga to a real file so that you only have to make it from the full file (10 extra columns) once
+ga=write.table(ga, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/ga.txt")
+```
+
+### Need to get sequence information in appropriate format
+Do not care about sequences in this step
+Want to get sequence identifier only AND separate accession number from descriptions (but keep the description)
+{insert steps to get seq names}
+
+Now that I have this files, I will load it into R and extract gene accession info based on it 
+
+```
+module load R/3.3.0
+R
+
+##prep nucleotide sequence names
+#read in sequence identifiers from nucl fasta (from FunGene) 
+library(fread)
+nucl=fread("names.fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.txt”)
+
+#prep nucl df to have the appropriate columns and column names
+
+##extract relevant ga info based on nucl
+library(dplyr)
+ga.nucl=semi_join(ga, nucl, by=genomic_nucleotide_accession.version)
 ```
