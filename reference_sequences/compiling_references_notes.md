@@ -76,4 +76,7 @@ colnames(nucl)=c("genomic_nucleotide_accession.version", "organism", "definition
 ##extract relevant ga info based on nucl
 library(dplyr)
 ga.nucl=semi_join(ga, nucl, by=genomic_nucleotide_accession.version)
+
+##write to a file just in case 
+write.table(nucl, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/nucl.txt", col.names=T, row.names=F)
 ```
