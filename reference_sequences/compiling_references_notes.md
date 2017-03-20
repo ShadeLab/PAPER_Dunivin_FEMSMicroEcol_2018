@@ -37,11 +37,11 @@ library("data.table")
 ga=fread("gene2accession", header=TRUE, select=c("#tax_id", "GeneID", "protein_accession.version", "protein_gi", "genomic_nucleotide_accession.version", "genomic_nucleotide_gi"))
 
 #remove version numbers from ga file (FunGene does not give .version in its accnos)
-ga=gsub(".*", "", ga$protein_accession.version)
-ga=gsub(".*", "", ga$genomic_nucleotide_accession.version)
+ga$protein_accession.version=gsub("\\.[0-2]$","",ga$protein_accession.version)
+ga$genomic_nucleotide_accession.version=gsub("\\.[0-2]$","",ga$genomic_nucleotide_accession.version)
 
 #since it is a time consuming process, write ga to a real file so that you only have to make it from the full file (10 extra columns) once
-ga=write.table(ga, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/ga.txt")
+write.table(ga, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/ga.txt", col.names=T, row.names=F)
 ```
 
 ### Need to get sequence information in appropriate format
@@ -71,6 +71,7 @@ nucl=read.csv("nucl.seq.id.v1.final.txt", col.names = paste0("V",seq_len(8)), fi
 nucl$V1=gsub(" location=.*", "", nucl$V1)
 
 #name columns in nucl to correspond with ga data
+colnames(nucl)=c("genomic_nucleotide_accession.version", "organism", "definition", "definition2", "definition3", "definition4")
 
 ##extract relevant ga info based on nucl
 library(dplyr)
