@@ -73,6 +73,9 @@ nucl$V1=gsub(" location=.*", "", nucl$V1)
 #name columns in nucl to correspond with ga data
 colnames(nucl)=c("genomic_nucleotide_accession.version", "organism", "definition", "definition2", "definition3", "definition4")
 
+#remove space from accno column 
+nucl$genomic_nucleotide_accession.version=gsub(" ", "", nucl$genomic_nucleotide_accession.version)
+
 ##extract relevant ga info based on nucl
 library(dplyr)
 ga.nucl=semi_join(ga, nucl, by=genomic_nucleotide_accession.version)
