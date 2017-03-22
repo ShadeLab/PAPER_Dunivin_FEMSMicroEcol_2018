@@ -82,4 +82,22 @@ ga.nucl=semi_join(ga, nucl, by=genomic_nucleotide_accession.version)
 
 ##write to a file just in case 
 write.table(nucl, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/nucl.txt", col.names=T, row.names=F)
+
+##do the same thing for protein data:
+prot=read.csv("prot.seq.id.v1.final.txt", col.names = paste0("V",seq_len(8)), fill = TRUE)
+
+#remove location information in nucl (dont need it) so that only accno is in col 1
+prot$V1=gsub("  coded_by=.*", "", prot$V1)
+
+#name columns in nucl to correspond with ga data
+colnames(prot)=c("protein_accession.version", "organism", "definition", "definition2", "definition3", "definition4")
+
+##extract relevant ga info based on nucl
+library(dplyr)
+ga.nucl=semi_join(ga, nucl, by=genomic_nucleotide_accession.version)
+
+##write to a file just in case 
+write.table(nucl, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/nucl.txt", col.names=T, row.names=F)
+
+
 ```
