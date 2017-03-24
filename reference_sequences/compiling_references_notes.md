@@ -68,13 +68,10 @@ R
 nucl=read.csv("nucl.seq.id.v1.final.txt", col.names = paste0("V",seq_len(8)), fill = TRUE)
 
 #remove location information in nucl (dont need it) so that only accno is in col 1
-nucl$V1=gsub(" location=.*", "", nucl$V1)
+nucl$V1=gsub("  location=.*", "", nucl$V1)
 
 #name columns in nucl to correspond with ga data
 colnames(nucl)=c("genomic_nucleotide_accession.version", "organism", "definition", "definition2", "definition3", "definition4")
-
-#remove space from accno column 
-nucl$genomic_nucleotide_accession.version=gsub(" ", "", nucl$genomic_nucleotide_accession.version)
 
 ##extract relevant ga info based on nucl
 library(dplyr)
@@ -101,3 +98,66 @@ write.table(nucl, file="/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI/
 
 
 ```
+
+try again...
+
+```
+module load GNU/4.9
+module load R/3.3.0
+R
+
+#read in formatted gene2accession file (NCBI)
+ga=fread("ga2.txt", header=TRUE)
+
+#read in nucl data (pre-prepped)
+nucl=fread("nucl.txt", header=TRUE)
+
+#read in prot data (pre-prepped)
+prot=fread("prot.txt", header=TRUE)
+
+##extract relevant ga info based on prot
+library(dplyr)
+ga.prot=inner_join(ga, prot)
+
+##only use list of genes related to nucl
+ga.prot.nucl=inner_join(ga.prot, nucl)
+
+
+
+```
+```
+#remove duplicate accession numbers
+awk '/^>/{f=!d[$1];d[$1]=1}f' fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.fa >derepaccno.fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.fa
+
+#results in 9189 sequences (from 9418)
+
+#dereplicate identical nucleotide sequences
+java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.fa all_seqs.ids all_seqs.samples derepaccno.fungene_8.9_intI_9418_unaligned_nucleotide_seqs_v1.fa
+
+#results in 2562 sequences (from 9189)
+
+#remove sequence identifiers by extracting all lines starting with >
+grep '^>' derep.fa > derep.txt
+
+#remove > (not part of identifier)
+sed '0~1s/^.\{1\}//g' derep.txt >>nucl.derep.txt
+
+module load GNU/4.9
+module load R/3.3.0
+R
+
+##prep nucleotide sequence names
+#read in sequence identifiers from nucl fasta (from steps above) 
+nucl=read.csv("nucl.derep.txt", col.names = paste0("V",seq_len(8)), fill = TRUE)
+
+#remove location information in nucl (dont need it) so that only accno is in col 1
+nucl$V1=gsub("  location=.*", "", nucl$V1)
+
+#name columns in nucl to correspond with ga data
+colnames(nucl)=c("genomic_nucleotide_accession.version", "organism", "definition", "definition2", "definition3", "definition4")
+
+
+
+
+
+
