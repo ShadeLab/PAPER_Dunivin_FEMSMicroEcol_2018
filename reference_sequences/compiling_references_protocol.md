@@ -10,7 +10,7 @@ grep "^>" input.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >prot.id.final.txt
 ```
 
 ### Submit job to assign nucleotide information to protein information
-Below is the information in the file ```names.qsub```
+Below is the information in the file ```job.names.qsub```
 
 ```
 #!/bin/bash -login
