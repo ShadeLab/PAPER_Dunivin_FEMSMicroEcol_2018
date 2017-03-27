@@ -5,11 +5,8 @@
 ## Linking protein and nucleotide accession/GI numbers
 ### Format sequence information (protein)
 ```
-#remove sequence identifiers by extracting all lines starting with >
-grep '^>' input.fa > prot.id.txt
-
-#remove > (not part of identifier)
-sed '0~1s/^.\{1\}//g' prot.id.txt >>prot.id.final.txt
+# make new file of accession number only
+grep "^>" input.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >prot.id.final.txt
 ```
 
 ### Submit job to assign nucleotide information to protein information
@@ -54,11 +51,8 @@ java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDP
 
 ### Obtain accession numbers for nucleotide sequences in ```derepaccno.input.fa```
 ```
-#remove sequence identifiers by extracting all lines starting with >
-grep '^>' derepaccno.input.fa > derepaccno.id.txt
-
-#remove > (not part of identifier)
-sed '0~1s/^.\{1\}//g' derepaccno.id.txt >>derepaccno.id.final.txt
+# make new file of accession number only
+grep "^>" derep.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >derep.id.txt
 ```
 
 ### Remove sequences in protein fasta based on derep nucleotide sequences
