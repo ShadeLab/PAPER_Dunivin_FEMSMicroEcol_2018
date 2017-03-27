@@ -71,7 +71,7 @@ module load R/3.3.0
 R
 
 # make header information
-labels=c("", "", "version", "", "")
+labels=c("protein.accession", "nucl.accession", "na", "strt", "end")
 #read in data
 nucl=read.delim("derep.nucl.id.txt", header="")
 p2n=read.delim("names.txt", header=labels)
