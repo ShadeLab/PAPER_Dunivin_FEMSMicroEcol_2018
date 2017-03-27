@@ -70,11 +70,18 @@ module load GNU/4.9
 module load R/3.3.0
 R
 
-# make header information
-labels=c("protein.accession", "nucl.accession", "na", "strt", "end")
 #read in data
-nucl=read.delim("derep.nucl.id.txt", header="")
-p2n=read.delim("names.txt", header=labels)
+nucl=read.delim("derep.nucl.id.txt", header=FALSE)
+p2n=read.delim("names.txt", header=FALSE)
+
+# make header information
+labels=c("protein.accession", "nucl.accession", "strand", "start", "stop")
+
+# label p2n
+colnames(p2n)=labels
+
+#remove version numbers
+p2n$nucl.accession=gsub("\\.[0-2]$","",p2n$nucl.accession)
 
 # extract protein accno information from nucl accno
 derep.protbynucl.id=p2n[which(p2n$"" %in% nucl),]
