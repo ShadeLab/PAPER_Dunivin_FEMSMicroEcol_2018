@@ -49,7 +49,7 @@ Next dereplicate based on sequence
 java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
 ```
 
-### Obtain accession numbers for nucleotide sequences in ```derepaccno.input.fa```
+### Obtain accession numbers for nucleotide sequences in ```derepaccno.fa```
 ```
 # make new file of accession number only
 grep "^>" derep.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >derep.id.txt
