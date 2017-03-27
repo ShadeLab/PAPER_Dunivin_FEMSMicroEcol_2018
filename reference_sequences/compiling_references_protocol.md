@@ -2,23 +2,23 @@
 ### Taylor Dunivin
 ## March 27, 2017
 ---
-## Merge aligned fasta files (for >10,000 seq only)
+## 1. Merge aligned fasta files (for >10,000 seq only)
 First need to make separate directory of all seq files 
 * Do this for protein sequences only
 * Do not need aligned files for Xander (only for tree building pre-analysis)
 
 ```
-java -jar /mnt/research/rdp/public/RDPTools/AlignmentTools.jar alignment-merger /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/gene/aligned_seqs prot.fa
+java -jar /mnt/research/rdp/public/RDPTools/AlignmentTools.jar alignment-merger /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/gene/aligned_seqs aligned.prot.fa
 ```
 
-## Linking protein and nucleotide accession/GI numbers
+## 2. Linking protein and nucleotide accession/GI numbers
 ### Format sequence information (protein)
 ```
 # make new file of accession number only
 grep "^>" input.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >prot.id.final.txt
 ```
 
-### Submit job to assign nucleotide information to protein information
+### 3. Submit job to assign nucleotide information to protein information
 Below is the information in the file ```job.names.qsub```
 
 ```
@@ -46,7 +46,7 @@ cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI
 
 To submit the job, ```qsub names.qsub```
 
-### Dereplicate nucleotide sequences
+### 4. Dereplicate nucleotide sequences
 First need to dereplicate based on accession number (otherwise RDP software will not work)
 ```
 #remove duplicate accession numbers
@@ -58,17 +58,40 @@ Next dereplicate based on sequence
 java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.nucl.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
 ```
 
-### Obtain accession numbers for nucleotide sequences in ```derepaccno.fa```
+### 5. Obtain accession numbers for nucleotide sequences in ```derepaccno.fa```
 ```
 # make new file of accession number only
 grep "^>" derep.nucl.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >derep.nucl.id.txt
 ```
 
-### Remove sequences in protein fasta based on derep nucleotide sequences
+### 6. Convert nucleotide accession numbers to protein accession numbers
+```
+module load GNU/4.9
+module load R/3.3.0
+R
+
+# make header information
+labels=c("", "", "version", "", "")
+#read in data
+nucl=read.delim("derep.nucl.id.txt", header="")
+p2n=read.delim("names.txt", header=labels)
+
+# extract protein accno information from nucl accno
+derep.protbynucl.id=p2n[which(p2n$"" %in% nucl),]
+
+# write protein accno id file
+write(derep.protbynucl.id, file="derep.protbynucl.id.txt", col.names=F, row.names=F)
+```
+
+### 7. Remove sequences in protein fasta based on derep nucleotide sequences
 Here i will use the filterbyname.sh funciton in bbmap
 ```
 module load BBMap/35.34
-filterbyname.sh in=input.fa out=prot.filtered.fa names=derep.nucl.id.txt
+filterbyname.sh in=input.fa out=prot.filtered.fa names=derep.protbynucl.id.txt
 ```
 
-
+### 8. Remove sequences in aligned protein fasta based on derep nucleotide sequences
+```
+module load BBMap/35.34
+filterbyname.sh in=aligned.prot.fa out=aligned.prot.filtered.fa names=derep.protbynucl.id.txt
+```
