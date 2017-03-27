@@ -84,7 +84,7 @@ colnames(p2n)=labels
 p2n$nucl.accession=gsub("\\.[0-2]$","",p2n$nucl.accession)
 
 # extract protein accno information from nucl accno
-derep.protbynucl.id=p2n[which(p2n$"" %in% nucl),]
+derep.protbynucl.id=p2n[which(p2n$nucl.accession %in% nucl),]
 
 # write protein accno id file
 write(derep.protbynucl.id, file="derep.protbynucl.id.txt", col.names=F, row.names=F)
