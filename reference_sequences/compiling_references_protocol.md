@@ -46,13 +46,20 @@ awk '/^>/{f=!d[$1];d[$1]=1}f' input.fa >derepaccno.input.fa
 
 Next dereplicate based on sequence
 ```
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
+java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.nucl.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
 ```
 
 ### Obtain accession numbers for nucleotide sequences in ```derepaccno.fa```
 ```
 # make new file of accession number only
-grep "^>" derep.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >derep.id.txt
+grep "^>" derep.nucl.fa | sed '0~1s/^.\{1\}//g'| cut -f1 -d " "  >derep.nucl.id.txt
 ```
 
 ### Remove sequences in protein fasta based on derep nucleotide sequences
+Here i will use the filterbyname.sh funciton in bbmap
+```
+module load BBMap/35.34
+filterbyname.sh in=input.fa out=prot.filtered.fa names=derep.nucl.id.txt
+```
+
+
