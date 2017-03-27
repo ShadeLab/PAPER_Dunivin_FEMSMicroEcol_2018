@@ -38,3 +38,27 @@ cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI
 ./fetchCDSbyProteinIDs_ver2.py prot.id.final.txt names.fa names.txt
 ```
 
+To submit the job, ```qsub names.qsub```
+
+### Dereplicate nucleotide sequences
+First need to dereplicate based on accession number (otherwise RDP software will not work)
+```
+#remove duplicate accession numbers
+awk '/^>/{f=!d[$1];d[$1]=1}f' input.fa >derepaccno.input.fa
+```
+
+Next dereplicate based on sequence
+```
+java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
+```
+
+### Obtain accession numbers for nucleotide sequences in ```derepaccno.input.fa```
+```
+#remove sequence identifiers by extracting all lines starting with >
+grep '^>' derepaccno.input.fa > derepaccno.id.txt
+
+#remove > (not part of identifier)
+sed '0~1s/^.\{1\}//g' derepaccno.id.txt >>derepaccno.id.final.txt
+```
+
+### Remove sequences in protein fasta based on derep nucleotide sequences
