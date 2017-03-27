@@ -1,0 +1,40 @@
+# Compiling gene references working protocol
+### Taylor Dunivin
+## March 27, 2017
+---
+## Linking protein and nucleotide accession/GI numbers
+### Format sequence information (protein)
+```
+#remove sequence identifiers by extracting all lines starting with >
+grep '^>' input.fa > prot.id.txt
+
+#remove > (not part of identifier)
+sed '0~1s/^.\{1\}//g' prot.id.txt >>prot.id.final.txt
+```
+
+### Submit job to assign nucleotide information to protein information
+Below is the information in the file ```names.qsub```
+
+```
+#!/bin/bash -login
+ 
+### define resources needed:
+### walltime - how long you expect the job to run
+#PBS -l walltime=03:00:00
+ 
+### nodes:ppn - how many nodes & cores per node (ppn) that you require
+#PBS -l nodes=10:ppn=1
+ 
+### mem: amount of memory that the job will need
+#PBS -l mem=5gb
+ 
+### you can give your job a name for easier identification
+#PBS -N prot2accession
+
+### change to the working directory where your code is located
+cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/intI
+ 
+### call your executable
+./fetchCDSbyProteinIDs_ver2.py prot.id.final.txt names.fa names.txt
+```
+
