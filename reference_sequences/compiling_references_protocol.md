@@ -2,6 +2,15 @@
 ### Taylor Dunivin
 ## March 27, 2017
 ---
+## Merge aligned fasta files (for >10,000 seq only)
+First need to make separate directory of all seq files 
+* Do this for protein sequences only
+* Do not need aligned files for Xander (only for tree building pre-analysis)
+
+```
+java -jar /mnt/research/rdp/public/RDPTools/AlignmentTools.jar alignment-merger /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/gene/aligned_seqs prot.fa
+```
+
 ## Linking protein and nucleotide accession/GI numbers
 ### Format sequence information (protein)
 ```
