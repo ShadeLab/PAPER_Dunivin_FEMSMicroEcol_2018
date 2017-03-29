@@ -16,4 +16,4 @@
 | ArsC_thio | 1 | 172 | 100 | 80 | na | # | # | 
 | ArrA | 1 | 175 | 75 | 5 | na | # | # | 
 | AioA | 1 | 800 | 800 | 80 | na | # | # | 
-| ArsM | 1 | 200 | 100 | 30 | na | # | # | 
+| ArsM | 1 | 200 | 100 | 30 | 1485 | 829 | only selected As-related seqs; sort aplhabetical | 
