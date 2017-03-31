@@ -113,9 +113,6 @@ library(ggplot2)
 library(dplyr)
 
 ##COUNT NUMBER OF READ MATCHES
-#move up one directory
-setwd("..")
-
 #read in file 
 data=read.table("stdout.txt", header=TRUE)
 
