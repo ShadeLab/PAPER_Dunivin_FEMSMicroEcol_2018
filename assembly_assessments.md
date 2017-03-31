@@ -68,7 +68,7 @@ makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPT
 
 ##blast results against db
 #tabular format, show seq id, query id (and description), e-value, only show 1 match,
-blastn -db database -query LABEL_final_nucl.fasta -out blast.txt -outfmt "6 qseqid salltitles evalue" -max_target_seqs 1
+blastn -db database -query NAME_GENE_KMER_final_nucl.fasta -out blast.txt -outfmt "6 qseqid salltitles evalue" -max_target_seqs 1
 ```
 
 __Output:__ database.nhr, database.nin, database.nsq (database results), blast.txt (blast results)
@@ -96,7 +96,10 @@ reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data
 write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
 ```
 
-### R combination
+### Automation
+1. Add ```cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/GENE/cluster``` and ```grep "STATS" *_framebot.txt > framebotstats.txt``` to xander.qsub
+2. Change the working directory again ```cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/GENE/```
+3. Add the following rscript to xander.qsub
 
 ```
 #start in gene directory from xander output!
