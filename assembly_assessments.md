@@ -57,17 +57,17 @@ write.table(results, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysi
 __Output:__ stats.txt
 
 ## BLAST e-values
-I want to double check that all e-values are less than 10^-5. Otherwise, I will increase min length xander parameter
+I want to double check that all e-values are less than 10^-5. Otherwise, I will increase min length xander parameter. Additionally, the top match should be consistent with the gene of interest
 ```
 #load blast
 module load GNU/4.4.5
 module load Gblastn/2.28
 
 #make database from diverse gene sequences
-makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Xander_assembler/gene_resource/arsC_thio/originaldata/nucl.fa  -dbtype nucl -out database
+makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Xander_assembler/gene_resource/GENE/originaldata/nucl.fa  -dbtype nucl -out database
 
 ##blast results against db
-#tabular format, show seq id, query id, e-value, only show 1 match,
-blastn -db database -query cen10_arsC_thio_45_final_nucl.fasta -out blast.txt -outfmt "6 qseqid sseqid evalue" -max_target_seqs 1
+#tabular format, show seq id, query id (and description), e-value, only show 1 match,
+blastn -db database -query LABEL_final_nucl.fasta -out blast.txt -outfmt "6 qseqid salltitles evalue" -max_target_seqs 1
 ```
 __Output:__ database.nhr, database.nin, database.nsq (database results), blast.txt (blast results)
