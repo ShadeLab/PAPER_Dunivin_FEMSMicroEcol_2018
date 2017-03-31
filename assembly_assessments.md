@@ -71,3 +71,26 @@ makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPT
 blastn -db database -query LABEL_final_nucl.fasta -out blast.txt -outfmt "6 qseqid salltitles evalue" -max_target_seqs 1
 ```
 __Output:__ database.nhr, database.nin, database.nsq (database results), blast.txt (blast results)
+
+### Number of reads covering kmers
+I want information on the number of reads covering kmers since some studies use this as part of normalization
+Note: this is done in a directory above clustering 
+
+```
+#load R
+module load GNU/4.9
+module load R/3.3.0
+R
+
+#load packages
+library(dplyr)
+
+#read in file 
+data=read.table("stdout.txt", header=TRUE)
+
+#count unique in query_id column
+reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
+
+#write results
+write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
+```
