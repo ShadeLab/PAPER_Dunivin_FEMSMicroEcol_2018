@@ -3,8 +3,7 @@
 
 ### Purpose: 
   * Examine kmer abundance distribution
-  * Calculate length (nucl) statistics
-  * Count number of sequences
+  * Calculate length (nucl) statistics, % identity statistics, and # at 99%
   * Calculate e-values for all sequences (make sure >10^-5)
   
 ---
@@ -31,8 +30,9 @@ plot=ggplot(kmer, aes(x=kmer_abundance, y=frequency)) +
 #save plot
 ggsave("kmerabundancedist.png", plot=last_plot(), width=4, height=4)
 ```
+__Output:__ kmerabundancedist.png
 
-## Nucleotide length statistics
+## Statistics
 ```
 #remove stats info from framebot file
 grep "STATS" *_framebot.txt > framebotstats.txt
@@ -53,3 +53,5 @@ results=summarise(stats, ProteinContigClusters.99=length(stats$V4),AverageLength
 
 #save results
 write.table(results, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/stats.txt", row.names=FALSE)
+```
+__Output:__ stats.txt
