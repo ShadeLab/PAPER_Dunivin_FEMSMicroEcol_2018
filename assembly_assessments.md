@@ -70,6 +70,7 @@ makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPT
 #tabular format, show seq id, query id (and description), e-value, only show 1 match,
 blastn -db database -query LABEL_final_nucl.fasta -out blast.txt -outfmt "6 qseqid salltitles evalue" -max_target_seqs 1
 ```
+
 __Output:__ database.nhr, database.nin, database.nsq (database results), blast.txt (blast results)
 
 ### Number of reads covering kmers
@@ -84,6 +85,54 @@ R
 
 #load packages
 library(dplyr)
+
+#read in file 
+data=read.table("stdout.txt", header=TRUE)
+
+#count unique in query_id column
+reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
+
+#write results
+write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
+```
+
+### R combination
+
+```
+#load R
+module load GNU/4.9
+module load R/3.3.0
+R
+
+#load required packages
+library(ggplot2)
+library(dplyr)
+
+##KMER ABUND DISTRIBUTION
+#read in kmer abund file
+kmer=read.table(list.files(pattern = "_abundance.txt"), header=TRUE)
+
+#plot dist
+plot=ggplot(kmer, aes(x=kmer_abundance, y=frequency)) +
+  geom_point() +
+  labs(x="kmer abundance", y="Frequency")
+  
+#save plot
+ggsave("kmerabundancedist.png", plot=last_plot(), width=4, height=4)
+
+##NUCL STATS 
+#read in stats on length
+stats=read.table("framebotstats.txt", header=FALSE)
+
+#calculate statistics
+results=summarise(stats, ProteinContigClusters.99=length(stats$V4),AverageLength=mean(stats$V4),MedianLength=median(stats$V4), MinLength.bp=min(stats$V4), MaxLength.bp=max(stats$V4), MaxPercentIdentity=max(stats$V6), MinPercentIdentity=min(stats$V6), AveragePercentIdentity=mean(stats$V6))
+
+#save results
+write.table(results, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/stats.txt", row.names=FALSE)
+
+##COUNT NUMBER OF READ MATCHES
+#move up one directory
+setwd("..")
 
 #read in file 
 data=read.table("stdout.txt", header=TRUE)
