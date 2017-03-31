@@ -99,6 +99,7 @@ write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/
 ### R combination
 
 ```
+#start in gene directory from xander output!
 #load R
 module load GNU/4.9
 module load R/3.3.0
@@ -108,7 +109,23 @@ R
 library(ggplot2)
 library(dplyr)
 
+##COUNT NUMBER OF READ MATCHES
+#move up one directory
+setwd("..")
+
+#read in file 
+data=read.table("stdout.txt", header=TRUE)
+
+#count unique in query_id column
+reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
+
+#write results
+write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
+
 ##KMER ABUND DISTRIBUTION
+#change working directory to cluster
+setwd(paste(getwd(),"/cluster",sep=""))
+
 #read in kmer abund file
 kmer=read.table(list.files(pattern = "_abundance.txt"), header=TRUE)
 
@@ -129,17 +146,4 @@ results=summarise(stats, ProteinContigClusters.99=length(stats$V4),AverageLength
 
 #save results
 write.table(results, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/stats.txt", row.names=FALSE)
-
-##COUNT NUMBER OF READ MATCHES
-#move up one directory
-setwd("..")
-
-#read in file 
-data=read.table("stdout.txt", header=TRUE)
-
-#count unique in query_id column
-reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
-
-#write results
-write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
 ```
