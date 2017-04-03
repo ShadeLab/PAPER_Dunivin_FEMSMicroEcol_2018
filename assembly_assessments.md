@@ -78,6 +78,9 @@ I want information on the number of reads covering kmers since some studies use 
 Note: this is done in a directory above clustering 
 
 ```
+#make a list of reads from *match_reads.fa
+grep "^>" *match_reads.fa | sed '0~1s/^.\{1\}//g' >matchreadlist.txt
+
 #load R
 module load GNU/4.9
 module load R/3.3.0
@@ -87,22 +90,22 @@ R
 library(dplyr)
 
 #read in file 
-data=read.table("stdout.txt", header=TRUE)
+data=read.table("matchreadlist.txt", header=FALSE)
 
 #count unique in query_id column
-reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
+reads=summarize(data, UniqueReads=length(unique(data$V1)),TotalReads=length(data$V1))
 
 #write results
-write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
+write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/readssummary.txt", row.names=FALSE)
 ```
 
 ### Automation
 1. Add ```cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/GENE/cluster``` and ```grep "STATS" *_framebot.txt > framebotstats.txt``` to xander.qsub
-2. Change the working directory again ```cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/GENE/```
-3. Add the following rscript to xander.qsub
+2. Add ```grep "^>" *match_reads.fa | sed '0~1s/^.\{1\}//g' >matchreadlist.txt```
+3. Add the following Rscript to xander.qsub
 
 ```
-#start in gene directory from xander output!
+#start in cluster directory from xander output!
 #load R
 module load GNU/4.9
 module load R/3.3.0
@@ -113,19 +116,19 @@ library(ggplot2)
 library(dplyr)
 
 ##COUNT NUMBER OF READ MATCHES
+#load packages
+library(dplyr)
+
 #read in file 
-data=read.table("stdout.txt", header=TRUE)
+data=read.table("matchreadlist.txt", header=FALSE)
 
 #count unique in query_id column
-reads=summarize(data, UniqueReads=length(unique(data$V3)),TotalReads=length(data$V3))
+reads=summarize(data, UniqueReads=length(unique(data$V1)),TotalReads=length(data$V1))
 
 #write results
-write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/readssummary.txt", row.names=FALSE)
+write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/readssummary.txt", row.names=FALSE)
 
 ##KMER ABUND DISTRIBUTION
-#change working directory to cluster
-setwd(paste(getwd(),"/cluster",sep=""))
-
 #read in kmer abund file
 kmer=read.table(list.files(pattern = "_abundance.txt"), header=TRUE)
 
