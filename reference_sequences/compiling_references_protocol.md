@@ -105,7 +105,7 @@ filterbyname.sh in=aligned.prot.fa out=aligned.prot.filtered.fa names=derep.prot
 
 ---
 ### Taylor Dunivin
-## March 27, 2017
+## April 5, 2017
 ---
 Short script to merge unaligned protein and nucleotide sequences
 Includes dereplication for nucleotide sequences _only_. 
