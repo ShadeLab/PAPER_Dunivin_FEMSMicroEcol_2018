@@ -102,3 +102,26 @@ filterbyname.sh in=input.fa out=prot.filtered.fa names=derep.protbynucl.id.txt
 module load BBMap/35.34
 filterbyname.sh in=aligned.prot.fa out=aligned.prot.filtered.fa names=derep.protbynucl.id.txt
 ```
+
+---
+### Taylor Dunivin
+## March 27, 2017
+---
+Short script to merge unaligned protein and nucleotide sequences
+Includes dereplication for nucleotide sequences _only_. 
+```
+#merge sequence files (FunGene can only download 10k at a time)
+#do NOT do this for aligned sequences
+#this step also makes sure files are named the same (regardless of gene) for automation
+cat *unaligned_nucleotide_seqs_v1.fa >merged_unaligned_nucleotide_seqs_v1.fa
+cat *unaligned_protein_seqs_v1.fa>merged_unaligned_protein_seqs_v1.fa
+
+#remove duplicate accession numbers
+awk '/^>/{f=!d[$1];d[$1]=1}f' merged_unaligned_nucleotide_seqs_v1.fa >derepaccno.input.fa
+
+#dereplicate nucleotide sequences
+java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -o derep.nucl.fa derep.all_seqs.ids derep.all_seqs.samples derepaccno.input.fa
+
+#Ultimately need to copy files to ~Xander_assembler/gene_resource/GENE/originaldata
+```
+
