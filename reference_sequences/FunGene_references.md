@@ -17,4 +17,5 @@
 | ArrA | 1 | 175 | 75 | 5 | 1,621 | # | # | 
 | AioA | 1 | 800 | 800 | 80 | 148 | # | # | 
 | ArsM | 1 | 200 | 100 | 30 | 1485 | 829 | only selected As-related seqs; sort aplhabetical | 
-| Resfam_vanZ | 1 | 80 | 120 | 80 | 1042 | 261 | only selected As-related seqs; sort aplhabetical | 
+| Resfam_vanZ | 1 | 80 | 120 | 80 | 1042 | 261 |  | 
+| Resfam_vanY | 1 | 220 | 300 | 80 | 250 | 261 |  | 
