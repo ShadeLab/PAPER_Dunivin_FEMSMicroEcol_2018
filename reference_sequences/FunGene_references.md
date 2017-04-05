@@ -19,3 +19,4 @@
 | ArsM | 1 | 200 | 100 | 30 | 1485 | 829 | only selected As-related seqs; sort aplhabetical | 
 | Resfam_vanZ | 1 | 80 | 120 | 80 | 1042 | 261 |  | 
 | Resfam_vanY | 1 | 220 | 300 | 80 | 250 | # |  | 
+| Resfam_vanX | 1 | 100 | 150 | 80 | 16689 | # |  | 
