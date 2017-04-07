@@ -5,7 +5,7 @@
 ## Tests of bloom filter size (want false positive rate below 10^-8)
 
 | Site | version | metaG size (Mbases) | Filter_size | False Positive Rate | 
-| --------- | ----- | ---------- | --------- | -------- |:-----: |
+| --------- | ----- | ---------- | --------- |:-----: |
 | cen01 | 1 | 23 | 39 | -5 |  
 | cen03 | 1 | 26 | 39 | -6 |  
 | cen04 | 1 | 25 | 39 | -5 |  
