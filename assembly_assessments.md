@@ -103,7 +103,10 @@ write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/
 1. Add ```cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/GENE/cluster``` and ```grep "STATS" *_framebot.txt > framebotstats.txt``` to xander.qsub
 2. Add ```grep "^>" *match_reads.fa | sed '0~1s/^.\{1\}//g' >matchreadlist.txt```
 3. Add the following Rscript to xander.qsub
-
+```
+grep "STATS" *_framebot.txt > framebotstats.txt
+grep "^>" *match_reads.fa | sed '0~1s/^.\{1\}//g' >matchreadlist.txt
+```
 ```
 #start in cluster directory from xander output!
 #load R
