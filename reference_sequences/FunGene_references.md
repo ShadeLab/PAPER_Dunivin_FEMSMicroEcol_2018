@@ -6,9 +6,10 @@
 
 | Protein |  version |min HMM score | min length (aa) | min HMM coverage (%) |  # seq | derep # seq | Comments |
 | --------- | ----- | ---------- | --------- | -------- | -------- | -------- |:-----: |
-| RpoB | 1 | 1000 | 1175 | 90 | 92,507 | # |  |
+| RpoB | 1 | 1000 | 1175 | 90 | 92,507 | # | u + Eisen '08 scg; Tringe |
 | GyrB | 1 | 500 | 830 | 90 | 20,982 | # |  |
-| PyrG | 1 | 610 | 500 | 90 | 56065 | 14107 |  | 
+| PyrG | 1 | 610 | 500 | 90 | 56065 | 14107 | Wu + Eisen '08 scg | 
+| lepA | 1 | 800 | 550 | 90 | 55998 |  | Tringe paper lists as single copy gene | 
 | IntI | 1 | 90 | 315 | 80 | 9418 | # |  |
 | TetQ | 1 | na | na | na | na | 235 | # | 
 | ArsB | 1 | 150 | 400 | 80 | 23680 | 5250 | # | 
