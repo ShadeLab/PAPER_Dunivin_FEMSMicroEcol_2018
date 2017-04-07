@@ -2,7 +2,7 @@
 ### Taylor Dunivin
 
 ---
-## Tests of bloom filter size (want false positive rate below 10^-8)
+## Tests of bloom filter size (want false positive rate below 10^-7)
 
 | Site | version | kmer size | metaG size (Mbases) | Filter_size | False Positive Rate | 
 | --------- | ----- | ----- | ---------- | --------- |:-----: |
@@ -22,7 +22,7 @@
 | cen03 | 2 | 45 | 26 | 41 | - |  
 | cen04 | 2 | 45 | 25 | 41 | - |  
 | cen05 | 2 | 45 | 25 | 41 | - |  
-| cen07 | 2 | 45 | 21 | 40 | - |   
+| cen07 | 2 | 45 | 21 | 40 | -7 |   
 | cen10 | 2 | 45 | 36 |  |  |   
 | cen14 | 2 | 45 | 24 | 40 | - |   
 | cen15 | 2 | 45 | 20 | 40 | -8 |   
