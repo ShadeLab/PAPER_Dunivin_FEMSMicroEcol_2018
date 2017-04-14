@@ -35,14 +35,16 @@ biom add-metadata -i all_seq_complete.clust.biom -o all_seq_complete.clust.meta.
 biom add-metadata -i all_seq_complete.clust.biom -o all_seq_complete.clust.meta.biom --sample-metadata-fp ../meta.txt
 
 java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -f -o all_seq_complete.clust_rep_seqs_modelonly.fasta ids samples all_seq_complete.clust_rep_seqs.fasta
-
-https://joey711.github.io/phyloseq/import-data.html
-
-fasttree -nt -gtr < all_seq_complete.clust_rep_seqs_modelonly.fasta > my_expt_tree.nwk
-
-http://www.jennajacobs.org/R/rarefaction.html
 ```
 
+Great website for learning phyloseq: https://joey711.github.io/phyloseq/import-data.html
+
+Need to adjust sequence names, but this makes a .nwk tree of final contigs
+```
+fasttree -nt -gtr < all_seq_complete.clust_rep_seqs_modelonly.fasta > my_expt_tree.nwk
+```
+
+I forget if the below code was req
 ```
 #might need?
 java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -m '#=GC_RF' -o derep.fa all_seqs.ids all_seqs.samples alignment/*.fasta
