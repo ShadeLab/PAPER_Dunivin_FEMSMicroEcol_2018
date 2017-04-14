@@ -1,0 +1,5 @@
+Sample	Site	Temperature	Arsenic	History
+cen01_rplB_45_final_prot_aligned	Cen01	14.1	2.63	recovered
+cen07_rplB_45_final_prot_aligned	Cen07	13.5	5.56	recovered
+cen10_rplB_45_final_prot_aligned	Cen10	54.2	3.79	fire affected
+cen12_rplB_45_final_prot_aligned	Cen12	32.0	3.9	fire affected
