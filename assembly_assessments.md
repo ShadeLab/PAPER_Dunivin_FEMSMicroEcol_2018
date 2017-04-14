@@ -103,6 +103,7 @@ module load GNU/4.4.5
 module load Gblastn/2.28
 
 #make database from diverse gene sequences
+#must input GENE name!!!
 makeblastdb -in /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Xander_assembler/gene_resource/GENE/originaldata/nucl.fa  -dbtype nucl -out database
 
 ##blast xander results against db
