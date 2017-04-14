@@ -140,7 +140,7 @@ data=read.table("matchreadlist.txt", header=FALSE)
 reads=summarize(data, UniqueReads=length(unique(data$V1)),TotalReads=length(data$V1))
 
 #write results
-write.table(reads, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/readssummary.txt", row.names=FALSE)
+write.table(reads, "readssummary.txt", row.names=FALSE)
 
 ##KMER ABUND DISTRIBUTION
 #read in kmer abund file
@@ -162,7 +162,7 @@ stats=read.table("framebotstats.txt", header=FALSE)
 results=summarise(stats, ProteinContigClusters.99=length(stats$V4),AverageLength=mean(stats$V4),MedianLength=median(stats$V4), MinLength.bp=min(stats$V4), MaxLength.bp=max(stats$V4), MaxPercentIdentity=max(stats$V6), MinPercentIdentity=min(stats$V6), AveragePercentIdentity=mean(stats$V6))
 
 #save results
-write.table(results, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/k45/arsC_thio/cluster/stats.txt", row.names=FALSE)
+write.table(results, "stats.txt", row.names=FALSE)
 
 ##BLAST STATS
 #read in blast results from above
@@ -176,6 +176,6 @@ colnames(blast)=c("contig", "match", "eval")
 evalues=summarize(blast, lowq=length(blast[,which(blast$eval>1e-2)]), min=min(blast$eval), max=max(blast$eval), avg=mean(blast$eval), median=median(blast$eval))
 
 #save results
-write.table(evalues, "/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen07/k45/pyrG/cluster/e.values.txt", row.names=FALSE)
+write.table(evalues, "e.values.txt", row.names=FALSE)
 
 ```
