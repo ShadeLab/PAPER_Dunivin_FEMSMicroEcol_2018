@@ -1,0 +1,18 @@
+Cen01	14.1	2.63	recovered
+Cen02	13.6	4.2	recovered
+Cen03	14.7	7.1	recovered
+Cen04	13.3	3.6	recovered
+Cen05	14.0	1.75	recovered
+Cen06	24.1	2.05	fire affected
+Cen07	13.5	5.56	recovered
+Cen08	12.6	1.99	reference
+Cen09	34.2	5.04	fire affected
+Cen10	54.2	3.79	fire affected
+Cen11	21.1	3.86	fire affected
+Cen12	32.0	3.9	fire affected
+Cen13	57.4	2.58	fire affected
+Cen14	34.1	2.97	fire affected
+Cen15	38.9	2.25	fire affected
+Cen16	21.7	3.57	fire affected
+Cen17	12.1	1.99	reference
+Cen18	13.3	2.83	recovered
