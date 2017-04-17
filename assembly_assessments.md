@@ -123,6 +123,7 @@ grep "^>" *match_reads.fa | sed '0~1s/^.\{1\}//g' >matchreadlist.txt
 #start in cluster directory from xander output!
 #load R
 module load GNU/4.9
+module load OpenMPI/1.10.0
 module load R/3.3.0
 R
 
