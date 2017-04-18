@@ -2,7 +2,7 @@
 library(dplyr)
 library(ggplot2)
 library(reshape2)
-setwd("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/diversity_analysis/")
+
 #read in abundance data
 data=read.csv("rplB_taxon_abundance_cen.csv")
 
@@ -36,7 +36,6 @@ grouped2=group_by(joined, Taxon, Classification)
 
 #calculate
 history=summarise(grouped2, N=length(Fraction.Abundance), Average=mean(Fraction.Abundance))
-
 
 #plot
 ggplot(history, aes(x=Taxon, y=Average)) +
