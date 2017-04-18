@@ -1,4 +1,7 @@
 #load dependencies 
+library(phyloseq)
+library(vegan)
+library(ggplot2)
 
 #set working directory
 setwd("/Users/dunivint/Documents/ShadeLab/Experiments/Xander/R_analysis/")
@@ -14,34 +17,37 @@ meta.data=meta.data[,-1]
 metad=sample_data(meta.data)
 
 #read in distance matrix
-rpoB=data.matrix(read.delim(file = "rformat_dist_0.03.txt", header = TRUE))
+rpoB=read.delim(file = "rformat_dist_0.03.txt")
+
+#add row names back
+rownames(rpoB)=rpoB[,1]
 
 #remove first column
 rpoB=rpoB[,-1]
 
-#add row names back
-rownames(rpoB)=c("cen01_rplB_45_final_prot_aligned", "cen07_rplB_45_final_prot_aligned", "cen12_rplB_45_final_prot_aligned", "cen10_rplB_45_final_prot_aligned")
+#make data matrix
+rpoB=data.matrix(rpoB)
+
+#remove first column
+rpoB=rpoB[,-1]
 
 #otu table
 otu=otu_table(rpoB, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu, step=5)
+rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
 
 #rarefy
 rare=rarefy_even_depth(otu, sample.size = min(sample_sums(otu)), rngseed = TRUE)
 
 #check curve
-rarecurve(rare, step=5)
-
-#read tree (need to fix names)
-tree=read.tree("test_rplB_tree.nwk")
+rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
 
 ##make biom for phyloseq
 phylo=merge_phyloseq(rare, metad)
 
 #plot phylo richness
-plot_richness(phylo, x="Site", shape="History")
+plot_richness(phylo, x="Site", shape="History", color = "Temperature")
 
 #plot ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
@@ -49,10 +55,8 @@ plot_ordination(phylo, ord, color="Site", shape="History", title="Bray Curtis") 
   geom_point(size=5) +
   theme_light(base_size = 12)
 
-#plot tree with abundance :) 
-plot_tree(phylo, color="Site", size="abundance", label.tips="OTU", text.size=3, ladderize="left") +
-  theme(legend.position = "bottom", legend.title = element_text(size=12), legend.key = element_blank())
-
-
-
+#plot nmds
+ord1 <- ordinate(phylo, method="NMDS", distance="bray")
+plot_ordination(phylo, ord1, color="Site", shape="History") +
+  geom_point(size=5)
 
