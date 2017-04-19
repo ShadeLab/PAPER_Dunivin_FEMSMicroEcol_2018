@@ -3,36 +3,33 @@ library(phyloseq)
 library(vegan)
 library(ggplot2)
 
-#set working directory
-setwd("/Users/dunivint/Documents/ShadeLab/Experiments/Xander/R_analysis/")
-
 #read in metadata
-meta.data=data.frame(read.delim(file = "meta.txt", header=TRUE))
-
-#make sample names row names for metadata
-row.names(meta.data)=meta.data[,1]
-meta.data=meta.data[,-1]
-
-#call metadata sample data
-metad=sample_data(meta.data)
+meta=data.frame(read.delim(file = "Centralia_full_map.txt", sep=" ", header=TRUE))
 
 #read in distance matrix
-rpoB=read.delim(file = "rformat_dist_0.03.txt")
+rplB=read.delim(file = "rformat_dist_0.03.txt")
+
+#make sample names row names for metadata
+row.names(meta)=meta[,1]
+meta=meta[,-1]
+
+#call metadata sample data
+metad=sample_data(meta)
 
 #add row names back
-rownames(rpoB)=rpoB[,1]
+rownames(rplB)=rplB[,1]
 
 #remove first column
-rpoB=rpoB[,-1]
+rplB=rplB[,-1]
 
 #make data matrix
-rpoB=data.matrix(rpoB)
+rplB=data.matrix(rplB)
 
 #remove first column
-rpoB=rpoB[,-1]
+rplB=rplB[,-1]
 
 #otu table
-otu=otu_table(rpoB, taxa_are_rows = FALSE)
+otu=otu_table(rplB, taxa_are_rows = FALSE)
 
 #see rarefaction curve
 rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
