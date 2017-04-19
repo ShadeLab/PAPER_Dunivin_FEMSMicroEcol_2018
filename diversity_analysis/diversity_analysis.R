@@ -4,17 +4,15 @@ library(vegan)
 library(ggplot2)
 
 #read in metadata
-meta=data.frame(read.delim(file = "Centralia_full_map.txt", sep=" ", header=TRUE))
+meta=data.frame(read.delim(file = "Centralia_mini_map.txt", sep=" ", header=TRUE))
 
 #read in distance matrix
 rplB=read.delim(file = "rformat_dist_0.03.txt")
 
-#make sample names row names for metadata
-row.names(meta)=meta[,1]
-meta=meta[,-1]
-
 #call metadata sample data
-metad=sample_data(meta)
+metad=meta[-1]
+rownames(metad)=meta$Site
+metad=sample_data(metad)
 
 #add row names back
 rownames(rplB)=rplB[,1]
@@ -38,22 +36,29 @@ rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blu
 rare=rarefy_even_depth(otu, sample.size = min(sample_sums(otu)), rngseed = TRUE)
 
 #check curve
-rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
+rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
 
 ##make biom for phyloseq
 phylo=merge_phyloseq(rare, metad)
 
 #plot phylo richness
-plot_richness(phylo, x="Site", shape="History", color = "Temperature")
+plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm")
+
+#calculate evenness
+s=specnumber(rare)
+h=diversity(rare, index="shannon")
+plieou=h/log(s)
 
 #plot ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
-plot_ordination(phylo, ord, color="Site", shape="History", title="Bray Curtis") +
-  geom_point(size=5) +
+plot_ordination(phylo, ord, color="Sample", shape="Classification", title="Bray Curtis") +
+  geom_jitter(size=5) +
   theme_light(base_size = 12)
 
-#plot nmds
+#plot nmds (so far too few points)
 ord1 <- ordinate(phylo, method="NMDS", distance="bray")
-plot_ordination(phylo, ord1, color="Site", shape="History") +
+plot_ordination(phylo, ord1, color="Sample", shape="Classification") +
   geom_point(size=5)
 
+#make an output of total gene count per site
+gcounts=rowSums(rplB)
