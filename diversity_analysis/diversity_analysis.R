@@ -62,3 +62,7 @@ plot_ordination(phylo, ord1, color="Sample", shape="Classification") +
 
 #make an output of total gene count per site
 gcounts=rowSums(rplB)
+
+#########################
+Phylogeny & Abundance
+#########################
