@@ -24,10 +24,10 @@
 | Resfam_vanX | 1 | 100 | 150 | 80 | 16689 | 2340 |  | 
 | Resfam_vanW | 1 | 130 | 220 | 80 | 1311 | 423 |  | 
 | Resfam_vanT | 1 | 600 | 650 | 80 | 304 | 97 |  | 
-| Resfam_vanA | 1 | 700 | 300 | 80 | 250 | ? |  | 
-| Resfam_vanB | 1 | 624 | 300 | 80 | 304 | ? |  | 
-| Resfam_vanC | 1 | 730 | 300 | 80 | 35 | ? |  | 
+| Resfam_vanA | 1 | 700 | 300 | 80 | 250 | 28 |  | 
+| Resfam_vanB | 1 | 624 | 300 | 80 | 304 | 38 |  | 
+| Resfam_vanC | 1 | 730 | 300 | 80 | 35 | 29 |  | 
 | Resfam_vanD | 1 |  |  |  |  |  | Excluding since database cannot distinguish between other van proteins | 
-| Resfam_vanH | 1 | 500 | 280 | 80 | 438 | ? |  | 
+| Resfam_vanH | 1 | 500 | 280 | 80 | 438 | 61 |  | 
 | Resfam_vanR | 1 |  |  |  |  | ? | Did not include since it's a regulatory protein | 
 
