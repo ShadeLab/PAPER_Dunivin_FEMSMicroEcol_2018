@@ -3,11 +3,14 @@ library(phyloseq)
 library(vegan)
 library(ggplot2)
 
+#print working directory for future references
+wd=print(getwd())
+
 #read in metadata
-meta=data.frame(read.delim(file = "Centralia_mini_map.txt", sep=" ", header=TRUE))
+meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_mini_map.txt", sep=""), sep=" ", header=TRUE))
 
 #read in distance matrix
-rplB=read.delim(file = "rformat_dist_0.03.txt")
+rplB=read.delim(file = paste(wd, "/data/rformat_dist_0.03.txt", sep=""))
 
 #call metadata sample data
 metad=meta[-1]
@@ -42,18 +45,28 @@ rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "bl
 phylo=merge_phyloseq(rare, metad)
 
 #plot phylo richness
-plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm")
+(richness=plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm"))
+
+#save plot 
+ggsave(richness, filename = paste(wd, "/figures/richness.eps", sep=""), width = 10, height = 3)
 
 #calculate evenness
 s=specnumber(rare)
 h=diversity(rare, index="shannon")
 plieou=h/log(s)
 
+#save evenness number
+write.table(plieou, file = paste(wd, "/output/evenness.txt", sep=""))
+
 #plot ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
-plot_ordination(phylo, ord, color="Sample", shape="Classification", title="Bray Curtis") +
+(bc.ord=plot_ordination(phylo, ord, color="Sample", shape="Classification", title="Bray Curtis") +
   geom_jitter(size=5) +
-  theme_light(base_size = 12)
+  theme_light(base_size = 12))
+
+#save bray curtis ordination
+ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.eps", sep=""), width = 5, height = 4)
+
 
 #plot nmds (so far too few points)
 ord1 <- ordinate(phylo, method="NMDS", distance="bray")
