@@ -4,7 +4,7 @@ library(ggplot2)
 library(reshape2)
 
 #read in abundance data
-data=read.csv("rplB_taxon_abundance_cen.csv")
+data=read.csv(file = paste(wd, "/data/rplB_taxon_abundance_cen.csv", sep=""))
 
 #group data
 grouped=group_by(data, Site, Taxon)
@@ -25,7 +25,7 @@ melt=melt(order.dcast,id.vars=row.names(order.dcast), variable.name= "Site", val
 colnames(melt)=c("Taxon", "Site", "Fraction.Abundance")
 
 #read in metadata
-meta=read.delim("Centralia_full_map.txt", sep=" ")
+meta=read.delim(file = paste(wd, "/data/Centralia_full_map.txt", sep=""), sep=" ")
 
 #join metadata with regular data
 joined=inner_join(melt, meta, by="Site")
@@ -38,8 +38,11 @@ grouped2=group_by(joined, Taxon, Classification)
 history=summarise(grouped2, N=length(Fraction.Abundance), Average=mean(Fraction.Abundance))
 
 #plot
-ggplot(history, aes(x=Taxon, y=Average)) +
+phylum.plot=(ggplot(history, aes(x=Taxon, y=Average)) +
   geom_point(size=2) +
   facet_wrap(~Classification, ncol = 1) +
   labs(x="Phylum", y="Mean relative abundance")+
-  theme(axis.text.x = element_text(angle = 90, size = 12, hjust=0.95,vjust=0.2)) 
+  theme(axis.text.x = element_text(angle = 90, size = 12, hjust=0.95,vjust=0.2))) 
+
+#save plot
+ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.eps", sep=""), width = 5, height = 5)
