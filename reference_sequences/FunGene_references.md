@@ -30,4 +30,9 @@
 | Resfam_vanD | 1 |  |  |  |  |  | Excluding since database cannot distinguish between other van proteins | 
 | Resfam_vanH | 1 | 500 | 280 | 80 | 438 | 61 |  | 
 | Resfam_vanR | 1 |  |  |  |  | ? | Did not include since it's a regulatory protein | 
+| Resfam_tetA | 1 | 680 | 390 | 80 | 2060 | ? |  | 
+| Resfam_tetX | 1 | 300 | 360 | 80 | 227 | ? |  | 
+| tetQ | 1 | 650 | 600 | 80 | 242 | ? |  | 
+| tetM | 1 | 1175 | 600 | 80 | 5531 | ? |  | 
+| tetW | 1 | 1260 | 600 | 80 | 345 | ? |  | 
 
