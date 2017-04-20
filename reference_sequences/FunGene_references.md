@@ -29,5 +29,5 @@
 | Resfam_vanC | 1 | 730 | 300 | 80 | 35 | ? |  | 
 | Resfam_vanD | 1 |  |  |  |  |  | Excluding since database cannot distinguish between other van proteins | 
 | Resfam_vanH | 1 | 500 | 280 | 80 | 438 | ? |  | 
-| Resfam_vanR | 1 |  |  |  |  | ? |  | 
+| Resfam_vanR | 1 |  |  |  |  | ? | Did not include since it's a regulatory protein | 
 
