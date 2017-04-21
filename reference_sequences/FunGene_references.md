@@ -11,11 +11,11 @@
 | PyrG | 1 | 610 | 500 | 90 | 56065 | 14107 | Wu + Eisen '08 scg | 
 | lepA | 1 | 800 | 550 | 90 | 55998 | 14587 | Tringe paper lists as single copy gene | 
 | IntI | 1 | 90 | 315 | 80 | 9418 | 2562 |  |
-| TetQ | 1 | na | na | na | na | 235 | # | 
-| ArsB | 1 | 150 | 400 | 80 | 23680 | 5250 | # | 
+| TetQ | 1 | na | na | na | na | 235 |  | 
+| ArsB | 1 | 150 | 400 | 80 | 23680 | 5250 |  | 
 | ACR3 | 1 | 140 | 300 | 80 | 2035 | 8002 |  | 
 | ArsC_glut | 1 | 80 | 120 | 85 | 18,082 | 9635 |  | 
-| ArsC_thio | 1 | 172 | 100 | 80 | 7,180 | # |  | 
+| ArsC_thio | 1 | 172 | 100 | 80 | 7,180 |  |  | 
 | ArrA | 1 | 175 | 75 | 5 | 1,621 | 1487 |  | 
 | AioA | 1 | 800 | 800 | 80 | 382 | 293 |  | 
 | ArsM | 1 | 200 | 100 | 30 | 3446 | 2948 | only selected As-related seqs; sort aplhabetical | 
@@ -29,7 +29,7 @@
 | Resfam_vanC | 1 | 730 | 300 | 80 | 35 | 29 |  | 
 | Resfam_vanD | 1 |  |  |  |  |  | Excluding since database cannot distinguish between other van proteins | 
 | Resfam_vanH | 1 | 500 | 280 | 80 | 438 | 61 |  | 
-| Resfam_vanR | 1 |  |  |  |  | ? | Did not include since it's a regulatory protein | 
+| Resfam_vanR | 1 |  |  |  |  |  | Did not include since it's a regulatory protein | 
 | Resfam_tetA | 1 | 680 | 390 | 80 | 2060 | 70 |  | 
 | Resfam_tetD | 1 | 795 | 350 | 80 | 261 | 9 |  | 
 | Resfam_tetX | 1 | 300 | 360 | 80 | 227 | 112 |  | 
@@ -38,7 +38,7 @@
 | tetW | 1 | 1260 | 600 | 80 | 345 | 169 |  | 
 | strA | 1 | 400 | 230 | 80 | 4286 | 154 |  | 
 | strB | 1 | 159 | 230 | 80 | 4695 | 222 |  | 
-| Resfam_QuinoloneResistanceProteinQnr | 1 | 230 | 200 | 80 | 2562 | 558 |  | 
+| Resfam_Qnr | 1 | 230 | 200 | 80 | 2562 | 558 | Resfam_QuinoloneResistanceProteinQnr | 
 | Resfam_ermA | 1 |  |  |  |  |  |  | 
 | Resfam_ermB | 1 |  |  |  |  |  |  | 
 | Resfam_ermC | 1 |  |  |  |  |  |  | 
