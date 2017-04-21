@@ -47,7 +47,6 @@ final$norm=final$Abundance/final$GE
 
 #wide dataset
 cast=acast(final, Site ~ COGID, id=c("Site", "COGID"), value.var = "norm")
-cast2=cbind(cast, joined$Temp)
 
 #correlation
 corr=cor(joined$Temp, cast, method = "pearson")
