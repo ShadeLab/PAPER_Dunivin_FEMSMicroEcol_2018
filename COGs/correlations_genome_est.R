@@ -75,6 +75,10 @@ vpos.full=final[which(final$COGID %in% vpos$COGID),]
 #list genes
 genes=c("COG0016","COG0048","COG0049","COG0051","COG0052","COG0072","COG0080","COG0081","COG0087","COG0088", "COG0090", "COG0091","COG0092","COG0093","COG0094","COG0096","COG0097","COG0098","COG0099","COG0100","COG0103","COG0127","COG0149","COG0164","COG0184","COG0185","COG0186","COG0197","COG0200","COG0244","COG0256","COG0343","COG0481","COG0504","COG0532","COG0533","COG0541")
 
+#list genes used by microbe census
+mc.genes <- c("COG0052", "COG0081", "COG0532", "COG0091", 'COG0088', 'COG0090', "COG0103", 'COG0087', "COG0072", "COG0093", "COG0098", "COG0185", "COG0049", "COG0197", "COG0099", "COG0016", "COG0200", "COG0097", "COG0080", "COG0094", "COG0048", "COG0092", "COG0100", "COG0244", "COG0096", "COG0256", "COG0184", "COG0186", "COG0102", "COG0198")
+
+
 #select COGs Tringe lists as single copy
 single=final[which(final$COGID %in% genes),]
 
@@ -93,6 +97,7 @@ single$odds.ratio=single$norm/avglength$average
   geom_boxplot() +
   geom_jitter(height = 0, aes(color=Site, shape=History), size=1.5) +
   ylim(0,2) +
+  xlab("Tringe paper COGS") +
   coord_flip())
 
 #save plot
@@ -110,6 +115,39 @@ ggsave(or.temp, filename = paste(wd, "/figures/GE.norm.odds.ratio.v.temp.png", s
 #check correlations
 single.r=slim[which(slim$COGID %in% genes),]
 
+
+#select COGs Tringe lists as single copy
+census=final[which(final$COGID %in% mc.genes),]
+
+#group
+census=group_by(census, COGID)
+
+#average count
+mc.avglength=summarise(census, n=length(norm), average=mean(norm))
+
+#calculate odds ratio
+census$odds.ratio=census$norm/mc.avglength$average
+
+
+#plot odds ratios for each COG (single copy)
+(mc.or=ggplot(census, aes(x=COGID, y=odds.ratio)) +
+    geom_boxplot() +
+    geom_jitter(height = 0, aes(color=Site, shape=History), size=1.5) +
+    ylim(0,2) +
+    xlab("Microbe census COGS") +
+    coord_flip())
+
+#save plot
+ggsave(mc.or, filename = paste(wd, "/figures/mc.GE.norm.odds.ratios.png", sep=""))
+
+#plot odds ratio v. temperature 
+(mc.or.temp=ggplot(census, aes(x=Temp, y=odds.ratio, color=COGID)) +
+    geom_point(size=1) +
+    stat_smooth(method=lm, alpha=0.01, size=0.25) +
+    ylim(0.25, 1.6))
+
+#save plot
+ggsave(mc.or.temp, filename = paste(wd, "/figures/mc.GE.norm.odds.ratio.v.temp.png", sep=""))
 
 
 
