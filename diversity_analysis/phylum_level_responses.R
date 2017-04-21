@@ -45,4 +45,4 @@ phylum.plot=(ggplot(history, aes(x=Taxon, y=Average)) +
   theme(axis.text.x = element_text(angle = 90, size = 12, hjust=0.95,vjust=0.2))) 
 
 #save plot
-ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.eps", sep=""), width = 5, height = 5)
+ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.png", sep=""), width = 5, height = 5)

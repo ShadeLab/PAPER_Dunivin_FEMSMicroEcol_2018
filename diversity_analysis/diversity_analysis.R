@@ -48,7 +48,7 @@ phylo=merge_phyloseq(rare, metad)
 (richness=plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm"))
 
 #save plot 
-ggsave(richness, filename = paste(wd, "/figures/richness.eps", sep=""), width = 10, height = 3)
+ggsave(richness, filename = paste(wd, "/figures/richness.png", sep=""), width = 10, height = 3)
 
 #calculate evenness
 s=specnumber(rare)
@@ -65,7 +65,7 @@ ord <- ordinate(phylo, method="PCoA", distance="bray")
   theme_light(base_size = 12))
 
 #save bray curtis ordination
-ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.eps", sep=""), width = 5, height = 4)
+ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), width = 5, height = 4)
 
 
 #plot nmds (so far too few points)
