@@ -58,6 +58,25 @@ plieou=h/log(s)
 #save evenness number
 write.table(plieou, file = paste(wd, "/output/evenness.txt", sep=""))
 
+#make plieou a dataframe for plotting
+plieou=data.frame(plieou)
+
+#add site column to evenness data
+plieou$Site=rownames(plieou)
+
+#merge evenness information with fire classification
+plieou=inner_join(plieou, meta)
+
+#plot evenness by fire classification
+(evenness <- ggplot(plieou, aes(x = Classification, y = plieou)) +
+    geom_boxplot() +
+    geom_jitter(size=2) +
+    ylab("Evenness") +
+    xlab("Fire classification"))
+
+#save evenness plot
+ggsave(evenness, filename = paste(wd, "/figures/evenness.png", sep=""), width = 3, height = 3)
+
 #plot ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
 (bc.ord=plot_ordination(phylo, ord, color="Sample", shape="Classification", title="Bray Curtis") +
