@@ -1,5 +1,13 @@
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(stats)
+
+#print working directory for future references
+wd=print(getwd())
+
 #read in data
-data=read.delim("COG_data.txt")
+data=read.delim(file = paste(wd, "/data/COG_data.txt", sep=""))
 
 #make COG ID's the row names
 row.names(data)=data$COGID
@@ -12,16 +20,15 @@ funct=subset(data, select=Func_name)
 data=subset(data, select=-Func_name)
 
 #read in genome info
-size=read.delim("microbe_census.txt")
+size=read.delim(file = paste(wd, "/data/microbe_census.txt", sep=""))
 
 #read in site info
-info=read.delim("Cen_temp_As.txt", header = FALSE)
+info=read.delim(file = paste(wd, "/data/Cen_temp_As.txt", sep=""), header = FALSE)
 
 #add colnames to site
 colnames(info)=c("Site", "Temp", "As", "History")
 
 #tidy cog data
-library(reshape2)
 data$COGID=rownames(data)
 tidy=melt(data, id.vars="COGID", variable.name="Site", value.name = "Abundance")
 
@@ -29,7 +36,6 @@ tidy=melt(data, id.vars="COGID", variable.name="Site", value.name = "Abundance")
 tidy$Site=gsub("C", "Cen", tidy$Site)
 
 #join data with info
-library(dplyr)
 joined=inner_join(size, info)
 final=inner_join(tidy, joined, by="Site")
 
@@ -38,14 +44,12 @@ final$Abundance=as.numeric(final$Abundance)
 
 #normalize abundance
 final$norm=final$Abundance/final$GE
-final$norm=final$norm/final$Gbases
 
 #wide dataset
 cast=acast(final, Site ~ COGID, id=c("Site", "COGID"), value.var = "norm")
 cast2=cbind(cast, joined$Temp)
 
 #correlation
-library(stats)
 corr=cor(joined$Temp, cast, method = "pearson")
 
 #tidy correlated data
@@ -84,17 +88,24 @@ avglength=summarise(single, n=length(norm), average=mean(norm))
 single$odds.ratio=single$norm/avglength$average
 
 
-#plot
-ggplot(single, aes(x=COGID, y=(Abundance/Gbases)/(mean(Abundance/Gbases)))) +
+#plot odds ratios for each COG (single copy)
+(or=ggplot(single, aes(x=COGID, y=odds.ratio)) +
   geom_boxplot() +
   geom_jitter(height = 0, aes(color=Site, shape=History), size=1.5) +
   ylim(0,2) +
-  coord_flip()
+  coord_flip())
 
-ggplot(single, aes(x=Temp, y=odds.ratio, color=COGID)) +
+#save plot
+ggsave(or, filename = paste(wd, "/figures/GE.norm.odds.ratios.png", sep=""))
+
+#plot odds ratio v. temperature 
+(or.temp=ggplot(single, aes(x=Temp, y=odds.ratio, color=COGID)) +
   geom_point(size=1) +
   stat_smooth(method=lm, alpha=0.01, size=0.25) +
-  ylim(0.25, 1.6)
+  ylim(0.25, 1.6))
+
+#save plot
+ggsave(or.temp, filename = paste(wd, "/figures/GE.norm.odds.ratio.v.temp.png", sep=""))
 
 #check correlations
 single.r=slim[which(slim$COGID %in% genes),]
