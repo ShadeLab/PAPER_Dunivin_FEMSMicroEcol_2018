@@ -4,7 +4,7 @@ library(reshape2)
 library(ggplot2)
 
 #read in data
-data=read.delim("COG_Data.txt")
+data=read.delim(file = paste(wd, "/data/COG_data.txt", sep=""))
 
 #make file of single copy gene cogs
 genes=c("COG0016","COG0048","COG0049","COG0051","COG0052","COG0072","COG0080","COG0081","COG0087","COG0088", "COG0090", "COG0091","COG0092","COG0093","COG0094","COG0096","COG0097","COG0098","COG0099","COG0100","COG0103","COG0127","COG0149","COG0164","COG0184","COG0185","COG0186","COG0197","COG0200","COG0244","COG0256","COG0343","COG0481","COG0504","COG0532","COG0533","COG0541")
