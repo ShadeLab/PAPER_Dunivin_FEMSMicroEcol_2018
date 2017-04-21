@@ -40,6 +40,6 @@
 | strB | 1 | 159 | 230 | 80 | 4695 | 222 |  | 
 | Resfam_Qnr | 1 | 230 | 200 | 80 | 2562 | 558 | Resfam_QuinoloneResistanceProteinQnr | 
 | Resfam_ermA | 1 |  |  |  |  |  |  | 
-| Resfam_ermB | 1 |  |  |  |  |  |  | 
+| Resfam_ermB | 1 | 400 | 200 | 80 | 2090 |  |  | 
 | Resfam_ermC | 1 |  |  |  |  |  |  | 
 
