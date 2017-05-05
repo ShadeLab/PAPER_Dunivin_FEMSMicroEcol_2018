@@ -7,7 +7,7 @@ library(ggplot2)
 wd=print(getwd())
 
 #read in data
-data=read.delim(file = paste(wd, "/data/COG_data.txt", sep=""))
+data=read.delim(file = paste(wd, "/data/COG_Data.txt", sep=""))
 
 #read in coverage (size in Gb)
 size=read.delim(file = paste(wd, "/data/Cen_filesize.txt", sep = ""))

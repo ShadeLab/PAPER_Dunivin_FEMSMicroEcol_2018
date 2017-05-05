@@ -75,6 +75,17 @@ anorm=acast(final, Site ~ COGID, id=c("Site", "COGID"), value.var = "anorm")
 
 #correlation based on GE-normalized dataset
 corr=cor(info$Temp, norm, method = "pearson")
+temp <- matrix(rep(info$Temp, 4631), c(12, 4631))
+temp <- info$Temp
+norm2 <- t(norm)
+
+coretest.out=NULL
+for(i in 1:nrow(norm)){
+  results=cor.test(norm[i,],temp)
+}
+
+
+coretest.out=cbind(coretest.out,c(row.names(norm)[i],results$estimate,results$p.value))
 
 #correlation based on total-normalized dataset
 acorr=cor(info$Temp, anorm, method = "pearson")
@@ -91,6 +102,7 @@ colnames(tacorr)=c("COGID", "totR")
 
 #join correl data
 corr=inner_join(tcorr, tacorr, by = "COGID")
+
 
 ###########################
 #EXAMINE SINGLE COPY GENES#
@@ -121,11 +133,11 @@ single$a.odds.ratio=single$anorm/aavglength$average
 
 #plot odds ratios for each COG (single copy) (GE-normalized)
 (or=ggplot(single, aes(x=COGID, y=odds.ratio)) +
-    geom_boxplot() +
-    geom_jitter(height = 0, aes(color=Site, shape=History), size=1.5) +
-    ylim(0,2) +
-    xlab("Tringe paper COGS") +
-    coord_flip())
+  geom_boxplot() +
+  geom_jitter(height = 0, aes(color=Site, shape=History), size=1.5) +
+  ylim(0,2) +
+  xlab("Tringe paper COGS") +
+  coord_flip())
 
 #save plot
 ggsave(or, filename = paste(wd, "/figures/GE.norm.odds.ratios.png", sep=""))
@@ -140,9 +152,9 @@ ggsave(or, filename = paste(wd, "/figures/GE.norm.odds.ratios.png", sep=""))
 
 #plot odds ratio v. temperature (GE-normalized)
 (or.temp=ggplot(single, aes(x=Temp, y=odds.ratio, color=COGID)) +
-    geom_point(size=1) +
-    stat_smooth(method=lm, alpha=0.01, size=0.25) +
-    ylim(0.25, 1.6))
+  geom_point(size=1) +
+  stat_smooth(method=lm, alpha=0.01, size=0.25) +
+  ylim(0.25, 1.6))
 
 #save plot
 ggsave(or.temp, filename = paste(wd, "/figures/GE.norm.odds.ratio.v.temp.png", sep=""))
@@ -224,22 +236,22 @@ colnames(funct.key)=c("func", "func.name")
 #annotate data with COGID functional groups
 final <- final %>%
   left_join(funct.key, by = "func")
-
+  
 #group appropriately
 final <- group_by(final, func, Site)
 
 #plot
 (totplot <- ggplot(final, aes(x = func.name, y = anorm, color = History)) +
-    geom_bar(stat = "identity", position = "dodge") +
-    coord_flip())
+  geom_bar(stat = "identity", position = "dodge") +
+  coord_flip())
 
 ggplot(final, aes(x = func.name, y = anorm, color = History)) +
   geom_bar(stat = "identity", position = "dodge") +
   coord_flip()
-
+  
 (geplot <- ggplot(final, aes(x = func.name, y = norm, fill = History)) +
-    geom_bar(stat = "identity", position = "dodge") +
-    coord_flip())
+  geom_bar(stat = "identity", position = "dodge") +
+  coord_flip())
 
 ###########################
 #EXAMINE %GENE VS. %GENOME#
@@ -251,24 +263,33 @@ corr.annotated <- corr %>%
 
 #group genes based on %gene in total and % gene in genomes
 pp <- corr.annotated[which(corr.annotated$GER > 0.6 & corr.annotated$totR > 0.6),]
-pp <- cbind(pp, designation="pp")
+pp$designation <- "pp"
 pn <- corr.annotated[which(corr.annotated$GER < 0.6 & corr.annotated$GER > c(-0.6) & corr.annotated$totR > 0.6),]
-pn <- cbind(pn, designation="pn")
-pN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR > 0.6),]
-pN <- cbind(pN, designation="pN")
-nN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR < 0.6 & corr.annotated$totR > c(-0.6)),]
-nN <- cbind(nN, designation="nN")
-NN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR < c(-0.6)),]
-NN <- cbind(NN, designation="NN")
-nn <- corr.annotated[which(corr.annotated$GER > c(-0.6) & corr.annotated$GER < 0.6 & corr.annotated$totR < 0.6 & corr.annotated$totR > c(-0.6)),]
-nn <- cbind(nn, designation="nn")
-desi <- rbind(pp, pn, pN, nN, NN, nn)
+pn$designation <- "pn"
 
-mobility <- desi[which(desi$func.name == "Mobilome: prophages, transposons"),]
-ggplot(desi, aes(x = name, fill = designation)) +
-  geom_bar(position = "dodge") +
-  coord_polar() +
-  facet_grid(~func.name)
+pN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR > 0.6),]
+pN$designation <- "pN"
+
+nN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR < 0.6 & corr.annotated$totR > c(-0.6)),]
+nN$designation <- "nN"
+
+NN <- corr.annotated[which(corr.annotated$GER < c(-0.6) & corr.annotated$totR < c(-0.6)),]
+NN$designation <- "NN"
+
+nn <- corr.annotated[which(corr.annotated$GER > c(-0.6) & corr.annotated$GER < 0.6 & corr.annotated$totR < 0.6 & corr.annotated$totR > c(-0.6)),]
+nn$designation <- "nn"
+
+
+desi <- rbind(pp, pn, pN, nN, NN, nn)
+sumi <- desi %>%
+  group_by(func.name, designation) %>%
+  summarise(N=length(designation))
+
+write.csv(sumi, "designations.csv", row.names = FALSE)
+
+
+
+
 
 
 

@@ -1,0 +1,143 @@
+"func.name","designation","N"
+"Amino acid transport and metabolism","nn",24
+"Amino acid transport and metabolism","nN",124
+"Amino acid transport and metabolism","NN",81
+"Amino acid transport and metabolism","pn",15
+"Amino acid transport and metabolism","pN",28
+"Amino acid transport and metabolism","pp",2
+"Carbohydrate transport and metabolism","nn",45
+"Carbohydrate transport and metabolism","nN",89
+"Carbohydrate transport and metabolism","NN",62
+"Carbohydrate transport and metabolism","pn",30
+"Carbohydrate transport and metabolism","pN",15
+"Carbohydrate transport and metabolism","pp",6
+"Cell cycle control, cell division, chromosome partitioning","nn",13
+"Cell cycle control, cell division, chromosome partitioning","nN",21
+"Cell cycle control, cell division, chromosome partitioning","NN",9
+"Cell cycle control, cell division, chromosome partitioning","pn",12
+"Cell cycle control, cell division, chromosome partitioning","pN",4
+"Cell cycle control, cell division, chromosome partitioning","pp",3
+"Cell motility","nn",22
+"Cell motility","nN",18
+"Cell motility","NN",9
+"Cell motility","pn",30
+"Cell motility","pN",3
+"Cell motility","pp",5
+"Cell wall/membrane/envelope biogenesis","nn",45
+"Cell wall/membrane/envelope biogenesis","nN",87
+"Cell wall/membrane/envelope biogenesis","NN",51
+"Cell wall/membrane/envelope biogenesis","pn",18
+"Cell wall/membrane/envelope biogenesis","pN",12
+"Cell wall/membrane/envelope biogenesis","pp",3
+"Chromatin structure and dynamics","nn",2
+"Chromatin structure and dynamics","nN",1
+"Chromatin structure and dynamics","NN",1
+"Chromatin structure and dynamics","pn",1
+"Chromatin structure and dynamics","pp",1
+"Coenzyme transport and metabolism","nn",33
+"Coenzyme transport and metabolism","nN",76
+"Coenzyme transport and metabolism","NN",33
+"Coenzyme transport and metabolism","pn",36
+"Coenzyme transport and metabolism","pN",27
+"Coenzyme transport and metabolism","pp",10
+"Cytoskeleton","nn",1
+"Cytoskeleton","nN",2
+"Cytoskeleton","NN",1
+"Defense mechanisms","nn",25
+"Defense mechanisms","nN",28
+"Defense mechanisms","NN",22
+"Defense mechanisms","pn",16
+"Defense mechanisms","pN",1
+"Defense mechanisms","pp",23
+"Energy production and conversion","nn",53
+"Energy production and conversion","nN",85
+"Energy production and conversion","NN",69
+"Energy production and conversion","pn",31
+"Energy production and conversion","pN",18
+"Energy production and conversion","pp",18
+"Extracellular structures","nn",9
+"Extracellular structures","nN",15
+"Extracellular structures","NN",7
+"Extracellular structures","pn",1
+"Function unknown","nn",357
+"Function unknown","nN",244
+"Function unknown","NN",214
+"Function unknown","pn",91
+"Function unknown","pN",7
+"Function unknown","pp",46
+"General function prediction only","nn",133
+"General function prediction only","nN",185
+"General function prediction only","NN",120
+"General function prediction only","pn",62
+"General function prediction only","pN",13
+"General function prediction only","pp",37
+"Inorganic ion transport and metabolism","nn",68
+"Inorganic ion transport and metabolism","nN",74
+"Inorganic ion transport and metabolism","NN",42
+"Inorganic ion transport and metabolism","pn",31
+"Inorganic ion transport and metabolism","pN",11
+"Inorganic ion transport and metabolism","pp",5
+"Intracellular trafficking, secretion, and vesicular transport","nn",28
+"Intracellular trafficking, secretion, and vesicular transport","nN",31
+"Intracellular trafficking, secretion, and vesicular transport","NN",17
+"Intracellular trafficking, secretion, and vesicular transport","pn",13
+"Intracellular trafficking, secretion, and vesicular transport","pN",5
+"Intracellular trafficking, secretion, and vesicular transport","pp",6
+"Lipid transport and metabolism","nn",14
+"Lipid transport and metabolism","nN",48
+"Lipid transport and metabolism","NN",37
+"Lipid transport and metabolism","pn",11
+"Lipid transport and metabolism","pN",8
+"Lipid transport and metabolism","pp",5
+"Mobilome: prophages, transposons","nn",59
+"Mobilome: prophages, transposons","nN",28
+"Mobilome: prophages, transposons","NN",12
+"Mobilome: prophages, transposons","pn",16
+"Mobilome: prophages, transposons","pN",1
+"Mobilome: prophages, transposons","pp",3
+"Nucleotide transport and metabolism","nn",12
+"Nucleotide transport and metabolism","nN",44
+"Nucleotide transport and metabolism","NN",27
+"Nucleotide transport and metabolism","pn",10
+"Nucleotide transport and metabolism","pN",15
+"Nucleotide transport and metabolism","pp",10
+"Posttranslational modification, protein turnover, chaperones","nn",30
+"Posttranslational modification, protein turnover, chaperones","nN",71
+"Posttranslational modification, protein turnover, chaperones","NN",44
+"Posttranslational modification, protein turnover, chaperones","pn",18
+"Posttranslational modification, protein turnover, chaperones","pN",15
+"Posttranslational modification, protein turnover, chaperones","pp",13
+"Replication, recombination and repair","nn",35
+"Replication, recombination and repair","nN",59
+"Replication, recombination and repair","NN",39
+"Replication, recombination and repair","pn",20
+"Replication, recombination and repair","pN",14
+"Replication, recombination and repair","pp",14
+"RNA processing and modification","nn",2
+"RNA processing and modification","nN",1
+"RNA processing and modification","NN",2
+"RNA processing and modification","pn",2
+"Secondary metabolites biosynthesis, transport and catabolism","nn",20
+"Secondary metabolites biosynthesis, transport and catabolism","nN",36
+"Secondary metabolites biosynthesis, transport and catabolism","NN",35
+"Secondary metabolites biosynthesis, transport and catabolism","pn",3
+"Secondary metabolites biosynthesis, transport and catabolism","pN",2
+"Secondary metabolites biosynthesis, transport and catabolism","pp",1
+"Signal transduction mechanisms","nn",47
+"Signal transduction mechanisms","nN",54
+"Signal transduction mechanisms","NN",60
+"Signal transduction mechanisms","pn",14
+"Signal transduction mechanisms","pN",1
+"Signal transduction mechanisms","pp",6
+"Transcription","nn",48
+"Transcription","nN",46
+"Transcription","NN",42
+"Transcription","pn",30
+"Transcription","pN",9
+"Transcription","pp",23
+"Translation, ribosomal structure and biogenesis","nn",32
+"Translation, ribosomal structure and biogenesis","nN",85
+"Translation, ribosomal structure and biogenesis","NN",41
+"Translation, ribosomal structure and biogenesis","pn",27
+"Translation, ribosomal structure and biogenesis","pN",70
+"Translation, ribosomal structure and biogenesis","pp",75
