@@ -1,13 +1,16 @@
 #load dependencies 
 library(phyloseq)
 library(vegan)
-library(ggplot2)
+library(tidyverse)
 
 #print working directory for future references
 wd=print(getwd())
 
 #read in metadata
-meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_mini_map.txt", sep=""), sep=" ", header=TRUE))
+meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
+
+#remove Cen16 from metadata since we don't have rplB info yet
+meta=meta[!grepl("Cen16", meta$Site),]
 
 #read in distance matrix
 rplB=read.delim(file = paste(wd, "/data/rformat_dist_0.03.txt", sep=""))
@@ -48,7 +51,8 @@ phylo=merge_phyloseq(rare, metad)
 (richness=plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm"))
 
 #save plot 
-ggsave(richness, filename = paste(wd, "/figures/richness.png", sep=""), width = 10, height = 3)
+ggsave(richness, filename = paste(wd, "/figures/richness.png", sep=""), 
+       width = 15)
 
 #calculate evenness
 s=specnumber(rare)
@@ -67,37 +71,51 @@ plieou$Site=rownames(plieou)
 #merge evenness information with fire classification
 plieou=inner_join(plieou, meta)
 
+#make color pallette
+GnYlOrRd=colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
+
 #plot evenness by fire classification
 (evenness <- ggplot(plieou, aes(x = Classification, y = plieou)) +
     geom_boxplot() +
-    geom_jitter(size=2) +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size=3, width = 0.2) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
     ylab("Evenness") +
-    xlab("Fire classification"))
+    xlab("Fire classification") +
+    theme_bw(base_size = 12))
 
 #save evenness plot
-ggsave(evenness, filename = paste(wd, "/figures/evenness.png", sep=""), width = 3, height = 3)
+ggsave(evenness, filename = paste(wd, "/figures/evenness.png", sep=""), 
+       width = 7, height = 5)
 
-#plot ordination
+#plot Bray Curtis ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
-(bc.ord=plot_ordination(phylo, ord, color="Sample", shape="Classification", title="Bray Curtis") +
-  geom_jitter(size=5) +
+(bc.ord=plot_ordination(phylo, ord, shape="Classification", title="Bray Curtis") +
+  geom_jitter(aes(color = SoilTemperature_to10cm), size=5) +
+  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
   theme_light(base_size = 12))
 
 #save bray curtis ordination
-ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), width = 5, height = 4)
+ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), 
+       width = 6, height = 5)
 
 
-#plot nmds (so far too few points)
-ord1 <- ordinate(phylo, method="NMDS", distance="bray")
-plot_ordination(phylo, ord1, color="Sample", shape="Classification") +
-  geom_point(size=5)
+#plot Sorenson ordination
+ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
+(sorenson.ord=plot_ordination(phylo, ord.sor, shape="Classification", title="Bray Curtis") +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save bray curtis ordination
+ggsave(sorenson.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), 
+       width = 6, height = 5)
+
 
 #make an output of total gene count per site
 gcounts=rowSums(rplB)
-
-#########################
-Phylogeny & Abundance
-#########################
 
 
 
