@@ -35,6 +35,7 @@ java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDP
 
 The representative sequences unfortunately have a nomenclature issue where they are called "cluster" while the others are called "OTU." We can simple replace cluster with otu
 ```
+sed -i 's/[0-9]\{1,\}/0000000&/g;s/0*\([0-9]\{4,\}\)/\1/g' complete.clust_rep_seqs.fasta 
 sed -i 's/cluster_/OTU_/g' complete.clust_rep_seqs.fasta
 ```
 
