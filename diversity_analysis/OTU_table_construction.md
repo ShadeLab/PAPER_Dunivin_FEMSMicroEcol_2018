@@ -18,9 +18,19 @@ The RDP has a script set up to specifically make OTU tables for R from Xander ou
 ##CLUSTERING
 ../get_OTUabundance.sh final_coverage.txt /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/OTUabundances/GENE 0 0.1 alignment/*
 
+#outputs:
+#ids - gives OTU number and contig name
+#samples - gives contig name and site of origin
+#rformat* - gives R formatted OTU table for each specified distance cutoff
+#derep.fa - aligned fasta file of all dereplicated sequences with contig name as heading
+#complete.clust - gives cluster number with corresponding site, cluster count, and contig name
+
 ##REPRESENTATIVE SEQUENCES
 #get and rename sequences
 java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar rep-seqs -c --id-mapping ids --one-rep-per-otu complete.clust 0.03 derep.fa
+
+#outputs:
+#complete.clust_rep_seqs.fasta - gives aligned file with cluster (OTU) number and represenative sequences at specified distance cutoff
 ```
 
 The representative sequences unfortunately have a nomenclature issue where they are called "cluster" while the others are called "OTU." We can simple replace cluster with otu
