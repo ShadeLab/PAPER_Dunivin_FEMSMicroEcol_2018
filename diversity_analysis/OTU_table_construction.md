@@ -11,40 +11,30 @@ cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/OTUabundances/GENE
 
 #merge coverage.txt files
 cat *coverage.txt >final_coverage.txt
+```
 
+The RDP has a script set up to specifically make OTU tables for R from Xander outputs. Use this in the following steps to get OTUs and representative sequences
+```
 ##CLUSTERING
-#dereplicate
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -m '#=GC_RF' -o derep.fa all_seqs.ids all_seqs.samples alignment/*.fasta
-
-#calculate distance matrix
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar dmatrix --id-mapping all_seqs.ids --in derep.fa --outfile derep_matrix.bin -l 200  --dist-cutoff 0.1
-
-#cluster
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar cluster --dist-file derep_matrix.bin --id-mapping all_seqs.ids --sample-mapping all_seqs.samples --method complete --outfile all_seq_complete.clust
-
-#export to r format (do this for several clustering distances)
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar cluster_to_Rformat all_seq_complete.clust . 0 0.03
+../get_OTUabundance.sh final_coverage.txt /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/OTUabundances/GENE 0 0.1 alignment/*
 
 ##REPRESENTATIVE SEQUENCES
-#merge aligned fasta files
-java -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/AlignmentTools/dist/AlignmentTools.jar alignment-merger alignment merged_aligned.fasta
-  
 #get and rename sequences
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar rep-seqs -c --id-mapping all_seqs.ids --one-rep-per-otu all_seq_complete.clust 0.03 merged_aligned.fasta
-
-#create biom file
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar cluster-to-biom all_seq_complete.clust 0.03 > all_seq_complete.clust.biom
-
-#add info
-biom add-metadata -i all_seq_complete.clust.biom -o all_seq_complete.clust.meta.biom --sample-metadata-fp ../meta.txt
-
-
-java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar derep -f -o all_seq_complete.clust_rep_seqs_modelonly.fasta ids samples all_seq_complete.clust_rep_seqs.fasta
+java -Xmx2g -jar /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/RDPTools/Clustering.jar rep-seqs -c --id-mapping ids --one-rep-per-otu complete.clust 0.03 derep.fa
 ```
+
+The representative sequences unfortunately have a nomenclature issue where they are called "cluster" while the others are called "OTU." We can simple replace cluster with otu
+```
+sed -i 's/cluster_/OTU_/g' complete.clust_rep_seqs.fasta
+```
+
+Now that sequence names have been adjusted, but we can make a .nwk tree of representative sequences of final OTUs
+```
+module load GNU/4.4.5
+module load FastTree/2.1.7
+FastTree -gtr < complete.clust_rep_seqs_modelonly.fasta > gene_dist_tree.nwk
+```
+
+
 
 Great website for learning phyloseq: https://joey711.github.io/phyloseq/import-data.html
-
-Need to adjust sequence names, but this makes a .nwk tree of final contigs
-```
-fasttree -nt -gtr < all_seq_complete.clust_rep_seqs_modelonly.fasta > my_expt_tree.nwk
-```
