@@ -32,6 +32,9 @@ rplB=data.matrix(rplB)
 #remove first column
 rplB=rplB[,-1]
 
+#make an output of total gene count per site
+rplB.gcounts=rowSums(rplB)
+
 #otu table
 otu=otu_table(rplB, taxa_are_rows = FALSE)
 
@@ -103,7 +106,7 @@ ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""),
 
 #plot Sorenson ordination
 ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
-(sorenson.ord=plot_ordination(phylo, ord.sor, shape="Classification", title="Bray Curtis") +
+(sorenson.ord=plot_ordination(phylo, ord.sor, shape="Classification", title="Sorenson") +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
@@ -114,9 +117,22 @@ ggsave(sorenson.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""),
        width = 6, height = 5)
 
 
-#make an output of total gene count per site
-gcounts=rowSums(rplB)
+#make object phylo with tree and biom info
+tree <- read.tree(file = paste(wd, "/data/rplB_0.03_tree.nwk", sep=""))
+tree <- phy_tree(tree)
 
+#merge
+phylo=merge_phyloseq(tree, rare, metad)
 
+#plot tree
+(tree.plot <- plot_tree(phylo, shape = "Classification", size = "abundance",
+                        color = "SoilTemperature_to10cm", label.tips=NULL, 
+                        text.size=2, ladderize="left", base.spacing = 0.04) +
+    theme(legend.position = "right", legend.title = element_text(size=11),
+          legend.key =element_blank()) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
 
+ggsave(tree.plot, filename = paste(wd, "/figures/rplb.tree.png", sep=""), 
+       width = 10, height = 40)
 
