@@ -392,7 +392,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03"),]
+meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -500,7 +500,8 @@ cen14 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen14.txt", sep = ""
                     col_names = TRUE, delim = "\t")
 cen03 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen03.txt", sep = ""), 
                     col_names = TRUE, delim = "\t")
-
+cen01 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen01.txt", sep = ""), 
+                    col_names = TRUE, delim = "\t")
 #make column for organism name
 cen14 <- cen14 %>%
   mutate(Site = "Cen14", Gene = "acr3", Census = 5243, rplB = 1974.53) %>%
@@ -516,8 +517,15 @@ cen03 <- cen03 %>%
   separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
   separate(organism, into = c("organism", "definition"), sep = ",definition=")
 
+cen01 <- cen01 %>%
+  mutate(Site = "Cen01", Gene = "acr3", Census = 3470, rplB = 1347.908) %>%
+  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
+         Normalized.Abundance.census = Abundance / Census) %>%  
+  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
+  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+
 #join data together
-acr3 <- rbind(cen03, cen14)
+acr3 <- rbind(cen03, cen14, cen01)
 acr3.high <- acr3[which(acr3$Abundance > 10),]
 
 #plot data
@@ -545,7 +553,7 @@ ggsave(acr3.abundance.taxon.plot,
 
 
 #########################
-#ACR3 DIVERSITY ANALYSIS#
+#AIOA DIVERSITY ANALYSIS#
 #########################
 
 #read in metadata
@@ -614,9 +622,6 @@ plieou$Site=rownames(plieou)
 
 #merge evenness information with fire classification
 plieou=inner_join(plieou, meta)
-
-#make color pallette
-GnYlOrRd=colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
 #plot evenness by fire classification
 (evenness <- ggplot(plieou, aes(x = Classification, y = plieou)) +
