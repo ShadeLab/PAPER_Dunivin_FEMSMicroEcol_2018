@@ -489,7 +489,8 @@ phylo=merge_phyloseq(tree, rare, metad)
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""))
+ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""), 
+       height = 10, width = 10)
 
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ACR3#
