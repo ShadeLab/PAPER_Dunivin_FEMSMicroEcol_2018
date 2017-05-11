@@ -189,7 +189,7 @@ ord <- ordinate(phylo, method="PCoA", distance="bray")
   theme_light(base_size = 12))
 
 #save bray curtis ordination
-ggsave(bc.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), 
+ggsave(bc.ord, filename = paste(wd, "/figures/braycurtis.ord.png", sep=""), 
        width = 6, height = 5)
 
 
@@ -202,7 +202,7 @@ ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
     theme_light(base_size = 12))
 
 #save bray curtis ordination
-ggsave(sorenson.ord, filename = paste(wd, "/figures/bc.ord.png", sep=""), 
+ggsave(sorenson.ord, filename = paste(wd, "/figures/sorenson.ord.png", sep=""), 
        width = 6, height = 5)
 
 
@@ -217,7 +217,7 @@ phylo=merge_phyloseq(tree, rare, metad)
 (tree.plot <- plot_tree(phylo, shape = "Classification", size = "abundance",
                         color = "SoilTemperature_to10cm", label.tips=NULL, 
                         text.size=2, ladderize="left", base.spacing = 0.04) +
-    theme(legend.position = "right", legend.title = element_text(size=11),
+    theme(legend.position = "right", legend.title = element_text(size=16),
           legend.key =element_blank()) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
@@ -322,15 +322,15 @@ tree <- phy_tree(tree)
 phylo=merge_phyloseq(tree, rare, metad)
 
 #plot tree
-(tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
-                        shape = "Classification", label.tips="taxa_names", 
+(arsB.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
+                        shape = "Classification", label.tips=NULL, 
                         text.size=2, ladderize="left", base.spacing = 0.03, sizebase = 2) +
     theme(legend.position = "right", legend.title = element_text(size=11),
           legend.key =element_blank()) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-plot_bar(phylo, fill = "Classification")
+ggsave(arsB.tree.plot, filename = paste(wd, "/figures/arsB.tree.png", sep=""))
 
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ARSB#
@@ -361,8 +361,11 @@ arsB <- rbind(cen17, cen10)
 arsB.high <- arsB[which(arsB$Abundance > 10),]
 
 #plot data
-ggplot(arsB, aes(x = Site, y = Normalized.Abundance.rplB)) +
-  geom_bar(stat = "identity")
+(arsB.abundance.plot <- ggplot(arsB, aes(x = Site, y = Normalized.Abundance.rplB)) +
+  geom_bar(stat = "identity") +
+    ylab("arsB Abundance (normalized to rplB)"))
+
+ggsave(arsB.abundance.plot, filename = paste(wd, "/figures/arsB.abundance.png", sep=""))
 
 ggplot(arsB, aes(x = Site, y = Normalized.Abundance.census)) +
   geom_bar(stat = "identity")
@@ -371,9 +374,15 @@ ggplot(arsB, aes(x = organism, y = Normalized.Abundance.census)) +
   geom_point(aes(color = Site)) +
   coord_flip()
 
-ggplot(arsB, aes(x = organism, y = Normalized.Abundance.rplB)) +
+#plot 
+(arsB.taxon.plot <- ggplot(arsB, aes(x = organism, y = Normalized.Abundance.rplB)) +
   geom_point(aes(color = Site)) +
-  coord_flip()
+  ylab("arsB Abundance (normalized to rplB)") +
+  xlab("Taxon") +
+  coord_flip())
+
+ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png", sep=""), 
+       width = 7, height = 5)
 
 #########################
 #ACR3 DIVERSITY ANALYSIS#
@@ -472,15 +481,15 @@ tree <- phy_tree(tree)
 phylo=merge_phyloseq(tree, rare, metad)
 
 #plot tree
-(tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
-                        shape = "Classification", label.tips="taxa_names", 
+(acr3.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
+                        shape = "Classification", label.tips=NULL, 
                         text.size=2, ladderize="left", base.spacing = 0.03) +
     theme(legend.position = "right", legend.title = element_text(size=11),
           legend.key =element_blank()) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-plot_bar(phylo, fill = "Classification")
+ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""))
 
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ACR3#
@@ -512,8 +521,11 @@ acr3 <- rbind(cen03, cen14)
 acr3.high <- acr3[which(acr3$Abundance > 10),]
 
 #plot data
-ggplot(acr3, aes(x = Site, y = Normalized.Abundance.rplB)) +
-  geom_bar(stat = "identity")
+(acr3.abundance.plot <- ggplot(acr3, aes(x = Site, y = Normalized.Abundance.rplB)) +
+  geom_bar(stat = "identity") +
+    ylab("acr3 Abundance (normalized to rplB)"))
+
+ggsave(acr3.abundance.plot, filename = paste(wd, "/figures/acr3.abundance.png", sep=""))
 
 ggplot(acr3, aes(x = Site, y = Normalized.Abundance.census)) +
   geom_bar(stat = "identity")
@@ -522,9 +534,15 @@ ggplot(acr3, aes(x = organism, y = Normalized.Abundance.census)) +
   geom_point(aes(color = Site)) +
   coord_flip()
 
-ggplot(acr3, aes(x = organism, y = Normalized.Abundance.rplB)) +
+(acr3.abundance.taxon.plot <- ggplot(acr3, aes(x = organism, 
+                                               y = Normalized.Abundance.rplB)) +
   geom_point(aes(color = Site)) +
-  coord_flip()
+    ylab("acr3 abundance (normalized to rplB)") +
+    xlab("Taxon") +
+  coord_flip())
+ggsave(acr3.abundance.taxon.plot, 
+       filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 6.5)
+
 
 #########################
 #ACR3 DIVERSITY ANALYSIS#
@@ -624,7 +642,7 @@ tree <- phy_tree(tree)
 phylo=merge_phyloseq(tree, rare, metad)
 
 #plot tree
-(tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
+(aioA.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
                         shape = "Classification", label.tips="taxa_names", 
                         text.size=2, ladderize="left", base.spacing = 0.03, sizebase = 2) +
     theme(legend.position = "right", legend.title = element_text(size=11),
@@ -632,7 +650,8 @@ phylo=merge_phyloseq(tree, rare, metad)
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-plot_bar(phylo, fill = "Classification")
+ggsave(aioA.tree.plot, filename = paste(wd, "/figures/aioA.tree.png", sep=""))
+
 
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR AIOA#
@@ -664,8 +683,11 @@ aioA <- rbind(cen07, cen10)
 aioA.high <- aioA[which(aioA$Abundance > 10),]
 
 #plot data
-ggplot(aioA, aes(x = Site, y = Normalized.Abundance.rplB)) +
-  geom_bar(stat = "identity")
+(aioA.abundance.plot <- ggplot(aioA, aes(x = Site, y = Normalized.Abundance.rplB)) +
+  geom_bar(stat = "identity") +
+    ylab("aioA Abundance (normalized to rplB)"))
+
+ggsave(aioA.abundance.plot, filename = paste(wd, "/figures/aioA.abundance.png", sep = ""))
 
 ggplot(aioA, aes(x = Site, y = Normalized.Abundance.census)) +
   geom_bar(stat = "identity")
@@ -674,10 +696,13 @@ ggplot(aioA, aes(x = organism, y = Normalized.Abundance.census)) +
   geom_point(aes(color = Site)) +
   coord_flip()
 
-ggplot(aioA, aes(x = organism, y = Normalized.Abundance.rplB)) +
+(aioA.abundance.taxon.plot <- ggplot(aioA, aes(x = organism, 
+                                               y = Normalized.Abundance.rplB)) +
   geom_point(aes(color = Site)) +
-  coord_flip()
-
+    ylab("aioA abundance (normalized to rplB)") +
+    xlab("Taxon") +
+  coord_flip())
+ggsave(aioA.abundance.taxon.plot, filename = paste(wd, "/figures/aioA.abundance.taxon.png", sep = ""))
 
 
 
