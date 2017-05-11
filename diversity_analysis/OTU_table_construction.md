@@ -43,7 +43,7 @@ Now that sequence names have been adjusted, but we can make a .nwk tree of repre
 ```
 module load GNU/4.4.5
 module load FastTree/2.1.7
-FastTree complete.clust_rep_seqs_modelonly.fasta > gene_dist_tree.nwk
+FastTree complete.clust_rep_seqs.fasta > gene_dist_tree.nwk
 ```
 
 
