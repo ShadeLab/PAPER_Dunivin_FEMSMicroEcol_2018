@@ -572,6 +572,7 @@ ggsave(uni.w.ord.acr3, filename = paste(wd, "/figures/acr3.w.unifrac.ord.png", s
 ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""), 
        height = 10, width = 10)
 
+
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ACR3#
 ##############################################
@@ -680,7 +681,6 @@ ggsave(acr3.abundance.census.taxon.plot,
                           guide_legend(title="Temperature (°C)")))
 ggsave(acr3.abundance.taxon.plot, 
        filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 6.5)
-
 
 #########################
 #AIOA DIVERSITY ANALYSIS#
