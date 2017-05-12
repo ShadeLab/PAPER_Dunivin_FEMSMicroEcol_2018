@@ -46,13 +46,16 @@ data <- data %>%
 data$Fraction.Abundance <- as.numeric(data$Fraction.Abundance)
 data$Abundance <- as.numeric(data$Abundance)
 
+#change site from "cen" to "Cen" so it matches metadata
+data$Site <- gsub("cen", "Cen", data$Site)
+
 #double check that all fraction abundances = 1
 #slightly above or below is okay (Xander rounds)
 summarised <- data %>%
-  summarise(N = length(Site), Total = sum(Fraction.Abundance))
+  summarise(Total = sum(Fraction.Abundance), rplB = sum(Abundance))
 
 #change site from "cen" to "Cen" so it matches metadata
-data$Site <- gsub("cen", "Cen", data$Site)
+summarised$Site <- gsub("cen", "Cen", summarised$Site)
 
 #decast for abundance check
 dcast=acast(data, Taxon ~ Site, value.var = "Fraction.Abundance")
@@ -201,10 +204,9 @@ ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
                           guide_legend(title="Temperature (°C)")) +
     theme_light(base_size = 12))
 
-#save bray curtis ordination
+#save sorenson ordination
 ggsave(sorenson.ord, filename = paste(wd, "/figures/sorenson.ord.png", sep=""), 
        width = 6, height = 5)
-
 
 #make object phylo with tree and biom info
 tree <- read.tree(file = paste(wd, "/data/rplB_0.03_tree.nwk", sep=""))
@@ -212,6 +214,32 @@ tree <- phy_tree(tree)
 
 #merge
 phylo=merge_phyloseq(tree, rare, metad)
+
+#plot unweighted Unifrac ordination
+uni.u.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = FALSE)
+(uni.u.ord.rplB=plot_ordination(phylo, uni.u.ord.rplB, shape="Classification", 
+                                title="Unweighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save unweighted Unifrac ordination
+ggsave(uni.u.ord.rplB, filename = paste(wd, "/figures/rplB.u.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot weighted Unifrac ordination
+uni.w.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = TRUE)
+(uni.w.ord.rplB=plot_ordination(phylo, uni.w.ord.rplB, shape="Classification", 
+                                title="Weighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save weighted Unifrac ordination
+ggsave(uni.w.ord.rplB, filename = paste(wd, "/figures/rplB.w.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
 
 #plot tree
 (tree.plot <- plot_tree(phylo, shape = "Classification", size = "abundance",
@@ -392,7 +420,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04"),]
+meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04" | meta$Site == "Cen07" | meta$Site == "Cen15" | meta$Site == "Cen12"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -459,7 +487,8 @@ GnYlOrRd=colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
 #plot evenness by fire classification
 (evenness <- ggplot(plieou, aes(x = Classification, y = plieou)) +
-    geom_point(aes(color = SoilTemperature_to10cm), size=3) +
+    geom_boxplot() +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size=3) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     ylab("Evenness") +
@@ -493,7 +522,7 @@ ord.acr3 <- ordinate(phylo, method="PCoA", distance="bray")
 ggsave(bc.ord.acr3, filename = paste(wd, "/figures/acr3.braycurtis.ord.png", sep=""), 
        width = 6, height = 5)
 
-#plot Bray Curtis ordination
+#plot Sorenson ordination
 s.ord.acr3 <- ordinate(phylo, method="PCoA", distance="bray", binary=TRUE)
 (sorenson.ord.acr3=plot_ordination(phylo, s.ord.acr3, shape="Classification", title="Sorenson") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
@@ -505,12 +534,40 @@ s.ord.acr3 <- ordinate(phylo, method="PCoA", distance="bray", binary=TRUE)
 ggsave(sorenson.ord.acr3, filename = paste(wd, "/figures/acr3.sorenson.ord.png", sep=""), 
        width = 6, height = 5)
 
+#plot unweighted Unifrac ordination
+uni.u.ord.acr3 <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = FALSE)
+(uni.u.ord.acr3=plot_ordination(phylo, uni.u.ord.acr3, shape="Classification", 
+                              title="Unweighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save unweighted Unifrac ordination
+ggsave(uni.u.ord.acr3, filename = paste(wd, "/figures/acr3.u.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot weighted Unifrac ordination
+uni.w.ord.acr3 <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = TRUE)
+(uni.w.ord.acr3=plot_ordination(phylo, uni.w.ord.acr3, shape="Classification", 
+                              title="Weighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save weighted Unifrac ordination
+ggsave(uni.w.ord.acr3, filename = paste(wd, "/figures/acr3.w.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
+
 #plot tree
-(acr3.tree.plot <- plot_tree(phylo, color = "Sample", size = "abundance",
+(acr3.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
                         shape = "Classification", label.tips=NULL, 
-                        text.size=2, ladderize="left", base.spacing = 0.03) +
+                        text.size=2, ladderize="left", base.spacing = 0.04) +
     theme(legend.position = "right", legend.title = element_text(size=11),
-          legend.key =element_blank()))
+          legend.key =element_blank()) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
 
 ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""), 
        height = 10, width = 10)
@@ -519,68 +576,108 @@ ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""),
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ACR3#
 ##############################################
 
-#read in each file (one per site)
-cen14 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen14.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
-cen03 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen03.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
-cen01 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen01.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
-cen04 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen04.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
-#make column for organism name
-cen14 <- cen14 %>%
-  mutate(Site = "Cen14", Gene = "acr3", Census = 5243, rplB = 1974.53) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%
-  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+#temporarily change working directory to data to bulk load files
+setwd(paste(wd, "/data", sep = ""))
 
-cen03 <- cen03 %>%
-  mutate(Site = "Cen03", Gene = "acr3", Census = 4316, rplB = 1347.908) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%  
-  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+#read in abundance data
+names.acr3=list.files(pattern="*acr3_45_taxonabund.txt")
+data.acr3 <- do.call(rbind, lapply(names.acr3, function(X) {
+  data.frame(id = basename(X), read_table(X))}))
 
-cen01 <- cen01 %>%
-  mutate(Site = "Cen01", Gene = "acr3", Census = 3470, rplB = 1347.908) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%  
-  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+#move back up a directory to proceed with analysis
+setwd("../")
+wd <- print(getwd())
 
-cen04 <- cen04 %>%
-  mutate(Site = "Cen04", Gene = "acr3", Census = 4092.17, rplB = 971) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%  
-  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+#remove NA rows 
+data.acr3 <- data.acr3[!is.na(data.acr3$Taxon.Abundance.Fraction.Abundance),]
 
-#join data together
-acr3 <- rbind(cen03, cen14, cen01, cen04)
-acr3.high <- acr3[which(acr3$Abundance > 10),]
+#split columns 
+data.acr3 <- data.acr3 %>%
+  separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
+  separate(col = Taxon.Abundance.Fraction.Abundance, 
+           into = c("Taxon", "Abundance", "Fraction.Abundance"), 
+           sep = "\t") %>%
+  select(-junk) %>%
+  group_by(Site)
+
+#make sure abundance and fraction abundance are numbers
+#R will think it's a char since it started w taxon name
+data.acr3$Fraction.Abundance <- as.numeric(data.acr3$Fraction.Abundance)
+data.acr3$Abundance <- as.numeric(data.acr3$Abundance)
+
+#double check that all fraction abundances = 1
+#slightly above or below is okay (Xander rounds)
+summarised.acr3 <- data.acr3 %>%
+  summarise(N = length(Site), Total = sum(Fraction.Abundance))
+
+#change "cen" to "Cen" so it matches outside data
+data.acr3$Site <- gsub("cen", "Cen", data.acr3$Site)
+
+#read in microbe census data
+census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""), delim = "\t", 
+                     col_types = list(col_character(), col_number(), col_number(), col_number()))
+
+#read in arsenic and temperature data
+meta <- data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
+
+#make column for organism name and join with microbe census data and normalize to it
+data.acr3 <- data.acr3 %>%
+  left_join(census, by = "Site") %>%
+  left_join(summarised, by = "Site") %>%
+  left_join(meta, by = "Site") %>%
+  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
+  separate(organism, into = c("organism", "definition"), sep = ",definition=") %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  select(Site, As_ppm, Temp, Classification, organism, Abundance, 
+         Fraction.Abundance, GE, rplB) %>%
+  mutate(Normalized.Abundance.census = Abundance / GE, 
+         Normalized.Abundance.rplB = Abundance / rplB)
+
+###TEMPORARY
+#remove Cen01 since it cant be normalized to rplB yet
+data.acr3 <- data.acr3[-which(data.acr3$Site == "Cen01"),]
 
 #plot data
-(acr3.abundance.plot <- ggplot(acr3, aes(x = Site, y = Normalized.Abundance.rplB)) +
+(acr3.abundance.plot <- ggplot(data.acr3, aes(x = Site, y = Normalized.Abundance.rplB, 
+                                              fill = Classification)) +
   geom_bar(stat = "identity") +
-    ylab("acr3 Abundance (normalized to rplB)"))
+    scale_fill_manual(values = c("red", "yellow")) +
+    ylab("acr3 Abundance (normalized to rplB)") +
+    theme_classic())
 
 ggsave(acr3.abundance.plot, filename = paste(wd, "/figures/acr3.abundance.png", sep=""))
 
-ggplot(acr3, aes(x = Site, y = Normalized.Abundance.census)) +
-  geom_bar(stat = "identity")
+(acr3.abundance.census.plot <- ggplot(data.acr3, aes(x = Site, 
+                                                     y = Normalized.Abundance.census, 
+                                                     fill = Classification)) +
+    geom_bar(stat = "identity") +
+    scale_fill_manual(values = c("red", "yellow")) +
+    ylab("acr3 Abundance (normalized to genome equivalents)") +
+    theme_classic())
 
-ggplot(acr3, aes(x = organism, y = Normalized.Abundance.census)) +
-  geom_point(aes(color = Site)) +
-  coord_flip()
+ggsave(acr3.abundance.census.plot, filename = paste(wd, "/figures/acr3.abundance.census.png",
+                                                    sep=""))
 
-(acr3.abundance.taxon.plot <- ggplot(acr3, aes(x = organism, 
-                                               y = Normalized.Abundance.rplB)) +
-  geom_point(aes(color = Site)) +
+
+(acr3.abundance.census.taxon.plot <- ggplot(data.acr3, aes(x = organism, 
+                                                    y = Normalized.Abundance.census)) +
+    geom_point(aes(color = Temp, shape = Classification)) +
     ylab("acr3 abundance (normalized to rplB)") +
     xlab("Taxon") +
-  coord_flip())
+    coord_flip() +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
+ggsave(acr3.abundance.census.taxon.plot, 
+       filename = paste(wd, "/figures/acr3.abundance.census.taxon.png", sep=""), height = 6.5)
+
+(acr3.abundance.taxon.plot <- ggplot(data.acr3, aes(x = organism, 
+                                               y = Normalized.Abundance.rplB)) +
+  geom_point(aes(color = Temp, shape = Classification)) +
+    ylab("acr3 abundance (normalized to rplB)") +
+    xlab("Taxon") +
+  coord_flip() +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
 ggsave(acr3.abundance.taxon.plot, 
        filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 6.5)
 

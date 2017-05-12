@@ -1,0 +1,35 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(2847362..2848426),organism=Geobacillus sp. JS12,definition=arsenical-resistance protein	4.124	0.0060
+coded_by=complement(5513..6616),organism=Nitrospira bacterium SG8_35_4,definition=arsenic resistance protein ArsB	7.827	0.0114
+coded_by=262..1371,organism=Gammaproteobacteria bacterium SG8_47,definition=arsenic transporter	11.017	0.0161
+coded_by=complement(100964..102028),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	3.773	0.0055
+coded_by=11838..12941,organism=Nitrospirae bacterium 13_1_40CM_4_62_6,definition=arsenical-resistance protein	43.742999999999995	0.0638
+coded_by=complement(25512..26588),organism=Armatimonadetes bacterium RBG_16_67_12,definition=arsenical-resistance protein	76.852	0.1121
+coded_by=1407401..1408471,organism=Oscillatoria nigro-viridis PCC 7112,definition=arsenical-resistance protein	1.555	0.0023
+coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	9.161999999999999	0.0134
+coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	3.287	0.0048
+coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	9.638	0.0141
+coded_by=complement(1255638..1256693),organism=Agrobacterium radiobacter K84,definition=arsenical-resistance protein	14.554	0.0212
+coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	67.57400000000001	0.0986
+coded_by=232130..233218,organism=Micromonospora matsumotoense,definition=arsenite transporter, ACR3 family	3.286	0.0048
+coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	10.983	0.0160
+coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	60.607	0.0884
+coded_by=complement(1317..2399),organism=Betaproteobacteria bacterium RIFCSPLOWO2_02_FULL_64_12,definition=arsenical-resistance protein	16.958	0.0247
+coded_by=4835511..4836581,organism=Acidobacteria bacterium DSM 100886,definition=arsenical-resistance protein	5.933	0.0087
+coded_by=87788..88876,organism=Chloroflexi bacterium 44-23,definition=arsenical-resistance protein	3.885	0.0057
+coded_by=17212..18264,organism=Nitrospirae bacterium CG2_30_41_42,definition=hypothetical protein	10.583	0.0154
+coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	32.117	0.0468
+coded_by=33505..34569,organism=Afipia sp. P52-10,definition=arsenic transporter	5.887	0.0086
+coded_by=639506..640576,organism=Pelotomaculum thermopropionicum SI,definition=arsenite efflux pump ACR3 and related permeases	8.524	0.0124
+coded_by=38028..39104,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_67_36,definition=arsenical-resistance protein	43.477000000000004	0.0634
+coded_by=19940..20995,organism=Candidatus Firestonebacteria bacterium RIFOXYD2_FULL_39_29,definition=arsenical-resistance protein	7.619	0.0111
+coded_by=15269..16375,organism=Planctomycetales bacterium 71-10,definition=arsenical-resistance protein	2.442	0.0036
+coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	4.135	0.0060
+coded_by=9105..10166,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=arsenical-resistance protein	44.976	0.0656
+coded_by=complement(1484499..1485596),organism=Candidatus Nitrospira nitrosa,definition=conserved membrane hypothetical protein	17.027	0.0248
+coded_by=22284..23339,organism=Paracoccus alkenifer,definition=arsenite transporter, ACR3 family	95.931	0.1399
+coded_by=complement(65463..66596),organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenical-resistance protein	2.008	0.0029
+coded_by=92466..93542,organism=Candidatus Edwardsbacteria bacterium RifOxyC12_full_54_24,definition=arsenical-resistance protein	2.006	0.0029
+coded_by=416915..418009,organism=Cystobacter fuscus DSM 2262,definition=Arsenical-resistance protein ACR3	4.369	0.0064
+coded_by=complement(2246..3301),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	17.713	0.0258
+coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	31.987000000000002	0.0467
