@@ -392,7 +392,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01"),]
+meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -481,13 +481,11 @@ tree <- phy_tree(tree)
 phylo=merge_phyloseq(tree, rare, metad)
 
 #plot tree
-(acr3.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
+(acr3.tree.plot <- plot_tree(phylo, color = "Sample", size = "abundance",
                         shape = "Classification", label.tips=NULL, 
                         text.size=2, ladderize="left", base.spacing = 0.03) +
     theme(legend.position = "right", legend.title = element_text(size=11),
-          legend.key =element_blank()) +
-    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                          guide_legend(title="Temperature (°C)")))
+          legend.key =element_blank()))
 
 ggsave(acr3.tree.plot, filename = paste(wd, "/figures/acr3.tree.png", sep=""), 
        height = 10, width = 10)
@@ -502,6 +500,8 @@ cen14 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen14.txt", sep = ""
 cen03 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen03.txt", sep = ""), 
                     col_names = TRUE, delim = "\t")
 cen01 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen01.txt", sep = ""), 
+                    col_names = TRUE, delim = "\t")
+cen04 <- read_delim(file = paste(wd, "/data/acr3_taxonabund_cen04.txt", sep = ""), 
                     col_names = TRUE, delim = "\t")
 #make column for organism name
 cen14 <- cen14 %>%
@@ -525,8 +525,15 @@ cen01 <- cen01 %>%
   separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
   separate(organism, into = c("organism", "definition"), sep = ",definition=")
 
+cen04 <- cen04 %>%
+  mutate(Site = "Cen04", Gene = "acr3", Census = 4092.17, rplB = 971) %>%
+  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
+         Normalized.Abundance.census = Abundance / Census) %>%  
+  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
+  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+
 #join data together
-acr3 <- rbind(cen03, cen14, cen01)
+acr3 <- rbind(cen03, cen14, cen01, cen04)
 acr3.high <- acr3[which(acr3$Abundance > 10),]
 
 #plot data
