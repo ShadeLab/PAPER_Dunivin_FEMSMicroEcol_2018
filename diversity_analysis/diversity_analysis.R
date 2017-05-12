@@ -183,7 +183,7 @@ ggsave(evenness, filename = paste(wd, "/figures/evenness.png", sep=""),
 #plot Bray Curtis ordination
 ord <- ordinate(phylo, method="PCoA", distance="bray")
 (bc.ord=plot_ordination(phylo, ord, shape="Classification", title="Bray Curtis") +
-  geom_jitter(aes(color = SoilTemperature_to10cm), size=5) +
+  geom_point(aes(color = SoilTemperature_to10cm), size=5) +
   scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
   theme_light(base_size = 12))
@@ -196,7 +196,7 @@ ggsave(bc.ord, filename = paste(wd, "/figures/braycurtis.ord.png", sep=""),
 #plot Sorenson ordination
 ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
 (sorenson.ord=plot_ordination(phylo, ord.sor, shape="Classification", title="Sorenson") +
-    geom_jitter(aes(color = SoilTemperature_to10cm), size=5) +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     theme_light(base_size = 12))
@@ -479,6 +479,31 @@ tree <- phy_tree(tree)
 
 #merge
 phylo=merge_phyloseq(tree, rare, metad)
+
+
+#plot Bray Curtis ordination
+ord.acr3 <- ordinate(phylo, method="PCoA", distance="bray")
+(bc.ord.acr3=plot_ordination(phylo, ord.acr3, shape="Classification", title="Bray Curtis") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save bray curtis ordination
+ggsave(bc.ord.acr3, filename = paste(wd, "/figures/acr3.braycurtis.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot Bray Curtis ordination
+s.ord.acr3 <- ordinate(phylo, method="PCoA", distance="bray", binary=TRUE)
+(sorenson.ord.acr3=plot_ordination(phylo, s.ord.acr3, shape="Classification", title="Sorenson") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save sorenson ordination
+ggsave(sorenson.ord.acr3, filename = paste(wd, "/figures/acr3.sorenson.ord.png", sep=""), 
+       width = 6, height = 5)
 
 #plot tree
 (acr3.tree.plot <- plot_tree(phylo, color = "Sample", size = "abundance",
