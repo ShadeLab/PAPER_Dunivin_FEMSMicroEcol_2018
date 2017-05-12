@@ -459,7 +459,9 @@ rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "bl
 phylo=merge_phyloseq(rare, metad)
 
 #plot phylo richness
-(richness=plot_richness(phylo, x="Sample", shape="Classification", color = "SoilTemperature_to10cm"))
+(richness=plot_richness(phylo, x="Classification", color = "SoilTemperature_to10cm") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
 
 #save plot 
 ggsave(richness, filename = paste(wd, "/figures/acr3.richness.png", sep=""), 
