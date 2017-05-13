@@ -691,7 +691,7 @@ ggsave(acr3.abundance.taxon.plot,
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have aioA info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12"),]
+meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12" | meta$Site == "Cen04" | meta$Site == "Cen06"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -789,6 +789,71 @@ phylo=merge_phyloseq(tree, rare, metad)
 
 ggsave(aioA.tree.plot, filename = paste(wd, "/figures/aioA.tree.png", sep=""))
 
+#merge
+phylo=merge_phyloseq(tree, rare, metad)
+
+
+#plot Bray Curtis ordination
+ord.aioA <- ordinate(phylo, method="PCoA", distance="bray")
+(bc.ord.aioA=plot_ordination(phylo, ord.aioA, shape="Classification", title="Bray Curtis") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save bray curtis ordination
+ggsave(bc.ord.aioA, filename = paste(wd, "/figures/aioA.braycurtis.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot Sorenson ordination
+s.ord.aioA <- ordinate(phylo, method="PCoA", distance="bray", binary=TRUE)
+(sorenson.ord.aioA=plot_ordination(phylo, s.ord.aioA, shape="Classification", title="Sorenson") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save sorenson ordination
+ggsave(sorenson.ord.aioA, filename = paste(wd, "/figures/aioA.sorenson.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot unweighted Unifrac ordination
+uni.u.ord.aioA <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = FALSE)
+(uni.u.ord.aioA=plot_ordination(phylo, uni.u.ord.aioA, shape="Classification", 
+                                title="Unweighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save unweighted Unifrac ordination
+ggsave(uni.u.ord.aioA, filename = paste(wd, "/figures/aioA.u.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot weighted Unifrac ordination
+uni.w.ord.aioA <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = TRUE)
+(uni.w.ord.aioA=plot_ordination(phylo, uni.w.ord.aioA, shape="Classification", 
+                                title="Weighted Unifrac") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save weighted Unifrac ordination
+ggsave(uni.w.ord.aioA, filename = paste(wd, "/figures/aioA.w.unifrac.ord.png", sep=""), 
+       width = 6, height = 5)
+
+#plot tree
+(aioA.tree.plot <- plot_tree(phylo, color = "SoilTemperature_to10cm", size = "abundance",
+                             shape = "Classification", label.tips=NULL, 
+                             text.size=2, ladderize="left", base.spacing = 0.04) +
+    theme(legend.position = "right", legend.title = element_text(size=11),
+          legend.key =element_blank()) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
+
+ggsave(aioA.tree.plot, filename = paste(wd, "/figures/aioA.tree.png", sep=""), 
+       height = 10, width = 10)
 
 ##############################################
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR AIOA#
@@ -900,3 +965,4 @@ ggsave(aioA.abundance.census.taxon.plot,
                           guide_legend(title="Temperature (°C)")))
 ggsave(aioA.abundance.taxon.plot, 
        filename = paste(wd, "/figures/aioA.abundance.taxon.png", sep=""), height = 10)
+

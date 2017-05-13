@@ -1,0 +1,5 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(56527..59064),organism=Agrobacterium sp. D14,definition=arsenite oxidase large subunit	2.541	0.1925
+coded_by=complement(39493..42117),organism=Roseomonas cervicalis ATCC 49957,definition=arsenite oxidase	3.397	0.2574
+coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	4.502	0.3411
+coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	2.757	0.2089
