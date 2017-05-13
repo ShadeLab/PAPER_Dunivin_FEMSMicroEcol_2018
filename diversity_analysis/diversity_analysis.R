@@ -420,7 +420,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04" | meta$Site == "Cen07" | meta$Site == "Cen15" | meta$Site == "Cen12"),]
+meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04" | meta$Site == "Cen07" | meta$Site == "Cen15" | meta$Site == "Cen12" | meta$Site == "Cen06"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -670,7 +670,7 @@ ggsave(acr3.abundance.census.plot, filename = paste(wd, "/figures/acr3.abundance
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 ggsave(acr3.abundance.census.taxon.plot, 
-       filename = paste(wd, "/figures/acr3.abundance.census.taxon.png", sep=""), height = 6.5)
+       filename = paste(wd, "/figures/acr3.abundance.census.taxon.png", sep=""), height = 10)
 
 (acr3.abundance.taxon.plot <- ggplot(data.acr3, aes(x = organism, 
                                                y = Normalized.Abundance.rplB)) +
@@ -681,7 +681,7 @@ ggsave(acr3.abundance.census.taxon.plot,
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 ggsave(acr3.abundance.taxon.plot, 
-       filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 6.5)
+       filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 10)
 
 #########################
 #AIOA DIVERSITY ANALYSIS#
@@ -691,7 +691,7 @@ ggsave(acr3.abundance.taxon.plot,
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have aioA info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10"),]
+meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -722,6 +722,7 @@ otu=otu_table(aioA, taxa_are_rows = FALSE)
 rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
 
 #rarefy
+rare=otu
 rare=rarefy_even_depth(otu, sample.size = min(sample_sums(otu)), rngseed = TRUE)
 
 #check curve
@@ -756,7 +757,7 @@ plieou=inner_join(plieou, meta)
 
 #plot evenness by fire classification
 (evenness <- ggplot(plieou, aes(x = Classification, y = plieou)) +
-    geom_point(aes(color = SoilTemperature_to10cm), size=3) +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size=3) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     ylab("Evenness") +
@@ -793,64 +794,109 @@ ggsave(aioA.tree.plot, filename = paste(wd, "/figures/aioA.tree.png", sep=""))
 #EXAMINE TAXON ABUNDANCE DIFFERENCES FOR AIOA#
 ##############################################
 
-#read in each file (one per site)
-cen10 <- read_delim(file = paste(wd, "/data/aioA_taxonabund_cen10.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
-cen07 <- read_delim(file = paste(wd, "/data/aioA_taxonabund_cen07.txt", sep = ""), 
-                    col_names = TRUE, delim = "\t")
+#temporarily change working directory to data to bulk load files
+setwd(paste(wd, "/data", sep = ""))
 
-#make column for organism name
-cen10 <- cen10 %>%
-  mutate(Site = "cen10", Gene = "aioA", Census = 8744.20, rplB = 3040) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%
+#read in abundance data
+names.aioA=list.files(pattern="*aioA_45_taxonabund.txt")
+data.aioA <- do.call(rbind, lapply(names.aioA, function(X) {
+  data.frame(id = basename(X), read_table(X))}))
+
+#move back up a directory to proceed with analysis
+setwd("../")
+wd <- print(getwd())
+
+#remove NA rows 
+data.aioA <- data.aioA[!is.na(data.aioA$Taxon.Abundance.Fraction.Abundance),]
+
+#split columns 
+data.aioA <- data.aioA %>%
+  separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
+  separate(col = Taxon.Abundance.Fraction.Abundance, 
+           into = c("Taxon", "Abundance", "Fraction.Abundance"), 
+           sep = "\t") %>%
+  select(-junk) %>%
+  group_by(Site)
+#for now remove cen12
+data.aioA <- data.aioA[-which(data.aioA$Site == "cen12"),]
+
+#make sure abundance and fraction abundance are numbers
+#R will think it's a char since it started w taxon name
+data.aioA$Fraction.Abundance <- as.numeric(data.aioA$Fraction.Abundance)
+data.aioA$Abundance <- as.numeric(data.aioA$Abundance)
+
+#double check that all fraction abundances = 1
+#slightly above or below is okay (Xander rounds)
+summarised.aioA <- data.aioA %>%
+  summarise(N = length(Site), Total = sum(Fraction.Abundance))
+
+#change "cen" to "Cen" so it matches outside data
+data.aioA$Site <- gsub("cen", "Cen", data.aioA$Site)
+
+#read in microbe census data
+census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""), delim = "\t", 
+                     col_types = list(col_character(), col_number(), col_number(), col_number()))
+
+#read in arsenic and temperature data
+meta <- data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
+
+#make column for organism name and join with microbe census data and normalize to it
+data.aioA <- data.aioA %>%
+  left_join(census, by = "Site") %>%
+  left_join(summarised, by = "Site") %>%
+  left_join(meta, by = "Site") %>%
   separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
+  separate(organism, into = c("organism", "definition"), sep = ",definition=") %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  select(Site, As_ppm, Temp, Classification, organism, Abundance, 
+         Fraction.Abundance, GE, rplB) %>%
+  mutate(Normalized.Abundance.census = Abundance / GE, 
+         Normalized.Abundance.rplB = Abundance / rplB)
 
-cen07 <- cen07 %>%
-  mutate(Site = "cen07", Gene = "aioA", Census = 3584.52, rplB = 1347.908) %>%
-  mutate(Normalized.Abundance.rplB = Abundance / rplB, 
-         Normalized.Abundance.census = Abundance / Census) %>%  
-  separate(Taxon, into = c("coded_by", "organism"), sep = ",organism=") %>%
-  separate(organism, into = c("organism", "definition"), sep = ",definition=")
-
-#join data together
-aioA <- rbind(cen07, cen10)
-aioA.high <- aioA[which(aioA$Abundance > 10),]
+###TEMPORARY
+#remove Cen01 since it cant be normalized to rplB yet
+data.aioA <- data.aioA[-which(data.aioA$Site == "Cen01"),]
 
 #plot data
-(aioA.abundance.plot <- ggplot(aioA, aes(x = Site, y = Normalized.Abundance.rplB)) +
-  geom_bar(stat = "identity") +
-    ylab("aioA Abundance (normalized to rplB)"))
+(aioA.abundance.plot <- ggplot(data.aioA, aes(x = Site, y = Normalized.Abundance.rplB, 
+                                              fill = Classification)) +
+    geom_bar(stat = "identity") +
+    scale_fill_manual(values = c("red", "yellow")) +
+    ylab("aioA Abundance (normalized to rplB)") +
+    theme_classic())
 
-ggsave(aioA.abundance.plot, filename = paste(wd, "/figures/aioA.abundance.png", sep = ""))
+ggsave(aioA.abundance.plot, filename = paste(wd, "/figures/aioA.abundance.png", sep=""))
 
-ggplot(aioA, aes(x = Site, y = Normalized.Abundance.census)) +
-  geom_bar(stat = "identity")
+(aioA.abundance.census.plot <- ggplot(data.aioA, aes(x = Site, 
+                                                     y = Normalized.Abundance.census, 
+                                                     fill = Classification)) +
+    geom_bar(stat = "identity") +
+    scale_fill_manual(values = c("red", "yellow")) +
+    ylab("aioA Abundance (normalized to genome equivalents)") +
+    theme_classic())
 
-ggplot(aioA, aes(x = organism, y = Normalized.Abundance.census)) +
-  geom_point(aes(color = Site)) +
-  coord_flip()
+ggsave(aioA.abundance.census.plot, filename = paste(wd, "/figures/aioA.abundance.census.png",
+                                                    sep=""))
 
-(aioA.abundance.taxon.plot <- ggplot(aioA, aes(x = organism, 
-                                               y = Normalized.Abundance.rplB)) +
-  geom_point(aes(color = Site)) +
+
+(aioA.abundance.census.taxon.plot <- ggplot(data.aioA, aes(x = organism, 
+                                                           y = Normalized.Abundance.census)) +
+    geom_point(aes(color = Temp, shape = Classification)) +
     ylab("aioA abundance (normalized to rplB)") +
     xlab("Taxon") +
-  coord_flip())
-ggsave(aioA.abundance.taxon.plot, filename = paste(wd, "/figures/aioA.abundance.taxon.png", sep = ""))
+    coord_flip() +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
+ggsave(aioA.abundance.census.taxon.plot, 
+       filename = paste(wd, "/figures/aioA.abundance.census.taxon.png", sep=""), height = 10)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(aioA.abundance.taxon.plot <- ggplot(data.aioA, aes(x = organism, 
+                                                    y = Normalized.Abundance.rplB)) +
+    geom_point(aes(color = Temp, shape = Classification)) +
+    ylab("aioA abundance (normalized to rplB)") +
+    xlab("Taxon") +
+    coord_flip() +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")))
+ggsave(aioA.abundance.taxon.plot, 
+       filename = paste(wd, "/figures/aioA.abundance.taxon.png", sep=""), height = 10)
