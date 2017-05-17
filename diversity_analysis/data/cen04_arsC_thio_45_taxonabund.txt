@@ -1,0 +1,13 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(4726..5151),organism=Caldalkalibacillus thermarum TA2.A1,definition=protein tyrosine phosphatase	3.24	0.0939
+coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	3.1399999999999997	0.0910
+coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	1.349	0.0391
+coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	3.912	0.1133
+coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	2.412	0.0699
+coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	4.058	0.1176
+coded_by=2383..2778,organism=Staphylococcus aureus,definition=ArsC	1.323	0.0383
+coded_by=complement(20262..20684),organism=Gracilibacillus boraciitolerans JCM 21714,definition=arsenate reductase	3.3309999999999995	0.0965
+coded_by=1951..2352,organism=Staphylococcus cohnii,definition=arsenate reductase	1.137	0.0329
+coded_by=complement(2693..3106),organism=Zetaproteobacteria bacterium CG1_02_49_23,definition=arsenate reductase (thioredoxin)	3.478	0.1008
+coded_by=1863247..1863669,organism=Geobacillus sp. Y4.1MC1,definition=arsenate reductase (thioredoxin)	6.131	0.1776
+coded_by=3460130..3460549,organism=Paenibacillus sp. FSL R7-0273,definition=arsenate reductase	1.009	0.0292

@@ -1,0 +1,2 @@
+Taxon	Abundance	FractionAbundance
+coded_by=NA,organism=NA,definition=NA	0	0

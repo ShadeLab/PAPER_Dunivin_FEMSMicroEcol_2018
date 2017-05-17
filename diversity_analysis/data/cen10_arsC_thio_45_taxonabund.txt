@@ -1,0 +1,13 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=3736..4158,organism=Bacillus niacini,definition=arsenate reductase	2.657	0.0989
+coded_by=172007..172756,organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase (thioredoxin)	3.399	0.1265
+coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	1.041	0.0388
+coded_by=complement(274247..274648),organism=Lactobacillus senioris DSM 24302 = JCM 17472,definition=arsenate reductase	2.031	0.0756
+coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	6.866	0.2556
+coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	1.166	0.0434
+coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	1.252	0.0466
+coded_by=22607..23029,organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	1.583	0.0589
+coded_by=55103..55522,organism=Bacillus sp. MUM 116,definition=arsenate reductase (thioredoxin)	1.877	0.0699
+coded_by=complement(11908..12333),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	1.169	0.0435
+coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	2.158	0.0803
+coded_by=complement(9922..10341),organism=Bacillus vireti LMG 21834,definition=arsenate reductase	1.661	0.0618

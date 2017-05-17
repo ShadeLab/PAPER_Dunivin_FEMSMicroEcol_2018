@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=12840..15014,organism=Subdoligranulum sp. 4_3_54A2FAA,definition=alanine racemase	3.188	1.0000

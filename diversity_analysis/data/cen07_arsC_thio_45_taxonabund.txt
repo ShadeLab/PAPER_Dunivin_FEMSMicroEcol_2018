@@ -1,0 +1,9 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(59827..60243),organism=Anoxybacillus suryakundensis,definition=arsenate reductase (thioredoxin)	2.017	0.1519
+coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	1.1	0.0829
+coded_by=164618..165037,organism=Lysinibacillus sp. SG9,definition=Low molecular weight phosphotyrosine protein phosphatase	2.116	0.1594
+coded_by=complement(20262..20684),organism=Gracilibacillus boraciitolerans JCM 21714,definition=arsenate reductase	1.548	0.1166
+coded_by=1971..2366,organism=Plasmid pSX267,definition=arsenate reductase	1.246	0.0938
+coded_by=9610..10005,organism=Tetragenococcus muriaticus 3MR10-3,definition=arsenate reductase	1.259	0.0948
+coded_by=1863247..1863669,organism=Geobacillus sp. Y4.1MC1,definition=arsenate reductase (thioredoxin)	2.802	0.2110
+coded_by=complement(1031547..1031969),organism=Enterococcus faecium DO,definition=arsenate reductase (glutaredoxin)	1.189	0.0896

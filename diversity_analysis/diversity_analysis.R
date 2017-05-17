@@ -9,10 +9,10 @@ library(reshape2)
 #print working directory for future references
 #note the GitHub directory for this script is as follows
 #https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis
-wd=print(getwd())
+wd <- print(getwd())
 
 #make color pallette
-GnYlOrRd=colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
+GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
 #read in microbe census data
 census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""),
@@ -689,14 +689,14 @@ ggsave(acr3.abundance.taxon.plot,
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have aioA info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12" | meta$Site == "Cen04" | meta$Site == "Cen06"),]
+meta=meta[-which(meta$Site == "Cen14" | meta$Site == "Cen15" | meta$Site == "Cen16"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
 aioA=read.delim(file = paste(wd, "/data/aioA_rformat_dist_0.03.txt", sep=""))
 
 ##temporary: remove Cen12 since it only has 1 hit
-aioA <- aioA[-which(aioA$X == "Cen12"),]
+aioA <- aioA[-which(aioA$X == "Cen12" | aioA$X == "Cen17"),]
 
 #add row names back
 rownames(aioA)=aioA[,1]
@@ -720,10 +720,11 @@ metad=sample_data(metad)
 otu.aioA=otu_table(aioA, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu.aioA, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
+rarecurve(otu.aioA, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
 
-#rarefy
-rare.aioA=rarefy_even_depth(otu.aioA, sample.size = min(sample_sums(otu.aioA)), rngseed = TRUE)
+#rarefy (not for now since we do not have enough data?)
+rare.aioA <- otu.aioA
+#rare.aioA=rarefy_even_depth(otu.aioA, sample.size = median(sample_sums(otu.aioA)), rngseed = TRUE)
 
 #check curve
 rarecurve(rare.aioA, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
@@ -760,6 +761,7 @@ plieou.aioA=inner_join(plieou.aioA, meta)
 
 #plot evenness by fire classification
 (evenness <- ggplot(plieou.aioA, aes(x = Classification, y = plieou.aioA)) +
+    geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=3, width = 0.15) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
@@ -861,18 +863,16 @@ data.aioA <- do.call(rbind, lapply(names.aioA, function(X) {
 setwd("../")
 wd <- print(getwd())
 
-#remove NA rows 
-data.aioA <- data.aioA[!is.na(data.aioA$Taxon.Abundance.Fraction.Abundance),]
-
 #split columns 
 data.aioA <- data.aioA %>%
   separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
-  separate(col = Taxon.Abundance.Fraction.Abundance, 
+  separate(col = Taxon.Abundance.FractionAbundance, 
            into = c("Taxon", "Abundance", "Fraction.Abundance"), 
            sep = "\t") %>%
   select(-junk) %>%
   group_by(Site)
-#for now remove cen12
+
+#manually fill in cen 12
 data.aioA <- data.aioA[-which(data.aioA$Site == "cen12"),]
 
 #make sure abundance and fraction abundance are numbers
@@ -904,15 +904,12 @@ data.aioA <- data.aioA %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
-###TEMPORARY
-#remove Cen01 since it cant be normalized to rplB yet
-data.aioA <- data.aioA[-which(data.aioA$Site == "Cen01"),]
 
 #plot data
 (aioA.abundance.plot <- ggplot(data.aioA, aes(x = Site, y = Normalized.Abundance.rplB, 
                                               fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("aioA Abundance (normalized to rplB)") +
     theme_classic())
 
@@ -922,7 +919,7 @@ ggsave(aioA.abundance.plot, filename = paste(wd, "/figures/aioA.abundance.png", 
                                                      y = Normalized.Abundance.census, 
                                                      fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("aioA Abundance (normalized to genome equivalents)") +
     theme_classic())
 
@@ -960,7 +957,7 @@ ggsave(aioA.abundance.taxon.plot,
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have arsM info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12" | meta$Site == "Cen04" | meta$Site == "Cen06"),]
+meta=meta[-which(meta$Site == "Cen05" | meta$Site == "Cen10" | meta$Site == "Cen16"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -1028,6 +1025,7 @@ plieou.arsM=inner_join(plieou.arsM, meta)
 
 #plot evenness by fire classification
 (evenness.arsM <- ggplot(plieou.arsM, aes(x = Classification, y = plieou.arsM)) +
+    geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=3, width = 0.15) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
@@ -1052,14 +1050,14 @@ phylo.arsM=merge_phyloseq(tree.arsM, rare.arsM, metad)
 #plot tree
 (arsM.tree.plot <- plot_tree(phylo.arsM, color = "SoilTemperature_to10cm", 
                              size = "abundance",
-                             shape = "Classification", label.tips="taxa_names", 
+                             shape = "Classification", label.tips=NULL, 
                              text.size=2, ladderize="left", base.spacing = 0.03, sizebase = 2) +
     theme(legend.position = "right", legend.title = element_text(size=11),
           legend.key =element_blank()) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-ggsave(arsM.tree.plot, filename = paste(wd, "/figures/arsM.tree.png", sep=""))
+ggsave(arsM.tree.plot, filename = paste(wd, "/figures/arsM.tree.png", sep=""), height = 10)
 
 #plot Bray Curtis ordination
 ord.arsM <- ordinate(phylo.arsM, method="PCoA", distance="bray")
@@ -1140,8 +1138,6 @@ data.arsM <- data.arsM %>%
            sep = "\t") %>%
   select(-junk) %>%
   group_by(Site)
-#for now remove cen12
-data.arsM <- data.arsM[-which(data.arsM$Site == "cen12"),]
 
 #make sure abundance and fraction abundance are numbers
 #R will think it's a char since it started w taxon name
@@ -1180,7 +1176,7 @@ data.arsM <- data.arsM[-which(data.arsM$Site == "Cen01"),]
 (arsM.abundance.plot <- ggplot(data.arsM, aes(x = Site, y = Normalized.Abundance.rplB, 
                                               fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("arsM Abundance (normalized to rplB)") +
     theme_classic())
 
@@ -1190,7 +1186,7 @@ ggsave(arsM.abundance.plot, filename = paste(wd, "/figures/arsM.abundance.png", 
                                                      y = Normalized.Abundance.census, 
                                                      fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("arsM Abundance (normalized to genome equivalents)") +
     theme_classic())
 
@@ -1228,11 +1224,14 @@ ggsave(arsM.abundance.taxon.plot,
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have arsC_thio info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12" | meta$Site == "Cen04" | meta$Site == "Cen06"),]
+meta=meta[-which(meta$Site == "Cen01" | meta$Site == "Cen05" | meta$Site == "Cen15" | meta$Site == "Cen16" | meta$Site == "Cen17"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
 arsC_thio=read.delim(file = paste(wd, "/data/arsC_thio_rformat_dist_0.03.txt", sep=""))
+
+#remove Cen15 (too few samples)
+arsC_thio <- arsC_thio[-which(arsC_thio$X == "Cen15" | arsC_thio$X == "Cen12"),]
 
 #add row names back
 rownames(arsC_thio)=arsC_thio[,1]
@@ -1256,9 +1255,10 @@ metad=sample_data(metad)
 otu.arsC_thio=otu_table(arsC_thio, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu.arsC_thio, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
+rarecurve(otu.arsC_thio, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
 
-#rarefy
+#rarefy (skip for now)
+rare.arsC_thio <- otu.arsC_thio
 rare.arsC_thio=rarefy_even_depth(otu.arsC_thio, sample.size = min(sample_sums(otu.arsC_thio)), rngseed = TRUE)
 
 #check curve
@@ -1296,6 +1296,7 @@ plieou.arsC_thio=inner_join(plieou.arsC_thio, meta)
 
 #plot evenness by fire classification
 (evenness.arsC_thio <- ggplot(plieou.arsC_thio, aes(x = Classification, y = plieou.arsC_thio)) +
+    geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=3, width = 0.15) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
@@ -1440,15 +1441,11 @@ data.arsC_thio <- data.arsC_thio %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
-###TEMPORARY
-#remove Cen01 since it cant be normalized to rplB yet
-data.arsC_thio <- data.arsC_thio[-which(data.arsC_thio$Site == "Cen01"),]
-
 #plot data
 (arsC_thio.abundance.plot <- ggplot(data.arsC_thio, aes(x = Site, y = Normalized.Abundance.rplB, 
                                                         fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("arsC_thio Abundance (normalized to rplB)") +
     theme_classic())
 
@@ -1469,7 +1466,7 @@ ggsave(arsC_thio.abundance.census.plot, filename = paste(wd, "/figures/arsC_thio
 (arsC_thio.abundance.census.taxon.plot <- ggplot(data.arsC_thio, aes(x = organism, 
                                                                      y = Normalized.Abundance.census)) +
     geom_point(aes(color = Temp, shape = Classification)) +
-    ylab("arsC_thio abundance (normalized to rplB)") +
+    ylab("arsC_thio abundance (normalized to genome equivalents)") +
     xlab("Taxon") +
     coord_flip() +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 

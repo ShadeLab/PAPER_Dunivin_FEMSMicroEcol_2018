@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	1.149	0.0851
+coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	1.992	0.1475
+coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	1.388	0.1028
+coded_by=complement(20262..20684),organism=Gracilibacillus boraciitolerans JCM 21714,definition=arsenate reductase	1.583	0.1172
+coded_by=complement(11908..12333),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	1.098	0.0813
+coded_by=1863247..1863669,organism=Geobacillus sp. Y4.1MC1,definition=arsenate reductase (thioredoxin)	5.103999999999999	0.3780
+coded_by=complement(10851..11270),organism=Bhargavaea cecembensis DSE10,definition=Arsenate reductase	1.19	0.0881

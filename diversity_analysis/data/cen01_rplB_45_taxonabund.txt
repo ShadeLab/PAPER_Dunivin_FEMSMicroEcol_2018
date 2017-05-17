@@ -1,0 +1,17 @@
+Taxon	Abundance	Fraction Abundance
+Acidobacteria	287.644	0.2513
+Chloroflexi	142.492	0.1245
+Gemmatimonadetes	29.878999999999998	0.0261
+Gammaproteobacteria	55.43899999999999	0.0484
+Firmicutes	148.37099999999995	0.1296
+Deferribacteres	2.969	0.0026
+Planctomycetes	1.995	0.0017
+Thermodesulfobacteria	2.88	0.0025
+Deltaproteobacteria	26.533999999999995	0.0232
+CandidatusSaccharibacteria	6.044	0.0053
+Aquificae	5.6080000000000005	0.0049
+Verrucomicrobia	13.387	0.0117
+Betaproteobacteria	26.594000000000005	0.0232
+Actinobacteria	217.66500000000008	0.1901
+Alphaproteobacteria	162.373	0.1418
+Bacteroidetes	14.884	0.0130

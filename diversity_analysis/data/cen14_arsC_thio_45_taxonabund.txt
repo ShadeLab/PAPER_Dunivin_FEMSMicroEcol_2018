@@ -1,0 +1,5 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	4.066	0.2703
+coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	3.025	0.2011
+coded_by=complement(20262..20684),organism=Gracilibacillus boraciitolerans JCM 21714,definition=arsenate reductase	6.852	0.4555
+coded_by=1863247..1863669,organism=Geobacillus sp. Y4.1MC1,definition=arsenate reductase (thioredoxin)	1.099	0.0731
