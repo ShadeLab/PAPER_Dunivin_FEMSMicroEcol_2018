@@ -424,7 +424,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[which(meta$Site == "Cen14" | meta$Site == "Cen03" | meta$Site == "Cen01" | meta$Site == "Cen04" | meta$Site == "Cen07" | meta$Site == "Cen15" | meta$Site == "Cen12" | meta$Site == "Cen06"),]
+meta=meta[-which(meta$Site == "Cen10" | meta$Site == "Cen16"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -633,15 +633,11 @@ data.acr3 <- data.acr3 %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
-###TEMPORARY
-#remove Cen01 since it cant be normalized to rplB yet
-data.acr3 <- data.acr3[-which(data.acr3$Site == "Cen01"),]
-
 #plot data
 (acr3.abundance.plot <- ggplot(data.acr3, aes(x = Site, y = Normalized.Abundance.rplB, 
                                               fill = Classification)) +
   geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("acr3 Abundance (normalized to rplB)") +
     theme_classic())
 
@@ -651,7 +647,7 @@ ggsave(acr3.abundance.plot, filename = paste(wd, "/figures/acr3.abundance.png", 
                                                      y = Normalized.Abundance.census, 
                                                      fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("red", "yellow", "green")) +
     ylab("acr3 Abundance (normalized to genome equivalents)") +
     theme_classic())
 
@@ -680,6 +676,21 @@ ggsave(acr3.abundance.census.taxon.plot,
                           guide_legend(title="Temperature (°C)")))
 ggsave(acr3.abundance.taxon.plot, 
        filename = paste(wd, "/figures/acr3.abundance.taxon.png", sep=""), height = 10)
+
+#summarise acr3 information
+data.acr3.sum <- data.acr3 %>%
+  group_by(Classification, Site) %>%
+  summarise(Abundance.census.tot = sum(Normalized.Abundance.census), 
+            Abundance.rplB.tot = sum(Normalized.Abundance.rplB))
+
+(acr3.abundance.census.box <- ggplot(data.acr3.sum, aes(x = Classification, 
+                                                    y = Abundance.census.tot)) +
+    geom_boxplot() +
+    geom_jitter(width = 0.3) +
+    ylab("acr3 abundance (normalized to genome equivalents)"))
+
+ggsave(acr3.abundance.census.box, 
+       filename = paste(wd, "/figures/acr3.abundance.census.box.png", sep=""))
 
 #########################
 #AIOA DIVERSITY ANALYSIS#
@@ -1484,6 +1495,18 @@ ggsave(arsC_thio.abundance.census.taxon.plot,
                           guide_legend(title="Temperature (°C)")))
 ggsave(arsC_thio.abundance.taxon.plot, 
        filename = paste(wd, "/figures/arsC_thio.abundance.taxon.png", sep=""), height = 10)
+
+#summarise arsC_thio data
+data.arsC_thio.sum <- data.arsC_thio %>%
+  group_by(Classification, Site) %>%
+  summarise(Abundance.census.total = sum(Normalized.Abundance.census), 
+            Abundance.rplB.total = sum(Normalized.Abundance.rplB))
+
+(arsC_thio.abundance.census.box <- ggplot(data.arsC_thio.sum, 
+                                          aes(x = Classification, 
+                                              y = Abundance.census.total)) +
+  geom_boxplot() +
+    geom_jitter())
 
 ##############################
 #arsC_glut DIVERSITY ANALYSIS#
