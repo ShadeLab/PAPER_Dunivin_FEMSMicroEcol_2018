@@ -5,6 +5,8 @@ library(biomformat)
 library(vegan)
 library(tidyverse)
 library(reshape2)
+library(RColorBrewer)
+
 
 #print working directory for future references
 #note the GitHub directory for this script is as follows
@@ -633,6 +635,38 @@ data.acr3 <- data.acr3 %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
+#get taxonomy for organisms
+ncbi <- tax_name(query = data.acr3$organism, get = c("genus", "class", "phylum"), db = "ncbi")
+
+#change query column to "organism"
+ncbi$organism <- ncbi$query
+
+#join taxanomic information with abundance information
+data.acr3.t <- data.acr3 %>%
+  left_join(ncbi, by = "organism") %>%
+  unique()
+
+#change NA phylum to metagenome
+data.acr3.t$phylum[is.na(data.acr3.t$phylum)] = "Metagenome"
+
+#prep colors
+n <- 27
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+color <- print(sample(col_vector, n))
+
+
+(acr3.abundance.tax.bar.plot <- ggplot(data.acr3.t, aes(x = Site, y = Normalized.Abundance.census, fill = phylum)) +
+    geom_bar(stat = "identity") +
+    ylab("acr3 Abundance (normalized to genome equivalents)") +
+    scale_fill_manual(values = color) +
+    theme_classic(base_size = 12))
+ggsave(acr3.abundance.tax.bar.plot, filename = paste(wd, "/figures/acr3.phylum.eps", sep=""), width = 10)
+
+#order based on temperature
+data.acr3.t$Site <- factor(data.acr3.t$Site, 
+                           levels = data.acr3.t$Site[order(data.acr3.t$Temp)])
+
 #plot data
 (acr3.abundance.plot <- ggplot(data.acr3, aes(x = Site, y = Normalized.Abundance.rplB, 
                                               fill = Classification)) +
@@ -915,6 +949,33 @@ data.aioA <- data.aioA %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
+#get taxonomy for organisms
+ncbi <- tax_name(query = data.aioA$organism, get = c("genus", "class", "phylum"), db = "ncbi")
+
+#change query column to "organism"
+ncbi$organism <- ncbi$query
+
+#join taxanomic information with abundance information
+data.aioA.t <- data.aioA %>%
+  left_join(ncbi, by = "organism") %>%
+  unique()
+
+#prep colors
+n <- 19
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+color <- print(sample(col_vector, n))
+
+#order based on temperature
+data.aioA.t$Site <- factor(data.aioA.t$Site, 
+                           levels = data.aioA.t$Site[order(data.aioA.t$Temp)])
+(aioA.abundance.tax.bar.plot <- ggplot(data.aioA.t, aes(x = Site, y = Normalized.Abundance.census, fill = genus)) +
+    geom_bar(stat = "identity") +
+    ylab("acr3 Abundance (normalized to genome equivalents)") +
+    scale_fill_manual(values = color) +
+    theme_classic(base_size = 12))
+ggsave(aioA.abundance.tax.bar.plot, filename = paste(wd, "/figures/aioA.genus.eps", sep=""), width = 10)
+
 
 #plot data
 (aioA.abundance.plot <- ggplot(data.aioA, aes(x = Site, y = Normalized.Abundance.rplB, 
@@ -1179,9 +1240,41 @@ data.arsM <- data.arsM %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
-###TEMPORARY
-#remove Cen01 since it cant be normalized to rplB yet
-data.arsM <- data.arsM[-which(data.arsM$Site == "Cen01"),]
+#get taxonomy for organisms
+ncbi <- tax_name(query = data.arsM$organism, get = c("genus", "class", "phylum"), db = "ncbi")
+
+#change query column to "organism"
+ncbi$organism <- ncbi$query
+
+#join taxanomic information with abundance information
+data.arsM.t <- data.arsM %>%
+  left_join(ncbi, by = "organism") %>%
+  unique()
+
+#change NA phylum to metagenome
+data.arsM.t$phylum[is.na(data.arsM.t$phylum)] = "Metagenome"
+
+
+#prep colors
+n <- 14
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+color <- print(sample(col_vector, n))
+
+#order based on temperature
+data.arsM.t$Site <- factor(data.arsM.t$Site, 
+                           levels = data.arsM.t$Site[order(data.arsM.t$Temp)])
+(arsM.abundance.tax.bar.plot <- ggplot(data.arsM.t, aes(x = Site, y = Normalized.Abundance.census, fill = phylum)) +
+    geom_bar(stat = "identity") +
+    ylab("acr3 Abundance (normalized to genome equivalents)") +
+    scale_fill_manual(values = color) +
+    theme_classic(base_size = 12))
+ggsave(arsM.abundance.tax.bar.plot, filename = paste(wd, "/figures/arsM.phylum.eps", sep=""), width = 10)
+
+
+
+
+
 
 #plot data
 (arsM.abundance.plot <- ggplot(data.arsM, aes(x = Site, y = Normalized.Abundance.rplB, 

@@ -1,0 +1,7 @@
+Site	Normalized.count	Classification
+Prairie	0.023904997	Other_Soil
+Grassland	0.015091233	Other_Soil
+Rhizosphere	0.075459571	Other_Soil
+Agricultural	0.054095185	Other_Soil
+Fracking	0.171207534	Other_Soil
+Tropical	0.030293265	Other_Soil
