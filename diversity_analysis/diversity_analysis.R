@@ -650,8 +650,12 @@ data.acr3.t <- data.acr3 %>%
 #change NA phylum to metagenome
 data.acr3.t$phylum[is.na(data.acr3.t$phylum)] = "Metagenome"
 
+#order based on temperature
+data.acr3.t$Site <- factor(data.acr3.t$Site, 
+                           levels = data.acr3.t$Site[order(data.acr3.t$Temp)])
+
 #prep colors
-n <- 30
+n <- 32
 qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
 col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 color.acr3 <- print(sample(col_vector, n))
