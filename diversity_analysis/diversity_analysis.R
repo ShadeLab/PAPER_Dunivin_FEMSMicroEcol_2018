@@ -6,6 +6,7 @@ library(vegan)
 library(tidyverse)
 library(reshape2)
 library(RColorBrewer)
+library(taxize)
 
 
 #print working directory for future references
@@ -426,7 +427,7 @@ ggsave(arsB.taxon.plot, filename = paste(wd, "/figures/arsB.abundance.taxon.png"
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have acr3 info yet
-meta=meta[-which(meta$Site == "Cen10" | meta$Site == "Cen16"),]
+meta=meta[-which(meta$Site == "Cen10"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -650,22 +651,22 @@ data.acr3.t <- data.acr3 %>%
 data.acr3.t$phylum[is.na(data.acr3.t$phylum)] = "Metagenome"
 
 #prep colors
-n <- 27
+n <- 30
 qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
 col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
-color <- print(sample(col_vector, n))
+color.acr3 <- print(sample(col_vector, n))
 
 
 (acr3.abundance.tax.bar.plot <- ggplot(data.acr3.t, aes(x = Site, y = Normalized.Abundance.census, fill = phylum)) +
     geom_bar(stat = "identity") +
     ylab("acr3 Abundance (normalized to genome equivalents)") +
-    scale_fill_manual(values = color) +
+    scale_fill_manual(values = color.acr3) +
     theme_classic(base_size = 12))
 ggsave(acr3.abundance.tax.bar.plot, filename = paste(wd, "/figures/acr3.phylum.eps", sep=""), width = 10)
 
 #order based on temperature
-data.acr3.t$Site <- factor(data.acr3.t$Site, 
-                           levels = data.acr3.t$Site[order(data.acr3.t$Temp)])
+data.acr3$Site <- factor(data.acr3$Site, 
+                           levels = data.acr3$Site[order(data.acr3$Temp)])
 
 #plot data
 (acr3.abundance.plot <- ggplot(data.acr3, aes(x = Site, y = Normalized.Abundance.rplB, 
@@ -681,7 +682,7 @@ ggsave(acr3.abundance.plot, filename = paste(wd, "/figures/acr3.abundance.png", 
                                                      y = Normalized.Abundance.census, 
                                                      fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow", "green")) +
+    scale_fill_manual(values = c("firebrick2", "yellow1", "green3")) +
     ylab("acr3 Abundance (normalized to genome equivalents)") +
     theme_classic())
 
