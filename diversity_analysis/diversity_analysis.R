@@ -1614,7 +1614,7 @@ data.arsC_thio.sum <- data.arsC_thio %>%
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have arsC_glut info yet
-meta=meta[which(meta$Site == "Cen07" | meta$Site == "Cen10" | meta$Site == "Cen01" | meta$Site == "Cen03" | meta$Site == "Cen12" | meta$Site == "Cen04" | meta$Site == "Cen06"),]
+meta=meta[-which(meta$Site == "Cen10" | meta$Site == "Cen16"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix
@@ -1682,6 +1682,7 @@ plieou.arsC_glut=inner_join(plieou.arsC_glut, meta)
 
 #plot evenness by fire classification
 (evenness.arsC_glut <- ggplot(plieou.arsC_glut, aes(x = Classification, y = plieou.arsC_glut)) +
+    geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=3, width = 0.15) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
@@ -1783,9 +1784,6 @@ data.arsC_glut <- do.call(rbind, lapply(names.arsC_glut, function(X) {
 setwd("../")
 wd <- print(getwd())
 
-#remove NA rows 
-data.arsC_glut <- data.arsC_glut[!is.na(data.arsC_glut$Taxon.Abundance.Fraction.Abundance),]
-
 #split columns 
 data.arsC_glut <- data.arsC_glut %>%
   separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
@@ -1794,8 +1792,7 @@ data.arsC_glut <- data.arsC_glut %>%
            sep = "\t") %>%
   select(-junk) %>%
   group_by(Site)
-#for now remove cen12
-data.arsC_glut <- data.arsC_glut[-which(data.arsC_glut$Site == "cen12"),]
+
 
 #make sure abundance and fraction abundance are numbers
 #R will think it's a char since it started w taxon name
@@ -1826,15 +1823,47 @@ data.arsC_glut <- data.arsC_glut %>%
   mutate(Normalized.Abundance.census = Abundance / GE, 
          Normalized.Abundance.rplB = Abundance / rplB)
 
-###TEMPORARY
-#remove Cen01 since it cant be normalized to rplB yet
-data.arsC_glut <- data.arsC_glut[-which(data.arsC_glut$Site == "Cen01"),]
+#get taxonomy for organisms
+ncbi.arsC_glut <- tax_name(query = data.arsC_glut$organism, get = c("genus", "class", "phylum"), db = "ncbi")
+
+#change query column to "organism"
+ncbi.arsC_glut$organism <- ncbi.arsC_glut$query
+
+#join taxanomic information with abundance information
+data.arsC_glut.t <- data.arsC_glut %>%
+  left_join(ncbi.arsC_glut, by = "organism") %>%
+  unique()
+
+#change NA phylum to metagenome
+data.arsC_glut.t$phylum[is.na(data.arsC_glut.t$phylum)] = "Metagenome"
+
+#order based on temperature
+data.arsC_glut.t$Site <- factor(data.arsC_glut.t$Site, 
+                                levels = data.arsC_glut.t$Site[order(data.arsC_glut.t$Temp)])
+
+#replace class NA with Metagenome
+data.arsC_glut.t$class[is.na(data.arsC_glut.t$class)] = "Metagenome"
+
+#prep colors
+n <- 8
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+color.arsC_glut <- print(sample(col_vector, n))
+
+
+(arsC_glut.abundance.tax.bar.plot <- ggplot(data.arsC_glut.t, aes(x = Site, y = Normalized.Abundance.census, fill = class)) +
+    geom_bar(stat = "identity") +
+    ylab("arsC_glut Abundance (normalized to genome equivalents)") +
+    scale_fill_manual(values = color.arsC_glut) +
+    theme_classic(base_size = 12))
+ggsave(arsC_glut.abundance.tax.bar.plot, filename = paste(wd, "/figures/arsC_glut.abundance.census.taxon.png", sep=""), width = 10)
+
 
 #plot data
 (arsC_glut.abundance.plot <- ggplot(data.arsC_glut, aes(x = Site, y = Normalized.Abundance.rplB, 
                                                         fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("firebrick2", "yellow1", "green3")) +
     ylab("arsC_glut Abundance (normalized to rplB)") +
     theme_classic())
 
@@ -1844,7 +1873,7 @@ ggsave(arsC_glut.abundance.plot, filename = paste(wd, "/figures/arsC_glut.abunda
                                                                y = Normalized.Abundance.census, 
                                                                fill = Classification)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = c("red", "yellow")) +
+    scale_fill_manual(values = c("firebrick2", "yellow1", "green3")) +
     ylab("arsC_glut Abundance (normalized to genome equivalents)") +
     theme_classic())
 
@@ -1861,7 +1890,7 @@ ggsave(arsC_glut.abundance.census.plot, filename = paste(wd, "/figures/arsC_glut
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 ggsave(arsC_glut.abundance.census.taxon.plot, 
-       filename = paste(wd, "/figures/arsC_glut.abundance.census.taxon.png", sep=""), height = 10)
+       filename = paste(wd, "/figures/arsC_glut.abundance.census.taxon.png", sep=""), height = 20)
 
 (arsC_glut.abundance.taxon.plot <- ggplot(data.arsC_glut, aes(x = organism, 
                                                               y = Normalized.Abundance.rplB)) +
@@ -1872,6 +1901,6 @@ ggsave(arsC_glut.abundance.census.taxon.plot,
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 ggsave(arsC_glut.abundance.taxon.plot, 
-       filename = paste(wd, "/figures/arsC_glut.abundance.taxon.png", sep=""), height = 10)
+       filename = paste(wd, "/figures/arsC_glut.abundance.taxon.png", sep=""), height = 20)
 
 
