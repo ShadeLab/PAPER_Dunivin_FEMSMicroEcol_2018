@@ -41,6 +41,6 @@
 | Resfam_Qnr | 1 | 230 | 200 | 80 | 2562 | 558 | Resfam_QuinoloneResistanceProteinQnr | 
 | Resfam_ermB | 1 | 400 | 200 | 80 | 2090 | 182 |  | 
 | Resfam_ermC | 1 | 265 | 200 | 80 | 7173 | 246 |  | 
-| repA | 1 | 400 | 220 | 80 | 387 | ? |  | 
+| repA | 1 | 400 | 220 | 80 | 387 | 31 |  | 
 
 
