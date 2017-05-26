@@ -6,15 +6,14 @@ The goals of this page is to document which antibiotic resistance genes (ARGs) t
 To aid in this search, I am using the [antibiotic resistance gene database](https://ardb.cbcb.umd.edu/browsegene.shtml) to guide which FunGene databases to use. 
 
 __1. Aminoglycoside resistance__
-  * Acetyltransferase: AAC3, AAC3-Ia, AAC6-Ia, AAC6-Ib, AAC6-II
-  * Nucleotidyltransferase (adenylyltransferases): ANT3, ANT4, ANT6, ANT9
+  * Acetyltransferase: AAC3-Ia, AAC6-Ia, AAC6-Ib, AAC6-II
+  * Nucleotidyltransferase (adenylyltransferases): ANT3, ANT6, ANT9
   * Phosphotransferases: strA (APH3), strB (APH6)
   
 __2. Beta-Lactam resistance__
   * Class A
   * Class B
   * Class C
-  * Class D
   
 __3. Macrolide-Lincosamide-Streptogramin B resistance__
   * erm class rRNA methylases: ermB, ermC
