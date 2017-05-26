@@ -8,7 +8,7 @@ To aid in this search, I am using the [antibiotic resistance gene database](http
 __1. Aminoglycoside resistance__
   * Acetyltransferase: AAC3, AAC3-Ia, AAC6-Ia, AAC6-Ib, AAC6-II
   * Nucleotidyltransferase (adenylyltransferases): ANT3, ANT4, ANT6, ANT9
-  * Phosphotransferases: APH3, APH6
+  * Phosphotransferases: strA (APH3), strB (APH6)
   
 __2. Beta-Lactam resistance__
   * Class A
@@ -29,9 +29,6 @@ __4. Tetracycline resistance__
   * Tetracycline efflux proteins: tetA, tetD
   * Ribosomal protection proteins against tetracycline: tetM, tetQ, tetW
   * Oxidoreductase: tetX
-  
-__5. Streptomycin resistance__
-  * Streptomycin-inactivating enzymes: strA, strB
   
 __6. Fluoroquinolone resistance__
   * Protects DNA gyrase from the inhibition of quinolones: qnr
