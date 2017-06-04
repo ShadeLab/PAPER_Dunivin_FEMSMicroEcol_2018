@@ -1,0 +1,14 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=<1..1208,organism=Ectothiorhodospira sp. PHS-1,definition=integron integrase	2.54	0.0464
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8.346	0.1525
+coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	3.081	0.0563
+coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	5.89	0.1076
+coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	2.224	0.0406
+coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	1.292	0.0236
+coded_by=complement(46755..47759),organism=Candidatus Symbiobacter mobilis CR,definition=integrase	10.712	0.1957
+coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	6.303	0.1151
+coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	1.627	0.0297
+coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3.492	0.0638
+coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	3.947	0.0721
+coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2.268	0.0414
+coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	3.023	0.0552

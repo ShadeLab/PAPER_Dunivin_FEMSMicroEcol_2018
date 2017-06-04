@@ -1,0 +1,14 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	3.125	0.0292
+coded_by=725394..726410,organism=Methylibium petroleiphilum PM1,definition=phage integrase	6.166	0.0575
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	25.122	0.2344
+coded_by=complement(690..1730),organism=Serratia marcescens,definition=IntI3 integrase	1.613	0.0151
+coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	14.027	0.1309
+coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	13.291	0.1240
+coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	6.894	0.0643
+coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	7.11	0.0663
+coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	14.994	0.1399
+coded_by=510083..511045,organism=Pseudomonas xanthomarina,definition=integrase	1.382	0.0129
+coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	3.116	0.0291
+coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	1.734	0.0162
+coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8.598	0.0802

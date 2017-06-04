@@ -1,0 +1,9 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	9.271	0.0843
+coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	4.83	0.0439
+coded_by=complement(377..>1492),organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	7.097	0.0645
+coded_by=1291660..1292667,organism=Rhodanobacter sp. Root480,definition=hypothetical protein	14.482	0.1317
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	63.023	0.5730
+coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	4.436	0.0403
+coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	2.8	0.0255
+coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4.054	0.0369

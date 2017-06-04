@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	5.934	0.0534
+coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	8.046	0.0725
+coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	10.496	0.0945
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	21.276999999999997	0.1916
+coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	6.071	0.0547
+coded_by=complement(609566..610579),organism=Acidihalobacter prosperus,definition=site-specific tyrosine recombinase XerD	2.552	0.0230
+coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	56.645	0.5102

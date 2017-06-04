@@ -1,0 +1,6 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	7.341	0.0604
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	105.489	0.8681
+coded_by=complement(40777..41748),organism=Rhodanobacter spathiphylli B39,definition=putative integrase	1.687	0.0139
+coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	3.879	0.0319
+coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	3.116	0.0256

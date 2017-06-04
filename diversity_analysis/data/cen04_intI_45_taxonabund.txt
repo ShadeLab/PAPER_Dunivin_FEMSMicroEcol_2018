@@ -1,0 +1,14 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(1522..2484),organism=Pseudomonas stutzeri,definition=integrase	1.905	0.0413
+coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	2.193	0.0475
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3.667	0.0794
+coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	1.226	0.0266
+coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2.653	0.0575
+coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	2.821	0.0611
+coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	4.451	0.0964
+coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	5.249	0.1137
+coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	6.357	0.1377
+coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	5.485	0.1188
+coded_by=510083..511045,organism=Pseudomonas xanthomarina,definition=integrase	1.262	0.0273
+coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	4.207	0.0911
+coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	4.7010000000000005	0.1018

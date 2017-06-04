@@ -1,0 +1,17 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(25464..26627),organism=Corynebacterium glutamicum,definition=IntIdelta1 protein	3.076	0.0453
+coded_by=complement(172567..173571),organism=Pseudoxanthomonas suwonensis,definition=hypothetical protein	1.854	0.0273
+coded_by=complement(377..>1492),organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	1.59	0.0234
+coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	21.291000000000004	0.3135
+coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	2.088	0.0307
+coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1.665	0.0245
+coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	3.066	0.0451
+coded_by=1035..2039,organism=mine drainage metagenome,definition=Integrase/recombinase (E2 protein)	1.982	0.0292
+coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	5.984	0.0881
+coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	2.438	0.0359
+coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	8.3	0.1222
+coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	1.569	0.0231
+coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	6.931	0.1021
+coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	1.946	0.0287
+coded_by=2968228..2969217,organism=Thiolapillus brandeum,definition=integron integrase	2.287	0.0337
+coded_by=3390705..3391709,organism=Geobacter metallireducens GS-15,definition=integron integrase	1.847	0.0272
