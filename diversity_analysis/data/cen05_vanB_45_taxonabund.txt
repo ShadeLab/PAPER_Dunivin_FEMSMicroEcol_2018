@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	3.489	0.5950
+coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	2.375	0.4050
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	AAV74561	3.489	0.5950
+coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	ACQ66105	2.375	0.4050

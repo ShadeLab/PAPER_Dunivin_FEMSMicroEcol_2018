@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	7.228	0.6249
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	4.338	0.3751
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	KWX70556	7.228	0.6249
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	4.338	0.3751

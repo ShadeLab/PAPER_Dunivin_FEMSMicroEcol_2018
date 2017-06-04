@@ -1,0 +1,6 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	5.684	1.0000
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	KWX70556	5.684	1.0000

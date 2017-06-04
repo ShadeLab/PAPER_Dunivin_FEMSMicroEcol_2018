@@ -1,0 +1,16 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(5720..6799),organism=Enterococcus faecium,definition=vancomycin/teicoplanin A-type resistance protein VanA	3.155	0.1031
+coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	5.471	0.1787
+coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	4.59	0.1499
+coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	4.4190000000000005	0.1443
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	10.667	0.3484
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	2.314	0.0756
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=complement(5720..6799),organism=Enterococcus faecium,definition=vancomycin/teicoplanin A-type resistance protein VanA	ADO66795	3.155	0.1031
+coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	AKF95798	5.471	0.1787
+coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	KWX70556	10.667	0.3484
+coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	AAX19284	4.4190000000000005	0.1443
+coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	AAT70090	4.59	0.1499
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	2.314	0.0756

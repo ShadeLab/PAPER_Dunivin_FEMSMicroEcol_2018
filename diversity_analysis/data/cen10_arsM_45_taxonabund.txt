@@ -1,0 +1,26 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(48338..49225),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	14.982000000000001	0.0107
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethyltransferase	55.949	0.0399
+coded_by=complement(32836..33645),organism=Thiobacillus sp. 65-29,definition=arsenite S-adenosylmethyltransferase	3.021	0.0022
+coded_by=<1..>323,organism=uncultured bacterium,definition=ArsM	28.347	0.0202
+coded_by=complement(599185..600096),organism=Acidobacteriales bacterium 59-55,definition=SAM-dependent methyltransferase	12.48	0.0089
+coded_by=3804328..3805143,organism=Rhodopseudomonas palustris BisB5,definition=Methyltransferase type 11	2.228	0.0016
+coded_by=complement(1300..2193),organism=Geodermatophilus sp. DSM 44208,definition=Methyltransferase domain-containing protein	38.598	0.0275
+coded_by=complement(399975..400736),organism=Geodermatophilus brasiliensis,definition=Methyltransferase domain-containing protein	2.485	0.0018
+coded_by=5248..6069,organism=hydrocarbon metagenome,definition=sam-dependent methyltransferase	26.941	0.0192
+coded_by=<1..>347,organism=uncultured bacterium,definition=ArsM	76.333	0.0544
+coded_by=complement(10421..11242),organism=Candidatus Rokubacteria bacterium GWA2_70_23,definition=arsenite S-adenosylmethyltransferase	7.27	0.0052
+coded_by=complement(6287..7087),organism=Mycobacterium parascrofulaceum ATCC BAA-614,definition=methyltransferase domain protein	7.027	0.0050
+coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	20.921	0.0149
+coded_by=complement(5220..6011),organism=Intrasporangium chromatireducens Q5-1,definition=arsenite S-adenosylmethyltransferase	1.442	0.0010
+coded_by=79666..80523,organism=Humibacillus sp. DSM 29435,definition=arsenite S-adenosylmethyltransferase	2.935	0.0021
+coded_by=complement(16787..17605),organism=Candidatus Rokubacteria bacterium GWC2_70_16,definition=arsenite S-adenosylmethyltransferase	21.393	0.0153
+coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	116.354	0.0830
+coded_by=287282..288121,organism=Steroidobacter denitrificans,definition=arsenite S-adenosylmethyltransferase	45.583	0.0325
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	47.022999999999996	0.0335
+coded_by=complement(3919715..3920587),organism=Cryptosporangium arvum DSM 44712,definition=methylase involved in ubiquinone/menaquinone biosynthesis	4.802	0.0034
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	803.3790000000001	0.5730
+coded_by=complement(567033..567797),organism=Actinobacteria bacterium DSM 45722,definition=Methyltransferase domain-containing protein	1.086	0.0008
+coded_by=1205..1972,organism=Mycobacterium heckeshornense,definition=arsenite S-adenosylmethyltransferase	6.112	0.0044
+coded_by=complement(163201..163968),organism=Friedmanniella flava,definition=Methyltransferase domain-containing protein	42.080999999999996	0.0300
+coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	13.334000000000001	0.0095

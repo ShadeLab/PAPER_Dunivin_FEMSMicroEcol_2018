@@ -1,0 +1,18 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG480,definition=D-alanine:D-lactate ligase	6.864	0.2178
+coded_by=complement(5720..6799),organism=Enterococcus faecium,definition=vancomycin/teicoplanin A-type resistance protein VanA	4.839	0.1535
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	7.353	0.2333
+coded_by=1..1029,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	5.151	0.1634
+coded_by=2893..3921,organism=Enterococcus faecium,definition=Vancomycin B-type resistance protein vanB, D-alanine--D-lactate ligase	2.388	0.0758
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	2.671	0.0847
+coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	2.251	0.0714
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG480,definition=D-alanine:D-lactate ligase	AAV74563	6.864	0.2178
+coded_by=1..1029,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	AAV74562	5.151	0.1634
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	AAV74561	7.353	0.2333
+coded_by=complement(5720..6799),organism=Enterococcus faecium,definition=vancomycin/teicoplanin A-type resistance protein VanA	ADO66795	4.839	0.1535
+coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	ACQ66105	2.251	0.0714
+coded_by=2893..3921,organism=Enterococcus faecium,definition=Vancomycin B-type resistance protein vanB, D-alanine--D-lactate ligase	SAM44990	2.388	0.0758
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	2.671	0.0847

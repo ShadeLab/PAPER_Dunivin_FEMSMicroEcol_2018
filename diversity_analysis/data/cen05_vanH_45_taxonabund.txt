@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=12042..13259,organism=Actinoplanes teichomyceticus,definition=VanH protein	2.32	0.2777
+coded_by=complement(627145..628185),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin resistance protein VanH/D-lactate dehydrogenase	6.034999999999999	0.7223

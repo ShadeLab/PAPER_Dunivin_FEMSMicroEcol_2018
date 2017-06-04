@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(8718698..8719738),organism=Frankia sp. EAN1pec,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	12.850999999999999	0.7715
+coded_by=8017..8985,organism=Oxobacter pfennigii,definition=D-specific alpha-keto acid dehydrogenase	1.737	0.1043
+coded_by=1..1032,organism=Amycolatopsis orientalis HCCB10007,definition=D-lactate dehydrogenase	2.069	0.1242

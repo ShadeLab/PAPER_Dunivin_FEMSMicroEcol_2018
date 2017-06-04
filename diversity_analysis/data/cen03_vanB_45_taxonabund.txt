@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	6.318	0.4668
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	7.216	0.5332
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	AAV74561	6.318	0.4668
+coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	7.216	0.5332

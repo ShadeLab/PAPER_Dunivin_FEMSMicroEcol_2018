@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=26679..27728,organism=uncultured organism CA878,definition=hypothetical protein	1.628	0.0379
+coded_by=1897186..1898214,organism=Kibdelosporangium phytohabitans,definition=lactate dehydrogenase	1.541	0.0359
+coded_by=complement(4180..5220),organism=Streptomyces sp. WAC1420,definition=D-lac dehydrogenase	15.558	0.3625
+coded_by=complement(5328..6287),organism=Actinoplanes sp. ATCC 53533,definition=VanH	9.431000000000001	0.2197
+coded_by=complement(8718698..8719738),organism=Frankia sp. EAN1pec,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	5.502	0.1282
+coded_by=70658..71656,organism=Ktedonobacter racemifer DSM 44963,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	7.165000000000001	0.1669
+coded_by=8017..8985,organism=Oxobacter pfennigii,definition=D-specific alpha-keto acid dehydrogenase	2.093	0.0488

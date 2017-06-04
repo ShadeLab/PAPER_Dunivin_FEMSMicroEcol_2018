@@ -1,0 +1,6 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	2.147	1.0000
+
+
+Lineage	MatchName	Abundance	Fraction Abundance
+coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	AAV74561	2.147	1.0000

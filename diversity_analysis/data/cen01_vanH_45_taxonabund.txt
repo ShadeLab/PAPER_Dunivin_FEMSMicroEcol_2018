@@ -1,0 +1,7 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=4979..5947,organism=Paenibacillus popilliae,definition=putative lactate dehydrogenase VanHE	3.975	0.1003
+coded_by=complement(4180..5220),organism=Streptomyces sp. WAC1420,definition=D-lac dehydrogenase	2.892	0.0730
+coded_by=complement(5328..6287),organism=Actinoplanes sp. ATCC 53533,definition=VanH	3.8569999999999998	0.0973
+coded_by=complement(627145..628185),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin resistance protein VanH / D-lactate dehydrogenase	3.37	0.0850
+coded_by=70658..71656,organism=Ktedonobacter racemifer DSM 44963,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	19.380000000000003	0.4889
+coded_by=8017..8985,organism=Oxobacter pfennigii,definition=D-specific alpha-keto acid dehydrogenase	6.167999999999999	0.1556
