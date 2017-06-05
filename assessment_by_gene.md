@@ -33,6 +33,7 @@ grep '^>' blast.txt > descriptor.blast.txt
 ```
 
 ### __blast.qsub file__
+Use .qsub script below and replace `gene` with your gene of interest to run.
 ```
 #!/bin/bash -login
  
@@ -63,3 +64,28 @@ grep '^>' blast.txt > descriptor.blast.txt
 ```
 
 ### Gene analysis notes
+* AAC3-Ia  
+* AAC6-Ia
+* AAC6-Ib  
+* AAC6-II
+* acr3  
+* aioA
+* arsB       
+* arsC_thio  
+* arsC_glut
+* arsM
+* CAT
+* ClassA  
+* ClassB
+* ClassC  
+* intI
+* rplB  
+* tetA
+* tetW  
+* tetX
+* vanA  
+* vanB
+* vanH  
+* vanX
+* vanZ
+              
