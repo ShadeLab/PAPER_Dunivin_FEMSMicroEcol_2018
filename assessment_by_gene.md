@@ -7,9 +7,9 @@ __Goals:__
 * Determine whether/ how to troubleshoot low quality results from specific genes
 
 ### Table of contents
-* [Setting up workflow]()
-* [blast.qsub]()
-* [Gene analysis notes]()
+* [Setting up workflow](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#setting-up-workflow)
+* [blast.qsub](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#blast.qsub)
+* [Gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#gene-analysis-notes)
 
 ### __Setting up workflow:__
 1. Access HPCC's nr database
