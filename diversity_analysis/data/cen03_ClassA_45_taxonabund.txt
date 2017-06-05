@@ -1,0 +1,9 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	3.257	0.1001
+coded_by=202493..203401,organism=Bradyrhizobium sp. LTSP885,definition=beta-lactamase	4.82	0.1481
+coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	3.174	0.0975
+coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	8.228	0.2528
+coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	2.502	0.0769
+coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	5.264	0.1617
+coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	1.597	0.0491
+coded_by=83441..84325,organism=Rhodanobacter sp. Root179,definition=class A beta-lactamase	3.707	0.1139

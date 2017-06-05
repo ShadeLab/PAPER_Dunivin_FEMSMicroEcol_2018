@@ -1,0 +1,7 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	3.317	0.1222
+coded_by=complement(36965..37900),organism=Streptomyces decoyicus,definition=beta-lactamase	8.505	0.3133
+coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	7.42	0.2733
+coded_by=complement(3818464..3819378),organism=Collimonas arenae,definition=Beta-lactamase	2.558	0.0942
+coded_by=complement(2650595..2651506),organism=Burkholderia caribensis MBA4,definition=Beta-lactamase	3.056	0.1126
+coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	2.294	0.0845

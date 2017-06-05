@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=155950..157110,organism=Burkholderia sp. Leaf177,definition=class C beta-lactamase	2.211	1.0000

@@ -1,0 +1,13 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(6101982..6102860),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	3.089	0.0335
+coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	1.814	0.0197
+coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	44.585	0.4834
+coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	3.002	0.0325
+coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5.553	0.0602
+coded_by=complement(1310..2239),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1.679	0.0182
+coded_by=212..1093,organism=uncultured bacterium,definition=L1_beta_lactamase	2.669	0.0289
+coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3.175	0.0344
+coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	3.489	0.0378
+coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	7.589	0.0823
+coded_by=715056..715934,organism=Mucilaginibacter sp. PPCGB 2223,definition=subclass B3 metallo-beta-lactamase	7.446999999999999	0.0807
+coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8.145	0.0883

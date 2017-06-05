@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	7.685	0.2726
+coded_by=complement(2379..3284),organism=Methylobacterium sp. Leaf100,definition=class A beta-lactamase	3.571	0.1267
+coded_by=52913..53788,organism=Burkholderia sp. LMG 29324,definition=beta-lactamase precursor	5.492	0.1948
+coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	4.692	0.1665
+coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	1.78	0.0631
+coded_by=392532..393401,organism=Bradyrhizobium sp.,definition=Betalactamase EC 3526 CDS	2.754	0.0977
+coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	2.214	0.0785

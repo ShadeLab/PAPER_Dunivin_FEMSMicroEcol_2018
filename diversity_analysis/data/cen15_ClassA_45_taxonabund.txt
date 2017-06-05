@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(36965..37900),organism=Streptomyces decoyicus,definition=beta-lactamase	2.874	0.1343
+coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	5.644	0.2637
+coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	12.886	0.6020

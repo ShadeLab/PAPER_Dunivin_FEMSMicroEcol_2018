@@ -267,26 +267,26 @@ ggsave(tree.plot, filename = paste(wd, "/figures/rplb.tree.png", sep=""),
        width = 10, height = 40)
 
 #########################
-#intI DIVERSITY ANALYSIS#
+#ClassC DIVERSITY ANALYSIS#
 #########################
 
 #read in metadata
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #read in distance matrix
-intI=read.delim(file = paste(wd, "/data/intI_rformat_dist_0.03.txt", sep=""))
+ClassC=read.delim(file = paste(wd, "/data/ClassC_rformat_dist_0.03.txt", sep=""))
 
 #add row names back
-rownames(intI)=intI[,1]
+rownames(ClassC)=ClassC[,1]
 
 #remove first column
-intI=intI[,-1]
+ClassC=ClassC[,-1]
 
 #make data matrix
-intI=data.matrix(intI)
+ClassC=data.matrix(ClassC)
 
 #remove first column
-intI=intI[,-1]
+ClassC=ClassC[,-1]
 
 #call metadata sample data
 metad=meta[-1]
@@ -294,48 +294,48 @@ rownames(metad)=meta$Site
 metad=sample_data(metad)
 
 #otu table
-otu.intI=otu_table(intI, taxa_are_rows = FALSE)
+otu.ClassC=otu_table(ClassC, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu.intI, step=5, col = rarecol, label = TRUE)
+rarecurve(otu.ClassC, step=5, col = rarecol, label = TRUE)
 
 #rarefy
-rare.intI=rarefy_even_depth(otu.intI, sample.size = min(sample_sums(otu.intI)), rngseed = TRUE)
+rare.ClassC=rarefy_even_depth(otu.ClassC, sample.size = min(sample_sums(otu.ClassC)), rngseed = TRUE)
 
 #check curve
-rarecurve(rare.intI, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
+rarecurve(rare.ClassC, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
 
 ##make biom for phyloseq
-phylo.intI=merge_phyloseq(rare.intI, metad)
+phylo.ClassC=merge_phyloseq(rare.ClassC, metad)
 
 #plot phylo richness
-(intI.richness=plot_richness(phylo.intI, x="Classification", color = "SoilTemperature_to10cm") +
+(ClassC.richness=plot_richness(phylo.ClassC, x="Classification", color = "SoilTemperature_to10cm") +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
 #save plot 
-ggsave(intI.richness, filename = paste(wd, "/figures/intI.richness.png", sep=""), 
+ggsave(ClassC.richness, filename = paste(wd, "/figures/ClassC.richness.png", sep=""), 
        width = 15)
 
 #calculate evenness
-s.intI=specnumber(rare.intI)
-h.intI=diversity(rare.intI, index="shannon")
-plieou.intI=h.intI/log(s.intI)
+s.ClassC=specnumber(rare.ClassC)
+h.ClassC=diversity(rare.ClassC, index="shannon")
+plieou.ClassC=h.ClassC/log(s.ClassC)
 
 #save evenness number
-write.table(plieou.intI, file = paste(wd, "/output/intI.evenness.txt", sep=""))
+write.table(plieou.ClassC, file = paste(wd, "/output/ClassC.evenness.txt", sep=""))
 
 #make plieou a dataframe for plotting
-plieou.intI=data.frame(plieou.intI)
+plieou.ClassC=data.frame(plieou.ClassC)
 
 #add site column to evenness data
-plieou.intI$Site=rownames(plieou.intI)
+plieou.ClassC$Site=rownames(plieou.ClassC)
 
 #merge evenness information with fire classification
-plieou.intI=inner_join(plieou.intI, meta)
+plieou.ClassC=inner_join(plieou.ClassC, meta)
 
 #plot evenness by fire classification
-(intI.evenness <- ggplot(plieou.intI, aes(x = Classification, y = plieou.intI)) +
+(ClassC.evenness <- ggplot(plieou.ClassC, aes(x = Classification, y = plieou.ClassC)) +
     geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size=3) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -345,47 +345,47 @@ plieou.intI=inner_join(plieou.intI, meta)
     theme_bw(base_size = 12))
 
 #save evenness plot
-ggsave(intI.evenness, filename = paste(wd, "/figures/intI.evenness.png", sep=""), 
+ggsave(ClassC.evenness, filename = paste(wd, "/figures/ClassC.evenness.png", sep=""), 
        width = 7, height = 5)
 
 #make an output of total gene count per site
-intI.gcounts=rowSums(intI)
+ClassC.gcounts=rowSums(ClassC)
 
 #make object phylo with tree and biom info
-tree.intI <- read.tree(file = paste(wd, "/data/intI_0.03_tree.nwk", sep=""))
-tree.intI <- phy_tree(tree.intI)
+tree.ClassC <- read.tree(file = paste(wd, "/data/ClassC_0.03_tree.nwk", sep=""))
+tree.ClassC <- phy_tree(tree.ClassC)
 
 #merge
-phylo.intI=merge_phyloseq(tree.intI, rare.intI, metad)
+phylo.ClassC=merge_phyloseq(tree.ClassC, rare.ClassC, metad)
 
 
 #plot Bray Curtis ordination
-ord.intI <- ordinate(phylo.intI, method="PCoA", distance="bray")
-(bc.ord.intI=plot_ordination(phylo.intI, ord.intI, shape="Classification", title="Bray Curtis") +
+ord.ClassC <- ordinate(phylo.ClassC, method="PCoA", distance="bray")
+(bc.ord.ClassC=plot_ordination(phylo.ClassC, ord.ClassC, shape="Classification", title="Bray Curtis") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     theme_light(base_size = 12))
 
 #save bray curtis ordination
-ggsave(bc.ord.intI, filename = paste(wd, "/figures/intI.braycurtis.ord.png", sep=""), 
+ggsave(bc.ord.ClassC, filename = paste(wd, "/figures/ClassC.braycurtis.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot Sorenson ordination
-s.ord.intI <- ordinate(phylo.intI, method="PCoA", distance="bray", binary=TRUE)
-(sorenson.ord.intI=plot_ordination(phylo.intI, s.ord.intI, shape="Classification", title="Sorenson") +
+s.ord.ClassC <- ordinate(phylo.ClassC, method="PCoA", distance="bray", binary=TRUE)
+(sorenson.ord.ClassC=plot_ordination(phylo.ClassC, s.ord.ClassC, shape="Classification", title="Sorenson") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     theme_light(base_size = 12))
 
 #save sorenson ordination
-ggsave(sorenson.ord.intI, filename = paste(wd, "/figures/intI.sorenson.ord.png", sep=""), 
+ggsave(sorenson.ord.ClassC, filename = paste(wd, "/figures/ClassC.sorenson.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot unweighted Unifrac ordination
-uni.u.ord.intI <- ordinate(phylo.intI, method="PCoA", distance="unifrac", weighted = FALSE)
-(uni.u.ord.intI=plot_ordination(phylo.intI, uni.u.ord.intI, shape="Classification", 
+uni.u.ord.ClassC <- ordinate(phylo.ClassC, method="PCoA", distance="unifrac", weighted = FALSE)
+(uni.u.ord.ClassC=plot_ordination(phylo.ClassC, uni.u.ord.ClassC, shape="Classification", 
                                 title="Unweighted Unifrac") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -393,12 +393,12 @@ uni.u.ord.intI <- ordinate(phylo.intI, method="PCoA", distance="unifrac", weight
     theme_light(base_size = 12))
 
 #save unweighted Unifrac ordination
-ggsave(uni.u.ord.intI, filename = paste(wd, "/figures/intI.u.unifrac.ord.png", sep=""), 
+ggsave(uni.u.ord.ClassC, filename = paste(wd, "/figures/ClassC.u.unifrac.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot weighted Unifrac ordination
-uni.w.ord.intI <- ordinate(phylo.intI, method="PCoA", distance="unifrac", weighted = TRUE)
-(uni.w.ord.intI=plot_ordination(phylo.intI, uni.w.ord.intI, shape="Classification", 
+uni.w.ord.ClassC <- ordinate(phylo.ClassC, method="PCoA", distance="unifrac", weighted = TRUE)
+(uni.w.ord.ClassC=plot_ordination(phylo.ClassC, uni.w.ord.ClassC, shape="Classification", 
                                 title="Weighted Unifrac") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -406,11 +406,11 @@ uni.w.ord.intI <- ordinate(phylo.intI, method="PCoA", distance="unifrac", weight
     theme_light(base_size = 12))
 
 #save weighted Unifrac ordination
-ggsave(uni.w.ord.intI, filename = paste(wd, "/figures/intI.w.unifrac.ord.png", sep=""), 
+ggsave(uni.w.ord.ClassC, filename = paste(wd, "/figures/ClassC.w.unifrac.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot tree
-(intI.tree.plot <- plot_tree(phylo.intI, color = "SoilTemperature_to10cm", 
+(ClassC.tree.plot <- plot_tree(phylo.ClassC, color = "SoilTemperature_to10cm", 
                              size = "abundance",
                              shape = "Classification", label.tips=NULL, 
                              text.size=2, ladderize="left", base.spacing = 0.04) +
@@ -419,19 +419,19 @@ ggsave(uni.w.ord.intI, filename = paste(wd, "/figures/intI.w.unifrac.ord.png", s
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-ggsave(intI.tree.plot, filename = paste(wd, "/figures/intI.tree.png", sep=""), 
+ggsave(ClassC.tree.plot, filename = paste(wd, "/figures/ClassC.tree.png", sep=""), 
        height = 10, width = 10)
 
 ##############################################
-#EXAMINE TAXON ABUNDANCE DIFFERENCES FOR intI#
+#EXAMINE TAXON ABUNDANCE DIFFERENCES FOR ClassC#
 ##############################################
 
 #temporarily change working directory to data to bulk load files
 setwd(paste(wd, "/data", sep = ""))
 
 #read in abundance data
-names.intI=list.files(pattern="*intI_45_taxonabund.txt")
-data.intI <- do.call(rbind, lapply(names.intI, function(X) {
+names.ClassC=list.files(pattern="*ClassC_45_taxonabund.txt")
+data.ClassC <- do.call(rbind, lapply(names.ClassC, function(X) {
   data.frame(id = basename(X), read_table(X))}))
 
 #move back up a directory to proceed with analysis
@@ -439,10 +439,10 @@ setwd("../")
 wd <- print(getwd())
 
 #remove NA rows 
-data.intI <- data.intI[!is.na(data.intI$Taxon.Abundance.Fraction.Abundance),]
+data.ClassC <- data.ClassC[!is.na(data.ClassC$Taxon.Abundance.Fraction.Abundance),]
 
 #split columns 
-data.intI <- data.intI %>%
+data.ClassC <- data.ClassC %>%
   separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
   separate(col = Taxon.Abundance.Fraction.Abundance, 
            into = c("Taxon", "Abundance", "Fraction.Abundance"), 
@@ -452,22 +452,22 @@ data.intI <- data.intI %>%
 
 #make sure abundance and fraction abundance are numbers
 #R will think it's a char since it started w taxon name
-data.intI$Fraction.Abundance <- as.numeric(data.intI$Fraction.Abundance)
-data.intI$Abundance <- as.numeric(data.intI$Abundance)
+data.ClassC$Fraction.Abundance <- as.numeric(data.ClassC$Fraction.Abundance)
+data.ClassC$Abundance <- as.numeric(data.ClassC$Abundance)
 
 #double check that all fraction abundances = 1
 #slightly above or below is okay (Xander rounds)
-summarised.intI <- data.intI %>%
+summarised.ClassC <- data.ClassC %>%
   summarise(N = length(Site), Total = sum(Fraction.Abundance))
 
 #change "cen" to "Cen" so it matches outside data
-data.intI$Site <- gsub("cen", "Cen", data.intI$Site)
+data.ClassC$Site <- gsub("cen", "Cen", data.ClassC$Site)
 
 #read in arsenic and temperature data
 meta <- data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #make column for organism name and join with microbe census data and normalize to it
-data.intI <- data.intI %>%
+data.ClassC <- data.ClassC %>%
   left_join(census, by = "Site") %>%
   left_join(summarised, by = "Site") %>%
   left_join(meta, by = "Site") %>%
@@ -480,106 +480,107 @@ data.intI <- data.intI %>%
          Normalized.Abundance.rplB = Abundance / rplB)
 
 #get taxonomy for organisms
-intI.ncbi <- tax_name(query = data.intI$organism, get = c("genus", "class", "phylum"), db = "ncbi")
+ClassC.ncbi <- tax_name(query = data.ClassC$organism, get = c("genus", "class", "phylum"), db = "ncbi")
 
 #change query column to "organism"
-intI.ncbi$organism <- intI.ncbi$query
+ClassC.ncbi$organism <- ClassC.ncbi$query
 
 #join taxanomic information with abundance information
-data.intI.t <- data.intI %>%
-  left_join(intI.ncbi, by = "organism") %>%
+data.ClassC.t <- data.ClassC %>%
+  left_join(ClassC.ncbi, by = "organism") %>%
   unique()
 
 #change NA phylum to metagenome
-data.intI.t$phylum[is.na(data.intI.t$phylum)] = "Metagenome"
+data.ClassC.t$phylum[is.na(data.ClassC.t$phylum)] = "Metagenome"
 
 #order based on temperature
-data.intI.t$Site <- factor(data.intI.t$Site, 
-                           levels = data.intI.t$Site[order(data.intI.t$Temp)])
+data.ClassC.t$Site <- factor(data.ClassC.t$Site, 
+                           levels = data.ClassC.t$Site[order(data.ClassC.t$Temp)])
 
 #prep colors
-color.intI <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666")
+color.ClassC <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666")
 
 
-(intI.abundance.tax.bar.plot <- ggplot(data.intI.t, aes(x = Site, y = Normalized.Abundance.census, fill = phylum)) +
+(ClassC.abundance.tax.bar.plot <- ggplot(data.ClassC.t, aes(x = Site, y = Normalized.Abundance.census, fill = phylum)) +
     geom_bar(stat = "identity") +
-    ylab("intI Abundance (normalized to genome equivalents)") +
-    scale_fill_manual(values = color.intI) +
+    ylab("ClassC Abundance (normalized to genome equivalents)") +
+    scale_fill_manual(values = color.ClassC) +
     theme_classic(base_size = 12))
-ggsave(intI.abundance.tax.bar.plot, filename = paste(wd, "/figures/intI.census.phylum.eps", sep=""), width = 10)
+ggsave(ClassC.abundance.tax.bar.plot, filename = paste(wd, "/figures/ClassC.census.phylum.eps", sep=""), width = 10)
 
 #order based on temperature
-data.intI$Site <- factor(data.intI$Site, 
-                         levels = data.intI$Site[order(data.intI$Temp)])
+data.ClassC$Site <- factor(data.ClassC$Site, 
+                         levels = data.ClassC$Site[order(data.ClassC$Temp)])
 
 #plot data
-(intI.abundance.plot <- ggplot(data.intI.t, aes(x = Site, y = Normalized.Abundance.rplB, 
+(ClassC.abundance.plot <- ggplot(data.ClassC.t, aes(x = Site, y = Normalized.Abundance.rplB, 
                                               fill = phylum)) +
     geom_bar(stat = "identity") +
-    scale_fill_manual(values = color.intI) +
-    ylab("intI Abundance (normalized to rplB)") +
+    scale_fill_manual(values = color.ClassC) +
+    ylab("ClassC Abundance (normalized to rplB)") +
     theme_classic())
 
-ggsave(intI.abundance.plot, filename = paste(wd, "/figures/intI.rplB.phylum.png", sep=""))
+ggsave(ClassC.abundance.plot, filename = paste(wd, "/figures/ClassC.rplB.phylum.png", sep=""))
 
-(intI.abundance.census.plot <- ggplot(data.intI, aes(x = Site, 
+(ClassC.abundance.census.plot <- ggplot(data.ClassC, aes(x = Site, 
                                                      y = Normalized.Abundance.census, 
                                                      fill = Classification)) +
     geom_bar(stat = "identity") +
     scale_fill_manual(values = c("firebrick2", "yellow1", "green3")) +
-    ylab("intI Abundance (normalized to genome equivalents)") +
+    ylab("ClassC Abundance (normalized to genome equivalents)") +
     theme_classic())
 
-ggsave(intI.abundance.census.plot, 
-       filename = paste(wd, "/figures/intI.abundance.census.png", sep=""))
+ggsave(ClassC.abundance.census.plot, 
+       filename = paste(wd, "/figures/ClassC.abundance.census.png", sep=""))
 
 
-(intI.abundance.census.taxon.plot <- ggplot(data.intI, aes(x = organism, 
+(ClassC.abundance.census.taxon.plot <- ggplot(data.ClassC, aes(x = organism, 
                                                            y = Normalized.Abundance.census)) +
     geom_point(aes(color = Temp, shape = Classification)) +
-    ylab("intI abundance (normalized to rplB)") +
+    ylab("ClassC abundance (normalized to rplB)") +
     xlab("Taxon") +
     coord_flip() +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
-ggsave(intI.abundance.census.taxon.plot, 
-       filename = paste(wd, "/figures/intI.abundance.census.taxon.png", sep=""), height = 10)
+ggsave(ClassC.abundance.census.taxon.plot, 
+       filename = paste(wd, "/figures/ClassC.abundance.census.taxon.png", sep=""), height = 10)
 
-(intI.abundance.taxon.plot <- ggplot(data.intI, aes(x = organism, 
+(ClassC.abundance.taxon.plot <- ggplot(data.ClassC, aes(x = organism, 
                                                     y = Normalized.Abundance.rplB)) +
     geom_point(aes(color = Temp, shape = Classification)) +
-    ylab("intI abundance (normalized to rplB)") +
+    ylab("ClassC abundance (normalized to rplB)") +
     xlab("Taxon") +
     coord_flip() +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
-ggsave(intI.abundance.taxon.plot, 
-       filename = paste(wd, "/figures/intI.abundance.taxon.png", sep=""), height = 10)
+ggsave(ClassC.abundance.taxon.plot, 
+       filename = paste(wd, "/figures/ClassC.abundance.taxon.png", sep=""), height = 10)
 
-#summarise intI information
-data.intI.sum <- data.intI %>%
+#summarise ClassC information
+data.ClassC.sum <- data.ClassC %>%
   group_by(Classification, Site, Temp) %>%
   summarise(Abundance.census.tot = sum(Normalized.Abundance.census), 
             Abundance.rplB.tot = sum(Normalized.Abundance.rplB))
 
-(intI.abundance.census.box <- ggplot(data.intI.sum, aes(x = Classification, 
+(ClassC.abundance.census.box <- ggplot(data.ClassC.sum, aes(x = Classification, 
                                                         y = Abundance.census.tot)) +
     geom_boxplot() +
     geom_jitter(width = 0.3, aes(color = Temp)) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
-  ylab("intI abundance (normalized to genome equivalents)"))
+  ylab("ClassC abundance (normalized to genome equivalents)"))
 
-ggsave(intI.abundance.census.box, 
-       filename = paste(wd, "/figures/intI.abundance.census.box.png", sep=""))
+ggsave(ClassC.abundance.census.box, 
+       filename = paste(wd, "/figures/ClassC.abundance.census.box.png", sep=""))
 
-(intI.abundance.rplB.box <- ggplot(data.intI.sum, aes(x = Classification, 
+(ClassC.abundance.rplB.box <- ggplot(data.ClassC.sum, aes(x = Classification, 
                                                         y = Abundance.rplB.tot)) +
     geom_boxplot() +
     geom_jitter(width = 0.3, aes(color = Temp)) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
-    ylab("intI abundance (normalized to genome equivalents)"))
+    ylab("ClassC abundance (normalized to genome equivalents)"))
 
-ggsave(intI.abundance.rplB.box, 
-       filename = paste(wd, "/figures/intI.abundance.rplB.box.png", sep=""))
+ggsave(ClassC.abundance.rplB.box, 
+       filename = paste(wd, "/figures/ClassC.abundance.rplB.box.png", sep=""))
+

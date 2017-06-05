@@ -1,0 +1,5 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2886881..2887297,organism=Lysinibacillus sphaericus,definition=arsenate reductase	1.43	0.1965
+coded_by=complement(328203..328628),organism=Desulfotomaculum kuznetsovii DSM 6115,definition=protein tyrosine phosphatase	3.198	0.4395
+coded_by=complement(355133..355558),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	1.273	0.1750
+coded_by=1863247..1863669,organism=Geobacillus sp. Y4.1MC1,definition=arsenate reductase (thioredoxin)	1.375	0.1890

@@ -1,0 +1,10 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=24248..25423,organism=Burkholderia ubonensis,definition=class C beta-lactamase	4.346	0.1826
+coded_by=complement(239590..240765),organism=Burkholderia ubonensis,definition=class C beta-lactamase	3.276	0.1377
+coded_by=complement(116346..117509),organism=Burkholderia sp. LMG 29318,definition=beta-lactamase	1.222	0.0513
+coded_by=54361..55530,organism=Burkholderia sp. MP-1,definition=beta-lactamase/D-alanine carboxypeptidase	1.666	0.0700
+coded_by=709694..710860,organism=Pseudolabrys sp. Root1462,definition=class C beta-lactamase	2.013	0.0846
+coded_by=complement(105150..106328),organism=Mycobacterium setense,definition=class C beta-lactamase	1.599	0.0672
+coded_by=42779..43942,organism=Ensifer sp. LC13,definition=class C beta-lactamase	3.239	0.1361
+coded_by=4549682..4550857,organism=Collimonas fungivorans,definition=beta-lactamase	5.233	0.2199
+coded_by=1138..2253,organism=uncultured bacterium,definition=ClassC-AmpC_beta_lactamase	1.205	0.0506

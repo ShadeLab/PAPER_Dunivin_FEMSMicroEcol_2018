@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(814034..815203),organism=Burkholderia fungorum,definition=beta-lactamase family protein	6.683	1.0000

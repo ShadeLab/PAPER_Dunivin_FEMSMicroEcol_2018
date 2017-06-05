@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	4.169	0.4605
+coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	1.416	0.1564
+coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	3.469	0.3831

@@ -1,0 +1,14 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	2.295	0.0500
+coded_by=complement(3650559..3651479),organism=Streptomyces sp. 4F,definition=class A beta-lactamase	3.239	0.0706
+coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	2.744	0.0598
+coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	7.323	0.1596
+coded_by=complement(12093..12950),organism=Bradyrhizobium sp. BR 10245,definition=class A beta-lactamase	4.54	0.0990
+coded_by=complement(114529..115404),organism=Paraburkholderia telluris,definition=beta-lactamase precursor	3.222	0.0702
+coded_by=complement(61167..62084),organism=Burkholderia ubonensis,definition=class A beta-lactamase	2.36	0.0514
+coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	2.339	0.0510
+coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	6.779	0.1478
+coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	1.929	0.0420
+coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	1.771	0.0386
+coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	1.372	0.0299
+coded_by=1081670..1082542,organism=Methylobacterium nodulans ORS 2060,definition=beta-lactamase	5.963	0.1300

@@ -1,0 +1,17 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5.89	0.0424
+coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	2.752	0.0198
+coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	8.587	0.0618
+coded_by=599..1495,organism=uncultured bacterium,definition=L1_beta_lactamase	9.941	0.0716
+coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	10.871	0.0783
+coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	19.906	0.1434
+coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	13.680000000000001	0.0985
+coded_by=261..1172,organism=uncultured bacterium,definition=LRA-3 like beta-lactamase	5.521	0.0398
+coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	9.607	0.0692
+coded_by=3394432..3395307,organism=Phenylobacterium zucineum HLK1,definition=beta-lactamase-like protein	4.274	0.0308
+coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	29.998	0.2161
+coded_by=195..1082,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1.931	0.0139
+coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	6.881	0.0496
+coded_by=257376..258317,organism=Pedosphaera parvula Ellin514,definition=Beta-lactamase	2.629	0.0189
+coded_by=94752..95654,organism=Bradyrhizobium sp. STM 3843,definition=putative Beta-lactamase	3.701	0.0267
+coded_by=47665..48513,organism=Chitinophaga costaii,definition=metallo-beta-lactamase class B	2.67	0.0192

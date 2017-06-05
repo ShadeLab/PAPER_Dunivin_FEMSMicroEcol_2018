@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=477..>1846,organism=uncultured bacterium,definition=ClassC-AmpC_beta_lactamase	2.968	0.2936
+coded_by=55996..57165,organism=Burkholderia terrae BS001,definition=beta-lactamase/D-alanine carboxypeptidase	7.142	0.7064

@@ -1,0 +1,8 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=12969..14120,organism=Burkholderia sp. ST111,definition=beta-lactamase/D-alanine carboxypeptidase	4.775	0.1703
+coded_by=2021115..2022323,organism=Mycobacterium marinum M,definition=penicillin-binding protein	5.284	0.1884
+coded_by=55996..57165,organism=Burkholderia terrae BS001,definition=beta-lactamase/D-alanine carboxypeptidase	4.005	0.1428
+coded_by=complement(264835..266004),organism=Burkholderia sp. K24,definition=beta-lactamase/D-alanine carboxypeptidase	3.355	0.1196
+coded_by=709694..710860,organism=Pseudolabrys sp. Root1462,definition=class C beta-lactamase	5.136	0.1831
+coded_by=complement(96560..97729),organism=Bosea sp. LC85,definition=Penicillin-binding protein, beta-lactamase class C precursor	2.572	0.0917
+coded_by=complement(287354..288520),organism=Devosia sp. LC5,definition=Beta-lactamase precursor	2.916	0.1040

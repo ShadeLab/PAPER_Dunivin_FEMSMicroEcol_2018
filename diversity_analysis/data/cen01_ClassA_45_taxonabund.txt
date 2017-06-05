@@ -1,0 +1,12 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	12.553	0.2065
+coded_by=complement(1106801..1107748),organism=Burkholderia sp. CCGE1001,definition=Beta-lactamase	3.182	0.0523
+coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	2.454	0.0404
+coded_by=73866..74744,organism=Asanoa ferruginea,definition=beta-lactamase	8.331	0.1370
+coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	7.243	0.1191
+coded_by=1627469..1628377,organism=Collimonas fungivorans Ter331,definition=Beta-lactamase	8.228	0.1353
+coded_by=1..882,organism=uncultured bacterium,definition=beta-lactamase	5.52	0.0908
+coded_by=complement(1010858..1011727),organism=Bradyrhizobium japonicum,definition=beta-lactamase	3.495	0.0575
+coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	1.625	0.0267
+coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	4.85	0.0798
+coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	3.315	0.0545
