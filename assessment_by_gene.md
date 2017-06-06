@@ -9,7 +9,8 @@ __Goals:__
 ### Table of contents
 * [Setting up workflow](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#setting-up-workflow)
 * [blast.qsub](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#blast.qsub)
-* [Gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#gene-analysis-notes)
+* [As resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#as-resistance-gene-analysis-notes)
+* [Antibiotic resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#antibiotic-resistance-gene-analysis-notes)
 
 ### __Setting up workflow:__
 1. Access HPCC's nr database
@@ -63,20 +64,8 @@ blastall -d nr -i final_prot.fasta -p blastp -o blast.txt -b 2 -v 2 -e 1e-6 -a 8
 grep '^>' blast.txt > descriptor.blast.txt
 ```
 
-### Gene analysis notes
-* AAC3-Ia
-  * only one hit total (1 from C06)
-  * Hit is labeled "acetyltransferase" 
-  * overall looks okay: full length (151 aa), 87% match, most differences are +
-* AAC6-Ia
-  * all hits (7) are specific (aminoglycoside 6'-N-acetyltransferase)
-* AAC6-Ib  
-  * one hit (C17)
-  * putative aminoglycoside 6'-N-acetyltransferase
-* AAC6-II
-  * one hit (C17)
-  * putative aminoglycoside 6'-N-acetyltransferase 
-  * matches AAC6-Ib __databases/ models for -Ib and -II are not unique__
+### As resistance gene analysis notes
+(also includes rplB)
 * acr3  
   * 10 hypothetical protein (0.9%)
   * 13 bile acid:sodium symporter (1.2%) 
@@ -93,6 +82,22 @@ grep '^>' blast.txt > descriptor.blast.txt
 * arsC_thio  
 * arsC_glut
 * arsM
+* rplB  
+
+### Antibiotic resistance gene analysis notes
+* AAC3-Ia
+  * only one hit total (1 from C06)
+  * Hit is labeled "acetyltransferase" 
+  * overall looks okay: full length (151 aa), 87% match, most differences are +
+* AAC6-Ia
+  * all hits (7) are specific (aminoglycoside 6'-N-acetyltransferase)
+* AAC6-Ib  
+  * one hit (C17)
+  * putative aminoglycoside 6'-N-acetyltransferase
+* AAC6-II
+  * one hit (C17)
+  * putative aminoglycoside 6'-N-acetyltransferase 
+  * matches AAC6-Ib __databases/ models for -Ib and -II are not unique__
 * CAT
   * 1 hit (Chloramphenicol acetyltransferase) 
 * ClassA  
@@ -112,7 +117,6 @@ grep '^>' blast.txt > descriptor.blast.txt
   * 10 tyrosine recombinases (OK, hits to integrase elsewhere)
   * 2 hypothetical proteins (OK, hits to integrase elsewhere)
   * 269
-* rplB  
 * tetA
   * 1 MFS transporter (OK, different name, same function)
   * 1 hypothetical protein
