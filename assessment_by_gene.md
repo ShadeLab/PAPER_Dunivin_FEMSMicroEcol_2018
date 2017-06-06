@@ -69,7 +69,7 @@ grep '^>' blast.txt > descriptor.blast.txt
   * Hit is labeled "acetyltransferase" 
   * overall looks okay: full length (151 aa), 87% match, most differences are +
 * AAC6-Ia
-  * 
+  * all hits (7) are specific (aminoglycoside 6'-N-acetyltransferase)
 * AAC6-Ib  
   * one hit (C17)
   * putative aminoglycoside 6'-N-acetyltransferase
