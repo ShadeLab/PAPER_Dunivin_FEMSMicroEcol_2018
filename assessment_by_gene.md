@@ -83,6 +83,9 @@ grep '^>' blast.txt > descriptor.blast.txt
   * many "protein tyrosine phosphatase" but alt name is arsenate reductase (OK)
   * hypothetical proteins look good too 
 * arsC_glut
+  * 53 hypothetical (4.9%)
+  * 1075 total
+  * all others are arsenate reductase!
 * arsM
 * rplB  
 
@@ -126,10 +129,13 @@ grep '^>' blast.txt > descriptor.blast.txt
   * 1 major facilitator transporter
   * all have second (close) hits to tetA
 * tetW  
-  * 
+  * 1 hypo (other hits tet)
+  * other hits are tet resistance
 * tetX
+  * 3 hypothetical (OK, other thits tetX)
+  * 1 FAD-binding monooxygenase (OK function of tetX)
 * vanA  
-  * 7 hypothetical proteins (17%)
+  * 7 hypothetical proteins (17%) 
   * 41 total
   * other top hyp hits are vanA
 * vanB
