@@ -64,28 +64,76 @@ grep '^>' blast.txt > descriptor.blast.txt
 ```
 
 ### Gene analysis notes
-* AAC3-Ia  
+* AAC3-Ia
+  * only one hit total (1 from C06)
+  * Hit is labeled "acetyltransferase" 
+  * overall looks okay: full length (151 aa), 87% match, most differences are +
 * AAC6-Ia
+  * 
 * AAC6-Ib  
+  * one hit (C17)
+  * putative aminoglycoside 6'-N-acetyltransferase
 * AAC6-II
+  * one hit (C17)
+  * putative aminoglycoside 6'-N-acetyltransferase 
+  * matches AAC6-Ib __databases/ models for -Ib and -II are not unique__
 * acr3  
+  * 10 hypothetical protein (0.9%)
+  * 13 bile acid:sodium symporter (1.2%) 
+  * 2 conserved membrane protein of unknown function (0.2%)
+  * 1051 total
+  * Bile acid:sodium symporter has an alternative name of arsenite resistance protein (OK)
 * aioA
+  * a couple say "arsenate reductase (azurin)" but these have alt name of arsenite oxidase large subunit (OK)
+  * all others are good! 
+  * 90 total
 * arsB       
 * arsC_thio  
 * arsC_glut
 * arsM
 * CAT
+  * 1 hit (Chloramphenicol acetyltransferase) 
 * ClassA  
+  * 6 hypothetical proteins (4.7%)
+  * 126 total
+  * hypotheticals are good matches and hit to ClassA elsewhere
 * ClassB
+  * 12 hypothetical proteins (4.8%)
+  * 246 total
+  * hypotheticals are good matches and hit to ClassB elsewhere
 * ClassC  
+  * 9 hypothetical proteins (27%)
+  * 2 penicillin-binding protein (OK since its still B-lactam resistance)
+  * 33 total
+  * hypotheticals hit to ClassC elsewhere 
 * intI
+  * 10 tyrosine recombinases (OK, hits to integrase elsewhere)
+  * 2 hypothetical proteins (OK, hits to integrase elsewhere)
+  * 269
 * rplB  
 * tetA
+  * 1 MFS transporter (OK, different name, same function)
+  * 1 hypothetical protein
+  * 1 PREDICTED: hippocampus abundant transcript 1 protein-like (second hit is tet efflux)
+  * 1 major facilitator transporter
+  * all have second (close) hits to tetA
 * tetW  
+  * 
 * tetX
 * vanA  
+  * 7 hypothetical proteins (17%)
+  * 41 total
+  * other top hyp hits are vanA
 * vanB
+  * __databases/ models for vanA and vanB are not unique__
 * vanH  
+  * 2 hypothetical proteins (2.6%)
+  * all other hits describe vanH 
+  * 75 total
 * vanX
+  * 9 hypothetical proteins (8.8%)
+  * many peptidase M15 (OK, other hits go to vanX)
+  * 102 total
 * vanZ
+  * all top hits are vanZ
               
