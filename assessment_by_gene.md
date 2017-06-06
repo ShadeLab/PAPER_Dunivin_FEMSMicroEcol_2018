@@ -88,6 +88,8 @@ grep '^>' blast.txt > descriptor.blast.txt
   * all others are good! 
   * 90 total
 * arsB       
+  * 7 total
+  * all perfect hits!
 * arsC_thio  
 * arsC_glut
 * arsM
