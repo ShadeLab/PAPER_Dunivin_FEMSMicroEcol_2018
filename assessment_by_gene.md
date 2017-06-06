@@ -80,6 +80,8 @@ grep '^>' blast.txt > descriptor.blast.txt
   * 7 total
   * all perfect hits!
 * arsC_thio  
+  * many "protein tyrosine phosphatase" but alt name is arsenate reductase (OK)
+  * hypothetical proteins look good too 
 * arsC_glut
 * arsM
 * rplB  
