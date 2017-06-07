@@ -87,6 +87,17 @@ grep '^>' blast.txt > descriptor.blast.txt
   * 1075 total
   * all others are arsenate reductase!
 * arsM
+  * 1431 hypothetical protein hits (41.9%)
+  * 357 type 11 methyltransferase (10.5%)
+  * 24 conserved protein of unknown function (0.7%)
+  * 71 putative methyltransferase (2.1%)
+  * 70 methyltransferase (2.0%)
+  * 53 methylase involved in ubiquinone/menaquinone biosynthesis (1.5%)
+  * 27 ubiE/COQ5 methyltransferase (0.8%)
+  * 53 BFD-like (2Fe-2S) protein (1.6%)
+  * 3415 total
+  * There are much too many non-specific hits for arsM
+  * To attempt to combat this, I will re-run arsM with more stringent bit score 60 instead of 50
 * rplB  
 
 ### Antibiotic resistance gene analysis notes
