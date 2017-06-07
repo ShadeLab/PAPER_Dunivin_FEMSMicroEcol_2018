@@ -1,4 +1,4 @@
-Taxon	Abundance	FractionAbundance
+Taxon	Abundance	Fraction Abundance
 coded_by=92926..95403,organism=Cupriavidus sp. IDO,definition=arsenite oxidase large subunit	0.734	0.0292
 coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	1.468	0.0585
 coded_by=complement(382431..384920),organism=Burkholderia multivorans ATCC 17616,definition=arsenite oxidase, large subunit	2.012	0.0801

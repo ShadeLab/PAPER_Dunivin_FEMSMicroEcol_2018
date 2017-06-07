@@ -271,7 +271,7 @@ ggsave(tree.plot, filename = paste(wd, "/figures/rplb.tree.png", sep=""),
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
 #remove Cen16 from metadata since we don't have arsB info yet
-meta=meta[which(meta$Site == "Cen17" | meta$Site == "Cen10"),]
+meta=meta[which(meta$Site == "Cen10"),]
 meta$Site <- as.character(meta$Site)
 
 #read in distance matrix

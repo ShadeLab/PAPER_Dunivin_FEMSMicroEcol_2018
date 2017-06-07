@@ -1,4 +1,4 @@
-Taxon	Abundance	FractionAbundance
+Taxon	Abundance	Fraction Abundance
 coded_by=72502..74964,organism=Nitrobacter hamburgensis X14,definition=Arsenate reductase (azurin)	3.326	0.0584
 coded_by=complement(39493..42117),organism=Roseomonas cervicalis ATCC 49957,definition=arsenite oxidase	4.8740000000000006	0.0856
 coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	1.953	0.0343
