@@ -1,6 +1,2 @@
 Taxon	Abundance	Fraction Abundance
 coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	2.396	1.0000
-
-
-Lineage	MatchName	Abundance	Fraction Abundance
-coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	ACQ66105	2.396	1.0000

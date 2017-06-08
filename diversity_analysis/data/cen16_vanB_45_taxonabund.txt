@@ -3,10 +3,3 @@ coded_by=1..1029,organism=Clostridium sp. MLG480,definition=D-alanine:D-lactate 
 coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	2.134	0.0491
 coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	1.553	0.0357
 coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	33.007999999999996	0.7589
-
-
-Lineage	MatchName	Abundance	Fraction Abundance
-coded_by=1..1029,organism=Clostridium sp. MLG480,definition=D-alanine:D-lactate ligase	AAV74563	6.797000000000001	0.1563
-coded_by=1..1029,organism=Clostridium sp. MLG856-1,definition=D-alanine:D-lactate ligase	AAV74561	2.134	0.0491
-coded_by=5102..6130,organism=Enterococcus faecium,definition=D-alanine:D-lactate ligase	ACQ66105	33.007999999999996	0.7589
-coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	1.553	0.0357

@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	1.694	1.0000

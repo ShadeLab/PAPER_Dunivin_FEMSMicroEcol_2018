@@ -155,7 +155,28 @@ ggplot(data.taxa.classif, aes(x = SoilTemperature_to10cm, y=Abund)) +
   geom_point(aes(shape = Classification)) +
   facet_wrap(~ Gene, scales = "free_y", ncol = 2)
 
+data.genus <- data.taxa %>%
+  group_by(Type, Gene, genus, Site) %>%
+  summarise(Genus.count = sum(Normalized.Abundance.census)) %>%
+  left_join(data.ncbi, by = "genus") %>%
+  select(Type:Genus.count, genus) %>%
+  unique()
 
+#make class a factor based on phylum
+data.genus$genus <- factor(data.genus$genus, 
+                           data.genus$genus[order(data.genus$phylum)])
+#prep colors
+n <- 150
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+color.genus <- print(sample(col_vector, n))
+
+
+(gene.bar.census.gn <- ggplot(data.genus, aes(x = Site, 
+                                              y = Genus.count, fill = genus)) +
+    geom_bar(stat = "identity") +
+    theme_classic() +
+    facet_wrap(~ Gene, scales = "free_y", ncol = 2))
 
 
 

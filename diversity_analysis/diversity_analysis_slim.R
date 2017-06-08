@@ -103,7 +103,8 @@ history=summarise(grouped, N=length(Fraction.Abundance), Average=mean(Fraction.A
                 geom_point(size=2) +
                 facet_wrap(~Classification, ncol = 1) +
                 labs(x="Phylum", y="Mean relative abundance")+
-                theme(axis.text.x = element_text(angle = 90, size = 12, hjust=0.95,vjust=0.2))))
+                theme(axis.text.x = element_text(angle = 90, size = 12, 
+                                                 hjust=0.95,vjust=0.2))))
 
 #save plot
 ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.png", sep=""), width = 5, height = 5)

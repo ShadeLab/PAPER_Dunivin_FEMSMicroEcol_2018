@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	15.957	0.8102
+coded_by=complement(1124207..1124761),organism=Gloeocapsa sp. PCC 7428,definition=Aminoglycoside N(6')-acetyltransferase	3.739	0.1898

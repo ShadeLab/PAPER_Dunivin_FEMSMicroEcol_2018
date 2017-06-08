@@ -2,9 +2,3 @@ Taxon	Abundance	Fraction Abundance
 coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	3.431	0.5593
 coded_by=23..1054,organism=Bacillus circulans,definition=vana protein	1.982	0.3231
 coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	0.721	0.1175
-
-
-Lineage	MatchName	Abundance	Fraction Abundance
-coded_by=23..1054,organism=Bacillus circulans,definition=vana protein	CAB61227	1.982	0.3231
-coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	AKF95798	3.431	0.5593
-coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	AAA65956	0.721	0.1175

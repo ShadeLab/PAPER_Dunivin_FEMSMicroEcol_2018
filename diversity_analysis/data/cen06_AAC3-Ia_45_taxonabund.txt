@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1550..2014,organism=Pseudomonas aeruginosa,definition=AAC(3)-I aminoglycoside 3'-N-acetyltransferase	2.456	1.0000

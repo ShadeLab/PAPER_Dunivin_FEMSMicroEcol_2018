@@ -1,8 +1,3 @@
 Taxon	Abundance	Fraction Abundance
 coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	4.048	0.3380
 coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	7.929	0.6620
-
-
-Lineage	MatchName	Abundance	Fraction Abundance
-coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	AKF95798	4.048	0.3380
-coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	AAT70090	7.929	0.6620
