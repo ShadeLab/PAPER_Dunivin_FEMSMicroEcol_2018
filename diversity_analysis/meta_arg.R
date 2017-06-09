@@ -21,8 +21,10 @@ meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt",
 
 #read in microbe census data
 census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""),
-                     delim = "\t", col_types = list(col_character(), col_number(),
-                                                    col_number(), col_number()))
+                     delim = "\t", col_types = list(col_character(),
+                                                    col_number(),
+                                                    col_number(), 
+                                                    col_number()))
 
 #read in gene classification data
 gene <- read_delim(paste(wd, "/data/gene_classification.txt",  sep=""), 
