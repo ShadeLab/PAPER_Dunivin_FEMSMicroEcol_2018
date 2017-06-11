@@ -113,7 +113,7 @@ history <- melt %>%
                 geom_point(size=2) +
                 facet_wrap(~Classification, ncol = 1) +
                 labs(x="Phylum", y="Mean relative abundance")+
-                theme(axis.text.x = element_text(angle = 90, size = 12, 
+                theme(axis.text.x = element_text(angle = 90, size = 10, 
                                                  hjust=0.95,vjust=0.2))))
 
 #save plot
@@ -222,6 +222,27 @@ data.phylum$Gene <- factor(data.phylum$Gene,
 #save plot
 ggsave(gene.bar.census, filename = paste(wd, "/figures/phylum.abundance.by_gene.png", sep=""), height = 20, width = 25)
 
+#examine dist of antibiotic and arsenic resistance genes (total) in 
+#soils with different fire histories
+#summarise data based on total ARG and AsRG
+sum.arg.asrg <- data.phylum %>%
+  ungroup() %>%
+  group_by(Classification, Site, Temp, Group) %>%
+  summarise(Total = sum(Phylum.count))
+
+(sum.arg.asrg.boxplot <- ggplot(sum.arg.asrg, aes(x = Classification, 
+                                                 y = Total)) +
+  geom_boxplot() +
+    geom_jitter(aes(color = Temp), size = 2) +
+  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                        guide_legend(title="Temperature (°C)")) +
+    facet_wrap(~Group) +
+    ylab("Total gene count (normalized to genome equivalents)") +
+  theme_classic(base_size = 15))
+
+#save plot
+ggsave(sum.arg.asrg.boxplot, filename = paste(wd, "/figures/total.abundance.by_group.png", sep=""))
+
 #examine antibiotic v arsenic resistance genes in Centralia (ie remove intI)
 data.phylum.ni <- data.phylum[-which(data.phylum$Gene == "intI"),]
 
@@ -252,27 +273,45 @@ ggsave(func.bar, filename = paste(wd, "/figures/funct.abundance.by_gene.png",
                                   sep=""), width = 9)
 
 #summarise data by classification
-data.class <- data.phylum %>%
+data.classification <- data.phylum %>%
   ungroup() %>%
   group_by(Site, Temp, Classification, Group, Description, Gene) %>%
   summarise(Count = sum(Phylum.count))
 
 #remove rows with v. low sample genes
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "tetA"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "tetW"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "tetX"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "vanT"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "arsB"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "CAT"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "AAC3-Ia"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "AAC6-Ia"),]
-data.phylum.class <- data.phylum.class[-which(data.phylum.class$Gene == "AAC6-II"),]
+data.classification.slim <- data.classification[-which(data.classification$Gene == "tetA"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "tetW"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "tetX"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "vanT"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "arsB"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "CAT"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC3-Ia"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC6-Ia"),]
+data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC6-II"),]
+
+#cast data to add appropriate zeros
+data.classification.cast <- data.frame(acast(data.classification.slim, Site ~ Gene, value.var = "Count"))
+
+#call na's zeros
+data.classification.cast[is.na(data.classification.cast)] =0
+
+#make site first column
+data.classification.cast$Site <- rownames(data.classification.cast)
+
+#melt data back to long format
+data.classification.melt <- melt(data.classification.cast, id.vars = "Site", variable.name = "Gene", value.name = "Count")
+
+#add back classification data
+data.classification.annotated <- data.classification.melt %>%
+  left_join(meta, by = c("Site")) %>%
+  select(Site, SoilTemperature_to10cm, Classification, Gene, Count) %>%
+  left_join(gene, by = "Gene")
 
 #make boxplot of gene abundance in different soils 
-(boxplot.genes <- ggplot(data.phylum.class, aes(x = Classification, 
+(boxplot.genes <- ggplot(data.classification.annotated, aes(x = Classification, 
                                                 y = Count*100)) +
   geom_boxplot() +
-  geom_jitter(aes(color = Temp), size = 2) +
+  geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
   facet_wrap( ~ Gene,  scales = "free_y") +
   ylab("Genome Equivalents with Gene (%)") +
   scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -287,74 +326,78 @@ ggsave(boxplot.genes, filename = paste(wd, "/figures/boxplot.by_gene.png",
 #CORRELATION ANALYSES#
 ######################
 
-#order metadata based on temp to match matrix
-data.phylum.class$Site <- factor(data.phylum.class$Site, levels = data.phylum.class$Site[order(meta$Site)])
-
 #decast for abundance check but first make Site a character
-data.phylum.class$Site <- as.character(data.phylum.class$Site)
-cast.gene <- data.frame(acast(data.phylum.class, Site ~ Gene, value.var = "Count"))
+data.classification.annotated$Site <- as.character(data.classification.annotated$Site)
+cast.gene <- data.frame(acast(data.classification.annotated, Site ~ Gene, value.var = "Count"))
 
 #call na's zeros
 cast.gene[is.na(cast.gene)] =0
 
 #correlate data with temp
 corr <- print(corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
+cor <- corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
+cor.plot(t(cor$r))
 #arsenic and antibiotic resistance genes are not correlated with temperature!
+
 
 ######################
 #MANN WHITNEY U TESTS#
 ######################
+
 #remove C17 (testing recovered v reference)
-data.mann <- data.phylum.class[-which(data.phylum.class$Classification == "Reference"),]
+data.mann <- data.classification.annotated[-which(data.classification.annotated$Classification == "Reference"),]
+
 
 #subset data for each gene to test:
 #acr3
 acr3 <- subset(x = data.mann, subset = Gene == "acr3")
-acr3.cast <- print(wilcox.test(acr3$Count~acr3$Classification))
+acr3.cast <- print(wilcox.test(acr3$Count~acr3$Classification, paired = FALSE))
 
 #aioA
 aioA <- subset(x = data.mann, subset = Gene == "aioA")
-aioA.cast <- print(wilcox.test(aioA$Count~aioA$Classification))
+aioA.cast <- print(wilcox.test(aioA$Count~aioA$Classification, paired = FALSE))
+
 
 #arsM
 arsM <- subset(x = data.mann, subset = Gene == "arsM")
-arsM.cast <- print(wilcox.test(arsM$Count~arsM$Classification))
+arsM.cast <- print(wilcox.test(arsM$Count~arsM$Classification, paired = FALSE))
 
 #arsCglut
 arsCglut <- subset(x = data.mann, subset = Gene == "arsCglut")
-arsCglut.cast <- print(wilcox.test(arsCglut$Count~arsCglut$Classification))
+arsCglut.cast <- print(wilcox.test(arsCglut$Count~arsCglut$Classification, paired = FALSE))
 
 #arsCthio
 arsCthio <- subset(x = data.mann, subset = Gene == "arsCthio")
-arsCthio.cast <- print(wilcox.test(arsCthio$Count~arsCthio$Classification))
+arsCthio.cast <- print(wilcox.test(arsCthio$Count~arsCthio$Classification, paired = FALSE))
 
 #intI
 intI <- subset(x = data.mann, subset = Gene == "intI")
-intI.cast <- print(wilcox.test(intI$Count~intI$Classification))
+intI.cast <- print(wilcox.test(intI$Count~intI$Classification, paired = FALSE))
 
 #ClassA
 ClassA <- subset(x = data.mann, subset = Gene == "ClassA")
-ClassA.cast <- print(wilcox.test(ClassA$Count~ClassA$Classification))
+ClassA.cast <- print(wilcox.test(ClassA$Count~ClassA$Classification, paired = FALSE))
 
 #ClassB
 ClassB <- subset(x = data.mann, subset = Gene == "ClassB")
-ClassB.cast <- print(wilcox.test(ClassB$Count~ClassB$Classification))
+ClassB.cast <- print(wilcox.test(ClassB$Count~ClassB$Classification, paired = FALSE))
 
 #ClassC
 ClassC <- subset(x = data.mann, subset = Gene == "ClassC")
-ClassC.cast <- print(wilcox.test(ClassC$Count~ClassC$Classification))
+ClassC.cast <- print(wilcox.test(ClassC$Count~ClassC$Classification, paired = FALSE))
 
 #vanA
 vanA <- subset(x = data.mann, subset = Gene == "vanA")
-vanA.cast <- print(wilcox.test(vanA$Count~vanA$Classification))
+vanA.cast <- print(wilcox.test(vanA$Count~vanA$Classification, paired = FALSE))
 
 #vanB
 vanB <- subset(x = data.mann, subset = Gene == "vanB")
-vanB.cast <- print(wilcox.test(vanB$Count~vanB$Classification))
+vanB.cast <- print(wilcox.test(vanB$Count~vanB$Classification, paired = FALSE))
 
 #vanH
 vanH <- subset(x = data.mann, subset = Gene == "vanH")
-vanH.cast <- print(wilcox.test(vanH$Count~vanH$Classification))
+vanH.cast <- print(wilcox.test(vanH$Count~vanH$Classification, paired = FALSE))
+
 
 #############################
 #EXAMINE CLASS LEVEL CHANGES#
@@ -430,33 +473,10 @@ col13=c("#332288", "#6699CC", "#88CCEE", "#44AA99", "#117733", "#999933", "#DDCC
                          aes(x = Gene, y = Normalized.Abundance.census, 
                              color = phylum, shape = Classification)) +
     geom_jitter(alpha = 0.7, width = 0.3, size = 3) +
-    scale_color_manual(values = tol12qualitative) +
+    scale_color_manual(values = col13) +
     ylab("Genome equivalents with OTU (%)") +
     theme_classic())
 
-#extract high abundance organisms (OTUs)
-high.abund <- data.annotated.ncbi %>%
-  group_by(Description, Group, Gene, Organism) %>%
-  summarise(Organism.abundance = length(Organism))
-
-#make list of highest abundance organisms
-high.abund.list <- high.abund[which(high.abund$Organism.abundance > 12),]
-
-#make high abundance annotated dataset
-data.annotated.ncbi.abundt <- data.annotated.ncbi[which(data.annotated.ncbi$Organism %in% high.abund.list$Organism),] 
-
-#look at acr3 OTUs based on organism name
-ggplot(subset(data.annotated.ncbi.abundt, Gene == "acr3"), 
-       aes(x = Organism, y = Normalized.Abundance.census, 
-                                shape = Classification, 
-                                color = Temp)) +
-  geom_jitter(alpha = 0.9, size = 3, width = 0.1) +
-  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                        guide_legend(title="Temperature (°C)")) +
-  facet_wrap(~Gene) +
-  theme_classic() +
-  theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2))
-  
 
 
 
