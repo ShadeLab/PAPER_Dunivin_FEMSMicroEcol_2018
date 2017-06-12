@@ -65,8 +65,8 @@ DATA
 41,OTU_43 
 42,OTU_40 
 43,OTU_41 
-44,ARXA_Ectothiorhodospira_PHS-1 
-45,sp|Q7SIF4|AIOA_ALCFA 
-46,sp|Q8GGJ6|AIOA_HERAR 
-47,AIOA_NT-26 
-48,ARXA_Alkalilimnicola_ehrlichii(WP_011627967.1) 
+44,ARXA_Ectothiorhodospira_PHS-1(EHQ52454.1)
+45,AIOA_Alcaligenes_faecalis(Q7SIF4)
+46,AIOA_Herminiimonas_arsenicoxydans(Q8GGJ6)
+47,AIOA_NT-26(AAR05656.1)
+48,ARXA_Alkalilimnicola_ehrlichii(WP_011627967.1)

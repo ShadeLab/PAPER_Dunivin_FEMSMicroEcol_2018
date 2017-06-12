@@ -199,7 +199,7 @@ data.annotated.ncbi$genus[is.na(data.annotated.ncbi$genus)] <- as.character(data
 
 #order based on temperature
 data.annotated.ncbi$Site <- factor(data.annotated.ncbi$Site, 
-                           levels = data.annotated.ncbi$Site[order(data.annotated.ncbi$Temp)])
+                                   levels = data.annotated.ncbi$Site[order(data.annotated.ncbi$Temp)])
 
 ##############################
 #EXAMINE PHYLUM LEVEL CHANGES#
@@ -208,14 +208,14 @@ data.annotated.ncbi$Site <- factor(data.annotated.ncbi$Site,
 #look at phylum level differneces
 data.phylum <- data.annotated.ncbi %>%
   group_by(Group, Description, Gene, phylum, Classification, Site, Temp) %>%
-  summarise(Phylum.count = sum(Normalized.Abundance.census))
+  summarise(Phylum.count = sum(Normalized.Abundance.rplB))
 
 #prep colors for phylum diversity
 color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown")
 
 #order genes by group
 data.phylum$Gene <- factor(data.phylum$Gene, 
-                                   levels = data.phylum$Gene[order(data.phylum$Group)])
+                           levels = data.phylum$Gene[order(data.phylum$Group)])
 
 #plot 
 (gene.bar.census <- ggplot(data.phylum, aes(x = Site, 
@@ -223,12 +223,12 @@ data.phylum$Gene <- factor(data.phylum$Gene,
     geom_bar(stat = "identity", alpha = 0.8) +
     scale_fill_manual(values = color) +
     theme_classic(base_size = 25) +
-    ylab("Genome Equivalents with Gene (%)") +
+    ylab("Gene per rplB (%)") +
     facet_wrap(~ Gene) +
     theme(axis.text.x = element_text(angle = 90, size = 15, hjust=0.95,vjust=0.2)))
 
 #save plot
-ggsave(gene.bar.census, filename = paste(wd, "/figures/phylum.abundance.by_gene.png", sep=""), height = 20, width = 25)
+ggsave(gene.bar.census, filename = paste(wd, "/figures/phylum.abundance.rplB.by_gene.png", sep=""), height = 20, width = 25)
 
 #examine antibiotic v arsenic resistance genes in Centralia (ie remove intI)
 data.phylum.ni <- data.phylum[-which(data.phylum$Gene == "intI"),]
@@ -242,28 +242,31 @@ sum.arg.asrg <- data.phylum.ni %>%
   summarise(Total = sum(Phylum.count))
 
 (sum.arg.asrg.boxplot <- ggplot(sum.arg.asrg, aes(x = Classification, 
-                                                 y = Total)) +
-  geom_boxplot() +
+                                                  y = Total)) +
+    geom_boxplot() +
     geom_jitter(aes(color = Temp), size = 2) +
-  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                        guide_legend(title="Temperature (°C)")) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
     facet_wrap(~Group) +
-    ylab("Total gene count (normalized to genome equivalents)") +
-  theme_classic(base_size = 15))
+    ylab("Total gene count (normalized to rplB)") +
+    theme_classic(base_size = 15))
 
 #save plot
-ggsave(sum.arg.asrg.boxplot, filename = paste(wd, "/figures/total.abundance.by_group.png", sep=""))
+ggsave(sum.arg.asrg.boxplot, filename = paste(wd, "/figures/total.abundance.rplB.by_group.png", sep=""))
 
 
 #plot grouped by gene functional group 
 (arg.asrg.bar <- ggplot(data.phylum.ni, aes(x = Site, 
                                             y = Phylum.count*100, fill = Gene)) +
     geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color) +
+    scale_fill_manual(values = rev(color)) +
     theme_classic(base_size = 15) +
-    ylab("Percent of Genome Equivalents") +
+    ylab("Gene per rplB (%)") +
     facet_wrap(~Group) +
     theme(axis.text.x = element_text(angle = 90, size = 15, hjust=0.95,vjust=0.2)))
+
+#save plot
+ggsave(arg.asrg.bar, filename = paste(wd, "/figures/arg.asrg.bar.rplB.by_group.png", sep=""))
 
 #summarise data by classification
 data.classification <- data.phylum %>%
@@ -296,19 +299,19 @@ data.classification.annotated <- data.classification.melt %>%
 #make boxplot of gene abundance in different soils 
 (boxplot.asrg.genes <- ggplot(subset(data.classification.annotated,
                                      Group == "ArsenicResistance"),
-                                     aes(x = Classification, 
-                                                y = Count*100)) +
-  geom_boxplot() +
-  geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
-  facet_wrap( ~ Gene,  scales = "free_y") +
-  ylab("Genome Equivalents with Gene (%)") +
-  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                        guide_legend(title="Temperature (°C)")) +
-  theme_classic(base_size = 15))
+                              aes(x = Classification, 
+                                  y = Count*100)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
+    facet_wrap( ~ Gene,  scales = "free_y") +
+    ylab("Gene per rplB(%)") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_classic(base_size = 15))
 
 #save plot
-ggsave(boxplot.asrg.genes, filename = paste(wd, "/figures/asrg.boxplot.by_gene.png", 
-                                  sep=""), height = 6, width = 12.5)
+ggsave(boxplot.asrg.genes, filename = paste(wd, "/figures/asrg.boxplot.rplB.by_gene.png", 
+                                            sep=""), height = 6, width = 12.5)
 
 #make boxplot of gene abundance in different soils 
 (boxplot.abrg.genes <- ggplot(subset(data.classification.annotated,
@@ -318,15 +321,15 @@ ggsave(boxplot.asrg.genes, filename = paste(wd, "/figures/asrg.boxplot.by_gene.p
     geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
     facet_wrap( ~ Gene) +
-    ylab("Genome Equivalents with Gene (%)") +
+    ylab("Gene per rplB(%)") +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +
     theme_classic(base_size = 14.5) +
     theme(legend.position = "none"))
 
 #save plot
-ggsave(boxplot.abrg.genes, filename = paste(wd, "/figures/abrg.boxplot.by_gene.png", 
-                                       sep=""), height = 6.5, width = 14.5)
+ggsave(boxplot.abrg.genes, filename = paste(wd, "/figures/abrg.boxplot.rplb.by_gene.png", 
+                                            sep=""), height = 6.5, width = 14.5)
 
 ######################
 #CORRELATION ANALYSES#
@@ -358,64 +361,81 @@ cor.plot(t(corr.genes.matrix$r), stars = TRUE, pval=corr.genes.matrix$p, numbers
 #remove C17 (testing recovered v reference)
 data.mann <- data.classification.annotated[-which(data.classification.annotated$Classification == "Reference"),]
 
-
 #subset data for each gene to test:
 #acr3
 acr3 <- subset(x = data.mann, subset = Gene == "acr3")
 acr3.cast <- print(wilcox.test(acr3$Count~acr3$Classification, paired = FALSE))
+t.test(acr3$Count ~ acr3$Classification)
+
 
 #aioA
 aioA <- subset(x = data.mann, subset = Gene == "aioA")
 aioA.cast <- print(wilcox.test(aioA$Count~aioA$Classification, paired = FALSE))
+t.test(aioA$Count ~ aioA$Classification)
 
 
 #arsM
 arsM <- subset(x = data.mann, subset = Gene == "arsM")
 arsM.cast <- print(wilcox.test(arsM$Count~arsM$Classification, paired = FALSE))
+t.test(arsM$Count ~ arsM$Classification)
+
 
 #arsCglut
 arsCglut <- subset(x = data.mann, subset = Gene == "arsCglut")
 arsCglut.cast <- print(wilcox.test(arsCglut$Count~arsCglut$Classification, paired = FALSE))
+t.test(arsCglut$Count ~ arsCglut$Classification)
+
 
 #arsCthio
 arsCthio <- subset(x = data.mann, subset = Gene == "arsCthio")
 arsCthio.cast <- print(wilcox.test(arsCthio$Count~arsCthio$Classification, paired = FALSE))
+t.test(arsCthio$Count ~ arsCthio$Classification)
 
 #intI
 intI <- subset(x = data.mann, subset = Gene == "intI")
 intI.cast <- print(wilcox.test(intI$Count~intI$Classification, paired = FALSE))
+t.test(intI$Count ~ intI$Classification)
 
 #ClassA
 ClassA <- subset(x = data.mann, subset = Gene == "ClassA")
 ClassA.cast <- print(wilcox.test(ClassA$Count~ClassA$Classification, paired = FALSE))
+t.test(ClassA$Count ~ ClassA$Classification)
 
 #ClassB
 ClassB <- subset(x = data.mann, subset = Gene == "ClassB")
 ClassB.cast <- print(wilcox.test(ClassB$Count~ClassB$Classification, paired = FALSE))
+t.test(ClassB$Count ~ ClassB$Classification)
 
 #ClassC
 ClassC <- subset(x = data.mann, subset = Gene == "ClassC")
 ClassC.cast <- print(wilcox.test(ClassC$Count~ClassC$Classification, paired = FALSE))
+t.test(ClassC$Count ~ ClassC$Classification)
 
 #vanA
 vanA <- subset(x = data.mann, subset = Gene == "vanA")
 vanA.cast <- print(wilcox.test(vanA$Count~vanA$Classification, paired = FALSE))
+t.test(vanA$Count ~ vanA$Classification)
 
 #vanB
 vanB <- subset(x = data.mann, subset = Gene == "vanB")
 vanB.cast <- print(wilcox.test(vanB$Count~vanB$Classification, paired = FALSE))
+t.test(vanB$Count ~ vanB$Classification)
 
 #vanH
 vanH <- subset(x = data.mann, subset = Gene == "vanH")
 vanH.cast <- print(wilcox.test(vanH$Count~vanH$Classification, paired = FALSE))
+t.test(vanH$Count ~ vanH$Classification)
 
 #vanX
 vanX <- subset(x = data.mann, subset = Gene == "vanX")
 vanX.cast <- print(wilcox.test(vanX$Count~vanX$Classification, paired = FALSE))
+t.test(vanX$Count ~ vanX$Classification)
+
 
 #vanZ
 vanZ <- subset(x = data.mann, subset = Gene == "vanZ")
 vanZ.cast <- print(wilcox.test(vanZ$Count~vanZ$Classification, paired = FALSE))
+t.test(vanZ$Count ~ vanZ$Classification)
 
 #############################
 #EXAMINE CLASS LEVEL CHANGES#
@@ -423,12 +443,12 @@ vanZ.cast <- print(wilcox.test(vanZ$Count~vanZ$Classification, paired = FALSE))
 
 #order class by phylum
 data.annotated.ncbi$class <- factor(data.annotated.ncbi$class, 
-                          levels = data.annotated.ncbi$class[order(data.annotated.ncbi$phylum)])
+                                    levels = data.annotated.ncbi$class[order(data.annotated.ncbi$phylum)])
 
 #summarise class level information
 data.class <- data.annotated.ncbi %>%
   group_by(Group, Description, Gene, class, Classification, Site, Temp) %>%
-  summarise(Class.count = sum(Normalized.Abundance.census))
+  summarise(Class.count = sum(Normalized.Abundance.rplB))
 
 #prep colors for class diversity
 #n <- 64
@@ -439,34 +459,34 @@ color.class <- c( "#FFD92F", "#F2F2F2", "#CAB2D6", "#CBD5E8", "#F781BF", "#E41A1
 
 #order genes by group
 data.class$Gene <- factor(data.class$Gene, 
-                           levels = data.class$Gene[order(data.class$Group)])
+                          levels = data.class$Gene[order(data.class$Group)])
 
 
 #plot arsenic resistance genes with class info
 (asrg.gene.bar.class <- ggplot(subset(data.class, Group == "ArsenicResistance"), aes(x = Site, 
-                                            y = Class.count*100, fill = class)) +
-    geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color.class) +
-    theme_classic(base_size = 10) +
-    ylab("Genome Equivalents with Gene (%)") +
-    facet_wrap(~ Gene) +
-    theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
-
-#save plot
-ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.by_AsRG.png", sep=""), width = 10)
-
-#plot arsenic resistance genes with class info
-(abrg.gene.bar.class <- ggplot(subset(data.class, Group == "AntibioticResistance"), aes(x = Site, 
                                                                                      y = Class.count*100, fill = class)) +
     geom_bar(stat = "identity", alpha = 0.8) +
     scale_fill_manual(values = color.class) +
     theme_classic(base_size = 10) +
-    ylab("Genome Equivalents with Gene (%)") +
+    ylab("Gene per rplB (%)") +
     facet_wrap(~ Gene) +
     theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
 
 #save plot
-ggsave(abrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.by_abRG.png", sep=""), width = 10)
+ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.by_AsRG.png", sep=""), width = 10)
+
+#plot arsenic resistance genes with class info
+(abrg.gene.bar.class <- ggplot(subset(data.class, Group == "AntibioticResistance"), aes(x = Site, 
+                                                                                        y = Class.count*100, fill = class)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    scale_fill_manual(values = color.class) +
+    theme_classic(base_size = 10) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene) +
+    theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
+
+#save plot
+ggsave(abrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.by_abRG.png", sep=""), width = 10)
 
 #look at only "thermophilic" classes
 thermo.data.class <- data.class[which(data.class$class %in% thermo.u),]
@@ -489,10 +509,10 @@ thermo.compare.data.class.slim <- thermo.compare.data.class.slim[- grep("candida
 
 #order sites by temperature
 thermo.compare.data.class.slim$Site <- factor(thermo.compare.data.class.slim$Site, 
-                          levels = thermo.compare.data.class.slim$Site[order(thermo.compare.data.class.slim$Temp)])
+                                              levels = thermo.compare.data.class.slim$Site[order(thermo.compare.data.class.slim$Temp)])
 
 #plot different temp preferences
-(asrg.gene.bar.class.thermo <- ggplot(subset(thermo.compare.data.class.slim, Gene == "arsCthio"), 
+(asrg.gene.bar.class.thermo <- ggplot(subset(thermo.compare.data.class.slim, Gene == "acr3"), 
                                       aes(x = Site,  y = Class.count*100, fill = class)) +
     geom_bar(stat = "identity", alpha = 0.8) +
     scale_fill_manual(values = color.class) +
@@ -509,11 +529,11 @@ thermo.compare.data.class.slim$Site <- factor(thermo.compare.data.class.slim$Sit
 
 (asrg.otu.plot <- ggplot(subset(data.annotated.ncbi, 
                                 Group == "ArsenicResistance"),
-                    aes(x = Gene, y = Normalized.Abundance.census, 
-                        color = phylum, shape = Classification)) +
+                         aes(x = Gene, y = Normalized.Abundance.rplB, 
+                             color = phylum, shape = Classification)) +
    geom_jitter(alpha = 0.5) +
    scale_color_manual(values = color) +
-   ylab("Genome equivalents with OTU (%)") +
+   ylab("Gene per rplB (%)") +
    theme_classic())
 
 #make colors for AB-rg OTUs
@@ -526,20 +546,20 @@ col13=c("#332288", "#6699CC", "#88CCEE", "#44AA99", "#117733", "#999933", "#DDCC
                              color = phylum, shape = Classification)) +
     geom_jitter(alpha = 0.7, width = 0.3, size = 3) +
     scale_color_manual(values = col13) +
-    ylab("Genome equivalents with OTU (%)") +
+    ylab("Gene per rplB (%)") +
     theme_classic())
 
 #summarise data by class
 data.annotated.ncbi.summarised <- data.annotated.ncbi %>%
   group_by(Group,Gene, Site, Temp, genus) %>%
-  summarise(count = sum(Normalized.Abundance.census))
+  summarise(count = sum(Normalized.Abundance.rplB))
 
 top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
 
 #plot all AsRG vs temperature
 (acr3.all <- ggplot(subset(data.annotated.ncbi.summarised, 
-                                Gene == "acr3"),
-                         aes(x = Temp, y = count)) +
+                           Gene == "acr3"),
+                    aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
     geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
     geom_text(aes(label=ifelse(count>0.008 & Temp>40, as.character(genus), "")),hjust="center",vjust=-0.5, size = 3) +
@@ -561,8 +581,8 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
     theme(legend.position = "none"))
 
 (aioA.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
-                           Gene == "aioA"),
-                    aes(x = Temp, y = count)) +
+                            Gene == "aioA"),
+                     aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
     geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
     geom_text(aes(label=ifelse(count>0.0005 & Temp>40,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
@@ -585,8 +605,8 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
     theme(legend.position = "none"))
 
 (arsCg.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
-                            Gene == "arsCglut"),
-                     aes(x = Temp, y = count)) +
+                             Gene == "arsCglut"),
+                      aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
     geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
     geom_text(aes(label=ifelse(count>0.005,as.character(genus),'')),hjust="center",vjust=0, size = 3) +
@@ -596,8 +616,8 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
     theme(legend.position = "none"))
 
 (vanX.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
-                             Gene == "vanX"),
-                      aes(x = Temp, y = count)) +
+                            Gene == "vanX"),
+                     aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
     geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
     geom_text(aes(label=ifelse(Temp>22,as.character(genus),'')),hjust="right",vjust=0, size = 3) +

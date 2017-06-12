@@ -112,11 +112,9 @@ ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.png", sep=""
 #read in metadata
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
-#remove Cen16 from metadata since we don't have rplB info yet
-meta=meta[!grepl("Cen16", meta$Site),]
 
 #read in distance matrix
-rplB=read.delim(file = paste(wd, "/data/rformat_dist_0.03.txt", sep=""))
+rplB=read.delim(file = paste(wd, "/data/rplB_rformat_dist_0.03.txt", sep=""))
 
 #call metadata sample data
 metad=meta[-1]
@@ -142,13 +140,13 @@ rplB.gcounts=rowSums(rplB)
 otu=otu_table(rplB, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = FALSE)
+rarecurve(otu, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink", "lightgreen", "lightblue", "salmon", "red", "purple"), label = TRUE)
 
 #rarefy
 rare=rarefy_even_depth(otu, sample.size = min(sample_sums(otu)), rngseed = TRUE)
 
 #check curve
-rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink"), label = TRUE)
+rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink", "lightgreen", "lightblue", "salmon", "red", "purple"), label = TRUE)
 
 ##make biom for phyloseq
 phylo=merge_phyloseq(rare, metad)

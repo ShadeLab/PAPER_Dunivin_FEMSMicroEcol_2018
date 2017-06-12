@@ -17,10 +17,10 @@ DATASET_LABEL,aioA_abundance
 COLOR,#ff0000
 
 #define colors for each individual field column (use hexadecimal, RGB or RGBA notation; if using RGB/RGBA, COMMA cannot be used as SEPARATOR)
-FIELD_COLORS,#00FF00,#FFE100,#37FF00,#6FFF00,#FFCD00,#37FF00,#6FFF00,#FF0000,#A7FF00,#FF9800
+FIELD_COLORS,#6FFF00,#A7FF00,#37FF00,#6FFF00,#FFCD00,#37FF00,#FF0000,#FF9800,#FFE100,#006400
 
 #field labels
-FIELD_LABELS,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
+FIELD_LABELS,Cen01,Cen03,Cen04,Cen05,Cen06,Cen07,Cen10,Cen12,Cen16,Cen17
 
 #=================================================================#
 #                    OPTIONAL SETTINGS                            #
@@ -42,7 +42,7 @@ DATASET_SCALE,0,1
 
 LEGEND_TITLE,Site Temperature
 LEGEND_SHAPES,1,2,5,5,2,5,5,2,5,2
-LEGEND_COLORS,#00FF00,#FFE100,#37FF00,#6FFF00,#FFCD00,#37FF00,#6FFF00,#FF0000,#A7FF00,#FF9800
+LEGEND_COLORS,#006400,#FFE100,#37FF00,#6FFF00,#FFCD00,#37FF00,#6FFF00,#FF0000,#A7FF00,#FF9800
 LEGEND_LABELS,Cen17,Cen16,Cen04,Cen05,Cen06,Cen07,Cen01,Cen10,Cen03,Cen12
 
 #=================================================================#
