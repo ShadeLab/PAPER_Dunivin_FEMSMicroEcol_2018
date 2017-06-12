@@ -6,12 +6,12 @@ setwd("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/diversity_analysis/"
 wd <- paste(getwd())
 
 #read in label data
-labels <- read_delim("/Users/dunivint/Documents/ShadeLab/Experiments/Xander/aioA_0.1_labels.csv", delim = ",", col_names = FALSE)
+labels <- read_delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/aioA/aioA_0.1_labels.txt", delim = ",", col_names = FALSE)
 colnames(labels) <- c("Label", "OTU")
 labels$OTU <- gsub(" ", "", labels$OTU)
 
 #read in OTU table 
-table <- read.delim("/Users/dunivint/Documents/ShadeLab/Experiments/Xander/aioArformat_dist_0.1.txt", header = FALSE)
+table <- read.delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/aioA/rformat_dist_0.1.txt", header = TRUE)
 
 #read in census data
 census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""),
@@ -52,8 +52,8 @@ table.normalized$Site <- factor(table.normalized$Site,
                                 levels = table.normalized$Site[order(meta$SoilTemperature_to10cm)])
 
 #transform otu table
-table.normalized.t = setNames(data.frame(t(table.normalized[,-1])), 
-                              table.normalized[,1])
+table.normalized.t = setNames(data.frame(t(table.normalized[,-c(44,45)])), 
+                              table.normalized[,44])
 #make OTUs a column
 table.normalized.t$OTU <- rownames(table.normalized.t)
 

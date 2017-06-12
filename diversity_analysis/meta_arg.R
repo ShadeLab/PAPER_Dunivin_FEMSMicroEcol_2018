@@ -9,6 +9,7 @@ library(tidyverse)
 library(reshape2)
 library(RColorBrewer)
 library(taxize)
+library(psych)
 
 #print working directory for future references
 #note the GitHub directory for this script is as follows
@@ -32,6 +33,13 @@ gene <- read_delim(paste(wd, "/data/gene_classification.txt",  sep=""),
 
 #make color pallette for Centralia temperatures
 GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
+
+#read in thermophilic lineages (IMG)
+thermo <- read_delim("/Users/dunivint/Downloads/taxontable79101_12-jun-2017.xls", delim = "\t")
+
+#summarise thermophilic lineages
+thermo.u <- unique(thermo$Class)
+thermo.u <- c(thermo.u, "Nitrospirae", "Chloroflexi", "Thermoleophilia")
 
 ####################################
 #READ IN AND SET UP DATA#
@@ -222,10 +230,13 @@ data.phylum$Gene <- factor(data.phylum$Gene,
 #save plot
 ggsave(gene.bar.census, filename = paste(wd, "/figures/phylum.abundance.by_gene.png", sep=""), height = 20, width = 25)
 
+#examine antibiotic v arsenic resistance genes in Centralia (ie remove intI)
+data.phylum.ni <- data.phylum[-which(data.phylum$Gene == "intI"),]
+
 #examine dist of antibiotic and arsenic resistance genes (total) in 
 #soils with different fire histories
 #summarise data based on total ARG and AsRG
-sum.arg.asrg <- data.phylum %>%
+sum.arg.asrg <- data.phylum.ni %>%
   ungroup() %>%
   group_by(Classification, Site, Temp, Group) %>%
   summarise(Total = sum(Phylum.count))
@@ -243,8 +254,6 @@ sum.arg.asrg <- data.phylum %>%
 #save plot
 ggsave(sum.arg.asrg.boxplot, filename = paste(wd, "/figures/total.abundance.by_group.png", sep=""))
 
-#examine antibiotic v arsenic resistance genes in Centralia (ie remove intI)
-data.phylum.ni <- data.phylum[-which(data.phylum$Gene == "intI"),]
 
 #plot grouped by gene functional group 
 (arg.asrg.bar <- ggplot(data.phylum.ni, aes(x = Site, 
@@ -256,50 +265,27 @@ data.phylum.ni <- data.phylum[-which(data.phylum$Gene == "intI"),]
     facet_wrap(~Group) +
     theme(axis.text.x = element_text(angle = 90, size = 15, hjust=0.95,vjust=0.2)))
 
-#save plot
-ggsave(arg.asrg.bar, filename = paste(wd, "/figures/arg_asrg.abundance.by_gene.png", sep=""), height = 6)
-
-(func.bar <- ggplot(data.phylum, aes(x = Site, 
-                                            y = Phylum.count*100, fill = Gene)) +
-    geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color) +
-    theme_classic(base_size = 12) +
-    ylab("Percent of Genome Equivalents") +
-    facet_wrap( ~ Description,  scales = "free_y", ncol = 2) +
-    theme(axis.text.x = element_text(angle = 90, size = 12, hjust=0.95,vjust=0.2)))
-
-#save plot
-ggsave(func.bar, filename = paste(wd, "/figures/funct.abundance.by_gene.png", 
-                                  sep=""), width = 9)
-
 #summarise data by classification
 data.classification <- data.phylum %>%
   ungroup() %>%
   group_by(Site, Temp, Classification, Group, Description, Gene) %>%
   summarise(Count = sum(Phylum.count))
 
-#remove rows with v. low sample genes
-data.classification.slim <- data.classification[-which(data.classification$Gene == "tetA"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "tetW"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "tetX"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "vanT"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "arsB"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "CAT"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC3-Ia"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC6-Ia"),]
-data.classification.slim <- data.classification.slim[-which(data.classification.slim$Gene == "AAC6-II"),]
-
 #cast data to add appropriate zeros
-data.classification.cast <- data.frame(acast(data.classification.slim, Site ~ Gene, value.var = "Count"))
+data.classification.cast <- data.frame(acast(data.classification, Site ~ Gene, value.var = "Count"))
 
 #call na's zeros
 data.classification.cast[is.na(data.classification.cast)] =0
 
-#make site first column
+#make site a column
 data.classification.cast$Site <- rownames(data.classification.cast)
 
 #melt data back to long format
 data.classification.melt <- melt(data.classification.cast, id.vars = "Site", variable.name = "Gene", value.name = "Count")
+
+#change all "." to "-" for merging purposes
+data.classification.melt$Gene <- gsub("3.I", "3-I", data.classification.melt$Gene)
+data.classification.melt$Gene <- gsub("6.I", "6-I", data.classification.melt$Gene)
 
 #add back classification data
 data.classification.annotated <- data.classification.melt %>%
@@ -308,7 +294,9 @@ data.classification.annotated <- data.classification.melt %>%
   left_join(gene, by = "Gene")
 
 #make boxplot of gene abundance in different soils 
-(boxplot.genes <- ggplot(data.classification.annotated, aes(x = Classification, 
+(boxplot.asrg.genes <- ggplot(subset(data.classification.annotated,
+                                     Group == "ArsenicResistance"),
+                                     aes(x = Classification, 
                                                 y = Count*100)) +
   geom_boxplot() +
   geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
@@ -319,8 +307,25 @@ data.classification.annotated <- data.classification.melt %>%
   theme_classic(base_size = 12))
 
 #save plot
-ggsave(boxplot.genes, filename = paste(wd, "/figures/boxplot.by_gene.png", 
+ggsave(boxplot.asrg.genes, filename = paste(wd, "/figures/asrg.boxplot.by_gene.png", 
                                   sep=""), height = 6, width = 12.5)
+
+#make boxplot of gene abundance in different soils 
+(boxplot.abrg.genes <- ggplot(subset(data.classification.annotated,
+                                     Group == "AntibioticResistance"),
+                              aes(x = Classification, 
+                                  y = Count*100)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
+    facet_wrap( ~ Gene) +
+    ylab("Genome Equivalents with Gene (%)") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_classic(base_size = 12))
+
+#save plot
+ggsave(boxplot.abrg.genes, filename = paste(wd, "/figures/abrg.boxplot.by_gene.png", 
+                                       sep=""), height = 6, width = 12.5)
 
 ######################
 #CORRELATION ANALYSES#
@@ -336,8 +341,13 @@ cast.gene[is.na(cast.gene)] =0
 #correlate data with temp
 corr <- print(corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
 cor <- corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
-cor.plot(t(cor$r))
 #arsenic and antibiotic resistance genes are not correlated with temperature!
+
+#check correlations between genes
+corr.genes <- print(corr.test(cast.gene, method = "spearman", adjust = "fdr"), 
+                    short = FALSE)
+corr.genes.matrix <- corr.test(cast.gene, method = "spearman", adjust = "fdr")
+cor.plot(t(corr.genes.matrix$r), stars = TRUE, pval=corr.genes.matrix$p, numbers = TRUE, diag = FALSE, xlas=2)
 
 
 ######################
@@ -398,6 +408,13 @@ vanB.cast <- print(wilcox.test(vanB$Count~vanB$Classification, paired = FALSE))
 vanH <- subset(x = data.mann, subset = Gene == "vanH")
 vanH.cast <- print(wilcox.test(vanH$Count~vanH$Classification, paired = FALSE))
 
+#vanX
+vanX <- subset(x = data.mann, subset = Gene == "vanX")
+vanX.cast <- print(wilcox.test(vanX$Count~vanX$Classification, paired = FALSE))
+
+#vanZ
+vanZ <- subset(x = data.mann, subset = Gene == "vanZ")
+vanZ.cast <- print(wilcox.test(vanZ$Count~vanZ$Classification, paired = FALSE))
 
 #############################
 #EXAMINE CLASS LEVEL CHANGES#
@@ -450,6 +467,40 @@ ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.by_As
 #save plot
 ggsave(abrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.by_abRG.png", sep=""), width = 10)
 
+#look at only "thermophilic" classes
+thermo.data.class <- data.class[which(data.class$class %in% thermo.u),]
+
+#isolate non thermophilic-labeled classes
+nonthermo.data.class <- data.class[-which(data.class$class %in% thermo.u),]
+
+#add datalabels to thermo and non thermo's 
+thermo.data.class <- mutate(thermo.data.class, Temp.preference = "Thermophilic")
+nonthermo.data.class <- mutate(nonthermo.data.class, Temp.preference = "Non-thermophilic")
+
+#join together thermo data
+thermo.compare.data.class <- rbind(thermo.data.class, nonthermo.data.class)
+
+#remove "candidatus" classes
+thermo.compare.data.class.slim <- thermo.compare.data.class[- grep("Candidatus", 
+                                                                   thermo.compare.data.class$class),]
+thermo.compare.data.class.slim <- thermo.compare.data.class.slim[- grep("candidate", 
+                                                                        thermo.compare.data.class.slim$class),]
+
+#order sites by temperature
+thermo.compare.data.class.slim$Site <- factor(thermo.compare.data.class.slim$Site, 
+                          levels = thermo.compare.data.class.slim$Site[order(thermo.compare.data.class.slim$Temp)])
+
+#plot different temp preferences
+(asrg.gene.bar.class.thermo <- ggplot(subset(thermo.compare.data.class.slim, Gene == "arsCthio"), 
+                                      aes(x = Site,  y = Class.count*100, fill = class)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    scale_fill_manual(values = color.class) +
+    theme_classic(base_size = 10) +
+    ylab("Genome Equivalents with Gene (%)") +
+    facet_wrap(~ Temp.preference) +
+    theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
+#much of the increase is due to thermophilic lineages
+
 ###########################
 #EXAMINE OTU LEVEL CHANGES#
 ###########################
@@ -477,6 +528,81 @@ col13=c("#332288", "#6699CC", "#88CCEE", "#44AA99", "#117733", "#999933", "#DDCC
     ylab("Genome equivalents with OTU (%)") +
     theme_classic())
 
+#summarise data by class
+data.annotated.ncbi.summarised <- data.annotated.ncbi %>%
+  group_by(Group,Gene, Site, Temp, genus) %>%
+  summarise(count = sum(Normalized.Abundance.census))
 
+top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
+
+#plot all AsRG vs temperature
+(acr3.all <- ggplot(subset(data.annotated.ncbi.summarised, 
+                                Gene == "acr3"),
+                         aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.008 & Temp>40, as.character(genus), "")),hjust="center",vjust=-0.5, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    theme_classic() +
+    theme(legend.position = "none"))
+
+(acr3.low <- ggplot(subset(data.annotated.ncbi.summarised, 
+                           Gene == "acr3"),
+                    aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.0015 & Temp>40,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    ylim(0,0.0045) +
+    theme_classic() +
+    theme(legend.position = "none"))
+
+(aioA.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
+                           Gene == "aioA"),
+                    aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.0005 & Temp>40,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    theme_classic() +
+    theme(legend.position = "none"))
+
+
+(arsM.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
+                            Gene == "arsM"),
+                     aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.0005 & Temp>40,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    theme_classic() +
+    ylim(0,0.005) +
+    theme(legend.position = "none"))
+
+(arsCg.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
+                            Gene == "arsCglut"),
+                     aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.005,as.character(genus),'')),hjust="center",vjust=0, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    theme_classic() +
+    theme(legend.position = "none"))
+
+(vanX.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
+                             Gene == "vanX"),
+                      aes(x = Temp, y = count)) +
+    geom_line(aes(color = genus)) +
+    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(Temp>22,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
+    ylab("Genome equivalents with OTU (%)") +
+    facet_wrap(~Gene, scales = "free_y") +
+    theme_classic() +
+    theme(legend.position = "none"))
 
 

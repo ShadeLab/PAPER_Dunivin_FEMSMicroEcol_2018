@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2435..2932,organism=Desulfosporosinus sp. OT,definition=vanZ like family protein	5.555	0.4796
+coded_by=complement(13442..14005),organism=Desulfosporosinus sp. BG,definition=Protein VanZ	6.028	0.5204

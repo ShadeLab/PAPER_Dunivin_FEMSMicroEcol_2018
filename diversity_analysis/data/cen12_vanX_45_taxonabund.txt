@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(71628..72290),organism=Coxiellaceae bacterium HT99,definition=D-alanyl-D-alanine dipeptidase	4.201	0.1862
+coded_by=734510..735307,organism=Xanthobacter autotrophicus Py2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	14.353	0.6362
+coded_by=916823..917485,organism=Methylobacterium populi,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	4.006	0.1776

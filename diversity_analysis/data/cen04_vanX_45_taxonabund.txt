@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=1501003..1501611,organism=Desulfitobacterium dichloroeliminans LMG P-21439,definition=D-Ala-D-Ala dipeptidase vanX	1.52	0.1838
+coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	6.752	0.8162

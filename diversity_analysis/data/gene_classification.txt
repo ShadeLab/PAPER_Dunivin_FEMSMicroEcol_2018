@@ -21,3 +21,5 @@ vanB	Vancomycin	AntibioticResistance
 vanC	Vancomycin	AntibioticResistance
 vanT	Vancomycin	AntibioticResistance
 vanH	Vancomycin	AntibioticResistance
+vanX	Vancomycin	AntibioticResistance
+vanZ	Vancomycin	AntibioticResistance
