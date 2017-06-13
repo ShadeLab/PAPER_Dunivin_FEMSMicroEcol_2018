@@ -463,17 +463,17 @@ data.class$Gene <- factor(data.class$Gene,
 
 
 #plot arsenic resistance genes with class info
-(asrg.gene.bar.class <- ggplot(subset(data.class, Group == "ArsenicResistance"), aes(x = Site, 
+(asrg.gene.bar.class <- ggplot(subset(data.class, Description == "ArseniteOxidase"), aes(x = Site, 
                                                                                      y = Class.count*100, fill = class)) +
     geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color.class) +
+    scale_fill_manual(values = rev(color.class)) +
     theme_classic(base_size = 10) +
     ylab("Gene per rplB (%)") +
     facet_wrap(~ Gene) +
     theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
 
 #save plot
-ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.by_AsRG.png", sep=""), width = 10)
+ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.by_AsRd.png", sep=""), width = 10)
 
 #plot arsenic resistance genes with class info
 (abrg.gene.bar.class <- ggplot(subset(data.class, Group == "AntibioticResistance"), aes(x = Site, 
@@ -561,11 +561,11 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
                            Gene == "acr3"),
                     aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
-    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
-    geom_text(aes(label=ifelse(count>0.008 & Temp>40, as.character(genus), "")),hjust="center",vjust=-0.5, size = 3) +
+    geom_point(size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(count>0.023 & Temp>40, as.character(genus), "")),hjust="right",vjust=-0, size = 3) +
     ylab("Genome equivalents with OTU (%)") +
     facet_wrap(~Gene, scales = "free_y") +
-    theme_classic() +
+    theme_classic(base_size = 12) +
     theme(legend.position = "none"))
 
 (acr3.low <- ggplot(subset(data.annotated.ncbi.summarised, 
@@ -584,9 +584,9 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
                             Gene == "aioA"),
                      aes(x = Temp, y = count)) +
     geom_line(aes(color = genus)) +
-    geom_point(alpha = 0.5, size = 2, aes(color = genus)) +
-    geom_text(aes(label=ifelse(count>0.0005 & Temp>40,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
-    ylab("Genome equivalents with OTU (%)") +
+    geom_point(size = 2, aes(color = genus)) +
+    geom_text(aes(label=ifelse(Temp>18,as.character(genus),'')),hjust="right",vjust=0, size = 3) +
+    ylab("OTU abundance (normalized to rplB)") +
     facet_wrap(~Gene, scales = "free_y") +
     theme_classic() +
     theme(legend.position = "none"))
@@ -601,7 +601,6 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
     ylab("Genome equivalents with OTU (%)") +
     facet_wrap(~Gene, scales = "free_y") +
     theme_classic() +
-    ylim(0,0.005) +
     theme(legend.position = "none"))
 
 (arsCg.plot <- ggplot(subset(data.annotated.ncbi.summarised, 
@@ -626,4 +625,12 @@ top.genera = names(sort(data.annotated.ncbi.summarised$count, TRUE))[1:5]
     theme_classic() +
     theme(legend.position = "none"))
 
-
+acr3.ah <- 
+ggplot(subset(acr3.n, Organism == ifelse(sum(Normalized.Abundance.rplB)>0.1, "")), aes(x = Organism, y = Normalized.Abundance.rplB)) +
+  geom_jitter(aes(shape = Classification, color = Temp), size=2.5, width = 0.1) +
+  theme_bw(base_size = 11) +
+  theme(axis.text.x = element_text(angle = 90, size = 10, 
+                                   hjust=0.95,vjust=0.2)) +
+  ylab("OTU count (normalized to rplB)") +
+  scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                        guide_legend(title="Temperature (°C)"))
