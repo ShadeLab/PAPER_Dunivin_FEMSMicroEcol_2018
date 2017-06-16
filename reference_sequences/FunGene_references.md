@@ -56,6 +56,7 @@
 | arsA | 1 | 200 | 400 | 80 | 4373 | 2381 |  | 
 | arsD | 1 | 80 | 100 | 80 | 5404 | 876 |  | 
 | arxA | 1 | 600 | 800 | 80 | 67 | 54 | low quality db; will rely on phylogenetic analysis | 
+| sul2 | 1 | 200 | 245 | 80 | 9031 | ? | "tet-sul2" | 
 
 
 
