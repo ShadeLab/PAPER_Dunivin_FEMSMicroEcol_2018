@@ -145,7 +145,7 @@ rplB.gcounts=rowSums(rplB)
 otu=otu_table(rplB, taxa_are_rows = FALSE)
 
 #see rarefaction curve
-rarecurve(otu, step=5, col = rarecol, label = FALSE)
+rarecurve(otu, step=5, col = rarecol, label = TRUE)
 
 #rarefy
 rare=rarefy_even_depth(otu, sample.size = min(sample_sums(otu)), rngseed = TRUE)

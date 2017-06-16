@@ -165,7 +165,14 @@ data.site <- data.annotated %>%
   group_by(Gene, Site) %>%
   summarise(Count = sum(Abundance), 
             Count.rplB = sum(Normalized.Abundance.rplB),
-            Count.census = sum(Normalized.Abundance.census))
+            Count.census = sum(Normalized.Abundance.census)) %>%
+  left_join(meta, by = "Site")
+
+#plot gene per temperature
+ggplot(subset(data.site, Gene == "acr3"), aes(x = SoilTemperature_to10cm, y = Count.rplB)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ log(x)) +
+  facet_wrap(~Gene)
 
 #add taxanomic information 
 #data.ncbi <- tax_name(query = data.annotated$Organism, 
