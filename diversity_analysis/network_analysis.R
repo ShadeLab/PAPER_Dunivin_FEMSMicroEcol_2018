@@ -8,6 +8,12 @@ library(qgraph)
 #https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis
 wd <- print(getwd())
 
+#setwd to diversity analysis
+setwd(paste(wd, "/diversity_analysis", sep = ""))
+
+#now change wd obj
+wd <- print(getwd())
+
 #read in metadata
 meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
@@ -43,7 +49,8 @@ colnames(ClassB) <- gsub("OTU", deparse(substitute(ClassB)), colnames(ClassB))
 colnames(ClassC) <- gsub("OTU", deparse(substitute(ClassC)), colnames(ClassC))
 colnames(intI) <- gsub("OTU", deparse(substitute(intI)), colnames(intI))
 colnames(vanA) <- gsub("OTU", deparse(substitute(vanA)), colnames(vanA))
-colnames(vanB) <- gsub("OTU", deparse(substitute(vanB)), colnames(vanB))
+colnames(vanX) <- gsub("OTU", deparse(substitute(vanX)), colnames(vanX))
+colnames(vanZ) <- gsub("OTU", deparse(substitute(vanZ)), colnames(vanZ))
 colnames(vanH) <- gsub("OTU", deparse(substitute(vanH)), colnames(vanH))
 colnames(rplB) <- gsub("OTU", deparse(substitute(rplB)), colnames(rplB))
 
@@ -55,7 +62,8 @@ otu_table <- acr3 %>%
   left_join(ClassC, by = "X") %>%
   left_join(intI, by = "X") %>%
   left_join(vanA, by = "X") %>%
-  left_join(vanB, by = "X") %>%
+  left_join(vanX, by = "X") %>%
+  left_join(vanZ, by = "X") %>%
   left_join(vanH, by = "X") %>%
   left_join(arsC_glut, by = "X") %>%
   left_join(arsC_thio, by = "X") %>%
@@ -91,7 +99,7 @@ for(i in 1:12){otu_table_norm[,i]=otu_table.t[,i]/sum(otu_table.t[,i])}
 otu_table_normPA <- (otu_table_norm>0)*1
 
 #list OTUs present in less than half of samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 5),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm[which(rownames(otu_table_norm) %in%
@@ -101,7 +109,7 @@ otu_table_norm.slim <- otu_table_norm[which(rownames(otu_table_norm) %in%
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
 
 #find correlations between OTUs
-corr <- corr.test(otu_table_norm.slim.t, method = "spearman")
+corr <- corr.test(otu_table_norm.slim.t, method = "spearman", adjust = "fdr")
 
 #make network of correlations
 qgraph(corr$r, minimum = "sig", sampleSize=12, layout = "spring", details = TRUE, graph = "cor", label.cex = 2, alpha = 0.01)

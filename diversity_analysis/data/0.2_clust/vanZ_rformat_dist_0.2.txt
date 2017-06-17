@@ -1,0 +1,5 @@
+	OTU_1	OTU_2	OTU_3	OTU_4 
+Cen17	0	0	0	2
+Cen05	0	0	14	0
+Cen06	57	0	0	0
+Cen03	8	3	0	0
