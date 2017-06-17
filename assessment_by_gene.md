@@ -11,6 +11,7 @@ __Goals:__
 * [blast.qsub](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#blast.qsub)
 * [As resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#as-resistance-gene-analysis-notes)
 * [Antibiotic resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#antibiotic-resistance-gene-analysis-notes)
+* [ArsM troubleshooting](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#arsm-troubleshooting)
 
 ### __Setting up workflow:__
 1. Access HPCC's nr database
@@ -162,3 +163,8 @@ grep '^>' blast.txt > descriptor.blast.txt
 * vanZ
   * all top hits are vanZ
               
+### ArsM troubleshooting
+* Adjusted bit score to 60 from 50: no change in outcome stats or framebot files
+* Adjusted minimum length to 160 from 150: no change in outcome; length is exaggerated due to alignment issues
+* Adjusted m length to 160; prune 10 from 20: slight-no change in outcome will try more strict pruning
+* Adjusted m length to 160; prune 5: 
