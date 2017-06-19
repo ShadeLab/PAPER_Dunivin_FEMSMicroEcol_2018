@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen10_arsD_contig_36_contig_37	35.0877192982456	228	47	33	79	69

@@ -1,0 +1,20 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen04_arsC_thio_contig_8_contig_9	69.811320754717	159	48	63	28	20
+cen04_arsC_thio_contig_26_contig_27	47.6190476190476	168	36	44	58	30
+cen04_arsC_thio_contig_30_contig_31	49.1228070175439	171	43	41	50	37
+cen04_arsC_thio_contig_74_contig_75	60.1307189542484	153	51	41	36	25
+cen04_arsC_thio_contig_80_contig_81	66.6666666666667	165	55	55	27	28
+cen04_arsC_thio_contig_84_contig_85	66.0377358490566	159	55	50	29	25
+cen04_arsC_thio_contig_88_contig_89	65.4545454545455	165	56	52	30	27
+cen04_arsC_thio_contig_90_contig_91	63.4615384615385	156	51	48	34	23
+cen04_arsC_thio_contig_92_contig_93	65.4545454545455	165	45	63	33	24
+cen04_arsC_thio_contig_112_contig_113	72.5490196078431	153	58	53	25	17
+cen04_arsC_thio_contig_116_contig_117	59.1194968553459	159	51	43	35	30
+cen04_arsC_thio_contig_158_contig_159	61.2121212121212	165	54	47	38	26
+cen04_arsC_thio_contig_206_contig_207	62.4242424242424	165	57	46	31	31
+cen04_arsC_thio_contig_220_contig_221	59.748427672956	159	56	39	28	36
+cen04_arsC_thio_contig_230_contig_231	59.1194968553459	159	58	36	30	35
+cen04_arsC_thio_contig_240_contig_241	59.748427672956	159	61	34	27	37
+cen04_arsC_thio_contig_282_contig_283	59.3939393939394	165	55	43	36	31
+cen04_arsC_thio_contig_406_contig_407	57.4074074074074	162	53	40	34	35
+cen04_arsC_thio_contig_414_contig_415	56.140350877193	171	48	48	41	34

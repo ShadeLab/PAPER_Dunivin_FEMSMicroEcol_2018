@@ -1,0 +1,15 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen16_arsC_thio_contig_6_contig_7	48.6979166666667	384	109	78	107	90
+cen16_arsC_thio_contig_16_contig_17	46.3768115942029	207	51	45	62	49
+cen16_arsC_thio_contig_84_contig_85	49.4791666666667	192	57	38	46	51
+cen16_arsC_thio_contig_182_contig_183	67.6567656765677	303	105	100	54	44
+cen16_arsC_thio_contig_364_contig_365	61.8181818181818	165	51	51	31	32
+cen16_arsC_thio_contig_418_contig_419	51.4619883040936	171	44	44	51	32
+cen16_arsC_thio_contig_532_contig_533	64.8484848484848	165	56	51	29	29
+cen16_arsC_thio_contig_538_contig_539	61.8181818181818	165	50	52	39	24
+cen16_arsC_thio_contig_666_contig_667	59.748427672956	159	57	38	29	35
+cen16_arsC_thio_contig_672_contig_673	59.748427672956	159	61	34	27	37
+cen16_arsC_thio_contig_680_contig_681	61.8181818181818	165	53	49	30	33
+cen16_arsC_thio_contig_724_contig_725	57.8616352201258	159	57	35	29	38
+cen16_arsC_thio_contig_902_contig_903	66.025641025641	156	55	48	27	26
+cen16_arsC_thio_contig_908_contig_909	65.0641025641026	312	99	104	56	53

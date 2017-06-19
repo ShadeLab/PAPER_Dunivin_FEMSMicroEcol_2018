@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen07_sul2_contig_22_contig_23	63.1917631917632	777	245	246	119	167

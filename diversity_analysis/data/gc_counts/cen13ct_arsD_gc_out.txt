@@ -1,0 +1,3 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen13_arsD_contig_44_contig_45	44.2424242424242	330	90	56	102	82
+cen13_arsD_contig_48_contig_49	44	225	61	38	79	47

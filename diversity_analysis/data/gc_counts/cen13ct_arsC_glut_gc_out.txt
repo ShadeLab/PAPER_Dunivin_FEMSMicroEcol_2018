@@ -1,0 +1,8 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen13_arsC_glut_contig_6_contig_7	66.9590643274854	342	106	123	60	53
+cen13_arsC_glut_contig_64_contig_65	63.7820512820513	312	91	108	62	51
+cen13_arsC_glut_contig_198_contig_199	64.1304347826087	276	77	100	59	40
+cen13_arsC_glut_contig_396_contig_397	73.015873015873	252	97	87	37	31
+cen13_arsC_glut_contig_458_contig_459	66.2393162393162	234	79	76	43	36
+cen13_arsC_glut_contig_460_contig_461	68.6440677966102	354	121	122	59	52
+cen13_arsC_glut_contig_482_contig_483	74.1071428571429	336	119	130	40	47

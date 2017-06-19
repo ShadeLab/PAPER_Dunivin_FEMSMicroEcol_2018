@@ -1,0 +1,6 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen10_aioA_contig_0_contig_1	60.2217602217602	1443	449	420	328	246
+cen10_aioA_contig_36_contig_37	60.4498977505112	2445	727	751	552	415
+cen10_aioA_contig_544_contig_545	64.7058823529412	459	152	145	94	68
+cen10_aioA_contig_670_contig_671	61.1370716510903	1284	382	403	280	219
+cen10_aioA_contig_1186_contig_1187	61.5503875968992	645	193	204	136	112

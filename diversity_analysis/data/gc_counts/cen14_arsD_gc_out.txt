@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen14_arsD_contig_2_contig_3	59.8425196850394	381	117	111	77	76

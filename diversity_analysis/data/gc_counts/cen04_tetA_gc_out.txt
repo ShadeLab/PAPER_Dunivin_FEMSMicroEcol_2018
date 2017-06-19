@@ -1,0 +1,10 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen04_tetA_contig_2_contig_3	61.4035087719298	399	116	129	48	106
+cen04_tetA_contig_4_contig_5	69.8412698412698	189	71	61	14	43
+cen04_tetA_contig_14_contig_15	70.9523809523809	210	74	75	21	40
+cen04_tetA_contig_26_contig_27	65.3465346534653	303	91	107	33	72
+cen04_tetA_contig_36_contig_37	65.3721682847896	309	98	104	32	75
+cen04_tetA_contig_38_contig_39	72.0588235294118	204	65	82	15	42
+cen04_tetA_contig_44_contig_45	65.4970760233918	171	53	59	15	44
+cen04_tetA_contig_46_contig_47	64.4295302013423	447	153	135	54	105
+cen04_tetA_contig_70_contig_71	69.3693693693694	222	72	82	19	49

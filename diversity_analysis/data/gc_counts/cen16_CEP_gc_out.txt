@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen16_CEP_contig_142_contig_143	66.8803418803419	468	141	172	45	110
