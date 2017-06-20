@@ -1,3 +1,8 @@
+# Workflow/ notes for phylogenetic analysis
+### Taylor Dunivn
+
+# Table of contents
+* [
 ```
 #add together all coverage information
 cat *coverage.txt >final_coverage.txt
