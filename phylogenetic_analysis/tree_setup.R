@@ -32,7 +32,7 @@ table.census <- table %>%
   left_join(census, by = "Site")
 
 #normalize data
-table.normalized <- 100*table.census[2:398]/table.census$GE
+table.normalized <- 100*table.census[2:398]/table.census$rplB
 
 #add back site information
 table.normalized <- cbind(table.census$Site, table.normalized)

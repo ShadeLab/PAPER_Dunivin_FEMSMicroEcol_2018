@@ -152,9 +152,13 @@ gc.tidy.long$Gene <- gsub("arsCthio", "arsC_thio", gc.tidy.long$Gene)
 #make column of contig names
 contig.names <- gc.tidy.long %>%
   unite(Contig.Names, Site:Contig, sep = "_", remove = FALSE) %>%
-  select(Site, Gene, Contig.Names)
+  ungroup() %>%
+  select(Contig.Names)
   
 #extract list of near-full length sequences
 write.table(contig.names, file = paste(wd, "/output/full.length.contigs.txt", 
-                                       sep = ""), row.names = FALSE)
+                                       sep = ""), 
+            row.names = FALSE, 
+            col.names = FALSE, 
+            quote = FALSE)
 

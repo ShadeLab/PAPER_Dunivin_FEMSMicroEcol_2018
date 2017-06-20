@@ -1,0 +1,86 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID,LABEL
+
+#Examples
+
+#change the label for leaf node 9606
+1,OTU_0024 
+2,OTU_0026 
+3,OTU_0033 
+4,YP_285838.1 
+5,YP_421195.1 
+6,YP_743541.1 
+7,YP_001170787.1 
+8,YP_001837318.1 
+9,YP_003369748.1 
+10,YP_003628198.1 
+11,YP_003689906.1 
+12,YP_004515003.1 
+13,YP_004859961.1 
+14,YP_007597984.1 
+15,WP_001662657.1 
+16,WP_007182780.1 
+17,WP_007293600.1 
+18,WP_007569644.1 
+19,WP_010584588.1 
+20,WP_019898801.1 
+21,YP_008147385.1 
+22,YP_008470872.1 
+23,EYS84685.1 
+24,A6TI82_KLEP7 
+25,Q6XN06_RHOER 
+26,A4T7G3_MYCGI 
+27,Q2W689_MAGSA 
+28,Q2RUE6_RHORT 
+29,B2T6S2_BURPP 
+30,A1K817_AZOSB 
+31,A9AS13_BURM1 
+32,Q0A536_ALHEH 
+33,Q7ULE4_RHOBA 
+34,Q4LAA4_STAHJ 
+35,Q03N39_LACBA 
+36,A2RKM6_LACLM 
+37,A8D7Y8_STREQ 
+38,Q24PV2_DESHY 
+39,A9KJA8_CLOPH 
+40,A4NIR6_HAEIF 
+41,C1PDM8_BACCO 
+42,Q0AYF2_SYNWW 
+43,A8MGW1_ALKOO 
+44,A6LV96_CLOB8 
+45,A5HZU7_CLOBH 
+46,Q1NIX3_9DELT 
+47,Q9KJI4_KLEOX 
+48,A1RM69_SHESW 
+49,Q79JC1_SHESA 
+50,Q0YQ09_9CHLB 
+51,C6BDL7_RALP1 
+52,Q47CR3_DECAR 
+53,Q3T559_9GAMM 
+54,Q21S88_RHOFD 
+55,A1XP69_9RHIZ 
+56,Q5P148_AROAE 
+57,A4SIL4_AERS4 
+58,A0KJ09_AERHH 
+59,A7MZQ0_VIBHB 
+60,Q6LRX4_PHOPR 
+61,Q1ZFE2_9GAMM 
+62,sp|Q88LK1|ARSR1_PSEPK 
