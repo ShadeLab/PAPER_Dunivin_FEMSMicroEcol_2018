@@ -99,8 +99,8 @@ nl -w 1 -s "" aioA_0.2_labels.n.txt >aioA_0.2_labels.txt
     * `${GENE}_${CLUST}_labels_short.txt`: Labels of all sequences (short) for incorporating into iTOL trees
     * `${GENE}_${CLUST}_tree_short.nwk`: Maximum likelihood tree of all sequences (short) for iTOL tree
   * Script
-  ```
-  #!/bin/bash
+```
+#!/bin/bash
 
 #you have to type the gene
 GENE=$1
@@ -218,6 +218,7 @@ rm *_${GENE}_45_coverage.txt
     * `${GENE}_${CLUST}_labels.txt`: Labels of all sequences (short) for incorporating into iTOL trees
     * `${GENE}_${CLUST}_tree.nwk`: Maximum likelihood tree of all sequences (short) for iTOL tree
   * Script (acr3 example)
+  
 ```
 #!/bin/bash
 
