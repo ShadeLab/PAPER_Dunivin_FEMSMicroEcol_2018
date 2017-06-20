@@ -86,10 +86,82 @@ nl -w 1 -s "" aioA_0.2_labels.n.txt >aioA_0.2_labels.txt
   * Write scripts to cluster sequences at specified cutoffs, unalign, incorporate reference sequences, make maximum likelihood tree, and extract OTU labels (for iTOL format)
   * Add script version to cut off size of sequences included to >= 90% hmm length (more appropriate to do phylogenetic analysis on full length sequences: Edwardson, C. F., & Hollibaugh, J. T. (2017). Metatranscriptomic analysis of prokaryotic communities active in sulfur and arsenic cycling in Mono Lake, California, USA. The ISME Journal. https://doi.org/10.1038/ismej.2017.80)
   * Add script to group relevant sequences for properly booted tree/ comparison
+  
+* Script to test all genes against non redundant database
+ * Mostly written by SY
+ * Stored in ```/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/blast```
+ * Titled: ```blast.summary.pl```
+ * To execute: ```./blast.summary.pl GENE```
+ * Relevant outputs:  
+  * `ncbi.input.txt`: contains protein accession numbers which can be used to gather sequences for phylogenetic analysis
+  * `gene.descriptor.final.txt`: Contains unique gene descriptor hits; look to see how often a specific hit shows up/ if the results look gene-specific
+ * Script: 
+```
+#!/bin/bash
+
+#you have to type the gene
+GENE=$1
+
+#change to working directory
+cd /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/blast/${GENE}
+
+#copy all files to database
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen01/k45/${GENE}/cluster/cen01_${GENE}_45_final_prot.fasta cen01_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen03/k45/${GENE}/cluster/cen03_${GENE}_45_final_prot.fasta cen03_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen04/k45/${GENE}/cluster/cen04_${GENE}_45_final_prot.fasta cen04_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen05/k45/${GENE}/cluster/cen05_${GENE}_45_final_prot.fasta cen05_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen06/k45/${GENE}/cluster/cen06_${GENE}_45_final_prot.fasta cen06_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen07/k45/${GENE}/cluster/cen07_${GENE}_45_final_prot.fasta cen07_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen10/k45/${GENE}/cluster/cen10_${GENE}_45_final_prot.fasta cen10_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen12/k45/${GENE}/cluster/cen12_${GENE}_45_final_prot.fasta cen12_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen13/k45/${GENE}/cluster/cen13_${GENE}_45_final_prot.fasta cen13_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen14/k45/${GENE}/cluster/cen14_${GENE}_45_final_prot.fasta cen14_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen15/k45/${GENE}/cluster/cen15_${GENE}_45_final_prot.fasta cen15_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen16/k45/${GENE}/cluster/cen16_${GENE}_45_final_prot.fasta cen16_${GENE}_45_final_prot.fasta
+cp /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/analysis/cen17/k45/${GENE}/cluster/cen17_${GENE}_45_final_prot.fasta cen17_${GENE}_45_final_prot.fasta
+
+#blast nr database!
+module load BLAST/2.2.26 
+export BLASTDB=/mnt/research/common-data/Bio/blastdb:$BLASTDB
+cat *_final_prot.fasta >final_prot.fasta
+blastall -d nr -i final_prot.fasta -p blastp -o blast.txt -b 1 -v 1 -e 1e-6 -a 8
+grep '^>' blast.txt > descriptor.blast.txt
+
+#get gene descriptions
+cat descriptor.blast.txt | awk -F '[|]' '{print $3}' > gene.descriptor.txt
+
+#count occurrences of gene descriptions
+sort gene.descriptor.txt | uniq -c > gene.descriptor.final.txt
+
+#remove unnecessary files
+rm gene.descriptor.txt
+
+#get and count occurrences of accession numbers
+cat descriptor.blast.txt | awk -F '[|]' '{print $2}' > accno.txt
+
+#count occurrences of gene descriptions
+sort accno.txt | uniq -c > accno.final.txt
+
+cat accno.final.txt | awk '{print $2}' > ncbi.input.txt
+
+#remove unnecessary files
+rm accno.txt
+rm *_${GENE}_45_final_prot.fasta
+```
+  * Post script analysis
+   * Use accno from `ncbi.input.txt` to get fasta file of sequence matches
+   * [batch entrez](https://www.ncbi.nlm.nih.gov/sites/batchentrez)
+    * Select protein
+    * Upload accession numbers
+    * Retrieve sequences
+     * Retrieve records for ## UID(s)
+      * Select : Summary --> FASTA (text)
+      * Add listed sequences to `reference_seqs.fa` file in `/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/OTUabundances/GENE`
 
 * Script to perform initial analysis
   * Stored in ```/mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/OTUabundances/bin```
   * Titled: ```phylo.sh```
+  * To execute: ```./phylo.sh GENE CUTOFF```
   * Pre-script activities
     * create directory of gene name
     * add file `reference_seqs.fa` 
@@ -214,6 +286,8 @@ rm *_${GENE}_45_coverage.txt
     * add file `reference_seqs.fa` 
       * Includes seed sequences for gene(s) at play
       * Includes top blast hits (see above; output `ncbi.input.txt` from `blast.summary.pl`) 
+  * To execute: ```./GENE.phylo.sh GROUP GENE1 GENE2 GENE3 CUTOFF```
+   * note if gene3 is not available, just write NA
   * Relevant outputs: 
     * `${GENE}_${CLUST}_labels.txt`: Labels of all sequences (short) for incorporating into iTOL trees
     * `${GENE}_${CLUST}_tree.nwk`: Maximum likelihood tree of all sequences (short) for iTOL tree
@@ -362,7 +436,12 @@ rm *_${GENE}_45_coverage.txt
 | ClassB | 264 | 237 |  | 
 | ClassC | 385 | 346 | No sequences >= 90% | 
   
-  
+  * make iTOL sequnce
+   * [iTOL](http://itol.embl.de/)
+   * upload `${GENE}_${CLUST}_tree.nwk`
+   * add labels from `${GENE}_${CLUST}_labels.txt` to iTOL labels script
+   * [Example file](http://itol.embl.de/help/labels_template.txt)
+   * Drag and drop labels onto tree in interface
   
   
   
