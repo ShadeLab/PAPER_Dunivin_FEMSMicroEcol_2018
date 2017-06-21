@@ -1,0 +1,27 @@
+1,6-Ib_contig_2_contig_3  ;size=16;;size=1;
+2,1 putative aminoglycoside 6'-N-acetyltransferase [uncultured bacterium]
+3,gene2.p01 aminoglycoside 6'-N-acetyltransferase. Encoded by gene aac(6')-Ib. AAC(6')-Ib. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Pseudomonas aeruginosa]
+4,1.gene2.p01 aminoglycoside 6'-N-acetyltransferase. Encoded by gene aacA4. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Pseudomonas aeruginosa]
+5,gene.p01 aac(6)-Ib* protein. Encoded by gene aac(6)-Ib*. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Vibrio cholerae]
+6,2.gene6.p01 AAC(6')-Ib'. 6'-N-aminoglycoside acetyltransferase type II. Encoded by gene aacA4. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Pseudomonas aeruginosa]
+7,1.gene2.p01 aminoglycoside 6'-N-acetyltransferase. Encoded by gene aacA4. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Pseudomonas aeruginosa]
+8,_A Chain A,Rimi - Ribosomal S18 N-alpha-protein Acetyltransferase In Complex With A Bisubstrate Inhibitor (cterm-arg-arg-phe- Tyr-arg-ala-n-alpha-acetyl-s-coa).
+9,384.1 AAC(3)-I family aminoglycoside 3-N-acetyltransferase [Chamaesiphon minutus]
+10,3-Ia_contig_0_contig_1  ;size=2;;size=1;
+11,64|ref|YP_245441.1| aminoglycoside acetyltransferase [Pseudomonas aeruginosa]
+12,1.gene3.p01 aminoglycoside 3-N-acetyltransferase. AAC(3); confers resistance to gentamicin. Encoded by gene aacC1. ARO:3000322 AAC(3). ARO:1000001 process or component of antibiotic biology or chemistry. [Pseudomonas aeruginosa]
+13,43|gb|AAN41440.1| aminoglycoside-3N-acetyltransferase [uncultured bacterium]
+14,7|emb|CAA08847.1| 3-N aminoglycoside acetyltransferase [Salmonella typhimurium]
+15,28|emb|CAJ32498.1| aminoglycoside-modifying enzyme [Pseudomonas aeruginosa]
+16,.7045205.p01 aminoglycoside N(3')-acetyltransferase I aacC1. Encoded by gene AB57_0291. Homology: Acyl-CoA N-acyltransferase (Gene3D: G3DSA:3.40.630.30,score: 1.7e-51). Homology: GCN5-related N-acetyltransferase (HMMPfam: PF00583, score: 3.9e-16). ARO:3000322 AAC(3). ARO:1000001 process or component of antibiotic biology or chemistry. [Acinetobacter baumannii AB0057]
+17,ne.p01 aacC1 protein. Encoded by gene aacC1. ARO:3000322 AAC(3). ARO:1000001 process or component of antibiotic biology or chemistry. [Cloning vector pUCGM]
+18,|gb|AAB20441.1| aminoglycoside-(3)-N-acetyltransferase [Serratia marcescens]
+19,1794.1.gene2.p01 aminoglycoside 6'-N-acetyltransferase. Encoded by gene aacA1. ARO:1000001 process or component of antibiotic biology or chemistry. ARO:3000345 AAC(6'). [Escherichia coli]
+20,2024951|gb|AAG45714.1|AF205943_4 aminoglycoside 6'-N-acetyltransferase [Escherichia coli]
+21,seq_id=cen0001_AAC0006-Ia_contig_0050_contig_0051,prefered=false,cluster=0006,clustsize=0001,maxDist=0000,minSumSquare=0000
+22,seq_id=cen0001_AAC0006-Ia_contig_0004_contig_0005,prefered=false,cluster=0007,clustsize=0001,maxDist=0000,minSumSquare=0000
+23,seq_id=cen0001_AAC0006-Ia_contig_0078_contig_0079,prefered=false,cluster=0004,clustsize=0001,maxDist=0000,minSumSquare=0000
+24,seq_id=cen0016_AAC0006-Ia_contig_0048_contig_0049,prefered=false,cluster=0003,clustsize=0001,maxDist=0000,minSumSquare=0000
+25,seq_id=cen0014_AAC0006-Ia_contig_0074_contig_0075,prefered=false,cluster=0001,clustsize=0001,maxDist=0000,minSumSquare=0000
+26,seq_id=cen0014_AAC0006-Ia_contig_0000_contig_0001,prefered=false,cluster=0002,clustsize=0001,maxDist=0000,minSumSquare=0000
+27,seq_id=cen0001_AAC0006-Ia_contig_0016_contig_0017,prefered=false,cluster=0005,clustsize=0001,maxDist=0000,minSumSquare=0000

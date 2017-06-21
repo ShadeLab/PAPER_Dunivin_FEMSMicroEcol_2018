@@ -115,9 +115,6 @@ ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.png", sep=""
 #read in metadata
 meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
 
-#remove Cen16 from metadata since we don't have rplB info yet
-meta=meta[!grepl("Cen16", meta$Site),]
-
 #read in distance matrix
 rplB=read.delim(file = paste(wd, "/data/rformat_dist_0.03.txt", sep=""))
 
@@ -220,7 +217,7 @@ ord.sor <- ordinate(phylo, method="PCoA", distance="bray", binary = TRUE)
 #save sorenson ordination
 ggsave(sorenson.ord, filename = paste(wd, "/figures/sorenson.ord.png", sep=""), 
        width = 6, height = 5)
-
+library(ape)
 #make object phylo with tree and biom info
 tree <- read.tree(file = paste(wd, "/data/rplB_0.03_tree.nwk", sep=""))
 tree <- phy_tree(tree)
