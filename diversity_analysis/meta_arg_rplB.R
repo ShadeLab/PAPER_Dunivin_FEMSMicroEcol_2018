@@ -34,13 +34,6 @@ gene <- read_delim(paste(wd, "/data/gene_classification.txt",  sep=""),
 #make color pallette for Centralia temperatures
 GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
-#read in thermophilic lineages (IMG)
-thermo <- read_delim("/Users/dunivint/Downloads/taxontable79101_12-jun-2017.xls", delim = "\t")
-
-#summarise thermophilic lineages
-thermo.u <- unique(thermo$Class)
-thermo.u <- c(thermo.u, "Nitrospirae", "Chloroflexi", "Thermoleophilia")
-
 ####################################
 #READ IN AND SET UP DATA#
 ####################################
@@ -494,40 +487,6 @@ ggsave(asrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.
 
 #save plot
 ggsave(abrg.gene.bar.class, filename = paste(wd, "/figures/class.abundance.rplB.by_abRG.png", sep=""), width = 10)
-
-#look at only "thermophilic" classes
-thermo.data.class <- data.class[which(data.class$class %in% thermo.u),]
-
-#isolate non thermophilic-labeled classes
-nonthermo.data.class <- data.class[-which(data.class$class %in% thermo.u),]
-
-#add datalabels to thermo and non thermo's 
-thermo.data.class <- mutate(thermo.data.class, Temp.preference = "Thermophilic")
-nonthermo.data.class <- mutate(nonthermo.data.class, Temp.preference = "Non-thermophilic")
-
-#join together thermo data
-thermo.compare.data.class <- rbind(thermo.data.class, nonthermo.data.class)
-
-#remove "candidatus" classes
-thermo.compare.data.class.slim <- thermo.compare.data.class[- grep("Candidatus", 
-                                                                   thermo.compare.data.class$class),]
-thermo.compare.data.class.slim <- thermo.compare.data.class.slim[- grep("candidate", 
-                                                                        thermo.compare.data.class.slim$class),]
-
-#order sites by temperature
-thermo.compare.data.class.slim$Site <- factor(thermo.compare.data.class.slim$Site, 
-                                              levels = thermo.compare.data.class.slim$Site[order(thermo.compare.data.class.slim$Temp)])
-
-#plot different temp preferences
-(asrg.gene.bar.class.thermo <- ggplot(subset(thermo.compare.data.class.slim, Gene == "acr3"), 
-                                      aes(x = Site,  y = Class.count*100, fill = class)) +
-    geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color.class) +
-    theme_classic(base_size = 10) +
-    ylab("Genome Equivalents with Gene (%)") +
-    facet_wrap(~ Temp.preference) +
-    theme(axis.text.x = element_text(angle = 90, size = 10, hjust=0.95,vjust=0.2)))
-#much of the increase is due to thermophilic lineages
 
 ###########################
 #EXAMINE OTU LEVEL CHANGES#
