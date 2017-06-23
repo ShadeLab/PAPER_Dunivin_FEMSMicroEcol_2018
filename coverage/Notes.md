@@ -34,6 +34,6 @@ module load perl
 /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/coverage/bin/./FastA.split.pl ${SITE}.anqdp.fasta ${SITE} 2
 ```
 
-#Running nonpareil
+# Running nonpareil
 * Run the following command on the `<Site>.1.fa` output file from `prep.nonpareil.pl`
 * `nonpareil-mpi -s Cen01.1.fasta -f fasta -t 8 -b Cen01.txt -R 4194303`
