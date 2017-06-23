@@ -1,0 +1,139 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID,LABEL
+
+#Examples
+
+#change the label for leaf node 9606
+1,TU_0001 
+2,TU_0002 
+3,TU_0003 
+4,TU_0004 
+5,OTU_0005 
+6,TU_0006 
+7,TU_0007 
+8,TU_0008 
+9,OTU_0009 
+10,OTU_0010 
+11,OTU_0011 
+12,OTU_0012 
+13,OTU_0013 
+14,OTU_0014 
+15,OTU_0015 
+16,OTU_0017 
+17,OTU_0016 
+18,OTU_0019 
+19,OTU_0018 
+20,OTU_0021 
+21,OTU_0020 
+22,OTU_0023 
+23,OTU_0022 
+24,OTU_0025 
+25,OTU_0024 
+26,OTU_0027 
+27,OTU_0026 
+28,OTU_0029 
+29,OTU_0028 
+30,OTU_0031 
+31,OTU_0030 
+32,OTU_0034 
+33,OTU_0035 
+34,OTU_0032 
+35,OTU_0033 
+36,OTU_0038 
+37,OTU_0039 
+38,OTU_0036 
+39,OTU_0037 
+40,OTU_0042 
+41,OTU_0043 
+42,OTU_0040 
+43,OTU_0041 
+44,OTU_0046 
+45,OTU_0047 
+46,OTU_0044 
+47,OTU_0045 
+48,OTU_0051 
+49,OTU_0050 
+50,OTU_0049 
+51,OTU_0048 
+52,OTU_0055 
+53,OTU_0054 
+54,OTU_0053 
+55,OTU_0052 
+56,OTU_0059 
+57,OTU_0058 
+58,OTU_0057 
+59,OTU_0056 
+60,OTU_0063 
+61,OTU_0062 
+62,OTU_0061 
+63,OTU_0060 
+64,OTU_0068 
+65,OTU_0069 
+66,OTU_0070 
+67,OTU_0071 
+68,OTU_0064 
+69,OTU_0065 
+70,OTU_0066 
+71,OTU_0067 
+72,OTU_0076 
+73,OTU_0072 
+74,OTU_0073 
+75,OTU_0074 
+76,OTU_0075 
+77,ARSC_STAAU 
+78,ARSC_BACSU 
+79,ARSC_STAXY 
+80,ARSC_STAA8 
+81,ARSC1_STAS1 
+82,ARSC1_STAHJ 
+83,ARSC_BACHD 
+84,ARSC2_STAHJ 
+85,ARSC_BACSK 
+86,ARSC_GEOTN 
+87,ARSC_BACLD 
+88,ARSC_MACCJ 
+89,ARSC_OCEIH 
+90,ARSC2_STAEQ 
+91,ARSC2_STAS1 
+92,ARSC_BACMD 
+93,ARSC1_STAEQ 
+94,YP_001530761.1 
+95,YP_001942453.1 
+96,YP_002605743.1 
+97,YP_002991908.1 
+98,YP_003086320.1 
+99,YP_003158418.1 
+100, YP_003183977.1 
+101,ACZ55885.1 
+102, YP_003799310.1 
+103, YP_004194731.1 
+104, YP_004699227.1 
+105, YP_004933594.1 
+106, YP_006188148.1 
+107, YP_006717506.1 
+108, YP_006872522.1 
+109, YP_007493553.1 
+110, WP_003397185.1 
+111, WP_005006635.1 
+112, WP_005987549.1 
+113, WP_006002119.1 
+114, glut_ARSC1_ECOLX 
+115, glut_ARSC_SHIFL 

@@ -1,0 +1,51 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID,LABEL
+
+#Examples
+
+#change the label for leaf node 9606
+1,OTU_0001 
+2,TU_0002 
+3,OTU_0003 
+4,OTU_0004 
+5,OTU_0005 
+6,TU_0006 
+7,TU_0007 
+8,EU523697.1.gene2.p01 
+9,AY264780.2.gene3.p01 
+10,AF534183.gene.p01 
+11,X75761.gene.p01 
+12,NC_009085.4918440.p01 
+13,NC_010410.6003291.p01 
+14,CP001485.1.gene2821.p01 
+15,NC_011586.7045189.p01 
+16,NC_011586.7043399.p01 
+17,NC_011595.7059241.p01 
+18,YP_532153.1 
+19,YP_002130103.1 
+20,YP_005041169.1 
+21,EJZ32267.1 
+22,WP_000841443.1 
+23,WP_007708020.1 
+24,WP_009963584.1 
+25,WP_018749223.1 
+26,XP_005973536.1 
+27,boot_YP_002239313.1 
