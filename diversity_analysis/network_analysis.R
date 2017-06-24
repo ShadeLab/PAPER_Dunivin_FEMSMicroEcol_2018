@@ -131,6 +131,12 @@ otu_table_norm_annotated[is.na(otu_table_norm_annotated)] <- 0
 
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
+#write table as output for SparCC
+write.table(otu_table_norm_annotated.t, 
+            file = (paste(wd, "/output/otu_table_rplBn.txt", 
+                          sep = "")), 
+            sep = "\t", quote = FALSE)
+
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
