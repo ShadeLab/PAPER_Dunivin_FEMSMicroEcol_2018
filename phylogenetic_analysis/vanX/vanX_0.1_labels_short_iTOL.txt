@@ -1,0 +1,113 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID,LABEL
+
+#Examples
+
+#change the label for leaf node 9606
+1,OTU_0001 
+2,OTU_0002 
+3,OTU_0003 
+4,OTU_0004 
+5,OTU_0005 
+6,OTU_0006 
+7,OTU_0007 
+8,OTU_0008 
+9,OTU_0009 
+10,OTU_0010 
+11,OTU_0011 
+12,OTU_0012 
+13,OTU_0013 
+14,OTU_0014 
+15,OTU_0015 
+16,OTU_0017 
+17,OTU_0016 
+18,OTU_0019 
+19,OTU_0018 
+20,OTU_0021 
+21,OTU_0020 
+22,OTU_0023 
+23,OTU_0022 
+24,OTU_0025 
+25,OTU_0024 
+26,OTU_0027 
+27,OTU_0026 
+28,OTU_0029 
+29,OTU_0028 
+30,OTU_0031 
+31,OTU_0030 
+32,OTU_0034 
+33,OTU_0035 
+34,OTU_0032 
+35,OTU_0033 
+36,OTU_0038 
+37,OTU_0039 
+38,OTU_0036 
+39,OTU_0037 
+40,OTU_0042 
+41,OTU_0043 
+42,OTU_0040 
+43,OTU_0041 
+44,OTU_0046 
+45,OTU_0047 
+46,OTU_0044 
+47,OTU_0045 
+48,OTU_0051 
+49,OTU_0050 
+50,OTU_0049 
+51,OTU_0048 
+52,OTU_0055 
+53,OTU_0054 
+54,OTU_0053 
+55,OTU_0052 
+56,OTU_0059 
+57,OTU_0058 
+58,OTU_0057 
+59,OTU_0056 
+60,OTU_0060 
+61,U35369.1.gene7.p01 
+62,AF130997.1.orf5.gene.p01 
+63,AF155139.2.orf6.gene.p01 
+64,AF310956.2.orf6.gene.p01 
+65,FJ349556.1.orf5.gene.p01 
+66,NC_005054.2598281.p01 
+67,U82965.2.orf32.gene.p01 
+68,AE000516.2.gene893.p01 
+69,AAD02118.1 
+70,CAE53345.1 
+71,YP_001415563.1 
+72,YP_001511363.1 
+73,YP_001524066.1 
+74,YP_001923476.1 
+75,YP_002419647.1 
+76,YP_002961814.1 
+77,YP_003066619.1 
+78,YP_003116491.1 
+79,ADU56027.1 
+80,ADU56081.1 
+81,YP_004122432.1 
+82,YP_005336246.1 
+83,YP_006806590.1 
+84,YP_007039117.1 
+85,YP_007327565.1 
+86,WP_003922524.1 
+87,WP_005809515.1 
+88,WP_006141496.1 
+89,boot__NP_215353.1 

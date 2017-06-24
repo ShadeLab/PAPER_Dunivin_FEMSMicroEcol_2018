@@ -1,0 +1,81 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID,LABEL
+
+#Examples
+
+#change the label for leaf node 9606
+1,OTU_0001 
+2,OTU_0002 
+3,OTU_0003 
+4,OTU_0004 
+5,OTU_0005 
+6,OTU_0006 
+7,OTU_0007 
+8,OTU_0008 
+9,OTU_0009 
+10,OTU_0010 
+11,OTU_0011 
+12,OTU_0012 
+13,OTU_0013 
+14,OTU_0014 
+15,OTU_0015 
+16,OTU_0017 
+17,OTU_0016 
+18,OTU_0019 
+19,OTU_0018 
+20,OTU_0021 
+21,OTU_0020 
+22,OTU_0023 
+23,OTU_0022 
+24,OTU_0025 
+25,OTU_0024 
+26,OTU_0027 
+27,OTU_0026 
+28,OTU_0029 
+29,OTU_0028 
+30,OTU_0031 
+31,OTU_0030 
+32,OTU_0034 
+33,OTU_0032 
+34,OTU_0033 
+35,U35369.1.gene5.p01 
+36,AF130997.1.orf3.gene.p01 
+37,AF155139.2.orf4.gene.p01 
+38,AF310956.2.orf4.gene.p01 
+39,FJ349556.1.orf3.gene.p01 
+40,NC_005054.2598279.p01 
+41,CAG15002.1 
+42,AAY52004.1 
+43,YP_001511365.1 
+44,YP_003116493.1 
+45,YP_003393216.1 
+46,AGF91738.1 
+47,WP_003981374.1 
+48,WP_006285586.1 
+49,WP_007034158.1 
+50,WP_007903583.1 
+51,WP_018384165.1 
+52,WP_020390272.1 
+53,WP_020510416.1 
+54,WP_020575323.1 
+55,WP_020667644.1 
+56,AGS49955.1 
+57,boot_3H9U_A 

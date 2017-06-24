@@ -39,77 +39,130 @@ for(i in filenames){
 }
 
 #change OTU to gene name
-colnames(acr3) <- gsub("OTU", deparse(substitute(acr3)), colnames(acr3))
-colnames(aioA) <- gsub("OTU", deparse(substitute(aioA)), colnames(aioA))
-colnames(arsC_glut) <- gsub("OTU", deparse(substitute(arsC_glut)), colnames(arsC_glut))
-colnames(arsC_thio) <- gsub("OTU", deparse(substitute(arsC_thio)), colnames(arsC_thio))
-colnames(arsM) <- gsub("OTU", deparse(substitute(arsM)), colnames(arsM))
-colnames(ClassA) <- gsub("OTU", deparse(substitute(ClassA)), colnames(ClassA))
-colnames(ClassB) <- gsub("OTU", deparse(substitute(ClassB)), colnames(ClassB))
-colnames(ClassC) <- gsub("OTU", deparse(substitute(ClassC)), colnames(ClassC))
-colnames(intI) <- gsub("OTU", deparse(substitute(intI)), colnames(intI))
-colnames(vanA) <- gsub("OTU", deparse(substitute(vanA)), colnames(vanA))
-colnames(vanX) <- gsub("OTU", deparse(substitute(vanX)), colnames(vanX))
-colnames(vanZ) <- gsub("OTU", deparse(substitute(vanZ)), colnames(vanZ))
-colnames(vanH) <- gsub("OTU", deparse(substitute(vanH)), colnames(vanH))
-colnames(rplB) <- gsub("OTU", deparse(substitute(rplB)), colnames(rplB))
+colnames(acr3) <- naming(acr3)
+colnames(aioA) <- naming(aioA)
+colnames(arsB) <- naming(arsB)
+colnames(`AAC6-Ia`) <- naming(`AAC6-Ia`)
+colnames(adeB) <- naming(adeB)
+colnames(arrA) <- naming(arrA)
+colnames(arsA) <- naming(arsA)
+colnames(arsC_glut) <- naming(arsC_glut)
+colnames(arsC_thio) <- naming(arsC_thio)
+colnames(arsD) <- naming(arsD)
+colnames(arsM) <- naming(arsM)
+colnames(arxA) <- naming(arxA)
+colnames(CEP) <- naming(CEP)
+colnames(ClassA) <- naming(ClassA)
+colnames(ClassB) <- naming(ClassB)
+colnames(ClassC) <- naming(ClassC)
+colnames(dfra12) <- naming(dfra12)
+colnames(rplB) <- naming(rplB)
+colnames(sul2) <- naming(sul2)
+colnames(tetA) <- naming(tetA)
+colnames(tetW) <- naming(tetW)
+colnames(tetX) <- naming(tetX)
+colnames(tolC) <- naming(tolC)
+colnames(vanA) <- naming(vanA)
+colnames(vanH) <- naming(vanH)
+colnames(vanX) <- naming(vanX)
+colnames(vanZ) <- naming(vanZ)
 
 #join together all files
 otu_table <- acr3 %>%
   left_join(aioA, by = "X") %>%
+  left_join(`AAC6-Ia`, by = "X") %>%
+  left_join(arrA, by = "X") %>%
+  left_join(arsA, by = "X") %>%
+  left_join(arsB, by = "X") %>%
+  left_join(arsC_glut, by = "X") %>%
+  left_join(arsC_thio, by = "X") %>%
+  left_join(arsD, by = "X") %>%
+  left_join(arsM, by = "X") %>%
+  left_join(arxA, by = "X") %>%
+  left_join(CEP, by = "X") %>%
   left_join(ClassA, by = "X") %>%
   left_join(ClassB, by = "X") %>%
   left_join(ClassC, by = "X") %>%
+  left_join(dfra12, by = "X") %>%
   left_join(intI, by = "X") %>%
+  left_join(rplB, by = "X") %>%
+  left_join(sul2, by = "X") %>%
+  left_join(tetA, by = "X") %>%
+  left_join(tetW, by = "X") %>%
+  left_join(tetX, by = "X") %>%
+  left_join(tolC, by = "X") %>%
   left_join(vanA, by = "X") %>%
+  left_join(vanH, by = "X") %>%
   left_join(vanX, by = "X") %>%
   left_join(vanZ, by = "X") %>%
-  left_join(vanH, by = "X") %>%
-  left_join(arsC_glut, by = "X") %>%
-  left_join(arsC_thio, by = "X") %>%
-  left_join(rplB, by = "X") %>%
-  rename(Site = X)
+  rename(Site =X) 
+
+#read in rplB data
+rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  = " ")
+
+#add rplB data to otu_table
+otu_table.rplB <- rplB %>%
+  left_join(otu_table, by = "Site")
 
 #count otu columns
-otus <- ncol(otu_table)
+otus <- ncol(otu_table) -1
+
+#normalize to rplB
+otu_table_norm <- otu_table.rplB
+for(i in 4:5481){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
 
 #add in metadata
-otu_table <- otu_table %>%
+otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
-  select(Site:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
+  select(Site, acr3_001:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
 
-#add row names back
-rownames(otu_table)=otu_table[,1]
+#change to df and add row names back
+otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
+rownames(otu_table_norm_annotated) <- otu_table_norm_annotated[,1]
 
 #remove first column
-otu_table=otu_table[,-1]
+otu_table_norm_annotated=otu_table_norm_annotated[,-1]
 
 #make data matrix
-otu_table=data.matrix(otu_table)
+otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 
 #replace NAs with zeros
-otu_table[is.na(otu_table)] <- 0
+otu_table_norm_annotated[is.na(otu_table_norm_annotated)] <- 0
 
-otu_table.t <- t(otu_table)
-otu_table_norm <- otu_table.t
-
-for(i in 1:12){otu_table_norm[,i]=otu_table.t[,i]/sum(otu_table.t[,i])}
+otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #make presence absence matrix
-otu_table_normPA <- (otu_table_norm>0)*1
+otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than half of samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 7),]
 
 #remove OTUs with presence in less than 4 sites
-otu_table_norm.slim <- otu_table_norm[which(rownames(otu_table_norm) %in%
+otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
                               rownames(abund)),]
 
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
 
+#save otu data
+write.table(otu_table_norm.slim.t, paste(wd, "/output/otu_table.rplB.txt", sep = ""), quote = FALSE, row.names = TRUE)
+
 #find correlations between OTUs
-corr <- corr.test(otu_table_norm.slim.t, method = "spearman", adjust = "fdr")
+corr <- corr.test(otu_table_norm.slim.t, 
+                  method = "spearman", adjust = "fdr")
+
+#save correlation data
+write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
 
 #make network of correlations
-qgraph(corr$r, minimum = "sig", sampleSize=12, layout = "spring", details = TRUE, graph = "cor", label.cex = 2, alpha = 0.01)
+x <- qgraph(corr$r, minimum = "sig", sampleSize=12, 
+       layout = "spring", details = TRUE,
+       graph = "cor", label.cex = 2, 
+       threshold = "fdr", curve = 1, curveAll = TRUE,
+       alpha = 0.01)
+centrality_auto(x)
+EBICglasso(corr$r, 13)
+FDRnetwork(corr$r)
+findGraph(corr$r, 13)
+centralityPlot(corr$r)
+ggmFit(corr$r)
