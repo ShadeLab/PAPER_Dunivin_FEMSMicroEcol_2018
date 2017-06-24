@@ -57,6 +57,7 @@ colnames(ClassB) <- naming(ClassB)
 colnames(ClassC) <- naming(ClassC)
 colnames(dfra12) <- naming(dfra12)
 colnames(rplB) <- naming(rplB)
+colnames(intI) <- naming(intI)
 colnames(sul2) <- naming(sul2)
 colnames(tetA) <- naming(tetA)
 colnames(tetW) <- naming(tetW)
@@ -104,9 +105,6 @@ rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  =
 otu_table.rplB <- rplB %>%
   left_join(otu_table, by = "Site")
 
-#count otu columns
-otus <- ncol(otu_table) -1
-
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
 for(i in 4:5481){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
@@ -131,21 +129,23 @@ otu_table_norm_annotated[is.na(otu_table_norm_annotated)] <- 0
 
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
-#write table as output for SparCC
-write.table(otu_table_norm_annotated.t, 
-            file = (paste(wd, "/output/otu_table_rplBn.txt", 
-                          sep = "")), 
-            sep = "\t", quote = FALSE)
+
 
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than half of samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 7),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 1),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
                               rownames(abund)),]
+
+#write table as output for SparCC
+write.table(otu_table_norm.slim, 
+            file = (paste(wd, "/output/otu_table_rplBn.txt", 
+                          sep = "")), 
+            sep = "\t", quote = FALSE)
 
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
