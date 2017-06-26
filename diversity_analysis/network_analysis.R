@@ -130,17 +130,18 @@ otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #make presence absence matrix
-otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
+#otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 1),]
+#abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 1),]
 
 #remove OTUs with presence in less than 4 sites
-otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
-                              rownames(abund)),]
+#otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
+#                              rownames(abund)),]
 
+otu_table_norm.export <- otu_table_norm_annotated.t
 #replace all 0's with NA for export
-otu_table_norm.export <- otu_table_norm.slim[otu_table_norm.slim == 0] <- NA
+is.na(otu_table_norm.export) <- !otu_table_norm.export
 
 #replace NAs with ""
 otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
