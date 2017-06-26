@@ -111,8 +111,10 @@ for(i in 4:5481){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
-  left_join(meta, by = "Site") %>%
-  select(Site, acr3_001:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
+  select(-Total, -rplB)
+#otu_table_norm_annotated <- otu_table_norm %>%
+#  left_join(meta, by = "Site") %>%
+#  select(Site, acr3_001:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
 
 #change to df and add row names back
 otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
@@ -124,34 +126,34 @@ otu_table_norm_annotated=otu_table_norm_annotated[,-1]
 #make data matrix
 otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 
-#replace NAs with zeros
-otu_table_norm_annotated[is.na(otu_table_norm_annotated)] <- 0
-
+#transpose data
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
-
-
 
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
-#list OTUs present in less than half of samples
+#list OTUs present in less than 2 samples
 abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 1),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
                               rownames(abund)),]
 
+#replace all 0's with NA for export
+otu_table_norm.export <- otu_table_norm.slim[otu_table_norm.slim == 0] <- NA
+
+#replace NAs with ""
+otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
+
+
 #write table as output for SparCC
-write.table(otu_table_norm.slim, 
-            file = (paste(wd, "/output/otu_table_rplBn.txt", 
+write.table(otu_table_norm.export, 
+            file = (paste(wd, "/output/otu_table.txt", 
                           sep = "")), 
             sep = "\t", quote = FALSE)
 
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
-
-#save otu data
-write.table(otu_table_norm.slim.t, paste(wd, "/output/otu_table.rplB.txt", sep = ""), quote = FALSE, row.names = TRUE)
 
 #find correlations between OTUs
 corr <- corr.test(otu_table_norm.slim.t, 
@@ -166,9 +168,4 @@ x <- qgraph(corr$r, minimum = "sig", sampleSize=12,
        graph = "cor", label.cex = 2, 
        threshold = "fdr", curve = 1, curveAll = TRUE,
        alpha = 0.01)
-centrality_auto(x)
-EBICglasso(corr$r, 13)
-FDRnetwork(corr$r)
-findGraph(corr$r, 13)
-centralityPlot(corr$r)
-ggmFit(corr$r)
+
