@@ -6,7 +6,8 @@
    * Calls on [phylo.sh](https://github.com/ShadeLab/Xander_arsenic/blob/master/phylogenetic_analysis/bin/phylo.sh)
    * To execute, `./phylo.sh GENE CLUST`
    * Should run for each gene with 0.03 as well as 0.01
-   * Can be executed from any directory, but working directory should be updated within script per individual    * Inputs: 
+   * Can be executed from any directory, but working directory should be updated within script per individual    
+   * Inputs: 
       * Gene directory should already exist with `reference_seqs.fa` within it
         * fasta file should include 
           1) seed sequences for gene: from `RDPTools/Xander_assembler/gene_resource/GENE/originaldata/GENE.seeds`
