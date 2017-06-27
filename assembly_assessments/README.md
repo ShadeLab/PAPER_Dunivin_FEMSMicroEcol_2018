@@ -6,7 +6,7 @@ This directory contains scripts and notes for assessment of Xander's gene target
 
 ## 1. Make blast databases for each gene of interest
    * Need blast databases from reference sequences (used in xander `find` and `search`)
-   * Run [makeblastdb.sh]()
+   * Run [makeblastdb.sh](https://github.com/ShadeLab/Xander_arsenic/blob/master/assembly_assessments/bin/makeblastdb.sh)
         * `./makeblastdb.sh GENE`
         * Script can be run in any directory, but working directiry should be changed within the script for individual users
         * Input: `RDPTools/Xander_assembler/gene_resource/${GENE}/originaldata/nucl.fa`
@@ -20,7 +20,7 @@ This directory contains scripts and notes for assessment of Xander's gene target
         * Examine kmer abundance distribution
         * Calculate length (nucl) statistics, % identity statistics, and # at 99%
         * Calculate e-values for all sequences (make sure >10^-5)
-   * Run [assembly_assessments.sh]()
+   * Run [assembly_assessments.sh](https://github.com/ShadeLab/Xander_arsenic/blob/master/assembly_assessments/bin/xander_assessments.sh)
         * Script mostly authored by ACRES REU student Susannah Yeh
         * `./assembly_assessments.sh GENE SAMPLE`
         * Script can be run in any directory, but working directiry should be changed within the script for individual users
@@ -50,5 +50,13 @@ This directory contains scripts and notes for assessment of Xander's gene target
      * Be certain that when considering nr database, the gene of interest is still the top hit
      * Add to confidence in assembly assessments
      * Determine whether/ how to troubleshoot low quality results from specific genes
-   * Calls on [blast.summary.pl]()
+   * Calls on [blast.summary.pl](https://github.com/ShadeLab/Xander_arsenic/blob/master/assembly_assessments/bin/blast.summary.pl)
+      * Script querys the NCBI non-redundant database through MSU's HPC 
+      * Inputs:
+         * `final_prot.fasta`: Protein sequence outpus from xander `search`
+         * non-redundant database
+      * Outputs:
+         * `ncbi.input.txt`: List of accession numbers of top blast hits; used for iTOL tree building
+         * `gene.descriptor.final.txt`: List and counts of unique blast descriptor hits; used to see that all gene of interest & minimal hypothetical proteins/ nonspecific targets
+         * `accno.final.txt`: Lists accession numbers and their occurrence (ie how many contigs hit to each)
 
