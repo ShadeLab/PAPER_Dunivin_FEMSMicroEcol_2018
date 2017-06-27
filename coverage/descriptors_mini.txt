@@ -1,0 +1,8 @@
+File	Name	R	G	B
+Cen01.txt.npo	Recovered.01	256	200	200
+Cen04.txt.npo	Recovered.04	256	200	200
+Cen05.txt.npo	Recovered.05	256	200	200
+Cen06.txt.npo	Active.06	220	220	130
+Cen07.txt.npo	Recovered.07	256	200	200
+Cen13.txt.npo	Active.13	220	220	130
+Cen15.txt.npo	Active.15	220	220	130

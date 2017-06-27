@@ -3,13 +3,14 @@ library(tidyverse)
 library(psych)
 library(reshape2)
 
+####################
+#SET UP ENVIRONMENT#
+####################
+
 #print working directory for future references
 #note the GitHub directory for this script is as follows
 #https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis
 wd <- print(getwd())
-
-#make color pallette for Centralia temperatures
-GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
 #setwd to diversity analysis
 setwd(paste(wd, "/diversity_analysis", sep = ""))
@@ -17,20 +18,116 @@ setwd(paste(wd, "/diversity_analysis", sep = ""))
 #now change wd obj
 wd <- print(getwd())
 
+#make color pallette for Centralia temperatures
+GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
+
+###############
+#READ IN DATA#
+##############
+
 #temporarily change working directory to data to bulk load files
 setwd(paste(wd, "/data/gc_counts", sep = ""))
 
-#read in abundance data
+#read in GC data
 names <- list.files(pattern = "*gc_out.txt")
 gc <- do.call(rbind, lapply(names, function(X) {
   data.frame(read_delim(X, delim = "\t"))}))
 
+#read in ids (contains contig infor along with otu id)
+ids <- list.files(pattern = "*ids")
+ids <- do.call(rbind, lapply(ids, function(X) {
+  data.frame(read_delim(X, delim = " ", col_names = FALSE))}))
+
+#change arsC_glut and arsC_thio to arsCglut and arsCthio
+ids$X2 <- gsub("C_", "C", ids$X2)
+
+#add gene and site columns to ids
+ids <- ids %>%
+  separate(col = X2, into = c("Site", "Gene"), remove = FALSE) %>%
+  mutate(OTU = paste(Gene, X1, sep = "_"))
+
 #read in hmm length data
 length <- read_delim("hmm.lengths.txt", delim = "\t")
 
-#move back up a directory to proceed with analysis
-setwd("../../")
-wd <- print(getwd())
+#temporarily change working directories
+setwd(paste(wd, "/data/0.1_clust", sep = ""))
+
+#list filenames of interest
+filenames <- list.files(pattern="*_rformat_dist_0.1.txt")
+
+#move back up directories
+setwd("../..")
+
+#make dataframes of all OTU tables
+for(i in filenames){
+  filepath <- file.path(paste(wd, "/data/0.1_clust", sep = ""),paste(i,sep=""))
+  assign(gsub("_rformat_dist_0.1.txt", "", i), read.delim(filepath,sep = "\t"))
+}
+
+#write OTU naming function
+naming <- function(file) {
+  gsub("OTU", deparse(substitute(file)), colnames(file))
+}
+
+#change OTU to gene name
+colnames(acr3) <- naming(acr3)
+colnames(aioA) <- naming(aioA)
+colnames(arsB) <- naming(arsB)
+colnames(`AAC6-Ia`) <- naming(`AAC6-Ia`)
+colnames(adeB) <- naming(adeB)
+colnames(arrA) <- naming(arrA)
+colnames(arsA) <- naming(arsA)
+colnames(arsC_glut) <- naming(arsC_glut)
+colnames(arsC_thio) <- naming(arsC_thio)
+colnames(arsD) <- naming(arsD)
+colnames(arsM) <- naming(arsM)
+colnames(arxA) <- naming(arxA)
+colnames(CEP) <- naming(CEP)
+colnames(ClassA) <- naming(ClassA)
+colnames(ClassB) <- naming(ClassB)
+colnames(ClassC) <- naming(ClassC)
+colnames(dfra12) <- naming(dfra12)
+colnames(rplB) <- naming(rplB)
+colnames(intI) <- naming(intI)
+colnames(sul2) <- naming(sul2)
+colnames(tetA) <- naming(tetA)
+colnames(tetW) <- naming(tetW)
+colnames(tetX) <- naming(tetX)
+colnames(tolC) <- naming(tolC)
+colnames(vanA) <- naming(vanA)
+colnames(vanH) <- naming(vanH)
+colnames(vanX) <- naming(vanX)
+colnames(vanZ) <- naming(vanZ)
+
+#join together all files
+otu_table <- acr3 %>%
+  left_join(aioA, by = "X") %>%
+  left_join(`AAC6-Ia`, by = "X") %>%
+  left_join(arrA, by = "X") %>%
+  left_join(arsA, by = "X") %>%
+  left_join(arsB, by = "X") %>%
+  left_join(arsC_glut, by = "X") %>%
+  left_join(arsC_thio, by = "X") %>%
+  left_join(arsD, by = "X") %>%
+  left_join(arsM, by = "X") %>%
+  left_join(arxA, by = "X") %>%
+  left_join(CEP, by = "X") %>%
+  left_join(ClassA, by = "X") %>%
+  left_join(ClassB, by = "X") %>%
+  left_join(ClassC, by = "X") %>%
+  left_join(dfra12, by = "X") %>%
+  left_join(intI, by = "X") %>%
+  left_join(rplB, by = "X") %>%
+  left_join(sul2, by = "X") %>%
+  left_join(tetA, by = "X") %>%
+  left_join(tetW, by = "X") %>%
+  left_join(tetX, by = "X") %>%
+  left_join(tolC, by = "X") %>%
+  left_join(vanA, by = "X") %>%
+  left_join(vanH, by = "X") %>%
+  left_join(vanX, by = "X") %>%
+  left_join(vanZ, by = "X") %>%
+  rename(Site =X) 
 
 #adjust column names of data file
 colnames(gc) <- c("id", "Perc.GC", "Total.Count", "G.Count", 

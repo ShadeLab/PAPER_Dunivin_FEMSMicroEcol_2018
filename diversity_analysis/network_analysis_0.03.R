@@ -16,7 +16,7 @@ setwd(paste(wd, "/diversity_analysis", sep = ""))
 wd <- print(getwd())
 
 #read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt", 
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
 
 #write OTU naming function
@@ -25,18 +25,18 @@ naming <- function(file) {
 }
 
 #temporarily change working directories
-setwd(paste(wd, "/data/0.1_clust", sep = ""))
+setwd(paste(wd, "/data/0.03_clust", sep = ""))
 
 #list filenames of interest
-filenames <- list.files(pattern="*_rformat_dist_0.1.txt")
+filenames <- list.files(pattern="*_rformat_dist_0.03.txt")
 
 #move back up directories
 setwd("../..")
 
 #make dataframes of all OTU tables
 for(i in filenames){
-  filepath <- file.path(paste(wd, "/data/0.1_clust", sep = ""),paste(i,sep=""))
-  assign(gsub("_rformat_dist_0.1.txt", "", i), read.delim(filepath,sep = "\t"))
+  filepath <- file.path(paste(wd, "/data/0.03_clust", sep = ""),paste(i,sep=""))
+  assign(gsub("_rformat_dist_0.03.txt", "", i), read.delim(filepath,sep = "\t"))
 }
 
 #change OTU to gene name
@@ -75,7 +75,6 @@ otu_table <- acr3 %>%
   left_join(`AAC6-Ia`, by = "X") %>%
   left_join(arrA, by = "X") %>%
   left_join(arsA, by = "X") %>%
-  left_join(arsB, by = "X") %>%
   left_join(arsC_glut, by = "X") %>%
   left_join(arsC_thio, by = "X") %>%
   left_join(arsD, by = "X") %>%
@@ -87,7 +86,6 @@ otu_table <- acr3 %>%
   left_join(ClassC, by = "X") %>%
   left_join(dfra12, by = "X") %>%
   left_join(intI, by = "X") %>%
-  left_join(rplB, by = "X") %>%
   left_join(sul2, by = "X") %>%
   left_join(tetA, by = "X") %>%
   left_join(tetW, by = "X") %>%
@@ -120,9 +118,12 @@ otu_table.rplB <- rplB %>%
 
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
-for(i in 4:5481){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
+for(i in 4:4875){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
 
 #add in metadata
+otu_table_norm_annotated <- otu_table_norm %>%
+  select(-Total, -rplB)
+
 otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
   select(Site, acr3_001:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
@@ -144,11 +145,11 @@ otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 6),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
-                              rownames(abund)),]
+                                                          rownames(abund)),]
 
 otu_table_norm.export <- otu_table_norm_annotated.t
 #replace all 0's with NA for export
