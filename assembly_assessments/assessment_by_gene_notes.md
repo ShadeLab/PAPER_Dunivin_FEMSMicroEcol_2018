@@ -7,32 +7,12 @@ __Goals:__
 * Determine whether/ how to troubleshoot low quality results from specific genes
 
 ### Table of contents
-* [Setting up workflow](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#setting-up-workflow)
 * [blast.qsub](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#blast.qsub)
 * [As resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#as-resistance-gene-analysis-notes)
 * [Antibiotic resistance gene analysis notes](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#antibiotic-resistance-gene-analysis-notes)
 * [ArsM troubleshooting](https://github.com/ShadeLab/Xander_arsenic/blob/master/assessment_by_gene.md#arsm-troubleshooting)
 
-### __Setting up workflow:__
-1. Access HPCC's nr database
-```
-export BLASTDB=/mnt/research/common-data/Bio/blastdb:$BLASTDB
-```
 
-2. Merge all protein fasta files to one `final_prot.fasta`
-```
-cat *_final_prot.fasta >final_prot.fasta
-```
-
-3. Blast nr database: use protein blast `-p blastp`, limit outputs to the two top hits `-b 2 -v 2`, e-values greater than E-6 `e 1e-6`, run with 8 threads `-a 8`
-```
-blastall -d nr -i final_prot.fasta -p blastp -o blast.txt -b 2 -v 2 -e 1e-6 -a 8
-```
-
-4. Make summary file that only shows sequence descriptors (typically gene name)
-```
-grep '^>' blast.txt > descriptor.blast.txt
-```
 
 ### __blast.qsub file__
 Use .qsub script below and replace `gene` with your gene of interest to run.
