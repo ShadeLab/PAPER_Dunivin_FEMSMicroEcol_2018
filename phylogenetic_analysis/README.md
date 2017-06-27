@@ -80,8 +80,8 @@
        * arsC_glut, arsC_thio
    * Use `group.muscle.sh` for full length sequences and `short.group.muscle.sh` for all sequences
    * To execute, `./group.muscle.sh GROUP GENE1 GENE2 GENE3 CLUST`
-    * `GROUP` = name of group; directory for this group should already exist with `reference_seqs.fa` in it
-    * `GENE123` = will take up to 3 genes; if you are grouping two genes, simply put `NA` for gene 3
-    * `CLUST` = what cluster cutoff you would like to run
-    * Aligns using MUSCLE rather than hmmaligner since it takes sequences from up to three HMMs
+       * `GROUP` = name of group; directory for this group should already exist with `reference_seqs.fa` in it
+       * `GENE123` = will take up to 3 genes; if you are grouping two genes, simply put `NA` for gene 3
+       * `CLUST` = what cluster cutoff you would like to run
+       * Aligns using MUSCLE rather than hmmaligner since it takes sequences from up to three HMMs
    * View in iTOL (note: do not need to adjust labels here)
