@@ -51,6 +51,7 @@ This directory contains scripts and notes for assessment of Xander's gene target
      * Add to confidence in assembly assessments
      * Determine whether/ how to troubleshoot low quality results from specific genes
    * Calls on [blast.summary.pl](https://github.com/ShadeLab/Xander_arsenic/blob/master/assembly_assessments/bin/blast.summary.pl)
+      * Script was written in part by ACRES REU student Susannah Yeh
       * Script querys the NCBI non-redundant database through MSU's HPC 
       * Inputs:
          * `final_prot.fasta`: Protein sequence outpus from xander `search`
