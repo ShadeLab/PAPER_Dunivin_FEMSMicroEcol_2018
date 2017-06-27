@@ -3,11 +3,10 @@
 
 
 ## 1. Prepare phylogenies for quality checks
-    * Calls on [phylo.sh](https://github.com/ShadeLab/Xander_arsenic/blob/master/phylogenetic_analysis/bin/phylo.sh)
-    * To execute, `./phylo.sh GENE CLUST`
-    * Should run for each gene with 0.03 as well as 0.01
-    * Can be executed from any directory, but working directory should be updated within script per individual
-    * Inputs: 
+   * Calls on [phylo.sh](https://github.com/ShadeLab/Xander_arsenic/blob/master/phylogenetic_analysis/bin/phylo.sh)
+   * To execute, `./phylo.sh GENE CLUST`
+   * Should run for each gene with 0.03 as well as 0.01
+   * Can be executed from any directory, but working directory should be updated within script per individual    * Inputs: 
       * Gene directory should already exist with `reference_seqs.fa` within it
         * fasta file should include 
           1) seed sequences for gene: from `RDPTools/Xander_assembler/gene_resource/GENE/originaldata/GENE.seeds`
@@ -15,7 +14,7 @@
           3) a sequence to root by (origin varies) 
       * `coverage.txt`: ALL coverage files from gene of interest; output from xander `search`
       * `final_prot_aligned.fasta` : All aligned protein files for gene of interest; output from xander `search`
-    * Outputs: 
+   * Outputs: 
       * outputs are flagged with `_short` because they include short (<90% of hmm lenght) sequences
       * `GENE_CLUST_tree_short.nwk`: tree file for iTOL upload  
       * `GENE_CLUST_labels_short.txt`: comma separated labels ultimately for iTOL labeling file
