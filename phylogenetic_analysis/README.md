@@ -73,11 +73,11 @@
 ## 4. (optional) Group related sequences and examine phylogenies
    * Allows rooting to be completed with other proteins of interest & checks model quality/ specificty
    * Relevant for the following pairs
-    * arrA, arxA, aioA
-    * arsB, acr3
-    * ClassA, ClassB, ClassC
-    * AAC3-Ia, AAC6-Ia, AAC6-Ib
-    * arsC_glut, arsC_thio
+       * arrA, arxA, aioA
+       * arsB, acr3
+       * ClassA, ClassB, ClassC
+       * AAC3-Ia, AAC6-Ia, AAC6-Ib
+       * arsC_glut, arsC_thio
    * Use `group.muscle.sh` for full length sequences and `short.group.muscle.sh` for all sequences
    * To execute, `./group.muscle.sh GROUP GENE1 GENE2 GENE3 CLUST`
     * `GROUP` = name of group; directory for this group should already exist with `reference_seqs.fa` in it
