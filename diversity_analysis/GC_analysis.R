@@ -188,6 +188,8 @@ otu_table.tidy <- otu_table.tidy[!is.na(otu_table.tidy$Abundance),]
 otu_table_clust <-  otu_table.tidy %>%
   full_join(otu_labels, by = c("Site", "OTU_name"))
 
+otu_table_clust <- otu_table_clust[-which(otu_table_clust$Gene == "rplB"),]
+
 ##############################
 
 #remove all rows that are not at least 90% of nucleotide length
