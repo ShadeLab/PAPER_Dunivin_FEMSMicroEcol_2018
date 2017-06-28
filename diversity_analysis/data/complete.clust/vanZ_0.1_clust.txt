@@ -1,0 +1,6 @@
+1	Cen03	1	cen03_vanZ_contig_46_contig_47 
+1	Cen06	1	cen06_vanZ_contig_18_contig_19 
+2	Cen03	1	cen03_vanZ_contig_14_contig_15 
+3	Cen05	1	cen05_vanZ_contig_2_contig_3 
+4	Cen03	1	cen03_vanZ_contig_20_contig_21 
+5	Cen17	1	cen17_vanZ_contig_0_contig_1 

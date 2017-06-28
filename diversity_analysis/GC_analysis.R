@@ -21,6 +21,12 @@ wd <- print(getwd())
 #make color pallette for Centralia temperatures
 GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
 
+
+#read in metadata
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
+                                    sep=""), sep=" ", header=TRUE))
+
+
 ###############
 #READ IN DATA#
 ##############
@@ -33,21 +39,59 @@ names <- list.files(pattern = "*gc_out.txt")
 gc <- do.call(rbind, lapply(names, function(X) {
   data.frame(read_delim(X, delim = "\t"))}))
 
-#read in ids (contains contig infor along with otu id)
-ids <- list.files(pattern = "*ids")
-ids <- do.call(rbind, lapply(ids, function(X) {
-  data.frame(read_delim(X, delim = " ", col_names = FALSE))}))
+#adjust column names of data file
+colnames(gc) <- c("id", "Perc.GC", "Total.Count", "G.Count", 
+                  "C.Count", "A.Count", "T.Count")
 
-#change arsC_glut and arsC_thio to arsCglut and arsCthio
-ids$X2 <- gsub("C_", "C", ids$X2)
+#change arsC_glut and arsC_thio to not include _
+gc$id <- gsub("arsC_glut", "arsCglut", gc$id)
+gc$id <- gsub("arsC_thio", "arsCthio", gc$id)
 
-#add gene and site columns to ids
-ids <- ids %>%
-  separate(col = X2, into = c("Site", "Gene"), remove = FALSE) %>%
-  mutate(OTU = paste(Gene, X1, sep = "_"))
+#tidy data and spread ids
+gc <- gc %>%
+  separate(col = id, into = c("Site", "Gene"), sep = "_", remove = FALSE) 
+
+#capitolize site name
+gc$Site <- gsub("cen", "Cen", gc$Site)
+
+#add "_" back to arsC in id column
+gc$id <- gsub("arsCglut", "arsC_glut", gc$id)
+gc$id <- gsub("arsCthio", "arsC_thio", gc$id)
 
 #read in hmm length data
 length <- read_delim("hmm.lengths.txt", delim = "\t")
+
+#read in otu labeling data
+otu_labels <- read_delim("otu_labels.txt", delim = " ", col_names = FALSE)
+
+#add column names
+colnames(otu_labels) <- c("OTU", "na", "Contig")
+
+#remove seq_id= from column
+otu_labels$Contig <- gsub("seq_id=", "", otu_labels$Contig)
+
+#change arsC to exclude "_"
+otu_labels$Contig <- gsub("arsC_glut", "arsCglut", otu_labels$Contig)
+otu_labels$Contig <- gsub("arsC_thio", "arsCthio", otu_labels$Contig)
+
+#remove cluster
+otu_labels$OTU <- gsub(">cluster_", "", otu_labels$OTU)
+
+#add site and gene info to each row
+otu_labels <- otu_labels %>%
+  separate(col = Contig, into = c("Contig", "Others"), sep = ",") %>%
+  separate(col = Contig, into = c("Site", "Gene"), sep = "_", remove = FALSE) %>%
+  mutate(OTU_name = paste(Gene, OTU, sep = "_")) %>%
+  select(OTU_name, Site, Gene, Contig)
+
+#change cen to Cen in site name
+otu_labels$Site <- gsub("cen", "Cen", otu_labels$Site)
+
+#change arsC back to norma
+otu_labels$Gene <- gsub("arsCglut", "arsC_glut", otu_labels$Gene)
+otu_labels$Gene <- gsub("arsCthio", "arsC_thio", otu_labels$Gene)
+otu_labels$OTU_name <- gsub("arsCglut", "arsC_glut", otu_labels$OTU_name)
+otu_labels$OTU_name <- gsub("arsCthio", "arsC_thio", otu_labels$OTU_name)
 
 #temporarily change working directories
 setwd(paste(wd, "/data/0.1_clust", sep = ""))
@@ -63,10 +107,13 @@ for(i in filenames){
   filepath <- file.path(paste(wd, "/data/0.1_clust", sep = ""),paste(i,sep=""))
   assign(gsub("_rformat_dist_0.1.txt", "", i), read.delim(filepath,sep = "\t"))
 }
-
-#write OTU naming function
+#write OTU naming function: remove OTU & leading numbers, then add gene name_
 naming <- function(file) {
-  gsub("OTU", deparse(substitute(file)), colnames(file))
+  new <- gsub("OTU_", "", colnames(file))
+  new <- lapply(new, function(y) sub('^0+(?=[1-9])', '', y, 
+                                         perl=TRUE))
+  new <- paste(deparse(substitute(file)), new, sep = "_")
+  gsub(paste(deparse(substitute(file)), "X", sep = "_"), "X", new)
 }
 
 #change OTU to gene name
@@ -127,35 +174,21 @@ otu_table <- acr3 %>%
   left_join(vanH, by = "X") %>%
   left_join(vanX, by = "X") %>%
   left_join(vanZ, by = "X") %>%
-  rename(Site =X) 
+  rename(Site = X) 
 
-#adjust column names of data file
-colnames(gc) <- c("id", "Perc.GC", "Total.Count", "G.Count", 
-                  "C.Count", "A.Count", "T.Count")
-#read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
-                                    sep=""), sep=" ", header=TRUE))
+#tidy otu table so that genes are long (not column names) 
+otu_table.tidy <- melt(otu_table, id.vars = "Site", variable.name = "OTU_name", 
+                       value.name = "Abundance")
 
-#capitolize site name
-gc$id <- gsub("cen", "Cen", gc$id)
+#remove rows with zeros in dataset (seq does not exist ~ meaningless)
+otu_table.tidy <- otu_table.tidy[-which(otu_table.tidy$Abundance == 0),]
+otu_table.tidy <- otu_table.tidy[!is.na(otu_table.tidy$Abundance),]
 
-#change arsC_glut and arsC_thio to not include _
-gc$id <- gsub("arsC_glut", "arsCglut", gc$id)
-gc$id <- gsub("arsC_thio", "arsCthio", gc$id)
+#join tidy otu data with clustering information
+otu_table_clust <-  otu_table.tidy %>%
+  full_join(otu_labels, by = c("Site", "OTU_name"))
 
-
-#tidy data and spread ids
-gc.tidy <- gc %>%
-  separate(col = id, into = c("Site", "Gene", "Contig1", "Contig1n", 
-                              "Contig2", "Contig2n"), sep = "_") %>%
-  unite(Contig, Contig1:Contig2n, remove = TRUE) %>%
-  left_join(meta, by = "Site") %>%
-  left_join(length, by = "Gene") %>%
-  mutate(Length.bp = Length.aa * 3) %>%
-  group_by(Site, Gene) 
-
-# temporarily remove cen13
-gc.tidy <- gc.tidy[-which(gc.tidy$Site == "Cen13"),]
+##############################
 
 #remove all rows that are not at least 90% of nucleotide length
 gc.tidy.long <- gc.tidy[which(gc.tidy$Total.Count > 0.90*gc.tidy$Length.bp),]

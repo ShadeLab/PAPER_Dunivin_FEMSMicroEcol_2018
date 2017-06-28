@@ -1,0 +1,7 @@
+1	Cen01	1	cen01_AAC6-Ia_contig_78_contig_79 
+1	Cen16	1	cen16_AAC6-Ia_contig_48_contig_49 
+2	Cen01	1	cen01_AAC6-Ia_contig_4_contig_5 
+3	Cen14	1	cen14_AAC6-Ia_contig_74_contig_75 
+4	Cen14	1	cen14_AAC6-Ia_contig_0_contig_1 
+5	Cen01	1	cen01_AAC6-Ia_contig_50_contig_51 
+6	Cen01	1	cen01_AAC6-Ia_contig_16_contig_17 

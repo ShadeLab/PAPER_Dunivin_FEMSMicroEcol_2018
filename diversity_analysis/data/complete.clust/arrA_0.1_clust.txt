@@ -1,0 +1,9 @@
+1	Cen13	3	cen13_arrA_contig_796_contig_797 cen13_arrA_contig_1586_contig_1587 cen13_arrA_contig_1056_contig_1057 
+2	Cen13	1	cen13_arrA_contig_812_contig_813 
+3	Cen13	2	cen13_arrA_contig_906_contig_907 cen13_arrA_contig_918_contig_919 
+4	Cen13	1	cen13_arrA_contig_826_contig_827 
+5	Cen13	1	cen13_arrA_contig_2068_contig_2069 
+6	Cen13	1	cen13_arrA_contig_652_contig_653 
+7	Cen13	1	cen13_arrA_contig_3088_contig_3089 
+8	Cen13	1	cen13_arrA_contig_2012_contig_2013 
+9	Cen13	1	cen13_arrA_contig_132_contig_133 

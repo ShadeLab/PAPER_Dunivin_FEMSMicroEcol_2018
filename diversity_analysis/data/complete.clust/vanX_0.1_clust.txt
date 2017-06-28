@@ -1,0 +1,78 @@
+1	Cen14	1	cen14_vanX_contig_200_contig_201 
+1	Cen15	1	cen15_vanX_contig_326_contig_327 
+1	Cen16	1	cen16_vanX_contig_3636_contig_3637 
+2	Cen16	1	cen16_vanX_contig_5228_contig_5229 
+3	Cen01	3	cen01_vanX_contig_890_contig_891 cen01_vanX_contig_5226_contig_5227 cen01_vanX_contig_24_contig_25 
+3	Cen04	3	cen04_vanX_contig_0_contig_1 cen04_vanX_contig_1472_contig_1473 cen04_vanX_contig_1468_contig_1469 
+3	Cen05	2	cen05_vanX_contig_370_contig_371 cen05_vanX_contig_368_contig_369 
+4	Cen04	2	cen04_vanX_contig_2138_contig_2139 cen04_vanX_contig_22_contig_23 
+5	Cen10	1	cen10_vanX_contig_1068_contig_1069 
+5	Cen14	2	cen14_vanX_contig_674_contig_675 cen14_vanX_contig_1360_contig_1361 
+5	Cen15	1	cen15_vanX_contig_880_contig_881 
+5	Cen16	1	cen16_vanX_contig_3000_contig_3001 
+6	Cen01	1	cen01_vanX_contig_18_contig_19 
+6	Cen03	4	cen03_vanX_contig_1722_contig_1723 cen03_vanX_contig_2510_contig_2511 cen03_vanX_contig_2120_contig_2121 cen03_vanX_contig_1718_contig_1719 
+6	Cen04	1	cen04_vanX_contig_610_contig_611 
+6	Cen05	7	cen05_vanX_contig_1048_contig_1049 cen05_vanX_contig_1054_contig_1055 cen05_vanX_contig_1652_contig_1653 cen05_vanX_contig_1540_contig_1541 cen05_vanX_contig_1920_contig_1921 cen05_vanX_contig_8_contig_9 cen05_vanX_contig_1046_contig_1047 
+7	Cen10	3	cen10_vanX_contig_634_contig_635 cen10_vanX_contig_1572_contig_1573 cen10_vanX_contig_2186_contig_2187 
+8	Cen13	2	cen13_vanX_contig_688_contig_689 cen13_vanX_contig_700_contig_701 
+9	Cen16	3	cen16_vanX_contig_1992_contig_1993 cen16_vanX_contig_42_contig_43 cen16_vanX_contig_6304_contig_6305 
+10	Cen01	3	cen01_vanX_contig_3034_contig_3035 cen01_vanX_contig_2558_contig_2559 cen01_vanX_contig_2708_contig_2709 
+11	Cen16	2	cen16_vanX_contig_6180_contig_6181 cen16_vanX_contig_3288_contig_3289 
+12	Cen01	1	cen01_vanX_contig_930_contig_931 
+12	Cen10	1	cen10_vanX_contig_1220_contig_1221 
+13	Cen05	1	cen05_vanX_contig_1006_contig_1007 
+14	Cen16	2	cen16_vanX_contig_4016_contig_4017 cen16_vanX_contig_3968_contig_3969 
+15	Cen10	1	cen10_vanX_contig_982_contig_983 
+15	Cen14	1	cen14_vanX_contig_758_contig_759 
+16	Cen01	2	cen01_vanX_contig_1246_contig_1247 cen01_vanX_contig_2782_contig_2783 
+16	Cen16	1	cen16_vanX_contig_98_contig_99 
+17	Cen10	1	cen10_vanX_contig_1136_contig_1137 
+17	Cen14	1	cen14_vanX_contig_712_contig_713 
+18	Cen03	1	cen03_vanX_contig_1406_contig_1407 
+18	Cen10	1	cen10_vanX_contig_868_contig_869 
+18	Cen12	1	cen12_vanX_contig_352_contig_353 
+18	Cen15	1	cen15_vanX_contig_740_contig_741 
+19	Cen01	1	cen01_vanX_contig_2212_contig_2213 
+20	Cen07	1	cen07_vanX_contig_1340_contig_1341 
+21	Cen01	1	cen01_vanX_contig_4_contig_5 
+21	Cen16	1	cen16_vanX_contig_8_contig_9 
+22	Cen16	2	cen16_vanX_contig_2716_contig_2717 cen16_vanX_contig_1182_contig_1183 
+23	Cen03	1	cen03_vanX_contig_1542_contig_1543 
+24	Cen01	1	cen01_vanX_contig_910_contig_911 
+25	Cen10	1	cen10_vanX_contig_1112_contig_1113 
+26	Cen16	1	cen16_vanX_contig_3088_contig_3089 
+27	Cen01	1	cen01_vanX_contig_928_contig_929 
+28	Cen16	1	cen16_vanX_contig_3986_contig_3987 
+29	Cen01	1	cen01_vanX_contig_2226_contig_2227 
+30	Cen10	1	cen10_vanX_contig_0_contig_1 
+31	Cen16	1	cen16_vanX_contig_3884_contig_3885 
+32	Cen16	1	cen16_vanX_contig_2686_contig_2687 
+33	Cen16	1	cen16_vanX_contig_36_contig_37 
+34	Cen05	1	cen05_vanX_contig_1074_contig_1075 
+35	Cen07	1	cen07_vanX_contig_118_contig_119 
+36	Cen12	1	cen12_vanX_contig_18_contig_19 
+37	Cen16	1	cen16_vanX_contig_2316_contig_2317 
+38	Cen03	1	cen03_vanX_contig_8_contig_9 
+39	Cen16	1	cen16_vanX_contig_2020_contig_2021 
+40	Cen16	1	cen16_vanX_contig_4272_contig_4273 
+41	Cen01	1	cen01_vanX_contig_2190_contig_2191 
+42	Cen17	1	cen17_vanX_contig_2412_contig_2413 
+43	Cen16	1	cen16_vanX_contig_2680_contig_2681 
+44	Cen04	1	cen04_vanX_contig_16_contig_17 
+45	Cen16	1	cen16_vanX_contig_2660_contig_2661 
+46	Cen16	1	cen16_vanX_contig_3130_contig_3131 
+47	Cen16	1	cen16_vanX_contig_4128_contig_4129 
+48	Cen12	1	cen12_vanX_contig_378_contig_379 
+49	Cen17	1	cen17_vanX_contig_1370_contig_1371 
+50	Cen16	1	cen16_vanX_contig_992_contig_993 
+51	Cen03	1	cen03_vanX_contig_1934_contig_1935 
+52	Cen13	1	cen13_vanX_contig_426_contig_427 
+53	Cen16	1	cen16_vanX_contig_2330_contig_2331 
+54	Cen01	1	cen01_vanX_contig_2938_contig_2939 
+55	Cen01	1	cen01_vanX_contig_2914_contig_2915 
+56	Cen16	1	cen16_vanX_contig_2146_contig_2147 
+57	Cen05	1	cen05_vanX_contig_1494_contig_1495 
+58	Cen07	1	cen07_vanX_contig_966_contig_967 
+59	Cen16	1	cen16_vanX_contig_3098_contig_3099 
+60	Cen14	1	cen14_vanX_contig_656_contig_657 

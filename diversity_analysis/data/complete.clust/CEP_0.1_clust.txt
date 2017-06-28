@@ -1,0 +1,2 @@
+1	Cen12	1	cen12_CEP_contig_0_contig_1 
+1	Cen16	1	cen16_CEP_contig_142_contig_143 

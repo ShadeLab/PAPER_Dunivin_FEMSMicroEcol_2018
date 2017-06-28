@@ -1,0 +1,95 @@
+1	Cen04	1	cen04_arsC_thio_contig_30_contig_31 
+1	Cen06	1	cen06_arsC_thio_contig_48_contig_49 
+1	Cen15	1	cen15_arsC_thio_contig_8_contig_9 
+2	Cen04	1	cen04_arsC_thio_contig_116_contig_117 
+3	Cen04	1	cen04_arsC_thio_contig_8_contig_9 
+3	Cen17	1	cen17_arsC_thio_contig_650_contig_651 
+4	Cen10	1	cen10_arsC_thio_contig_1612_contig_1613 
+5	Cen01	2	cen01_arsC_thio_contig_58_contig_59 cen01_arsC_thio_contig_46_contig_47 
+6	Cen03	1	cen03_arsC_thio_contig_170_contig_171 
+6	Cen17	1	cen17_arsC_thio_contig_122_contig_123 
+7	Cen07	1	cen07_arsC_thio_contig_0_contig_1 
+7	Cen10	4	cen10_arsC_thio_contig_1592_contig_1593 cen10_arsC_thio_contig_758_contig_759 cen10_arsC_thio_contig_44_contig_45 cen10_arsC_thio_contig_6_contig_7 
+7	Cen12	1	cen12_arsC_thio_contig_0_contig_1 
+8	Cen01	1	cen01_arsC_thio_contig_198_contig_199 
+8	Cen07	1	cen07_arsC_thio_contig_68_contig_69 
+8	Cen17	2	cen17_arsC_thio_contig_224_contig_225 cen17_arsC_thio_contig_154_contig_155 
+9	Cen04	1	cen04_arsC_thio_contig_230_contig_231 
+9	Cen07	2	cen07_arsC_thio_contig_182_contig_183 cen07_arsC_thio_contig_134_contig_135 
+9	Cen16	2	cen16_arsC_thio_contig_724_contig_725 cen16_arsC_thio_contig_666_contig_667 
+10	Cen01	1	cen01_arsC_thio_contig_204_contig_205 
+11	Cen03	1	cen03_arsC_thio_contig_164_contig_165 
+11	Cen04	2	cen04_arsC_thio_contig_220_contig_221 cen04_arsC_thio_contig_240_contig_241 
+11	Cen06	1	cen06_arsC_thio_contig_94_contig_95 
+11	Cen14	2	cen14_arsC_thio_contig_94_contig_95 cen14_arsC_thio_contig_84_contig_85 
+11	Cen16	1	cen16_arsC_thio_contig_672_contig_673 
+12	Cen04	1	cen04_arsC_thio_contig_414_contig_415 
+13	Cen01	1	cen01_arsC_thio_contig_16_contig_17 
+14	Cen10	1	cen10_arsC_thio_contig_960_contig_961 
+15	Cen04	1	cen04_arsC_thio_contig_26_contig_27 
+15	Cen07	2	cen07_arsC_thio_contig_26_contig_27 cen07_arsC_thio_contig_24_contig_25 
+15	Cen16	1	cen16_arsC_thio_contig_418_contig_419 
+16	Cen15	1	cen15_arsC_thio_contig_6_contig_7 
+17	Cen17	1	cen17_arsC_thio_contig_180_contig_181 
+18	Cen04	1	cen04_arsC_thio_contig_406_contig_407 
+18	Cen14	1	cen14_arsC_thio_contig_22_contig_23 
+19	Cen10	2	cen10_arsC_thio_contig_302_contig_303 cen10_arsC_thio_contig_1166_contig_1167 
+19	Cen13	1	cen13_arsC_thio_contig_228_contig_229 
+20	Cen03	1	cen03_arsC_thio_contig_28_contig_29 
+20	Cen05	1	cen05_arsC_thio_contig_38_contig_39 
+21	Cen04	1	cen04_arsC_thio_contig_90_contig_91 
+22	Cen06	1	cen06_arsC_thio_contig_30_contig_31 
+23	Cen14	1	cen14_arsC_thio_contig_6_contig_7 
+24	Cen04	1	cen04_arsC_thio_contig_158_contig_159 
+25	Cen03	1	cen03_arsC_thio_contig_66_contig_67 
+26	Cen16	1	cen16_arsC_thio_contig_908_contig_909 
+27	Cen12	1	cen12_arsC_thio_contig_164_contig_165 
+28	Cen04	1	cen04_arsC_thio_contig_112_contig_113 
+29	Cen04	1	cen04_arsC_thio_contig_88_contig_89 
+30	Cen03	1	cen03_arsC_thio_contig_338_contig_339 
+31	Cen10	1	cen10_arsC_thio_contig_260_contig_261 
+32	Cen16	1	cen16_arsC_thio_contig_364_contig_365 
+33	Cen07	1	cen07_arsC_thio_contig_46_contig_47 
+34	Cen16	1	cen16_arsC_thio_contig_538_contig_539 
+35	Cen16	1	cen16_arsC_thio_contig_680_contig_681 
+36	Cen05	1	cen05_arsC_thio_contig_40_contig_41 
+37	Cen03	1	cen03_arsC_thio_contig_78_contig_79 
+38	Cen05	1	cen05_arsC_thio_contig_132_contig_133 
+39	Cen10	1	cen10_arsC_thio_contig_1336_contig_1337 
+40	Cen06	1	cen06_arsC_thio_contig_160_contig_161 
+41	Cen17	1	cen17_arsC_thio_contig_124_contig_125 
+42	Cen10	1	cen10_arsC_thio_contig_1542_contig_1543 
+43	Cen16	1	cen16_arsC_thio_contig_182_contig_183 
+44	Cen10	1	cen10_arsC_thio_contig_66_contig_67 
+45	Cen17	1	cen17_arsC_thio_contig_670_contig_671 
+46	Cen03	1	cen03_arsC_thio_contig_38_contig_39 
+47	Cen13	1	cen13_arsC_thio_contig_674_contig_675 
+48	Cen17	1	cen17_arsC_thio_contig_100_contig_101 
+49	Cen17	1	cen17_arsC_thio_contig_84_contig_85 
+50	Cen01	1	cen01_arsC_thio_contig_38_contig_39 
+51	Cen13	1	cen13_arsC_thio_contig_466_contig_467 
+52	Cen04	1	cen04_arsC_thio_contig_206_contig_207 
+53	Cen03	1	cen03_arsC_thio_contig_346_contig_347 
+54	Cen04	1	cen04_arsC_thio_contig_92_contig_93 
+55	Cen17	1	cen17_arsC_thio_contig_166_contig_167 
+56	Cen04	1	cen04_arsC_thio_contig_282_contig_283 
+57	Cen04	1	cen04_arsC_thio_contig_74_contig_75 
+58	Cen03	1	cen03_arsC_thio_contig_18_contig_19 
+59	Cen16	1	cen16_arsC_thio_contig_16_contig_17 
+60	Cen04	1	cen04_arsC_thio_contig_80_contig_81 
+61	Cen16	1	cen16_arsC_thio_contig_84_contig_85 
+62	Cen10	1	cen10_arsC_thio_contig_950_contig_951 
+63	Cen16	1	cen16_arsC_thio_contig_532_contig_533 
+64	Cen07	1	cen07_arsC_thio_contig_126_contig_127 
+65	Cen17	1	cen17_arsC_thio_contig_40_contig_41 
+66	Cen05	1	cen05_arsC_thio_contig_84_contig_85 
+67	Cen17	1	cen17_arsC_thio_contig_660_contig_661 
+68	Cen03	1	cen03_arsC_thio_contig_156_contig_157 
+69	Cen14	1	cen14_arsC_thio_contig_28_contig_29 
+70	Cen16	1	cen16_arsC_thio_contig_902_contig_903 
+71	Cen13	1	cen13_arsC_thio_contig_682_contig_683 
+72	Cen10	1	cen10_arsC_thio_contig_74_contig_75 
+73	Cen04	1	cen04_arsC_thio_contig_84_contig_85 
+74	Cen10	1	cen10_arsC_thio_contig_910_contig_911 
+75	Cen16	1	cen16_arsC_thio_contig_6_contig_7 
+76	Cen13	1	cen13_arsC_thio_contig_24_contig_25 

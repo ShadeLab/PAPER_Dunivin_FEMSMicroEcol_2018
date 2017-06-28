@@ -1,0 +1,31 @@
+1	Cen03	2	cen03_vanA_contig_58_contig_59 cen03_vanA_contig_84_contig_85 
+2	Cen10	2	cen10_vanA_contig_14_contig_15 cen10_vanA_contig_30_contig_31 
+3	Cen01	2	cen01_vanA_contig_6_contig_7 cen01_vanA_contig_46_contig_47 
+4	Cen01	3	cen01_vanA_contig_50_contig_51 cen01_vanA_contig_112_contig_113 cen01_vanA_contig_124_contig_125 
+4	Cen04	1	cen04_vanA_contig_48_contig_49 
+5	Cen01	1	cen01_vanA_contig_42_contig_43 
+5	Cen16	1	cen16_vanA_contig_66_contig_67 
+6	Cen12	1	cen12_vanA_contig_12_contig_13 
+6	Cen14	1	cen14_vanA_contig_58_contig_59 
+6	Cen15	1	cen15_vanA_contig_4_contig_5 
+6	Cen16	1	cen16_vanA_contig_92_contig_93 
+7	Cen01	1	cen01_vanA_contig_52_contig_53 
+7	Cen04	2	cen04_vanA_contig_36_contig_37 cen04_vanA_contig_24_contig_25 
+7	Cen05	5	cen05_vanA_contig_80_contig_81 cen05_vanA_contig_66_contig_67 cen05_vanA_contig_72_contig_73 cen05_vanA_contig_10_contig_11 cen05_vanA_contig_8_contig_9 
+8	Cen04	1	cen04_vanA_contig_22_contig_23 
+8	Cen16	1	cen16_vanA_contig_118_contig_119 
+9	Cen14	1	cen14_vanA_contig_64_contig_65 
+9	Cen16	1	cen16_vanA_contig_62_contig_63 
+10	Cen01	1	cen01_vanA_contig_44_contig_45 
+10	Cen05	1	cen05_vanA_contig_34_contig_35 
+11	Cen01	1	cen01_vanA_contig_26_contig_27 
+12	Cen10	1	cen10_vanA_contig_20_contig_21 
+13	Cen07	1	cen07_vanA_contig_12_contig_13 
+14	Cen01	1	cen01_vanA_contig_38_contig_39 
+15	Cen03	1	cen03_vanA_contig_48_contig_49 
+16	Cen01	1	cen01_vanA_contig_14_contig_15 
+17	Cen10	1	cen10_vanA_contig_6_contig_7 
+18	Cen16	1	cen16_vanA_contig_60_contig_61 
+19	Cen01	1	cen01_vanA_contig_20_contig_21 
+20	Cen16	1	cen16_vanA_contig_72_contig_73 
+21	Cen16	1	cen16_vanA_contig_76_contig_77
