@@ -16,7 +16,7 @@ setwd(paste(wd, "/diversity_analysis", sep = ""))
 wd <- print(getwd())
 
 #read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt", 
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
 
 #write OTU naming function
@@ -112,20 +112,25 @@ otu_table <- acr3 %>%
 #read in rplB data
 rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  = " ")
 
+#get mean rplB
+mean.rplB <- mean(rplB$rplB)
+
 #add rplB data to otu_table
 otu_table.rplB <- rplB %>%
-  left_join(otu_table, by = "Site")
+  left_join(otu_table, by = "Site") %>%
+  mutate(ratio.rplB = rplB/mean.rplB)
 
 
 
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
-for(i in 4:5481){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
+for(i in 4:5662){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,5662]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
-  select(Site, acr3_001:As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
+  select(Site, acr3_001:ratio.rplB, As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm) %>%
+  select(-ratio.rplB)
 
 #change to df and add row names back
 otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
@@ -140,11 +145,15 @@ otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 #transpose data
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
+#replace NAs with zeros
+otu_table_norm_annotated.t[is.na(otu_table_norm_annotated.t)] <- 0
+
+
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 6),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
@@ -154,9 +163,8 @@ otu_table_norm.export <- otu_table_norm_annotated.t
 #replace all 0's with NA for export
 is.na(otu_table_norm.export) <- !otu_table_norm.export
 
-#replace NAs with ""
+#replace NAs with nothing
 otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
-
 
 #write table as output for SparCC
 write.table(otu_table_norm.export, 
@@ -178,7 +186,7 @@ write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = 
 #make network of correlations
 qgraph(corr$r, minimum = "sig", sampleSize=12, 
        layout = "spring", details = TRUE,
-       graph = "cor", label.cex = 2, 
+       graph = "cor", label.cex = 3, 
        threshold = "fdr", curve = 1, curveAll = TRUE,
        alpha = 0.01)
 
