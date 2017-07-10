@@ -34,11 +34,11 @@ module load perl
 /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/coverage/bin/./FastA.split.pl ${SITE}.anqdp.fasta ${SITE} 2
 ```
 
-# Running nonpareil
+## Running nonpareil
 * Run the following command on the `<Site>.1.fa` output file from `prep.nonpareil.pl`
 * `nonpareil-mpi -s Cen01.1.fasta -f fasta -t 8 -b Cen01.txt -R 4194303`
 
-# Troubleshooting
+## Troubleshooting
 * Cen13 came back with the following error message: 
 ```
 [    844.6]  WARNING: The curve reached near-saturation, hence coverage estimations could be unreliable
@@ -53,3 +53,13 @@ module load perl
   * Sample did not give initial error messages, but threw a warning when plotting saying that the slope is too high; error message suggested decreasing i parameter
   * Will change i from `0.01` to `0.001`
   * Sample is being re-run `nonpareil-mpi -s Cen01.1.fasta -f fasta -t 8 -i 0.001 -b Cen01.txt -R 4194303`
+  
+## Nonpareil curves
+* Coverage of 13 centralia sites was estimated. As (somewhat) expected, coverage according to nonpareil is related to fire history with fire affected soils having the greatest coverage and our reference soil with the lowest coverage. 
+* Coverage per site
+    * Reference: ~30% 
+    * Recovered: ~37-60%
+    * Fire-affected: ~55-90%
+
+
+
