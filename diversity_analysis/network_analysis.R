@@ -132,6 +132,7 @@ otu_table_norm_annotated <- otu_table_norm %>%
   select(Site, acr3_001:ratio.rplB, As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm) %>%
   select(-ratio.rplB)
 
+
 #change to df and add row names back
 otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
 rownames(otu_table_norm_annotated) <- otu_table_norm_annotated[,1]
@@ -153,7 +154,7 @@ otu_table_norm_annotated.t[is.na(otu_table_norm_annotated.t)] <- 0
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
@@ -178,7 +179,12 @@ otu_table_norm.slim.t <- t(otu_table_norm.slim)
 
 #find correlations between OTUs
 corr <- corr.test(otu_table_norm.slim.t, 
-                  method = "spearman", adjust = "fdr")
+                  method = "spearman", adjust = "fdr", alpha = 0.01)
+
+corr.r <- as.matrix(print(corr$r, long = TRUE))
+corr.p <- as.matrix(print(corr$p, long = TRUE))
+
+corr.r[which(corr.p > 0.01)] <- 0
 
 #save correlation data
 write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
@@ -187,6 +193,48 @@ write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = 
 qgraph(corr$r, minimum = "sig", sampleSize=12, 
        layout = "spring", details = TRUE,
        graph = "cor", label.cex = 3, 
-       threshold = "fdr", curve = 1, curveAll = TRUE,
+       threshold = "fdr", curve = 0.4, curveAll = TRUE,
        alpha = 0.01)
 
+
+library(igraph)
+cor_mat<-as.matrix(corr.r)
+diag(cor_mat)<-0
+graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
+graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.65])
+graph <- delete.vertices(graph,which(degree(graph)<1))
+E(graph)$color <- "grey";
+E(graph)$width <- 1;
+E(graph)[weight > 0]$color <- "green";
+E(graph)[weight < 0]$color <- "red";
+V(graph)$color <- "grey";
+tkplot(graph, edge.curved = TRUE)
+
+plot(graph)
+get.edgelist(graph)
+
+#test without rplB!
+#remove column based on pattern (rplB)
+otu_table_norm.slim.t.genes <- otu_table_norm.slim.t[, -grep("rplB", colnames(otu_table_norm.slim.t))]
+
+corr.genes <- corr.test(otu_table_norm.slim.t.genes, 
+                  method = "spearman", adjust = "fdr", alpha = 0.01)
+
+corr.r.genes <- as.matrix(print(corr.genes$r, long = TRUE))
+corr.p.genes <- as.matrix(print(corr.genes$p, long = TRUE))
+
+corr.r.genes[which(corr.p.genes > 0.01)] <- 0
+
+library(igraph)
+cor_mat<-as.matrix(corr.r.genes)
+diag(cor_mat)<-0
+graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
+graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.65])
+graph <- delete.vertices(graph,which(degree(graph)<1))
+E(graph)$color <- "grey";
+E(graph)$width <- 1;
+E(graph)$width <- E(graph)$weight*4;
+E(graph)[weight > 0]$color <- "green";
+E(graph)[weight < 0]$color <- "red";
+V(graph)$color <- "grey";
+tkplot(graph, edge.curved = TRUE)
