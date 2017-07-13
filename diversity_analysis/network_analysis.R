@@ -190,10 +190,9 @@ corr.r[which(corr.p > 0.01)] <- 0
 write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
 
 #make network of correlations
-qgraph(corr$r, minimum = "sig", sampleSize=12, 
+qgraph(corr$r, minimum = "sig", sampleSize=13, 
        layout = "spring", details = TRUE,
-       graph = "cor", label.cex = 3, 
-       threshold = "fdr", curve = 0.4, curveAll = TRUE,
+       graph = "cor", label.cex = 3, curve = 0.2, curveAll = TRUE,
        alpha = 0.01)
 
 
@@ -201,14 +200,15 @@ library(igraph)
 cor_mat<-as.matrix(corr.r)
 diag(cor_mat)<-0
 graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
-graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.65])
-graph <- delete.vertices(graph,which(degree(graph)<1))
+graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.68])
+#graph <- delete.vertices(graph,which(degree(graph)<1))
 E(graph)$color <- "grey";
 E(graph)$width <- 1;
 E(graph)[weight > 0]$color <- "green";
 E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
-tkplot(graph, edge.curved = TRUE)
+E(graph)$width <- abs(E(graph)$weight*2);
+tkplot(graph, edge.curved = FALSE)
 
 plot(graph)
 get.edgelist(graph)
@@ -229,12 +229,12 @@ library(igraph)
 cor_mat<-as.matrix(corr.r.genes)
 diag(cor_mat)<-0
 graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
-graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.65])
-graph <- delete.vertices(graph,which(degree(graph)<1))
+graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.68])
+#graph <- delete.vertices(graph,which(degree(graph)<1))
 E(graph)$color <- "grey";
 E(graph)$width <- 1;
-E(graph)$width <- E(graph)$weight*4;
+E(graph)$width <- E(graph)$weight*2;
 E(graph)[weight > 0]$color <- "green";
 E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
-tkplot(graph, edge.curved = TRUE)
+tkplot(graph, edge.curved = FALSE)
