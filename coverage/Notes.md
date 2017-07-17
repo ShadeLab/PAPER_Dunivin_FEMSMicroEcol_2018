@@ -53,6 +53,12 @@ module load perl
   * Sample did not give initial error messages, but threw a warning when plotting saying that the slope is too high; error message suggested decreasing i parameter
   * Will change i from `0.01` to `0.001`
   * Sample is being re-run `nonpareil-mpi -s Cen01.1.fasta -f fasta -t 8 -i 0.001 -b Cen01.txt -R 4194303`
+  * This fixed error
+* Cen13
+  * Sample did not give initial error messages, but threw a warning when plotting saying that the slope is too high; error message suggested decreasing i parameter just as Cen06 did
+  * Will change i from `0.01` to `0.001`
+  * `nonpareil-mpi -s Cen13.1.fa -f fasta -t 8 -i 0.001 -b Cen13.i.txt -R 4194303`
+
   
 ## Nonpareil curves
 * Coverage of 13 centralia sites was estimated. As (somewhat) expected, coverage according to nonpareil is related to fire history with fire affected soils having the greatest coverage and our reference soil with the lowest coverage. 
