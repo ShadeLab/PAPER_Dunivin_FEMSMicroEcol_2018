@@ -11,3 +11,5 @@ samples <- read.table('descriptors_full.txt', sep="\t", h=T);
 attach(samples);
 np <- Nonpareil.curve.batch(File, r=R, g=G, b=B, libnames=Name, modelOnly=TRUE);
 detach(samples)
+
+Nonpareil.curve(file = "Cen17.txt.npo")

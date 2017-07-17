@@ -3,7 +3,7 @@ Cen01.txt.npo	Cen01	255	204	0
 Cen03.txt.npo	Cen03	255	204	0
 Cen04.txt.npo	Cen04	255	204	0
 Cen05.txt.npo	Cen05	255	204	0
-Cen06.txt.npo	Cen06	178	34	34
+Cen06.i.txt.npo	Cen06	178	34	34
 Cen07.txt.npo	Cen07	255	204	0
 Cen10.txt.npo	Cen10	178	34	34
 Cen12.txt.npo	Cen12	178	34	34
