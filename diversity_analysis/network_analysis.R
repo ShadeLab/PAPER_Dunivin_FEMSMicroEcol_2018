@@ -69,6 +69,7 @@ colnames(vanH) <- naming(vanH)
 colnames(vanX) <- naming(vanX)
 colnames(vanZ) <- naming(vanZ)
 
+
 #join together all files
 otu_table <- acr3 %>%
   left_join(aioA, by = "X") %>%
@@ -97,7 +98,21 @@ otu_table <- acr3 %>%
   left_join(vanH, by = "X") %>%
   left_join(vanX, by = "X") %>%
   left_join(vanZ, by = "X") %>%
+  left_join(adeB, by = "X") %>%
   rename(Site =X) 
+
+#list otus that are gene matches
+mixed <- c("aioA_13", "aioA_31", "aioA_34", "aioA_36", "aioA_37", "aioA_42", "aioA_43", "aioA_49", "aioA_51", "arrA_1", "arrA_2", "arrA_3", "arrA_4", "arrA_5", "arrA_6", "arrA_8","arxA_11", "arxA_04")
+
+#remove OTUs that are gene matches
+otu_table <- otu_table[,!names(otu_table) %in% mixed]
+
+#rename arxA column that is actually arrA (with no match)
+otu_table <- otu_table %>%
+  rename(arrA_3 = arxA_03)
+
+#write file to save OTU table
+write.table(otu_table, paste(wd, "/output/otu_table.txt", sep = ""), sep = "\t", quote = FALSE, row.names = FALSE)
 
 #check total diversity?
 #otu_table_div <- otu_table
@@ -124,7 +139,7 @@ otu_table.rplB <- rplB %>%
 
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
-for(i in 4:5662){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,5662]}
+for(i in 4:6572){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
@@ -238,3 +253,201 @@ E(graph)[weight > 0]$color <- "green";
 E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
 tkplot(graph, edge.curved = FALSE)
+
+
+
+############################
+#MAKE GENE ABUNDANCE GRAPHS#
+############################
+#read in gene classification data
+gene <- read_delim(paste(wd, "/data/gene_classification.txt",  sep=""), 
+                   delim = "\t", col_names = TRUE)
+
+#melt data to separate otu and abundance per site
+gene_abundance <- otu_table_norm %>%
+  melt(variable.names = c("Site", "OTU"), value.name = "RelativeAbundance") %>%
+  rename(OTU = variable)
+
+#change arsC_ to arsC
+gene_abundance$OTU <- gsub("arsC_", "arsC", gene_abundance$OTU)
+
+gene_abundance <- gene_abundance %>%
+  separate(OTU, into = "Gene", sep = "_", remove = FALSE) %>%
+  left_join(gene, by = "Gene") %>%
+  left_join(meta, by = "Site") %>%
+  unique()
+
+#replace NAs with zeros
+gene_abundance$RelativeAbundance[is.na(gene_abundance$RelativeAbundance)] = 0
+
+#remove total rows
+gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "Total"),]
+gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "rplB"),]
+gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "ratio.rplB"),]
+
+#make color pallette for Centralia temperatures
+GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
+
+
+#prep colors for phylum diversity
+color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown", "grey", "red", "blue", "green", "orange")
+
+
+#summarise data
+gene_abundance_summary <- gene_abundance %>%
+  group_by(Group, Description, Gene, Classification, Site, SoilTemperature_to10cm) %>%
+  summarise(Total = sum(RelativeAbundance))
+
+#plot!
+(barplot <- ggplot(gene_abundance_summary, aes(x = Classification, 
+                                                  y = Total)) +
+    geom_bar(stat = "identity", aes(fill = Gene)) +
+    facet_wrap(~Group) +
+    scale_fill_manual(values = color) +
+    ylab("Total gene count (normalized to rplB)") +
+    theme_classic(base_size = 15))
+
+(boxplot <- ggplot(gene_abundance_summary, aes(x = Classification, 
+                                               y = Total)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = SoilTemperature_to10cm)) +
+    facet_wrap(~Gene, scales = "free_y") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                         guide_legend(title="Temperature (°C)")) +
+    ylab("Total gene count (normalized to rplB)") +
+    theme_classic(base_size = 12))
+
+######################
+#CORRELATION ANALYSES#
+######################
+
+#decast for abundance check but first make Site a character
+gene_abundance_summary$Site <- as.character(gene_abundance_summary$Site)
+cast.gene <- data.frame(acast(gene_abundance_summary, Site ~ Gene, value.var = "Total"))
+
+#call na's zeros
+cast.gene[is.na(cast.gene)] =0
+
+#remove unnecessary sites in meta data
+meta <- meta[which(meta$Site %in% otu_table$Site),]
+
+#correlate data with temp
+corr <- print(corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
+cor <- corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
+#arsenic and antibiotic resistance genes are not correlated with temperature!
+
+#check correlations between genes
+corr.genes <- print(corr.test(cast.gene, method = "spearman", adjust = "fdr"), 
+                    short = FALSE)
+corr.genes.matrix <- corr.test(cast.gene, method = "spearman", adjust = "fdr")
+cor.plot(t(corr.genes.matrix$r), stars = TRUE, pval=corr.genes.matrix$p, numbers = TRUE, diag = FALSE, xlas=2)
+
+
+######################
+#MANN WHITNEY U TESTS#
+######################
+
+#remove C17 (testing recovered v reference)
+data.mann <- gene_abundance_summary[-which(gene_abundance_summary$Classification == "Reference"),]
+
+#subset data for each gene to test:
+#acr3
+acr3 <- subset(x = data.mann, subset = Gene == "acr3")
+acr3.cast <- print(wilcox.test(acr3$Total~acr3$Classification, paired = FALSE))
+t.test(acr3$Total ~ acr3$Classification)
+
+
+#aioA
+aioA <- subset(x = data.mann, subset = Gene == "aioA")
+aioA.cast <- print(wilcox.test(aioA$Total~aioA$Classification, paired = FALSE))
+t.test(aioA$Total ~ aioA$Classification)
+
+
+#arsM
+arsM <- subset(x = data.mann, subset = Gene == "arsM")
+arsM.cast <- print(wilcox.test(arsM$Total~arsM$Classification, paired = FALSE))
+t.test(arsM$Total ~ arsM$Classification)
+
+
+#arsCglut
+arsCglut <- subset(x = data.mann, subset = Gene == "arsCglut")
+arsCglut.cast <- print(wilcox.test(arsCglut$Total~arsCglut$Classification, paired = FALSE))
+t.test(arsCglut$Total ~ arsCglut$Classification)
+
+
+#arsCthio
+arsCthio <- subset(x = data.mann, subset = Gene == "arsCthio")
+arsCthio.cast <- print(wilcox.test(arsCthio$Total~arsCthio$Classification, paired = FALSE))
+t.test(arsCthio$Total ~ arsCthio$Classification)
+
+#arsA
+arsA <- subset(x = data.mann, subset = Gene == "arsA")
+arsA.cast <- print(wilcox.test(arsA$Total~arsA$Classification, paired = FALSE))
+t.test(arsA$Total ~ arsA$Classification)
+
+#arsD
+arsD <- subset(x = data.mann, subset = Gene == "arsD")
+arsD.cast <- print(wilcox.test(arsD$Total~arsD$Classification, paired = FALSE))
+t.test(arsD$Total ~ arsD$Classification)
+
+#intI
+intI <- subset(x = data.mann, subset = Gene == "intI")
+intI.cast <- print(wilcox.test(intI$Total~intI$Classification, paired = FALSE))
+t.test(intI$Total ~ intI$Classification)
+
+#ClassA
+ClassA <- subset(x = data.mann, subset = Gene == "ClassA")
+ClassA.cast <- print(wilcox.test(ClassA$Total~ClassA$Classification, paired = FALSE))
+t.test(ClassA$Total ~ ClassA$Classification)
+
+#ClassB
+ClassB <- subset(x = data.mann, subset = Gene == "ClassB")
+ClassB.cast <- print(wilcox.test(ClassB$Total~ClassB$Classification, paired = FALSE))
+t.test(ClassB$Total ~ ClassB$Classification)
+
+#ClassC
+ClassC <- subset(x = data.mann, subset = Gene == "ClassC")
+ClassC.cast <- print(wilcox.test(ClassC$Total~ClassC$Classification, paired = FALSE))
+t.test(ClassC$Total ~ ClassC$Classification)
+
+#vanA
+vanA <- subset(x = data.mann, subset = Gene == "vanA")
+vanA.cast <- print(wilcox.test(vanA$Total~vanA$Classification, paired = FALSE))
+t.test(vanA$Total ~ vanA$Classification)
+
+#vanH
+vanH <- subset(x = data.mann, subset = Gene == "vanH")
+vanH.cast <- print(wilcox.test(vanH$Total~vanH$Classification, paired = FALSE))
+t.test(vanH$Total ~ vanH$Classification)
+
+#vanX
+vanX <- subset(x = data.mann, subset = Gene == "vanX")
+vanX.cast <- print(wilcox.test(vanX$Total~vanX$Classification, paired = FALSE))
+t.test(vanX$Total ~ vanX$Classification)
+
+#vanZ
+vanZ <- subset(x = data.mann, subset = Gene == "vanZ")
+vanZ.cast <- print(wilcox.test(vanZ$Total~vanZ$Classification, paired = FALSE))
+t.test(vanZ$Total ~ vanZ$Classification)
+
+#tolC
+tolC <- subset(x = data.mann, subset = Gene == "tolC")
+tolC.cast <- print(wilcox.test(tolC$Total~tolC$Classification, paired = FALSE))
+t.test(tolC$Total ~ tolC$Classification)
+
+#sul2
+sul2 <- subset(x = data.mann, subset = Gene == "sul2")
+sul2.cast <- print(wilcox.test(sul2$Total~sul2$Classification, paired = FALSE))
+t.test(sul2$Total ~ sul2$Classification)
+
+#dfra12
+dfra12 <- subset(x = data.mann, subset = Gene == "dfra12")
+dfra12.cast <- print(wilcox.test(dfra12$Total~dfra12$Classification, paired = FALSE))
+t.test(dfra12$Total ~ dfra12$Classification)
+
+#adeB
+adeB <- subset(x = data.mann, subset = Gene == "adeB")
+adeB.cast <- print(wilcox.test(adeB$Total~adeB$Classification, paired = FALSE))
+t.test(adeB$Total ~ adeB$Classification)
+
+

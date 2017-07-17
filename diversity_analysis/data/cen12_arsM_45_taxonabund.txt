@@ -1,25 +1,22 @@
 Taxon	Abundance	Fraction Abundance
-coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	30.284	0.0187
-coded_by=complement(222910..223653),organism=Solirubrobacterales bacterium 67-14,definition=arsenite S-adenosylmethyltransferase	5.207	0.0032
+coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	30.284	0.0190
+coded_by=complement(222910..223653),organism=Solirubrobacterales bacterium 67-14,definition=arsenite S-adenosylmethyltransferase	5.207	0.0033
 coded_by=complement(48338..49225),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	2.107	0.0013
 coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	3.324	0.0021
 coded_by=27543..28343,organism=sediment metagenome,definition=protein containing Methyltransferase type 11 domain	3.703	0.0023
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethyltransferase	62.084	0.0384
-coded_by=complement(32836..33645),organism=Thiobacillus sp. 65-29,definition=arsenite S-adenosylmethyltransferase	12.721	0.0079
-coded_by=2025..2867,organism=Betaproteobacteria bacterium RIFCSPLOWO2_02_64_14,definition=arsenite S-adenosylmethyltransferase	2.223	0.0014
-coded_by=complement(101439..102275),organism=Mucilaginibacter sp. 44-25,definition=arsenite S-adenosylmethyltransferase	9.042	0.0056
-coded_by=complement(16787..17605),organism=Candidatus Rokubacteria bacterium GWC2_70_16,definition=arsenite S-adenosylmethyltransferase	42.095	0.0261
-coded_by=complement(1678..2499),organism=Actinobacteria bacterium RBG_16_70_17,definition=hypothetical protein	20.894	0.0129
-coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	188.124	0.1164
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethyltransferase	62.084	0.0390
+coded_by=complement(32836..33645),organism=Thiobacillus sp. 65-29,definition=arsenite S-adenosylmethyltransferase	12.721	0.0080
+coded_by=complement(101439..102275),organism=Mucilaginibacter sp. 44-25,definition=arsenite S-adenosylmethyltransferase	9.042	0.0057
+coded_by=complement(16787..17605),organism=Candidatus Rokubacteria bacterium GWC2_70_16,definition=arsenite S-adenosylmethyltransferase	36.614000000000004	0.0230
+coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	190.65599999999998	0.1196
 coded_by=complement(28588..29454),organism=Candidatus Peregrinibacteria bacterium CG1_02_54_53,definition=SAM-dependent methyltransferase	9.291	0.0058
 coded_by=complement(7320..8255),organism=Acidobacteriales bacterium 59-55,definition=SAM-dependent methyltransferase	1.598	0.0010
-coded_by=287282..288121,organism=Steroidobacter denitrificans,definition=arsenite S-adenosylmethyltransferase	4.389	0.0027
+coded_by=287282..288121,organism=Steroidobacter denitrificans,definition=arsenite S-adenosylmethyltransferase	4.389	0.0028
 coded_by=complement(67098..68069),organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenite S-adenosylmethyltransferase	7.726	0.0048
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	1097.6539999999998	0.6793
-coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	7.339	0.0045
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	1103.8970000000002	0.6926
+coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	7.339	0.0046
 coded_by=complement(3503237..3504058),organism=Candidatus Koribacter versatilis Ellin345,definition=Methyltransferase type 11	9.456	0.0059
-coded_by=229..1068,organism=Candidatus Rokubacteria bacterium RIFCSPLOWO2_02_FULL_72_37,definition=arsenite S-adenosylmethyltransferase	2.107	0.0013
-coded_by=<1..>347,organism=uncultured bacterium,definition=ArsM	80.247	0.0497
-coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	8.148	0.0050
-coded_by=126137..126982,organism=Streptomyces aidingensis,definition=Methyltransferase domain-containing protein	3.149	0.0019
+coded_by=<1..>347,organism=uncultured bacterium,definition=ArsM	80.247	0.0503
+coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	8.148	0.0051
+coded_by=126137..126982,organism=Streptomyces aidingensis,definition=Methyltransferase domain-containing protein	3.149	0.0020
 coded_by=3610315..3611220,organism=Rubinisphaera brasiliensis DSM 5305,definition=Methyltransferase type 11	2.848	0.0018

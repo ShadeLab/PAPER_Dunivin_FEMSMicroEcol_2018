@@ -1,0 +1,5 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=4576388..4576732,organism=Methylomonas methanica MC09,definition=Arsenical resistance operon trans-acting repressor ArsD	1.034	0.1925
+coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	2.129	0.3964
+coded_by=complement(3077358..3077735),organism=Alkalilimnicola ehrlichii MLHE-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1.0	0.1862
+coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1.208	0.2249

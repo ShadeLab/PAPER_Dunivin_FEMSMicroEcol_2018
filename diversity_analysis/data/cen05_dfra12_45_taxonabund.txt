@@ -1,0 +1,57 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(44929..45417),organism=Bacillus coagulans,definition=Dihydrofolate reductase	2.987	0.0154
+coded_by=149..619,organism=uncultured bacterium,definition=dihydrofolate reductase	3.104	0.0160
+coded_by=561588..562070,organism=Aeromonas media WS,definition=dihydrofolate reductase	5.461	0.0282
+coded_by=complement(14679..15191),organism=Bradyrhizobium paxllaeri,definition=diacylglycerol kinase	1.182	0.0061
+coded_by=493140..493682,organism=Ensifer sp. LC54,definition=diacylglycerol kinase	1.128	0.0058
+coded_by=5425..5940,organism=Paraglaciecola polaris LMG 21857,definition=dihydrofolate reductase	1.824	0.0094
+coded_by=complement(18623..19123),organism=Burkholderia sp. ST111,definition=diacylglycerol kinase	1.128	0.0058
+coded_by=203494..203985,organism=Methylobacterium mesophilicum SR1.6/6,definition=dihydrofolate reductase	3.576	0.0185
+coded_by=complement(4293319..4293861),organism=Rhodopseudomonas palustris TIE-1,definition=Dihydrofolate reductase	1.174	0.0061
+coded_by=complement(1261476..1262000),organism=Afipia massiliensis,definition=diacylglycerol kinase	2.393	0.0124
+coded_by=7220..7729,organism=Parcubacteria (Kaiserbacteria) bacterium GW2011_GWB1_52_6,definition=Dihydrofolate reductase	1.661	0.0086
+coded_by=11577..12077,organism=Burkholderia sp. BT03,definition=Dihydrofolate reductase	2.669	0.0138
+coded_by=965862..966353,organism=Aeromonas veronii B565,definition=Dihydrofolate reductase type 3	3.942	0.0204
+coded_by=complement(1432..1899),organism=uncultured bacterium,definition=Dihydrofolate reductase	1.191	0.0062
+coded_by=8481572..8482051,organism=Myxococcus stipitatus DSM 14675,definition=dihydrofolate reductase	2.556	0.0132
+coded_by=complement(16352..16849),organism=Burkholderia sp. LMG 29326,definition=dihydrofolate reductase	1.917	0.0099
+coded_by=<1..621,organism=uncultured bacterium,definition=Dihydrofolate reductase	6.0809999999999995	0.0314
+coded_by=complement(66685..67191),organism=Acidihalobacter prosperus,definition=Dihydrofolate reductase	1.835	0.0095
+coded_by=complement(23283..23795),organism=Bradyrhizobium lablabi,definition=diacylglycerol kinase	17.293	0.0894
+coded_by=95..619,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.826	0.0094
+coded_by=complement(902351..902869),organism=Phenylobacterium zucineum HLK1,definition=dihydrofolate reductase	7.4959999999999996	0.0387
+coded_by=793241..793741,organism=Xanthomonas translucens pv. undulosa,definition=diacylglycerol kinase	1.492	0.0077
+coded_by=complement(84..575),organism=uncultured bacterium,definition=Dihydrofolate reductase	13.723	0.0709
+coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	3.873	0.0200
+coded_by=complement(2600373..2600864),organism=Tolumonas auensis DSM 9187,definition=Dihydrofolate reductase	6.302	0.0326
+coded_by=70963..71460,organism=Burkholderia sp. LMG 29315,definition=dihydrofolate reductase	2.465	0.0127
+coded_by=270..779,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.189	0.0061
+coded_by=complement(6742553..6743065),organism=Bradyrhizobium icense,definition=diacylglycerol kinase	1.186	0.0061
+coded_by=419..910,organism=Stenotrophomonas maltophilia SKK35,definition=dihydrofolate reductase	2.367	0.0122
+coded_by=470330..470815,organism=Bacillus encimensis,definition=dihydrofolate reductase	1.297	0.0067
+coded_by=106477..106974,organism=Methylobacterium sp. Leaf85,definition=diacylglycerol kinase	1.209	0.0062
+coded_by=622..1104,organism=Aeromonas salmonicida subsp. pectinolytica 34mel,definition=dihydrofolate reductase	1.804	0.0093
+coded_by=47..571,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.776	0.0092
+coded_by=<1..>532,organism=mine drainage metagenome,definition=dihydrofolate reductase	5.399	0.0279
+coded_by=3415653..3416153,organism=Burkholderia sp. OLGA172,definition=diacylglycerol kinase	0.946	0.0049
+coded_by=653284..653808,organism=Methylocella silvestris BL2,definition=Dihydrofolate reductase	15.584	0.0805
+coded_by=715859..716359,organism=Burkholderia ubonensis MSMB22,definition=dihydrofolate reductase family protein	4.554	0.0235
+coded_by=747687..748187,organism=Marinomonas mediterranea MMB-1,definition=Dihydrofolate reductase	2.54	0.0131
+coded_by=complement(2387846..2388367),organism=gamma proteobacterium HIMB55,definition=dihydrofolate reductase	1.079	0.0056
+coded_by=1531..2046,organism=uncultured bacterium,definition=Dihydrofolate reductase	2.815	0.0145
+coded_by=complement(154137..154640),organism=Halothiobacillus sp. XI15,definition=hypothetical protein	5.3389999999999995	0.0276
+coded_by=272..772,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.566	0.0081
+coded_by=complement(141963..142475),organism=Bradyrhizobium retamae,definition=diacylglycerol kinase	5.331	0.0275
+coded_by=977298..977792,organism=Aeromonas hydrophila 4AK4,definition=folA product	3.624	0.0187
+coded_by=complement(3621975..3622478),organism=Thalassolituus oleivorans R6-15,definition=dihydrofolate reductase	1.231	0.0064
+coded_by=1182..1676,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.834	0.0095
+coded_by=complement(1025859..1026368),organism=Bartonella australis Aust/NH1,definition=dihydrofolate reductase	1.236	0.0064
+coded_by=103007..103519,organism=Bradyrhizobium valentinum,definition=diacylglycerol kinase	2.146	0.0111
+coded_by=complement(366753..367250),organism=Methylobacterium sp. Leaf456,definition=diacylglycerol kinase	3.6689999999999996	0.0190
+coded_by=426858..427352,organism=Fictibacillus enclensis,definition=dihydrofolate reductase	1.236	0.0064
+coded_by=46956..47471,organism=Lysobacter arseniciresistens ZS79,definition=diacylglycerol kinase	11.697	0.0604
+coded_by=51..533,organism=Shewanella benthica,definition=dihydrofolate reductase	2.628	0.0136
+coded_by=450875..451381,organism=Bosea sp. Leaf344,definition=diacylglycerol kinase	4.033	0.0208
+coded_by=complement(8670..9155),organism=uncultured bacterium,definition=hypothetical protein	1.131	0.0058
+coded_by=227221..227733,organism=Bradyrhizobium sp. BR 10303,definition=diacylglycerol kinase	1.732	0.0090
+coded_by=10742..11251,organism=Thiobacillus denitrificans,definition=diacylglycerol kinase	1.057	0.0055

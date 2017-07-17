@@ -17,7 +17,7 @@ library(psych)
 wd <- print(getwd())
 
 #read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt", 
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
 
 #read in microbe census data
@@ -161,11 +161,6 @@ data.site <- data.annotated %>%
             Count.census = sum(Normalized.Abundance.census)) %>%
   left_join(meta, by = "Site")
 
-#plot gene per temperature
-ggplot(subset(data.site, Gene == "acr3"), aes(x = SoilTemperature_to10cm, y = Count.rplB)) +
-  geom_point() +
-  geom_smooth(method = "lm", formula = y ~ log(x)) +
-  facet_wrap(~Gene)
 
 #add taxanomic information 
 #data.ncbi <- tax_name(query = data.annotated$Organism, 
@@ -211,7 +206,7 @@ data.phylum <- data.annotated.ncbi %>%
   summarise(Phylum.count = sum(Normalized.Abundance.rplB))
 
 #prep colors for phylum diversity
-color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown")
+color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown", "grey", "red", "blue", "green", "orange")
 
 #order genes by group
 data.phylum$Gene <- factor(data.phylum$Gene, 
@@ -320,7 +315,7 @@ ggsave(boxplot.asrg.genes, filename = paste(wd, "/figures/asrg.boxplot.rplB.by_g
                                   y = Count*100)) +
     geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm), size = 2) +
-    facet_wrap( ~ Gene) +
+    facet_wrap( ~ Gene, scales = "free_y") +
     ylab("Gene per rplB(%)") +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")) +

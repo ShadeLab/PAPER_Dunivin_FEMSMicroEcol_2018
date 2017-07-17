@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	2.221	0.2467
+coded_by=47142..48068,organism=Klebsiella michiganensis,definition=Dihydropteroate synthase	6.781000000000001	0.7533

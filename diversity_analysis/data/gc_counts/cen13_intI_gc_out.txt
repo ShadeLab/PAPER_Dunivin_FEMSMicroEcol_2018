@@ -1,5 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen13_intI_contig_3260_contig_3261	71.3561470215463	789	314	249	104	122
-cen13_intI_contig_3284_contig_3285	70.4545454545455	528	216	156	68	88
-cen13_intI_contig_3372_contig_3373	70.6439393939394	528	216	157	68	87
-cen13_intI_contig_3412_contig_3413	70.4545454545455	528	216	156	69	87

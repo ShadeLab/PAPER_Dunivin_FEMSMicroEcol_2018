@@ -1,28 +1,24 @@
 Taxon	Abundance	Fraction Abundance
-coded_by=complement(2467..3213),organism=Actinobacteria bacterium 13_2_20CM_2_66_6,definition=hypothetical protein	5.263	0.0093
-coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	24.436	0.0432
-coded_by=complement(59925..60725),organism=Streptomyces sp. G25(2015),definition=ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE	1.974	0.0035
-coded_by=complement(15790..16404),organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=methyltransferase type 11	7.725	0.0137
-coded_by=complement(6857..7714),organism=Acidobacteriales bacterium 13_2_20CM_55_8,definition=arsenite S-adenosylmethyltransferase	2.653	0.0047
-coded_by=complement(5428..6288),organism=Acidobacteria bacterium 13_1_40CM_4_65_8,definition=arsenite S-adenosylmethyltransferase	2.575	0.0046
-coded_by=complement(1563..2408),organism=Acidobacteria bacterium 13_2_20CM_58_27,definition=arsenite S-adenosylmethyltransferase	2.042	0.0036
-coded_by=622570..623361,organism=Conexibacter woesei DSM 14684,definition=Methyltransferase type 11	3.876	0.0069
-coded_by=complement(399975..400736),organism=Geodermatophilus brasiliensis,definition=Methyltransferase domain-containing protein	2.85	0.0050
-coded_by=1576546..1577370,organism=Magnetospira sp. QH-2,definition=Conserved protein of unknown function	2.452	0.0043
-coded_by=583..1341,organism=Actinobacteria bacterium 13_1_20CM_2_66_18,definition=hypothetical protein	20.467000000000002	0.0362
-coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	3.99	0.0071
-coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	1.746	0.0031
-coded_by=21159..22016,organism=Magnetovibrio blakemorei,definition=arsenite S-adenosylmethyltransferase	3.221	0.0057
-coded_by=<1..>345,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	6.442	0.0114
-coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	3.024	0.0053
-coded_by=4821..5696,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	3.662	0.0065
-coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	8.970999999999998	0.0159
-coded_by=complement(10089..10835),organism=Actinobacteria bacterium 13_2_20CM_2_66_6,definition=hypothetical protein	6.19	0.0109
-coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	29.813000000000006	0.0527
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	22.686999999999998	0.0401
-coded_by=669265..670110,organism=Chitinophaga sp. YR573,definition=Methyltransferase domain-containing protein	4.07	0.0072
-coded_by=complement(41562..42389),organism=Betaproteobacteria bacterium RBG_16_64_18,definition=arsenite S-adenosylmethyltransferase	1.913	0.0034
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	357.674	0.6327
-coded_by=3074512..3075309,organism=Magnetospirillum gryphiswaldense MSR-1,definition=ubiE/COQ5 methyltransferase	3.169	0.0056
-coded_by=complement(10773..11630),organism=Acidobacteriales bacterium 13_2_20CM_2_55_5,definition=arsenite S-adenosylmethyltransferase	8.027999999999999	0.0142
-coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	24.427999999999997	0.0432
+coded_by=<1..>345,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	6.442	0.0124
+coded_by=21159..22016,organism=Magnetovibrio blakemorei,definition=arsenite S-adenosylmethyltransferase	3.221	0.0062
+coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	3.26	0.0063
+coded_by=4821..5696,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	3.662	0.0070
+coded_by=complement(2467..3213),organism=Actinobacteria bacterium 13_2_20CM_2_66_6,definition=hypothetical protein	3.502	0.0067
+coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	24.436	0.0469
+coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	2.484	0.0048
+coded_by=complement(10089..10835),organism=Actinobacteria bacterium 13_2_20CM_2_66_6,definition=hypothetical protein	6.19	0.0119
+coded_by=complement(5428..6288),organism=Acidobacteria bacterium 13_1_40CM_4_65_8,definition=arsenite S-adenosylmethyltransferase	2.575	0.0049
+coded_by=complement(1563..2408),organism=Acidobacteria bacterium 13_2_20CM_58_27,definition=arsenite S-adenosylmethyltransferase	2.042	0.0039
+coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	26.872000000000003	0.0515
+coded_by=622570..623361,organism=Conexibacter woesei DSM 14684,definition=Methyltransferase type 11	3.876	0.0074
+coded_by=complement(399975..400736),organism=Geodermatophilus brasiliensis,definition=Methyltransferase domain-containing protein	2.85	0.0055
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	20.820999999999998	0.0399
+coded_by=669265..670110,organism=Chitinophaga sp. YR573,definition=Methyltransferase domain-containing protein	4.07	0.0078
+coded_by=1576546..1577370,organism=Magnetospira sp. QH-2,definition=Conserved protein of unknown function	2.452	0.0047
+coded_by=complement(41562..42389),organism=Betaproteobacteria bacterium RBG_16_64_18,definition=arsenite S-adenosylmethyltransferase	1.913	0.0037
+coded_by=583..1341,organism=Actinobacteria bacterium 13_1_20CM_2_66_18,definition=hypothetical protein	20.467000000000002	0.0392
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	347.98000000000013	0.6672
+coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	3.99	0.0077
+coded_by=3074512..3075309,organism=Magnetospirillum gryphiswaldense MSR-1,definition=ubiE/COQ5 methyltransferase	3.169	0.0061
+coded_by=complement(10773..11630),organism=Acidobacteriales bacterium 13_2_20CM_2_55_5,definition=arsenite S-adenosylmethyltransferase	0.832	0.0016
+coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	24.427999999999997	0.0468

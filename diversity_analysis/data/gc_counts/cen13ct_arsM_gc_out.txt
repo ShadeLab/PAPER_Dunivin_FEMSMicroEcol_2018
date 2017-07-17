@@ -1,6 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen13_arsM_contig_0_contig_1	54.2784163473819	783	226	199	177	181
-cen13_arsM_contig_2_contig_3	45.1935081148564	801	197	165	229	210
-cen13_arsM_contig_166_contig_167	46.1832061068702	786	199	164	219	204
-cen13_arsM_contig_542_contig_543	47.2789115646259	588	153	125	154	156
-cen13_arsM_contig_1996_contig_1997	51.5964240102171	783	231	173	188	191

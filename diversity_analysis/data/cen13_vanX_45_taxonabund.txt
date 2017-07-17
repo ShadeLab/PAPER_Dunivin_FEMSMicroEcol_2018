@@ -1,0 +1,3 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=5462249..5463007,organism=Prosthecomicrobium hirschii,definition=hypothetical protein	8.657	0.3200
+coded_by=916823..917485,organism=Methylobacterium populi,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	18.397	0.6800

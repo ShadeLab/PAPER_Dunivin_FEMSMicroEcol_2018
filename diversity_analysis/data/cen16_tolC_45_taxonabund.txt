@@ -1,0 +1,10 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=917083..918414,organism=Sideroxydans lithotrophicus ES-1,definition=type I secretion outer membrane protein, TolC family	4.473	0.0683
+coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	2.802	0.0428
+coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	7.851999999999999	0.1200
+coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	14.176000000000002	0.2166
+coded_by=2932972..2934288,organism=Herbaspirillum sp. TSA66,definition=channel protein TolC	13.221	0.2020
+coded_by=complement(3555350..3556684),organism=Sulfuritalea hydrogenivorans sk43H,definition=TolC family type I secretion outer membrane protein	5.593	0.0855
+coded_by=2694381..2695697,organism=Rugosibacter aromaticivorans,definition=channel protein TolC	1.495	0.0228
+coded_by=complement(152096..153451),organism=Methylobacillus sp. MM2,definition=type I secretion protein TolC	12.748	0.1948
+coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	3.087	0.0472

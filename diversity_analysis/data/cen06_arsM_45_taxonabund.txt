@@ -1,25 +1,20 @@
 Taxon	Abundance	Fraction Abundance
-coded_by=complement(5220..6011),organism=Intrasporangium chromatireducens Q5-1,definition=arsenite S-adenosylmethyltransferase	4.3309999999999995	0.0053
-coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	2.251	0.0027
-coded_by=79666..80523,organism=Humibacillus sp. DSM 29435,definition=arsenite S-adenosylmethyltransferase	1.716	0.0021
-coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	9.39	0.0114
-coded_by=complement(6857..7714),organism=Acidobacteriales bacterium 13_2_20CM_55_8,definition=arsenite S-adenosylmethyltransferase	2.115	0.0026
-coded_by=<1..>325,organism=uncultured bacterium,definition=ArsM	1.916	0.0023
-coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	26.975	0.0328
-coded_by=complement(28588..29454),organism=Candidatus Peregrinibacteria bacterium CG1_02_54_53,definition=SAM-dependent methyltransferase	9.267	0.0113
-coded_by=complement(2474..3421),organism=Microbacterium sp. SCN 70-10,definition=SAM-dependent methyltransferase	4.568	0.0056
-coded_by=5375..6244,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=arsenite S-adenosylmethyltransferase	1.347	0.0016
-coded_by=complement(1300..2193),organism=Geodermatophilus sp. DSM 44208,definition=Methyltransferase domain-containing protein	6.5920000000000005	0.0080
-coded_by=<1..685,organism=mine drainage metagenome,definition=arsenite S-adenosylmethyltransferase	32.973	0.0401
-coded_by=complement(8515..9387),organism=Acidobacteriales bacterium 13_1_40CM_3_55_5,definition=arsenite S-adenosylmethyltransferase	1.996	0.0024
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	2.063	0.0025
-coded_by=complement(41562..42389),organism=Betaproteobacteria bacterium RBG_16_64_18,definition=arsenite S-adenosylmethyltransferase	1.903	0.0023
-coded_by=982..1833,organism=Sphingobacteriales bacterium 40-81,definition=arsenite S-adenosylmethyltransferase	9.314	0.0113
-coded_by=complement(12354..13202),organism=Bacteroidetes bacterium 46-16,definition=arsenite S-adenosylmethyltransferase	43.08	0.0524
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	539.262	0.6562
-coded_by=complement(3503237..3504058),organism=Candidatus Koribacter versatilis Ellin345,definition=Methyltransferase type 11	3.195	0.0039
-coded_by=complement(16957..17766),organism=Rhodospirillales bacterium RIFCSPLOWO2_02_FULL_58_16,definition=arsenite S-adenosylmethyltransferase	97.958	0.1192
-coded_by=complement(2583859..2584767),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	2.157	0.0026
-coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	5.73	0.0070
-coded_by=3610315..3611220,organism=Rubinisphaera brasiliensis DSM 5305,definition=Methyltransferase type 11	2.081	0.0025
-coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	9.573	0.0116
+coded_by=complement(5220..6011),organism=Intrasporangium chromatireducens Q5-1,definition=arsenite S-adenosylmethyltransferase	4.3309999999999995	0.0055
+coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	2.251	0.0028
+coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	9.39	0.0118
+coded_by=<1..>325,organism=uncultured bacterium,definition=ArsM	1.916	0.0024
+coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	22.557000000000002	0.0284
+coded_by=complement(28588..29454),organism=Candidatus Peregrinibacteria bacterium CG1_02_54_53,definition=SAM-dependent methyltransferase	7.313	0.0092
+coded_by=complement(2474..3421),organism=Microbacterium sp. SCN 70-10,definition=SAM-dependent methyltransferase	4.568	0.0058
+coded_by=5375..6244,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=arsenite S-adenosylmethyltransferase	1.347	0.0017
+coded_by=complement(1300..2193),organism=Geodermatophilus sp. DSM 44208,definition=Methyltransferase domain-containing protein	6.5920000000000005	0.0083
+coded_by=<1..685,organism=mine drainage metagenome,definition=arsenite S-adenosylmethyltransferase	32.973	0.0416
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	2.063	0.0026
+coded_by=982..1833,organism=Sphingobacteriales bacterium 40-81,definition=arsenite S-adenosylmethyltransferase	9.314	0.0117
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	530.616	0.6689
+coded_by=complement(12354..13202),organism=Bacteroidetes bacterium 46-16,definition=arsenite S-adenosylmethyltransferase	43.08	0.0543
+coded_by=complement(3503237..3504058),organism=Candidatus Koribacter versatilis Ellin345,definition=Methyltransferase type 11	3.195	0.0040
+coded_by=complement(16957..17766),organism=Rhodospirillales bacterium RIFCSPLOWO2_02_FULL_58_16,definition=arsenite S-adenosylmethyltransferase	97.958	0.1235
+coded_by=complement(2583859..2584767),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	2.157	0.0027
+coded_by=3610315..3611220,organism=Rubinisphaera brasiliensis DSM 5305,definition=Methyltransferase type 11	2.081	0.0026
+coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	9.573	0.0121

@@ -1,0 +1,9 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	3.181	0.0572
+coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	10.644	0.1915
+coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	7.295999999999999	0.1313
+coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1.843	0.0332
+coded_by=1970897..1972603,organism=Magnetospirillum magneticum AMB-1,definition=Oxyanion-translocating ATPase	4.083	0.0735
+coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	18.799	0.3382
+coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	7.471	0.1344
+coded_by=complement(68547..69752),organism=Chlorobaculum parvum NCIB 8327,definition=arsenite-activated ATPase ArsA	2.267	0.0408

@@ -1,0 +1,73 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(15276..15794),organism=Microgenomates bacterium GW2011_GWC1_38_14,definition=dihydrofolate reductase, dihydrofolate reductase	1.986	0.0040
+coded_by=complement(1553..2089),organism=uncultured bacterium,definition=Dihydrofolate reductase	8.934	0.0180
+coded_by=982..1470,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.568	0.0032
+coded_by=complement(1086..1652),organism=uncultured bacterium,definition=hypothetical protein	2.133	0.0043
+coded_by=5141..5599,organism=Nocardioides luteus,definition=diacylglycerol kinase	3.35	0.0068
+coded_by=1637..2107,organism=uncultured bacterium,definition=Dihydrofolate reductase	4.104	0.0083
+coded_by=676..1236,organism=uncultured bacterium,definition=dihydrofolate reductase	6.884	0.0139
+coded_by=complement(21550..22032),organism=Microgenomates (Daviesbacteria) bacterium GW2011_GWA2_38_17,definition=Dihydrofolate reductase	3.453	0.0070
+coded_by=complement(1229..1750),organism=uncultured bacterium,definition=Dihydrofolate reductase	5.4559999999999995	0.0110
+coded_by=complement(4300198..4300656),organism=Shewanella piezotolerans WP3,definition=Dihydrofolate reductase	1.056	0.0021
+coded_by=254905..255516,organism=Pseudomonas stutzeri CCUG 29243,definition=dihydrofolate reductase	1.621	0.0033
+coded_by=691..1158,organism=uncultured bacterium,definition=Dihydrofolate reductase	26.89	0.0542
+coded_by=complement(2938629..2939147),organism=Rhizobium etli CIAT 652,definition=dihydrofolate reductase protein	2.705	0.0055
+coded_by=43556..44068,organism=Bradyrhizobium manausense,definition=diacylglycerol kinase	2.169	0.0044
+coded_by=2429584..2430087,organism=Burkholderia oklahomensis,definition=dihydrofolate reductase family protein	1.29	0.0026
+coded_by=complement(2931..3452),organism=Betaproteobacteria bacterium SG8_39,definition=hypothetical protein	14.921	0.0301
+coded_by=complement(1432..1899),organism=uncultured bacterium,definition=Dihydrofolate reductase	2.362	0.0048
+coded_by=complement(6624789..6625316),organism=Rhodoplanes sp. Z2-YC6860,definition=Dihydrofolate reductase	9.253	0.0187
+coded_by=1943083..1943577,organism=Sulfuricaulis limicola,definition=dihydrofolate reductase	31.065	0.0627
+coded_by=complement(622..1128),organism=uncultured bacterium,definition=Dihydrofolate reductase	1.915	0.0039
+coded_by=2301486..2301986,organism=Bacillus sp. FJAT-18017,definition=dihydrofolate reductase	1.085	0.0022
+coded_by=<1..621,organism=uncultured bacterium,definition=Dihydrofolate reductase	8.46	0.0171
+coded_by=86403..86912,organism=Amantichitinum ursilacus,definition=Dihydrofolate reductase type 3	1.68	0.0034
+coded_by=complement(23283..23795),organism=Bradyrhizobium lablabi,definition=diacylglycerol kinase	11.422	0.0230
+coded_by=complement(66685..67191),organism=Acidihalobacter prosperus,definition=Dihydrofolate reductase	1.773	0.0036
+coded_by=2414634..2415149,organism=Rhodopseudomonas palustris BisA53,definition=dihydrofolate reductase	1.143	0.0023
+coded_by=complement(23356..23850),organism=Thiomonas sp. CB2,definition=dihydrofolate reductase	5.669	0.0114
+coded_by=1705..2217,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.077	0.0022
+coded_by=complement(84..575),organism=uncultured bacterium,definition=Dihydrofolate reductase	7.9079999999999995	0.0160
+coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	6.075	0.0123
+coded_by=570..1043,organism=uncultured bacterium,definition=Dihydrofolate reductase	9.974	0.0201
+coded_by=6067..6540,organism=Opitutaceae bacterium BACL24 MAG-120322-bin51,definition=dihydrofolate reductase	4.735	0.0096
+coded_by=complement(1689195..1689680),organism=Pedobacter heparinus DSM 2366,definition=Dihydrofolate reductase	2.288	0.0046
+coded_by=68475..68984,organism=Bartonella vinsonii subsp. arupensis OK-94-513,definition=hypothetical protein	5.971	0.0120
+coded_by=complement(6742553..6743065),organism=Bradyrhizobium icense,definition=diacylglycerol kinase	1.371	0.0028
+coded_by=complement(266..760),organism=uncultured bacterium,definition=Dihydrofolate reductase	1.532	0.0031
+coded_by=106477..106974,organism=Methylobacterium sp. Leaf85,definition=diacylglycerol kinase	4.1	0.0083
+coded_by=728..1219,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.176	0.0024
+coded_by=10742470..10742949,organism=Archangium gephyra,definition=Dihydrofolate reductase	9.223	0.0186
+coded_by=complement(121136..121612),organism=Shewanella sp. P1-14-1,definition=Dihydrofolate reductase type 3	2.415	0.0049
+coded_by=complement(3056856..3057338),organism=Fictibacillus arsenicus,definition=dihydrofolate reductase	3.373	0.0068
+coded_by=complement(46018..46506),organism=Virgibacillus soli,definition=dihydrofolate reductase	1.455	0.0029
+coded_by=798627..799145,organism=Pseudolabrys sp. Root1462,definition=diacylglycerol kinase	34.378	0.0693
+coded_by=complement(968..1453),organism=uncultured bacterium,definition=Dihydrofolate reductase	4.73	0.0095
+coded_by=complement(228902..229396),organism=Vogesella sp. LIG4,definition=dihydrofolate reductase	1.188	0.0024
+coded_by=complement(83270..83767),organism=Methylobacterium sp. Leaf102,definition=diacylglycerol kinase	7.065	0.0143
+coded_by=complement(5801756..5802265),organism=Bradyrhizobium japonicum SEMIA 5079,definition=dihydrofolate reductase	1.895	0.0038
+coded_by=complement(34477..34956),organism=Pseudoalteromonas piscicida JCM 20779,definition=dihydrofolate reductase type I, trimethoprim resistance	1.561	0.0031
+coded_by=complement(2212193..2212759),organism=Xylella fastidiosa 9a5c,definition=dihydrofolate reductase type III	6.961	0.0140
+coded_by=346232..346720,organism=Altererythrobacter namhicola,definition=Dihydrofolate reductase type 3	4.254	0.0086
+coded_by=complement(3621975..3622478),organism=Thalassolituus oleivorans R6-15,definition=dihydrofolate reductase	4.177	0.0084
+coded_by=328929..329438,organism=Bradyrhizobium sp. Leaf396,definition=diacylglycerol kinase	6.258	0.0126
+coded_by=complement(1324..1842),organism=uncultured bacterium,definition=Dihydrofolate reductase	3.717	0.0075
+coded_by=complement(1204487..1204975),organism=Aneurinibacillus sp. XH2,definition=dihydrofolate reductase	4.575	0.0092
+coded_by=1894..2400,organism=Nitrosospira sp. APG3,definition=Dihydrofolate reductase	2.296	0.0046
+coded_by=complement(268496..269014),organism=Aminobacter sp. Root100,definition=diacylglycerol kinase	14.113	0.0285
+coded_by=complement(3666939..3667454),organism=Bosea sp. RAC05,definition=dihydrofolate reductase family protein	2.054	0.0041
+coded_by=complement(1884610..1885113),organism=Ralstonia mannitolilytica,definition=diacylglycerol kinase	1.051	0.0021
+coded_by=complement(907..1404),organism=uncultured bacterium,definition=Dihydrofolate reductase	3.168	0.0064
+coded_by=complement(<1..497),organism=uncultured bacterium,definition=dihydrofolate reductase	30.099	0.0607
+coded_by=184..687,organism=uncultured bacterium,definition=Dihydrofolate reductase	5.08	0.0102
+coded_by=complement(22058..22555),organism=Gallionella sp. ShG14-8,definition=Dihydrofolate reductase	1.405	0.0028
+coded_by=complement(187..>634),organism=uncultured bacterium,definition=Dihydrofolate reductase	1.0	0.0020
+coded_by=complement(29..535),organism=uncultured bacterium,definition=Dihydrofolate reductase	6.1	0.0123
+coded_by=233..712,organism=uncultured bacterium,definition=Dihydrofolate reductase	1.952	0.0039
+coded_by=complement(157..648),organism=uncultured bacterium,definition=Dihydrofolate reductase	1.135	0.0023
+coded_by=complement(121329..121826),organism=Flavobacterium glycines,definition=diacylglycerol kinase	1.919	0.0039
+coded_by=complement(276277..276768),organism=Brevibacillus choshinensis,definition=dihydrofolate reductase	1.042	0.0021
+coded_by=739..1236,organism=uncultured bacterium,definition=Dihydrofolate reductase	67.962	0.1371
+coded_by=complement(876..1370),organism=uncultured bacterium,definition=Dihydrofolate reductase	19.002000000000002	0.0383
+coded_by=1934444..1934965,organism=Variibacter gotjawalensis,definition=dihydrofolate reductase type 3	18.93	0.0382
+coded_by=complement(3808775..3809266),organism=Ferrimonas balearica DSM 9799,definition=dihydrofolate reductase	9.645	0.0195

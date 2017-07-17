@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	16.509000000000004	0.6232
+coded_by=2932972..2934288,organism=Herbaspirillum sp. TSA66,definition=channel protein TolC	6.198	0.2340
+coded_by=complement(118593..119915),organism=Herbaspirillum sp. CF444,definition=type I secretion outer membrane protein, TolC family	3.783	0.1428

@@ -1,0 +1,16 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(741940..743952),organism=Terrimicrobium sacchariphilum,definition=arsenite-transporting ATPase	0.779	0.0105
+coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	1.7309999999999999	0.0232
+coded_by=complement(674925..676142),organism=Chloroherpeton thalassium ATCC 35110,definition=arsenite-activated ATPase ArsA	2.953	0.0396
+coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2.583	0.0347
+coded_by=230201..232003,organism=Streptomyces sp. F8,definition=Arsenite-activated ATPase arsA	2.136	0.0287
+coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	4.0	0.0537
+coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	2.375	0.0319
+coded_by=2601084..2602304,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1.465	0.0197
+coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	36.964000000000006	0.4960
+coded_by=62454..64247,organism=Pelomonas sp. Root1217,definition=arsenical pump-driving ATPase	5.704	0.0765
+coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	4.117	0.0552
+coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	3.848	0.0516
+coded_by=11048..12850,organism=Propionivibrio sp. S1,definition=Arsenical pump-driving ATPase	2.871	0.0385
+coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1.876	0.0252
+coded_by=2848754..2850586,organism=Acidovorax sp. RAC01,definition=arsenical pump-driving ATPase	1.124	0.0151

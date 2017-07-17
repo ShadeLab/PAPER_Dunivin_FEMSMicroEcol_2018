@@ -1,27 +1,19 @@
 Taxon	Abundance	Fraction Abundance
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethyltransferase	19.775	0.0363
-coded_by=complement(160211..161068),organism=Flavihumibacter sp. ZG627,definition=arsenite S-adenosylmethyltransferase	2.22	0.0041
-coded_by=187626..188477,organism=Rhodopseudomonas palustris CGA009,definition=UbiE/COQ5 methyltransferase	2.212	0.0041
-coded_by=complement(5579598..5580443),organism=Candidatus Solibacter usitatus Ellin6076,definition=Methyltransferase type 11	1.072	0.0020
-coded_by=complement(2621..3436),organism=Acidobacteria bacterium 13_1_40CM_2_68_5,definition=hypothetical protein	2.867	0.0053
-coded_by=622570..623361,organism=Conexibacter woesei DSM 14684,definition=Methyltransferase type 11	5.992	0.0110
-coded_by=52606..53538,organism=Terriglobus roseus DSM 18391,definition=methylase involved in ubiquinone/menaquinone biosynthesis	3.7329999999999997	0.0069
-coded_by=complement(5699222..5700112),organism=Singulisphaera acidiphila DSM 18658,definition=methylase involved in ubiquinone/menaquinone biosynthesis	2.488	0.0046
-coded_by=583..1341,organism=Actinobacteria bacterium 13_1_20CM_2_66_18,definition=hypothetical protein	1.171	0.0021
-coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	17.22	0.0316
-coded_by=3610315..3611220,organism=Rubinisphaera brasiliensis DSM 5305,definition=Methyltransferase type 11	3.617	0.0066
-coded_by=23493..24353,organism=Acidobacteria bacterium 13_1_40CM_65_14,definition=arsenite S-adenosylmethyltransferase	1.251	0.0023
-coded_by=complement(5220..6011),organism=Intrasporangium chromatireducens Q5-1,definition=arsenite S-adenosylmethyltransferase	3.577	0.0066
-coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	7.447	0.0137
-coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	6.316999999999999	0.0116
-coded_by=complement(178221..179054),organism=Chitinophaga jiangningensis,definition=Methyltransferase domain-containing protein	1.105	0.0020
-coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	62.772999999999996	0.1152
-coded_by=complement(1678574..1679410),organism=Flavihumibacter petaseus NBRC 106054,definition=putative arsenite methyltransferase	5.578	0.0102
-coded_by=complement(15220..16113),organism=Candidatus Aminicenantes bacterium RBG_19FT_COMBO_65_30,definition=hypothetical protein	2.243	0.0041
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	9.977	0.0183
-coded_by=669265..670110,organism=Chitinophaga sp. YR573,definition=Methyltransferase domain-containing protein	3.919	0.0072
-coded_by=complement(16070..16921),organism=Candidatus Muproteobacteria bacterium RBG_16_60_9,definition=arsenite S-adenosylmethyltransferase	1.768	0.0032
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	364.657	0.6692
-coded_by=complement(442254..443009),organism=Intrasporangium calvum DSM 43043,definition=Methyltransferase type 11	1.12	0.0021
-coded_by=complement(2583859..2584767),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	1.695	0.0031
-coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	9.108	0.0167
+coded_by=complement(5220..6011),organism=Intrasporangium chromatireducens Q5-1,definition=arsenite S-adenosylmethyltransferase	4.447	0.0090
+coded_by=861..1718,organism=Acidobacteria bacterium 13_1_20CM_4_57_11,definition=arsenite S-adenosylmethyltransferase	7.447	0.0151
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethyltransferase	19.775	0.0400
+coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	3.208	0.0065
+coded_by=<1..>324,organism=uncultured bacterium,definition=ArsM	53.31999999999999	0.1078
+coded_by=complement(2621..3436),organism=Acidobacteria bacterium 13_1_40CM_2_68_5,definition=hypothetical protein	2.867	0.0058
+coded_by=complement(1678574..1679410),organism=Flavihumibacter petaseus NBRC 106054,definition=putative arsenite methyltransferase	5.578	0.0113
+coded_by=622570..623361,organism=Conexibacter woesei DSM 14684,definition=Methyltransferase type 11	5.992	0.0121
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	9.977	0.0202
+coded_by=669265..670110,organism=Chitinophaga sp. YR573,definition=Methyltransferase domain-containing protein	4.878	0.0099
+coded_by=52606..53538,organism=Terriglobus roseus DSM 18391,definition=methylase involved in ubiquinone/menaquinone biosynthesis	2.179	0.0044
+coded_by=complement(5699222..5700112),organism=Singulisphaera acidiphila DSM 18658,definition=methylase involved in ubiquinone/menaquinone biosynthesis	2.488	0.0050
+coded_by=583..1341,organism=Actinobacteria bacterium 13_1_20CM_2_66_18,definition=hypothetical protein	1.171	0.0024
+coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	346.307	0.7004
+coded_by=4709..5899,organism=Verrucomicrobia bacterium GWF2_62_7,definition=hypothetical protein	13.266	0.0268
+coded_by=complement(2583859..2584767),organism=Terriglobus roseus,definition=Methyltransferase domain-containing protein	1.695	0.0034
+coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	6.228	0.0126
+coded_by=3610315..3611220,organism=Rubinisphaera brasiliensis DSM 5305,definition=Methyltransferase type 11	3.617	0.0073

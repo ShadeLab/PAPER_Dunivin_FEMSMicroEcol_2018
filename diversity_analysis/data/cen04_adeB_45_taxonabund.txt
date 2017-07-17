@@ -1,0 +1,211 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(505008..508160),organism=Hydrocarboniphaga effusa AP103,definition=multidrug resistance protein	10.555	0.0129
+coded_by=complement(5921553..5924654),organism=Klebsiella oxytoca,definition=acriflavine resistance protein B	9.143	0.0112
+coded_by=complement(356613..359792),organism=Caulobacter sp. Root342,definition=multidrug transporter	5.677	0.0069
+coded_by=74096..77245,organism=Xanthomonas fuscans subsp. aurantifolii str. ICPB 11122,definition=multidrug efflux transporter	2.252	0.0028
+coded_by=56477..59623,organism=Serratia odorifera DSM 4582,definition=RND transporter, HAE1 family	1.087	0.0013
+coded_by=complement(894572..897772),organism=Burkholderia oklahomensis C6786,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	1.886	0.0023
+coded_by=202910..206026,organism=Alcanivorax sp. 19-m-6,definition=AcrB/AcrD/AcrFa family protein	5.202	0.0064
+coded_by=complement(66826..69969),organism=Pelomonas sp. Root1444,definition=multidrug transporter	1.494	0.0018
+coded_by=3776576..3779674,organism=Pseudomonas protegens Pf-5,definition=acriflavine resistance protein B	1.608	0.0020
+coded_by=169752..172895,organism=Shewanella violacea DSS12,definition=AcrB/AcrD/AcrF family protein	2.337	0.0029
+coded_by=complement(5840..8983),organism=Xanthomonas arboricola pv. pruni str. MAFF 311562,definition=multidrug efflux transporter	6.0440000000000005	0.0074
+coded_by=91533..94694,organism=Pseudomonas fluorescens,definition=multidrug transporter	0.992	0.0012
+coded_by=complement(3321923..3325117),organism=Burkholderia sp. CCGE1003,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	6.5120000000000005	0.0080
+coded_by=111268..114390,organism=Stenotrophomonas maltophilia,definition=multidrug efflux RND transporter permease	0.541	0.0007
+coded_by=28396..31515,organism=Arenimonas composti TR7-09 = DSM 18010,definition=hypothetical protein	2.896	0.0035
+coded_by=complement(7530..10637),organism=Oceanobacter sp. HI0075,definition=aminoglycoside/multidrug transporter subunit AcrD	6.578	0.0080
+coded_by=complement(835..4035),organism=Burkholderia ubonensis,definition=multidrug transporter	1.435	0.0018
+coded_by=complement(59786..62896),organism=Pectobacterium carotovorum,definition=multidrug transporter	2.026	0.0025
+coded_by=complement(229549..232710),organism=Pantoea sp. AS-PWVM4,definition=RND efflux system, inner membrane transporter CmeB	0.899	0.0011
+coded_by=1628548..1631670,organism=Opitutaceae bacterium TAV5,definition=multidrug transporter	2.713	0.0033
+coded_by=complement(868813..871983),organism=Microbulbifer sp. ZGT114,definition=multidrug transporter	1.4	0.0017
+coded_by=complement(647941..651105),organism=Anaeromyxobacter sp. Fw109-5,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	14.802999999999999	0.0181
+coded_by=103480..106620,organism=Myxococcus xanthus DK 1622,definition=efflux transporter, HAE1 family, inner membrane component	3.155	0.0039
+coded_by=complement(68513..71647),organism=Pseudomonas stutzeri MF28,definition=multidrug transporter	2.2889999999999997	0.0028
+coded_by=586250..589402,organism=blood disease bacterium R229,definition=component of acridine efflux pump, multidrug efflux system	7.581	0.0093
+coded_by=26500..29670,organism=Sphaerotilus natans subsp. natans DSM 6575,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	2.382	0.0029
+coded_by=complement(103798..106944),organism=Pseudomonas syringae pv. glycinea str. race 4,definition=multidrug efflux transporter	0.946	0.0012
+coded_by=complement(1275197..1278352),organism=Ralstonia solanacearum Po82,definition=component of acridine efflux pump, multidrug efflux system	0.818	0.0010
+coded_by=163957..167100,organism=Pseudomonas pseudoalcaligenes CECT 5344,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	1.59	0.0019
+coded_by=complement(101435..104653),organism=Sphingomonas hankookensis,definition=multidrug transporter	4.929	0.0060
+coded_by=4362023..4365172,organism=Caulobacter sp. K31,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	1.721	0.0021
+coded_by=126623..129832,organism=Burkholderia panaciterrae,definition=aminoglycoside/multidrug transporter permease	1.161	0.0014
+coded_by=complement(3863973..3867182),organism=Burkholderia sp. OLGA172,definition=multidrug transporter	5.802	0.0071
+coded_by=complement(3834918..3838040),organism=Stenotrophomonas maltophilia,definition=multidrug transporter	0.835	0.0010
+coded_by=complement(3368758..3371949),organism=Bordetella bronchialis,definition=multidrug efflux RND transporter permease	3.049	0.0037
+coded_by=complement(740310..743480),organism=Luteimonas sp. JM171,definition=multidrug efflux RND transporter permease	1.314	0.0016
+coded_by=177498..180626,organism=Pseudomonas putida,definition=acriflavine resistance protein B	2.873	0.0035
+coded_by=53656..56826,organism=Sphingomonas endophytica,definition=multidrug transporter	3.722	0.0046
+coded_by=3724..6879,organism=Thiocapsa sp. KS1,definition=Acriflavine resistance protein B	1.184	0.0014
+coded_by=complement(4153223..4156399),organism=Leptothrix cholodnii SP-6,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	4.691	0.0057
+coded_by=27125..30226,organism=Pantoea ananatis,definition=acriflavine resistance protein B	5.231	0.0064
+coded_by=complement(317854..321003),organism=Methylovorus sp. MM1,definition=aminoglycoside/multidrug transporter permease	4.764	0.0058
+coded_by=34483..37668,organism=Sphingomonas sp. Leaf30,definition=multidrug transporter	1.075	0.0013
+coded_by=2011764..2014961,organism=Laribacter hongkongensis HLHK9,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	4.813	0.0059
+coded_by=complement(212265..215408),organism=Burkholderia cepacia,definition=acriflavine resistance protein B	8.565999999999999	0.0105
+coded_by=64914..68012,organism=Pseudomonas psychrotolerans,definition=acriflavine resistance protein B	3.894	0.0048
+coded_by=complement(2572865..2575993),organism=Pseudomonas alkylphenolia,definition=Toluene efflux pump membrane transporter ttgB	1.978	0.0024
+coded_by=complement(460..3660),organism=Burkholderia ubonensis,definition=multidrug transporter	1.797	0.0022
+coded_by=6355..9498,organism=Mesorhizobium sp. LNHC232B00,definition=multidrug transporter	0.42	0.0005
+coded_by=complement(3668966..3672187),organism=Burkholderia phytofirmans PsJN,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	5.777	0.0071
+coded_by=350324..353473,organism=Xanthomonas fuscans subsp. fuscans,definition=multidrug efflux system transporter, RpoS-dependent	2.784	0.0034
+coded_by=7027..10158,organism=Acinetobacter baumannii 1294243,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	11.811	0.0144
+coded_by=73056..76196,organism=Variovorax paradoxus,definition=multidrug resistance protein MexB	52.148	0.0638
+coded_by=complement(4083647..4086790),organism=Rhodospirillum centenum SW,definition=acriflavine resistance protein B	6.24	0.0076
+coded_by=complement(4541448..4544651),organism=Sphingopyxis fribergensis,definition=Multidrug resistance protein MexB	2.5540000000000003	0.0031
+coded_by=113002..116160,organism=Paraburkholderia sordidicola,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	1.097	0.0013
+coded_by=complement(28701..31904),organism=Caulobacter vibrioides,definition=multidrug transporter	1.119	0.0014
+coded_by=40076..43216,organism=Bosea vaviloviae,definition=multidrug transporter	4.57	0.0056
+coded_by=complement(252915..256094),organism=Paraburkholderia udeis,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	23.248	0.0284
+coded_by=complement(33735..36908),organism=Ralstonia sp. PBA,definition=component of acridine efflux pump, multidrug efflux system	1.59	0.0019
+coded_by=3909..7070,organism=Pantoea dispersa,definition=multidrug transporter	2.906	0.0036
+coded_by=19650..22793,organism=Acidovorax sp. Leaf160,definition=acriflavine resistance protein B	3.675	0.0045
+coded_by=complement(4630990..4634208),organism=Burkholderia gladioli,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	1.17	0.0014
+coded_by=complement(3196085..3199228),organism=Allochromatium vinosum DSM 180,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	4.031	0.0049
+coded_by=1343319..1346459,organism=Gynuella sunshinyii YC6258,definition=cation/multidrug efflux pump	1.534	0.0019
+coded_by=complement(96121..99300),organism=Burkholderia sp. LMG 29318,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	17.599	0.0215
+coded_by=10922..14074,organism=Thauera linaloolentis 47Lol = DSM 12138,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	1.042	0.0013
+coded_by=complement(8200..11349),organism=Aeromonas allosaccharophila,definition=multidrug transporter	1.691	0.0021
+coded_by=complement(3177183..3180317),organism=Xanthomonas campestris pv. campestris str. ATCC 33913,definition=multidrug-efflux transporter	1.804	0.0022
+coded_by=complement(158566..161721),organism=Vibrio sp. MEBiC08052,definition=inner membrane efflux transporter of RND family multidrug efflux pump	8.227	0.0101
+coded_by=complement(3385636..3388830),organism=Burkholderia sp. HB1,definition=multidrug transporter	6.695	0.0082
+coded_by=complement(283272..286445),organism=Acinetobacter sp. NIPH 1847,definition=hypothetical protein	0.792	0.0010
+coded_by=complement(3225115..3228282),organism=Azoarcus sp. CIB,definition=multidrug efflux system protein	0.887	0.0011
+coded_by=complement(84389..87544),organism=Rhizobium multihospitium,definition=multidrug efflux pump	3.369	0.0041
+coded_by=23542..26679,organism=Pseudomonas sp. FeS53a,definition=RND multidrug efflux transporter	2.642	0.0032
+coded_by=135976..139137,organism=Candidatus Accumulibacter sp. BA-93,definition=Acriflavine resistance protein B	1.478	0.0018
+coded_by=2638047..2641229,organism=Achromobacter xylosoxidans NBRC 15126 = ATCC 27061,definition=RND efflux system, inner membrane transporter CmeB	1.849	0.0023
+coded_by=complement(3574888..3578037),organism=Xanthomonas campestris,definition=multidrug transporter	9.165	0.0112
+coded_by=complement(1633688..1638070),organism=Cupriavidus gilardii CR3,definition=hydrophobe/amphiphile efflux-1 protein	0.649	0.0008
+coded_by=978933..982076,organism=Bosea sp. RAC05,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	5.054	0.0062
+coded_by=641056..644199,organism=Pseudomonas citronellolis,definition=aminoglycoside/multidrug transporter permease	0.566	0.0007
+coded_by=complement(977161..980316),organism=Ralstonia solanacearum CFBP2957,definition=component of acridine efflux pump, multidrug efflux system	0.747	0.0009
+coded_by=complement(5056338..5059553),organism=Lysobacter antibioticus,definition=acrB RND-type permease	1.801	0.0022
+coded_by=2621240..2624431,organism=Bordetella flabilis,definition=multidrug efflux RND transporter permease	3.375	0.0041
+coded_by=complement(2815222..2818353),organism=Methylovorus glucosetrophus SIP3-4,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	1.692	0.0021
+coded_by=complement(14756..17914),organism=Burkholderia cepacia,definition=multidrug transporter	1.364	0.0017
+coded_by=189723..192866,organism=Pseudomonas mendocina EGD-AQ5,definition=multidrug transporter	0.798	0.0010
+coded_by=139318..142479,organism=Comamonas aquatica,definition=multidrug efflux RND transporter permease subunit	1.443	0.0018
+coded_by=complement(3176783..3179905),organism=Pseudomonas putida,definition=acriflavine resistance protein B	2.84	0.0035
+coded_by=40655..43798,organism=Methylobacillus sp. MM2,definition=aminoglycoside/multidrug transporter permease	6.422000000000001	0.0079
+coded_by=complement(3900706..3903828),organism=Stenotrophomonas maltophilia R551-3,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	1.154	0.0014
+coded_by=920210..923308,organism=Thioflavicoccus mobilis 8321,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	1.855	0.0023
+coded_by=complement(145201..148332),organism=Bosea sp. Root381,definition=multidrug transporter	3.058	0.0037
+coded_by=complement(723538..726651),organism=Escherichia fergusonii ATCC 35469,definition=aminoglycoside/multidrug efflux system	0.947	0.0012
+coded_by=complement(6770..9946),organism=Azospirillum amazonense Y2,definition=hydrophobe/amphiphile efflux-1 HAE1 HAE1 family	5.184	0.0063
+coded_by=108399..111740,organism=Pseudomonas savastanoi pv. glycinea,definition=Multidrug/solvent transporter	3.355	0.0041
+coded_by=complement(497232..500390),organism=Acidovorax avenae subsp. avenae ATCC 19860,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	22.12	0.0271
+coded_by=367187..370351,organism=Amantichitinum ursilacus,definition=Multidrug efflux pump subunit AcrB	6.383	0.0078
+coded_by=complement(90853..93975),organism=Aureimonas sp. AU20,definition=hypothetical protein	1.476	0.0018
+coded_by=complement(2823744..2826914),organism=Bordetella hinzii,definition=Multidrug resistance protein MexB	0.566	0.0007
+coded_by=30893..34060,organism=Caulobacter crescentus OR37,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	4.487	0.0055
+coded_by=3888733..3891867,organism=Rhodospirillum centenum SW,definition=acriflavine resistance protein B	3.038	0.0037
+coded_by=complement(7387..10566),organism=Burkholderia sp. LMG 29314,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	3.3580000000000005	0.0041
+coded_by=2918..6073,organism=Delftia acidovorans CCUG 274B,definition=HAE1 family hydrophobic/amphiphilic exporter-1 (mainly G- bacteria)	0.95	0.0012
+coded_by=complement(644927..648070),organism=Marinobacterium sp. ST58-10,definition=aminoglycoside/multidrug transporter permease	1.526	0.0019
+coded_by=60318..63563,organism=Cupriavidus sp. HMR-1,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	1.447	0.0018
+coded_by=complement(59027..62179),organism=Cupriavidus sp. IDO,definition=acriflavine resistance protein B	2.324	0.0028
+coded_by=complement(421323..424481),organism=Burkholderia phymatum STM815,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	0.599	0.0007
+coded_by=complement(404987..408190),organism=Burkholderia sp. TSV86,definition=multidrug transporter	1.311	0.0016
+coded_by=complement(3530499..3533648),organism=Aeromonas hydrophila ML09-119,definition=AcrB protein	4.156	0.0051
+coded_by=1334408..1337587,organism=Pandoraea norimbergensis,definition=multidrug efflux RND transporter permease	1.216	0.0015
+coded_by=complement(1408144..1411359),organism=Rhodospirillum photometricum DSM 122,definition=Acriflavine resistance protein B	8.28	0.0101
+coded_by=36363..39557,organism=Caulobacter sp. Root655,definition=multidrug transporter	1.859	0.0023
+coded_by=3949903..3953055,organism=Ralstonia insidiosa,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	1.574	0.0019
+coded_by=143013..146186,organism=Asticcacaulis sp. AC460,definition=multidrug transporter	1.211	0.0015
+coded_by=41737..44886,organism=Trabulsiella guamensis ATCC 49490,definition=RND efflux system inner membrane transporter	1.308	0.0016
+coded_by=2371444..2374596,organism=Rhodospirillum rubrum ATCC 11170,definition=Hydrophobe/amphiphile efflux-1 HAE1	0.556	0.0007
+coded_by=567151..570306,organism=Thauera sp. MZ1T,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	0.544	0.0007
+coded_by=313793..316981,organism=Burkholderia cenocepacia,definition=multidrug transporter	4.686999999999999	0.0057
+coded_by=complement(25900..29028),organism=Alcanivorax hongdengensis A-11-3,definition=AcrB/AcrD/AcrFa family protein	1.855	0.0023
+coded_by=complement(159765..162902),organism=Pseudomonas sp. CFII64,definition=hydrophobe/amphiphile efflux-1 HAE1	1.356	0.0017
+coded_by=complement(2403..5525),organism=Stenotrophomonas maltophilia,definition=multidrug transporter	0.815	0.0010
+coded_by=complement(3572682..3575825),organism=Dyella japonica A8,definition=multidrug transporter	4.4	0.0054
+coded_by=complement(91798..95001),organism=Sphingomonas sp. Leaf16,definition=multidrug transporter	0.936	0.0011
+coded_by=complement(22942..26067),organism=Alcanivorax sp. HI0044,definition=aminoglycoside/multidrug transporter subunit AcrD	2.606	0.0032
+coded_by=14560..17715,organism=Acidovorax sp. CF316,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	0.643	0.0008
+coded_by=1786370..1789486,organism=Sandaracinus amylolyticus,definition=RND efflux system, inner membrane transporter CmeB	5.2010000000000005	0.0064
+coded_by=complement(881..4009),organism=Pseudomonas putida,definition=acriflavine resistance protein B	1.919	0.0023
+coded_by=complement(2775630..2778758),organism=Pseudomonas putida GB-1,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	1.636	0.0020
+coded_by=80646..83819,organism=Pandoraea sp. SD6-2,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	13.467	0.0165
+coded_by=543138..546332,organism=Burkholderia phymatum STM815,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	2.289	0.0028
+coded_by=81280..84474,organism=Asticcacaulis sp. YBE204,definition=multidrug transporter	8.648	0.0106
+coded_by=complement(69406..72537),organism=Pseudomonas putida CSV86,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	0.991	0.0012
+coded_by=342198..345398,organism=Burkholderia diffusa,definition=multidrug transporter	2.54	0.0031
+coded_by=complement(27860..30982),organism=Paracoccus sp. MKU1,definition=multidrug transporter	1.38	0.0017
+coded_by=1317596..1320775,organism=Pandoraea pnomenusa 3kgm,definition=multidrug transporter	2.798	0.0034
+coded_by=3600357..3603476,organism=Cronobacter sakazakii SP291,definition=multidrug efflux system protein AcrF	3.022	0.0037
+coded_by=521196..524396,organism=Burkholderia dolosa AU0158,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	14.547	0.0178
+coded_by=complement(238089..241232),organism=Burkholderia cepacia,definition=acriflavine resistance protein B	11.377	0.0139
+coded_by=239166..242315,organism=Thiocapsa marina 5811,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	2.069	0.0025
+coded_by=1416520..1419663,organism=Caulobacter sp. K31,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	6.5	0.0080
+coded_by=complement(56810..59986),organism=Sphingomonas sp. TDK1,definition=aminoglycoside/multidrug transporter permease	1.179	0.0014
+coded_by=37910..41095,organism=Burkholderia sp. LMG 29320,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	1.572	0.0019
+coded_by=complement(19775..22930),organism=Mesorhizobium sp. AA22,definition=multidrug efflux RND transporter permease	0.361	0.0004
+coded_by=8997..12167,organism=Sphingobium ummariense RL-3,definition=hypothetical protein	0.416	0.0005
+coded_by=1707469..1710642,organism=Serratia liquefaciens,definition=multidrug transporter	2.528	0.0031
+coded_by=complement(1505219..1508383),organism=Thiobacillus denitrificans ATCC 25259,definition=Hydrophobe/amphiphile efflux-1 HAE1	2.286	0.0028
+coded_by=complement(211915..215112),organism=Novosphingobium barchaimii,definition=multidrug transporter	2.713	0.0033
+coded_by=complement(4275449..4278598),organism=Xanthomonas arboricola pv. juglandis,definition=multidrug transporter	17.459	0.0214
+coded_by=339431..342571,organism=Pseudomonas aeruginosa,definition=multidrug efflux RND transporter permease subunit	3.581	0.0044
+coded_by=complement(5357..8464),organism=Yokenella regensburgei ATCC 43003,definition=acriflavine resistance protein B	1.92	0.0023
+coded_by=37449..40583,organism=Pseudomonas sp. FeS53a,definition=RND efflux system, inner membrane transporter CmeB	1.037	0.0013
+coded_by=742065..745235,organism=Pandoraea thiooxydans,definition=multidrug efflux RND transporter permease	16.649	0.0204
+coded_by=complement(69232..72330),organism=Pseudomonas syringae,definition=acriflavine resistance protein B	2.156	0.0026
+coded_by=complement(4559619..4562753),organism=Shewanella sp. W3-18-1,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	0.638	0.0008
+coded_by=106325..109474,organism=Stenotrophomonas maltophilia EPM1,definition=RND efflux system, inner membrane transporter CmeB	5.066	0.0062
+coded_by=complement(34990..38124),organism=Agrobacterium tumefaciens str. Kerr 14,definition=Putative component of multidrug efflux pump, acrB/acrD/acrF family	4.911	0.0060
+coded_by=389496..392630,organism=Cystobacter fuscus DSM 2262,definition=RND efflux system, inner membrane transporter CmeB	3.795	0.0046
+coded_by=complement(203204..206416),organism=Burkholderia vietnamiensis,definition=multidrug transporter	0.941	0.0012
+coded_by=553315..556494,organism=Burkholderia sp. YI23,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	4.353	0.0053
+coded_by=complement(1160887..1164036),organism=Cronobacter dublinensis subsp. dublinensis LMG 23823,definition=multidrug transporter	1.615	0.0020
+coded_by=complement(415599..418757),organism=Acidovorax citrulli AAC00-1,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	3.4130000000000003	0.0042
+coded_by=3098417..3101530,organism=Celeribacter indicus,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	9.551	0.0117
+coded_by=3369164..3372313,organism=Kluyvera intermedia,definition=multidrug transporter	2.387	0.0029
+coded_by=94875..98054,organism=Burkholderia glathei PML1(12),definition=multidrug transporter	1.417	0.0017
+coded_by=complement(51020..54154),organism=Pseudomonas syringae,definition=multidrug transporter	6.864	0.0084
+coded_by=735362..738514,organism=Ralstonia mannitolilytica,definition=acriflavine resistance protein B	1.615	0.0020
+coded_by=complement(174806..177946),organism=Pseudomonas sp. 21,definition=multidrug transporter	1.356	0.0017
+coded_by=122100..125240,organism=Sphingobium lactosutens DS20,definition=multidrug transporter	2.787	0.0034
+coded_by=complement(24501..27626),organism=Stenotrophomonas maltophilia,definition=multidrug efflux system protein	0.536	0.0007
+coded_by=complement(34559..37687),organism=Sphingomonas parapaucimobilis NBRC 15100,definition=putative efflux pump inner membrane protein	2.196	0.0027
+coded_by=502247..505408,organism=Desulfovibrio gigas DSM 1382 = ATCC 19364,definition=putative acrB RND-type permease	0.853	0.0010
+coded_by=1251830..1255009,organism=Pandoraea sputorum,definition=multidrug efflux RND transporter permease	2.136	0.0026
+coded_by=10812..14039,organism=Sphingomonas sp. RIT328,definition=RND transporter, hydrophobe/amphiphile efflux-1 family protein	2.362	0.0029
+coded_by=11545..14727,organism=Candidatus Burkholderia verschuerenii,definition=RND efflux system, inner membrane transporter CmeB	14.28	0.0175
+coded_by=complement(41934..45116),organism=Achromobacter sp. 2789STDY5608633,definition=Probable efflux pump membrane transporter TtgB	5.041	0.0062
+coded_by=3238603..3241731,organism=Dickeya dadantii Ech586,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	1.583	0.0019
+coded_by=complement(287259..290468),organism=Sphingomonas sp. Leaf10,definition=multidrug transporter	0.473	0.0006
+coded_by=complement(71486..74635),organism=Opitutaceae bacterium TSB47,definition=multidrug transporter	2.412	0.0030
+coded_by=complement(48969..52142),organism=Rhizobacter sp. Root1221,definition=acriflavine resistance protein B	1.484	0.0018
+coded_by=1844909..1848055,organism=Serratia sp. ATCC 39006,definition=hypothetical protein	1.807	0.0022
+coded_by=93741..96896,organism=Hoeflea sp. BAL378,definition=acriflavine resistance protein B	9.663	0.0118
+coded_by=1626417..1629578,organism=Pseudomonas trivialis,definition=multidrug transporter	1.772	0.0022
+coded_by=complement(93506..96649),organism=Pseudomonas mendocina DLHK,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	0.765	0.0009
+coded_by=complement(3065150..3068350),organism=Burkholderia lata,definition=Hydrophobe/amphiphile efflux-1 pump, HAE1	2.64	0.0032
+coded_by=3486789..3489941,organism=Cupriavidus gilardii CR3,definition=Cation/multidrug efflux pump	1.768	0.0022
+coded_by=complement(4098317..4101526),organism=Burkholderia xenovorans LB400,definition=RND family Hydrophobe/amphiphile efflux pump	0.946	0.0012
+coded_by=372423..375560,organism=Pseudomonas stutzeri DSM 10701,definition=multidrug/solvent RND transporter TtgB	0.65	0.0008
+coded_by=53032..56175,organism=Burkholderia cepacia,definition=acriflavine resistance protein B	3.593	0.0044
+coded_by=complement(28629..31826),organism=Burkholderia sp. lig30,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	0.48	0.0006
+coded_by=126964..130113,organism=Pantoea sp. YR343,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	1.202	0.0015
+coded_by=2760..5963,organism=uncultured organism,definition=AcrB/AcrD/AcrF family	3.859	0.0047
+coded_by=complement(308058..311234),organism=Bordetella ansorpii,definition=AcrB/AcrD/AcrF family protein	6.951	0.0085
+coded_by=312226..315324,organism=Pseudomonas libanensis,definition=acriflavine resistance protein B	4.875	0.0060
+coded_by=complement(312806..315982),organism=Asticcacaulis sp. AC466,definition=multidrug transporter	7.754	0.0095
+coded_by=complement(59387..62521),organism=Pseudoalteromonas sp. BSi20652,definition=multidrug resistance protein MexB	1.8	0.0022
+coded_by=14350..17505,organism=Pantoea sp. YR343,definition=hydrophobe/amphiphile efflux-1 (HAE1) family transporter	2.079	0.0025
+coded_by=complement(3270167..3273316),organism=Aeromonas hydrophila subsp. hydrophila ATCC 7966,definition=AcrB protein	2.576	0.0032
+coded_by=174..3365,organism=Burkholderia sp. AU4i,definition=RND efflux system, inner membrane transporter CmeB	1.885	0.0023
+coded_by=complement(36637..39783),organism=Cupriavidus sp. HMR-1,definition=multidrug efflux system	1.121	0.0014
+coded_by=45973..49071,organism=Pseudomonas oryzihabitans,definition=acriflavine resistance protein B	5.096	0.0062
+coded_by=15520..18690,organism=Sphingomonas sp. SRS2,definition=multidrug transporter	18.631	0.0228
+coded_by=complement(2818419..2821562),organism=Xanthomonas arboricola pv. juglandis,definition=multidrug transporter	4.117	0.0050
+coded_by=619966..623109,organism=Pseudomonas citronellolis,definition=Multidrug resistance protein MexB	1.802	0.0022
+coded_by=complement(65059..68238),organism=Burkholderia sp. LMG 29316,definition=hydrophobe/amphiphile efflux-1 (HAE1) family protein	3.313	0.0041
+coded_by=complement(3460002..3463109),organism=Marichromatium purpuratum 984,definition=multidrug transporter	3.618	0.0044
+coded_by=complement(1572487..1575636),organism=Methylocella silvestris BL2,definition=transporter, hydrophobe/amphiphile efflux-1 (HAE1) family	16.253	0.0199
+coded_by=complement(1225..4362),organism=Jannaschia seosinensis,definition=Multidrug-efflux transporter MexB	3.3360000000000003	0.0041
+coded_by=51194..54316,organism=Stenotrophomonas maltophilia,definition=multidrug RND efflux system protein	1.235	0.0015
+coded_by=450805..453957,organism=Tardiphaga robiniae,definition=aminoglycoside/multidrug transporter subunit AcrD	1.667	0.0020

@@ -1,0 +1,4 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	7.519	0.4626
+coded_by=complement(642279..643673),organism=Cupriavidus gilardii CR3,definition=type I secretion outer membrane efflux protein (TolC-like)	2.498	0.1537
+coded_by=complement(698900..700321),organism=Steroidobacter denitrificans,definition=hypothetical protein	6.237	0.3837

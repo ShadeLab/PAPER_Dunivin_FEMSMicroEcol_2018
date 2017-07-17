@@ -1,0 +1,9 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=26105..26470,organism=Burkholderia fungorum,definition=arsenical resistance operon trans-acting repressor ArsD family protein	1.258	0.1082
+coded_by=complement(1713344..1713886),organism=Rhodospirillum rubrum ATCC 11170,definition=Arsenical resistance operon trans-acting repressor ArsD	1.357	0.1168
+coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	2.442	0.2101
+coded_by=57306..57671,organism=Patulibacter sp. I11,definition=Arsenical resistance operon trans-acting repressor ArsD	1.178	0.1014
+coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	1.875	0.1613
+coded_by=complement(274098..274457),organism=Pseudomonas stutzeri A1501,definition=arsenic operon regulator	1.165	0.1002
+coded_by=complement(3762..4118),organism=Methylomonas lenta,definition=transcriptional regulator	1.095	0.0942
+coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1.252	0.1077

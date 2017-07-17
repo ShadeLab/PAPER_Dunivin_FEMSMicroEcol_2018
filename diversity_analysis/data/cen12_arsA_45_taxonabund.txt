@@ -1,0 +1,11 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=4625195..4627003,organism=Gemmatimonas phototrophica,definition=arsenic ABC transporter ATPase	4.371	0.0209
+coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	3.913	0.0187
+coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	76.847	0.3679
+coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	28.740000000000002	0.1376
+coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	2.777	0.0133
+coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	38.75	0.1855
+coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	12.602	0.0603
+coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	24.785000000000004	0.1187
+coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	3.24	0.0155
+coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	12.831999999999999	0.0614

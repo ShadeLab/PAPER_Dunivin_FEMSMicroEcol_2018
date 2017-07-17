@@ -1,0 +1,6 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	4.018	0.1027
+coded_by=complement(1817..3580),organism=Methylomonas lenta,definition=arsenical pump-driving ATPase	8.11	0.2072
+coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1.485	0.0379
+coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	22.855999999999998	0.5839
+coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2.672	0.0683

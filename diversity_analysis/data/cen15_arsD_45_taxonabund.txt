@@ -1,0 +1,2 @@
+Taxon	Abundance	Fraction Abundance
+coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	43.682	1.0000
