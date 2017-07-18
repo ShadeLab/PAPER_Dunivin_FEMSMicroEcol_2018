@@ -1,6 +1,10 @@
 # Analyzing diversity of genes *across* chronosequence
 ### Taylor Dunivin
 
+### Table of contents
+* [Data preparation](https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis#data-preparation)
+* [Data analysis using R](https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis#data-analysis-using-r)
+
 ## Data preparation
 ### Taxanomic abundance
  * Use ```${SITE}_${GENE}_${KMER_SIZE}_taxonabund.txt``` 
