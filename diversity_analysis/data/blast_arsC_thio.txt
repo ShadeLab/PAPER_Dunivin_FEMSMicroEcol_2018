@@ -1,0 +1,76 @@
+OTU_0001	SHK60191  coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	9e-28
+OTU_0002	KPV43813  coded_by=complement(94605..95027),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	3e-25
+OTU_0003	SHK60191  coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	3e-31
+OTU_0004	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	6e-26
+OTU_0005	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	2e-88
+OTU_0006	ADG06681  coded_by=1985202..1985684,organism=Kyrpidia tusciae DSM 2912,definition=arsenate reductase (thioredoxin)	2e-24
+OTU_0007	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	2e-22
+OTU_0008	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	3e-25
+OTU_0009	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	2e-68
+OTU_0010	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	5e-27
+OTU_0011	KPV45659  coded_by=complement(355133..355558),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	2e-26
+OTU_0012	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	4e-26
+OTU_0013	KEI53058  coded_by=complement(5236..5658),organism=Enterococcus faecium UC7256,definition=arsenate reductase	1e-25
+OTU_0014	EZZ33206  coded_by=complement(4897..5298),organism=Staphylococcus aureus Tur-12,definition=protein ArsC 2	4e-25
+OTU_0015	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	1e-27
+OTU_0017	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	5e-28
+OTU_0016	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	1e-24
+OTU_0019	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	3e-26
+OTU_0018	OIK10754  coded_by=55103..55522,organism=Bacillus sp. MUM 116,definition=arsenate reductase (thioredoxin)	1e-84
+OTU_0021	SEM81593  coded_by=156581..157003,organism=Lihuaxuella thermophila,definition=arsenate reductase	1e-26
+OTU_0020	AIE59975  coded_by=1554786..1555208,organism=Bacillus methanolicus MGA3,definition=protein tyrosine phosphatase	9e-25
+OTU_0023	OIO69070  coded_by=38666..39079,organism=Zetaproteobacteria bacterium CG1_02_55_237,definition=arsenate reductase (thioredoxin)	2e-26
+OTU_0022	ANZ30920  coded_by=complement(2640496..2640918),organism=Parageobacillus thermoglucosidans,definition=arsenate reductase (thioredoxin)	8e-25
+OTU_0025	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	3e-21
+OTU_0024	KPV45659  coded_by=complement(355133..355558),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	3e-24
+OTU_0027	SFV05870  coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	2e-22
+OTU_0026	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	5e-26
+OTU_0029	SHK60191  coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	2e-25
+OTU_0028	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	7e-26
+OTU_0031	KZE04422  coded_by=67999..68403,organism=Bacillus mycoides,definition=Arsenate reductase	2e-80
+OTU_0030	SFV05870  coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	2e-55
+OTU_0034	SFU59752  coded_by=172007..172756,organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase (thioredoxin)	8e-63
+OTU_0035	ADG06681  coded_by=1985202..1985684,organism=Kyrpidia tusciae DSM 2912,definition=arsenate reductase (thioredoxin)	5e-24
+OTU_0032	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	4e-24
+OTU_0033	EOS58034  coded_by=complement(482412..482840),organism=Paenibacillus barengoltzii G22,definition=arsenate reductase (thioredoxin)	3e-41
+OTU_0038	KPV45659  coded_by=complement(355133..355558),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	8e-26
+OTU_0039	KPV44040  coded_by=complement(11908..12333),organism=Alicyclobacillus ferrooxydans,definition=arsenate reductase	1e-33
+OTU_0036	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	3e-25
+OTU_0037	ANZ30920  coded_by=complement(2640496..2640918),organism=Parageobacillus thermoglucosidans,definition=arsenate reductase (thioredoxin)	1e-24
+OTU_0042	ANZ30920  coded_by=complement(2640496..2640918),organism=Parageobacillus thermoglucosidans,definition=arsenate reductase (thioredoxin)	2e-24
+OTU_0043	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	2e-23
+OTU_0040	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	5e-25
+OTU_0041	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	7e-23
+OTU_0046	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	3e-25
+OTU_0047	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	3e-26
+OTU_0044	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	8e-23
+OTU_0045	CCI59490  coded_by=complement(6939..7340),organism=Staphylococcus equorum subsp. equorum Mu2,definition=arsenate reductase	7e-28
+OTU_0051	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	8e-27
+OTU_0050	ACV57588  coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	3e-25
+OTU_0049	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	5e-27
+OTU_0048	SHK60191  coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	2e-24
+OTU_0055	SDC04266  coded_by=170555..170986,organism=Melghirimyces thermohalophilus,definition=arsenate reductase	3e-25
+OTU_0054	ACV57588  coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	6e-26
+OTU_0053	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	4e-24
+OTU_0052	OBS09304  coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	1e-18
+OTU_0059	OBS09304  coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	3e-60
+OTU_0058	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	7e-27
+OTU_0057	OIO69070  coded_by=38666..39079,organism=Zetaproteobacteria bacterium CG1_02_55_237,definition=arsenate reductase (thioredoxin)	2e-23
+OTU_0056	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	8e-25
+OTU_0063	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	5e-31
+OTU_0062	SFV05870  coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	2e-25
+OTU_0061	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	1e-22
+OTU_0060	ETI65939  coded_by=complement(9922..10341),organism=Bacillus vireti LMG 21834,definition=arsenate reductase	2e-70
+OTU_0068	SHJ74008  coded_by=complement(53478..53906),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	2e-26
+OTU_0069	OBS09304  coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	2e-61
+OTU_0070	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	1e-26
+OTU_0071	ACV57588  coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	1e-24
+OTU_0064	AIQ47141  coded_by=3460130..3460549,organism=Paenibacillus sp. FSL R7-0273,definition=arsenate reductase	7e-25
+OTU_0065	OBS09304  coded_by=310381..310803,organism=Acidihalobacter prosperus,definition=arsenate reductase (thioredoxin)	2e-50
+OTU_0066	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	4e-23
+OTU_0067	SFU59752  coded_by=172007..172756,organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase (thioredoxin)	8e-26
+OTU_0076	ACV57588  coded_by=597908..598402,organism=Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446,definition=arsenate reductase (thioredoxin)	7e-25
+OTU_0072	KRW90669  coded_by=complement(1928..2356),organism=Alicyclobacillus tengchongensis,definition=arsenate reductase	3e-26
+OTU_0073	SFV05870  coded_by=complement(10562..10999),organism=Alicyclobacillus macrosporangiidus,definition=arsenate reductase	9e-38
+OTU_0074	SHK60191  coded_by=complement(60956..61384),organism=Alicyclobacillus sp. USBA-503,definition=arsenate reductase	6e-25
+OTU_0075	SDN36403  coded_by=638789..639211,organism=Paenibacillus sp. yr247,definition=arsenate reductase (thioredoxin)	9e-35

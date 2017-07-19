@@ -146,8 +146,7 @@ for(i in 3:6570){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
-  left_join(meta, by = "Site") %>%
-  select(Site, acr3_001:ratio.rplB, As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
+  left_join(meta, by = "Site")
 
 
 #change to df and add row names back
@@ -469,5 +468,105 @@ gene_abundance_otu$OTU <- sprintf("%04d", gene_abundance_otu$OTU)
 #add OTU to otu label
 gene_abundance_otu$OTU <- paste("OTU_", gene_abundance_otu$OTU, sep="")
 
-#read in taxanomic identifiers from blast
-identifiers <- read_delim(paste(wd, "/data/??", ))
+#temporarily change working directory to data to bulk load files
+setwd(paste(wd, "/data", sep = ""))
+
+#read in abundance data
+blast.names <- list.files(pattern="blast_*")
+identifiers <- do.call(rbind, lapply(blast.names, function(X) {
+  data.frame(id = basename(X), read_delim(X, delim = "\t", col_types = 
+                                            list(col_character(), 
+                                                 col_character(), 
+                                                 col_character(), 
+                                                 col_character()),
+                                          col_names = c("OTU", "Description",
+                                                        "Evalue")))}))
+
+#move back up a directory to proceed with analysis
+setwd("../")
+
+#Remove excess information in id column
+identifiers$id <- gsub("blast_", "", identifiers$id)
+identifiers$id <- gsub(".txt", "", identifiers$id)
+
+#Tidy identifier data
+identifiers_tidy <- identifiers %>%
+  separate(col = Description, into = c("Accno", "Description"), 
+           sep = " coded_by=") %>%
+  separate(col = Description, into = c("Coded_by", "Description"),
+           sep = ",organism=") %>%
+  separate(col = Description, into = c("Taxon", "Definition"), 
+           sep = ",definition=") %>%
+  rename(Gene = id) %>%
+  select(Gene, OTU, Taxon)
+
+library(taxize)
+#add taxanomic information 
+blast.ncbi <- tax_name(query = identifiers_tidy$Taxon, 
+                      get = c("genus", "order", "family", "class", "phylum"), db = "ncbi")
+
+
+#label query "Organism" for joining purposes
+blast.ncbi$Taxon <- blast.ncbi$query
+
+#save this table since the above step takes a long time
+write.table(blast.ncbi, file = paste(wd, "/output/blast.ncbi.taxonomy.txt", sep = ""), 
+            row.names = FALSE)
+
+
+#join ncbi information with annotated data
+#output should have same number of rows 
+identifiers_ncbi <- identifiers_tidy %>%
+  left_join(blast.ncbi, by = "Taxon") %>%
+  unique() %>%
+  left_join(gene_abundance_otu, by = c("OTU", "Gene")) %>%
+  unique()
+
+#replace NA in phylum with unknown
+data.annotated.ncbi$phylum[is.na(data.annotated.ncbi$phylum)] = "Unknown"
+
+#call NA class by phyla
+identifiers_ncbi$class[is.na(identifiers_ncbi$class)] <- as.character(identifiers_ncbi$phylum[is.na(identifiers_ncbi$class)])
+
+#call NA genus by class (may be phyla in cases where class was NA)
+identifiers_ncbi$genus[is.na(identifiers_ncbi$genus)] <- as.character(identifiers_ncbi$class[is.na(identifiers_ncbi$genus)])
+
+#order based on temperature
+identifiers_ncbi$Site <- factor(identifiers_ncbi$Site, 
+                                   levels = identifiers_ncbi$Site[order(identifiers_ncbi$SoilTemperature_to10cm)])
+
+
+##############################
+#EXAMINE PHYLUM LEVEL CHANGES#
+##############################
+
+#look at phylum level differneces
+data.phylum <- identifiers_ncbi %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  group_by(Group, Description, Gene, phylum, Classification, Site, Temp) %>%
+  summarise(Phylum.count = sum(RelativeAbundance))
+
+#prep colors for phylum diversity
+color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown", "grey", "red", "blue", "green", "purple", "brightorange", "pink", 
+           "yellow")
+
+#order genes by group
+data.phylum$Gene <- factor(data.phylum$Gene, 
+                           levels = data.phylum$Gene[order(data.phylum$Group)])
+data.phylum$phylum[is.na(data.phylum$phylum)] <- "metagenome"
+
+#plot 
+(gene.bar.census <- ggplot(subset(data.phylum, Group == "ArsenicResistance"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    scale_fill_manual(values = color) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
+
+
+
+
+

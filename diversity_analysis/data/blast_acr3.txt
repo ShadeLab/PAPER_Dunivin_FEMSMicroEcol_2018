@@ -1,0 +1,423 @@
+OTU_0001	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	0.0
+OTU_0002	OLC42053  coded_by=11838..12941,organism=Nitrospirae bacterium 13_1_40CM_4_62_6,definition=arsenical-resistance protein	2e-85
+OTU_0003	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0004	KUJ95114  coded_by=complement(5648..6736),organism=Desulfonauticus sp. 38_4375,definition=Arsenite resistance protein arsB	3e-71
+OTU_0005	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0006	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	0.0
+OTU_0007	KIF35075  coded_by=complement(145446..146513),organism=Hassallia byssoidea VB512170,definition=arsenic resistance protein ArsB	0.0
+OTU_0008	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0009	ADV63142  coded_by=complement(3728739..3729860),organism=Isosphaera pallida ATCC 43644,definition=arsenical-resistance protein	8e-95
+OTU_0010	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	0.0
+OTU_0011	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0012	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0013	OGU70889  coded_by=54379..>55395,organism=Ignavibacteria bacterium RIFCSPLOWO2_12_FULL_56_21,definition=arsenical-resistance protein	4e-75
+OTU_0014	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0015	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	4e-113
+OTU_0017	OGO12842  coded_by=complement(3463..4557),organism=Chloroflexi bacterium RBG_13_66_10,definition=arsenical-resistance protein	2e-84
+OTU_0016	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	4e-86
+OTU_0019	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	4e-178
+OTU_0018	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	1e-139
+OTU_0021	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	2e-80
+OTU_0020	OJW25477  coded_by=15269..16375,organism=Planctomycetales bacterium 71-10,definition=arsenical-resistance protein	5e-92
+OTU_0023	OFV96605  coded_by=9105..10166,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=arsenical-resistance protein	3e-162
+OTU_0022	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	0.0
+OTU_0025	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	7e-105
+OTU_0024	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0027	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	3e-94
+OTU_0026	OLC42053  coded_by=11838..12941,organism=Nitrospirae bacterium 13_1_40CM_4_62_6,definition=arsenical-resistance protein	2e-89
+OTU_0029	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	8e-95
+OTU_0028	KUR67323  coded_by=complement(67282..68421),organism=Rhodothermaceae bacterium RA,definition=arsenic resistance protein ArsB	5e-103
+OTU_0031	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	2e-105
+OTU_0030	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	0.0
+OTU_0034	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0035	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	2e-107
+OTU_0032	KSU06380  coded_by=10951..12003,organism=Lactococcus lactis subsp. lactis,definition=Arsenical-resistance protein ACR3	5e-84
+OTU_0033	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0038	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	3e-91
+OTU_0039	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	6e-137
+OTU_0036	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	3e-175
+OTU_0037	KPK73417  coded_by=20816..21898,organism=Acidithiobacillales bacterium SM23_46,definition=arsenic transporter	4e-85
+OTU_0042	KPK01331  coded_by=37..1038,organism=Gemmatimonas sp. SG8_28,definition=transporter	1e-158
+OTU_0043	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	1e-108
+OTU_0040	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	2e-137
+OTU_0041	BAJ62890  coded_by=941091..942173,organism=Anaerolinea thermophila UNI-1,definition=arsenite export protein	6e-105
+OTU_0046	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0047	ALS28926  coded_by=complement(3877208..3878266),organism=Paenibacillus sp. 32O-W,definition=sodium Bile acid symporter family protein	7e-117
+OTU_0044	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	3e-125
+OTU_0045	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	2e-161
+OTU_0051	OJY34383  coded_by=185017..186072,organism=Rhizobiales bacterium 65-9,definition=arsenical-resistance protein	1e-112
+OTU_0050	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0049	OJV43459  coded_by=600636..601715,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	1e-173
+OTU_0048	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	3e-105
+OTU_0055	SEC89233  coded_by=49711..50832,organism=Terriglobus roseus,definition=arsenite transporter, ACR3 family	0.0
+OTU_0054	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0053	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0052	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0059	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	7e-135
+OTU_0058	OFX13380  coded_by=complement(4022..5077),organism=Armatimonadetes bacterium RBG_16_58_9,definition=arsenical-resistance protein	5e-88
+OTU_0057	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	6e-82
+OTU_0056	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-97
+OTU_0063	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	5e-91
+OTU_0062	SEO73845  coded_by=470429..471505,organism=Rhodospirillales bacterium URHD0017,definition=arsenite transporter, ACR3 family	2e-106
+OTU_0061	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	4e-174
+OTU_0060	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-84
+OTU_0068	EPX61438  coded_by=416915..418009,organism=Cystobacter fuscus DSM 2262,definition=Arsenical-resistance protein ACR3	4e-83
+OTU_0069	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	1e-102
+OTU_0070	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	7e-110
+OTU_0071	SCF04327  coded_by=complement(5075941..5077017),organism=Micromonospora coriariae,definition=arsenite transporter, ACR3 family	1e-145
+OTU_0064	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	2e-87
+OTU_0065	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-82
+OTU_0066	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	4e-97
+OTU_0067	ABG61727  coded_by=complement(358986..360050),organism=Chelativorans sp. BNC1,definition=Bile acid:sodium symporter	4e-85
+OTU_0076	GAO02672  coded_by=complement(10034..11179),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	4e-135
+OTU_0077	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	2e-107
+OTU_0078	KQT22694  coded_by=complement(100964..102028),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	1e-87
+OTU_0079	CCB75219  coded_by=complement(2646680..2647795),organism=Streptomyces cattleya NRRL 8057 = DSM 46488,definition=arsenite efflux transporter	2e-95
+OTU_0072	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	3e-105
+OTU_0073	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	1e-84
+OTU_0074	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	3e-116
+OTU_0075	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	2e-135
+OTU_0085	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	1e-175
+OTU_0084	KQY98268  coded_by=733141..734196,organism=Pseudolabrys sp. Root1462,definition=arsenic transporter	1e-98
+OTU_0087	OFZ83053  coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	5e-94
+OTU_0086	OFW03393  coded_by=complement(10109..11224),organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_68_18,definition=arsenical-resistance protein	3e-158
+OTU_0081	OGU32410  coded_by=607..1722,organism=Ignavibacteria bacterium GWA2_55_11,definition=arsenical-resistance protein	2e-84
+OTU_0080	OFZ83053  coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	0.0
+OTU_0083	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	1e-138
+OTU_0082	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0093	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	5e-145
+OTU_0092	OFV96605  coded_by=9105..10166,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=arsenical-resistance protein	5e-94
+OTU_0095	OJW27837  coded_by=complement(55371..56393),organism=Rhodospirillales bacterium 69-11,definition=arsenical-resistance protein	3e-100
+OTU_0094	KQT06854  coded_by=complement(2246..3301),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	3e-119
+OTU_0089	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	2e-137
+OTU_0088	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	0.0
+OTU_0091	SHF15647  coded_by=62572..63639,organism=Acidocella aminolytica 101 = DSM 11237,definition=arsenite transporter, ACR3 family	3e-92
+OTU_0090	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	2e-176
+OTU_0102	KPK21518  coded_by=complement(3113..4240),organism=Dehalococcoidia bacterium SM23_28_1,definition=hypothetical protein	2e-81
+OTU_0103	OFX27828  coded_by=complement(25512..26588),organism=Armatimonadetes bacterium RBG_16_67_12,definition=arsenical-resistance protein	2e-83
+OTU_0100	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0101	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	6e-80
+OTU_0098	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	4e-92
+OTU_0099	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0096	SCF04327  coded_by=complement(5075941..5077017),organism=Micromonospora coriariae,definition=arsenite transporter, ACR3 family	2e-173
+OTU_0097	SDZ32316  coded_by=complement(199404..200504),organism=Amycolatopsis xylanica,definition=arsenite transporter, ACR3 family	1e-66
+OTU_0110	OGO11170  coded_by=8404..>9345,organism=Chloroflexi bacterium RBG_13_68_17,definition=arsenical-resistance protein	8e-123
+OTU_0111	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0108	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	6e-113
+OTU_0109	OJU58187  coded_by=21952..23016,organism=Alphaproteobacteria bacterium 62-8,definition=arsenical-resistance protein	2e-105
+OTU_0106	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0107	OGF50249  coded_by=complement(2097..3155),organism=Candidatus Firestonebacteria bacterium RIFOXYA2_FULL_40_8,definition=arsenical-resistance protein	0.0
+OTU_0104	KPL72869  coded_by=complement(586977..588053),organism=Leptolinea tardivitalis,definition=arsenic resistance protein ArsB	4e-117
+OTU_0105	ABJ85370  coded_by=complement(5578526..5579590),organism=Candidatus Solibacter usitatus Ellin6076,definition=Bile acid:sodium symporter	1e-159
+OTU_0119	AMY10807  coded_by=4835511..4836581,organism=Acidobacteria bacterium DSM 100886,definition=arsenical-resistance protein	0.0
+OTU_0118	KMV16475  coded_by=complement(2395..3435),organism=Mycobacterium heckeshornense,definition=arsenic transporter	5e-129
+OTU_0117	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	6e-117
+OTU_0116	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0115	BAF58833  coded_by=639506..640576,organism=Pelotomaculum thermopropionicum SI,definition=arsenite efflux pump ACR3 and related permeases	1e-72
+OTU_0114	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	1e-104
+OTU_0113	KQT93557  coded_by=159980..161074,organism=Marmoricola sp. Leaf446,definition=arsenic transporter	1e-69
+OTU_0112	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-92
+OTU_0127	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0126	CCW36072  coded_by=complement(2680353..2681477),organism=Chthonomonas calidirosea T49,definition=arsenical-resistance protein	0.0
+OTU_0125	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	2e-113
+OTU_0124	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	2e-137
+OTU_0123	SCF04327  coded_by=complement(5075941..5077017),organism=Micromonospora coriariae,definition=arsenite transporter, ACR3 family	3e-148
+OTU_0122	OGO70649  coded_by=complement(7444..8541),organism=Chloroflexi bacterium RBG_19FT_COMBO_62_14,definition=arsenical-resistance protein	6e-120
+OTU_0121	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	3e-88
+OTU_0120	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	2e-179
+OTU_0137	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0136	KRW90670  coded_by=complement(2372..3415),organism=Alicyclobacillus tengchongensis,definition=arsenic resistance protein ArsB	0.0
+OTU_0139	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0138	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-161
+OTU_0141	OGQ78425  coded_by=23247..24341,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_12_FULL_60_19,definition=arsenical-resistance protein	9e-93
+OTU_0140	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	6e-99
+OTU_0143	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	0.0
+OTU_0142	OGQ78425  coded_by=23247..24341,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_12_FULL_60_19,definition=arsenical-resistance protein	2e-98
+OTU_0129	OHB72509  coded_by=9313..10389,organism=Planctomycetes bacterium RBG_13_63_9,definition=arsenical-resistance protein	2e-108
+OTU_0128	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-103
+OTU_0131	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0130	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0133	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	4e-171
+OTU_0132	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	2e-104
+OTU_0135	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	2e-89
+OTU_0134	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	6e-78
+OTU_0152	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	1e-130
+OTU_0153	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0154	KKY24712  coded_by=join(362038..362120,362250..362701,362793..363170,363263..363354),organism=Diplodia seriata,definition=putative arsenical-resistance protein	4e-63
+OTU_0155	SFO23772  coded_by=complement(107466..108524),organism=Saccharopolyspora antimicrobica,definition=arsenite transporter, ACR3 family/arsenate reductase	1e-83
+OTU_0156	OHB72509  coded_by=9313..10389,organism=Planctomycetes bacterium RBG_13_63_9,definition=arsenical-resistance protein	0.0
+OTU_0157	OIP60456  coded_by=17212..18264,organism=Nitrospirae bacterium CG2_30_41_42,definition=hypothetical protein	1e-76
+OTU_0158	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	2e-173
+OTU_0159	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0144	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	5e-138
+OTU_0145	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	0.0
+OTU_0146	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	0.0
+OTU_0147	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	4e-86
+OTU_0148	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-162
+OTU_0149	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	7e-156
+OTU_0150	SCX60646  coded_by=67800..68942,organism=Actinobacteria bacterium DSM 45722,definition=arsenite transporter, ACR3 family	8e-138
+OTU_0151	OBS51325  coded_by=complement(51091..52131),organism=Methylosinus sp. 3S-1,definition=arsenical-resistance protein	4e-79
+OTU_0171	KDA54271  coded_by=30825..31919,organism=Thermoanaerobaculum aquaticum,definition=transporter	1e-82
+OTU_0170	OGX12645  coded_by=complement(1145..2191),organism=Omnitrophica bacterium RIFOXYB12_FULL_50_7,definition=arsenical-resistance protein	9e-130
+OTU_0169	OFW03393  coded_by=complement(10109..11224),organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_68_18,definition=arsenical-resistance protein	4e-81
+OTU_0168	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0175	OFZ83053  coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	4e-88
+OTU_0174	OIO84009  coded_by=complement(76134..77255),organism=Anaerolineae bacterium CG2_30_57_67,definition=arsenical-resistance protein	1e-96
+OTU_0173	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0172	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-95
+OTU_0163	OJV43459  coded_by=600636..601715,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	8e-98
+OTU_0162	ADV83466  coded_by=3314290..3315411,organism=Terriglobus saanensis SP1PR4,definition=arsenical-resistance protein	0.0
+OTU_0161	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0160	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	0.0
+OTU_0167	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	6e-140
+OTU_0166	KYH33414  coded_by=complement(117374..118447),organism=Moorella mulderi DSM 14980,definition=sodium bile acid symporter family protein	6e-84
+OTU_0165	OFV96605  coded_by=9105..10166,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=arsenical-resistance protein	5e-89
+OTU_0164	KOU11743  coded_by=complement(157799..158923),organism=Streptomyces sp. NRRL F-4711,definition=arsenic transporter	1e-119
+OTU_0186	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	2e-100
+OTU_0187	SBT03704  coded_by=12852..13940,organism=Candidatus Propionivibrio aalborgensis,definition=Arsenite resistance protein ArsB	3e-144
+OTU_0184	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	3e-86
+OTU_0185	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-104
+OTU_0190	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	0.0
+OTU_0191	OGW41443  coded_by=2682..3761,organism=Nitrospirae bacterium GWD2_57_9,definition=arsenical-resistance protein	2e-91
+OTU_0188	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	7e-117
+OTU_0189	ACK49085  coded_by=94471..95523,organism=Methylocella silvestris BL2,definition=arsenical-resistance protein	7e-103
+OTU_0178	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0179	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	0.0
+OTU_0176	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	9e-81
+OTU_0177	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0182	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	9e-87
+OTU_0183	OJU80611  coded_by=complement(3333..>4360),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	8e-69
+OTU_0180	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0181	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	8e-86
+OTU_0205	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	4e-88
+OTU_0204	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	6e-160
+OTU_0207	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	0.0
+OTU_0206	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-114
+OTU_0201	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	3e-90
+OTU_0200	OIR18895  coded_by=403121..404194,organism=mine drainage metagenome,definition=sodium bile acid symporter family protein	3e-77
+OTU_0203	ADV83466  coded_by=3314290..3315411,organism=Terriglobus saanensis SP1PR4,definition=arsenical-resistance protein	1e-112
+OTU_0202	OJV40348  coded_by=314010..315131,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	0.0
+OTU_0197	OFZ83053  coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	5e-111
+OTU_0196	OJW38684  coded_by=15647..16726,organism=Thiobacillus sp. 65-69,definition=arsenical-resistance protein	2e-92
+OTU_0199	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	3e-83
+OTU_0198	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	8e-110
+OTU_0193	OGQ05289  coded_by=complement(244698..245768),organism=Deltaproteobacteria bacterium RIFCSPHIGHO2_01_FULL_43_49,definition=arsenical-resistance protein	4e-85
+OTU_0192	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	5e-87
+OTU_0195	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0194	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	8e-95
+OTU_0220	OFX27828  coded_by=complement(25512..26588),organism=Armatimonadetes bacterium RBG_16_67_12,definition=arsenical-resistance protein	6e-84
+OTU_0221	OCB66149  coded_by=complement(1716..2828),organism=Mycobacterium vulneris,definition=arsenical-resistance protein	0.0
+OTU_0222	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	1e-142
+OTU_0223	OGQ65406  coded_by=11558..12601,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_12_FULL_50_11,definition=arsenical-resistance protein	1e-146
+OTU_0216	OJW27837  coded_by=complement(55371..56393),organism=Rhodospirillales bacterium 69-11,definition=arsenical-resistance protein	1e-93
+OTU_0217	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	2e-116
+OTU_0218	OGE19605  coded_by=7398..8492,organism=Candidatus Dadabacteria bacterium RIFCSPHIGHO2_12_FULL_53_21,definition=arsenical-resistance protein	0.0
+OTU_0219	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	5e-101
+OTU_0212	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	3e-175
+OTU_0213	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	2e-109
+OTU_0214	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0215	OGD27116  coded_by=complement(11821..12870),organism=Candidatus Aminicenantes bacterium RBG_19FT_COMBO_65_30,definition=arsenical-resistance protein	3e-139
+OTU_0208	KUK41087  coded_by=complement(<1..1116),organism=Clostridia bacterium 62_21,definition=Arsenical-resistance protein	1e-96
+OTU_0209	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0210	OJW27837  coded_by=complement(55371..56393),organism=Rhodospirillales bacterium 69-11,definition=arsenical-resistance protein	8e-113
+OTU_0211	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	7e-70
+OTU_0239	OHB72509  coded_by=9313..10389,organism=Planctomycetes bacterium RBG_13_63_9,definition=arsenical-resistance protein	1e-104
+OTU_0238	KPK21518  coded_by=complement(3113..4240),organism=Dehalococcoidia bacterium SM23_28_1,definition=hypothetical protein	4e-149
+OTU_0237	OLT13324  coded_by=complement(34769..35881),organism=Actinomadura sp. CNU-125,definition=arsenical-resistance protein	2e-155
+OTU_0236	KOT89501  coded_by=31742..32848,organism=Streptomyces sp. NRRL F-5755,definition=arsenic transporter	4e-98
+OTU_0235	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	9e-79
+OTU_0234	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	2e-138
+OTU_0233	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-139
+OTU_0232	OJV43459  coded_by=600636..601715,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	3e-90
+OTU_0231	AKU92706  coded_by=complement(3625840..3626955),organism=Vulgatibacter incomptus,definition=Arsenical-resistance protein ACR3	1e-70
+OTU_0230	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	2e-91
+OTU_0229	KIF68548  coded_by=1668305..1669405,organism=Streptomyces sp. AcH 505,definition=arsenic transporter	3e-145
+OTU_0228	KQV77402  coded_by=complement(143858..144937),organism=Nocardioides sp. Root122,definition=arsenic transporter	6e-138
+OTU_0227	OJW27837  coded_by=complement(55371..56393),organism=Rhodospirillales bacterium 69-11,definition=arsenical-resistance protein	1e-107
+OTU_0226	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	2e-92
+OTU_0225	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	2e-164
+OTU_0224	SEC89233  coded_by=49711..50832,organism=Terriglobus roseus,definition=arsenite transporter, ACR3 family	6e-97
+OTU_0254	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-168
+OTU_0255	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	6e-117
+OTU_0252	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	3e-117
+OTU_0253	KON27932  coded_by=complement(42819..43907),organism=miscellaneous Crenarchaeota group archaeon SMTZ-80,definition=hypothetical protein	6e-59
+OTU_0250	AOS84208  coded_by=1947308..1948363,organism=Chlorobaculum limnaeum,definition=arsenical-resistance protein	2e-86
+OTU_0251	OGS05883  coded_by=20526..21602,organism=Elusimicrobia bacterium RIFCSPLOWO2_12_FULL_59_9,definition=arsenical-resistance protein	4e-64
+OTU_0248	KPK01331  coded_by=37..1038,organism=Gemmatimonas sp. SG8_28,definition=transporter	3e-147
+OTU_0249	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0246	OIR18895  coded_by=403121..404194,organism=mine drainage metagenome,definition=sodium bile acid symporter family protein	7e-94
+OTU_0247	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	4e-151
+OTU_0244	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	2e-117
+OTU_0245	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	0.0
+OTU_0242	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0243	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	3e-109
+OTU_0240	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	5e-121
+OTU_0241	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	6e-96
+OTU_0275	OGC94267  coded_by=complement(6724..7809),organism=candidate division Zixibacteria bacterium RBG_16_53_22,definition=arsenical-resistance protein	4e-90
+OTU_0274	SEC89233  coded_by=49711..50832,organism=Terriglobus roseus,definition=arsenite transporter, ACR3 family	1e-108
+OTU_0273	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	4e-76
+OTU_0272	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-91
+OTU_0279	OHB72509  coded_by=9313..10389,organism=Planctomycetes bacterium RBG_13_63_9,definition=arsenical-resistance protein	0.0
+OTU_0278	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	1e-176
+OTU_0277	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	1e-90
+OTU_0276	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	9e-98
+OTU_0283	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	8e-138
+OTU_0282	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	0.0
+OTU_0281	KON27932  coded_by=complement(42819..43907),organism=miscellaneous Crenarchaeota group archaeon SMTZ-80,definition=hypothetical protein	8e-76
+OTU_0280	ODT04884  coded_by=39566..40699,organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenical-resistance protein	0.0
+OTU_0287	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	8e-125
+OTU_0286	BAU46983  coded_by=complement(400435..401838),organism=Sulfurifustis variabilis,definition=arsenic transporter	2e-102
+OTU_0285	OLT13324  coded_by=complement(34769..35881),organism=Actinomadura sp. CNU-125,definition=arsenical-resistance protein	2e-178
+OTU_0284	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	8e-81
+OTU_0258	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	8e-80
+OTU_0259	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	4e-85
+OTU_0256	SIK09894  coded_by=68502..69599,organism=Mycobacterium abscessus subsp. abscessus,definition=Probable arsenic-transport integral membrane protein ArsC	1e-108
+OTU_0257	SHL12406  coded_by=complement(2379..3422),organism=Alicyclobacillus sp. USBA-503,definition=arsenite transporter, ACR3 family	2e-136
+OTU_0262	EEL47923  coded_by=complement(10565..11551),organism=Bacillus cereus Rock3-44,definition=Arsenite resistance protein arsB	5e-124
+OTU_0263	CCB75219  coded_by=complement(2646680..2647795),organism=Streptomyces cattleya NRRL 8057 = DSM 46488,definition=arsenite efflux transporter	0.0
+OTU_0260	OJW27837  coded_by=complement(55371..56393),organism=Rhodospirillales bacterium 69-11,definition=arsenical-resistance protein	8e-94
+OTU_0261	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	2e-130
+OTU_0266	KQT06854  coded_by=complement(2246..3301),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	4e-118
+OTU_0267	EKN01314  coded_by=complement(9543..10571),organism=Acidocella sp. MX-AZ02,definition=arsenite efflux pump ACR3	3e-103
+OTU_0264	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	7e-79
+OTU_0265	CBE68184  coded_by=complement(947037..948146),organism=Candidatus Methylomirabilis oxyfera,definition=conserved membrane protein of unknown function	1e-80
+OTU_0270	OGU70889  coded_by=54379..>55395,organism=Ignavibacteria bacterium RIFCSPLOWO2_12_FULL_56_21,definition=arsenical-resistance protein	1e-63
+OTU_0271	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	1e-87
+OTU_0268	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	4e-92
+OTU_0269	EHP27615  coded_by=339102..340157,organism=Bacillus sp. 1NLA3E,definition=arsenical-resistance protein	3e-148
+OTU_0305	KRA35143  coded_by=299944..301032,organism=Rhodanobacter sp. Root627,definition=arsenic transporter	4e-107
+OTU_0304	OJV22485  coded_by=19316..20395,organism=Verrucomicrobia bacterium 61-8,definition=arsenical-resistance protein	3e-79
+OTU_0307	KXL46104  coded_by=complement(join(26952..27472,27521..27882,27952..28061)),organism=Acidomyces richmondensis,definition=hypothetical protein	4e-74
+OTU_0306	KON27932  coded_by=complement(42819..43907),organism=miscellaneous Crenarchaeota group archaeon SMTZ-80,definition=hypothetical protein	2e-147
+OTU_0309	OGW52113  coded_by=complement(1574..2650),organism=Nitrospirae bacterium RBG_19FT_COMBO_58_9,definition=arsenical-resistance protein	4e-81
+OTU_0308	OGU32410  coded_by=607..1722,organism=Ignavibacteria bacterium GWA2_55_11,definition=arsenical-resistance protein	2e-179
+OTU_0311	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0310	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	0.0
+OTU_0313	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	3e-81
+OTU_0312	OJV44674  coded_by=8755..9870,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	6e-116
+OTU_0315	OBF92956  coded_by=127540..128625,organism=Mycobacterium sp. 852002-51163_SCH5372311,definition=arsenical-resistance protein	6e-125
+OTU_0314	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	3e-95
+OTU_0317	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	7e-142
+OTU_0316	KPK01331  coded_by=37..1038,organism=Gemmatimonas sp. SG8_28,definition=transporter	8e-156
+OTU_0319	SCF04327  coded_by=complement(5075941..5077017),organism=Micromonospora coriariae,definition=arsenite transporter, ACR3 family	6e-177
+OTU_0318	OGU32410  coded_by=607..1722,organism=Ignavibacteria bacterium GWA2_55_11,definition=arsenical-resistance protein	3e-85
+OTU_0288	OGA52712  coded_by=complement(2491..3612),organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=arsenical-resistance protein	7e-99
+OTU_0289	ADU43413  coded_by=1910452..1911504,organism=Rhodopseudomonas palustris DX-1,definition=arsenical-resistance protein	2e-94
+OTU_0290	SCF27787  coded_by=317755..318909,organism=Micromonospora saelicesensis,definition=arsenite transporter, ACR3 family	1e-168
+OTU_0291	KIA62464  coded_by=complement(7914..9005),organism=Nocardia vulneris,definition=arsenic transporter	2e-85
+OTU_0292	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	3e-81
+OTU_0293	KQW18107  coded_by=complement(97050..98105),organism=Afipia sp. Root123D2,definition=arsenic transporter	2e-105
+OTU_0294	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	1e-96
+OTU_0295	ABS69183  coded_by=4382066..4383127,organism=Xanthobacter autotrophicus Py2,definition=arsenical-resistance protein	9e-93
+OTU_0296	OFX13380  coded_by=complement(4022..5077),organism=Armatimonadetes bacterium RBG_16_58_9,definition=arsenical-resistance protein	4e-91
+OTU_0297	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	1e-172
+OTU_0298	OFX13380  coded_by=complement(4022..5077),organism=Armatimonadetes bacterium RBG_16_58_9,definition=arsenical-resistance protein	0.0
+OTU_0299	OGL65924  coded_by=complement(1857..2924),organism=Candidatus Tectomicrobia bacterium RIFCSPLOWO2_12_FULL_69_37,definition=arsenical-resistance protein	6e-82
+OTU_0300	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0301	ADB49024  coded_by=complement(621042..622175),organism=Conexibacter woesei DSM 14684,definition=arsenical-resistance protein	3e-173
+OTU_0302	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	5e-91
+OTU_0303	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	7e-82
+OTU_0343	ADP72710  coded_by=3841912..3843009,organism=Rhodomicrobium vannielii ATCC 17100,definition=arsenical-resistance protein	2e-95
+OTU_0342	KRF02594  coded_by=complement(140397..141512),organism=Nocardioides sp. Soil777,definition=arsenic transporter	1e-73
+OTU_0341	ODT04227  coded_by=complement(65463..66596),organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenical-resistance protein	1e-155
+OTU_0340	KLC12616  coded_by=complement(4966..6033),organism=Xanthomonas perforans,definition=arsenic transporter	3e-112
+OTU_0339	SEO73845  coded_by=470429..471505,organism=Rhodospirillales bacterium URHD0017,definition=arsenite transporter, ACR3 family	7e-82
+OTU_0338	OHD66017  coded_by=complement(26602..27642),organism=Spirochaetes bacterium RBG_13_51_14,definition=arsenical-resistance protein	2e-106
+OTU_0337	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	2e-92
+OTU_0336	OIO84009  coded_by=complement(76134..77255),organism=Anaerolineae bacterium CG2_30_57_67,definition=arsenical-resistance protein	3e-86
+OTU_0351	OJW84402  coded_by=complement(8885..9988),organism=Bacteroidetes bacterium 46-16,definition=arsenical-resistance protein	4e-151
+OTU_0350	OFX27828  coded_by=complement(25512..26588),organism=Armatimonadetes bacterium RBG_16_67_12,definition=arsenical-resistance protein	8e-76
+OTU_0349	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	3e-180
+OTU_0348	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	6e-106
+OTU_0347	OGU59121  coded_by=42151..43215,organism=Ignavibacteria bacterium GWF2_35_20,definition=arsenical-resistance protein	1e-97
+OTU_0346	KKY24712  coded_by=join(362038..362120,362250..362701,362793..363170,363263..363354),organism=Diplodia seriata,definition=putative arsenical-resistance protein	7e-70
+OTU_0345	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	4e-81
+OTU_0344	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	4e-95
+OTU_0326	OGL03844  coded_by=3456..4565,organism=Candidatus Rokubacteria bacterium RIFCSPHIGHO2_12_FULL_73_22,definition=arsenical-resistance protein	0.0
+OTU_0327	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-168
+OTU_0324	AFL86401  coded_by=complement(51041..52120),organism=Terriglobus roseus DSM 18391,definition=arsenical-resistance protein	1e-104
+OTU_0325	OGQ54447  coded_by=565..1638,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_02_56_12,definition=arsenical-resistance protein	3e-96
+OTU_0322	KIJ73176  coded_by=complement(94312..95379),organism=Tolypothrix campylonemoides VB511288,definition=arsenic resistance protein ArsB	0.0
+OTU_0323	SFJ06116  coded_by=complement(64848..65972),organism=Nocardioides psychrotolerans,definition=arsenite transporter, ACR3 family	3e-137
+OTU_0320	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0321	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0334	KPK73417  coded_by=20816..21898,organism=Acidithiobacillales bacterium SM23_46,definition=arsenic transporter	1e-101
+OTU_0335	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	3e-115
+OTU_0332	OGU32410  coded_by=607..1722,organism=Ignavibacteria bacterium GWA2_55_11,definition=arsenical-resistance protein	4e-84
+OTU_0333	KDO96468  coded_by=32888..33994,organism=Mycobacterium avium subsp. hominissuis A5,definition=arsenic transporter	8e-101
+OTU_0330	OGQ05289  coded_by=complement(244698..245768),organism=Deltaproteobacteria bacterium RIFCSPHIGHO2_01_FULL_43_49,definition=arsenical-resistance protein	1e-111
+OTU_0331	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	4e-124
+OTU_0328	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	8e-108
+OTU_0329	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	5e-89
+OTU_0373	ODU25218  coded_by=complement(21583..22674),organism=Verrucomicrobia bacterium SCN 57-15,definition=arsenical-resistance protein	1e-101
+OTU_0372	KAI93500  coded_by=5653..6750,organism=Rhodomicrobium udaipurense JA643,definition=arsenic transporter	2e-90
+OTU_0375	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	0.0
+OTU_0374	OJU80611  coded_by=complement(3333..>4360),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	2e-67
+OTU_0369	ODT04227  coded_by=complement(65463..66596),organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenical-resistance protein	2e-166
+OTU_0368	OGA55558  coded_by=complement(30055..31137),organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_65_14,definition=arsenical-resistance protein	1e-111
+OTU_0371	OGG54904  coded_by=complement(5974..7041),organism=Candidatus Handelsmanbacteria bacterium RIFCSPLOWO2_12_FULL_64_10,definition=arsenical-resistance protein	3e-84
+OTU_0370	ABJ85370  coded_by=complement(5578526..5579590),organism=Candidatus Solibacter usitatus Ellin6076,definition=Bile acid:sodium symporter	2e-94
+OTU_0381	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	7e-82
+OTU_0380	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	7e-112
+OTU_0383	SCF04343  coded_by=232130..233218,organism=Micromonospora matsumotoense,definition=arsenite transporter, ACR3 family	1e-172
+OTU_0382	OFV96605  coded_by=9105..10166,organism=Acidobacteria bacterium RIFCSPLOWO2_02_FULL_61_28,definition=arsenical-resistance protein	8e-110
+OTU_0377	EJO56667  coded_by=complement(5601..6677),organism=Burkholderia multivorans CF2,definition=arsenical-resistance protein	1e-86
+OTU_0376	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	2e-161
+OTU_0379	ACZ38809  coded_by=complement(1517623..1518747),organism=Sphaerobacter thermophilus DSM 20745,definition=arsenical-resistance protein	2e-112
+OTU_0378	KPC71071  coded_by=66080..67141,organism=Thermoactinomyces vulgaris,definition=arsenic resistance protein ArsB	6e-117
+OTU_0356	OJV40348  coded_by=314010..315131,organism=Acidobacteriales bacterium 59-55,definition=arsenical-resistance protein	7e-132
+OTU_0357	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	0.0
+OTU_0358	ODT04227  coded_by=complement(65463..66596),organism=Gemmatimonadetes bacterium SCN 70-22,definition=arsenical-resistance protein	7e-88
+OTU_0359	KGM46428  coded_by=2652..3707,organism=Bacillus niacini,definition=arsenic resistance protein ArsB	0.0
+OTU_0352	EXU69202  coded_by=102091..103218,organism=Streptomyces sp. PRh5,definition=arsenic transporter	7e-139
+OTU_0353	OHE25776  coded_by=2666..3754,organism=Syntrophus sp. RIFOXYC2_FULL_54_9,definition=arsenical-resistance protein	7e-80
+OTU_0354	OIO88134  coded_by=complement(3465..4634),organism=Anaerolineae bacterium CG2_30_64_16,definition=arsenical-resistance protein	3e-173
+OTU_0355	EQD38177  coded_by=392..>1401,organism=mine drainage metagenome,definition=Arsenite resistance protein arsB	2e-85
+OTU_0364	OGX48435  coded_by=3531..5021,organism=Omnitrophica WOR_2 bacterium RIFCSPLOWO2_12_FULL_63_16,definition=arsenical-resistance protein	5e-167
+OTU_0365	ODS53492  coded_by=complement(94424..95539),organism=Acidobacteria bacterium SCN 69-37,definition=arsenical-resistance protein	3e-78
+OTU_0366	ABF41959  coded_by=complement(3502146..3503234),organism=Candidatus Koribacter versatilis Ellin345,definition=arsenical-resistance protein	0.0
+OTU_0367	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-82
+OTU_0360	CRI67729  coded_by=4786..5931,organism=Thiocapsa sp. KS1,definition=conserved membrane hypothetical protein	3e-67
+OTU_0361	CDR07486  coded_by=complement(5173181..5174302),organism=Streptomyces iranensis,definition=arsenical-resistance protein	8e-179
+OTU_0362	OGN80124  coded_by=complement(2604..3692),organism=Chloroflexi bacterium GWB2_54_36,definition=arsenical-resistance protein	1e-174
+OTU_0363	OAB63740  coded_by=26017..27108,organism=Leptolyngbya valderiana BDU 20041,definition=arsenic resistance protein ArsB	4e-175
+OTU_0410	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	3e-94
+OTU_0411	KGI68535  coded_by=3192897..3193982,organism=Mycobacterium rufum,definition=arsenic transporter	3e-78
+OTU_0408	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	4e-127
+OTU_0409	EHN13014  coded_by=complement(6269..7384),organism=Patulibacter medicamentivorans,definition=Arsenical-resistance protein ACR3	1e-93
+OTU_0414	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	1e-87
+OTU_0415	OGW27484  coded_by=21395..22474,organism=Nitrospirae bacterium GWC2_57_13,definition=arsenical-resistance protein	7e-122
+OTU_0412	GAU63379  coded_by=139600..140658,organism=Tepidibacillus sp. HK-1,definition=sodium Bile acid symporter family protein	1e-114
+OTU_0413	OGQ78425  coded_by=23247..24341,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_12_FULL_60_19,definition=arsenical-resistance protein	2e-88
+OTU_0402	KYF56975  coded_by=21340..22455,organism=Sorangium cellulosum,definition=arsenic resistance protein ArsB	1e-74
+OTU_0403	OGU71357  coded_by=complement(7176..8237),organism=Ignavibacteria bacterium RBG_16_34_14,definition=arsenical-resistance protein	1e-75
+OTU_0400	OIO84009  coded_by=complement(76134..77255),organism=Anaerolineae bacterium CG2_30_57_67,definition=arsenical-resistance protein	2e-94
+OTU_0401	OJW77742  coded_by=complement(11249..12331),organism=Bacteroidetes bacterium 46-16,definition=arsenical-resistance protein	5e-108
+OTU_0406	OHB54828  coded_by=11707..12780,organism=Planctomycetes bacterium GWF2_50_10,definition=arsenical-resistance protein	1e-85
+OTU_0407	KLJ09740  coded_by=join(32366..32654,32734..32855,32945..33031,33119..33775),organism=Emmonsia parva UAMH 139,definition=arsenical-resistance protein	5e-79
+OTU_0404	OFZ83053  coded_by=770..1885,organism=Bdellovibrionales bacterium RIFOXYD1_FULL_53_11,definition=arsenical-resistance protein	2e-122
+OTU_0405	EUA15985  coded_by=complement(20965..22044),organism=Mycobacterium xenopi 4042,definition=arsenical-resistance protein	0.0
+OTU_0395	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	5e-89
+OTU_0394	KON27932  coded_by=complement(42819..43907),organism=miscellaneous Crenarchaeota group archaeon SMTZ-80,definition=hypothetical protein	2e-112
+OTU_0393	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-83
+OTU_0392	OFX27828  coded_by=complement(25512..26588),organism=Armatimonadetes bacterium RBG_16_67_12,definition=arsenical-resistance protein	5e-80
+OTU_0399	OGX12645  coded_by=complement(1145..2191),organism=Omnitrophica bacterium RIFOXYB12_FULL_50_7,definition=arsenical-resistance protein	3e-84
+OTU_0398	OAB63740  coded_by=26017..27108,organism=Leptolyngbya valderiana BDU 20041,definition=arsenic resistance protein ArsB	2e-146
+OTU_0397	OJV28050  coded_by=complement(169208..170296),organism=Actinobacteria bacterium 69-20,definition=arsenical-resistance protein	0.0
+OTU_0396	KRF20703  coded_by=191471..192550,organism=Nocardioides sp. Soil797,definition=arsenic transporter	1e-88
+OTU_0387	OGF66395  coded_by=7241..>8155,organism=Candidatus Fischerbacteria bacterium RBG_13_37_8,definition=arsenical-resistance protein	1e-92
+OTU_0386	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	1e-102
+OTU_0385	OJV22485  coded_by=19316..20395,organism=Verrucomicrobia bacterium 61-8,definition=arsenical-resistance protein	5e-113
+OTU_0384	OJU79861  coded_by=complement(1236..2291),organism=Solirubrobacterales bacterium 70-9,definition=arsenical-resistance protein	0.0
+OTU_0391	OGU32410  coded_by=607..1722,organism=Ignavibacteria bacterium GWA2_55_11,definition=arsenical-resistance protein	0.0
+OTU_0390	OJH16853  coded_by=159061..160116,organism=Bacillus sp. VT-16-70,definition=arsenical-resistance protein	1e-103
+OTU_0389	ACO33632  coded_by=3990825..3991868,organism=Acidobacterium capsulatum ATCC 51196,definition=arsenical-resistance protein	0.0
+OTU_0388	OIO55470  coded_by=complement(27450..28562),organism=Candidatus Peregrinibacteria bacterium CG1_02_54_53,definition=arsenical-resistance protein	4e-82
+OTU_0417	SDN49404  coded_by=complement(108078..109142),organism=Nocardioides szechwanensis,definition=arsenite transporter, ACR3 family	1e-141
+OTU_0416	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	1e-85
+OTU_0419	OHD74172  coded_by=complement(680..1783),organism=Spirochaetes bacterium RBG_13_68_11,definition=arsenical-resistance protein	3e-112
+OTU_0418	KZS49966  coded_by=complement(344..1474),organism=Mycobacterium kansasii,definition=arsenical-resistance protein	1e-95
+OTU_0421	ACD91053  coded_by=complement(2239583..2240638),organism=Chlorobium limicola DSM 245,definition=arsenical-resistance protein	2e-178
+OTU_0420	KKK88647  coded_by=207..>1275,organism=marine sediment metagenome,definition=hypothetical protein	6e-93
+OTU_0423	OGF50249  coded_by=complement(2097..3155),organism=Candidatus Firestonebacteria bacterium RIFOXYA2_FULL_40_8,definition=arsenical-resistance protein	3e-165
+OTU_0422	ABD86189  coded_by=complement(668885..669949),organism=Rhodopseudomonas palustris BisB18,definition=Bile acid:sodium symporter	6e-108

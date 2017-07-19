@@ -1,0 +1,61 @@
+OTU_0001	ODT21655  coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	0.0
+OTU_0002	SAK94949  coded_by=complement(25718..28195),organism=Burkholderia arationis,definition=arsenite oxidase, large subunit	0.0
+OTU_0003	ODT21655  coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	3e-108
+OTU_0004	OCK55889  coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	1e-134
+OTU_0005	SFD31909  coded_by=complement(59705..62167),organism=Bosea sp. DSM 18164,definition=arsenite oxidase large subunit	3e-153
+OTU_0006	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	0.0
+OTU_0007	OCK55889  coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	5e-100
+OTU_0008	OCK55889  coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	1e-176
+OTU_0009	CUA89560  coded_by=complement(5243..7714),organism=Chelatococcus sambhunathii,definition=arsenite oxidase, large subunit	0.0
+OTU_0010	AMP39919  coded_by=1008061..1010547,organism=Ralstonia solanacearum,definition=arsenite oxidase large subunit	0.0
+OTU_0011	CUA89560  coded_by=complement(5243..7714),organism=Chelatococcus sambhunathii,definition=arsenite oxidase, large subunit	6e-126
+OTU_0012	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	9e-113
+OTU_0013	CRI67721  coded_by=498..2981,organism=Thiocapsa sp. KS1,definition=putative Molybdopterin oxidoreductase	0.0
+OTU_0014	OJX19890  coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	2e-176
+OTU_0015	SFD31909  coded_by=complement(59705..62167),organism=Bosea sp. DSM 18164,definition=arsenite oxidase large subunit	0.0
+OTU_0017	EHK52648  coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	2e-107
+OTU_0016	OKO76379  coded_by=17360..19972,organism=Bradyrhizobium sp. NAS96.2,definition=arsenite oxidase large subunit	5e-169
+OTU_0019	ALA19095  coded_by=complement(4045003..4047474),organism=Chelatococcus sp. CO-6,definition=arsenite oxidase large subunit	1e-163
+OTU_0018	ABS69174  coded_by=4371052..4373514,organism=Xanthobacter autotrophicus Py2,definition=Arsenite oxidase large subunit	2e-86
+OTU_0018	ABS69174  coded_by=4371052..4373514,organism=Xanthobacter autotrophicus Py2,definition=Arsenite oxidase large subunit	6.8
+OTU_0021	EFH10338  coded_by=complement(39493..42117),organism=Roseomonas cervicalis ATCC 49957,definition=arsenite oxidase	1e-178
+OTU_0020	OKO76379  coded_by=17360..19972,organism=Bradyrhizobium sp. NAS96.2,definition=arsenite oxidase large subunit	2e-116
+OTU_0023	ALA19095  coded_by=complement(4045003..4047474),organism=Chelatococcus sp. CO-6,definition=arsenite oxidase large subunit	0.0
+OTU_0022	ABS69174  coded_by=4371052..4373514,organism=Xanthobacter autotrophicus Py2,definition=Arsenite oxidase large subunit	1e-163
+OTU_0025	ABE65011  coded_by=72502..74964,organism=Nitrobacter hamburgensis X14,definition=Arsenate reductase (azurin)	5e-124
+OTU_0024	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	5e-166
+OTU_0024	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	4.9
+OTU_0027	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	4e-110
+OTU_0027	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	1.1
+OTU_0026	KIJ79660  coded_by=complement(49777..52287),organism=Scytonema tolypothrichoides VB-61278,definition=arsenite oxidase large subunit	7e-150
+OTU_0029	OJX19890  coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	3e-136
+OTU_0028	EKE76334  coded_by=complement(40124..42583),organism=Oceanibaculum indicum P24,definition=arsenite oxidase large subunit	7e-100
+OTU_0031	OGA55942  coded_by=complement(9784..12276),organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_58,definition=molybdopterin oxidoreductase	0.0
+OTU_0030	ABS69174  coded_by=4371052..4373514,organism=Xanthobacter autotrophicus Py2,definition=Arsenite oxidase large subunit	7e-169
+OTU_0034	ANB03234  coded_by=3082534..3085050,organism=Ectothiorhodospira sp. BSL-9,definition=anaerobic arsenite oxidase molybdopterin containing subunit ArxA	7e-128
+OTU_0035	EHK52648  coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	2e-133
+OTU_0032	KZE33698  coded_by=complement(5916..8387),organism=Chelatococcus daeguensis,definition=arsenite oxidase large subunit	0.0
+OTU_0033	OJV06141  coded_by=43829..46291,organism=Bosea sp. 67-29,definition=arsenite oxidase large subunit	9e-94
+OTU_0038	OFZ99153  coded_by=complement(1008..3488),organism=Betaproteobacteria bacterium RIFCSPLOWO2_02_FULL_62_17,definition=arsenite oxidase large subunit	3e-122
+OTU_0039	OFZ99153  coded_by=complement(1008..3488),organism=Betaproteobacteria bacterium RIFCSPLOWO2_02_FULL_62_17,definition=arsenite oxidase large subunit	0.0
+OTU_0036	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	0.0
+OTU_0037	ANB03234  coded_by=3082534..3085050,organism=Ectothiorhodospira sp. BSL-9,definition=anaerobic arsenite oxidase molybdopterin containing subunit ArxA	6e-100
+OTU_0042	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	3e-103
+OTU_0043	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	0.0
+OTU_0040	OJX19890  coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	3e-95
+OTU_0040	OJX19890  coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	9.2
+OTU_0041	ODT21655  coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	8e-97
+OTU_0046	SAK94949  coded_by=complement(25718..28195),organism=Burkholderia arationis,definition=arsenite oxidase, large subunit	6e-106
+OTU_0047	EFH10338  coded_by=complement(39493..42117),organism=Roseomonas cervicalis ATCC 49957,definition=arsenite oxidase	3e-119
+OTU_0044	SCY92917  coded_by=complement(27219..29840),organism=Microvirga guangxiensis,definition=arsenite oxidase large subunit	2e-96
+OTU_0045	EEW26909  coded_by=143485..145950,organism=Rhodobacter sp. SW2,definition=arsenite oxidase, large subunit	1e-105
+OTU_0051	OGI47522  coded_by=1474..3981,organism=Candidatus Muproteobacteria bacterium RBG_16_65_34,definition=molybdopterin oxidoreductase	0.0
+OTU_0050	KZD21214  coded_by=225968..228442,organism=Tardiphaga sp. Vaf07,definition=arsenite oxidase large subunit	6e-94
+OTU_0049	OGI47522  coded_by=1474..3981,organism=Candidatus Muproteobacteria bacterium RBG_16_65_34,definition=molybdopterin oxidoreductase	0.0
+OTU_0048	KKX58188  coded_by=236321..238804,organism=Pseudomonas putida,definition=arsenite oxidase large subunit	4e-128
+OTU_0055	KSV92920  coded_by=complement(45003..47468),organism=Sinorhizobium sp. GL28,definition=arsenite oxidase large subunit	4e-93
+OTU_0054	EFH10338  coded_by=complement(39493..42117),organism=Roseomonas cervicalis ATCC 49957,definition=arsenite oxidase	1e-78
+OTU_0053	OAF07781  coded_by=complement(88946..91465),organism=Bradyrhizobium sp. BR 10245,definition=arsenite oxidase large subunit	2e-88
+OTU_0052	OJX19890  coded_by=complement(16017..18479),organism=Devosia sp. 67-54,definition=arsenite oxidase large subunit	9e-129
+OTU_0057	ODT21655  coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	0.0
+OTU_0056	EHK52648  coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	1e-83

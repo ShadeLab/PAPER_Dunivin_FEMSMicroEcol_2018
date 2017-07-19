@@ -1,0 +1,9 @@
+OTU_0001	AMR33313  coded_by=complement(4345321..4346436),organism=Mucilaginibacter sp. PAMC 26640,definition=tetracycline resistance protein	3e-19
+OTU_0002	OCB75756  coded_by=complement(45250..46371),organism=Flavobacterium piscis,definition=tetracycline resistance protein	5e-41
+OTU_0003	KUJ62805  coded_by=156548..157666,organism=Flavobacteriaceae bacterium CRH,definition=tetracycline resistance protein	1e-33
+OTU_0004	KFF26726  coded_by=50445..51578,organism=Chryseobacterium piperi,definition=tetracycline resistance protein	5e-31
+OTU_0005	ANH83564  coded_by=5583470..5584600,organism=Niabella sp. BS26,definition=tetracycline resistance protein	1e-36
+OTU_0006	KFF26726  coded_by=50445..51578,organism=Chryseobacterium piperi,definition=tetracycline resistance protein	2e-42
+OTU_0007	KFF26726  coded_by=50445..51578,organism=Chryseobacterium piperi,definition=tetracycline resistance protein	2e-39
+OTU_0008	KMQ68303  coded_by=complement(1403..2539),organism=Chryseobacterium sp. FH2,definition=tetracycline resistance protein	8e-88
+OTU_0009	KMQ68303  coded_by=complement(1403..2539),organism=Chryseobacterium sp. FH2,definition=tetracycline resistance protein	7e-39

@@ -1,0 +1,719 @@
+OTU_0001	AIZ47734  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-55
+OTU_0002	ALE71908  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	8e-45
+OTU_0003	KRR11781  coded_by=29715..30122,organism=Bradyrhizobium valentinum,definition=arsenate reductase	1e-59
+OTU_0004	KFG70358  coded_by=complement(19170..19595),organism=Microvirga sp. BSC39,definition=arsenate reductase	1e-37
+OTU_0005	CCB66291  coded_by=2939094..2939507,organism=Hyphomicrobium sp. MC1,definition=arsenate reductase (glutaredoxin family)	2e-48
+OTU_0006	OBL12232  coded_by=9957..10301,organism=Mycobacterium sp. 1245499.0,definition=arsenate reductase (glutaredoxin)	4e-36
+OTU_0007	SFJ27075  coded_by=67950..68360,organism=Bradyrhizobium sp. cf659,definition=arsenate reductase	8e-33
+OTU_0008	AIZ47727  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-37
+OTU_0009	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	2e-69
+OTU_0010	EAR21304  coded_by=68293..68640,organism=Nitrococcus mobilis Nb-231,definition=Arsenate reductase	2e-22
+OTU_0011	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	6e-59
+OTU_0012	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	1e-37
+OTU_0013	AIZ47805  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-45
+OTU_0014	OAP37183  coded_by=194949..195380,organism=Sinorhizobium americanum,definition=arsenate reductase	1e-57
+OTU_0015	KFC64781  coded_by=complement(17412..17837),organism=Bosea sp. LC85,definition=Arsenate reductase	2e-37
+OTU_0017	KQO31306  coded_by=407161..407514,organism=Pseudomonas sp. Leaf83,definition=arsenate reductase	1e-39
+OTU_0016	ESW72941  coded_by=14481..14903,organism=Mesorhizobium sp. LSJC280B00,definition=arsenate reductase	3e-36
+OTU_0019	KSV92927  coded_by=52843..53274,organism=Sinorhizobium sp. GL28,definition=arsenate reductase	1e-43
+OTU_0018	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	3e-57
+OTU_0021	AAU91324  coded_by=2696984..2697334,organism=Methylococcus capsulatus str. Bath,definition=arsenate reductase	4e-51
+OTU_0020	KRP99231  coded_by=complement(296152..296553),organism=Bradyrhizobium yuanmingense,definition=arsenate reductase	4e-67
+OTU_0023	KFC64781  coded_by=complement(17412..17837),organism=Bosea sp. LC85,definition=Arsenate reductase	2e-32
+OTU_0022	ACL60553  coded_by=5832369..5832794,organism=Methylobacterium nodulans ORS 2060,definition=arsenate reductase	7e-47
+OTU_0025	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	5e-70
+OTU_0024	ABM15557  coded_by=5124655..5124996,organism=Mycobacterium vanbaalenii PYR-1,definition=arsenate reductase	2e-62
+OTU_0027	KWT95823  coded_by=complement(52463..52888),organism=Variovorax sp. WDL1,definition=Arsenate reductase	3e-38
+OTU_0026	SFN11287  coded_by=302389..302742,organism=Marinobacter pelagius,definition=arsenate reductase	2e-38
+OTU_0029	AIZ47825  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-34
+OTU_0028	OJU19757  coded_by=12103..12501,organism=Afipia sp. 62-7,definition=arsenate reductase (glutaredoxin)	2e-37
+OTU_0031	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	2e-49
+OTU_0030	KQY26513  coded_by=160151..160570,organism=Caulobacter sp. Root487D2Y,definition=arsenate reductase	8e-25
+OTU_0034	KQQ75035  coded_by=283505..283939,organism=Rhizobium sp. Leaf321,definition=arsenate reductase	3e-44
+OTU_0035	OJY41850  coded_by=300145..300561,organism=Rhizobiales bacterium 64-17,definition=arsenate reductase (glutaredoxin)	2e-48
+OTU_0032	OGI66597  coded_by=2212..2562,organism=Candidatus Muproteobacteria bacterium RBG_16_60_9,definition=arsenate reductase (glutaredoxin)	5e-26
+OTU_0033	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	1e-27
+OTU_0038	CAE27698  coded_by=115816..116244,organism=Rhodopseudomonas palustris CGA009,definition=arsenate reductase pump modifier	9e-56
+OTU_0039	CUA99705  coded_by=complement(61087..61512),organism=Thiomonas bhubaneswarensis,definition=arsenate reductase (glutaredoxin)	3e-46
+OTU_0036	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	4e-68
+OTU_0037	KPF94584  coded_by=3916..4341,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	4e-71
+OTU_0042	SFJ89255  coded_by=23736..24107,organism=Bradyrhizobium sp. Gha,definition=arsenate reductase	8e-36
+OTU_0043	GAU80160  coded_by=38874..39299,organism=Bosea sp. BIWAKO-01,definition=arsenate reductase	9e-63
+OTU_0040	ODU20412  coded_by=40639..41073,organism=Sphingomonas sp. SCN 67-18,definition=arsenate reductase (glutaredoxin)	3e-29
+OTU_0041	AJR22695  coded_by=353886..354317,organism=Sphingobium sp. YBL2,definition=arsenate reductase	1e-42
+OTU_0046	SIO71554  coded_by=3789796..3790155,organism=Burkholderia sp. GAS332,definition=arsenate reductase	7e-69
+OTU_0047	ONG55930  coded_by=29357..29782,organism=Roseomonas sp. M3,definition=arsenate reductase (glutaredoxin)	6e-40
+OTU_0044	ANB69820  coded_by=complement(3456404..3456754),organism=Aeromonas veronii,definition=arsenate reductase (glutaredoxin)	1e-20
+OTU_0045	ODU20412  coded_by=40639..41073,organism=Sphingomonas sp. SCN 67-18,definition=arsenate reductase (glutaredoxin)	4e-58
+OTU_0051	OCJ06652  coded_by=1397509..1397934,organism=Agrobacterium sp. 13-626,definition=arsenate reductase (glutaredoxin)	2e-50
+OTU_0050	OIZ76122  coded_by=32048..32404,organism=Mycobacterium heckeshornense,definition=arsenate reductase (glutaredoxin)	3e-45
+OTU_0049	ABD39042  coded_by=1..402,organism=Mesorhizobium loti,definition=arsenate reductase	9e-27
+OTU_0048	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	6e-53
+OTU_0055	KAK34985  coded_by=204812..205213,organism=Bradyrhizobium diazoefficiens SEMIA 5080,definition=arsenate reductase	2e-50
+OTU_0054	SEC25779  coded_by=complement(1377487..1377924),organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	5e-41
+OTU_0053	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	4e-28
+OTU_0052	AIZ47800  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	8e-43
+OTU_0059	OHC93305  coded_by=79954..80301,organism=Sphingomonadales bacterium RIFCSPHIGHO2_01_FULL_65_20,definition=arsenate reductase (glutaredoxin)	1e-25
+OTU_0058	KGT75522  coded_by=complement(419531..419941),organism=Bradyrhizobium japonicum,definition=arsenate reductase	1e-66
+OTU_0057	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-57
+OTU_0056	ABV25527  coded_by=complement(637..1047),organism=uncultured bacterium,definition=ArsC	5e-64
+OTU_0063	OBG42558  coded_by=1903..2250,organism=Mycobacterium sp. E2978,definition=arsenate reductase (glutaredoxin)	4e-59
+OTU_0062	KNY10954  coded_by=complement(181276..181701),organism=Achromobacter piechaudii,definition=arsenate reductase	3e-28
+OTU_0061	OBJ96727  coded_by=complement(10039..10383),organism=Mycobacterium sp. 1245852.3,definition=arsenate reductase (glutaredoxin)	2e-45
+OTU_0060	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	4e-50
+OTU_0068	AHY53281  coded_by=5381851..5382261,organism=Bradyrhizobium japonicum SEMIA 5079,definition=arsenate reductase	1e-62
+OTU_0069	OKO75242  coded_by=33931..34332,organism=Bradyrhizobium sp. AS23.2,definition=arsenate reductase	5e-41
+OTU_0070	SED16044  coded_by=4856418..4856843,organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	5e-31
+OTU_0071	CUU20306  coded_by=7002692..7003111,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041 CDS	3e-74
+OTU_0064	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	4e-45
+OTU_0065	KPD16005  coded_by=56404..56826,organism=Burkholderia sp. ST111,definition=arsenate reductase	4e-41
+OTU_0066	ETR79372  coded_by=33070..33495,organism=Afipia sp. P52-10,definition=arsenate reductase	2e-74
+OTU_0067	CEJ16142  coded_by=83827..84252,organism=bacterium YEK0313,definition=Arsenate reductase	2e-29
+OTU_0076	CAX17157  coded_by=complement(27786..28211),organism=Methylobacterium extorquens DM4,definition=arsenate reductase (glutaredoxin family)	2e-27
+OTU_0077	AEK63018  coded_by=complement(3747256..3747687),organism=Collimonas fungivorans Ter331,definition=Arsenate reductase	9e-57
+OTU_0078	KPF98221  coded_by=100357..100782,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	6e-26
+OTU_0079	ALE71924  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	4e-55
+OTU_0072	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	5e-51
+OTU_0073	OJY41850  coded_by=300145..300561,organism=Rhizobiales bacterium 64-17,definition=arsenate reductase (glutaredoxin)	5e-33
+OTU_0074	ALA20245  coded_by=473765..474190,organism=Chelatococcus sp. CO-6,definition=arsenate reductase	2e-33
+OTU_0075	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	5e-36
+OTU_0085	EQB01167  coded_by=31116..31565,organism=Sphingobium sp. HDIP04,definition=arsenate reductase	7e-45
+OTU_0084	AIZ47807  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-36
+OTU_0087	EHN63012  coded_by=complement(18857..19288),organism=Comamonas testosteroni ATCC 11996,definition=arsenate reductase	6e-61
+OTU_0086	KFG70358  coded_by=complement(19170..19595),organism=Microvirga sp. BSC39,definition=arsenate reductase	3e-32
+OTU_0081	AIZ47734  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	1e-43
+OTU_0080	KGH27058  coded_by=8483..8914,organism=Comamonas testosteroni,definition=arsenate reductase	2e-21
+OTU_0083	KTT23220  coded_by=complement(161765..162196),organism=Pseudacidovorax intermedius,definition=arsenate reductase	2e-41
+OTU_0082	KPF94584  coded_by=3916..4341,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	2e-57
+OTU_0093	AIZ47860  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	8e-41
+OTU_0092	SCY35092  coded_by=574560..574985,organism=Microvirga guangxiensis,definition=arsenate reductase	1e-40
+OTU_0095	SIO71554  coded_by=3789796..3790155,organism=Burkholderia sp. GAS332,definition=arsenate reductase	4e-75
+OTU_0094	AIZ47727  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-23
+OTU_0089	KQQ75035  coded_by=283505..283939,organism=Rhizobium sp. Leaf321,definition=arsenate reductase	1e-69
+OTU_0088	KEY60297  coded_by=13154..13507,organism=Serratia sp. DD3,definition=arsenate reductase	1e-20
+OTU_0091	BAL78111  coded_by=5026531..5026932,organism=Bradyrhizobium sp. S23321,definition=arsenate reductase	1e-36
+OTU_0090	EHM02458  coded_by=50036..50473,organism=Acetobacteraceae bacterium AT-5844,definition=arsenate reductase	5e-39
+OTU_0102	EJN07215  coded_by=20217..20627,organism=Bradyrhizobium sp. YR681,definition=glutaredoxin-dependent arsenate reductase	2e-35
+OTU_0103	BAV46814  coded_by=complement(1924303..1924725),organism=Mesorhizobium loti,definition=arsenate reductase	4e-43
+OTU_0100	KML47903  coded_by=103359..103718,organism=Burkholderia cepacia,definition=arsenate reductase	8e-44
+OTU_0101	AIZ47770  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	7e-51
+OTU_0098	CAE27698  coded_by=115816..116244,organism=Rhodopseudomonas palustris CGA009,definition=arsenate reductase pump modifier	4e-50
+OTU_0099	KIL98440  coded_by=complement(159122..159562),organism=Magnetospirillum magnetotacticum MS-1,definition=Arsenate reductase	1e-24
+OTU_0096	SDJ50707  coded_by=347892..348239,organism=Dyella jiangningensis,definition=arsenate reductase	1e-47
+OTU_0097	ABE35927  coded_by=complement(3362528..3362887),organism=Burkholderia xenovorans LB400,definition=Arsenate reductase	5e-39
+OTU_0110	SFJ27075  coded_by=67950..68360,organism=Bradyrhizobium sp. cf659,definition=arsenate reductase	8e-27
+OTU_0111	AKS30182  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-30
+OTU_0108	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	2e-40
+OTU_0109	SDG59447  coded_by=complement(462133..462558),organism=Bosea robiniae,definition=arsenate reductase	2e-34
+OTU_0106	AGU49097  coded_by=2110581..2111012,organism=Variovorax paradoxus B4,definition=arsenate reductase ArsC	5e-56
+OTU_0107	KAK43372  coded_by=complement(31757..32179),organism=Burkholderia sp. MP-1,definition=arsenate reductase	1e-43
+OTU_0104	CEJ15209  coded_by=352432..352857,organism=bacterium YEK0313,definition=Arsenate reductase	3e-38
+OTU_0105	OAP37183  coded_by=194949..195380,organism=Sinorhizobium americanum,definition=arsenate reductase	3e-60
+OTU_0119	SIO23581  coded_by=complement(1787664..1788086),organism=Paraburkholderia phenazinium,definition=arsenate reductase	4e-43
+OTU_0118	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	6e-38
+OTU_0117	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	1e-57
+OTU_0116	KYG21004  coded_by=2660892..2661293,organism=Bradyrhizobium sp. AT1,definition=arsenate reductase	8e-70
+OTU_0115	AOB31576  coded_by=complement(3144364..3144717),organism=Bordetella sp. H567,definition=arsenate reductase	7e-40
+OTU_0114	KGJ12750  coded_by=complement(183502..183927),organism=Paracoccus versutus,definition=arsenate reductase	1e-35
+OTU_0113	ACK49084  coded_by=94004..94429,organism=Methylocella silvestris BL2,definition=arsenate reductase	2e-58
+OTU_0112	KQN15337  coded_by=144211..144639,organism=Sphingomonas sp. Leaf28,definition=arsenate reductase	2e-26
+OTU_0127	SFJ27075  coded_by=67950..68360,organism=Bradyrhizobium sp. cf659,definition=arsenate reductase	1e-50
+OTU_0126	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	2e-30
+OTU_0125	OJU55790  coded_by=410..781,organism=Alphaproteobacteria bacterium 62-8,definition=arsenate reductase (glutaredoxin)	4e-45
+OTU_0124	OGI66597  coded_by=2212..2562,organism=Candidatus Muproteobacteria bacterium RBG_16_60_9,definition=arsenate reductase (glutaredoxin)	3e-57
+OTU_0123	SFU32102  coded_by=complement(323692..324150),organism=Polaromonas sp. YR568,definition=arsenate reductase	1e-27
+OTU_0122	AIZ47754  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	6e-54
+OTU_0121	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-42
+OTU_0120	AIZ47850  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-35
+OTU_0137	AIZ47806  coded_by=<1..>356,organism=uncultured bacterium,definition=arsenate reductase	9e-50
+OTU_0136	SIO71554  coded_by=3789796..3790155,organism=Burkholderia sp. GAS332,definition=arsenate reductase	3e-45
+OTU_0139	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	8e-33
+OTU_0138	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	3e-28
+OTU_0141	OFX09602  coded_by=638..979,organism=Alphaproteobacteria bacterium RIFOXYD12_FULL_60_8,definition=arsenate reductase (glutaredoxin)	7e-48
+OTU_0140	SFP53497  coded_by=52044..52454,organism=Bradyrhizobium sp. Ghvi,definition=arsenate reductase	8e-50
+OTU_0143	CCQ89509  coded_by=complement(39395..39742),organism=Nitrospina gracilis 3/211,definition=putative oxidoreductase	6e-24
+OTU_0142	EKS41638  coded_by=complement(766907..767311),organism=Afipia broomeae ATCC 49717,definition=arsenate reductase (glutaredoxin)	5e-31
+OTU_0129	CEJ15209  coded_by=352432..352857,organism=bacterium YEK0313,definition=Arsenate reductase	5e-34
+OTU_0128	BAI73396  coded_by=3177423..3177857,organism=Azospirillum sp. B510,definition=arsenate reductase	3e-31
+OTU_0131	SFP04179  coded_by=67153..67506,organism=Frateuria terrea,definition=arsenate reductase	4e-43
+OTU_0130	EAQ34274  coded_by=8748..9173,organism=Nitrobacter sp. Nb-311A,definition=arsenate reductase	5e-33
+OTU_0133	OBK34959  coded_by=complement(61316..61660),organism=Mycobacterium sp. 1245111.1,definition=arsenate reductase (glutaredoxin)	1e-37
+OTU_0132	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	6e-70
+OTU_0135	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	2e-57
+OTU_0134	ODB87456  coded_by=complement(134072..134437),organism=endosymbiont of Loripes lucinalis,definition=arsenate reductase (glutaredoxin)	5e-50
+OTU_0152	CUT10526  coded_by=1666120..1666521,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041	3e-52
+OTU_0153	ODV42113  coded_by=complement(6705..7127),organism=Cupriavidus sp. UYMMa02A,definition=arsenate reductase	2e-24
+OTU_0154	ODU20412  coded_by=40639..41073,organism=Sphingomonas sp. SCN 67-18,definition=arsenate reductase (glutaredoxin)	1e-27
+OTU_0155	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	1e-46
+OTU_0156	EHK55682  coded_by=complement(7601..8023),organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenate reductase	3e-69
+OTU_0157	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	1e-47
+OTU_0158	OJU58181  coded_by=21497..21940,organism=Alphaproteobacteria bacterium 62-8,definition=arsenate reductase (glutaredoxin)	2e-46
+OTU_0159	AKS30165  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	4e-36
+OTU_0144	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	3e-62
+OTU_0145	GAO72660  coded_by=complement(43386..43817),organism=Comamonas sp. E6,definition=arsenate reductase	3e-58
+OTU_0146	ACK49084  coded_by=94004..94429,organism=Methylocella silvestris BL2,definition=arsenate reductase	1e-54
+OTU_0147	KRE00809  coded_by=213966..214391,organism=Bosea sp. Root670,definition=arsenate reductase	3e-33
+OTU_0148	AOR80263  coded_by=89671..90102,organism=Novosphingobium resinovorum,definition=arsenate reductase (glutaredoxin)	2e-35
+OTU_0149	CUA99705  coded_by=complement(61087..61512),organism=Thiomonas bhubaneswarensis,definition=arsenate reductase (glutaredoxin)	4e-27
+OTU_0150	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	1e-38
+OTU_0151	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	5e-29
+OTU_0171	OJW94523  coded_by=290167..290589,organism=Burkholderiales bacterium 67-32,definition=arsenate reductase (glutaredoxin)	3e-26
+OTU_0170	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	1e-33
+OTU_0169	OJY11240  coded_by=complement(395571..395999),organism=Rhizobiales bacterium 62-47,definition=arsenate reductase (glutaredoxin)	5e-44
+OTU_0168	OCK56675  coded_by=198516..198923,organism=Bradyrhizobium sp. LMTR 3,definition=arsenate reductase (glutaredoxin)	1e-44
+OTU_0175	ODU20412  coded_by=40639..41073,organism=Sphingomonas sp. SCN 67-18,definition=arsenate reductase (glutaredoxin)	5e-33
+OTU_0174	AIZ47805  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	7e-50
+OTU_0173	OAP36484  coded_by=complement(292527..292958),organism=Ensifer glycinis,definition=arsenate reductase	4e-65
+OTU_0172	EAQ34274  coded_by=8748..9173,organism=Nitrobacter sp. Nb-311A,definition=arsenate reductase	5e-68
+OTU_0163	SED21922  coded_by=complement(5037384..5037734),organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	2e-47
+OTU_0162	AKB90510  coded_by=673..1107,organism=Ochrobactrum tritici,definition=arsenate reductase	1e-32
+OTU_0161	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	3e-56
+OTU_0160	SEB83117  coded_by=complement(471874..472296),organism=Burkholderia sp. WP9,definition=arsenate reductase	1e-33
+OTU_0167	AIZ47805  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-30
+OTU_0166	CQD20019  coded_by=5069334..5069681,organism=Mycobacterium lentiflavum,definition=arsenate reductase	5e-67
+OTU_0165	OHB28841  coded_by=complement(47139..47489),organism=Phenylobacterium sp. RIFCSPHIGHO2_01_FULL_69_31,definition=arsenate reductase (glutaredoxin)	4e-26
+OTU_0164	AJZ62632  coded_by=1680520..1680903,organism=Burkholderia fungorum,definition=arsenate reductase	4e-32
+OTU_0186	ALC14753  coded_by=183304..183732,organism=Sphingopyxis sp. 113P3,definition=arsenate reductase	7e-25
+OTU_0187	KPD16005  coded_by=56404..56826,organism=Burkholderia sp. ST111,definition=arsenate reductase	2e-35
+OTU_0184	AKS30182  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	6e-55
+OTU_0185	ETR79372  coded_by=33070..33495,organism=Afipia sp. P52-10,definition=arsenate reductase	7e-74
+OTU_0190	KSV92927  coded_by=52843..53274,organism=Sinorhizobium sp. GL28,definition=arsenate reductase	2e-32
+OTU_0191	AKZ61533  coded_by=complement(344131..344490),organism=Herbaspirillum hiltneri N3,definition=arsenate reductase	2e-23
+OTU_0188	OJW72047  coded_by=complement(16046..16468),organism=Sphingomonadales bacterium 63-6,definition=arsenate reductase (glutaredoxin)	6e-51
+OTU_0189	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	3e-61
+OTU_0178	AKS30182  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	1e-41
+OTU_0179	AIZ47754  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-43
+OTU_0176	OAP37183  coded_by=194949..195380,organism=Sinorhizobium americanum,definition=arsenate reductase	2e-42
+OTU_0177	KUR73316  coded_by=49260..49694,organism=Novosphingobium sp. FSW06-99,definition=arsenate reductase	1e-26
+OTU_0182	SFP53497  coded_by=52044..52454,organism=Bradyrhizobium sp. Ghvi,definition=arsenate reductase	3e-32
+OTU_0183	OJY41850  coded_by=300145..300561,organism=Rhizobiales bacterium 64-17,definition=arsenate reductase (glutaredoxin)	4e-42
+OTU_0180	AIZ47799  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	1e-45
+OTU_0181	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	2e-54
+OTU_0205	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	2e-41
+OTU_0204	ADN60695  coded_by=1453812..1454171,organism=Burkholderia sp. CCGE1003,definition=arsenate reductase	1e-18
+OTU_0207	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	7e-56
+OTU_0206	AIZ47747  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-25
+OTU_0201	AKS30152  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-60
+OTU_0200	EHM02458  coded_by=50036..50473,organism=Acetobacteraceae bacterium AT-5844,definition=arsenate reductase	1e-50
+OTU_0203	ABD39042  coded_by=1..402,organism=Mesorhizobium loti,definition=arsenate reductase	5e-63
+OTU_0202	ALE71912  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	4e-47
+OTU_0197	AIZ47770  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	4e-34
+OTU_0196	KRR11781  coded_by=29715..30122,organism=Bradyrhizobium valentinum,definition=arsenate reductase	5e-60
+OTU_0199	AIZ47815  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	4e-39
+OTU_0198	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	2e-50
+OTU_0193	KQT13209  coded_by=111858..112337,organism=Ramlibacter sp. Leaf400,definition=arsenate reductase	1e-37
+OTU_0192	EKM98158  coded_by=9948..10376,organism=Acidocella sp. MX-AZ02,definition=arsenate reductase	4e-34
+OTU_0195	KQQ75035  coded_by=283505..283939,organism=Rhizobium sp. Leaf321,definition=arsenate reductase	3e-68
+OTU_0194	KPD16005  coded_by=56404..56826,organism=Burkholderia sp. ST111,definition=arsenate reductase	3e-58
+OTU_0220	ALE71912  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	8e-35
+OTU_0221	AIZ47817  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	7e-34
+OTU_0222	KFC64781  coded_by=complement(17412..17837),organism=Bosea sp. LC85,definition=Arsenate reductase	7e-63
+OTU_0223	OJU19757  coded_by=12103..12501,organism=Afipia sp. 62-7,definition=arsenate reductase (glutaredoxin)	2e-33
+OTU_0216	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	5e-60
+OTU_0217	KLU27724  coded_by=23940..24365,organism=Burkholderia glathei PML1(12),definition=arsenate reductase	1e-35
+OTU_0218	SDG59447  coded_by=complement(462133..462558),organism=Bosea robiniae,definition=arsenate reductase	3e-22
+OTU_0219	ETR79372  coded_by=33070..33495,organism=Afipia sp. P52-10,definition=arsenate reductase	7e-56
+OTU_0212	ABD39042  coded_by=1..402,organism=Mesorhizobium loti,definition=arsenate reductase	6e-27
+OTU_0213	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	3e-61
+OTU_0214	AIZ47800  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	9e-55
+OTU_0215	SCY92665  coded_by=16314..16739,organism=Microvirga guangxiensis,definition=arsenate reductase	3e-24
+OTU_0208	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	1e-47
+OTU_0209	AGK17584  coded_by=complement(3174283..3174705),organism=Azotobacter vinelandii CA6,definition=arsenate reductase	6e-38
+OTU_0210	ODT61804  coded_by=611..970,organism=Phenylobacterium sp. SCN 69-14,definition=arsenate reductase (glutaredoxin)	2e-53
+OTU_0211	KXJ40328  coded_by=145934..146290,organism=Methylothermaceae bacteria B42,definition=arsenate reductase	1e-25
+OTU_0239	AMY01481  coded_by=complement(4206530..4206952),organism=Mesorhizobium ciceri biovar biserrulae,definition=arsenate reductase	2e-36
+OTU_0238	ODV42113  coded_by=complement(6705..7127),organism=Cupriavidus sp. UYMMa02A,definition=arsenate reductase	7e-32
+OTU_0237	AJZ62632  coded_by=1680520..1680903,organism=Burkholderia fungorum,definition=arsenate reductase	4e-35
+OTU_0236	OJW30458  coded_by=complement(22054..22470),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	4e-47
+OTU_0235	KKW91626  coded_by=complement(316507..316932),organism=Sphingobium chungbukense,definition=arsenate reductase	9e-38
+OTU_0234	AIZ47734  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	1e-45
+OTU_0233	SCY92665  coded_by=16314..16739,organism=Microvirga guangxiensis,definition=arsenate reductase	5e-52
+OTU_0232	ABV25527  coded_by=complement(637..1047),organism=uncultured bacterium,definition=ArsC	8e-34
+OTU_0231	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	1e-27
+OTU_0230	EKV32376  coded_by=complement(129422..129772),organism=Caenispirillum salinarum AK4,definition=Arsenate reductase	3e-36
+OTU_0229	KRA65197  coded_by=complement(26785..27219),organism=Rhizobium sp. Root651,definition=arsenate reductase	2e-52
+OTU_0228	SFB36949  coded_by=complement(43202..43630),organism=Rhizobium sp. NFR07,definition=arsenate reductase	3e-37
+OTU_0227	ODU20412  coded_by=40639..41073,organism=Sphingomonas sp. SCN 67-18,definition=arsenate reductase (glutaredoxin)	4e-36
+OTU_0226	CBS90475  coded_by=63127..63561,organism=Azospirillum lipoferum 4B,definition=arsenate reductase (Arsenical pump modifier)	4e-63
+OTU_0225	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	4e-41
+OTU_0224	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	1e-25
+OTU_0254	OAJ53932  coded_by=249605..249964,organism=Burkholderia panaciterrae,definition=arsenate reductase (glutaredoxin)	3e-43
+OTU_0255	SFU19418  coded_by=57088..57510,organism=Paraburkholderia aspalathi,definition=arsenate reductase	3e-28
+OTU_0252	SFY46130  coded_by=complement(33688..34047),organism=Burkholderia sp. NFPP32,definition=arsenate reductase	1e-34
+OTU_0253	CUU20306  coded_by=7002692..7003111,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041 CDS	5e-47
+OTU_0250	KAK34985  coded_by=204812..205213,organism=Bradyrhizobium diazoefficiens SEMIA 5080,definition=arsenate reductase	2e-32
+OTU_0251	EFI53130  coded_by=1128507..1128932,organism=Afipia sp. 1NLS2,definition=arsenate reductase	8e-28
+OTU_0248	ODR13288  coded_by=53384..53728,organism=Mycobacterium shimoidei,definition=arsenate reductase (glutaredoxin)	2e-36
+OTU_0249	CUU20306  coded_by=7002692..7003111,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041 CDS	2e-65
+OTU_0246	CUU20306  coded_by=7002692..7003111,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041 CDS	8e-48
+OTU_0247	AIZ47800  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	1e-37
+OTU_0244	EFI61188  coded_by=complement(60095..60526),organism=Comamonas testosteroni S44,definition=arsenate reductase	1e-39
+OTU_0245	OHV88699  coded_by=39291..39704,organism=Mesorhizobium sp. ORS3428,definition=arsenate reductase (glutaredoxin)	1e-31
+OTU_0242	ALE71908  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	5e-54
+OTU_0243	EID10166  coded_by=complement(292906..293262),organism=Mycobacterium xenopi RIVM700367,definition=arsenate reductase	8e-69
+OTU_0240	ESZ08700  coded_by=complement(92195..92617),organism=Mesorhizobium sp. L2C089B000,definition=arsenate reductase	3e-34
+OTU_0241	AIZ47860  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	7e-42
+OTU_0275	OJU91672  coded_by=complement(15458..15889),organism=Burkholderiales bacterium 66-5,definition=arsenate reductase (glutaredoxin)	4e-50
+OTU_0274	AIZ47825  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	7e-50
+OTU_0273	EHA66536  coded_by=complement(463294..463638),organism=Rhodanobacter sp. 2APBS1,definition=arsenate reductase	1e-21
+OTU_0272	ONH84234  coded_by=complement(30724..31146),organism=Roseomonas mucosa,definition=arsenate reductase (glutaredoxin)	2e-21
+OTU_0279	KWF83417  coded_by=complement(78906..79328),organism=Burkholderia cepacia,definition=arsenate reductase	1e-37
+OTU_0278	OJU55790  coded_by=410..781,organism=Alphaproteobacteria bacterium 62-8,definition=arsenate reductase (glutaredoxin)	3e-37
+OTU_0277	KRB46706  coded_by=190838..191197,organism=Phenylobacterium sp. Root700,definition=arsenate reductase	1e-22
+OTU_0276	KXU88233  coded_by=complement(8169..8528),organism=Burkholderia monticola,definition=arsenate reductase	1e-33
+OTU_0283	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	5e-32
+OTU_0282	KXJ40328  coded_by=145934..146290,organism=Methylothermaceae bacteria B42,definition=arsenate reductase	2e-45
+OTU_0281	ALE71921  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	5e-27
+OTU_0280	CEF26611  coded_by=complement(1663119..1663532),organism=Pseudomonas sp. 12M76_air,definition=arsenate reductase	4e-25
+OTU_0287	AKU13754  coded_by=4312406..4312765,organism=Azoarcus sp. CIB,definition=arsenate reductase	4e-26
+OTU_0286	AME22876  coded_by=562096..562521,organism=Burkholderia sp. PAMC 26561,definition=arsenate reductase	2e-25
+OTU_0285	OAN66695  coded_by=252540..252968,organism=Sphingomonas sp. TDK1,definition=arsenate reductase (glutaredoxin)	1e-45
+OTU_0284	EXS70602  coded_by=14246..14674,organism=Sphingobium sp. Ant17,definition=arsenate reductase	4e-38
+OTU_0258	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	1e-30
+OTU_0259	KFG70358  coded_by=complement(19170..19595),organism=Microvirga sp. BSC39,definition=arsenate reductase	6e-44
+OTU_0256	AKS30151  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-24
+OTU_0257	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	1e-29
+OTU_0262	OGI66597  coded_by=2212..2562,organism=Candidatus Muproteobacteria bacterium RBG_16_60_9,definition=arsenate reductase (glutaredoxin)	1e-54
+OTU_0263	KXJ40328  coded_by=145934..146290,organism=Methylothermaceae bacteria B42,definition=arsenate reductase	6e-23
+OTU_0260	KRQ08190  coded_by=80660..81070,organism=Bradyrhizobium manausense,definition=arsenate reductase	5e-41
+OTU_0261	KRB85670  coded_by=complement(541050..541460),organism=Sphingomonas sp. Root710,definition=arsenate reductase	3e-35
+OTU_0266	AKX52311  coded_by=105694..106047,organism=Pseudomonadaceae bacterium D3318,definition=arsenate reductase	3e-23
+OTU_0267	AMT97077  coded_by=complement(1819019..1819426),organism=Psychrobacter alimentarius,definition=Arsenate reductase	3e-23
+OTU_0264	AGK17584  coded_by=complement(3174283..3174705),organism=Azotobacter vinelandii CA6,definition=arsenate reductase	2e-27
+OTU_0265	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	5e-32
+OTU_0270	SDD95858  coded_by=complement(65914..66351),organism=Belnapia rosea,definition=arsenate reductase	9e-23
+OTU_0271	KMS58887  coded_by=11520..11939,organism=Novosphingobium barchaimii LL02,definition=arsenate reductase	9e-25
+OTU_0268	SFV28096  coded_by=complement(939657..940070),organism=Hyphomicrobium facile,definition=arsenate reductase	2e-66
+OTU_0269	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	9e-47
+OTU_0305	CCP10171  coded_by=7058..7474,organism=Stenotrophomonas maltophilia SKK35,definition=arsenate reductase	5e-22
+OTU_0304	SAI72691  coded_by=complement(3609736..3610095),organism=Bordetella trematum,definition=arsenate reductase	1e-27
+OTU_0307	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	6e-48
+OTU_0306	SDM52288  coded_by=51970..52392,organism=Alicycliphilus sp. EPL6,definition=arsenate reductase	1e-26
+OTU_0309	KJN31893  coded_by=12378..12734,organism=Enterobacter cloacae complex sp. 35699,definition=arsenate reductase	2e-31
+OTU_0308	AHN75981  coded_by=194558..194914,organism=Pandoraea pnomenusa,definition=arsenate reductase	2e-40
+OTU_0311	KIH82277  coded_by=complement(39021..39374),organism=Pseudomonas batumici,definition=Arsenate reductase	2e-44
+OTU_0310	KQT88454  coded_by=complement(739017..739430),organism=Aurantimonas sp. Leaf443,definition=arsenate reductase	5e-29
+OTU_0313	KQW36878  coded_by=1254415..1254873,organism=Rhizobacter sp. Root404,definition=arsenate reductase	3e-31
+OTU_0312	OIQ67620  coded_by=complement(592..948),organism=mine drainage metagenome,definition=arsenate reductase	9e-31
+OTU_0315	GAO72660  coded_by=complement(43386..43817),organism=Comamonas sp. E6,definition=arsenate reductase	2e-35
+OTU_0314	AKS30203  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	9e-34
+OTU_0317	SAI72691  coded_by=complement(3609736..3610095),organism=Bordetella trematum,definition=arsenate reductase	8e-21
+OTU_0316	OJW30458  coded_by=complement(22054..22470),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	5e-31
+OTU_0319	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	7e-27
+OTU_0318	OLO06881  coded_by=complement(10381..10797),organism=Salinicola sp. MH3R3-1,definition=arsenate reductase (glutaredoxin)	3e-40
+OTU_0288	ADJ25037  coded_by=3318854..3319225,organism=Hyphomicrobium denitrificans ATCC 51888,definition=arsenate reductase	9e-29
+OTU_0289	AMO69226  coded_by=complement(3011124..3011477),organism=Zhongshania aliphaticivorans,definition=arsenate reductase	7e-27
+OTU_0290	KQT22804  coded_by=complement(102038..102463),organism=Bradyrhizobium sp. Leaf396,definition=arsenate reductase	3e-22
+OTU_0291	BAI73396  coded_by=3177423..3177857,organism=Azospirillum sp. B510,definition=arsenate reductase	2e-39
+OTU_0292	SDJ60067  coded_by=357886..358230,organism=Microbulbifer yueqingensis,definition=arsenate reductase	4e-24
+OTU_0293	KQQ91508  coded_by=complement(31844..32257),organism=Aureimonas sp. Leaf324,definition=arsenate reductase	7e-31
+OTU_0294	SDW82896  coded_by=390838..391269,organism=Variovorax sp. YR634,definition=arsenate reductase	4e-40
+OTU_0295	SDJ60067  coded_by=357886..358230,organism=Microbulbifer yueqingensis,definition=arsenate reductase	2e-25
+OTU_0296	SEC24676  coded_by=2234720..2235154,organism=Rhodobacter sp. 24-YEA-8,definition=arsenate reductase	4e-28
+OTU_0297	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	4e-30
+OTU_0298	AKS30186  coded_by=<1..>354,organism=uncultured bacterium,definition=arsenate reductase	5e-43
+OTU_0299	CBS90475  coded_by=63127..63561,organism=Azospirillum lipoferum 4B,definition=arsenate reductase (Arsenical pump modifier)	1e-56
+OTU_0300	ABS30734  coded_by=<1..>332,organism=Acidocella sp. MM9,definition=arsenate reductase	2e-37
+OTU_0301	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	1e-31
+OTU_0302	EHM02458  coded_by=50036..50473,organism=Acetobacteraceae bacterium AT-5844,definition=arsenate reductase	6e-33
+OTU_0303	OFS97341  coded_by=11368..11721,organism=Stenotrophomonas sp. HMSC10F06,definition=arsenate reductase (glutaredoxin)	6e-39
+OTU_0343	SED21922  coded_by=complement(5037384..5037734),organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	4e-24
+OTU_0342	OAN66695  coded_by=252540..252968,organism=Sphingomonas sp. TDK1,definition=arsenate reductase (glutaredoxin)	7e-52
+OTU_0341	KQV10378  coded_by=complement(11442..11846),organism=Rhizobium sp. Root1203,definition=arsenate reductase	8e-30
+OTU_0340	ALE71901  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-42
+OTU_0339	KRC81041  coded_by=complement(205338..205745),organism=Sphingomonas sp. Root241,definition=arsenate reductase	8e-47
+OTU_0338	AIZ47787  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	5e-28
+OTU_0337	ALL13228  coded_by=complement(1646256..1646672),organism=Caulobacter henricii,definition=arsenate reductase	6e-21
+OTU_0336	KGM33741  coded_by=6570..6992,organism=Inquilinus limosus MP06,definition=arsenate reductase	3e-39
+OTU_0351	SCY35092  coded_by=574560..574985,organism=Microvirga guangxiensis,definition=arsenate reductase	2e-43
+OTU_0350	KRA65197  coded_by=complement(26785..27219),organism=Rhizobium sp. Root651,definition=arsenate reductase	1e-28
+OTU_0349	AIZ47815  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	7e-37
+OTU_0348	AHX12984  coded_by=complement(1427270..1427617),organism=Dyella jiangningensis,definition=arsenate reductase	6e-24
+OTU_0347	KQT88454  coded_by=complement(739017..739430),organism=Aurantimonas sp. Leaf443,definition=arsenate reductase	5e-35
+OTU_0346	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	2e-37
+OTU_0345	KTT23220  coded_by=complement(161765..162196),organism=Pseudacidovorax intermedius,definition=arsenate reductase	1e-28
+OTU_0344	OAF07780  coded_by=88441..88842,organism=Bradyrhizobium sp. BR 10245,definition=arsenate reductase	1e-52
+OTU_0326	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	6e-27
+OTU_0327	SFF75768  coded_by=23088..23513,organism=Methylobacterium sp. yr596,definition=arsenate reductase	1e-41
+OTU_0324	KPD16005  coded_by=56404..56826,organism=Burkholderia sp. ST111,definition=arsenate reductase	5e-36
+OTU_0325	ODB87456  coded_by=complement(134072..134437),organism=endosymbiont of Loripes lucinalis,definition=arsenate reductase (glutaredoxin)	1e-25
+OTU_0322	ACA14312  coded_by=complement(5331..5738),organism=uncultured bacterium,definition=arsenate reductase	2e-40
+OTU_0323	EIZ87219  coded_by=complement(53510..53935),organism=Methylobacterium sp. GXF4,definition=ArsC protein	5e-24
+OTU_0320	OBQ73372  coded_by=complement(107679..108101),organism=Mesorhizobium loti,definition=arsenate reductase (glutaredoxin)	3e-36
+OTU_0321	EHM02458  coded_by=50036..50473,organism=Acetobacteraceae bacterium AT-5844,definition=arsenate reductase	2e-30
+OTU_0334	OHT21702  coded_by=complement(3928971..3929402),organism=Sphingomonas haloaromaticamans,definition=Arsenate reductase	4e-27
+OTU_0335	BAE50635  coded_by=1970075..1970503,organism=Magnetospirillum magneticum AMB-1,definition=Arsenate reductase and related protein	3e-33
+OTU_0332	ONF42440  coded_by=58621..58974,organism=Marinobacter lutaoensis,definition=arsenate reductase (glutaredoxin)	4e-48
+OTU_0333	EAU53465  coded_by=complement(18383..18727),organism=Mariprofundus ferrooxydans PV-1,definition=arsenate reductase	6e-27
+OTU_0330	SDE95880  coded_by=complement(529156..529509),organism=Pseudomonas seleniipraecipitans,definition=arsenate reductase	3e-41
+OTU_0331	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	2e-38
+OTU_0328	OKH85286  coded_by=complement(113021..113359),organism=Mycobacterium sp. ST-F2,definition=arsenate reductase	1e-47
+OTU_0329	OJU55790  coded_by=410..781,organism=Alphaproteobacteria bacterium 62-8,definition=arsenate reductase (glutaredoxin)	1e-46
+OTU_0373	SFJ27075  coded_by=67950..68360,organism=Bradyrhizobium sp. cf659,definition=arsenate reductase	9e-44
+OTU_0372	EZP69792  coded_by=complement(15536..15970),organism=Sphingomonas paucimobilis,definition=Arsenate reductase	4e-36
+OTU_0375	ENO82238  coded_by=32923..33345,organism=Thauera sp. 27,definition=arsenate reductase	1e-26
+OTU_0374	AOG01777  coded_by=3586433..3586780,organism=Blastomonas sp. RAC04,definition=arsenate reductase	4e-21
+OTU_0369	ALE71924  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-21
+OTU_0368	OCJ11991  coded_by=complement(547907..548329),organism=Rhizobium sp. AC27/96,definition=arsenate reductase (glutaredoxin)	6e-39
+OTU_0371	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	3e-64
+OTU_0370	AIZ47809  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-24
+OTU_0381	KRC81041  coded_by=complement(205338..205745),organism=Sphingomonas sp. Root241,definition=arsenate reductase	4e-28
+OTU_0380	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	2e-29
+OTU_0383	ODT61804  coded_by=611..970,organism=Phenylobacterium sp. SCN 69-14,definition=arsenate reductase (glutaredoxin)	7e-25
+OTU_0382	OHB28841  coded_by=complement(47139..47489),organism=Phenylobacterium sp. RIFCSPHIGHO2_01_FULL_69_31,definition=arsenate reductase (glutaredoxin)	6e-24
+OTU_0377	SCK59081  coded_by=6609402..6609818,organism=Variovorax sp. HW608,definition=arsenate reductase	3e-37
+OTU_0376	EHK55682  coded_by=complement(7601..8023),organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenate reductase	7e-55
+OTU_0379	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	4e-23
+OTU_0378	SFU19418  coded_by=57088..57510,organism=Paraburkholderia aspalathi,definition=arsenate reductase	4e-36
+OTU_0356	EFI61188  coded_by=complement(60095..60526),organism=Comamonas testosteroni S44,definition=arsenate reductase	9e-37
+OTU_0357	KRA51072  coded_by=complement(210356..210775),organism=Pseudoxanthomonas sp. Root65,definition=arsenate reductase	7e-31
+OTU_0358	EIM97505  coded_by=750..1172,organism=Burkholderia terrae BS001,definition=arsenate reductase	2e-28
+OTU_0359	OHC93305  coded_by=79954..80301,organism=Sphingomonadales bacterium RIFCSPHIGHO2_01_FULL_65_20,definition=arsenate reductase (glutaredoxin)	1e-28
+OTU_0352	AKS30155  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-37
+OTU_0353	EHK55682  coded_by=complement(7601..8023),organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenate reductase	4e-28
+OTU_0354	AIZ47825  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-41
+OTU_0355	EDQ03399  coded_by=complement(1969..2391),organism=Oceanibulbus indolifex HEL-45,definition=arsenate reductase	1e-31
+OTU_0364	ABM37889  coded_by=complement(2720305..2720736),organism=Polaromonas naphthalenivorans CJ2,definition=arsenate reductase	1e-28
+OTU_0365	SED21922  coded_by=complement(5037384..5037734),organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	1e-29
+OTU_0366	KQX39968  coded_by=173849..174271,organism=Devosia sp. Root436,definition=arsenate reductase	3e-53
+OTU_0367	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	3e-56
+OTU_0360	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	3e-60
+OTU_0361	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	2e-40
+OTU_0362	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	3e-43
+OTU_0363	EEA00216  coded_by=22562..22921,organism=Burkholderia sp. H160,definition=arsenate reductase	7e-34
+OTU_0410	KQQ35359  coded_by=complement(733782..734216),organism=Rhizobium sp. Leaf306,definition=arsenate reductase	1e-35
+OTU_0411	ABS30734  coded_by=<1..>332,organism=Acidocella sp. MM9,definition=arsenate reductase	6e-33
+OTU_0408	AGU49195  coded_by=complement(2215134..2215583),organism=Variovorax paradoxus B4,definition=putative arsenate reductase ArsC	2e-38
+OTU_0409	ODT61804  coded_by=611..970,organism=Phenylobacterium sp. SCN 69-14,definition=arsenate reductase (glutaredoxin)	5e-26
+OTU_0414	KSB87562  coded_by=7321..7704,organism=Caulobacter vibrioides,definition=arsenate reductase	4e-25
+OTU_0415	EKS41638  coded_by=complement(766907..767311),organism=Afipia broomeae ATCC 49717,definition=arsenate reductase (glutaredoxin)	3e-33
+OTU_0412	EWY38392  coded_by=21059..21481,organism=Skermanella stibiiresistens SB22,definition=arsenate reductase	3e-36
+OTU_0413	AIZ47752  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	5e-30
+OTU_0402	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	1e-35
+OTU_0403	AMS43317  coded_by=4501607..4502029,organism=Aminobacter aminovorans,definition=Arsenate reductase	2e-66
+OTU_0400	KQU83210  coded_by=109241..109663,organism=Mesorhizobium sp. Root102,definition=arsenate reductase	3e-31
+OTU_0401	AJP71695  coded_by=1742734..1743165,organism=Sphingomonas sp. WHSC-8,definition=arsenate reductase	6e-24
+OTU_0406	AAU91324  coded_by=2696984..2697334,organism=Methylococcus capsulatus str. Bath,definition=arsenate reductase	2e-55
+OTU_0407	EKM98158  coded_by=9948..10376,organism=Acidocella sp. MX-AZ02,definition=arsenate reductase	4e-26
+OTU_0404	KSB87562  coded_by=7321..7704,organism=Caulobacter vibrioides,definition=arsenate reductase	1e-41
+OTU_0405	KTC56186  coded_by=12895..13317,organism=Pseudomonas syringae ICMP 19498,definition=arsenate reductase	5e-30
+OTU_0395	ABQ32002  coded_by=3079827..3080249,organism=Acidiphilium cryptum JF-5,definition=arsenate reductase	6e-46
+OTU_0394	BAL78111  coded_by=5026531..5026932,organism=Bradyrhizobium sp. S23321,definition=arsenate reductase	5e-38
+OTU_0393	ACS61948  coded_by=complement(683641..684063),organism=Ralstonia pickettii 12D,definition=arsenate reductase	2e-34
+OTU_0392	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	9e-31
+OTU_0399	OCJ17489  coded_by=129792..130196,organism=Rhizobium sp. AC44/96,definition=arsenate reductase (glutaredoxin)	2e-34
+OTU_0398	OJY41850  coded_by=300145..300561,organism=Rhizobiales bacterium 64-17,definition=arsenate reductase (glutaredoxin)	2e-36
+OTU_0397	KQT08318  coded_by=217536..217937,organism=Bradyrhizobium sp. Leaf396,definition=arsenate reductase	6e-52
+OTU_0396	SDJ60067  coded_by=357886..358230,organism=Microbulbifer yueqingensis,definition=arsenate reductase	6e-37
+OTU_0387	ACY33255  coded_by=2873600..2874031,organism=Comamonas testosteroni CNB-2,definition=arsenate reductase	2e-49
+OTU_0386	SAI72691  coded_by=complement(3609736..3610095),organism=Bordetella trematum,definition=arsenate reductase	8e-44
+OTU_0385	OJY97707  coded_by=complement(181455..181805),organism=Xanthomonadales bacterium 63-13,definition=arsenate reductase (glutaredoxin)	1e-26
+OTU_0384	EAU41847  coded_by=411842..412258,organism=Fulvimarina pelagi HTCC2506,definition=arsenate reductase	4e-28
+OTU_0391	ETI63495  coded_by=5684..6118,organism=Sphingobium sp. C100,definition=arsenate reductase	6e-49
+OTU_0390	OMC52325  coded_by=31890..32252,organism=Mycobacterium fortuitum,definition=arsenate reductase (glutaredoxin)	1e-37
+OTU_0389	SFD18984  coded_by=complement(251784..252134),organism=Thiohalospira halophila DSM 15071,definition=arsenate reductase	3e-43
+OTU_0388	AIJ45819  coded_by=1815498..1815920,organism=Comamonas testosteroni TK102,definition=arsenate reductase	4e-30
+OTU_0440	SCY92665  coded_by=16314..16739,organism=Microvirga guangxiensis,definition=arsenate reductase	4e-23
+OTU_0441	ACY33255  coded_by=2873600..2874031,organism=Comamonas testosteroni CNB-2,definition=arsenate reductase	3e-53
+OTU_0442	AJZ62632  coded_by=1680520..1680903,organism=Burkholderia fungorum,definition=arsenate reductase	9e-20
+OTU_0443	OJW64494  coded_by=227072..227425,organism=Afipia sp. 64-13,definition=arsenate reductase (glutaredoxin)	5e-55
+OTU_0444	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	4e-50
+OTU_0445	AKS30178  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	9e-26
+OTU_0446	OJU91672  coded_by=complement(15458..15889),organism=Burkholderiales bacterium 66-5,definition=arsenate reductase (glutaredoxin)	1e-36
+OTU_0447	KRB85670  coded_by=complement(541050..541460),organism=Sphingomonas sp. Root710,definition=arsenate reductase	2e-27
+OTU_0432	ABM06243  coded_by=complement(69047..69403),organism=Comamonas testosteroni CNB-1,definition=putative arsenate reductase	2e-40
+OTU_0433	KPF89869  coded_by=40030..40440,organism=Novosphingobium sp. AAP93,definition=arsenate reductase	4e-21
+OTU_0434	KSV92927  coded_by=52843..53274,organism=Sinorhizobium sp. GL28,definition=arsenate reductase	1e-29
+OTU_0435	OJW27729  coded_by=complement(56438..56860),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	5e-20
+OTU_0436	ADP72711  coded_by=3843047..3843454,organism=Rhodomicrobium vannielii ATCC 17100,definition=arsenate reductase	5e-58
+OTU_0437	ANB75245  coded_by=complement(573879..574301),organism=Burkholderia sp. OLGA172,definition=arsenate reductase	1e-36
+OTU_0438	EDQ34181  coded_by=complement(676128..676532),organism=Hoeflea phototrophica DFL-43,definition=arsenate reductase (glutaredoxin)	6e-35
+OTU_0439	EKM98158  coded_by=9948..10376,organism=Acidocella sp. MX-AZ02,definition=arsenate reductase	9e-39
+OTU_0425	SDD32045  coded_by=complement(204113..204541),organism=Belnapia rosea,definition=arsenate reductase	6e-36
+OTU_0424	OJU19757  coded_by=12103..12501,organism=Afipia sp. 62-7,definition=arsenate reductase (glutaredoxin)	1e-32
+OTU_0427	KGF69851  coded_by=complement(42556..42960),organism=Hoeflea sp. BAL378,definition=arsenate reductase	1e-27
+OTU_0426	KCZ84412  coded_by=complement(420877..421296),organism=Hyphomonas adhaerens MHS-3,definition=arsenate reductase	3e-39
+OTU_0429	OGI66597  coded_by=2212..2562,organism=Candidatus Muproteobacteria bacterium RBG_16_60_9,definition=arsenate reductase (glutaredoxin)	4e-29
+OTU_0428	SCB40828  coded_by=81169..81591,organism=Rhizobium multihospitium,definition=arsenate reductase	7e-29
+OTU_0431	SCX21101  coded_by=complement(42105..42530),organism=Agrobacterium sp. DSM 25558,definition=Arsenate reductase	1e-52
+OTU_0430	AOB31576  coded_by=complement(3144364..3144717),organism=Bordetella sp. H567,definition=arsenate reductase	2e-45
+OTU_0417	KQW36878  coded_by=1254415..1254873,organism=Rhizobacter sp. Root404,definition=arsenate reductase	3e-31
+OTU_0416	EHN63012  coded_by=complement(18857..19288),organism=Comamonas testosteroni ATCC 11996,definition=arsenate reductase	5e-25
+OTU_0419	OKH85286  coded_by=complement(113021..113359),organism=Mycobacterium sp. ST-F2,definition=arsenate reductase	3e-31
+OTU_0418	EIJ47532  coded_by=1112042..1112470,organism=Herbaspirillum sp. GW103,definition=arsenate reductase	5e-50
+OTU_0421	KKN26433  coded_by=7194..7604,organism=marine sediment metagenome,definition=hypothetical protein	8e-26
+OTU_0420	ABE54930  coded_by=complement(1911264..1911614),organism=Shewanella denitrificans OS217,definition=arsenate reductase	4e-24
+OTU_0423	ACI91181  coded_by=complement(26974..27399),organism=Oligotropha carboxidovorans OM5,definition=arsenate reductase	3e-39
+OTU_0422	ANZ26270  coded_by=3963190..3963537,organism=Rhodococcus sp. WB1,definition=arsenate reductase (glutaredoxin)	1e-37
+OTU_0478	SHG51789  coded_by=160067..160489,organism=Kaistia soli DSM 19436,definition=arsenate reductase	1e-33
+OTU_0479	ONN65753  coded_by=complement(10482..10835),organism=Herbaspirillum sp. VT-16-41,definition=arsenate reductase (glutaredoxin)	2e-22
+OTU_0476	ACD21464  coded_by=complement(3570643..3571065),organism=Burkholderia phytofirmans PsJN,definition=arsenate reductase	1e-38
+OTU_0477	EZP69792  coded_by=complement(15536..15970),organism=Sphingomonas paucimobilis,definition=Arsenate reductase	8e-32
+OTU_0474	AOU95148  coded_by=4705456..4705878,organism=Achromobacter ruhlandii,definition=arsenate reductase	1e-24
+OTU_0475	OAT17137  coded_by=complement(197866..198294),organism=Buttiauxella gaviniae ATCC 51604,definition=arsenate reductase	2e-26
+OTU_0472	EHK55682  coded_by=complement(7601..8023),organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenate reductase	1e-35
+OTU_0473	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	7e-40
+OTU_0470	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	1e-38
+OTU_0471	AIZ47860  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	6e-44
+OTU_0468	KPV22957  coded_by=56189..56620,organism=Variovorax paradoxus,definition=arsenate reductase	2e-26
+OTU_0469	KJB93861  coded_by=70493..70918,organism=Skermanella aerolata KACC 11604,definition=arsenate reductase	4e-31
+OTU_0466	KQQ85762  coded_by=239475..239879,organism=Aureimonas sp. Leaf324,definition=arsenate reductase	2e-32
+OTU_0467	KRC23670  coded_by=664824..665195,organism=Acidovorax sp. Root217,definition=arsenate reductase	1e-23
+OTU_0464	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	7e-62
+OTU_0465	EKS41638  coded_by=complement(766907..767311),organism=Afipia broomeae ATCC 49717,definition=arsenate reductase (glutaredoxin)	4e-53
+OTU_0463	SAI72691  coded_by=complement(3609736..3610095),organism=Bordetella trematum,definition=arsenate reductase	2e-33
+OTU_0462	EEA00216  coded_by=22562..22921,organism=Burkholderia sp. H160,definition=arsenate reductase	4e-42
+OTU_0461	AJP73886  coded_by=4790868..4791281,organism=Sphingomonas sp. WHSC-8,definition=arsenate reductase	4e-27
+OTU_0460	SDE24568  coded_by=120339..120785,organism=Variovorax sp. CF079,definition=arsenate reductase	2e-51
+OTU_0459	EUC00707  coded_by=527435..527863,organism=Rhizobium sp. CF080,definition=arsenate reductase	2e-27
+OTU_0458	KQM38207  coded_by=complement(316957..317385),organism=Sphingomonas sp. Leaf10,definition=arsenate reductase	3e-39
+OTU_0457	CCB66291  coded_by=2939094..2939507,organism=Hyphomicrobium sp. MC1,definition=arsenate reductase (glutaredoxin family)	6e-26
+OTU_0456	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	2e-30
+OTU_0455	KQM86415  coded_by=complement(640815..641243),organism=Sphingomonas sp. Leaf23,definition=arsenate reductase	6e-43
+OTU_0454	KTT23220  coded_by=complement(161765..162196),organism=Pseudacidovorax intermedius,definition=arsenate reductase	7e-29
+OTU_0453	KIL98440  coded_by=complement(159122..159562),organism=Magnetospirillum magnetotacticum MS-1,definition=Arsenate reductase	7e-34
+OTU_0452	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	1e-54
+OTU_0451	ABM06243  coded_by=complement(69047..69403),organism=Comamonas testosteroni CNB-1,definition=putative arsenate reductase	1e-47
+OTU_0450	SFP40985  coded_by=439500..439928,organism=Sphingomonas rubra,definition=arsenate reductase	5e-44
+OTU_0449	CCD87417  coded_by=40361..40765,organism=Bradyrhizobium sp. ORS 285,definition=arsenate reductase (Arsenical pump modifier)	3e-28
+OTU_0448	EFH10317  coded_by=complement(22054..22479),organism=Roseomonas cervicalis ATCC 49957,definition=arsenate reductase (glutaredoxin)	1e-28
+OTU_0508	EUC00707  coded_by=527435..527863,organism=Rhizobium sp. CF080,definition=arsenate reductase	3e-22
+OTU_0509	OJY11240  coded_by=complement(395571..395999),organism=Rhizobiales bacterium 62-47,definition=arsenate reductase (glutaredoxin)	2e-49
+OTU_0510	ODT61804  coded_by=611..970,organism=Phenylobacterium sp. SCN 69-14,definition=arsenate reductase (glutaredoxin)	2e-53
+OTU_0511	KMS58994  coded_by=125987..126427,organism=Sphingobium baderi LL03,definition=arsenate reductase	1e-36
+OTU_0504	ADZ69757  coded_by=1428126..1428590,organism=Polymorphum gilvum SL003B-26A1,definition=Arsenate reductase (Glutaredoxin)	4e-34
+OTU_0505	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	2e-31
+OTU_0506	KXV70162  coded_by=4064..4486,organism=Acetobacter malorum,definition=arsenate reductase	1e-44
+OTU_0507	KQT08318  coded_by=217536..217937,organism=Bradyrhizobium sp. Leaf396,definition=arsenate reductase	8e-49
+OTU_0500	SEC25779  coded_by=complement(1377487..1377924),organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	1e-61
+OTU_0501	EZP51247  coded_by=complement(5751..6179),organism=Sphingomonas sp. RIT328,definition=Arsenate reductase	6e-42
+OTU_0502	ADU43412  coded_by=1909780..1910205,organism=Rhodopseudomonas palustris DX-1,definition=arsenate reductase	4e-38
+OTU_0503	AGK17584  coded_by=complement(3174283..3174705),organism=Azotobacter vinelandii CA6,definition=arsenate reductase	3e-35
+OTU_0496	KRE00809  coded_by=213966..214391,organism=Bosea sp. Root670,definition=arsenate reductase	4e-27
+OTU_0497	KPV22957  coded_by=56189..56620,organism=Variovorax paradoxus,definition=arsenate reductase	5e-32
+OTU_0498	GAO54545  coded_by=28168..28572,organism=Novosphingobium sp. MD-1,definition=arsenate reductase	3e-57
+OTU_0499	ESZ87049  coded_by=39331..39678,organism=Blastomonas sp. CACIA14H2,definition=arsenate reductase	1e-50
+OTU_0493	EKM98158  coded_by=9948..10376,organism=Acidocella sp. MX-AZ02,definition=arsenate reductase	1e-34
+OTU_0492	EXS70602  coded_by=14246..14674,organism=Sphingobium sp. Ant17,definition=arsenate reductase	7e-36
+OTU_0495	OJW64494  coded_by=227072..227425,organism=Afipia sp. 64-13,definition=arsenate reductase (glutaredoxin)	2e-39
+OTU_0494	AIZ47848  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-30
+OTU_0489	SCY65147  coded_by=complement(31880..32305),organism=Microvirga guangxiensis,definition=arsenate reductase	9e-38
+OTU_0488	OJU91672  coded_by=complement(15458..15889),organism=Burkholderiales bacterium 66-5,definition=arsenate reductase (glutaredoxin)	7e-39
+OTU_0491	EUC00707  coded_by=527435..527863,organism=Rhizobium sp. CF080,definition=arsenate reductase	1e-29
+OTU_0490	ONN65753  coded_by=complement(10482..10835),organism=Herbaspirillum sp. VT-16-41,definition=arsenate reductase (glutaredoxin)	3e-25
+OTU_0485	KMO20027  coded_by=18563..19000,organism=Methylobacterium platani JCM 14648,definition=arsenate reductase	1e-28
+OTU_0484	KQW36878  coded_by=1254415..1254873,organism=Rhizobacter sp. Root404,definition=arsenate reductase	3e-66
+OTU_0487	ANP46477  coded_by=2211816..2212169,organism=Caulobacteraceae bacterium OTSz_A_272,definition=hypothetical protein	5e-40
+OTU_0486	AKS30151  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	5e-27
+OTU_0481	KUR72872  coded_by=complement(972513..972923),organism=Novosphingobium fuchskuhlense,definition=arsenate reductase	2e-26
+OTU_0480	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	6e-33
+OTU_0483	EUC00707  coded_by=527435..527863,organism=Rhizobium sp. CF080,definition=arsenate reductase	3e-45
+OTU_0482	OJY61348  coded_by=complement(467768..468106),organism=Rhodanobacter sp. 68-29,definition=arsenate reductase (glutaredoxin)	2e-37
+OTU_0550	SDY59089  coded_by=24416..24847,organism=Collimonas sp. OK242,definition=arsenate reductase	6e-50
+OTU_0551	AIZ47848  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	9e-26
+OTU_0548	BAR60273  coded_by=complement(7034318..7034719),organism=Bradyrhizobium diazoefficiens,definition=arsenate reductase	4e-28
+OTU_0549	ABZ70914  coded_by=complement(1887514..1887939),organism=Caulobacter sp. K31,definition=arsenate reductase	9e-31
+OTU_0546	EHK55682  coded_by=complement(7601..8023),organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenate reductase	4e-32
+OTU_0547	CCB66291  coded_by=2939094..2939507,organism=Hyphomicrobium sp. MC1,definition=arsenate reductase (glutaredoxin family)	4e-31
+OTU_0544	EZP51247  coded_by=complement(5751..6179),organism=Sphingomonas sp. RIT328,definition=Arsenate reductase	9e-44
+OTU_0545	KRB58789  coded_by=253006..253410,organism=Rhizobium sp. Root708,definition=arsenate reductase	3e-25
+OTU_0558	KZC37005  coded_by=1635..1979,organism=Rhodanobacter sp. FW104-R5,definition=arsenate reductase (glutaredoxin)	2e-24
+OTU_0559	SEC25779  coded_by=complement(1377487..1377924),organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	1e-60
+OTU_0556	AEB49541  coded_by=1674965..1675315,organism=Aeromonas veronii B565,definition=Arsenate reductase	2e-18
+OTU_0557	SCK59081  coded_by=6609402..6609818,organism=Variovorax sp. HW608,definition=arsenate reductase	2e-38
+OTU_0554	AMP14915  coded_by=complement(2817096..2817518),organism=Collimonas pratensis,definition=arsenate reductase	2e-26
+OTU_0555	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	5e-33
+OTU_0552	CUA99705  coded_by=complement(61087..61512),organism=Thiomonas bhubaneswarensis,definition=arsenate reductase (glutaredoxin)	2e-23
+OTU_0553	KPK35568  coded_by=complement(6863..7216),organism=Betaproteobacteria bacterium SG8_40,definition=arsenate reductase	2e-42
+OTU_0567	AKB90510  coded_by=673..1107,organism=Ochrobactrum tritici,definition=arsenate reductase	2e-34
+OTU_0566	CEJ16142  coded_by=83827..84252,organism=bacterium YEK0313,definition=Arsenate reductase	6e-32
+OTU_0565	KRP99231  coded_by=complement(296152..296553),organism=Bradyrhizobium yuanmingense,definition=arsenate reductase	9e-38
+OTU_0564	AKS30178  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	4e-36
+OTU_0563	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	4e-40
+OTU_0562	BAV32815  coded_by=complement(482507..482854),organism=Sulfuricaulis limicola,definition=arsenate reductase	5e-26
+OTU_0561	KQP11719  coded_by=71392..71823,organism=Pseudorhodoferax sp. Leaf265,definition=arsenate reductase	2e-31
+OTU_0560	AIZ47817  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-27
+OTU_0575	KRB46706  coded_by=190838..191197,organism=Phenylobacterium sp. Root700,definition=arsenate reductase	3e-32
+OTU_0574	CEJ16142  coded_by=83827..84252,organism=bacterium YEK0313,definition=Arsenate reductase	2e-26
+OTU_0573	AOB31576  coded_by=complement(3144364..3144717),organism=Bordetella sp. H567,definition=arsenate reductase	9e-32
+OTU_0572	KQT83171  coded_by=175515..175925,organism=Aurantimonas sp. Leaf443,definition=arsenate reductase	7e-46
+OTU_0571	OCW59199  coded_by=complement(112675..113079),organism=Hoeflea olei,definition=arsenate reductase	4e-21
+OTU_0570	AIZ47847  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	1e-29
+OTU_0569	SIO51424  coded_by=6870121..6870528,organism=Bradyrhizobium erythrophlei,definition=arsenate reductase	1e-25
+OTU_0568	KUR72872  coded_by=complement(972513..972923),organism=Novosphingobium fuchskuhlense,definition=arsenate reductase	4e-28
+OTU_0516	CUA99705  coded_by=complement(61087..61512),organism=Thiomonas bhubaneswarensis,definition=arsenate reductase (glutaredoxin)	2e-27
+OTU_0517	AMM86820  coded_by=complement(2697393..2697812),organism=Martelella sp. AD-3,definition=arsenate reductase	2e-20
+OTU_0518	CUT10526  coded_by=1666120..1666521,organism=Bradyrhizobium sp.,definition=Arsenate reductase EC 12041	6e-32
+OTU_0519	OLO06660  coded_by=complement(15988..16404),organism=Salinicola sp. MH3R3-1,definition=arsenate reductase (glutaredoxin)	3e-27
+OTU_0512	ACJ01049  coded_by=complement(3828479..3828901),organism=Rhodospirillum centenum SW,definition=arsenate reductase, putative	5e-36
+OTU_0513	SFV28096  coded_by=complement(939657..940070),organism=Hyphomicrobium facile,definition=arsenate reductase	2e-27
+OTU_0514	AKS30156  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-26
+OTU_0515	ERL54499  coded_by=200516..200923,organism=Psychrobacter aquaticus CMS 56,definition=Arsenate reductase	7e-18
+OTU_0524	EMF02824  coded_by=complement(154907..155260),organism=Serratia marcescens VGH107,definition=arsenate reductase	1e-23
+OTU_0525	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	5e-34
+OTU_0526	OAI42923  coded_by=complement(26508..26852),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=arsenate reductase	2e-43
+OTU_0527	EZP51345  coded_by=complement(12992..13420),organism=Sphingomonas sp. RIT328,definition=Arsenate reductase	1e-31
+OTU_0520	ODT33930  coded_by=complement(16883..17233),organism=Lautropia sp. SCN 70-15,definition=arsenate reductase (glutaredoxin)	4e-28
+OTU_0521	SCY35092  coded_by=574560..574985,organism=Microvirga guangxiensis,definition=arsenate reductase	2e-28
+OTU_0522	KPF98221  coded_by=100357..100782,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	2e-30
+OTU_0523	AFU98317  coded_by=1228385..1228729,organism=Simiduia agarivorans SA1 = DSM 21679,definition=arsenate reductase	2e-24
+OTU_0533	EGO93778  coded_by=complement(14024..14446),organism=Acidiphilium sp. PM,definition=Arsenate reductase	6e-26
+OTU_0532	ODU99190  coded_by=complement(2123..2569),organism=Rubrivivax sp. SCN 70-15,definition=arsenate reductase (glutaredoxin)	5e-27
+OTU_0535	GAO22447  coded_by=28434..28856,organism=Alicycliphilus sp. B1,definition=arsenate reductase	2e-65
+OTU_0534	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	2e-29
+OTU_0529	KPF89869  coded_by=40030..40440,organism=Novosphingobium sp. AAP93,definition=arsenate reductase	5e-24
+OTU_0528	KFG89239  coded_by=144137..144586,organism=Sphingobium herbicidovorans NBRC 16415,definition=Arsenate reductase	5e-35
+OTU_0531	AIZ47860  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-29
+OTU_0530	KLN56457  coded_by=complement(107402..107851),organism=Variovorax paradoxus,definition=arsenate reductase	1e-54
+OTU_0541	KXU94431  coded_by=complement(29963..30385),organism=Burkholderia megalochromosomata,definition=arsenate reductase	3e-40
+OTU_0540	ABZ70914  coded_by=complement(1887514..1887939),organism=Caulobacter sp. K31,definition=arsenate reductase	1e-33
+OTU_0543	KFK97387  coded_by=complement(167514..167867),organism=Serratia sp. Ag1,definition=arsenate reductase	3e-26
+OTU_0542	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	4e-31
+OTU_0537	ONG55930  coded_by=29357..29782,organism=Roseomonas sp. M3,definition=arsenate reductase (glutaredoxin)	2e-37
+OTU_0536	SDP48736  coded_by=942763..943185,organism=Phyllobacterium sp. YR620,definition=arsenate reductase	5e-35
+OTU_0539	GAN79037  coded_by=complement(6748..7185),organism=Acidocella aminolytica 101 = DSM 11237,definition=arsenate reductase	7e-45
+OTU_0538	AGK17584  coded_by=complement(3174283..3174705),organism=Azotobacter vinelandii CA6,definition=arsenate reductase	7e-28
+OTU_0610	SHO65901  coded_by=537302..537727,organism=Pseudoxanthobacter soli DSM 19599,definition=arsenate reductase	5e-45
+OTU_0611	AIZ47799  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-27
+OTU_0608	OJY11240  coded_by=complement(395571..395999),organism=Rhizobiales bacterium 62-47,definition=arsenate reductase (glutaredoxin)	1e-33
+OTU_0609	OJW30458  coded_by=complement(22054..22470),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	1e-31
+OTU_0614	AJP73886  coded_by=4790868..4791281,organism=Sphingomonas sp. WHSC-8,definition=arsenate reductase	8e-37
+OTU_0615	EEV87784  coded_by=69618..69971,organism=Cardiobacterium hominis ATCC 15826,definition=arsenate reductase	6e-25
+OTU_0612	EHM02458  coded_by=50036..50473,organism=Acetobacteraceae bacterium AT-5844,definition=arsenate reductase	8e-33
+OTU_0613	OCJ57567  coded_by=66786..67208,organism=Agrobacterium tumefaciens,definition=arsenate reductase (glutaredoxin)	1e-34
+OTU_0618	EFI53130  coded_by=1128507..1128932,organism=Afipia sp. 1NLS2,definition=arsenate reductase	5e-33
+OTU_0619	EPF00072  coded_by=228228..228632,organism=Rhizobium grahamii CCGE 502,definition=arsenate reductase	2e-44
+OTU_0616	OGT33689  coded_by=complement(28067..28414),organism=Gammaproteobacteria bacterium RBG_16_51_14,definition=arsenate reductase (glutaredoxin)	6e-49
+OTU_0617	KLU25986  coded_by=46325..46693,organism=Burkholderia glathei PML1(12),definition=arsenate reductase	1e-28
+OTU_0622	KQT13209  coded_by=111858..112337,organism=Ramlibacter sp. Leaf400,definition=arsenate reductase	5e-29
+OTU_0623	KGH27058  coded_by=8483..8914,organism=Comamonas testosteroni,definition=arsenate reductase	1e-27
+OTU_0620	KEI72460  coded_by=4182546..4182893,organism=Endozoicomonas elysicola,definition=arsenate reductase	2e-26
+OTU_0621	SCK59081  coded_by=6609402..6609818,organism=Variovorax sp. HW608,definition=arsenate reductase	2e-43
+OTU_0627	AIZ47825  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-37
+OTU_0626	SDA11674  coded_by=complement(193874..194302),organism=Sphingomonas sp. NFR15,definition=arsenate reductase	3e-44
+OTU_0625	SED21922  coded_by=complement(5037384..5037734),organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	2e-46
+OTU_0624	SEN82811  coded_by=complement(10764..11192),organism=Sphingomonas sp. S6-262,definition=arsenate reductase	2e-33
+OTU_0631	AIZ47748  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-41
+OTU_0630	OHC93305  coded_by=79954..80301,organism=Sphingomonadales bacterium RIFCSPHIGHO2_01_FULL_65_20,definition=arsenate reductase (glutaredoxin)	6e-51
+OTU_0629	KPF98221  coded_by=100357..100782,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	3e-37
+OTU_0628	KMS52409  coded_by=complement(137174..137605),organism=Sphingobium czechense LL01,definition=arsenate reductase	4e-31
+OTU_0635	ADP72711  coded_by=3843047..3843454,organism=Rhodomicrobium vannielii ATCC 17100,definition=arsenate reductase	5e-31
+OTU_0634	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	2e-39
+OTU_0633	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	2e-27
+OTU_0632	KXB30612  coded_by=313073..313423,organism=Dechloromonas denitrificans,definition=arsenate reductase	7e-17
+OTU_0639	AIO27922  coded_by=911234..911590,organism=Burkholderia cepacia ATCC 25416,definition=arsenate reductase	8e-28
+OTU_0638	EEA00216  coded_by=22562..22921,organism=Burkholderia sp. H160,definition=arsenate reductase	1e-26
+OTU_0637	SCX41216  coded_by=complement(427916..428347),organism=Variovorax sp. EL159,definition=arsenate reductase	2e-45
+OTU_0636	AIZ47805  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	4e-30
+OTU_0576	KTT69677  coded_by=complement(2232..2660),organism=Sphingomonas sanguinis,definition=arsenate reductase	1e-40
+OTU_0577	ALE57974  coded_by=1378895..1379254,organism=Burkholderia sp. HB1,definition=arsenate reductase	7e-37
+OTU_0578	AHY42218  coded_by=complement(1449268..1449621),organism=Pseudomonas stutzeri,definition=arsenate reductase	1e-25
+OTU_0579	EPF00072  coded_by=228228..228632,organism=Rhizobium grahamii CCGE 502,definition=arsenate reductase	1e-25
+OTU_0580	ALE71921  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	8e-34
+OTU_0581	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	4e-32
+OTU_0582	KRQ08190  coded_by=80660..81070,organism=Bradyrhizobium manausense,definition=arsenate reductase	7e-37
+OTU_0583	OJW64494  coded_by=227072..227425,organism=Afipia sp. 64-13,definition=arsenate reductase (glutaredoxin)	2e-43
+OTU_0584	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	5e-56
+OTU_0585	KYG21004  coded_by=2660892..2661293,organism=Bradyrhizobium sp. AT1,definition=arsenate reductase	8e-54
+OTU_0586	KRB85670  coded_by=complement(541050..541460),organism=Sphingomonas sp. Root710,definition=arsenate reductase	1e-20
+OTU_0587	CDM55950  coded_by=complement(265180..265602),organism=Rhizobium sp. LPU83,definition=arsenate reductase protein	2e-41
+OTU_0588	AOB31576  coded_by=complement(3144364..3144717),organism=Bordetella sp. H567,definition=arsenate reductase	2e-46
+OTU_0589	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	3e-36
+OTU_0590	ALN91972  coded_by=3346188..3346553,organism=Lysobacter gummosus,definition=arsenate reductase	4e-47
+OTU_0591	AMO23299  coded_by=complement(2237160..2237585),organism=Ramlibacter tataouinensis,definition=arsenate reductase	3e-42
+OTU_0593	OBF90830  coded_by=14398..14754,organism=Mycobacterium sp. 852002-51163_SCH5372311,definition=arsenate reductase (glutaredoxin)	3e-40
+OTU_0592	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	3e-20
+OTU_0595	KLU37975  coded_by=32782..33123,organism=Massilia sp. WF1,definition=arsenate reductase	4e-28
+OTU_0594	CDP52398  coded_by=complement(22193..22597),organism=Devosia sp. DBB001,definition=Arsenate reductase	2e-63
+OTU_0597	OJW27729  coded_by=complement(56438..56860),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	5e-37
+OTU_0596	CCB66291  coded_by=2939094..2939507,organism=Hyphomicrobium sp. MC1,definition=arsenate reductase (glutaredoxin family)	1e-37
+OTU_0599	ADE15720  coded_by=2717322..2717672,organism=Nitrosococcus halophilus Nc 4,definition=arsenate reductase	8e-49
+OTU_0598	EWY38392  coded_by=21059..21481,organism=Skermanella stibiiresistens SB22,definition=arsenate reductase	2e-31
+OTU_0601	ODT87382  coded_by=81689..82102,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	1e-56
+OTU_0600	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	2e-32
+OTU_0603	OAI83935  coded_by=304976..305329,organism=Pseudomonas putida,definition=arsenate reductase (glutaredoxin)	3e-21
+OTU_0602	OJW27729  coded_by=complement(56438..56860),organism=Rhodospirillales bacterium 69-11,definition=arsenate reductase (glutaredoxin)	1e-38
+OTU_0605	SFP53497  coded_by=52044..52454,organism=Bradyrhizobium sp. Ghvi,definition=arsenate reductase	5e-27
+OTU_0604	KGG83712  coded_by=3168..3599,organism=Comamonas testosteroni,definition=arsenate reductase	4e-59
+OTU_0607	SCY92665  coded_by=16314..16739,organism=Microvirga guangxiensis,definition=arsenate reductase	3e-48
+OTU_0606	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	2e-54
+OTU_0687	AOG01777  coded_by=3586433..3586780,organism=Blastomonas sp. RAC04,definition=arsenate reductase	2e-32
+OTU_0686	CBA29067  coded_by=complement(1037879..1038298),organism=Curvibacter putative symbiont of Hydra magnipapillata,definition=Arsenate reductase	2e-59
+OTU_0685	ONG55930  coded_by=29357..29782,organism=Roseomonas sp. M3,definition=arsenate reductase (glutaredoxin)	4e-59
+OTU_0684	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	1e-44
+OTU_0683	OHC93305  coded_by=79954..80301,organism=Sphingomonadales bacterium RIFCSPHIGHO2_01_FULL_65_20,definition=arsenate reductase (glutaredoxin)	7e-25
+OTU_0682	ALE71924  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	3e-25
+OTU_0681	AMS43317  coded_by=4501607..4502029,organism=Aminobacter aminovorans,definition=Arsenate reductase	6e-29
+OTU_0680	KQM22998  coded_by=404627..405055,organism=Sphingomonas sp. Leaf5,definition=arsenate reductase	3e-34
+OTU_0679	ALE71921  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	6e-39
+OTU_0678	CEJ16142  coded_by=83827..84252,organism=bacterium YEK0313,definition=Arsenate reductase	5e-27
+OTU_0677	KGM33741  coded_by=6570..6992,organism=Inquilinus limosus MP06,definition=arsenate reductase	3e-42
+OTU_0676	SDI94614  coded_by=362662..363084,organism=Mesorhizobium muleiense,definition=arsenate reductase	6e-40
+OTU_0675	ADO32948  coded_by=9840..10286,organism=Acidovorax sp. GW2,definition=arsenate reductase	1e-32
+OTU_0674	ODU93413  coded_by=99975..100334,organism=Rhodanobacter sp. SCN 66-43,definition=arsenate reductase (glutaredoxin)	9e-24
+OTU_0673	AIZ47840  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-34
+OTU_0672	EPX80060  coded_by=complement(225275..225697),organism=Thalassobacter arenae DSM 19593,definition=Arsenate reductase	2e-26
+OTU_0702	KTA72149  coded_by=complement(9318..9743),organism=Roseomonas mucosa,definition=arsenate reductase	3e-39
+OTU_0703	BAC48349  coded_by=complement(3402530..3402931),organism=Bradyrhizobium diazoefficiens USDA 110,definition=arsenate reductase	4e-35
+OTU_0700	KWC91648  coded_by=86726..87148,organism=Burkholderia cepacia,definition=arsenate reductase	1e-43
+OTU_0701	SEI15341  coded_by=12469..12906,organism=Methylobacterium sp. 275MFSha3.1,definition=arsenate reductase	6e-33
+OTU_0698	KSB87562  coded_by=7321..7704,organism=Caulobacter vibrioides,definition=arsenate reductase	4e-25
+OTU_0699	ALN91972  coded_by=3346188..3346553,organism=Lysobacter gummosus,definition=arsenate reductase	4e-19
+OTU_0696	KWT95823  coded_by=complement(52463..52888),organism=Variovorax sp. WDL1,definition=Arsenate reductase	4e-36
+OTU_0697	KUR72872  coded_by=complement(972513..972923),organism=Novosphingobium fuchskuhlense,definition=arsenate reductase	2e-58
+OTU_0694	AIZ47747  coded_by=<1..>350,organism=uncultured bacterium,definition=arsenate reductase	2e-28
+OTU_0695	OAN66695  coded_by=252540..252968,organism=Sphingomonas sp. TDK1,definition=arsenate reductase (glutaredoxin)	3e-34
+OTU_0692	SIR03779  coded_by=complement(179172..179513),organism=Luteimonas tolerans,definition=arsenate reductase	9e-20
+OTU_0693	OAF18353  coded_by=complement(65098..65499),organism=Bradyrhizobium neotropicale,definition=arsenate reductase	6e-30
+OTU_0690	SDH57844  coded_by=52594..53016,organism=Paraburkholderia phenazinium,definition=arsenate reductase	1e-67
+OTU_0691	KTR81719  coded_by=4044..4472,organism=Novosphingobium barchaimii,definition=arsenate reductase	9e-45
+OTU_0688	OJW94523  coded_by=290167..290589,organism=Burkholderiales bacterium 67-32,definition=arsenate reductase (glutaredoxin)	5e-26
+OTU_0689	EAU41847  coded_by=411842..412258,organism=Fulvimarina pelagi HTCC2506,definition=arsenate reductase	5e-30
+OTU_0653	ALN91972  coded_by=3346188..3346553,organism=Lysobacter gummosus,definition=arsenate reductase	7e-36
+OTU_0652	BAV32815  coded_by=complement(482507..482854),organism=Sulfuricaulis limicola,definition=arsenate reductase	3e-20
+OTU_0655	KMO27888  coded_by=3079..3504,organism=Methylobacterium variabile,definition=arsenate reductase	1e-27
+OTU_0654	AIZ47727  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	8e-61
+OTU_0649	SDB69083  coded_by=complement(181743..182171),organism=Belnapia rosea,definition=arsenate reductase	2e-25
+OTU_0648	ODS00065  coded_by=336380..336745,organism=Methyloceanibacter methanicus,definition=arsenate reductase	3e-39
+OTU_0651	ABX16000  coded_by=complement(2527514..2527936),organism=Burkholderia multivorans ATCC 17616,definition=arsenate reductase	5e-33
+OTU_0650	ODR13288  coded_by=53384..53728,organism=Mycobacterium shimoidei,definition=arsenate reductase (glutaredoxin)	1e-39
+OTU_0645	KXS37725  coded_by=53587..53997,organism=Halomonadaceae bacterium T82-2,definition=arsenate reductase	1e-21
+OTU_0644	KEQ10608  coded_by=231258..231692,organism=Rhizobium sp. R2-400B4,definition=arsenate reductase	1e-27
+OTU_0647	KPF80891  coded_by=19549..19956,organism=Brevundimonas sp. AAP58,definition=arsenate reductase	3e-43
+OTU_0646	ADJ62011  coded_by=complement(535482..535835),organism=Herbaspirillum seropedicae SmR1,definition=arsenate reductase protein	3e-30
+OTU_0641	BAI73396  coded_by=3177423..3177857,organism=Azospirillum sp. B510,definition=arsenate reductase	9e-28
+OTU_0640	OBI43776  coded_by=25112..25456,organism=Mycobacterium kyorinense,definition=arsenate reductase (glutaredoxin)	4e-65
+OTU_0643	AIZ47806  coded_by=<1..>356,organism=uncultured bacterium,definition=arsenate reductase	1e-28
+OTU_0642	KRD09526  coded_by=69962..70300,organism=Mycobacterium sp. Root265,definition=arsenate reductase	2e-42
+OTU_0668	ACG77849  coded_by=complement(1629090..1629500),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	8e-59
+OTU_0669	ANB75245  coded_by=complement(573879..574301),organism=Burkholderia sp. OLGA172,definition=arsenate reductase	1e-30
+OTU_0670	AIZ47865  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	3e-37
+OTU_0671	OBS09939  coded_by=220769..221131,organism=Acidihalobacter prosperus,definition=arsenate reductase (glutaredoxin)	2e-24
+OTU_0664	KPF80891  coded_by=19549..19956,organism=Brevundimonas sp. AAP58,definition=arsenate reductase	1e-21
+OTU_0665	SEB83657  coded_by=complement(33566..33973),organism=Bradyrhizobium lablabi,definition=arsenate reductase	5e-36
+OTU_0666	KRC17066  coded_by=77024..77455,organism=Acidovorax sp. Root219,definition=arsenate reductase	1e-36
+OTU_0667	AKU13754  coded_by=4312406..4312765,organism=Azoarcus sp. CIB,definition=arsenate reductase	7e-31
+OTU_0660	SDF06839  coded_by=complement(143939..144286),organism=Thalassobaculum litoreum DSM 18839,definition=arsenate reductase	1e-26
+OTU_0661	OAP37183  coded_by=194949..195380,organism=Sinorhizobium americanum,definition=arsenate reductase	2e-62
+OTU_0662	KRP99231  coded_by=complement(296152..296553),organism=Bradyrhizobium yuanmingense,definition=arsenate reductase	2e-46
+OTU_0663	EKM98158  coded_by=9948..10376,organism=Acidocella sp. MX-AZ02,definition=arsenate reductase	2e-44
+OTU_0656	EWY38392  coded_by=21059..21481,organism=Skermanella stibiiresistens SB22,definition=arsenate reductase	7e-50
+OTU_0657	ODT87880  coded_by=66106..66456,organism=Phenylobacterium sp. SCN 70-31,definition=arsenate reductase (glutaredoxin)	3e-53
+OTU_0658	SED21922  coded_by=complement(5037384..5037734),organism=Beijerinckia sp. 28-YEA-48,definition=arsenate reductase	6e-29
+OTU_0659	SCY92665  coded_by=16314..16739,organism=Microvirga guangxiensis,definition=arsenate reductase	2e-39
+OTU_0713	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	5e-30
+OTU_0712	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	1e-27
+OTU_0715	KDD13188  coded_by=137539..137961,organism=Bordetella bronchiseptica MBORD707,definition=arsenate reductase	5e-46
+OTU_0714	OMP43925  coded_by=complement(1538..1960),organism=Achromobacter sp. KAs 3-5,definition=arsenate reductase (glutaredoxin)	6e-28
+OTU_0717	SAI72691  coded_by=complement(3609736..3610095),organism=Bordetella trematum,definition=arsenate reductase	2e-40
+OTU_0716	BAE50635  coded_by=1970075..1970503,organism=Magnetospirillum magneticum AMB-1,definition=Arsenate reductase and related protein	2e-29
+OTU_0719	KQM89612  coded_by=50440..50868,organism=Sphingomonas sp. Leaf226,definition=arsenate reductase	1e-28
+OTU_0718	ETX46898  coded_by=90465..90818,organism=Serratia marcescens BIDMC 44,definition=arsenate reductase (glutaredoxin)	2e-22
+OTU_0705	ALA20245  coded_by=473765..474190,organism=Chelatococcus sp. CO-6,definition=arsenate reductase	2e-68
+OTU_0704	KPF94584  coded_by=3916..4341,organism=Rhodopseudomonas sp. AAP120,definition=arsenate reductase	2e-50
+OTU_0707	ACG77263  coded_by=complement(939640..940020),organism=Phenylobacterium zucineum HLK1,definition=arsenate reductase	4e-38
+OTU_0706	OKO85404  coded_by=complement(23557..23928),organism=Bradyrhizobium sp. NAS80.1,definition=arsenate reductase	2e-50
+OTU_0709	KPF80891  coded_by=19549..19956,organism=Brevundimonas sp. AAP58,definition=arsenate reductase	3e-49
+OTU_0708	CCF20362  coded_by=complement(2553738..2554166),organism=Rhizobium sp. NT-26,definition=Arsenate reductase (Arsenical pump modifier) ArsC	5e-30
+OTU_0711	KVZ85312  coded_by=24198..24620,organism=Burkholderia multivorans,definition=arsenate reductase	4e-35
+OTU_0710	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	7e-32

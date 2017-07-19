@@ -1,0 +1,46 @@
+OTU_0001	ADL56483  coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	5e-61
+OTU_0002	ADL56483  coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	4e-67
+OTU_0003	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	7e-167
+OTU_0004	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	3e-88
+OTU_0005	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	0.0
+OTU_0006	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	2e-162
+OTU_0007	ADL56483  coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	8e-81
+OTU_0007	ADL56483  coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	5.9
+OTU_0008	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	2e-98
+OTU_0009	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	2e-94
+OTU_0010	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	2e-68
+OTU_0011	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	6e-57
+OTU_0012	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	2e-45
+OTU_0013	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	4e-54
+OTU_0014	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	8e-88
+OTU_0015	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	3e-120
+OTU_0017	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	8e-70
+OTU_0016	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	3e-62
+OTU_0019	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	4e-73
+OTU_0018	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	2e-72
+OTU_0018	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	8.1
+OTU_0021	KIF81783  coded_by=2932972..2934288,organism=Herbaspirillum sp. TSA66,definition=channel protein TolC	3e-76
+OTU_0020	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	9e-75
+OTU_0020	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	9.0
+OTU_0023	KRB76821  coded_by=complement(12787..14106),organism=Noviherbaspirillum sp. Root189,definition=channel protein TolC	4e-51
+OTU_0022	KXS32058  coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	2e-57
+OTU_0025	KIF81783  coded_by=2932972..2934288,organism=Herbaspirillum sp. TSA66,definition=channel protein TolC	7e-58
+OTU_0024	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	6e-72
+OTU_0027	KXS32058  coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	1e-44
+OTU_0027	KXS32058  coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	4.5
+OTU_0026	KRB76821  coded_by=complement(12787..14106),organism=Noviherbaspirillum sp. Root189,definition=channel protein TolC	1e-55
+OTU_0029	BAO31166  coded_by=complement(3555350..3556684),organism=Sulfuritalea hydrogenivorans sk43H,definition=TolC family type I secretion outer membrane protein	1e-71
+OTU_0028	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	2e-74
+OTU_0031	KXS32058  coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	3e-56
+OTU_0030	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	7e-55
+OTU_0034	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	9e-68
+OTU_0035	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	3e-55
+OTU_0032	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	4e-59
+OTU_0033	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	2e-83
+OTU_0038	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	6e-76
+OTU_0039	KXS32058  coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	6e-69
+OTU_0036	EJL83529  coded_by=complement(118593..119915),organism=Herbaspirillum sp. CF444,definition=type I secretion outer membrane protein, TolC family	3e-99
+OTU_0037	OAI51517  coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	1e-67
+OTU_0042	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	1e-78
+OTU_0040	ALP52189  coded_by=complement(652565..653902),organism=Gammaproteobacteria bacterium NRL1,definition=hypothetical protein	5e-104
+OTU_0041	GAB72676  coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	5e-60

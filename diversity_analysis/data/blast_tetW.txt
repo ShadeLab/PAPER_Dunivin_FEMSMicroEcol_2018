@@ -1,0 +1,7 @@
+OTU_0001	CAP09894  coded_by=199..>2087,organism=Bifidobacterium thermophilum,definition=mosaic tetracycline resistance protein	2e-23
+OTU_0002	AHH55326  coded_by=1..1920,organism=Streptococcus suis,definition=tetracycline resistance protein	9e-43
+OTU_0003	AHH29649  coded_by=1..1920,organism=Streptococcus suis,definition=Tet(O/W/32/O)	5e-59
+OTU_0004	AHH55326  coded_by=1..1920,organism=Streptococcus suis,definition=tetracycline resistance protein	1e-55
+OTU_0005	AHH55326  coded_by=1..1920,organism=Streptococcus suis,definition=tetracycline resistance protein	8e-24
+OTU_0006	ABN79417  coded_by=100..2019,organism=uncultured bacterium,definition=mosaic tetracycline resistance protein	2e-48
+OTU_0007	ABN79416  coded_by=99..2018,organism=uncultured bacterium,definition=mosaic tetracycline resistance protein	1e-24
