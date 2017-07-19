@@ -3,6 +3,7 @@ library(psych)
 library(tidyverse)
 library(qgraph)
 library(phyloseq)
+library(reshape2)
 
 #print working directory for future references
 #note the GitHub directory for this script is as follows
@@ -114,38 +115,39 @@ otu_table <- otu_table %>%
 #write file to save OTU table
 write.table(otu_table, paste(wd, "/output/otu_table.txt", sep = ""), sep = "\t", quote = FALSE, row.names = FALSE)
 
-#check total diversity?
-#otu_table_div <- otu_table
-#row.names(otu_table_div) <- otu_table_div[,1]
-#otu_table_div <- otu_table_div[,-1]
-#otu_table_div[is.na(otu_table_div)] <- 0
-#otu <- otu_table(otu_table_div, taxa_are_rows = FALSE)
-#rarecurve(otu, step=5, label = TRUE)
-#plot_richness(otu, measures = c("Simpson", "Fisher"))
-#a <- colSums(otu_table_div != 0)
-#sum(a)
 #read in rplB data
-rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  = " ")
+#rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  = " ")
 
 #get mean rplB
-mean.rplB <- mean(rplB$rplB)
+#mean.rplB <- mean(rplB$rplB)
+
+#get rplB otu data
+rplB <- otu_table[,grepl("rplB", names(otu_table))]
+
+#add site names to rplB
+rownames(rplB) <-  otu_table$Site
+
+#summarise rplB by adding all OTU counts 
+# in each row (total rplB/site)
+rplB_summary <- data.frame(rowSums(rplB))
+
+#make site a column in rplB
+rplB_summary$Site <- rownames(rplB_summary) 
+
 
 #add rplB data to otu_table
-otu_table.rplB <- rplB %>%
+otu_table.rplB <- rplB_summary %>%
   left_join(otu_table, by = "Site") %>%
-  mutate(ratio.rplB = rplB/mean.rplB)
-
-
+  rename(rplB = rowSums.rplB.)
 
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
-for(i in 4:6572){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,3]}
+for(i in 3:6570){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
-  select(Site, acr3_001:ratio.rplB, As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm) %>%
-  select(-ratio.rplB)
+  select(Site, acr3_001:ratio.rplB, As_ppm, SoilTemperature_to10cm, OrganicMatter_500:Fe_ppm)
 
 
 #change to df and add row names back
@@ -281,9 +283,7 @@ gene_abundance <- gene_abundance %>%
 gene_abundance$RelativeAbundance[is.na(gene_abundance$RelativeAbundance)] = 0
 
 #remove total rows
-gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "Total"),]
 gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "rplB"),]
-gene_abundance <- gene_abundance[-which(gene_abundance$OTU == "ratio.rplB"),]
 
 #make color pallette for Centralia temperatures
 GnYlOrRd <- colorRampPalette(colors=c("green", "yellow", "orange","red"), bias=2)
