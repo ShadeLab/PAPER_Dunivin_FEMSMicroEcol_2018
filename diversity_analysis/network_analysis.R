@@ -450,4 +450,24 @@ adeB <- subset(x = data.mann, subset = Gene == "adeB")
 adeB.cast <- print(wilcox.test(adeB$Total~adeB$Classification, paired = FALSE))
 t.test(adeB$Total ~ adeB$Classification)
 
+##############################
+#TAXANOMIC ABUNDANCE ANALYSIS#
+##############################
 
+#need to adjust OTU column in gene_abundance
+#to join with taxanomic data
+gene_abundance_otu <- gene_abundance %>%
+  separate(col = OTU, into = c("leftover", "OTU"), sep = "_") %>%
+  select(-leftover)
+
+#make OTU a number
+gene_abundance_otu$OTU <- as.numeric(gene_abundance_otu$OTU)
+
+#add leading zero to 4 digits
+gene_abundance_otu$OTU <- sprintf("%04d", gene_abundance_otu$OTU)
+
+#add OTU to otu label
+gene_abundance_otu$OTU <- paste("OTU_", gene_abundance_otu$OTU, sep="")
+
+#read in taxanomic identifiers from blast
+identifiers <- read_delim(paste(wd, "/data/??", ))
