@@ -32,5 +32,5 @@
 ### 3. Network analysis & OTU level taxanomic abundance analysis
 * Inputs: `rformat_dist.txt`, `Centralia_full_map.txt`, `gene_classification.txt`
 * [network_analysis.R](https://github.com/ShadeLab/Xander_arsenic/blob/master/diversity_analysis/network_analysis.R)
-* Outputs: `otu_table.txt`
+* Outputs: `otu_table.txt`, `corr_table.rplB.txt`
 
