@@ -101,54 +101,37 @@ table.census$Gene <- gsub("arxA", "GENE3", table.census$Gene)
 table.census$OTU <- paste(table.census$Gene, table.census$OTU, 
                           sep = "")
 #spread data
-table.normalized <- acast(table.census, OTU~Site, value.var = normalized.abundance)
+table.normalized <- data.frame(acast(table.census, Site~OTU, value.var = "normalized.abundance"))
 
 #rename site column
-table.normalized$Site <- table.normalized$`table.census$Site`
-table.normalized <- table.normalized[,-1]
+table.normalized$Site <- as.character(rownames(table.normalized))
 
 #order based on temperature
 table.normalized <- table.normalized %>%
   left_join(meta, by = "Site") %>%
   arrange(Site, desc(SoilTemperature_to10cm)) %>%
-  select(1:43, 62, 47)
+  select(GENE10001:Site, SoilTemperature_to10cm)
 
 table.normalized$Site <- factor(table.normalized$Site, 
                                 levels = table.normalized$Site[order(meta$SoilTemperature_to10cm)])
 
 #transform otu table
-table.normalized.t = setNames(data.frame(t(table.normalized[,-c(45,44)])), 
-                              table.normalized[,45])
+table.normalized.t = setNames(data.frame(t(table.normalized[,-c(79,80)])), 
+                              table.normalized[,79])
 #make OTUs a column
 table.normalized.t$OTU <- rownames(table.normalized.t)
 
-#temporarily remove otu_ from otu column
-table.normalized.t$OTU <- gsub("OTU_", "", table.normalized.t$OTU)
-table.normalized.t$OTU <- as.numeric(table.normalized.t$OTU)
-
-#add leading zero to 4 digits
-table.normalized.t$OTU <- sprintf("%04d", table.normalized.t$OTU)
-
-#add OTU to otu label
-table.normalized.t <- within(table.normalized.t, Name[Name == 'John Smith' & State == 'WI'] <- 'John Smith1')
-
 #remove weird space after otu number
 table.normalized.t$OTU <- gsub(" ", "", table.normalized.t$OTU)
-
+labels.tidy$OTU <- gsub(" ", "", labels.tidy$OTU)
 #join abundance with name
 label.abund <- left_join(labels.tidy, table.normalized.t, by = "OTU")
 
-#remove rows with NA values
-label.abund <- label.abund[!is.na(label.abund$Cen01),]
-
-
-#remove otu from otu
-label.abund$OTU <- gsub("OTU_", "", label.abund$OTU)
-
-label.abund$OTU <- paste(label.abund$Gene, label.abund$OTU, sep = "")
+#replace NAs with zeros
+label.abund[is.na(label.abund)] <- 0
 
 #remove OTU information
-label.abund <- select(label.abund, -c(Label,Site,Gene))
+label.abund <- select(label.abund, -c(Site,Gene))
 
 #save file
 write.csv(label.abund, "/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/tree_data/dissimilatory/dissimilatory_abund_label.csv", quote = FALSE, row.names = FALSE)
