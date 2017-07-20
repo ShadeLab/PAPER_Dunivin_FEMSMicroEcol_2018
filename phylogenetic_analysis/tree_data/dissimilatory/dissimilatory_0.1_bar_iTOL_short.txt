@@ -1,0 +1,102 @@
+DATASET_MULTIBAR
+#In multi-value bar charts, each ID is associated to multiple numeric values, which are displayed as a stacked or aligned bar chart
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,dissimilatory_abundance
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#define colors for each individual field column (use hexadecimal, RGB or RGBA notation; if using RGB/RGBA, COMMA cannot be used as SEPARATOR)
+FIELD_COLORS,#6FFF00,#A7FF00,#37FF00,#6FFF00,#FFCD00,#37FF00,#FF0000,#FF9800,#FFE100,#006400
+
+#field labels
+FIELD_LABELS,Cen01,Cen03,Cen04,Cen05,Cen06,Cen07,Cen10,Cen12,Cen16,Cen17
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#dataset scale: you can simply set the values where the scale will be drawn
+DATASET_SCALE,0,1
+#or you can specify value, label and color for each scale line (dash separated, format: VALUE-LABEL-COLOR) 
+#DATASET_SCALE,12-12-#00FF00 20-20-#FFE100,30-30-#FF9F00,40-40-#FF6C00,50-50-#FF2400, 55-55-#FF0000
+
+#each dataset can have a legend, which is defined below
+#for each row in the legend, there should be one shape, color and label
+#shape should be a number between 1 and 5:
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+
+LEGEND_TITLE,Site Temperature
+LEGEND_SHAPES,1,1,1,1,1,1,1,1,1,1
+LEGEND_COLORS,#006400,#FFE100,#37FF00,#6FFF00,#FFCD00,#37FF00,#6FFF00,#FF0000,#A7FF00,#FF9800
+LEGEND_LABELS,Cen17,Cen16,Cen04,Cen05,Cen06,Cen07,Cen01,Cen10,Cen03,Cen12
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+GENE30009,0,0,0,8.04689608386241e-05,0,0,0,0,0,0
+GENE30005,0,4.96143982234483e-05,0,0,0,0,0,0,1.84445049126036e-05,0
+GENE30008,0,0,0,3.21875843354496e-05,0,0,0,0,0,0
+GENE30007,0,0,0,6.43751686708993e-05,0,0,0,0,0,0
+GENE30012,4.47426215030616e-05,0,4.85851833317465e-05,0,0,0,0,0,0,0
+GENE30006,1.49142071676872e-05,3.30762654822989e-05,0,0,0,0,0,0,0,0
+GENE30001,2.98284143353744e-05,0,0,0,0,3.44192540833182e-05,0,0,0,0
+GENE30002,0,3.30762654822989e-05,0,0,0,0,0,0,0,0
+GENE10026,0,0,0,0.000160937921677248,0,0,0,0,0,0
+GENE30010,0,0,0,3.21875843354496e-05,0,0,0,0,0,0
+GENE10002,0,3.30762654822989e-05,0,0,0,0,0,0,0,0
+GENE10039,0,0,0,0,3.28481711935274e-05,0,0,0,0,0
+GENE10038,0,0,0,1.60937921677248e-05,0,0,0,0,0,0
+GENE10010,0,0,0,3.21875843354496e-05,0,0,0,0,0,0
+GENE10021,0,1.65381327411494e-05,0,0,0,0,0,0,0,0
+GENE10005,0,4.96143982234483e-05,0,0,0,0,0,0,1.84445049126036e-05,0
+GENE10040,0,0,3.23901222211643e-05,0,0,0,0,0,0,0
+GENE10025,0,0,0,3.21875843354496e-05,6.56963423870548e-05,0,0,0,0,0
+GENE10017,0,0,0,6.43751686708993e-05,0,0,0,0,0,0
+GENE20009,0,0,0,8.04689608386241e-05,0,0,0,0,0,0
+GENE10003,0,0,8.09753055529108e-05,0,0,0,0,0,0,0
+GENE10011,0,0,0,0,0,0,0.00031430210435857,0,0,0
+GENE10032,0,0,0,0,3.28481711935274e-05,0,0,0,0,0
+GENE10019,2.98284143353744e-05,0,0,0,0,0,0,0,0,0
+GENE10035,0,0,0,1.60937921677248e-05,0,0,0,0,0,0
+GENE10018,0,0,0,1.60937921677248e-05,0,6.88385081666365e-05,0,0,0,0
+GENE30003,0,0,8.09753055529108e-05,0,0,0,0,0,0,0
+GENE20007,0,0,0,6.43751686708993e-05,0,0,0,0,0,0
+GENE30004,0,0,3.23901222211643e-05,0,0,0,0,0,0,0
+GENE10023,0,0,0,0,0,0,0,0,0,4.88204746675339e-05
+GENE10030,0,0,3.23901222211643e-05,0,0,0,0,0,0,0
+GENE10022,0,0,0,3.21875843354496e-05,0,0,0,0,0,0
+GENE10006,1.49142071676872e-05,3.30762654822989e-05,0,0,0,0,0,0,0,0
+GENE10009,0,0,0,8.04689608386241e-05,0,0,0,0,0,0
+GENE10001,2.98284143353744e-05,0,0,0,0,3.44192540833182e-05,0,0,0,0
+GENE10033,0,0,0,4.82813765031745e-05,0,0,0,0,0,0
+GENE10007,0,0,0,6.43751686708993e-05,0,0,0,0,0,0
+GENE10024,5.96568286707488e-05,0,0,4.82813765031745e-05,0,0,0,0,0,0
+GENE10014,0,0,0,1.60937921677248e-05,0,5.16288811249774e-05,0,0,0.000129111534388225,0
+GENE10008,0,0,0,3.21875843354496e-05,0,0,0,0,0,0
+GENE10004,0,0,3.23901222211643e-05,0,0,0,0,0,0,0
+GENE10041,0,0,0,0,0,3.44192540833182e-05,0,0,0,0
+GENE10016,0,0,0,0,0,0,0,0,0.000553335147378107,0
+GENE10029,0,0,0,0,0,0,4.83541699013184e-05,0,0,0
+GENE10012,4.47426215030616e-05,0,4.85851833317465e-05,0,0,0,0,0,0,0
+GENE10027,5.96568286707488e-05,0,3.23901222211643e-05,0,0,0,0,0,0,0
+GENE10020,0,3.30762654822989e-05,0,8.04689608386241e-05,0,0,0,0,0,0
+GENE10015,0,0,0,0,0,0,0,3.77697067102133e-05,0,0
+GENE10028,0,0,0,1.60937921677248e-05,4.92722567902911e-05,0,0,0,0,0

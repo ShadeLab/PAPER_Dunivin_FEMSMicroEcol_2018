@@ -1,0 +1,119 @@
+>GENE30009  seq_id=cen0013_arxA_contig_0076_contig_0077,prefered=false,cluster=0009,clustsize=0001,maxDist=0000,minSumSquare=0000
+>WP_011630159.1 molybdopterin oxidoreductase [Alkalilimnicola ehrlichii]
+>WP_007113185.1 thiosulfate reductase [Halomonas boliviensis]
+>WP_011813170.1 molybdopterin oxidoreductase [Halorhodospira halophila]
+>WP_019593327.1 molybdopterin oxidoreductase [Thioalkalivibrio sp. ALM2T]
+>GENE20002  seq_id=cen0013_arrA_contig_0906_contig_0907,prefered=false,cluster=0002,clustsize=0002,maxDist=0000.1667,minSumSquare=0000.0028
+>GENE10031  seq_id=cen0013_aioA_contig_3766_contig_3767,prefered=false,cluster=0031,clustsize=0002,maxDist=0000.0137,minSumSquare=0000.0019
+>GENE30005  seq_id=cen0013_arxA_contig_0488_contig_0489,prefered=false,cluster=0005,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20008  seq_id=cen0013_arrA_contig_2012_contig_2013,prefered=false,cluster=0008,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10034  seq_id=cen0013_aioA_contig_3508_contig_3509,prefered=false,cluster=0034,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30008  seq_id=cen0013_arxA_contig_0548_contig_0549,prefered=false,cluster=0008,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20003  seq_id=cen0013_arrA_contig_0826_contig_0827,prefered=false,cluster=0003,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10043  seq_id=cen0013_aioA_contig_3372_contig_3373,prefered=false,cluster=0043,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30007  seq_id=cen0013_arxA_contig_0982_contig_0983,prefered=false,cluster=0007,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20005  seq_id=cen0013_arrA_contig_2068_contig_2069,prefered=false,cluster=0005,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10042  seq_id=cen0013_aioA_contig_1248_contig_1249,prefered=false,cluster=0042,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10036  seq_id=cen0013_aioA_contig_4486_contig_4487,prefered=false,cluster=0036,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30012  seq_id=cen0013_arxA_contig_0224_contig_0225,prefered=false,cluster=0012,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10051  seq_id=cen0013_aioA_contig_4862_contig_4863,prefered=false,cluster=0051,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10037  seq_id=cen0013_aioA_contig_1556_contig_1557,prefered=false,cluster=0037,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20006  seq_id=cen0013_arrA_contig_0652_contig_0653,prefered=false,cluster=0006,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30006  seq_id=cen0013_arxA_contig_0170_contig_0171,prefered=false,cluster=0006,clustsize=0001,maxDist=0000,minSumSquare=0000
+>ARXA_Ectothiorhodospira_PHS-1 (EHQ52454.1)
+>WP_008932021.1 molybdopterin oxidoreductase [Ectothiorhodospira sp. PHS-1]
+>GENE10013  seq_id=cen0013_aioA_contig_0198_contig_0199,prefered=false,cluster=0013,clustsize=0006,maxDist=0000.5152,minSumSquare=0000.0377
+>GENE30001  seq_id=cen0013_arxA_contig_0498_contig_0499,prefered=false,cluster=0001,clustsize=0006,maxDist=0000.6003,minSumSquare=0000.0383
+>GENE20001  seq_id=cen0013_arrA_contig_1586_contig_1587,prefered=false,cluster=0001,clustsize=0003,maxDist=0000.4301,minSumSquare=0000.0115
+>GENE10049  seq_id=cen0013_aioA_contig_0586_contig_0587,prefered=false,cluster=0049,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30002  seq_id=cen0013_arxA_contig_0166_contig_0167,prefered=false,cluster=0002,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20004  seq_id=cen0013_arrA_contig_0812_contig_0813,prefered=false,cluster=0004,clustsize=0001,maxDist=0000,minSumSquare=0000
+>WP_011627967.1 molybdopterin oxidoreductase [Alkalilimnicola ehrlichii]
+>YP_741061.1 molybdopterin oxidoreductase [Alkalilimnicola ehrlichii MLHE-1]
+>YP_007216117.1 Formate dehydrogenase O alpha subunit [Thioalkalivibrio nitratireducens DSM 14787]
+>WP_018231946.1 molybdopterin oxidoreductase [Thioalkalivibrio thiocyanodenitrificans]
+>WP_018952916.1 hypothetical protein [Thioalkalivibrio sp. ALJ17]
+>GENE10026  seq_id=cen0004_aioA_contig_7882_contig_7883,prefered=false,cluster=0026,clustsize=0002,maxDist=0000.8947,minSumSquare=0000.0801
+>YP_001634827.1 arsenite oxidase large subunit [Chloroflexus aurantiacus J-10-fl]
+>GENE30010  seq_id=cen0013_arxA_contig_0492_contig_0493,prefered=false,cluster=0010,clustsize=0001,maxDist=0000,minSumSquare=0000
+>BAL57917.1 molybdopterin oxidoreductase [uncultured Acetothermia bacterium]
+>ABW84260.2 arsenite oxidase Mo-containing subunit [Polaromonas sp. GM1]
+>GENE10002  seq_id=cen0004_aioA_contig_5922_contig_5923,prefered=false,cluster=0002,clustsize=0004,maxDist=0000.6608,minSumSquare=0000.0163
+>GENE10048  seq_id=cen0004_aioA_contig_6938_contig_6939,prefered=false,cluster=0048,clustsize=0001,maxDist=0000,minSumSquare=0000
+>CCA86643.1 Arsenite oxidase large subunit (AOI) [Ralstonia syzygii R24]
+>GENE10039  seq_id=cen0013_aioA_contig_0316_contig_0317,prefered=false,cluster=0039,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10038  seq_id=cen0013_aioA_contig_3998_contig_3999,prefered=false,cluster=0038,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10010  seq_id=cen0013_aioA_contig_0150_contig_0151,prefered=false,cluster=0010,clustsize=0002,maxDist=0000.0826,minSumSquare=0000.0007
+>Bacillus_selenitireducens (AAQ19491.1)
+>WP_013173528.1 dehydrogenase [[Bacillus] selenitireducens]
+>Shewanella_sp._ANA-3 (AAQ01672.1)
+>Chrysiogenes_arsenatis (AAU11839.1)
+>YP_001229259.1 molybdopterin oxidoreductase [Geobacter uraniireducens Rf4]
+>EKD41141.1 hypothetical protein ACD_74C00001G0001, partial [uncultured bacterium]
+>GENE10045  seq_id=cen0013_aioA_contig_0014_contig_0015,prefered=false,cluster=0045,clustsize=0001,maxDist=0000,minSumSquare=0000
+>WP_008027033.1 arsenite oxidase large subunit [Rhodobacter sp. SW2]
+>GENE10021  seq_id=cen0005_aioA_contig_10050_contig_10051,prefered=false,cluster=0021,clustsize=0002,maxDist=0000.3915,minSumSquare=0000.0153
+>GENE10047  seq_id=cen0010_aioA_contig_1186_contig_1187,prefered=false,cluster=0047,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10005  seq_id=cen0005_aioA_contig_10524_contig_10525,prefered=false,cluster=0005,clustsize=0004,maxDist=0000.2874,minSumSquare=0000.0174
+>GENE10040  seq_id=cen0003_aioA_contig_5014_contig_5015,prefered=false,cluster=0040,clustsize=0001,maxDist=0000,minSumSquare=0000
+>AEL22123.1 arsenite oxidase large subunit, partial [uncultured bacterium]
+>AEL22127.1 arsenite oxidase large subunit, partial [uncultured bacterium]
+>BAO28251.1 molybdopterin oxidoreductase, ArrA like protein [Sulfuritalea hydrogenivorans sk43H]
+>GENE10025  seq_id=cen0003_aioA_contig_0500_contig_0501,prefered=false,cluster=0025,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10050  seq_id=cen0005_aioA_contig_0162_contig_0163,prefered=false,cluster=0050,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10055  seq_id=cen0004_aioA_contig_0782_contig_0783,prefered=false,cluster=0055,clustsize=0001,maxDist=0000,minSumSquare=0000
+>sp|Q7SIF4|AIOA_ALCFA Arsenite oxidase subunit AioA OS=Alcaligenes faecalis GN=aioA PE=1 SV=2
+>sp|Q8GGJ6|AIOA_HERAR Arsenite oxidase subunit AioA OS=Herminiimonas arsenicoxydans GN=aioA PE=2 SV=2
+>GENE10017  seq_id=cen0003_aioA_contig_2034_contig_2035,prefered=false,cluster=0017,clustsize=0003,maxDist=0000.9333,minSumSquare=0000.1135
+>GENE20009  seq_id=cen0013_arrA_contig_0132_contig_0133,prefered=false,cluster=0009,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30011  seq_id=cen0013_arxA_contig_0320_contig_0321,prefered=false,cluster=0011,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10003  seq_id=cen0003_aioA_contig_2240_contig_2241,prefered=false,cluster=0003,clustsize=0002,maxDist=0000.1087,minSumSquare=0000.0012
+>GENE10057  seq_id=cen0006_aioA_contig_0010_contig_0011,prefered=false,cluster=0057,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10052  seq_id=cen0006_aioA_contig_1452_contig_1453,prefered=false,cluster=0052,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10011  seq_id=cen0003_aioA_contig_0426_contig_0427,prefered=false,cluster=0011,clustsize=0002,maxDist=0000.4878,minSumSquare=0000.0238
+>WP_008873559.1 arsenite oxidase large subunit [Mesorhizobium metallidurans]
+>GENE10046  seq_id=cen0004_aioA_contig_1982_contig_1983,prefered=false,cluster=0046,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10032  seq_id=cen0010_aioA_contig_0000_contig_0001,prefered=false,cluster=0032,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10054  seq_id=cen0010_aioA_contig_0544_contig_0545,prefered=false,cluster=0054,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10019  seq_id=cen0005_aioA_contig_1882_contig_1883,prefered=false,cluster=0019,clustsize=0002,maxDist=0000.1465,minSumSquare=0000.0021
+>GENE10035  seq_id=cen0005_aioA_contig_6148_contig_6149,prefered=false,cluster=0035,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10018  seq_id=cen0006_aioA_contig_0008_contig_0009,prefered=false,cluster=0018,clustsize=0002,maxDist=0000.3226,minSumSquare=0000.0104
+>GENE30003  seq_id=cen0013_arxA_contig_0032_contig_0033,prefered=false,cluster=0003,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE20007  seq_id=cen0013_arrA_contig_3088_contig_3089,prefered=false,cluster=0007,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE30004  seq_id=cen0013_arxA_contig_0964_contig_0965,prefered=false,cluster=0004,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10023  seq_id=cen0005_aioA_contig_1132_contig_1133,prefered=false,cluster=0023,clustsize=0003,maxDist=0000.2158,minSumSquare=0000.0081
+>GENE10030  seq_id=cen0005_aioA_contig_1886_contig_1887,prefered=false,cluster=0030,clustsize=0002,maxDist=0000.3704,minSumSquare=0000.0137
+>GENE10022  seq_id=cen0005_aioA_contig_1904_contig_1905,prefered=false,cluster=0022,clustsize=0002,maxDist=0000.3704,minSumSquare=0000.0137
+>GENE10006  seq_id=cen0010_aioA_contig_0670_contig_0671,prefered=false,cluster=0006,clustsize=0002,maxDist=0000.0937,minSumSquare=0000.0009
+>CBW47103.1 arsenite oxidase large subunit, partial [uncultured alpha proteobacterium]
+>GENE10009  seq_id=cen0001_aioA_contig_0498_contig_0499,prefered=false,cluster=0009,clustsize=0002,maxDist=0000,minSumSquare=0000
+>WP_007002480.1 arsenite oxidase large subunit [Roseomonas cervicalis]
+>GENE10056  seq_id=cen0007_aioA_contig_0046_contig_0047,prefered=false,cluster=0056,clustsize=0001,maxDist=0000,minSumSquare=0000
+>AIOA_NT-26 (AAR05656.1)
+>WP_006724592.1 arsenite oxidase large subunit [Agrobacterium albertimagni]
+>GENE10001  seq_id=cen0016_aioA_contig_5028_contig_5029,prefered=false,cluster=0001,clustsize=0003,maxDist=0000.1595,minSumSquare=0000.0002
+>WP_008840417.1 arsenite oxidase large subunit [Mesorhizobium alhagi]
+>GENE10033  seq_id=cen0007_aioA_contig_0242_contig_0243,prefered=false,cluster=0033,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10044  seq_id=cen0004_aioA_contig_0988_contig_0989,prefered=false,cluster=0044,clustsize=0001,maxDist=0000,minSumSquare=0000
+>WP_007557673.1 arsenite oxidase large subunit [Methylobacterium sp. GXF4]
+>GENE10053  seq_id=cen0005_aioA_contig_0014_contig_0015,prefered=false,cluster=0053,clustsize=0001,maxDist=0000,minSumSquare=0000
+>AEL22135.1 arsenite oxidase large subunit, partial [uncultured bacterium]
+>GENE10007  seq_id=cen0007_aioA_contig_0132_contig_0133,prefered=false,cluster=0007,clustsize=0002,maxDist=0000.7299,minSumSquare=0000.0533
+>GENE10024  seq_id=cen0004_aioA_contig_5866_contig_5867,prefered=false,cluster=0024,clustsize=0004,maxDist=0000.4762,minSumSquare=0000.0373
+>GENE10014  seq_id=cen0005_aioA_contig_10206_contig_10207,prefered=false,cluster=0014,clustsize=0004,maxDist=0000.4211,minSumSquare=0000.0136
+>GENE10008  seq_id=cen0007_aioA_contig_0178_contig_0179,prefered=false,cluster=0008,clustsize=0003,maxDist=0000.0226,minSumSquare=0000.0039
+>GENE10004  seq_id=cen0004_aioA_contig_2788_contig_2789,prefered=false,cluster=0004,clustsize=0005,maxDist=0000.9036,minSumSquare=0000.0486
+>YP_001418831.1 arsenite oxidase large subunit [Xanthobacter autotrophicus Py2]
+>GENE10041  seq_id=cen0013_aioA_contig_2518_contig_2519,prefered=false,cluster=0041,clustsize=0001,maxDist=0000,minSumSquare=0000
+>GENE10016  seq_id=cen0005_aioA_contig_9742_contig_9743,prefered=false,cluster=0016,clustsize=0002,maxDist=0000.3371,minSumSquare=0000.0114
+>GENE10029  seq_id=cen0005_aioA_contig_10634_contig_10635,prefered=false,cluster=0029,clustsize=0003,maxDist=0000.5814,minSumSquare=0000.0325
+>ADF47253.1 arsenite oxidase alpha subunit, partial [bacterium enrichment culture clone aoxheteroB23_4W]
+>GENE10012  seq_id=cen0005_aioA_contig_5220_contig_5221,prefered=false,cluster=0012,clustsize=0005,maxDist=0000.3791,minSumSquare=0000.0073
+>BAM24490.1 arsenite oxidase large subunit, partial [uncultured bacterium]
+>GENE10027  seq_id=cen0017_aioA_contig_5458_contig_5459,prefered=false,cluster=0027,clustsize=0002,maxDist=0000.9467,minSumSquare=0000.0896
+>YP_571843.1 arsenate reductase (azurin) (plasmid) [Nitrobacter hamburgensis X14]
+>AEL22169.1 arsenite oxidase large subunit, partial [uncultured bacterium]
+>GENE10020  seq_id=cen0007_aioA_contig_2332_contig_2333,prefered=false,cluster=0020,clustsize=0003,maxDist=0000.6838,minSumSquare=0000.0445
+>WP_007602791.1 arsenite oxidase large subunit [Bradyrhizobium sp. WSM1253]
+>GENE10015  seq_id=cen0005_aioA_contig_16004_contig_16005,prefered=false,cluster=0015,clustsize=0003,maxDist=0000.9934,minSumSquare=0000.0997
+>GENE10028  seq_id=cen0012_aioA_contig_0374_contig_0375,prefered=false,cluster=0028,clustsize=0001,maxDist=0000,minSumSquare=0000

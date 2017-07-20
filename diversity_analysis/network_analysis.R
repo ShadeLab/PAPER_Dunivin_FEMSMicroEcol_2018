@@ -146,15 +146,17 @@ for(i in 3:6570){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
-  left_join(meta, by = "Site")
+  left_join(meta, by = "Site") %>%
+  select(rplB:As_ppm, SoilTemperature_to10cm, Classification, 
+         OrganicMatter_500:Fe_ppm)
 
 
 #change to df and add row names back
 otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
-rownames(otu_table_norm_annotated) <- otu_table_norm_annotated[,1]
+rownames(otu_table_norm_annotated) <- otu_table_norm_annotated[,2]
 
-#remove first column
-otu_table_norm_annotated=otu_table_norm_annotated[,-1]
+#remove first two columns
+otu_table_norm_annotated=otu_table_norm_annotated[,-c(1,2)]
 
 #make data matrix
 otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
@@ -500,20 +502,36 @@ identifiers_tidy <- identifiers %>%
   rename(Gene = id) %>%
   select(Gene, OTU, Taxon)
 
+#list otus that are gene matches
+mixed.aioA <- c("OTU_0013", "OTU_0031", "OTU_0034", "OTU_0036", "OTU_0037", "OTU_0042", "OTU_0043", "OTU_0049", "OTU_0051")
+mixed.arrA <- c("OTU_0001", "OTU_0002", "OTU_0003", "OTU_0004", "OTU_0005", "OTU_0006", "OTU_0008")
+mixed.arxA <- c("OTU_0011", "OTU_04")
+
+#remove OTUs that are gene matches
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "aioA" &
+                                              identifiers_tidy$OTU %in% mixed.aioA),]
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "arrA" &
+                                              identifiers_tidy$OTU %in% mixed.arrA),]
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "arxA" &
+                                              identifiers_tidy$OTU %in% mixed.arxA),]
+
 library(taxize)
 #add taxanomic information 
-blast.ncbi <- tax_name(query = identifiers_tidy$Taxon, 
-                      get = c("genus", "order", "family", "class", "phylum"), db = "ncbi")
+#blast.ncbi <- tax_name(query = identifiers_tidy$Taxon, 
+#                      get = c("genus", "order", "family", "class", "phylum"), #db = "ncbi")
 
 
 #label query "Organism" for joining purposes
-blast.ncbi$Taxon <- blast.ncbi$query
+#blast.ncbi$Taxon <- blast.ncbi$query
 
 #save this table since the above step takes a long time
-write.table(blast.ncbi, file = paste(wd, "/output/blast.ncbi.taxonomy.txt", sep = ""), 
-            row.names = FALSE)
+#write.table(blast.ncbi, file = paste(wd, "/output/blast.ncbi.taxonomy.txt",
+#sep = ""), row.names = FALSE)
 
-
+#read in ncbi information 
+blast.ncbi <- read_delim(paste(wd, "/output/blast.ncbi.taxonomy.txt",
+                               sep = ""), delim = " ")
+  
 #join ncbi information with annotated data
 #output should have same number of rows 
 identifiers_ncbi <- identifiers_tidy %>%
@@ -523,7 +541,7 @@ identifiers_ncbi <- identifiers_tidy %>%
   unique()
 
 #replace NA in phylum with unknown
-data.annotated.ncbi$phylum[is.na(data.annotated.ncbi$phylum)] = "Unknown"
+identifiers_ncbi$phylum[is.na(identifiers_ncbi$phylum)] = "Unknown"
 
 #call NA class by phyla
 identifiers_ncbi$class[is.na(identifiers_ncbi$class)] <- as.character(identifiers_ncbi$phylum[is.na(identifiers_ncbi$class)])
@@ -553,7 +571,6 @@ color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E
 #order genes by group
 data.phylum$Gene <- factor(data.phylum$Gene, 
                            levels = data.phylum$Gene[order(data.phylum$Group)])
-data.phylum$phylum[is.na(data.phylum$phylum)] <- "metagenome"
 
 #plot 
 (gene.bar.census <- ggplot(subset(data.phylum, Group == "ArsenicResistance"),
