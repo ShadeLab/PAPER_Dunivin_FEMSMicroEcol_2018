@@ -147,7 +147,8 @@ for(i in 3:6570){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
-  select(rplB:As_ppm, SoilTemperature_to10cm, Classification, 
+  mutate(DateSince_Fire = 2014-DateFire_Elick2011) %>%
+  select(rplB:As_ppm, SoilTemperature_to10cm, DateSince_Fire,
          OrganicMatter_500:Fe_ppm)
 
 
@@ -165,12 +166,14 @@ otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #replace NAs with zeros
-otu_table_norm_annotated.t[is.na(otu_table_norm_annotated.t)] <- 0
+otu_table_norm_annotated.t[1:6569,][is.na(otu_table_norm_annotated.t[1:6569,])] <- 0
 
 
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
+#replace NA with 0 (date since fire)
+otu_table_normPA[is.na(otu_table_normPA)] <- 0
 #list OTUs present in less than 2 samples
 abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
 
@@ -194,9 +197,21 @@ write.table(otu_table_norm.export,
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
 
+##make network with few genes
+#subset data to only contain all of the AsRG ARG clusters
+#list otus that are gene matches
+matches <- c("tolC_05", "ClassB_003", "dfra12_076", "dfra12_038",
+             "acr3_002", "acr3_053", "arsM_109", "arsM_296", "rplB_1027", 
+             "rplB_1015", "rplB_0549", "rplB_0564", "rplB_0692", 
+             "rplB_0149", "rplB_0407", "rplB_0355", "rplB_1131", 
+             "rplB_0267", "rplB_0169", "rplB_0886", "SoilTemperature_to10cm",
+             "Ca_ppm", "Mg_ppm", "DateSince_Fire")
+
+#remove OTUs that are gene matches
+otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.slim.t) %in% matches]
 
 #find correlations between OTUs
-corr <- corr.test(otu_table_norm.slim.t, 
+corr <- corr.test(otu_table_norm.slim.t_matches, 
                   method = "spearman", adjust = "fdr", alpha = 0.01)
 
 corr.r <- as.matrix(print(corr$r, long = TRUE))
@@ -209,8 +224,8 @@ write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = 
 
 #make network of correlations
 qgraph(corr$r, minimum = "sig", sampleSize=13, 
-       layout = "spring", details = TRUE,
-       graph = "cor", label.cex = 3, curve = 0.2, curveAll = TRUE,
+       layout = "circle", details = TRUE,
+       graph = "cor", label.cex = 1,
        alpha = 0.01)
 
 
