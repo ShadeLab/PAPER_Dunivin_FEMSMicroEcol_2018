@@ -308,15 +308,67 @@ gene_abundance_summary <- gene_abundance %>%
     ylab("Total gene count (normalized to rplB)") +
     theme_classic(base_size = 15))
 
-(boxplot <- ggplot(gene_abundance_summary, aes(x = Classification, 
-                                               y = Total)) +
+#order based on group
+gene_abundance_summary$Gene <- factor(gene_abundance_summary$Gene, 
+                                levels = gene_abundance_summary$Gene[order(gene_abundance_summary$Description)])
+
+(boxplot <- ggplot(subset(gene_abundance_summary, subset = Group == "ArsenicResistance"), aes(x = Classification, 
+                                               y = Total*100)) +
     geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm)) +
-    facet_wrap(~Gene, scales = "free_y") +
+    facet_wrap(~Gene, scales = "free_y", ncol = 3) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                          guide_legend(title="Temperature (°C)")) +
-    ylab("Total gene count (normalized to rplB)") +
-    theme_classic(base_size = 12))
+    ylab("Gene per rplB (%)") +
+    theme_bw(base_size = 14) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+ggsave(boxplot, filename = "/Users/dunivint/Documents/ShadeLab/Presentations/ARG_symposium/gene_boxplots_asrg.eps", height = 6, width = 7)
+
+#subset data to only contain all of the AsRG ARG clusters
+#list otus that are gene matches
+matches <- c("tolC_05", "ClassB_003", "dfra12_076", "dfra12_038",
+             "acr3_002", "acr3_053", "arsM_109", "arsM_296", "rplB_1027", 
+             "rplB_1015", "rplB_0549", "rplB_0564", "rplB_0692", 
+             "rplB_0149", "rplB_0407", "rplB_0355")
+
+#remove OTUs that are gene matches
+gene_abundance_mixes <- gene_abundance[gene_abundance$OTU %in% matches,]
+
+#order based on temperature
+gene_abundance_mixes$Site <- factor(gene_abundance_mixes$Site, 
+                                      levels = gene_abundance_mixes$Site[order(gene_abundance_mixes$RelativeAbundance)])
+
+ggplot(gene_abundance_mixes, aes(x = SoilTemperature_to10cm, 
+                                 y = RelativeAbundance*100, fill = OTU)) +
+  geom_density(stat = "identity", alpha = 0.5, position = "stack") +
+  geom_point(aes(shape = Classification)) +
+  facet_wrap(~OTU) +
+  theme_bw()
+
+#subset data to only contain all of the AsRG ARG clusters
+#list otus that are gene matches
+asrg <- c("acr3_160", "acr3_094", "acr3_047", "acr3_101", "acr3_018", 
+             "acr3_024", "acr3_048", "arsM_023", "arsM_465", "arsM_101",
+             "arsM_059", "arsM_072", "arsM_073", "arsM_262", "arsM_120",
+             "arsCglut_094", "arsCglut_185", "arsCglut_066", "arsCglut_055",
+             "arsCglut_139", "arsA_014", "arsA_010")
+asrg <- c("acr3_022", "arsM_018", "arsCthio_06")
+#remove OTUs that are gene matches
+gene_abundance_asrg <- gene_abundance[gene_abundance$OTU %in% asrg,]
+
+#order based on temperature
+gene_abundance_asrg$Site <- factor(gene_abundance_asrg$Site, 
+                                    levels = gene_abundance_asrg$Site[order(gene_abundance_asrg$RelativeAbundance)])
+
+ggplot(gene_abundance_asrg, aes(x = Site, 
+                                 y = RelativeAbundance*100, fill = OTU)) +
+  geom_density(stat = "identity", alpha = 0.5) +
+  geom_point(aes(shape = Classification)) +
+  facet_wrap(~OTU) +
+  theme_bw()
+
 
 ######################
 #CORRELATION ANALYSES#
