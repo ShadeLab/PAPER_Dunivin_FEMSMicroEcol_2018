@@ -115,12 +115,6 @@ otu_table <- otu_table %>%
 #write file to save OTU table
 write.table(otu_table, paste(wd, "/output/otu_table.txt", sep = ""), sep = "\t", quote = FALSE, row.names = FALSE)
 
-#read in rplB data
-#rplB <- read_delim(paste(wd, "/output/rplB.summary.scg.txt", sep = ""), delim  = " ")
-
-#get mean rplB
-#mean.rplB <- mean(rplB$rplB)
-
 #get rplB otu data
 rplB <- otu_table[,grepl("rplB", names(otu_table))]
 
@@ -133,7 +127,6 @@ rplB_summary <- data.frame(rowSums(rplB))
 
 #make site a column in rplB
 rplB_summary$Site <- rownames(rplB_summary) 
-
 
 #add rplB data to otu_table
 otu_table.rplB <- rplB_summary %>%
@@ -165,15 +158,15 @@ otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 #transpose data
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
-#replace NAs with zeros
+#replace NAs with zeros (except date since fire)
 otu_table_norm_annotated.t[1:6569,][is.na(otu_table_norm_annotated.t[1:6569,])] <- 0
-
 
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 
 #replace NA with 0 (date since fire)
 otu_table_normPA[is.na(otu_table_normPA)] <- 0
+
 #list OTUs present in less than 2 samples
 abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
 
@@ -182,17 +175,18 @@ otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_
                               rownames(abund)),]
 
 otu_table_norm.export <- otu_table_norm_annotated.t
+
 #replace all 0's with NA for export
-is.na(otu_table_norm.export) <- !otu_table_norm.export
+#is.na(otu_table_norm.export) <- !otu_table_norm.export
 
 #replace NAs with nothing
-otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
+#otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
 
 #write table as output for SparCC
-write.table(otu_table_norm.export, 
-            file = (paste(wd, "/output/otu_table.txt", 
-                          sep = "")), 
-            sep = "\t", quote = FALSE)
+#write.table(otu_table_norm.export, 
+#            file = (paste(wd, "/output/otu_table.txt", 
+#                          sep = "")), 
+#            sep = "\t", quote = FALSE)
 
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
@@ -228,24 +222,6 @@ qgraph(corr$r, minimum = "sig", sampleSize=13,
        graph = "cor", label.cex = 1,
        alpha = 0.01)
 
-
-library(igraph)
-cor_mat<-as.matrix(corr.r)
-diag(cor_mat)<-0
-graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
-graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.68])
-#graph <- delete.vertices(graph,which(degree(graph)<1))
-E(graph)$color <- "grey";
-E(graph)$width <- 1;
-E(graph)[weight > 0]$color <- "green";
-E(graph)[weight < 0]$color <- "red";
-V(graph)$color <- "grey";
-E(graph)$width <- abs(E(graph)$weight*2);
-tkplot(graph, edge.curved = FALSE)
-
-plot(graph)
-get.edgelist(graph)
-
 #test without rplB!
 #remove column based on pattern (rplB)
 otu_table_norm.slim.t.genes <- otu_table_norm.slim.t[, -grep("rplB", colnames(otu_table_norm.slim.t))]
@@ -272,7 +248,46 @@ E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
 tkplot(graph, edge.curved = FALSE)
 
+############################
+#TEST FOR SPATIAL DISTANCES#
+############################
+#mantel w/ spatial distances
+space <- read.table(paste(wd, "/data/spatialdistancematrix.txt", sep = ""), 
+                 header=TRUE, row.names=1)
 
+#make spacial matrix names match other data
+names(space) <- gsub("C", "Cen", names(space))
+rownames(space) <- gsub("C", "Cen", rownames(space))
+
+#remove rows and columns that involve sites 
+#that don't have metagenomes
+space <- space[which(names(space) %in% rownames(otu_table_norm.slim.t)),]
+space <- space[,which(colnames(space) %in% rownames(otu_table_norm.slim.t))]
+
+#make space into a distance matrix
+space.d=as.dist(space)
+
+otu_mantel <- otu_table_norm
+rownames(otu_mantel) <- otu_mantel[,2]
+otu_mantel <- otu_mantel[,-c(1:2)]
+otu_for_corr <- otu_mantel[ order(row.names(otu_mantel)), ]
+
+#separate into rplB, AsRG, ARG
+otu_for_corr.rplB <- otu_for_corr[, grep("rplB", colnames(otu_for_corr))]
+otu_for_corr.AsRG <- otu_for_corr[, grep("ars|aio|arx|arr|acr", 
+                                         colnames(otu_for_corr))]
+otu_for_corr.ARG <- otu_for_corr[,grep("tolC|dfra|Class|intI|tet|van|CEP|AAC|ade|sul", 
+                                        colnames(otu_for_corr))]
+
+otu_rplB.d=dist(otu_for_corr.rplB, diag = TRUE, upper = TRUE)
+otu_AsRG.d=dist(otu_for_corr.AsRG, diag = TRUE, upper = TRUE)
+otu_ARG.d=dist(otu_for_corr.ARG, diag = TRUE, upper = TRUE)
+
+#mantel w/ spatial distances
+mantel(otu_rplB.d,space.d)
+mantel(otu_AsRG.d,space.d)
+mantel(otu_ARG.d,space.d)
+#we see no change related to space
 
 ############################
 #MAKE GENE ABUNDANCE GRAPHS#
