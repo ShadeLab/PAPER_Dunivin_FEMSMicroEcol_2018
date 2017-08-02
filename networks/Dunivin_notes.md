@@ -81,13 +81,13 @@ makeblastdb -in /mnt/scratch/dunivint/METABAT.fa  -dbtype nucl -out /mnt/scratch
 blastn -db /mnt/scratch/dunivint/databases/METABAT.db -query /mnt/research/ShadeLab/WorkingSpace/Dunivin/xander/networks/clustered_rplB_nucl.fsa -out metabat_rplB_blast.txt -outfmt "6 qseqid salltitles pident evalue" -max_target_seqs 10
 ```
 
-| GENE | OTU | Contig | % identity | e-value | Bin | 
-| ---- | --- | ------ | ---------- | ------- | --- |
+|  OTU | Contig | % identity | e-value | Bin | 
+| ---- | --- | ------ | ---------- | ------- |
 | OTU_1131 | k107_974644 | 97.35 | 0.0 | |
 | OTU_1131 | k107_18736747 | 85.02 | 0.0 | |
 | OTU_1131 | k107_3134199 | 81.53 | 2e-150 | |
 | OTU_1131 | k107_31965501 | 81.20 | 4e-143 | |
-| | OTU_1131 | k107_14923167 | 79.48 | 1e-123 | |
+| OTU_1131 | k107_14923167 | 79.48 | 1e-123 | |
 | OTU_1131 | k107_16818979 | 81.28 | 4e-123 | |
 | OTU_1131 | k107_21709338 | 78.89 | 3e-115 | |
 | OTU_1131 | k107_177340 | 78.65 | 6e-92 | |
