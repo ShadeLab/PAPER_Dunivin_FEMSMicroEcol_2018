@@ -204,6 +204,35 @@ matches <- c("tolC_05", "ClassB_003", "dfra12_076", "dfra12_038",
 #remove OTUs that are gene matches
 otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.slim.t) %in% matches]
 
+#plot interesting trends
+match_trends <- otu_table_norm.slim.t_matches %>%
+  melt(value.name = "Abundance") %>%
+  rename(Site = Var1, OTU = Var2) %>%
+  left_join(meta, by = "Site")
+
+#order based on group
+match_trends$Site <- factor(match_trends$Site, 
+                            match_trends$Site[order(match_trends$SoilTemperature_to10cm)])
+
+match1 <- c("rplB_0564", "tolC_05", "acr3_053",
+            "arsM_0109", "ClassB_003", "dfra12_038")
+match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
+ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
+  geom_bar(stat = "identity")
+
+match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
+match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
+ggplot(match_trends2, 
+       aes(x = Site, y = Abundance, fill = OTU)) +
+  geom_bar(stat = "identity") 
+
+match3 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038", "rplB_0564", "tolC_05", "acr3_053","arsM_0109", "ClassB_003", "dfra12_038")
+match_trends3 <- match_trends[which(match_trends$OTU %in% match3),]
+ggplot(match_trends3, 
+       aes(x = Site, y = Abundance, fill = OTU)) +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                   hjust=0.95,vjust=0.2))
 #find correlations between OTUs
 corr <- corr.test(otu_table_norm.slim.t_matches, 
                   method = "spearman", adjust = "fdr", alpha = 0.01)
@@ -658,7 +687,6 @@ data.phylum$Gene <- factor(data.phylum$Gene,
 (gene.bar.census <- ggplot(subset(data.phylum, Group == "ArsenicResistance"),
                            aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
     geom_bar(stat = "identity", alpha = 0.8) +
-    scale_fill_manual(values = color) +
     theme_classic(base_size = 8) +
     ylab("Gene per rplB (%)") +
     facet_wrap(~ Gene, scales = "free_y") +
