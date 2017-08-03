@@ -83,7 +83,7 @@ blastn -db /mnt/scratch/dunivint/databases/METABAT.db -query /mnt/research/Shade
 
 |  OTU | Contig | % identity | e-value | Bin | 
 | ---- | --- | ------ | ---------- | ------- |
-| OTU_1131 | k107_974644 | 97.35 | 0.0 | 916, 795, |
+| OTU_1131 | k107_974644 | 97.35 | 0.0 | 916 |
 | OTU_1131 | k107_18736747 | 85.02 | 0.0 | 897 |
 | OTU_1131 | k107_3134199 | 81.53 | 2e-150 | 581 |
 | OTU_1131 | k107_31965501 | 81.20 | 4e-143 | 725 |
