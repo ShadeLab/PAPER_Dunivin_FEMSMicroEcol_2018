@@ -214,24 +214,34 @@ match_trends <- otu_table_norm.slim.t_matches %>%
 match_trends$Site <- factor(match_trends$Site, 
                             match_trends$Site[order(match_trends$SoilTemperature_to10cm)])
 
+color1 <- c("#7DC2AC","#EB9D52", "#8CB9D5","#763479", "#DE6159")
 match1 <- c("rplB_0564", "tolC_05", "acr3_053",
             "arsM_0109", "ClassB_003", "dfra12_038")
 match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
 ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = color1) +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, size = 6, 
+                                   hjust=0.95,vjust=0.9))
 
+color2 <- c("#7DC2AC","#FAF5A0","#8CB9D5","#2E5F95")
 match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
 match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
 ggplot(match_trends2, 
        aes(x = Site, y = Abundance, fill = OTU)) +
-  geom_bar(stat = "identity") 
+  geom_bar(stat = "identity", color = "black")  +
+  theme_classic() +
+  scale_fill_manual(values = color2) +
+  theme(axis.text.x = element_text(angle = 45, size = 6, 
+                                   hjust=0.95,vjust=0.9))
 
 match3 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038", "rplB_0564", "tolC_05", "acr3_053","arsM_0109", "ClassB_003", "dfra12_038")
 match_trends3 <- match_trends[which(match_trends$OTU %in% match3),]
 ggplot(match_trends3, 
        aes(x = Site, y = Abundance, fill = OTU)) +
   geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 90, size = 8, 
+  theme(axis.text.x = element_text(angle = 90, size = 10, 
                                    hjust=0.95,vjust=0.2))
 #find correlations between OTUs
 corr <- corr.test(otu_table_norm.slim.t_matches, 
