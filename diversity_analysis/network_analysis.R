@@ -218,7 +218,7 @@ color1 <- c("#7DC2AC","#EB9D52", "#8CB9D5","#763479", "#DE6159")
 match1 <- c("rplB_0564", "tolC_05", "acr3_053",
             "arsM_0109", "ClassB_003", "dfra12_038")
 match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
-ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
+mt1 <- ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
   geom_bar(stat = "identity", color = "black") +
   scale_fill_manual(values = color1) +
   theme_classic() +
@@ -228,13 +228,14 @@ ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
 color2 <- c("#7DC2AC","#FAF5A0","#8CB9D5","#2E5F95")
 match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
 match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
-ggplot(match_trends2, 
+mt2 <- ggplot(match_trends2, 
        aes(x = Site, y = Abundance, fill = OTU)) +
   geom_bar(stat = "identity", color = "black")  +
   theme_classic() +
   scale_fill_manual(values = color2) +
   theme(axis.text.x = element_text(angle = 45, size = 6, 
                                    hjust=0.95,vjust=0.9))
+multiplot(mt1, mt2, cols = 2)
 
 match3 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038", "rplB_0564", "tolC_05", "acr3_053","arsM_0109", "ClassB_003", "dfra12_038")
 match_trends3 <- match_trends[which(match_trends$OTU %in% match3),]
