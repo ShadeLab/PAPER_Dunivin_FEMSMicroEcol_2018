@@ -22,14 +22,14 @@ census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""),
 rarecol <- c("black", "darkred", "forestgreen", "orange", "blue", "yellow", "hotpink", "green", "red", "brown", "grey", "purple")
 
 ##################################
-#PHYLUM_LEVEL_RESPONSES_WITH_RPLB#
+#PHYLUM_LEVEL_RESPONSES_WITH_arsM#
 ##################################
 
 #temporarily change working directory to data to bulk load files
 setwd(paste(wd, "/data", sep = ""))
 
 #read in abundance data
-names=list.files(pattern="*rplB_45_taxonabund.txt")
+names=list.files(pattern="*arsM_45_taxonabund.txt")
 data <- do.call(rbind, lapply(names, function(X) {
   data.frame(id = basename(X), read.csv(X))}))
 
@@ -62,13 +62,13 @@ data$Site <- gsub("cen", "Cen", data$Site)
 #double check that all fraction abundances = 1
 #slightly above or below is okay (Xander rounds)
 summarised <- data %>%
-  summarise(Total = sum(Fraction.Abundance), rplB = sum(Abundance))
+  summarise(Total = sum(Fraction.Abundance), arsM = sum(Abundance))
 
 #change site from "cen" to "Cen" so it matches metadata
 summarised$Site <- gsub("cen", "Cen", summarised$Site)
 
 #save summarised data for future analyses
-write.table(x = summarised, file = paste(wd, "/output/rplB.summary.scg.txt", sep = ""), row.names = FALSE)
+write.table(x = summarised, file = paste(wd, "/output/arsM.summary.scg.txt", sep = ""), row.names = FALSE)
 
 #decast for abundance check
 dcast=acast(data, Taxon ~ Site, value.var = "Fraction.Abundance")
@@ -110,13 +110,13 @@ history=summarise(grouped, N=length(Fraction.Abundance), Average=mean(Fraction.A
 ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.png", sep=""), width = 5, height = 5)
 
 #########################
-#RplB DIVERSITY ANALYSIS#
+#arsM DIVERSITY ANALYSIS#
 #########################
 #read in metadata
-meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_JGI_map.txt", sep=""), sep=" ", header=TRUE))
+meta=data.frame(read.delim(file = paste(wd, "/data/Centralia_FULL_map.txt", sep=""), sep=" ", header=TRUE))
 
 #read in distance matrix
-rplB=read.delim(file = paste(wd, "/data/rformat_dist_0.03.txt", sep=""))
+arsM=read.delim(file = paste(wd, "/data/0.1_clust/arsM_rformat_dist_0.1.txt", sep=""))
 
 #call metadata sample data
 metad=meta[-1]
@@ -124,22 +124,22 @@ rownames(metad)=meta$Site
 metad=sample_data(metad)
 
 #add row names back
-rownames(rplB)=rplB[,1]
+rownames(arsM)=arsM[,1]
 
 #remove first column
-rplB=rplB[,-1]
+arsM=arsM[,-1]
 
 #make data matrix
-rplB=data.matrix(rplB)
+arsM=data.matrix(arsM)
 
 #remove first column
-rplB=rplB[,-1]
+arsM=arsM[,-1]
 
 #make an output of total gene count per site
-rplB.gcounts=rowSums(rplB)
+arsM.gcounts=rowSums(arsM)
 
 #otu table
-otu=otu_table(rplB, taxa_are_rows = FALSE)
+otu=otu_table(arsM, taxa_are_rows = FALSE)
 
 #see rarefaction curve
 rarecurve(otu, step=5, col = rarecol, label = TRUE)
@@ -154,9 +154,15 @@ rarecurve(rare, step=5, col = c("black", "darkred", "forestgreen", "orange", "bl
 phylo=merge_phyloseq(rare, metad)
 
 #plot phylo richness
-(richness=plot_richness(phylo, x="Classification", color = "SoilTemperature_to10cm") +
+(richness=plot_richness(phylo, x="Classification", color = "SoilTemperature_to10cm", 
+                        measures = "Observed") +
+    geom_boxplot(color= "black") +
+    geom_jitter(size = 2) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                          guide_legend(title="Temperature (°C)")))
+                          guide_legend(title="Temperature (°C)")) +
+    theme_bw(base_size = 14) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
 
 #save plot 
 ggsave(richness, filename = paste(wd, "/figures/richness.png", sep=""), 
@@ -187,7 +193,9 @@ plieou=inner_join(plieou, meta)
                           guide_legend(title="Temperature (°C)")) +
     ylab("Evenness") +
     xlab("Fire classification") +
-    theme_bw(base_size = 12))
+    theme_bw(base_size = 14) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
 
 #save evenness plot
 ggsave(evenness, filename = paste(wd, "/figures/evenness.png", sep=""), 
@@ -219,15 +227,15 @@ ggsave(sorenson.ord, filename = paste(wd, "/figures/sorenson.ord.png", sep=""),
        width = 6, height = 5)
 library(ape)
 #make object phylo with tree and biom info
-tree <- read.tree(file = paste(wd, "/data/rplB_0.03_tree.nwk", sep=""))
+tree <- read.tree(file = paste(wd, "/data/arsM_0.03_tree.nwk", sep=""))
 tree <- phy_tree(tree)
 
 #merge
 phylo=merge_phyloseq(tree, rare, metad)
 
 #plot unweighted Unifrac ordination
-uni.u.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = FALSE)
-(uni.u.ord.rplB=plot_ordination(phylo, uni.u.ord.rplB, shape="Classification", 
+uni.u.ord.arsM <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = FALSE)
+(uni.u.ord.arsM=plot_ordination(phylo, uni.u.ord.arsM, shape="Classification", 
                                 title="Unweighted Unifrac") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -235,12 +243,12 @@ uni.u.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = 
     theme_light(base_size = 12))
 
 #save unweighted Unifrac ordination
-ggsave(uni.u.ord.rplB, filename = paste(wd, "/figures/rplB.u.unifrac.ord.png", sep=""), 
+ggsave(uni.u.ord.arsM, filename = paste(wd, "/figures/arsM.u.unifrac.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot weighted Unifrac ordination
-uni.w.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = TRUE)
-(uni.w.ord.rplB=plot_ordination(phylo, uni.w.ord.rplB, shape="Classification", 
+uni.w.ord.arsM <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = TRUE)
+(uni.w.ord.arsM=plot_ordination(phylo, uni.w.ord.arsM, shape="Classification", 
                                 title="Weighted Unifrac") +
     geom_point(aes(color = SoilTemperature_to10cm), size=5) +
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
@@ -248,7 +256,7 @@ uni.w.ord.rplB <- ordinate(phylo, method="PCoA", distance="unifrac", weighted = 
     theme_light(base_size = 12))
 
 #save weighted Unifrac ordination
-ggsave(uni.w.ord.rplB, filename = paste(wd, "/figures/rplB.w.unifrac.ord.png", sep=""), 
+ggsave(uni.w.ord.arsM, filename = paste(wd, "/figures/arsM.w.unifrac.ord.png", sep=""), 
        width = 6, height = 5)
 
 #plot tree
@@ -260,7 +268,7 @@ ggsave(uni.w.ord.rplB, filename = paste(wd, "/figures/rplB.w.unifrac.ord.png", s
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                           guide_legend(title="Temperature (°C)")))
 
-ggsave(tree.plot, filename = paste(wd, "/figures/rplb.tree.png", sep=""), 
+ggsave(tree.plot, filename = paste(wd, "/figures/arsM.tree.png", sep=""), 
        width = 10, height = 40)
 
 

@@ -103,14 +103,22 @@ otu_table <- acr3 %>%
   rename(Site =X) 
 
 #list otus that are gene matches
-mixed <- c("aioA_13", "aioA_31", "aioA_34", "aioA_36", "aioA_37", "aioA_42", "aioA_43", "aioA_49", "aioA_51", "arrA_1", "arrA_2", "arrA_3", "arrA_4", "arrA_5", "arrA_6", "arrA_8","arxA_11", "arxA_04")
+mixed.1 <- c("aioA_13", "aioA_31", "aioA_34", "aioA_36", "aioA_37", "aioA_42", "aioA_43", "aioA_49", "aioA_51", "arrA_1", "arrA_2", "arrA_3", "arrA_4", "arrA_5", "arrA_6", "arrA_8","arxA_11", "arxA_04")
+mixed.03 <- c("aioA_60", "aioA_20", "aioA_11", "aioA_64", "aioA_50", "aioA_37", "aioA_39",
+              "aioA_49", "aioA_34", "aioA_26", "arrA_07", "arrA_10", "arrA_02", "arrA_08",
+              "arrA_05", "arrA_03", "arrA_06","arrA_04","arrA_01","arrA_09")
 
 #remove OTUs that are gene matches
-otu_table <- otu_table[,!names(otu_table) %in% mixed]
+otu_table <- otu_table[,!names(otu_table) %in% mixed.1]
 
 #rename arxA column that is actually arrA (with no match)
 otu_table <- otu_table %>%
   rename(arrA_3 = arxA_03)
+#otu_table <- otu_table %>%
+#  rename(arrA_03 = arxA_03)
+
+#replace all NAs (from join) with zeros
+otu_table[is.na(otu_table)] <- 0
 
 #write file to save OTU table
 write.table(otu_table, paste(wd, "/output/otu_table.txt", sep = ""), sep = "\t", quote = FALSE, row.names = FALSE)
@@ -135,7 +143,7 @@ otu_table.rplB <- rplB_summary %>%
 
 #normalize to rplB
 otu_table_norm <- otu_table.rplB
-for(i in 3:6570){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
+for(i in 3:ncol(otu_table_norm)){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 
 #add in metadata
 otu_table_norm_annotated <- otu_table_norm %>%
@@ -159,7 +167,8 @@ otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #replace NAs with zeros (except date since fire)
-otu_table_norm_annotated.t[1:6569,][is.na(otu_table_norm_annotated.t[1:6569,])] <- 0
+n <- nrow(otu_table_norm_annotated.t)-11
+otu_table_norm_annotated.t[1:n,][is.na(otu_table_norm_annotated.t[1:n,])] <- 0
 
 #make presence absence matrix
 otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
@@ -305,7 +314,7 @@ space <- space[which(names(space) %in% rownames(otu_table_norm.slim.t)),]
 space <- space[,which(colnames(space) %in% rownames(otu_table_norm.slim.t))]
 
 #make space into a distance matrix
-space.d=as.dist(space)
+space.d=as.dist(space, diag = TRUE, upper = TRUE)
 
 otu_mantel <- otu_table_norm
 rownames(otu_mantel) <- otu_mantel[,2]
@@ -328,6 +337,37 @@ mantel(otu_rplB.d,space.d)
 mantel(otu_AsRG.d,space.d)
 mantel(otu_ARG.d,space.d)
 #we see no change related to space
+
+#mantel rplB v. AsRG
+mantel(otu_AsRG.d,otu_rplB.d, graph = TRUE)
+
+#make phyloseq obj of AsRG and rplB
+phylo.Asrg <- otu_table(otu_for_corr.AsRG, taxa_are_rows = FALSE)
+meta1 <- meta
+rownames(meta1) <- meta1$Site
+sample.data <- sample_data(meta1)
+phylo.Asrg <- merge_phyloseq(phylo.Asrg, sample.data)
+
+ord.a <- ordinate(phylo.Asrg, method="PCoA", distance="bray", binary= FALSE)
+(bc.ord=plot_ordination(phylo.Asrg, ord.a, shape="Classification", title="Arsenic resistance gene") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+phylo.rplB <- otu_table(otu_for_corr.rplB, taxa_are_rows = FALSE)
+phylo.rplB <- merge_phyloseq(phylo.rplB, sample.data)
+
+ord.r <- ordinate(phylo.rplB, method="PCoA", distance="bray")
+(bc.ord=plot_ordination(phylo.rplB, ord.r, shape="Classification", title="rplB Bray Curtis") +
+    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+d.a <- distance(phylo.Asrg, method = "jaccard")
+d.r <- distance(phylo.rplB, method = "jaccard")
+mantel(d.a, d.r)
 
 ############################
 #MAKE GENE ABUNDANCE GRAPHS#
@@ -490,7 +530,6 @@ t.test(aioA$Total ~ aioA$Classification)
 arsM <- subset(x = data.mann, subset = Gene == "arsM")
 arsM.cast <- print(wilcox.test(arsM$Total~arsM$Classification, paired = FALSE))
 t.test(arsM$Total ~ arsM$Classification)
-
 
 #arsCglut
 arsCglut <- subset(x = data.mann, subset = Gene == "arsCglut")
@@ -704,7 +743,37 @@ data.phylum$Gene <- factor(data.phylum$Gene,
     theme(axis.text.x = element_text(angle = 90, size = 8, 
                                      hjust=0.95,vjust=0.2)))
 
+(gene.bar.census <- ggplot(subset(data.phylum, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    scale_fill_manual(values = color) +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
 
+(gene.bar.census <- ggplot(subset(data.phylum, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity") +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    scale_fill_manual(values = color) +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
 
+#look at class level differneces
+data.family <- identifiers_ncbi %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  group_by(Group, Description, Gene, family, Classification, Site, Temp) %>%
+  summarise(Phylum.count = sum(RelativeAbundance))
 
-
+(gene.bar.census <- ggplot(subset(data.class, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = class)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))

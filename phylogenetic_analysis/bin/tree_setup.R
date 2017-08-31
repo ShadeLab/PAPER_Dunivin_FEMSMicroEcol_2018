@@ -6,36 +6,29 @@ setwd("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/diversity_analysis/"
 wd <- paste(getwd())
 
 #read in label data
-labels <- read_delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/acr3/acr3_0.1_labels.txt", delim = ",", col_names = FALSE)
+labels <- read_delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/tree_data/arsM/arsM_0.1_labels_short.txt", delim = ",", col_names = FALSE)
 colnames(labels) <- c("Label", "OTU")
 labels$OTU <- gsub(" ", "", labels$OTU)
 
 #read in OTU table 
-table <- read.delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/acr3/rformat_dist_0.1.txt", header = TRUE)
-
-#read in census data
-census <- read_delim(file = paste(wd, "/data/microbe_census.txt", sep = ""),
-                     delim = "\t", col_types = list(col_character(),
-                                                    col_number(),
-                                                    col_number(), 
-                                                    col_number()))
-census <- census %>%
-  select(Site, GE)
+table <- read.delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/diversity_analysis/data/0.1_clust/arsM_rformat_dist_0.1.txt", header = TRUE)
 
 #read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_JGI_map.txt", 
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
+
+#read in rplB data
+rplB <- read.delim("/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/diversity_analysis/output/rplB.summary.scg.txt", header = TRUE, sep = " ")
 
 #add census data for normalization purposes
 table.census <- table %>%
   rename(Site = X) %>%
-  left_join(census, by = "Site")
+  left_join(rplB, by = "Site") %>%
+  select(-Total)
 
 #normalize data
-table.normalized <- 100*table.census[2:398]/table.census$rplB
-
-#add back site information
-table.normalized <- cbind(table.census$Site, table.normalized)
+table.normalized <- cbind(table.census$Site, 
+                          data.frame(apply(table.census[,2:946], 2, function(x) x/table.census$rplB)))
 
 #rename site column
 table.normalized$Site <- table.normalized$`table.census$Site`
@@ -52,8 +45,8 @@ table.normalized$Site <- factor(table.normalized$Site,
                                 levels = table.normalized$Site[order(meta$SoilTemperature_to10cm)])
 
 #transform otu table
-table.normalized.t = setNames(data.frame(t(table.normalized[,-c(398,399)])), 
-                              table.normalized[,398])
+table.normalized.t = setNames(data.frame(t(table.normalized[,-c(946,947)])), 
+                              table.normalized[,946])
 #make OTUs a column
 table.normalized.t$OTU <- rownames(table.normalized.t)
 
@@ -61,21 +54,26 @@ table.normalized.t$OTU <- rownames(table.normalized.t)
 table.normalized.t$OTU <- gsub(" ", "", table.normalized.t$OTU)
 
 #fix OTU names with weird # before them
-table.normalized.t$OTU <- gsub(".OTU_", "OTU_", table.normalized.t$OTU)
+#table.normalized.t$OTU <- gsub(".OTU_", "OTU_", table.normalized.t$OTU)
 
 #fix label names
-labels$OTU <- gsub("TU_0003", "OTU_0003", labels$OTU)
-labels$OTU <- gsub("TU_0005", "OTU_0005", labels$OTU)
-labels$OTU <- gsub(".OTU_", "OTU_", labels$OTU)
+#labels$OTU <- gsub("TU_0003", "OTU_0003", labels$OTU)
+#labels$OTU <- gsub("TU_0005", "OTU_0005", labels$OTU)
+#labels$OTU <- gsub(".OTU_", "OTU_", labels$OTU)
 
-#join abundance with name
+#add leading zero to 4 digits
+library(stringr)
+rownames(table.normalized.t) <- gsub("OTU_", "", rownames(table.normalized.t))
+rownames(table.normalized.t) <- sprintf("%04s", rownames(table.normalized.t))
+rownames(table.normalized.t) <- paste("OTU_", rownames(table.normalized.t), sep="")
+table.normalized.t$OTU <- rownames(table.normalized.t)
 label.abund <- left_join(labels, table.normalized.t, by = "OTU")
 
 #remove OTU information
 label.abund <- select(label.abund, -OTU)
 
 #save file
-write.csv(label.abund, "/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/acr3/acr3_abund_label.csv", row.names = FALSE)
+write.csv(label.abund, "/Users/dunivint/Documents/GitHubRepos/Xander_arsenic/phylogenetic_analysis/tree_data/arsM/arsM_abund_label.csv", row.names = FALSE)
 
 
 
