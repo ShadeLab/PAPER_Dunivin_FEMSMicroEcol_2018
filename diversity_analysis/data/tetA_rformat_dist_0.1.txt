@@ -1,0 +1,3 @@
+	OTU_1	OTU_2	OTU_3	OTU_4	OTU_5	OTU_6	OTU_7 
+cen04	7	2	0	3	1	1	1
+cen17	0	0	1	0	0	0	0
