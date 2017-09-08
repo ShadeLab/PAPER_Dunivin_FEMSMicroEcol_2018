@@ -9,7 +9,7 @@ FIELD_COLORS,#FFFF00,#008000,#FFFF00,#FF0000,#FF0000,#FFFF00,#FF0000,#FF0000,#FF
 FIELD_LABELS,Cen04,Cen17,Cen05,Cen06,Cen15,Cen07,Cen16,Cen10,Cen01,Cen14,Cen03,Cen12
 
 #dataset scale: you can simply set the values where the scale will be drawn
-DATASET_SCALE,0.00, 0.001, 0.01, 0.025
+DATASET_SCALE,0.00,0.025,0.1
 
 #yellow #FFFF00
 #green #008000
