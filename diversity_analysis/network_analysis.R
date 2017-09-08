@@ -26,7 +26,7 @@ naming <- function(file) {
 }
 
 #temporarily change working directories
-setwd(paste(wd, "/data/0.1_clust", sep = ""))
+setwd(paste(wd, "/data", sep = ""))
 
 #list filenames of interest
 filenames <- list.files(pattern="*_rformat_dist_0.1.txt")
@@ -36,7 +36,7 @@ setwd("../..")
 
 #make dataframes of all OTU tables
 for(i in filenames){
-  filepath <- file.path(paste(wd, "/data/0.1_clust", sep = ""),paste(i,sep=""))
+  filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
   assign(gsub("_rformat_dist_0.1.txt", "", i), read.delim(filepath,sep = "\t"))
 }
 
@@ -94,7 +94,7 @@ otu_table <- acr3 %>%
   left_join(tetA, by = "X") %>%
   left_join(tetW, by = "X") %>%
   left_join(tetX, by = "X") %>%
-  left_join(tolC, by = "X") %>%
+  #left_join(tolC, by = "X") %>%
   left_join(vanA, by = "X") %>%
   left_join(vanH, by = "X") %>%
   left_join(vanX, by = "X") %>%
@@ -135,6 +135,10 @@ rplB_summary <- data.frame(rowSums(rplB))
 
 #make site a column in rplB
 rplB_summary$Site <- rownames(rplB_summary) 
+
+#save rplB sums
+rplB_summary$Site <- gsub("cen", "Cen", rplB_summary$Site)
+write.table(rplB_summary, file = paste(wd, "/output/rplB.summary.scg.txt", sep = ""), row.names = FALSE)
 
 #add rplB data to otu_table
 otu_table.rplB <- rplB_summary %>%

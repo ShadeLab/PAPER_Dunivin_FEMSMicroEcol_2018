@@ -1,0 +1,15 @@
+LABELS
+SEPARATOR COMMA
+DATA
+#NODE_ID,LABEL
+M37699.gene1.p01, Bacteroides_fragilis (M37699.gene1.p01)
+gi|326634054|pdb|2XDO|A, Thetaiotaomicron (gi|326634054|pdb|2XDO|A)
+ROOT_AAO89642.1, Coxiella_burnetii_RSA_493 (ROOT_AAO89642.1)
+OXG09028.1, Flavobacterium_araucananum (OXG09028.1)
+WP_034684995.1, Chryseobacterium_piperi (WP_034684995.1)
+WP_048510368.1, Chryseobacterium_sp._FH2 (WP_048510368.1)
+WP_065448884.1, Flavobacterium_piscis (WP_065448884.1)
+WP_084490481.1, Niabella_ginsenosidivorans (WP_084490481.1)
+WP_090106972.1, Chitinophaga_sp._CF118 (WP_090106972.1)
+WP_090471768.1, Mucilaginibacter_sp._OK268 (WP_090471768.1)
+WP_093822995.1, Spirosoma_endophyticum (WP_093822995.1)
