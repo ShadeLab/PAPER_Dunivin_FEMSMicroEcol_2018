@@ -4,6 +4,7 @@ library(tidyverse)
 library(qgraph)
 library(phyloseq)
 library(reshape2)
+library(broom)
 
 #print working directory for future references
 #note the GitHub directory for this script is as follows
@@ -19,6 +20,10 @@ wd <- print(getwd())
 #read in metadata
 meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
                                     sep=""), sep=" ", header=TRUE))
+
+#####################
+#SET UP CONTIG-TABLE#
+#####################
 
 #write OTU naming function
 naming <- function(file) {
@@ -70,7 +75,6 @@ colnames(vanH) <- naming(vanH)
 colnames(vanX) <- naming(vanX)
 colnames(vanZ) <- naming(vanZ)
 
-
 #join together all files
 otu_table <- acr3 %>%
   left_join(aioA, by = "X") %>%
@@ -94,7 +98,7 @@ otu_table <- acr3 %>%
   left_join(tetA, by = "X") %>%
   left_join(tetW, by = "X") %>%
   left_join(tetX, by = "X") %>%
-  #left_join(tolC, by = "X") %>%
+  left_join(tolC, by = "X") %>%
   left_join(vanA, by = "X") %>%
   left_join(vanH, by = "X") %>%
   left_join(vanX, by = "X") %>%
@@ -103,25 +107,24 @@ otu_table <- acr3 %>%
   rename(Site =X) 
 
 #list otus that are gene matches
-mixed.1 <- c("aioA_13", "aioA_31", "aioA_34", "aioA_36", "aioA_37", "aioA_42", "aioA_43", "aioA_49", "aioA_51", "arrA_1", "arrA_2", "arrA_3", "arrA_4", "arrA_5", "arrA_6", "arrA_8","arxA_11", "arxA_04")
-mixed.03 <- c("aioA_60", "aioA_20", "aioA_11", "aioA_64", "aioA_50", "aioA_37", "aioA_39",
-              "aioA_49", "aioA_34", "aioA_26", "arrA_07", "arrA_10", "arrA_02", "arrA_08",
-              "arrA_05", "arrA_03", "arrA_06","arrA_04","arrA_01","arrA_09")
+mixed.1 <- c("arxA_12", "arxA_04", "arrA_1", "arrA_2", "arrA_3", "arrA_5", "arrA_6", "arrA_8", "arrA_9", "aioA_18", "aioA_30", "aioA_36", "aioA_44", "aioA_52", "aioA_53", "aioA_57")
 
 #remove OTUs that are gene matches
 otu_table <- otu_table[,!names(otu_table) %in% mixed.1]
 
 #rename arxA column that is actually arrA (with no match)
 otu_table <- otu_table %>%
-  rename(arrA_3 = arxA_03)
-#otu_table <- otu_table %>%
-#  rename(arrA_03 = arxA_03)
+  rename(arrA_10 = arxA_10)
 
 #replace all NAs (from join) with zeros
 otu_table[is.na(otu_table)] <- 0
 
 #write file to save OTU table
 write.table(otu_table, paste(wd, "/output/otu_table.txt", sep = ""), sep = "\t", quote = FALSE, row.names = FALSE)
+
+#########################################
+#EXTRACT AND TIDY RPLB FOR NORMALIZATION#
+#########################################
 
 #get rplB otu data
 rplB <- otu_table[,grepl("rplB", names(otu_table))]
@@ -137,8 +140,14 @@ rplB_summary <- data.frame(rowSums(rplB))
 rplB_summary$Site <- rownames(rplB_summary) 
 
 #save rplB sums
-rplB_summary$Site <- gsub("cen", "Cen", rplB_summary$Site)
-write.table(rplB_summary, file = paste(wd, "/output/rplB.summary.scg.txt", sep = ""), row.names = FALSE)
+rplB_summary_save <- rplB_summary
+rplB_summary_save$Site <- gsub("cen", "Cen", rplB_summary_save$Site)
+write.table(rplB_summary_save, file = paste(wd, "/output/rplB.summary.scg.txt", sep = ""), row.names = FALSE)
+
+
+###################################
+#CONTIG-TABLE NORMALIZATION (RPLB)#
+###################################
 
 #add rplB data to otu_table
 otu_table.rplB <- rplB_summary %>%
@@ -150,24 +159,21 @@ otu_table_norm <- otu_table.rplB
 for(i in 3:ncol(otu_table_norm)){otu_table_norm[,i]=otu_table.rplB[,i]/otu_table.rplB[,1]}
 
 #add in metadata
+otu_table_norm$Site <- gsub("cen", "Cen", otu_table_norm$Site)
 otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
   mutate(DateSince_Fire = 2014-DateFire_Elick2011) %>%
   select(rplB:As_ppm, SoilTemperature_to10cm, DateSince_Fire,
          OrganicMatter_500:Fe_ppm)
 
-
 #change to df and add row names back
+#remove first two columns (redundant)
 otu_table_norm_annotated <- as.data.frame(otu_table_norm_annotated)
 rownames(otu_table_norm_annotated) <- otu_table_norm_annotated[,2]
-
-#remove first two columns
 otu_table_norm_annotated=otu_table_norm_annotated[,-c(1,2)]
 
-#make data matrix
-otu_table_norm_annotated=data.matrix(otu_table_norm_annotated)
-
-#transpose data
+#make data matrix and transpose 
+otu_table_norm_annotated <- data.matrix(otu_table_norm_annotated)
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #replace NAs with zeros (except date since fire)
@@ -180,107 +186,28 @@ otu_table_normPA <- (otu_table_norm_annotated.t>0)*1
 #replace NA with 0 (date since fire)
 otu_table_normPA[is.na(otu_table_normPA)] <- 0
 
+
+#########################################
+#RESISTANCE GENE (FULL) NETWORK ANALYSIS#
+#########################################
+
 #list OTUs present in less than 2 samples
 abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
 
 #remove OTUs with presence in less than 4 sites
-otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in%
-                              rownames(abund)),]
+otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in% rownames(abund)),]
 
 otu_table_norm.export <- otu_table_norm_annotated.t
-
-#replace all 0's with NA for export
-#is.na(otu_table_norm.export) <- !otu_table_norm.export
-
-#replace NAs with nothing
-#otu_table_norm.export[is.na(otu_table_norm.export)] <- ""
-
-#write table as output for SparCC
-#write.table(otu_table_norm.export, 
-#            file = (paste(wd, "/output/otu_table.txt", 
-#                          sep = "")), 
-#            sep = "\t", quote = FALSE)
 
 #transpose dataset
 otu_table_norm.slim.t <- t(otu_table_norm.slim)
 
-##make network with few genes
-#subset data to only contain all of the AsRG ARG clusters
-#list otus that are gene matches
-matches <- c("tolC_05", "ClassB_003", "dfra12_076", "dfra12_038",
-             "acr3_002", "acr3_053", "arsM_109", "arsM_296", "rplB_1027", 
-             "rplB_1015", "rplB_0549", "rplB_0564", "rplB_0692", 
-             "rplB_0149", "rplB_0407", "rplB_0355", "rplB_1131", 
-             "rplB_0267", "rplB_0169", "rplB_0886", "SoilTemperature_to10cm",
-             "Ca_ppm", "Mg_ppm", "DateSince_Fire")
-
-#remove OTUs that are gene matches
-otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.slim.t) %in% matches]
-
-#plot interesting trends
-match_trends <- otu_table_norm.slim.t_matches %>%
-  melt(value.name = "Abundance") %>%
-  rename(Site = Var1, OTU = Var2) %>%
-  left_join(meta, by = "Site")
-
-#order based on group
-match_trends$Site <- factor(match_trends$Site, 
-                            match_trends$Site[order(match_trends$SoilTemperature_to10cm)])
-
-color1 <- c("#7DC2AC","#EB9D52", "#8CB9D5","#763479", "#DE6159")
-match1 <- c("rplB_0564", "tolC_05", "acr3_053",
-            "arsM_0109", "ClassB_003", "dfra12_038")
-match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
-mt1 <- ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
-  geom_bar(stat = "identity", color = "black") +
-  scale_fill_manual(values = color1) +
-  theme_classic() +
-  theme(axis.text.x = element_text(angle = 45, size = 6, 
-                                   hjust=0.95,vjust=0.9))
-
-color2 <- c("#7DC2AC","#FAF5A0","#8CB9D5","#2E5F95")
-match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
-match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
-mt2 <- ggplot(match_trends2, 
-       aes(x = Site, y = Abundance, fill = OTU)) +
-  geom_bar(stat = "identity", color = "black")  +
-  theme_classic() +
-  scale_fill_manual(values = color2) +
-  theme(axis.text.x = element_text(angle = 45, size = 6, 
-                                   hjust=0.95,vjust=0.9))
-multiplot(mt1, mt2, cols = 2)
-
-match3 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038", "rplB_0564", "tolC_05", "acr3_053","arsM_0109", "ClassB_003", "dfra12_038")
-match_trends3 <- match_trends[which(match_trends$OTU %in% match3),]
-ggplot(match_trends3, 
-       aes(x = Site, y = Abundance, fill = OTU)) +
-  geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 90, size = 10, 
-                                   hjust=0.95,vjust=0.2))
-#find correlations between OTUs
-corr <- corr.test(otu_table_norm.slim.t_matches, 
-                  method = "spearman", adjust = "fdr", alpha = 0.01)
-
-corr.r <- as.matrix(print(corr$r, long = TRUE))
-corr.p <- as.matrix(print(corr$p, long = TRUE))
-
-corr.r[which(corr.p > 0.01)] <- 0
-
-#save correlation data
-write.table(corr$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
-
-#make network of correlations
-qgraph(corr$r, minimum = "sig", sampleSize=13, 
-       layout = "circle", details = TRUE,
-       graph = "cor", label.cex = 1,
-       alpha = 0.01)
-
-#test without rplB!
+#perform network analysis without rplB!
 #remove column based on pattern (rplB)
 otu_table_norm.slim.t.genes <- otu_table_norm.slim.t[, -grep("rplB", colnames(otu_table_norm.slim.t))]
 
 corr.genes <- corr.test(otu_table_norm.slim.t.genes, 
-                  method = "spearman", adjust = "fdr", alpha = 0.01)
+                        method = "spearman", adjust = "fdr", alpha = 0.01)
 
 corr.r.genes <- as.matrix(print(corr.genes$r, long = TRUE))
 corr.p.genes <- as.matrix(print(corr.genes$p, long = TRUE))
@@ -292,7 +219,6 @@ cor_mat<-as.matrix(corr.r.genes)
 diag(cor_mat)<-0
 graph<-graph.adjacency(cor_mat,weighted=TRUE,mode="lower")
 graph <- delete.edges(graph, E(graph)[ abs(weight) < 0.68])
-#graph <- delete.vertices(graph,which(degree(graph)<1))
 E(graph)$color <- "grey";
 E(graph)$width <- 1;
 E(graph)$width <- E(graph)$weight*2;
@@ -300,78 +226,78 @@ E(graph)[weight > 0]$color <- "green";
 E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
 tkplot(graph, edge.curved = FALSE)
+#export plot through tkplot interface! 
 
-############################
-#TEST FOR SPATIAL DISTANCES#
-############################
-#mantel w/ spatial distances
-space <- read.table(paste(wd, "/data/spatialdistancematrix.txt", sep = ""), 
-                 header=TRUE, row.names=1)
+####################################
+#AsRG-ARG CLUSTER NETWORK WITH RPLB#
+####################################
+##make network with few genes
+#subset data to only contain all of the AsRG ARG clusters
+#list otus that are gene matches
+matches <- c("acr3_002", "acr3_053", "tolC_08", "dfra12_076", "dfra12_038", "arsM_109", "arsM_296", "ClassB_001", "rplB_0564", "rplB_0549", "rplB_0267", "rplB_1015", "rplB_1027", "rplB_0149", "rplB_0407", "rplB_0355", "rplB_0692", "SoilTemperature_to10cm",
+             "Ca_ppm", "Mg_ppm", "DateSince_Fire")
 
-#make spacial matrix names match other data
-names(space) <- gsub("C", "Cen", names(space))
-rownames(space) <- gsub("C", "Cen", rownames(space))
+#remove non matches from OTU table
+otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.slim.t) %in% matches]
 
-#remove rows and columns that involve sites 
-#that don't have metagenomes
-space <- space[which(names(space) %in% rownames(otu_table_norm.slim.t)),]
-space <- space[,which(colnames(space) %in% rownames(otu_table_norm.slim.t))]
+#find correlations between OTUs
+corr.clust <- corr.test(otu_table_norm.slim.t_matches, 
+                  method = "spearman", adjust = "fdr", alpha = 0.01)
 
-#make space into a distance matrix
-space.d=as.dist(space, diag = TRUE, upper = TRUE)
+corr.clust.r <- as.matrix(print(corr.clust$r, long = TRUE))
+corr.clust.p <- as.matrix(print(corr.clust$p, long = TRUE))
 
-otu_mantel <- otu_table_norm
-rownames(otu_mantel) <- otu_mantel[,2]
-otu_mantel <- otu_mantel[,-c(1:2)]
-otu_for_corr <- otu_mantel[ order(row.names(otu_mantel)), ]
+corr.clust.r[which(corr.clust.p > 0.01)] <- 0
 
-#separate into rplB, AsRG, ARG
-otu_for_corr.rplB <- otu_for_corr[, grep("rplB", colnames(otu_for_corr))]
-otu_for_corr.AsRG <- otu_for_corr[, grep("ars|aio|arx|arr|acr", 
-                                         colnames(otu_for_corr))]
-otu_for_corr.ARG <- otu_for_corr[,grep("tolC|dfra|Class|intI|tet|van|CEP|AAC|ade|sul", 
-                                        colnames(otu_for_corr))]
+#save correlation data
+write.table(corr.clust$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
 
-otu_rplB.d=dist(otu_for_corr.rplB, diag = TRUE, upper = TRUE)
-otu_AsRG.d=dist(otu_for_corr.AsRG, diag = TRUE, upper = TRUE)
-otu_ARG.d=dist(otu_for_corr.ARG, diag = TRUE, upper = TRUE)
+#make network of correlations
+clust.network <- qgraph(corr.clust$r, minimum = "sig", sampleSize=13, 
+       layout = "circle", details = TRUE,
+       graph = "cor", label.cex = 1,
+       alpha = 0.01)
 
-#mantel w/ spatial distances
-mantel(otu_rplB.d,space.d)
-mantel(otu_AsRG.d,space.d)
-mantel(otu_ARG.d,space.d)
-#we see no change related to space
+####################################################
+#EXAMINE ABUNDANCE OF CO-OCCURRING RESISTANCE GENES#
+####################################################
 
-#mantel rplB v. AsRG
-mantel(otu_AsRG.d,otu_rplB.d, graph = TRUE)
+#plot interesting trends
+match_trends <- otu_table_norm.slim.t_matches %>%
+  melt(value.name = "Abundance") %>%
+  rename(Site = Var1, OTU = Var2) %>%
+  left_join(meta, by = "Site")
 
-#make phyloseq obj of AsRG and rplB
-phylo.Asrg <- otu_table(otu_for_corr.AsRG, taxa_are_rows = FALSE)
-meta1 <- meta
-rownames(meta1) <- meta1$Site
-sample.data <- sample_data(meta1)
-phylo.Asrg <- merge_phyloseq(phylo.Asrg, sample.data)
+#order based on group
+match_trends$Site <- factor(match_trends$Site, 
+                            match_trends$Site[order(match_trends$SoilTemperature_to10cm)])
 
-ord.a <- ordinate(phylo.Asrg, method="PCoA", distance="bray", binary= FALSE)
-(bc.ord=plot_ordination(phylo.Asrg, ord.a, shape="Classification", title="Arsenic resistance gene") +
-    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
-    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                          guide_legend(title="Temperature (°C)")) +
-    theme_light(base_size = 12))
+color1 <- c("#DECBE4", "#FED9A6", "#E5D8BD", "#FFFFCC", "#E7298A", "#FDDAEC")
+match1 <- c("rplB_0564", "tolC_08", "dfra12_076", "ClassB_001", "arsM_109", "acr3_053")
+match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
+(mt1 <- ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = color1) +
+  theme_classic(base_size = 12) +
+    ylim(0,0.06) +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust=0.95,vjust=0.9)))
 
-phylo.rplB <- otu_table(otu_for_corr.rplB, taxa_are_rows = FALSE)
-phylo.rplB <- merge_phyloseq(phylo.rplB, sample.data)
+color2 <- c("#DECBE4", "#FED9A6","#FFFFCC", "#7570B3")
+match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
+match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
+(mt2 <- ggplot(match_trends2, 
+              aes(x = Site, y = Abundance, fill = OTU)) +
+  geom_bar(stat = "identity", color = "black")  +
+  theme_classic(base_size = 12) +
+  scale_fill_manual(values = color2) +
+  ylim(0,0.06) +
+  theme(axis.text.x = element_text(angle = 45,  
+                                   hjust=0.95,vjust=0.9)))
 
-ord.r <- ordinate(phylo.rplB, method="PCoA", distance="bray")
-(bc.ord=plot_ordination(phylo.rplB, ord.r, shape="Classification", title="rplB Bray Curtis") +
-    geom_point(aes(color = SoilTemperature_to10cm), size=5) +
-    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
-                          guide_legend(title="Temperature (°C)")) +
-    theme_light(base_size = 12))
-
-d.a <- distance(phylo.Asrg, method = "jaccard")
-d.r <- distance(phylo.rplB, method = "jaccard")
-mantel(d.a, d.r)
+#save abundance of ARG-AsRG clusters
+ggsave(mt1, filename = paste(wd, "/figures/cluster.abundance.grp1.eps", sep = ""), width = 5, height = 3, units = "in")
+ggsave(mt2, filename = paste(wd, "/figures/cluster.abundance.grp2.eps", sep = ""), width = 5, height = 3, units = "in")
 
 ############################
 #MAKE GENE ABUNDANCE GRAPHS#
@@ -413,20 +339,12 @@ gene_abundance_summary <- gene_abundance %>%
   group_by(Group, Description, Gene, Classification, Site, SoilTemperature_to10cm) %>%
   summarise(Total = sum(RelativeAbundance))
 
-#plot!
-(barplot <- ggplot(gene_abundance_summary, aes(x = Classification, 
-                                                  y = Total)) +
-    geom_bar(stat = "identity", aes(fill = Gene)) +
-    facet_wrap(~Group) +
-    scale_fill_manual(values = color) +
-    ylab("Total gene count (normalized to rplB)") +
-    theme_classic(base_size = 15))
-
 #order based on group
 gene_abundance_summary$Gene <- factor(gene_abundance_summary$Gene, 
                                 levels = gene_abundance_summary$Gene[order(gene_abundance_summary$Description)])
 
-(boxplot <- ggplot(subset(gene_abundance_summary, subset = Group == "ArsenicResistance"), aes(x = Classification, 
+#plot antibiotic resistance genes
+(boxplotARG <- ggplot(subset(gene_abundance_summary, subset = Group == "AntibioticResistance"), aes(x = Classification, 
                                                y = Total*100)) +
     geom_boxplot() +
     geom_jitter(aes(color = SoilTemperature_to10cm)) +
@@ -434,55 +352,36 @@ gene_abundance_summary$Gene <- factor(gene_abundance_summary$Gene,
     scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
                          guide_legend(title="Temperature (°C)")) +
     ylab("Gene per rplB (%)") +
-    theme_bw(base_size = 14) +
-    theme(axis.text.x = element_text(angle = 45, size = 14, 
+    theme_bw(base_size = 12) +
+    theme(axis.text.x = element_text(angle = 45, 
                                      hjust=0.95)))
 
-ggsave(boxplot, filename = "/Users/dunivint/Documents/ShadeLab/Presentations/ARG_symposium/gene_boxplots_asrg.eps", height = 6, width = 7)
+ggsave(boxplotARG, filename = paste(wd, "/figures/ARGboxplot.eps", sep = ""), height = 8, width = 7, units = "in")
 
-#subset data to only contain all of the AsRG ARG clusters
-#list otus that are gene matches
-matches <- c("tolC_05", "ClassB_003", "dfra12_076", "dfra12_038",
-             "acr3_002", "acr3_053", "arsM_109", "arsM_296", "rplB_1027", 
-             "rplB_1015", "rplB_0549", "rplB_0564", "rplB_0692", 
-             "rplB_0149", "rplB_0407", "rplB_0355")
+(boxplot.asrg <- ggplot(subset(gene_abundance_summary, subset = Group == "ArsenicResistance"), aes(x = Classification, 
+                                                                                              y = Total*100)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = SoilTemperature_to10cm)) +
+    facet_wrap(~Gene, scales = "free_y", ncol = 3) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    ylab("Gene per rplB (%)") +
+    theme_bw(base_size = 12) +
+    theme(axis.text.x = element_text(angle = 45, 
+                                     hjust=0.95)))
 
-#remove OTUs that are gene matches
-gene_abundance_mixes <- gene_abundance[gene_abundance$OTU %in% matches,]
+ggsave(boxplot.asrg, filename = paste(wd, "/figures/AsRGboxplot.eps", sep = ""), height = 5, width = 7, units = "in")
 
-#order based on temperature
-gene_abundance_mixes$Site <- factor(gene_abundance_mixes$Site, 
-                                      levels = gene_abundance_mixes$Site[order(gene_abundance_mixes$RelativeAbundance)])
+######################
+#MANN WHITNEY U TESTS#
+######################
 
-ggplot(gene_abundance_mixes, aes(x = SoilTemperature_to10cm, 
-                                 y = RelativeAbundance*100, fill = OTU)) +
-  geom_density(stat = "identity", alpha = 0.5, position = "stack") +
-  geom_point(aes(shape = Classification)) +
-  facet_wrap(~OTU) +
-  theme_bw()
+#perform test of gene abundance compared to 
+#soil history (Classification)
+mwu.classification <- subset(gene_abundance_summary, Classification !="Reference") %>% group_by(Gene) %>% do(tidy(wilcox.test(abs(.$Total)~.$Classification, paired = FALSE)))
 
-#subset data to only contain all of the AsRG ARG clusters
-#list otus that are gene matches
-asrg <- c("acr3_160", "acr3_094", "acr3_047", "acr3_101", "acr3_018", 
-             "acr3_024", "acr3_048", "arsM_023", "arsM_465", "arsM_101",
-             "arsM_059", "arsM_072", "arsM_073", "arsM_262", "arsM_120",
-             "arsCglut_094", "arsCglut_185", "arsCglut_066", "arsCglut_055",
-             "arsCglut_139", "arsA_014", "arsA_010")
-asrg <- c("acr3_022", "arsM_018", "arsCthio_06")
-#remove OTUs that are gene matches
-gene_abundance_asrg <- gene_abundance[gene_abundance$OTU %in% asrg,]
-
-#order based on temperature
-gene_abundance_asrg$Site <- factor(gene_abundance_asrg$Site, 
-                                    levels = gene_abundance_asrg$Site[order(gene_abundance_asrg$RelativeAbundance)])
-
-ggplot(gene_abundance_asrg, aes(x = Site, 
-                                 y = RelativeAbundance*100, fill = OTU)) +
-  geom_density(stat = "identity", alpha = 0.5) +
-  geom_point(aes(shape = Classification)) +
-  facet_wrap(~OTU) +
-  theme_bw()
-
+#save table
+write.table(mwu.classification, paste(wd, "/output/mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
 
 ######################
 #CORRELATION ANALYSES#
@@ -496,125 +395,999 @@ cast.gene <- data.frame(acast(gene_abundance_summary, Site ~ Gene, value.var = "
 cast.gene[is.na(cast.gene)] =0
 
 #remove unnecessary sites in meta data
-meta <- meta[which(meta$Site %in% otu_table$Site),]
+meta.slim <- meta[meta$Site %in% gene_abundance_summary$Site,]
 
 #correlate data with temp
-corr <- print(corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
-cor <- corr.test(x = cast.gene, y = meta[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
+corr <- print(corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
+cor <- corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
 #arsenic and antibiotic resistance genes are not correlated with temperature!
 
 #check correlations between genes
 corr.genes <- print(corr.test(cast.gene, method = "spearman", adjust = "fdr"), 
                     short = FALSE)
 corr.genes.matrix <- corr.test(cast.gene, method = "spearman", adjust = "fdr")
-cor.plot(t(corr.genes.matrix$r), stars = TRUE, pval=corr.genes.matrix$p, numbers = TRUE, diag = FALSE, xlas=2)
+
+#save correlations to table
+write.table(corr.genes, paste(wd, "/output/gene.correlations.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
 
 
-######################
-#MANN WHITNEY U TESTS#
-######################
+####################################
+#EXAMINE rplB ACROSS CHRONOSEQUENCE#
+####################################
 
-#remove C17 (testing recovered v reference)
-data.mann <- gene_abundance_summary[-which(gene_abundance_summary$Classification == "Reference"),]
+#temporarily change working directory to data to bulk load files
+setwd(paste(wd, "/data", sep = ""))
 
-#subset data for each gene to test:
-#acr3
-acr3 <- subset(x = data.mann, subset = Gene == "acr3")
-acr3.cast <- print(wilcox.test(acr3$Total~acr3$Classification, paired = FALSE))
-t.test(acr3$Total ~ acr3$Classification)
+#read in abundance data
+names <- list.files(pattern="*_45_taxonabund.txt")
+data <- do.call(rbind, lapply(names, function(X) {
+  data.frame(id = basename(X), read_delim(X, delim = "\t"))}))
+
+#move back up a directory to proceed with analysis
+setwd("../")
+wd <- print(getwd())
+
+#split columns and tidy dataset
+data <- data %>%
+  separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
+  separate(col = junk, into = c("Gene", "junk"), sep = "_45_", remove = TRUE)
+
+#remove awkward _ in Gene column
+data$Gene <- gsub("_", "", data$Gene)
+
+#change site from "cen" to "Cen" so it matches metadata
+data$Site <- gsub("cen", "Cen", data$Site)
+
+#separage out rplB data (not needed for gene-centric analysis)
+rplB <- data[which(data$Gene == "rplB"),]
+data <- data[-which(data$Gene == "rplB"),]
+
+#split columns 
+rplB <- rplB %>%
+  select(Site, Taxon:Fraction.Abundance) %>%
+  group_by(Site)
+
+#make sure abundance and fraction abundance are numbers
+#R will think it's a char since it started w taxon name
+rplB$Fraction.Abundance <- as.numeric(rplB$Fraction.Abundance)
+rplB$Abundance <- as.numeric(rplB$Abundance)
+
+#double check that all fraction abundances = 1
+#slightly above or below is okay (Xander rounds)
+summarised.rplB <- rplB %>%
+  summarise(Total = sum(Fraction.Abundance), rplB = sum(Abundance))
+
+#decast for abundance check and call na's zero
+dcast <- acast(rplB, Taxon ~ Site, value.var = "Fraction.Abundance")
+dcast[is.na(dcast)] = 0
+
+#order based on abundance
+order.dcast <- dcast[order(rowSums(dcast),decreasing=TRUE),]
+
+#melt data
+melt <- melt(order.dcast,id.vars=row.names(order.dcast), variable.name= "Site", value.name="Fraction.Abundance" )
+
+#adjust colnames of melt
+colnames(melt) <- c("Taxon", "Site", "Fraction.Abundance")
+
+#join metadata with regular data
+history <- melt %>%
+  left_join(meta, by="Site") %>%
+  group_by(Taxon, Classification) %>%
+  summarise(N = length(Fraction.Abundance), 
+            Average = mean(Fraction.Abundance))
+
+#plot
+(phylum.plot=(ggplot(history, aes(x=Taxon, y=Average)) +
+                geom_point(size=2) +
+                facet_wrap(~Classification, ncol = 1) +
+                labs(x="Phylum", y="Mean relative abundance")+
+                theme_bw() +
+                theme(axis.text.x = element_text(angle = 90, size = 10, 
+                                                 hjust=0.95,vjust=0.2))))
+
+#save plot
+ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.eps", sep=""), 
+       width = 5, height = 5, units = "in")
+
+########################################################
+#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.1#
+########################################################
 
 
-#aioA
-aioA <- subset(x = data.mann, subset = Gene == "aioA")
-aioA.cast <- print(wilcox.test(aioA$Total~aioA$Classification, paired = FALSE))
-t.test(aioA$Total ~ aioA$Classification)
+#separate original (non-normalized) contig table into
+#specific gene groups (rplB, ARG, AsRG)
+ecol.rplB <- otu_table[, grep("rplB", colnames(otu_table))]
+ecol.AsRG <- otu_table[, grep("ars|aio|arx|arr|acr", 
+                                colnames(otu_table))]
+ecol.ARG <- otu_table[,grep("tolC|dfra|Class|tet|van|CEP|AAC|ade|sul", 
+                              colnames(otu_table))]
+
+#add site names as row names to each contig table 
+rownames(ecol.rplB) <- otu_table[,1]
+rownames(ecol.ARG) <- otu_table[,1]
+rownames(ecol.AsRG) <- otu_table[,1]
+
+#make list of 13 colors (based on classification)
+class.13 <- c("#FFFF00", "darkgreen", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000")
+
+#check sampling depth of each matrix
+rarecurve(ecol.rplB, step=1, label = FALSE, col = class.13)
+rarecurve(ecol.AsRG, step=1, label = FALSE, col = class.13)
+rarecurve(ecol.ARG, step=1, label = FALSE, col = class.13)
+
+#convert contig tables into phyloseq objects
+ecol.rplB.phyloseq <- otu_table(ecol.rplB, taxa_are_rows = FALSE)
+ecol.AsRG.phyloseq <- otu_table(ecol.AsRG, taxa_are_rows = FALSE)
+ecol.ARG.phyloseq <- otu_table(ecol.ARG, taxa_are_rows = FALSE)
+
+#rarefy to even sampling depth 
+ecol.rplB.rare <- rarefy_even_depth(ecol.rplB.phyloseq, rngseed = TRUE)
+rarecurve(ecol.rplB.rare, step=1, label = FALSE, col = class.13)
+
+ecol.ARG.rare <- rarefy_even_depth(ecol.ARG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.ARG.rare, step=1, label = FALSE, col = class.13)
+
+ecol.AsRG.rare <- rarefy_even_depth(ecol.AsRG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.AsRG.rare, step=1, label = FALSE, col = class.13)
+
+#make metadata a phyloseq class object
+meta$Site <- gsub("Cen", "cen", meta$Site)
+rownames(meta) <- meta[,1]
+meta.phylo <- meta[,-1]
+meta.phylo <- sample_data(meta.phylo)
+
+#read in trees and make phyloseq object
+#library(ape)
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.1_FastTree.nwk", sep = ""))
+#rplb.tree <- phy_tree(rplb.tree)
+
+##make biom for phyloseq
+ecol.rplB.rare <- merge_phyloseq(ecol.rplB.rare, meta.phylo)
+ecol.ARG.rare <- merge_phyloseq(ecol.ARG.rare, meta.phylo)
+ecol.AsRG.rare <- merge_phyloseq(ecol.AsRG.rare, meta.phylo)
+
+#plot & save RICHNESS
+(richness.ecol.rplB.rare <- plot_richness(ecol.rplB.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30,250) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.ARG.rare <- plot_richness(ecol.ARG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30,250) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.AsRG.rare <- plot_richness(ecol.AsRG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30,250) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+richness0.1 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
+
+#extract richness and perform statistical tests
+richness.ecol.rplB.rare.data <- estimate_richness(ecol.rplB.rare, split = TRUE, measures = "Observed")
+richness.ecol.rplB.rare.data <- richness.ecol.rplB.rare.data %>%
+  mutate(Site = rownames(richness.ecol.rplB.rare.data), GeneGroup = "rplB")
+
+richness.ecol.ARG.rare.data <- estimate_richness(ecol.ARG.rare, split = TRUE, measures = "Observed")
+richness.ecol.ARG.rare.data <- richness.ecol.ARG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.ARG.rare.data), GeneGroup = "ARG")
+
+richness.ecol.AsRG.rare.data <- estimate_richness(ecol.AsRG.rare, split = TRUE, measures = "Observed")
+richness.ecol.AsRG.rare.data <- richness.ecol.AsRG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.AsRG.rare.data), GeneGroup = "AsRG")
+
+#join together richness results and add metadata 
+richness.data <- rbind(richness.ecol.rplB.rare.data, richness.ecol.ARG.rare.data, richness.ecol.AsRG.rare.data)
+richness.data <- richness.data %>%
+  left_join(meta, by = "Site")
+
+#mann whitney u test for significance
+#perform test of gene abundance compared to 
+#soil history (Classification)
+richness.mwu.classification <- subset(richness.data, Classification !="Reference") %>% group_by(GeneGroup) %>% do(tidy(wilcox.test(abs(.$Observed)~.$Classification, paired = FALSE)))
+
+#save table
+write.table(richness.mwu.classification, paste(wd, "/output/richness.1.mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
+
+#relativize rarefied datasets before beta-diversity
+ecol.rplB.rareREL <-  transform_sample_counts(ecol.rplB.rare, function(x) x/sum(x))
+ecol.ARG.rareREL <-  transform_sample_counts(ecol.ARG.rare, function(x) x/sum(x))
+ecol.AsRG.rareREL <- transform_sample_counts(ecol.AsRG.rare, function(x) x/sum(x))
+
+#plot Bray Curtis ordination for rplB
+ord.rplB.bray <- ordinate(ecol.rplB.rareREL, method="PCoA", distance="bray")
+(bc.ord.rplB=plot_ordination(ecol.rplB.rareREL, ord.rplB.bray, color="SoilTemperature_to10cm",
+                             title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    geom_point(size=5) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for ARGs
+ord.ARG.bray <- ordinate(ecol.ARG.rareREL, method="PCoA", distance="bray")
+(bc.ord.ARG=plot_ordination(ecol.ARG.rareREL, ord.ARG.bray, color="SoilTemperature_to10cm",
+                            title="Bray Curtis", shape = "Classification") +
+    geom_point(size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for AsRGs
+ord.AsRG.bray <- ordinate(ecol.AsRG.rareREL, method="PCoA", distance="bray")
+(bc.ord.AsRG=plot_ordination(ecol.AsRG.rareREL, ord.AsRG.bray, color="SoilTemperature_to10cm",
+                             title="Bray Curtis", shape = "Classification") +
+    geom_point(size=5) +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    theme_light(base_size = 12))
+
+#save each bray curtis
+ggsave(bc.ord.rplB, filename = paste(wd, "/figures/rplB.braycurtis.eps", sep = ""), width = 5, height =3, units = "in")
+ggsave(bc.ord.ARG, filename = paste(wd, "/figures/ARG.braycurtis.eps", sep = ""), width = 5, height = 3, units = "in")
+ggsave(bc.ord.AsRG, filename = paste(wd, "/figures/AsRG.braycurtis.eps", sep = ""), width = 5, height = 3, units = "in")
+
+#extract OTU table from phyloseq
+ecol.rplB.rareREL.matrix = as(otu_table(ecol.rplB.rareREL), "matrix")
+ecol.AsRG.rareREL.matrix = as(otu_table(ecol.AsRG.rareREL), "matrix")
+ecol.ARG.rareREL.matrix = as(otu_table(ecol.ARG.rareREL), "matrix")
+
+#calculate distance matrix
+ecol.rplB.rareREL.d <- vegdist(ecol.rplB.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.ARG.rareREL.d <- vegdist(ecol.ARG.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.AsRG.rareREL.d <- vegdist(ecol.AsRG.rareREL.matrix, diag = TRUE, upper = TRUE)
+
+#mantel tests
+mantel(ecol.rplB.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+mantel(ecol.rplB.rareREL.d,ecol.AsRG.rareREL.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+
+#try mantel tests of recovered sites only
+recovered <- c("cen01", "cen03", "cen04", "cen05", "cen07")
+
+ecol.rplB.rareREL.Rec.d <- vegdist(ecol.rplB.rareREL.matrix[rownames(ecol.rplB.rareREL.matrix) %in% recovered,], diag = TRUE, upper = TRUE)
+
+ecol.ARG.rareREL.Rec.d <- vegdist(ecol.ARG.rareREL.matrix[rownames(ecol.ARG.rareREL.matrix) %in% recovered,], diag = TRUE, upper = TRUE)
+
+ecol.AsRG.rareREL.Rec.d <- vegdist(ecol.AsRG.rareREL.matrix[rownames(ecol.AsRG.rareREL.matrix) %in% recovered,], diag = TRUE, upper = TRUE)
+
+#mantel tests on recovered only
+mantel(ecol.rplB.rareREL.Rec.d,ecol.ARG.rareREL.Rec.d, method = "spear")
+mantel(ecol.rplB.rareREL.Rec.d,ecol.AsRG.rareREL.Rec.d, method = "spear")
+mantel(ecol.AsRG.rareREL.Rec.d,ecol.ARG.rareREL.Rec.d, method = "spear")
+
+#try mantel tests on fire affected sites only
+fireaffected <- c("cen06", "cen10", "cen12", "cen13", "cen14", "cen15", "cen16")
+
+ecol.rplB.rareREL.FA.d <- vegdist(ecol.rplB.rareREL.matrix[rownames(ecol.rplB.rareREL.matrix) %in% fireaffected,], diag = TRUE, upper = TRUE)
+
+ecol.ARG.rareREL.FA.d <- vegdist(ecol.ARG.rareREL.matrix[rownames(ecol.ARG.rareREL.matrix) %in% fireaffected,], diag = TRUE, upper = TRUE)
+
+ecol.AsRG.rareREL.FA.d <- vegdist(ecol.AsRG.rareREL.matrix[rownames(ecol.AsRG.rareREL.matrix) %in% fireaffected,], diag = TRUE, upper = TRUE)
+
+#mantel tests on recovered only
+mantel(ecol.rplB.rareREL.FA.d,ecol.ARG.rareREL.FA.d, method = "spear")
+mantel(ecol.rplB.rareREL.FA.d,ecol.AsRG.rareREL.FA.d, method = "spear")
+mantel(ecol.AsRG.rareREL.FA.d,ecol.ARG.rareREL.FA.d, method = "spear")
+
+#mantel w/ spatial distances
+space <- read.table(paste(wd, "/data/spatialdistancematrix.txt", sep = ""), 
+                    header=TRUE, row.names=1)
+
+#make spacial matrix names match other data
+names(space) <- gsub("C", "cen", names(space))
+rownames(space) <- gsub("C", "cen", rownames(space))
+
+#remove rows and columns that involve sites 
+#that don't have metagenomes
+space <- space[names(space) %in% otu_table$Site, colnames(space) %in% otu_table$Site]
+
+#make space into a distance matrix
+space.d=as.dist(space, diag = TRUE, upper = TRUE)
+
+#mantel tests v. space
+mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
+mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
+
+#########################################################
+#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.01#
+#########################################################
+
+#make an OTU table with 0.01 cluster sizes
+
+#temporarily change working directories
+setwd(paste(wd, "/data", sep = ""))
+
+#list filenames of interest
+filenames.01 <- list.files(pattern="*_rformat_dist_0.01.txt")
+
+#move back up directories
+setwd("../..")
+
+#make dataframes of all OTU tables
+for(i in filenames.01){
+  filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
+  assign(gsub("_rformat_dist_0.01.txt", ".01", i), read.delim(filepath,sep = "\t"))
+}
+
+#change OTU to gene name
+colnames(acr3.01) <- naming(acr3.01)
+colnames(aioA.01) <- naming(aioA.01)
+colnames(arsB.01) <- naming(arsB.01)
+colnames(`AAC6-Ia.01`) <- naming(`AAC6-Ia.01`)
+colnames(adeB.01) <- naming(adeB.01)
+colnames(arrA.01) <- naming(arrA.01)
+colnames(arsA.01) <- naming(arsA.01)
+colnames(arsC_glut.01) <- naming(arsC_glut.01)
+colnames(arsC_thio.01) <- naming(arsC_thio.01)
+colnames(arsD.01) <- naming(arsD.01)
+colnames(arsM.01) <- naming(arsM.01)
+colnames(arxA.01) <- naming(arxA.01)
+colnames(CEP.01) <- naming(CEP.01)
+colnames(ClassA.01) <- naming(ClassA.01)
+colnames(ClassB.01) <- naming(ClassB.01)
+colnames(ClassC.01) <- naming(ClassC.01)
+colnames(dfra12.01) <- naming(dfra12.01)
+colnames(rplB.01) <- naming(rplB.01)
+colnames(intI.01) <- naming(intI.01)
+colnames(sul2.01) <- naming(sul2.01)
+colnames(tetA.01) <- naming(tetA.01)
+colnames(tetW.01) <- naming(tetW.01)
+colnames(tetX.01) <- naming(tetX.01)
+colnames(tolC.01) <- naming(tolC.01)
+colnames(vanA.01) <- naming(vanA.01)
+colnames(vanH.01) <- naming(vanH.01)
+colnames(vanX.01) <- naming(vanX.01)
+colnames(vanZ.01) <- naming(vanZ.01)
+
+#join together all files
+otu_table.01 <- acr3.01 %>%
+  left_join(aioA.01, by = "X") %>%
+  left_join(`AAC6-Ia.01`, by = "X") %>%
+  left_join(arrA.01, by = "X") %>%
+  left_join(arsA.01, by = "X") %>%
+  left_join(arsB.01, by = "X") %>%
+  left_join(arsC_glut.01, by = "X") %>%
+  left_join(arsC_thio.01, by = "X") %>%
+  left_join(arsD.01, by = "X") %>%
+  left_join(arsM.01, by = "X") %>%
+  left_join(arxA.01, by = "X") %>%
+  left_join(CEP.01, by = "X") %>%
+  left_join(ClassA.01, by = "X") %>%
+  left_join(ClassB.01, by = "X") %>%
+  left_join(ClassC.01, by = "X") %>%
+  left_join(dfra12.01, by = "X") %>%
+  left_join(intI.01, by = "X") %>%
+  left_join(rplB.01, by = "X") %>%
+  left_join(sul2.01, by = "X") %>%
+  left_join(tetA.01, by = "X") %>%
+  left_join(tetW.01, by = "X") %>%
+  left_join(tetX.01, by = "X") %>%
+  left_join(tolC.01, by = "X") %>%
+  left_join(vanA.01, by = "X") %>%
+  left_join(vanH.01, by = "X") %>%
+  left_join(vanX.01, by = "X") %>%
+  left_join(vanZ.01, by = "X") %>%
+  left_join(adeB.01, by = "X") %>%
+  rename(Site =X) 
+
+#list otus that are gene matches
+#mixed.1 <- c("arxA_12", "arxA_04", "arrA_1", "arrA_2", "arrA_3", "arrA_5", "arrA_6", "arrA_8", "arrA_9", "aioA_18", "aioA_30", "aioA_36", "aioA_44", "aioA_52", "aioA_53", "aioA_57")
+
+#remove OTUs that are gene matches
+#otu_table <- otu_table[,!names(otu_table) %in% mixed.1]
+
+#rename arxA column that is actually arrA (with no match)
+#otu_table <- otu_table %>%
+#  rename(arrA_10 = arxA_10)
+
+#replace all NAs (from join) with zeros
+otu_table.01[is.na(otu_table.01)] <- 0
+
+#separate original (non-normalized) contig table into
+#specific gene groups (rplB, ARG, AsRG)
+ecol.rplB <- otu_table.01[, grep("rplB", colnames(otu_table.01))]
+ecol.AsRG <- otu_table.01[, grep("ars|aio|arx|arr|acr", 
+                                         colnames(otu_table.01))]
+ecol.ARG <- otu_table.01[,grep("tolC|dfra|Class|tet|van|CEP|AAC|ade|sul", 
+                                       colnames(otu_table.01))]
+
+#add site names as row names to each contig table 
+rownames(ecol.rplB) <- otu_table[,1]
+rownames(ecol.ARG) <- otu_table[,1]
+rownames(ecol.AsRG) <- otu_table[,1]
+
+#make list of 13 colors (based on classification)
+class.13 <- c("#FFFF00", "darkgreen", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000")
+
+#check sampling depth of each matrix
+rarecurve(ecol.rplB, step=1, label = FALSE, col = class.13)
+rarecurve(ecol.AsRG, step=1, label = FALSE, col = class.13)
+rarecurve(ecol.ARG, step=1, label = FALSE, col = class.13)
+
+#convert contig tables into phyloseq objects
+ecol.rplB.phyloseq <- otu_table(ecol.rplB, taxa_are_rows = FALSE)
+ecol.AsRG.phyloseq <- otu_table(ecol.AsRG, taxa_are_rows = FALSE)
+ecol.ARG.phyloseq <- otu_table(ecol.ARG, taxa_are_rows = FALSE)
+
+#rarefy to even sampling depth 
+ecol.rplB.rare <- rarefy_even_depth(ecol.rplB.phyloseq, rngseed = TRUE)
+rarecurve(ecol.rplB.rare, step=1, label = FALSE, col = class.13)
+
+ecol.ARG.rare <- rarefy_even_depth(ecol.ARG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.ARG.rare, step=1, label = FALSE, col = class.13)
+
+ecol.AsRG.rare <- rarefy_even_depth(ecol.AsRG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.AsRG.rare, step=1, label = FALSE, col = class.13)
+
+#make metadata a phyloseq class object
+meta$Site <- gsub("Cen", "cen", meta$Site)
+rownames(meta) <- meta[,1]
+meta.phylo <- meta[,-1]
+meta.phylo <- sample_data(meta.phylo)
+
+#read in trees and make phyloseq object
+#library(ape)
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.01_FastTree.nwk", sep = ""))
+#rplb.tree <- phy_tree(rplb.tree)
+
+##make biom for phyloseq
+ecol.rplB.rare <- merge_phyloseq(ecol.rplB.rare, meta.phylo)
+ecol.ARG.rare <- merge_phyloseq(ecol.ARG.rare, meta.phylo)
+ecol.AsRG.rare <- merge_phyloseq(ecol.AsRG.rare, meta.phylo)
+
+#plot & save RICHNESS
+(richness.ecol.rplB.rare <- plot_richness(ecol.rplB.rare, x = "Classification", measures = "Observed") +
+  geom_boxplot() +
+  theme_bw() +
+    ylim(30,170) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.ARG.rare <- plot_richness(ecol.ARG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30,170) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.AsRG.rare <- plot_richness(ecol.AsRG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30,170) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+richness0.01 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
+
+ggsave(richness0.01, filename = paste(wd, "/figures/richness.png",sep = ""), width = 6, units = "in")
+
+#extract richness and perform statistical tests
+richness.ecol.rplB.rare.data <- estimate_richness(ecol.rplB.rare, split = TRUE, measures = "Observed")
+richness.ecol.rplB.rare.data <- richness.ecol.rplB.rare.data %>%
+  mutate(Site = rownames(richness.ecol.rplB.rare.data), GeneGroup = "rplB")
+
+richness.ecol.ARG.rare.data <- estimate_richness(ecol.ARG.rare, split = TRUE, measures = "Observed")
+richness.ecol.ARG.rare.data <- richness.ecol.ARG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.ARG.rare.data), GeneGroup = "ARG")
+
+richness.ecol.AsRG.rare.data <- estimate_richness(ecol.AsRG.rare, split = TRUE, measures = "Observed")
+richness.ecol.AsRG.rare.data <- richness.ecol.AsRG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.AsRG.rare.data), GeneGroup = "AsRG")
+
+#join together richness results and add metadata 
+richness.data <- rbind(richness.ecol.rplB.rare.data, richness.ecol.ARG.rare.data, richness.ecol.AsRG.rare.data)
+richness.data <- richness.data %>%
+  left_join(meta, by = "Site")
+
+#mann whitney u test for significance
+#perform test of gene abundance compared to 
+#soil history (Classification)
+richness.mwu.classification <- subset(richness.data, Classification !="Reference") %>% group_by(GeneGroup) %>% do(tidy(t.test(abs(.$Observed)~.$Classification, paired = FALSE)))
+
+#save table
+write.table(richness.mwu.classification, paste(wd, "/output/richness.01.mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
+
+#relativize rarefied datasets before beta-diversity
+ecol.rplB.rareREL <-  transform_sample_counts(ecol.rplB.rare, function(x) x/sum(x))
+ecol.ARG.rareREL <-  transform_sample_counts(ecol.ARG.rare, function(x) x/sum(x))
+ecol.AsRG.rareREL <- transform_sample_counts(ecol.AsRG.rare, function(x) x/sum(x))
+
+#plot Bray Curtis ordination for rplB
+ord.rplB.bray <- ordinate(ecol.rplB.rareREL, method="PCoA", distance="bray")
+(bc.ord.rplB=plot_ordination(ecol.rplB.rareREL, ord.rplB.bray, color="SoilTemperature_to10cm",
+                        title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for ARGs
+ord.ARG.bray <- ordinate(ecol.ARG.rareREL, method="PCoA", distance="bray")
+(bc.ord.ARG=plot_ordination(ecol.ARG.rareREL, ord.ARG.bray, color="SoilTemperature_to10cm",
+                        title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for AsRGs
+ord.AsRG.bray <- ordinate(ecol.AsRG.rareREL, method="PCoA", distance="bray")
+(bc.ord.AsRG=plot_ordination(ecol.AsRG.rareREL, ord.AsRG.bray, color="SoilTemperature_to10cm",
+                            title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+bray.curtis <- multiplot(bc.ord.rplB, bc.ord.ARG, bc.ord.AsRG, ncol = 1)
+
+#extract OTU table from phyloseq
+ecol.rplB.rareREL.matrix = as(otu_table(ecol.rplB.rareREL), "matrix")
+ecol.AsRG.rareREL.matrix = as(otu_table(ecol.AsRG.rareREL), "matrix")
+ecol.ARG.rareREL.matrix = as(otu_table(ecol.ARG.rareREL), "matrix")
+
+#calculate distance matrix
+ecol.rplB.rareREL.d <- vegdist(ecol.rplB.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.ARG.rareREL.d <- vegdist(ecol.ARG.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.AsRG.rareREL.d <- vegdist(ecol.AsRG.rareREL.matrix, diag = TRUE, upper = TRUE)
+
+#mantel tests
+mantel(ecol.rplB.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+mantel(ecol.rplB.rareREL.d,ecol.AsRG.rareREL.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+
+#mantel tests v. space
+mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
+mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
+
+#####################################
+#0.03 CLUSTERING ECOLOGICAL ANALYSIS#
+#####################################
+
+#make an OTU table with 0.03 cluster sizes
+
+#temporarily change working directories
+setwd(paste(wd, "/data", sep = ""))
+
+#list filenames of interest
+filenames.03 <- list.files(pattern="*_rformat_dist_0.03.txt")
+
+#move back up directories
+setwd("../..")
+
+#make dataframes of all OTU tables
+for(i in filenames.03){
+  filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
+  assign(gsub("_rformat_dist_0.03.txt", ".03", i), read.delim(filepath,sep = "\t"))
+}
+
+#change OTU to gene name
+colnames(acr3.03) <- naming(acr3.03)
+colnames(aioA.03) <- naming(aioA.03)
+colnames(arsB.03) <- naming(arsB.03)
+colnames(`AAC6-Ia.03`) <- naming(`AAC6-Ia.03`)
+colnames(adeB.03) <- naming(adeB.03)
+colnames(arrA.03) <- naming(arrA.03)
+colnames(arsA.03) <- naming(arsA.03)
+colnames(arsC_glut.03) <- naming(arsC_glut.03)
+colnames(arsC_thio.03) <- naming(arsC_thio.03)
+colnames(arsD.03) <- naming(arsD.03)
+colnames(arsM.03) <- naming(arsM.03)
+colnames(arxA.03) <- naming(arxA.03)
+colnames(CEP.03) <- naming(CEP.03)
+colnames(ClassA.03) <- naming(ClassA.03)
+colnames(ClassB.03) <- naming(ClassB.03)
+colnames(ClassC.03) <- naming(ClassC.03)
+colnames(dfra12.03) <- naming(dfra12.03)
+colnames(rplB.03) <- naming(rplB.03)
+colnames(intI.03) <- naming(intI.03)
+colnames(sul2.03) <- naming(sul2.03)
+colnames(tetA.03) <- naming(tetA.03)
+colnames(tetW.03) <- naming(tetW.03)
+colnames(tetX.03) <- naming(tetX.03)
+colnames(tolC.03) <- naming(tolC.03)
+colnames(vanA.03) <- naming(vanA.03)
+colnames(vanH.03) <- naming(vanH.03)
+colnames(vanX.03) <- naming(vanX.03)
+colnames(vanZ.03) <- naming(vanZ.03)
+
+#join together all files
+otu_table.03 <- acr3.03 %>%
+  left_join(aioA.03, by = "X") %>%
+  left_join(`AAC6-Ia.03`, by = "X") %>%
+  left_join(arrA.03, by = "X") %>%
+  left_join(arsA.03, by = "X") %>%
+  left_join(arsB.03, by = "X") %>%
+  left_join(arsC_glut.03, by = "X") %>%
+  left_join(arsC_thio.03, by = "X") %>%
+  left_join(arsD.03, by = "X") %>%
+  left_join(arsM.03, by = "X") %>%
+  left_join(arxA.03, by = "X") %>%
+  left_join(CEP.03, by = "X") %>%
+  left_join(ClassA.03, by = "X") %>%
+  left_join(ClassB.03, by = "X") %>%
+  left_join(ClassC.03, by = "X") %>%
+  left_join(dfra12.03, by = "X") %>%
+  left_join(intI.03, by = "X") %>%
+  left_join(rplB.03, by = "X") %>%
+  left_join(sul2.03, by = "X") %>%
+  left_join(tetA.03, by = "X") %>%
+  left_join(tetW.03, by = "X") %>%
+  left_join(tetX.03, by = "X") %>%
+  left_join(tolC.03, by = "X") %>%
+  left_join(vanA.03, by = "X") %>%
+  left_join(vanH.03, by = "X") %>%
+  left_join(vanX.03, by = "X") %>%
+  left_join(vanZ.03, by = "X") %>%
+  left_join(adeB.03, by = "X") %>%
+  rename(Site =X) 
+
+#list otus that are gene matches
+#mixed.1 <- c("arxA_12", "arxA_04", "arrA_1", "arrA_2", "arrA_3", "arrA_5", "arrA_6", "arrA_8", "arrA_9", "aioA_18", "aioA_30", "aioA_36", "aioA_44", "aioA_52", "aioA_53", "aioA_57")
+
+#remove OTUs that are gene matches
+#otu_table <- otu_table[,!names(otu_table) %in% mixed.1]
+
+#rename arxA column that is actually arrA (with no match)
+#otu_table <- otu_table %>%
+#  rename(arrA_10 = arxA_10)
+
+#replace all NAs (from join) with zeros
+otu_table.03[is.na(otu_table.03)] <- 0
+
+#separate original (non-normalized) contig table into
+#specific gene groups (rplB, ARG, AsRG)
+ecol.rplB <- otu_table.03[, grep("rplB", colnames(otu_table.03))]
+ecol.AsRG <- otu_table.03[, grep("ars|aio|arx|arr|acr", 
+                                 colnames(otu_table.03))]
+ecol.ARG <- otu_table.03[,grep("tolC|dfra|Class|tet|van|CEP|AAC|ade|sul", 
+                               colnames(otu_table.03))]
+
+#add site names as row names to each contig table 
+rownames(ecol.rplB) <- otu_table[,1]
+rownames(ecol.ARG) <- otu_table[,1]
+rownames(ecol.AsRG) <- otu_table[,1]
+
+#make list of 13 colors (based on classification)
+class.13 <- c("#FFFF00", "darkgreen", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000", "#FF0000", "#FFFF00", "#FF0000")
+
+#check sampling depth of each matrix
+rarecurve(ecol.rplB, step=1, label = TRUE, col = class.13)
+rarecurve(ecol.AsRG, step=1, label = TRUE, col = class.13)
+rarecurve(ecol.ARG, step=1, label = FALSE, col = class.13)
+
+#convert contig tables into phyloseq objects
+ecol.rplB.phyloseq <- otu_table(ecol.rplB, taxa_are_rows = FALSE)
+ecol.AsRG.phyloseq <- otu_table(ecol.AsRG, taxa_are_rows = FALSE)
+ecol.ARG.phyloseq <- otu_table(ecol.ARG, taxa_are_rows = FALSE)
+
+#rarefy to even sampling depth 
+ecol.rplB.rare <- rarefy_even_depth(ecol.rplB.phyloseq, rngseed = TRUE)
+rarecurve(ecol.rplB.rare, step=1, label = FALSE, col = class.13)
+
+ecol.ARG.rare <- rarefy_even_depth(ecol.ARG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.ARG.rare, step=1, label = FALSE, col = class.13)
+
+ecol.AsRG.rare <- rarefy_even_depth(ecol.AsRG.phyloseq, rngseed = TRUE)
+rarecurve(ecol.AsRG.rare, step=1, label = FALSE, col = class.13)
+
+#make metadata a phyloseq class object
+meta$Site <- gsub("Cen", "cen", meta$Site)
+rownames(meta) <- meta[,1]
+meta.phylo <- meta[,-1]
+meta.phylo <- sample_data(meta.phylo)
+
+#read in trees and make phyloseq object
+#library(ape)
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.03_FastTree.nwk", sep = ""))
+#rplb.tree <- phy_tree(rplb.tree)
+
+##make biom for phyloseq
+ecol.rplB.rare <- merge_phyloseq(ecol.rplB.rare, meta.phylo)
+ecol.ARG.rare <- merge_phyloseq(ecol.ARG.rare, meta.phylo)
+ecol.AsRG.rare <- merge_phyloseq(ecol.AsRG.rare, meta.phylo)
+
+#plot & save RICHNESS
+(richness.ecol.rplB.rare <- plot_richness(ecol.rplB.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30, 230) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.ARG.rare <- plot_richness(ecol.ARG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30, 230) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+(richness.ecol.AsRG.rare <- plot_richness(ecol.AsRG.rare, x = "Classification", measures = "Observed") +
+    geom_boxplot() +
+    theme_bw() +
+    ylim(30, 230) +
+    theme(axis.text.x = element_text(angle = 45, size = 14, 
+                                     hjust=0.95)))
+
+richness <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
+
+ggsave(richness, filename = paste(wd, "/figures/richness.png",sep = ""), width = 6, units = "in")
+
+#extract richness and perform statistical tests
+richness.ecol.rplB.rare.data <- estimate_richness(ecol.rplB.rare, split = TRUE, measures = "Observed")
+richness.ecol.rplB.rare.data <- richness.ecol.rplB.rare.data %>%
+  mutate(Site = rownames(richness.ecol.rplB.rare.data), GeneGroup = "rplB")
+
+richness.ecol.ARG.rare.data <- estimate_richness(ecol.ARG.rare, split = TRUE, measures = "Observed")
+richness.ecol.ARG.rare.data <- richness.ecol.ARG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.ARG.rare.data), GeneGroup = "ARG")
+
+richness.ecol.AsRG.rare.data <- estimate_richness(ecol.AsRG.rare, split = TRUE, measures = "Observed")
+richness.ecol.AsRG.rare.data <- richness.ecol.AsRG.rare.data %>%
+  mutate(Site = rownames(richness.ecol.AsRG.rare.data), GeneGroup = "AsRG")
+
+#join together richness results and add metadata 
+richness.data <- rbind(richness.ecol.rplB.rare.data, richness.ecol.ARG.rare.data, richness.ecol.AsRG.rare.data)
+richness.data <- richness.data %>%
+  left_join(meta, by = "Site")
+  
+#mann whitney u test for significance
+#perform test of gene abundance compared to 
+#soil history (Classification)
+richness.mwu.classification <- subset(richness.data, Classification !="Reference") %>% group_by(GeneGroup) %>% do(tidy(wilcox.test(abs(.$Observed)~.$Classification, paired = FALSE)))
+
+#save table
+write.table(richness.mwu.classification, paste(wd, "/output/richness.03.mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
 
 
-#arsM
-arsM <- subset(x = data.mann, subset = Gene == "arsM")
-arsM.cast <- print(wilcox.test(arsM$Total~arsM$Classification, paired = FALSE))
-t.test(arsM$Total ~ arsM$Classification)
+#relativize rarefied datasets before beta-diversity
+ecol.rplB.rareREL <-  transform_sample_counts(ecol.rplB.rare, function(x) x/sum(x))
+ecol.ARG.rareREL <-  transform_sample_counts(ecol.ARG.rare, function(x) x/sum(x))
+ecol.AsRG.rareREL <- transform_sample_counts(ecol.AsRG.rare, function(x) x/sum(x))
 
-#arsCglut
-arsCglut <- subset(x = data.mann, subset = Gene == "arsCglut")
-arsCglut.cast <- print(wilcox.test(arsCglut$Total~arsCglut$Classification, paired = FALSE))
-t.test(arsCglut$Total ~ arsCglut$Classification)
+#plot Bray Curtis ordination for rplB
+ord.rplB.bray <- ordinate(ecol.rplB.rareREL, method="PCoA", distance="bray")
+(bc.ord.rplB=plot_ordination(ecol.rplB.rareREL, ord.rplB.bray, color="SoilTemperature_to10cm",
+                             title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide="colorbar", 
+                          guide_legend(title="Temperature (°C)")) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for ARGs
+ord.ARG.bray <- ordinate(ecol.ARG.rareREL, method="PCoA", distance="bray")
+(bc.ord.ARG=plot_ordination(ecol.ARG.rareREL, ord.ARG.bray, color="SoilTemperature_to10cm",
+                            title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide = FALSE) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+#plot Bray Curtis ordination for AsRGs
+ord.AsRG.bray <- ordinate(ecol.AsRG.rareREL, method="PCoA", distance="bray")
+(bc.ord.AsRG=plot_ordination(ecol.AsRG.rareREL, ord.AsRG.bray, color="SoilTemperature_to10cm",
+                             title="Bray Curtis", shape = "Classification") +
+    scale_color_gradientn(colours=GnYlOrRd(5), guide = FALSE) +
+    geom_point(size=5, alpha = 0.5) +
+    theme_light(base_size = 12))
+
+bray.curtis <- multiplot(bc.ord.rplB, bc.ord.ARG, bc.ord.AsRG, ncol = 1)
+
+#extract OTU table from phyloseq
+ecol.rplB.rareREL.matrix = as(otu_table(ecol.rplB.rareREL), "matrix")
+ecol.AsRG.rareREL.matrix = as(otu_table(ecol.AsRG.rareREL), "matrix")
+ecol.ARG.rareREL.matrix = as(otu_table(ecol.ARG.rareREL), "matrix")
+
+#calculate distance matrix
+ecol.rplB.rareREL.d <- vegdist(ecol.rplB.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.ARG.rareREL.d <- vegdist(ecol.ARG.rareREL.matrix, diag = TRUE, upper = TRUE)
+ecol.AsRG.rareREL.d <- vegdist(ecol.AsRG.rareREL.matrix, diag = TRUE, upper = TRUE)
+
+#mantel tests
+mantel(ecol.rplB.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+mantel(ecol.rplB.rareREL.d,ecol.AsRG.rareREL.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
+
+#mantel tests v. space
+mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
+mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
+mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
+#we do not see different results with 0.03 clustering
+
+###?##?#?#?#?#?#?#?#?#?#?#?#?#?
 
 
-#arsCthio
-arsCthio <- subset(x = data.mann, subset = Gene == "arsCthio")
-arsCthio.cast <- print(wilcox.test(arsCthio$Total~arsCthio$Classification, paired = FALSE))
-t.test(arsCthio$Total ~ arsCthio$Classification)
 
-#arsA
-arsA <- subset(x = data.mann, subset = Gene == "arsA")
-arsA.cast <- print(wilcox.test(arsA$Total~arsA$Classification, paired = FALSE))
-t.test(arsA$Total ~ arsA$Classification)
 
-#arsD
-arsD <- subset(x = data.mann, subset = Gene == "arsD")
-arsD.cast <- print(wilcox.test(arsD$Total~arsD$Classification, paired = FALSE))
-t.test(arsD$Total ~ arsD$Classification)
 
-#intI
-intI <- subset(x = data.mann, subset = Gene == "intI")
-intI.cast <- print(wilcox.test(intI$Total~intI$Classification, paired = FALSE))
-t.test(intI$Total ~ intI$Classification)
+##############################
+#TAXANOMIC ABUNDANCE ANALYSIS#
+##############################
 
-#ClassA
-ClassA <- subset(x = data.mann, subset = Gene == "ClassA")
-ClassA.cast <- print(wilcox.test(ClassA$Total~ClassA$Classification, paired = FALSE))
-t.test(ClassA$Total ~ ClassA$Classification)
+#need to adjust OTU column in gene_abundance
+#to join with taxanomic data
+gene_abundance_otu <- gene_abundance %>%
+  separate(col = OTU, into = c("leftover", "OTU"), sep = "_") %>%
+  select(-leftover)
 
-#ClassB
-ClassB <- subset(x = data.mann, subset = Gene == "ClassB")
-ClassB.cast <- print(wilcox.test(ClassB$Total~ClassB$Classification, paired = FALSE))
-t.test(ClassB$Total ~ ClassB$Classification)
+#make OTU a number
+gene_abundance_otu$OTU <- as.numeric(gene_abundance_otu$OTU)
 
-#ClassC
-ClassC <- subset(x = data.mann, subset = Gene == "ClassC")
-ClassC.cast <- print(wilcox.test(ClassC$Total~ClassC$Classification, paired = FALSE))
-t.test(ClassC$Total ~ ClassC$Classification)
+#add leading zero to 4 digits
+gene_abundance_otu$OTU <- sprintf("%04d", gene_abundance_otu$OTU)
 
-#vanA
-vanA <- subset(x = data.mann, subset = Gene == "vanA")
-vanA.cast <- print(wilcox.test(vanA$Total~vanA$Classification, paired = FALSE))
-t.test(vanA$Total ~ vanA$Classification)
+#add OTU to otu label
+gene_abundance_otu$OTU <- paste("OTU_", gene_abundance_otu$OTU, sep="")
 
-#vanH
-vanH <- subset(x = data.mann, subset = Gene == "vanH")
-vanH.cast <- print(wilcox.test(vanH$Total~vanH$Classification, paired = FALSE))
-t.test(vanH$Total ~ vanH$Classification)
+#temporarily change working directory to data to bulk load files
+setwd(paste(wd, "/data", sep = ""))
 
-#vanX
-vanX <- subset(x = data.mann, subset = Gene == "vanX")
-vanX.cast <- print(wilcox.test(vanX$Total~vanX$Classification, paired = FALSE))
-t.test(vanX$Total ~ vanX$Classification)
+#read in abundance data
+blast.names <- list.files(pattern="blast_*")
+identifiers <- do.call(rbind, lapply(blast.names, function(X) {
+  data.frame(id = basename(X), read_delim(X, delim = "\t", col_types = 
+                                            list(col_character(), 
+                                                 col_character(), 
+                                                 col_character(), 
+                                                 col_character()),
+                                          col_names = c("OTU", "Description",
+                                                        "Evalue")))}))
 
-#vanZ
-vanZ <- subset(x = data.mann, subset = Gene == "vanZ")
-vanZ.cast <- print(wilcox.test(vanZ$Total~vanZ$Classification, paired = FALSE))
-t.test(vanZ$Total ~ vanZ$Classification)
+#move back up a directory to proceed with analysis
+setwd("../")
 
-#tolC
-tolC <- subset(x = data.mann, subset = Gene == "tolC")
-tolC.cast <- print(wilcox.test(tolC$Total~tolC$Classification, paired = FALSE))
-t.test(tolC$Total ~ tolC$Classification)
+#Remove excess information in id column
+identifiers$id <- gsub("blast_", "", identifiers$id)
+identifiers$id <- gsub(".txt", "", identifiers$id)
 
-#sul2
-sul2 <- subset(x = data.mann, subset = Gene == "sul2")
-sul2.cast <- print(wilcox.test(sul2$Total~sul2$Classification, paired = FALSE))
-t.test(sul2$Total ~ sul2$Classification)
+#Tidy identifier data
+identifiers_tidy <- identifiers %>%
+  separate(col = Description, into = c("Accno", "Description"), 
+           sep = " coded_by=") %>%
+  separate(col = Description, into = c("Coded_by", "Description"),
+           sep = ",organism=") %>%
+  separate(col = Description, into = c("Taxon", "Definition"), 
+           sep = ",definition=") %>%
+  rename(Gene = id) %>%
+  select(Gene, OTU, Taxon)
 
-#dfra12
-dfra12 <- subset(x = data.mann, subset = Gene == "dfra12")
-dfra12.cast <- print(wilcox.test(dfra12$Total~dfra12$Classification, paired = FALSE))
-t.test(dfra12$Total ~ dfra12$Classification)
+#list otus that are gene matches
+mixed.aioA <- c("OTU_0013", "OTU_0031", "OTU_0034", "OTU_0036", "OTU_0037", "OTU_0042", "OTU_0043", "OTU_0049", "OTU_0051")
+mixed.arrA <- c("OTU_0001", "OTU_0002", "OTU_0003", "OTU_0004", "OTU_0005", "OTU_0006", "OTU_0008")
+mixed.arxA <- c("OTU_0011", "OTU_04")
 
-#adeB
-adeB <- subset(x = data.mann, subset = Gene == "adeB")
-adeB.cast <- print(wilcox.test(adeB$Total~adeB$Classification, paired = FALSE))
-t.test(adeB$Total ~ adeB$Classification)
+#remove OTUs that are gene matches
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "aioA" &
+                                              identifiers_tidy$OTU %in% mixed.aioA),]
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "arrA" &
+                                              identifiers_tidy$OTU %in% mixed.arrA),]
+identifiers_tidy <- identifiers_tidy[-which(identifiers_tidy$Gene == "arxA" &
+                                              identifiers_tidy$OTU %in% mixed.arxA),]
+
+library(taxize)
+#add taxanomic information 
+#blast.ncbi <- tax_name(query = identifiers_tidy$Taxon, 
+#                      get = c("genus", "order", "family", "class", "phylum"), #db = "ncbi")
+
+
+#label query "Organism" for joining purposes
+#blast.ncbi$Taxon <- blast.ncbi$query
+
+#save this table since the above step takes a long time
+#write.table(blast.ncbi, file = paste(wd, "/output/blast.ncbi.taxonomy.txt",
+#sep = ""), row.names = FALSE)
+
+#read in ncbi information 
+blast.ncbi <- read_delim(paste(wd, "/output/blast.ncbi.taxonomy.txt",
+                               sep = ""), delim = " ")
+
+#join ncbi information with annotated data
+#output should have same number of rows 
+identifiers_ncbi <- identifiers_tidy %>%
+  left_join(blast.ncbi, by = "Taxon") %>%
+  unique() %>%
+  left_join(gene_abundance_otu, by = c("OTU", "Gene")) %>%
+  unique()
+
+#replace NA in phylum with unknown
+identifiers_ncbi$phylum[is.na(identifiers_ncbi$phylum)] = "Unknown"
+
+#call NA class by phyla
+identifiers_ncbi$class[is.na(identifiers_ncbi$class)] <- as.character(identifiers_ncbi$phylum[is.na(identifiers_ncbi$class)])
+
+#call NA genus by class (may be phyla in cases where class was NA)
+identifiers_ncbi$genus[is.na(identifiers_ncbi$genus)] <- as.character(identifiers_ncbi$class[is.na(identifiers_ncbi$genus)])
+
+#order based on temperature
+identifiers_ncbi$Site <- factor(identifiers_ncbi$Site, 
+                                levels = identifiers_ncbi$Site[order(identifiers_ncbi$SoilTemperature_to10cm)])
+
+
+##############################
+#EXAMINE PHYLUM LEVEL CHANGES#
+##############################
+
+#look at phylum level differneces
+data.phylum <- identifiers_ncbi %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  group_by(Group, Description, Gene, phylum, Classification, Site, Temp) %>%
+  summarise(Phylum.count = sum(RelativeAbundance))
+
+#prep colors for phylum diversity
+color <- c("#FF7F00", "#7570B3", "#CAB2D6", "#FBB4AE", "#F0027F", "#BEBADA", "#E78AC3", "#A6D854", "#B3B3B3", "#386CB0", "#BC80BD", "#FFFFCC", "#BF5B17", "#984EA3", "#CCCCCC", "#FFFF99", "#B15928", "#F781BF", "#FDC086", "#A6CEE3", "#FDB462", "#FED9A6", "#E6AB02", "#E31A1C", "#B2DF8A", "#377EB8", "#FCCDE5", "#80B1D3", "#FFD92F", "#33A02C", "#66C2A5", "#666666", "black", "brown", "grey", "red", "blue", "green", "purple", "brightorange", "pink", 
+           "yellow")
+
+#order genes by group
+data.phylum$Gene <- factor(data.phylum$Gene, 
+                           levels = data.phylum$Gene[order(data.phylum$Group)])
+
+#plot 
+(gene.bar.census <- ggplot(subset(data.phylum, Group == "ArsenicResistance"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
+
+(gene.bar.census <- ggplot(subset(data.phylum, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    scale_fill_manual(values = color) +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
+
+(gene.bar.census <- ggplot(subset(data.phylum, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = phylum)) +
+    geom_bar(stat = "identity") +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    scale_fill_manual(values = color) +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
+
+#look at class level differneces
+data.family <- identifiers_ncbi %>%
+  rename(Temp = SoilTemperature_to10cm) %>%
+  group_by(Group, Description, Gene, family, Classification, Site, Temp) %>%
+  summarise(Phylum.count = sum(RelativeAbundance))
+
+(gene.bar.census <- ggplot(subset(data.class, Gene == "arsM"),
+                           aes(x = Site,  y = Phylum.count*100, fill = class)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    theme_classic(base_size = 8) +
+    ylab("Gene per rplB (%)") +
+    facet_wrap(~ Gene, scales = "free_y") +
+    theme(axis.text.x = element_text(angle = 90, size = 8, 
+                                     hjust=0.95,vjust=0.2)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##############################
 #TAXANOMIC ABUNDANCE ANALYSIS#
@@ -781,3 +1554,6 @@ data.family <- identifiers_ncbi %>%
     facet_wrap(~ Gene, scales = "free_y") +
     theme(axis.text.x = element_text(angle = 90, size = 8, 
                                      hjust=0.95,vjust=0.2)))
+
+
+
