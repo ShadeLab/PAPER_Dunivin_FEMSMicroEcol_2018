@@ -1,0 +1,1 @@
+OTU_0036	OTU_0036	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	6e-90	64.74

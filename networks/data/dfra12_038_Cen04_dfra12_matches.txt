@@ -1,0 +1,1 @@
+49:scaffold83101	cen16_dfra12_contig_136_contig_137	89.20	176	19	0	1	176	176	1	7e-59	  220

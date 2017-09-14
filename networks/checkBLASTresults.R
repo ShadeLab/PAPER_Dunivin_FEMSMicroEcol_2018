@@ -11,20 +11,31 @@ library(RColorBrewer)
 wd <- print(getwd())
 
 #setwd to diversity analysis
-setwd(paste(wd, "/networks", sep = ""))
-
-#now change wd obj
-wd <- print(getwd())
+setwd(paste(wd, "/data", sep = ""))
 
 #read in data
-names=list.files(pattern="*_blast.txt")
+names=list.files(pattern="*_matches.txt")
 data <- do.call(rbind, lapply(names, function(X) {
   data.frame(id = basename(X), read.delim(X, sep = "\t",header = FALSE))}))
 
-#check how many are unique
-length(unique(data$V2))
-#==315/317; means 1 duplicate sequence
+#tidy data so it is readable/ comparable
+data.tidy <- data %>%
+  separate(V1, into = c("junk", "scaffold"), remove = TRUE, sep = ":") %>%
+  select(-junk) %>%
+  unique() 
 
-#Examine which scafold is not unique
-duplicated(data$V2)
-#==scaffold00202; both arsM; both low %id hits
+#make a wide dataframe that shows presence of scaffolds in separate genes
+data.wide <- dcast(data.tidy, id~scaffold, value.var = "V3")
+
+#replace length with 1 or 0
+data.wide[data.wide > 0] <- 1
+
+#remove all columns who only match one contig
+number.hits <- colSums(data.wide[2:ncol(data.wide)])
+multi.hits <- data.frame(number.hits[number.hits >1])
+
+#remove all scaffolds not present in multiple contigs
+data.tidy.matches <- data.tidy[data.tidy$scaffold %in% rownames(multi.hits),]
+
+
+

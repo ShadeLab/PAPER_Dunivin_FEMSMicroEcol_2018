@@ -234,8 +234,8 @@ tkplot(graph, edge.curved = FALSE)
 ##make network with few genes
 #subset data to only contain all of the AsRG ARG clusters
 #list otus that are gene matches
-matches <- c("acr3_002", "acr3_053", "tolC_08", "dfra12_076", "dfra12_038", "arsM_109", "arsM_296", "ClassB_001", "rplB_0564", "rplB_0549", "rplB_0267", "rplB_1015", "rplB_1027", "rplB_0149", "rplB_0407", "rplB_0355", "rplB_0692", "SoilTemperature_to10cm",
-             "Ca_ppm", "Mg_ppm", "DateSince_Fire")
+matches <- c("acr3_002", "acr3_053", "tolC_08", "dfra12_076", "dfra12_038", "arsM_109", "arsM_296", "ClassB_001", "rplB_0564", "rplB_0549", "rplB_0267", "rplB_1015", "rplB_1027", "rplB_0149", "rplB_0407", "rplB_0355", "rplB_0692", "SoilTemperature_to10cm", "rplB_1131", "rplB_0886", "rplB_0169",
+             "Ca_ppm", "Mg_ppm")
 
 #remove non matches from OTU table
 otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.slim.t) %in% matches]
@@ -272,7 +272,7 @@ match_trends <- otu_table_norm.slim.t_matches %>%
 match_trends$Site <- factor(match_trends$Site, 
                             match_trends$Site[order(match_trends$SoilTemperature_to10cm)])
 
-color1 <- c("#DECBE4", "#FED9A6", "#E5D8BD", "#FFFFCC", "#E7298A", "#FDDAEC")
+color1 <- c("#8DD3C7", "#FFFFB3", "#F7BD84", "#9CD1FF","#E7298A", "#FB8072")
 match1 <- c("rplB_0564", "tolC_08", "dfra12_076", "ClassB_001", "arsM_109", "acr3_053")
 match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
 (mt1 <- ggplot(match_trends1, aes(x = Site, y = Abundance, fill = OTU)) +
@@ -283,7 +283,7 @@ match_trends1 <- match_trends[which(match_trends$OTU %in% match1),]
   theme(axis.text.x = element_text(angle = 45, 
                                    hjust=0.95,vjust=0.9)))
 
-color2 <- c("#DECBE4", "#FED9A6","#FFFFCC", "#7570B3")
+color2 <- c("#8DD3C7", "#FFFFB3","#9CD1FF", "#7570B3")
 match2 <- c("rplB_0692", "acr3_002", "arsM_296", "dfra12_038")
 match_trends2 <- match_trends[which(match_trends$OTU %in% match2),]
 (mt2 <- ggplot(match_trends2, 
@@ -378,7 +378,7 @@ ggsave(boxplot.asrg, filename = paste(wd, "/figures/AsRGboxplot.eps", sep = ""),
 
 #perform test of gene abundance compared to 
 #soil history (Classification)
-mwu.classification <- subset(gene_abundance_summary, Classification !="Reference") %>% group_by(Gene) %>% do(tidy(wilcox.test(abs(.$Total)~.$Classification, paired = FALSE)))
+mwu.classification <- subset(gene_abundance_summary, Classification !="Reference") %>% group_by(Gene) %>% do(tidy(wilcox.test(.$Total~.$Classification, paired = FALSE)))
 
 #save table
 write.table(mwu.classification, paste(wd, "/output/mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
@@ -403,12 +403,16 @@ cor <- corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30)], method = "spearm
 #arsenic and antibiotic resistance genes are not correlated with temperature!
 
 #check correlations between genes
+cast.gene <- cast.gene %>% select(-c(rplB, arrA, arxA, tetA, tetW, tetX))
+cast.gene <- cast.gene[,-1]
 corr.genes <- print(corr.test(cast.gene, method = "spearman", adjust = "fdr"), 
                     short = FALSE)
 corr.genes.matrix <- corr.test(cast.gene, method = "spearman", adjust = "fdr")
 
 #save correlations to table
-write.table(corr.genes, paste(wd, "/output/gene.correlations.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
+write.table(corr.genes, paste(wd, "/output/gene.correlations.csv", sep = ""), row.names = TRUE, sep = ",", quote = FALSE)
+
+cor.plot(corr.genes.matrix$r,numbers = TRUE, xlas = 2, upper = FALSE, diag = FALSE, stars = TRUE, pval = corr.genes.matrix$p)
 
 
 ####################################
@@ -530,6 +534,33 @@ rarecurve(ecol.ARG.rare, step=1, label = FALSE, col = class.13)
 
 ecol.AsRG.rare <- rarefy_even_depth(ecol.AsRG.phyloseq, rngseed = TRUE)
 rarecurve(ecol.AsRG.rare, step=1, label = FALSE, col = class.13)
+
+#calculate evenness
+plieou.rplB <- data.frame(group = "rplB", Site = rownames(ecol.rplB.rare), plieou = vegan::diversity(ecol.rplB.rare, index = "shannon")/log(specnumber(ecol.rplB.rare)))
+
+plieou.ARG <- data.frame(group = "ARG", Site = rownames(ecol.ARG.rare), plieou = vegan::diversity(ecol.ARG.rare, index = "shannon")/log(specnumber(ecol.ARG.rare)))
+
+plieou.AsRG <- data.frame(group = "AsRG", Site = rownames(ecol.AsRG.rare), plieou = vegan::diversity(ecol.AsRG.rare, index = "shannon")/log(specnumber(ecol.AsRG.rare)))
+
+#join all evenness information and add metadata
+plieou.full <- rbind(plieou.ARG, plieou.AsRG, plieou.rplB)
+plieou.full <- left_join(plieou.full, meta, by = "Site")
+
+#plot evenness
+(plieou.plot <- ggplot(plieou.full, aes(x = Classification, y = plieou)) +
+  geom_boxplot() +
+    ylab(label = "Evenness") +
+    theme_bw() +
+    facet_wrap(~group))
+
+#test differences in evenness
+#mann whitney u test for significance
+#perform test of gene abundance compared to 
+#soil history (Classification)
+evenness.mwu.classification <- subset(plieou.full, Classification !="Reference") %>% group_by(group) %>% do(tidy(wilcox.test(abs(.$plieou)~.$Classification, paired = FALSE)))
+
+#save table
+write.table(evenness.mwu.classification, paste(wd, "/output/evenness.1.mannwhitneyu.csv", sep = ""), row.names = FALSE, sep = ",", quote = FALSE)
 
 #make metadata a phyloseq class object
 meta$Site <- gsub("Cen", "cen", meta$Site)

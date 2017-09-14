@@ -1,35 +1,35 @@
-Gene	Description	Group
+Gene	Description	Group	gene.color
 AAC3-Ia	Aminoglycoside	AntibioticResistance
 AAC6-Ia	Aminoglycoside	AntibioticResistance
 AAC6-II	Aminoglycoside	AntibioticResistance
-acr3	ArseniteEffluxPump	ArsenicResistance
-arsA	ArseniteEffluxPump	ArsenicResistance
+acr3	ArseniteEffluxPump	ArsenicResistance	#DECBE4
+arsA	ArseniteEffluxPump	ArsenicResistance	#FBB4AE
 arsD	ArseniteEffluxPump	ArsenicResistance
 arsB	ArseniteEffluxPump	ArsenicResistance
-aioA	ArseniteOxidase	ArsenicResistance
+aioA	ArseniteOxidase	ArsenicResistance	#808000
 arxA	ArseniteOxidase	ArsenicResistance
 arrA	ArsenateReductase	ArsenicResistance
-arsCglut	ArsenateReductase	ArsenicResistance
-arsCthio	ArsenateReductase	ArsenicResistance
-arsM	ArseniteMethyltransferase	ArsenicResistance
-ClassA	Beta-Lactam	AntibioticResistance
-ClassB	Beta-Lactam	AntibioticResistance
+arsCglut	ArsenateReductase	ArsenicResistance	#B3CDE3
+arsCthio	ArsenateReductase	ArsenicResistance	#CCEBC5
+arsM	ArseniteMethyltransferase	ArsenicResistance	#FED9A6
+ClassA	Beta-Lactam	AntibioticResistance	#F2F2F2
+ClassB	Beta-Lactam	AntibioticResistance	#E5D8BD
 ClassC	Beta-Lactam	AntibioticResistance
 CAT	Chloramphenicol	AntibioticResistance
 CEP	Chloramphenicol	AntibioticResistance
-intI	Integrase	AntibioticResistance
+intI	Integrase	AntibioticResistance	#aaffc3
 tetA	Tetracycline	AntibioticResistance
 tetW	Tetracycline	AntibioticResistance
 tetX	Tetracycline	AntibioticResistance
-tolC	MultiDrugEfflux	AntibioticResistance
+tolC	MultiDrugEfflux	AntibioticResistance	#FDDAEC
 mexC	MultiDrugEfflux	AntibioticResistance
 adeB	MultiDrugEfflux	AntibioticResistance
-dfra12	Trimethoprim	AntibioticResistance
-sul2	Sulfonamide	AntibioticResistance
-vanA	Vancomycin	AntibioticResistance
+dfra12	Trimethoprim	AntibioticResistance	#FFFFCC
+sul2	Sulfonamide	AntibioticResistance	#aa6e28
+vanA	Vancomycin	AntibioticResistance	#f58231
 vanB	Vancomycin	AntibioticResistance
 vanC	Vancomycin	AntibioticResistance
 vanT	Vancomycin	AntibioticResistance
 vanH	Vancomycin	AntibioticResistance
-vanX	Vancomycin	AntibioticResistance
+vanX	Vancomycin	AntibioticResistance	#46f0f0
 vanZ	Vancomycin	AntibioticResistance

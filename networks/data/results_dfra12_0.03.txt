@@ -1,0 +1,4 @@
+OTU_0002	OTU_0002	ANB73506  coded_by=3415653..3416153,organism=Burkholderia sp. OLGA172,definition=diacylglycerol kinase	3e-51	100.00
+OTU_0024	OTU_0024	AIA15406  coded_by=1182..1676,organism=uncultured bacterium,definition=Dihydrofolate reductase	1e-23	70.91
+OTU_0035	OTU_0035	ESQ11627  coded_by=complement(974..1474),organism=uncultured Desulfofustis sp. PB-SRB1,definition=hypothetical protein	3e-26	71.93
+OTU_0388	OTU_0388	AIA18861  coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	7e-32	76.19

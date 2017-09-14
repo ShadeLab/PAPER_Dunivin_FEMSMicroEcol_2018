@@ -1,0 +1,3 @@
+OTU_0006	OTU_0006	ACK49084  coded_by=94004..94429,organism=Methylocella silvestris BL2,definition=arsenate reductase	3e-56	72.32
+OTU_0014	OTU_0014	OIZ76122  coded_by=32048..32404,organism=Mycobacterium heckeshornense,definition=arsenate reductase (glutaredoxin)	3e-45	100.00
+OTU_0798	OTU_0798	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	8e-33	83.61

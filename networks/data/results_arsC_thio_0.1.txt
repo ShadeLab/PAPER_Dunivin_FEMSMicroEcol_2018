@@ -1,0 +1,1 @@
+OTU_0002	OTU_0002	ADG06681  coded_by=1985202..1985684,organism=Kyrpidia tusciae DSM 2912,definition=arsenate reductase (thioredoxin)	2e-24	69.81

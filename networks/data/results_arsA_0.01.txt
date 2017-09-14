@@ -1,0 +1,2 @@
+OTU_0008	OTU_0008	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	7e-70	63.35
+OTU_0009	OTU_0009	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	2e-90	80.72

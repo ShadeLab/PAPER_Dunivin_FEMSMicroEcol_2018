@@ -1,0 +1,1 @@
+OTU_0003	OTU_0003	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-54	71.90

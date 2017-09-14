@@ -1,0 +1,1 @@
+OTU_0001	OTU_0001	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-110	62.77

@@ -1,0 +1,2 @@
+OTU_0007	OTU_0007	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	6e-90	64.74
+OTU_0027	OTU_0027	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	3e-130	58.90

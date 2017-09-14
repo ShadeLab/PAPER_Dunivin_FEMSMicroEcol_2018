@@ -1,0 +1,2 @@
+OTU_0006	OTU_0006	ESQ11627  coded_by=complement(974..1474),organism=uncultured Desulfofustis sp. PB-SRB1,definition=hypothetical protein	3e-26	71.93
+OTU_0402	OTU_0402	AIA18861  coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	7e-32	76.19

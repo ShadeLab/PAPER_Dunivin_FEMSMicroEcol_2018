@@ -1,0 +1,2 @@
+16:scaffold06085	cen16_dfra12_contig_136_contig_137	88.95	190	19	2	1879	2067	189	1	4e-62	  233
+264:scaffold767887	cen16_dfra12_contig_136_contig_137	86.74	181	23	1	137	317	1	180	3e-53	  200

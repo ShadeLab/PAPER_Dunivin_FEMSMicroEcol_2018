@@ -1,0 +1,7 @@
+OTU_0002	OTU_0002	ETR79372  coded_by=33070..33495,organism=Afipia sp. P52-10,definition=arsenate reductase	5e-73	92.98
+OTU_0011	OTU_0011	AIZ47727  coded_by=<1..>353,organism=uncultured bacterium,definition=arsenate reductase	2e-23	76.47
+OTU_0020	OTU_0020	KAK34985  coded_by=204812..205213,organism=Bradyrhizobium diazoefficiens SEMIA 5080,definition=arsenate reductase	8e-50	90.12
+OTU_0025	OTU_0025	OIZ76122  coded_by=32048..32404,organism=Mycobacterium heckeshornense,definition=arsenate reductase (glutaredoxin)	3e-45	100.00
+OTU_0047	OTU_0047	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	4e-50	67.57
+OTU_0090	OTU_0090	ETR79372  coded_by=33070..33495,organism=Afipia sp. P52-10,definition=arsenate reductase	9e-75	92.98
+OTU_0155	OTU_0155	OLE32869  coded_by=10604..10945,organism=Alphaproteobacteria bacterium 13_1_20CM_3_64_12,definition=arsenate reductase (glutaredoxin)	6e-32	81.97

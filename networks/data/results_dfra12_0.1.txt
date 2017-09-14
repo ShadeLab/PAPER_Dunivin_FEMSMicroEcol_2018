@@ -1,0 +1,11 @@
+OTU_0012	OTU_0012	ADH62041  coded_by=complement(98375..98860),organism=Meiothermus silvanus DSM 9946,definition=Dihydrofolate reductase	4e-25	75.00
+OTU_0019	OTU_0019	AIA18861  coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	9e-35	72.00
+OTU_0038	OTU_0038	KPD18158  coded_by=complement(18623..19123),organism=Burkholderia sp. ST111,definition=diacylglycerol kinase	4e-51	100.00
+OTU_0041	OTU_0041	AIA10824  coded_by=complement(<1..497),organism=uncultured bacterium,definition=dihydrofolate reductase	1e-35	88.33
+OTU_0046	OTU_0046	AIA15406  coded_by=1182..1676,organism=uncultured bacterium,definition=Dihydrofolate reductase	1e-23	70.91
+OTU_0050	OTU_0050	AIA17028  coded_by=<1..621,organism=uncultured bacterium,definition=Dihydrofolate reductase	3e-39	96.67
+OTU_0058	OTU_0058	KRR22219  coded_by=complement(23283..23795),organism=Bradyrhizobium lablabi,definition=diacylglycerol kinase	4e-30	72.31
+OTU_0076	OTU_0076	AIA18861  coded_by=366..857,organism=uncultured bacterium,definition=Dihydrofolate reductase	7e-32	76.19
+OTU_0073	OTU_0073	KQT21296  coded_by=328929..329438,organism=Bradyrhizobium sp. Leaf396,definition=diacylglycerol kinase	1e-33	83.08
+OTU_0074	OTU_0074	AIA15497  coded_by=1478..1993,organism=uncultured bacterium,definition=Dihydrofolate reductase	7e-27	75.00
+OTU_0081	OTU_0081	ESQ11627  coded_by=complement(974..1474),organism=uncultured Desulfofustis sp. PB-SRB1,definition=hypothetical protein	3e-26	71.93

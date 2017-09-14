@@ -1,0 +1,1 @@
+OTU_0008	OTU_0008	KPJ80641  coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	2e-68	57.67

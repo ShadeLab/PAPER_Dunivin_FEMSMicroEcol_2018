@@ -1,0 +1,1 @@
+OTU_0084	OTU_0084	AMQ21798  coded_by=complement(2846927..2847346),organism=Geobacillus sp. JS12,definition=arsenate reductase	4e-25	75.47

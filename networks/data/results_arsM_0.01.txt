@@ -1,0 +1,5 @@
+OTU_0059	OTU_0059	AMN45746  coded_by=287282..288121,organism=Steroidobacter denitrificans,definition=arsenite S-adenosylmethyltransferase	3e-154	78.71
+OTU_0084	OTU_0084	OAI56336  coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	9e-120	74.03
+OTU_0101	OTU_0101	KIM00430  coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	3e-129	69.50
+OTU_0146	OTU_0146	OFW05407  coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	1e-143	76.03
+OTU_0175	OTU_0175	OLE85185  coded_by=2800..3660,organism=Acidobacteria bacterium 13_1_20CM_2_65_9,definition=arsenite S-adenosylmethyltransferase	1e-114	70.82

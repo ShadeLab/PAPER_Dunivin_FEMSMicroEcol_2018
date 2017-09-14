@@ -1,0 +1,4 @@
+OTU_0008	OTU_0008	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-71	61.49
+OTU_0021	OTU_0021	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	7e-70	63.35
+OTU_0023	OTU_0023	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	2e-90	80.72
+OTU_0038	OTU_0038	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	6e-75	66.88

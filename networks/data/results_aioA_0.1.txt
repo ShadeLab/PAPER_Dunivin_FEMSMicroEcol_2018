@@ -1,0 +1,1 @@
+OTU_0001	OTU_0001	OCK55889  coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	1e-134	88.26

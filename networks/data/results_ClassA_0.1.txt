@@ -1,0 +1,1 @@
+OTU_0001	OTU_0001	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	2e-118	66.54

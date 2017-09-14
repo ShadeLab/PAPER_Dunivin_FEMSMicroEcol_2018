@@ -1,0 +1,1 @@
+OTU_0010	OTU_0010	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	4e-84	65.70

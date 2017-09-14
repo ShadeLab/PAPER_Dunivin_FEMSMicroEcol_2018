@@ -1,0 +1,8 @@
+OTU_0031	OTU_0031	GAO01461  coded_by=complement(7642..8748),organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	2e-180	75.22
+OTU_0044	OTU_0044	KQT22694  coded_by=complement(100964..102028),organism=Bradyrhizobium sp. Leaf396,definition=arsenic transporter	1e-87	81.13
+OTU_0047	OTU_0047	OGQ05289  coded_by=complement(244698..245768),organism=Deltaproteobacteria bacterium RIFCSPHIGHO2_01_FULL_43_49,definition=arsenical-resistance protein	2e-119	78.90
+OTU_0056	OTU_0056	OFW72001  coded_by=1847..3055,organism=Actinobacteria bacterium RBG_16_68_12,definition=arsenical-resistance protein	0.0	81.52
+OTU_0075	OTU_0075	KPK01903  coded_by=complement(5513..6616),organism=Nitrospira bacterium SG8_35_4,definition=arsenic resistance protein ArsB	1e-82	70.99
+OTU_0079	OTU_0079	GAO01268  coded_by=13855..14991,organism=Anaeromyxobacter sp. PSR-1,definition=arsenite resistance protein ArsB	2e-179	74.85
+OTU_0137	OTU_0137	OLD92836  coded_by=6877..7956,organism=Alphaproteobacteria bacterium 13_1_20CM_4_65_11,definition=arsenical-resistance protein	3e-105	82.38
+OTU_0139	OTU_0139	OFW26384  coded_by=75265..76341,organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_66_21,definition=arsenical-resistance protein	2e-82	73.26

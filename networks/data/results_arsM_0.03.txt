@@ -1,0 +1,15 @@
+OTU_0006	OTU_0006	OFZ98868  coded_by=complement(5033..5845),organism=Betaproteobacteria bacterium RIFCSPLOWO2_02_67_12,definition=arsenite S-adenosylmethyltransferase	1e-86	71.81
+OTU_0028	OTU_0028	OLC23624  coded_by=complement(4236..5093),organism=Chloroflexi bacterium 13_1_40CM_55_7,definition=arsenite S-adenosylmethyltransferase	2e-135	72.01
+OTU_0046	OTU_0046	OFW05407  coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	5e-143	75.94
+OTU_0065	OTU_0065	OLC23624  coded_by=complement(4236..5093),organism=Chloroflexi bacterium 13_1_40CM_55_7,definition=arsenite S-adenosylmethyltransferase	1e-143	76.60
+OTU_0085	OTU_0085	KIM00430  coded_by=complement(25393..26190),organism=Magnetospirillum magnetotacticum MS-1,definition=SAM-dependent methyltransferase DSY4148	3e-129	69.50
+OTU_0142	OTU_0142	OFW05407  coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	1e-143	76.32
+OTU_0135	OTU_0135	OLD62189  coded_by=7524..8390,organism=Acidobacteria bacterium 13_1_40CM_2_60_7,definition=arsenite S-adenosylmethyltransferase	1e-130	70.94
+OTU_0146	OTU_0146	AMN45746  coded_by=287282..288121,organism=Steroidobacter denitrificans,definition=arsenite S-adenosylmethyltransferase	3e-154	78.71
+OTU_0148	OTU_0148	OLC95143  coded_by=complement(1739..2557),organism=Candidatus Rokubacteria bacterium 13_1_40CM_3_69_38,definition=arsenite S-adenosylmethyltransferase	4e-110	71.75
+OTU_0203	OTU_0203	OAI56336  coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	9e-120	74.03
+OTU_0216	OTU_0216	EFH86895  coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	7e-118	67.69
+OTU_0235	OTU_0235	OFW05407  coded_by=complement(1728..2546),organism=Acidobacteria bacterium RIFCSPLOWO2_12_FULL_59_11,definition=arsenite S-adenosylmethyltransferase	4e-133	70.26
+OTU_0234	OTU_0234	OLC90507  coded_by=3746..4561,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	6e-94	75.66
+OTU_0318	OTU_0318	OLC07182  coded_by=8673..9458,organism=Gemmatimonadetes bacterium 13_1_40CM_66_11,definition=arsenite S-adenosylmethyltransferase	1e-103	69.60
+OTU_0396	OTU_0396	OLE85185  coded_by=2800..3660,organism=Acidobacteria bacterium 13_1_20CM_2_65_9,definition=arsenite S-adenosylmethyltransferase	1e-114	70.82
