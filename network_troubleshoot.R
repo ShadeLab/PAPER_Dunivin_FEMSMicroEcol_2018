@@ -6,6 +6,7 @@ library(phyloseq)
 library(reshape2)
 library(broom)
 library(taxize)
+library(stringr)
 
 #print working directory for future references
 #note the GitHub directory for this script is as follows
@@ -33,7 +34,7 @@ naming <- function(file) {
 setwd(paste(wd, "/data", sep = ""))
 
 #list filenames of interest
-filenames <- list.files(pattern="*_rformat_dist_0.03.txt")
+filenames.1 <- list.files(pattern="*_rformat_dist_0.1.txt")
 
 #move back up directories
 setwd("../..")
@@ -41,7 +42,7 @@ setwd("../..")
 #make dataframes of all OTU tables
 for(i in filenames){
   filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
-  assign(gsub("_rformat_dist_0.03.txt", "", i), read.delim(filepath,sep = "\t"))
+  assign(gsub("_rformat_dist_0.1.txt", "", i), read.delim(filepath,sep = "\t"))
 }
 
 #change OTU to gene name
@@ -204,7 +205,7 @@ otu_table_norm.slim.t.genes <- otu_table_norm.slim.t[, -grep("rplB", colnames(ot
 
 #find correlations between contigs!
 corr.genes <- corr.test(otu_table_norm.slim.t, 
-                        method = "spearman", adjust = "fdr", alpha = 0.01)
+                        method = "spearman", adjust = "fdr", alpha = 0.1)
 
 ## prepare network graphics
 #read in gene classification data
@@ -234,11 +235,11 @@ r$gene.color[r$Gene == "rplB"] <- "#fffac8"
 r$gene.color[r$Group == "Metadata"] <- "#D3D3D3"
 
 #save list of remaining OTUs (for BLAST)
-write_lines(r$gene, "network_contigs_0.03.txt")
+write_lines(r$gene, "network_contigs_0.1.txt")
 
 #read in BLAST output results
 setwd(paste(wd, "/../networks/data", sep = ""))
-blast.names <- list.files(pattern="*0.03.txt")
+blast.names <- list.files(pattern="*0.1.txt")
 blast <- do.call(rbind, lapply(blast.names, function(X) {
   data.frame(id = basename(X), read_delim(X, delim = "\t", col_names = FALSE))}))
 
@@ -300,7 +301,14 @@ aesthetics <- aesthetics %>%
 clust.network <- qgraph(corr.genes$r, minimum = "sig", sampleSize=13, 
                         layout = "spring", details = TRUE,
                         graph = "cor",label.cex = 0.5,
-                        alpha = 0.01, graph = "fdr", labels = aesthetics$number, lavel.cex = 1, label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics$Shape, node.resolution = 500, color = aesthetics$gene.color, curve = 0.2, curveAll = TRUE)
+                        alpha = 0.01, graph = "fdr", labels = aesthetics$number,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics$Shape, node.resolution = 500, color = aesthetics$phy.color, negDashed = TRUE, curve = 0.2, curveAll = TRUE, overlay = FALSE)
+
+
+clust.network <- qgraph(corr.genes$r, minimum = "sig", sampleSize=13, 
+                         details = FALSE, layout = "spring",
+                        graph = "cor",label.cex = 0.5,
+                        alpha = 0.1, graph = "fdr", labels = aesthetics$number,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics$Shape, node.resolution = 500, negDashed = TRUE, curve = 0.2, curveAll = TRUE, overlay = TRUE, groups = groups, palette = "ggplot2")
+
 
 ####################################
 #AsRG-ARG CLUSTER NETWORK WITH RPLB#
@@ -316,12 +324,12 @@ otu_table_norm.slim.t_matches <- otu_table_norm.slim.t[,colnames(otu_table_norm.
 
 #find correlations between OTUs
 corr.clust <- corr.test(otu_table_norm.slim.t, 
-                        method = "spearman", adjust = "fdr", alpha = 0.03)
+                        method = "spearman", adjust = "fdr", alpha = 0.1)
 
 corr.clust.r <- as.matrix(print(corr.clust$r, long = TRUE))
 corr.clust.p <- as.matrix(print(corr.clust$p, long = TRUE))
 
-corr.clust.r[which(corr.clust.p > 0.03)] <- 0
+corr.clust.r[which(corr.clust.p > 0.1)] <- 0
 
 #save correlation data
 write.table(corr.clust$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), quote = FALSE)
@@ -330,7 +338,7 @@ write.table(corr.clust$r, paste(wd, "/output/corr_table.rplB.txt", sep = ""), qu
 clust.network <- qgraph(corr.clust$r, minimum = "sig", sampleSize=13, 
                         layout = "spring", details = TRUE,
                         graph = "cor", label.cex = 1,
-                        alpha = 0.03)
+                        alpha = 0.1)
 
 ####################################################
 #EXAMINE ABUNDANCE OF CO-OCCURRING RESISTANCE GENES#
@@ -569,7 +577,7 @@ ggsave(phylum.plot, filename = paste(wd, "/figures/phylum.responses.eps", sep=""
        width = 5, height = 5, units = "in")
 
 ########################################################
-#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.03#
+#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.1#
 ########################################################
 
 
@@ -644,7 +652,7 @@ meta.phylo <- sample_data(meta.phylo)
 
 #read in trees and make phyloseq object
 #library(ape)
-#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.03_FastTree.nwk", sep = ""))
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.1_FastTree.nwk", sep = ""))
 #rplb.tree <- phy_tree(rplb.tree)
 
 ##make biom for phyloseq
@@ -674,7 +682,7 @@ ecol.AsRG.rare <- merge_phyloseq(ecol.AsRG.rare, meta.phylo)
     theme(axis.text.x = element_text(angle = 45, size = 14, 
                                      hjust=0.95)))
 
-richness0.03 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
+richness0.1 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
 
 #extract richness and perform statistical tests
 richness.ecol.rplB.rare.data <- estimate_richness(ecol.rplB.rare, split = TRUE, measures = "Observed")
@@ -803,16 +811,16 @@ mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
 mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
 
 #########################################################
-#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.03#
+#ECOLOGICAL ANALYSIS OF ARGs AND AsRGs clustered at 0.1#
 #########################################################
 
-#make an OTU table with 0.03 cluster sizes
+#make an OTU table with 0.1 cluster sizes
 
 #temporarily change working directories
 setwd(paste(wd, "/data", sep = ""))
 
 #list filenames of interest
-filenames.03 <- list.files(pattern="*_rformat_dist_0.03.txt")
+filenames.03 <- list.files(pattern="*_rformat_dist_0.1.txt")
 
 #move back up directories
 setwd("../..")
@@ -820,7 +828,7 @@ setwd("../..")
 #make dataframes of all OTU tables
 for(i in filenames.03){
   filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
-  assign(gsub("_rformat_dist_0.03.txt", ".03", i), read.delim(filepath,sep = "\t"))
+  assign(gsub("_rformat_dist_0.1.txt", ".03", i), read.delim(filepath,sep = "\t"))
 }
 
 #change OTU to gene name
@@ -941,7 +949,7 @@ meta.phylo <- sample_data(meta.phylo)
 
 #read in trees and make phyloseq object
 #library(ape)
-#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.03_FastTree.nwk", sep = ""))
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.1_FastTree.nwk", sep = ""))
 #rplb.tree <- phy_tree(rplb.tree)
 
 ##make biom for phyloseq
@@ -971,9 +979,9 @@ ecol.AsRG.rare <- merge_phyloseq(ecol.AsRG.rare, meta.phylo)
     theme(axis.text.x = element_text(angle = 45, size = 14, 
                                      hjust=0.95)))
 
-richness0.03 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
+richness0.1 <- multiplot(richness.ecol.rplB.rare, richness.ecol.ARG.rare, richness.ecol.AsRG.rare, cols=3)
 
-ggsave(richness0.03, filename = paste(wd, "/figures/richness.png",sep = ""), width = 6, units = "in")
+ggsave(richness0.1, filename = paste(wd, "/figures/richness.png",sep = ""), width = 6, units = "in")
 
 #extract richness and perform statistical tests
 richness.ecol.rplB.rare.data <- estimate_richness(ecol.rplB.rare, split = TRUE, measures = "Observed")
@@ -1056,16 +1064,16 @@ mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
 mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
 
 #####################################
-#0.03 CLUSTERING ECOLOGICAL ANALYSIS#
+#0.1 CLUSTERING ECOLOGICAL ANALYSIS#
 #####################################
 
-#make an OTU table with 0.03 cluster sizes
+#make an OTU table with 0.1 cluster sizes
 
 #temporarily change working directories
 setwd(paste(wd, "/data", sep = ""))
 
 #list filenames of interest
-filenames.03 <- list.files(pattern="*_rformat_dist_0.03.txt")
+filenames.03 <- list.files(pattern="*_rformat_dist_0.1.txt")
 
 #move back up directories
 setwd("../..")
@@ -1073,7 +1081,7 @@ setwd("../..")
 #make dataframes of all OTU tables
 for(i in filenames.03){
   filepath <- file.path(paste(wd, "/data", sep = ""),paste(i,sep=""))
-  assign(gsub("_rformat_dist_0.03.txt", ".03", i), read.delim(filepath,sep = "\t"))
+  assign(gsub("_rformat_dist_0.1.txt", ".03", i), read.delim(filepath,sep = "\t"))
 }
 
 #change OTU to gene name
@@ -1194,7 +1202,7 @@ meta.phylo <- sample_data(meta.phylo)
 
 #read in trees and make phyloseq object
 #library(ape)
-#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.03_FastTree.nwk", sep = ""))
+#rplb.tree <- read.tree(paste(wd, "/data/rplB_0.1_FastTree.nwk", sep = ""))
 #rplb.tree <- phy_tree(rplb.tree)
 
 ##make biom for phyloseq
@@ -1306,7 +1314,7 @@ mantel(ecol.AsRG.rareREL.d,ecol.ARG.rareREL.d, method = "spear")
 mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
 mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
 mantel(ecol.AsRG.rareREL.d,space.d, method = "spear")
-#we do not see different results with 0.03 clustering
+#we do not see different results with 0.1 clustering
 
 ###?##?#?#?#?#?#?#?#?#?#?#?#?#?
 

@@ -1,0 +1,126 @@
+OTU_0001	OTU_0001	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1e-32	73.91
+OTU_0001	OTU_0001	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	1e-32	73.91
+OTU_0001	OTU_0001	AKU96244  coded_by=complement(2923873..2924247),organism=Labilithrix luteola,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-32	69.57
+OTU_0002	OTU_0002	AAZ47368  coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-39	77.22
+OTU_0002	OTU_0002	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	5e-39	75.95
+OTU_0002	OTU_0002	ABP77945  coded_by=complement(274098..274457),organism=Pseudomonas stutzeri A1501,definition=arsenic operon regulator	1e-38	74.36
+OTU_0003	OTU_0003	ODA34767  coded_by=complement(271970..272314),organism=Planctopirus sp. JC280,definition=transcriptional regulator	6e-26	76.47
+OTU_0003	OTU_0003	ADG65999  coded_by=complement(198157..198501),organism=Planctomyces limnophilus DSM 3776,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-25	74.51
+OTU_0003	OTU_0003	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-25	74.51
+OTU_0004	OTU_0004	ADH85287  coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-24	73.47
+OTU_0004	OTU_0004	GAO01458  coded_by=complement(5089..5697),organism=Anaeromyxobacter sp. PSR-1,definition=arsenical resistance operon trans-acting repressor ArsD	7e-24	74.51
+OTU_0004	OTU_0004	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-23	76.00
+OTU_0005	OTU_0005	EHN13068  coded_by=57306..57671,organism=Patulibacter sp. I11,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-32	71.01
+OTU_0005	OTU_0005	ADH85287  coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	8e-31	65.22
+OTU_0005	OTU_0005	AMV35071  coded_by=5730930..5731301,organism=Pirellula sp. SH-Sr6A,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-30	62.32
+OTU_0006	OTU_0006	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	4e-46	64.65
+OTU_0006	OTU_0006	AKU96244  coded_by=complement(2923873..2924247),organism=Labilithrix luteola,definition=Arsenical resistance operon trans-acting repressor ArsD	9e-41	61.22
+OTU_0006	OTU_0006	EAT01648  coded_by=complement(538..924),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	5e-40	59.60
+OTU_0007	OTU_0007	ANB77777  coded_by=101623..101988,organism=Burkholderia sp. OLGA172,definition=transcriptional regulator	5e-34	88.33
+OTU_0007	OTU_0007	AJZ56890  coded_by=26105..26470,organism=Burkholderia fungorum,definition=arsenical resistance operon trans-acting repressor ArsD family protein	5e-34	88.33
+OTU_0007	OTU_0007	ALE58945  coded_by=2466991..2467356,organism=Burkholderia sp. HB1,definition=arsenic resistance operon repressor	9e-34	83.61
+OTU_0008	OTU_0008	EFH01595  coded_by=complement(15361..15717),organism=Methylosinus trichosporium OB3b,definition=Arsenical resistance operon trans-acting repressor ArsD	7e-43	83.12
+OTU_0008	OTU_0008	OBS51327  coded_by=complement(54000..54356),organism=Methylosinus sp. 3S-1,definition=transcriptional regulator	7e-43	83.12
+OTU_0008	OTU_0008	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	8e-42	79.22
+OTU_0009	OTU_0009	BAE50636  coded_by=1970515..1970886,organism=Magnetospirillum magneticum AMB-1,definition=Arsenical resistance operon trans-acting repressor arsD	1e-24	71.15
+OTU_0009	OTU_0009	OAN49253  coded_by=188896..189267,organism=Magnetospirillum marisnigri,definition=transcriptional regulator	4e-24	69.23
+OTU_0009	OTU_0009	CUW39311  coded_by=2248039..2248410,organism=Magnetospirillum sp. XM-1,definition=putative Arsenical resistance operon trans-acting repressor ArsD	3e-23	67.31
+OTU_0010	OTU_0010	AAZ47368  coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-39	87.14
+OTU_0010	OTU_0010	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	4e-39	85.71
+OTU_0010	OTU_0010	SBT03702  coded_by=10667..11029,organism=Propionivibrio sp. S1,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-38	82.86
+OTU_0011	OTU_0011	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-49	66.35
+OTU_0011	OTU_0011	AEK59815  coded_by=complement(10333..10698),organism=Acidithiobacillus caldus SM-1,definition=trans acting repressor-like protein	1e-41	60.78
+OTU_0011	OTU_0011	AAX35687  coded_by=1793..2158,organism=Acidithiobacillus caldus,definition=trans acting repressor-like protein	1e-41	60.78
+OTU_0012	OTU_0012	SBT03702  coded_by=10667..11029,organism=Propionivibrio sp. S1,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-32	83.05
+OTU_0012	OTU_0012	ABP77945  coded_by=complement(274098..274457),organism=Pseudomonas stutzeri A1501,definition=arsenic operon regulator	4e-32	81.36
+OTU_0012	OTU_0012	CDW96258  coded_by=50001..50345,organism=Thiomonas sp. CB2,definition=Arsenical resistance operon trans-acting repressor ArsD	4e-32	83.05
+OTU_0013	OTU_0013	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	3e-26	82.00
+OTU_0013	OTU_0013	AAZ47368  coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	4e-26	84.00
+OTU_0013	OTU_0013	SBT03702  coded_by=10667..11029,organism=Propionivibrio sp. S1,definition=Arsenical resistance operon trans-acting repressor ArsD	5e-26	82.00
+OTU_0014	OTU_0014	ABI58051  coded_by=complement(3077358..3077735),organism=Alkalilimnicola ehrlichii MLHE-1,definition=Arsenical resistance operon trans-acting repressor ArsD	4e-36	61.63
+OTU_0014	OTU_0014	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-35	60.47
+OTU_0014	OTU_0014	AHK79908  coded_by=complement(2679493..2679843),organism=Halorhodospira halochloris str. A,definition=arsenic resistance operon repressor	2e-34	60.47
+OTU_0015	OTU_0015	EAT01648  coded_by=complement(538..924),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-25	55.38
+OTU_0015	OTU_0015	EAT03733  coded_by=complement(7611..7997),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-25	55.38
+OTU_0015	OTU_0015	BAE50636  coded_by=1970515..1970886,organism=Magnetospirillum magneticum AMB-1,definition=Arsenical resistance operon trans-acting repressor arsD	1e-24	54.55
+OTU_0017	OTU_0017	OAI10639  coded_by=complement(3762..4118),organism=Methylomonas lenta,definition=transcriptional regulator	3e-43	82.05
+OTU_0017	OTU_0017	SBT03702  coded_by=10667..11029,organism=Propionivibrio sp. S1,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-43	79.49
+OTU_0017	OTU_0017	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	6e-43	79.49
+OTU_0016	OTU_0016	GAO01458  coded_by=complement(5089..5697),organism=Anaeromyxobacter sp. PSR-1,definition=arsenical resistance operon trans-acting repressor ArsD	5e-23	73.58
+OTU_0016	OTU_0016	EHN13068  coded_by=57306..57671,organism=Patulibacter sp. I11,definition=Arsenical resistance operon trans-acting repressor ArsD	7e-23	74.51
+OTU_0016	OTU_0016	AMV35071  coded_by=5730930..5731301,organism=Pirellula sp. SH-Sr6A,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-22	70.37
+OTU_0019	OTU_0019	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	4e-32	78.69
+OTU_0019	OTU_0019	KEY58533  coded_by=324055..324417,organism=Serratia sp. DD3,definition=arsenical resistance operon trans-acting repressor ArsD	1e-31	75.41
+OTU_0019	OTU_0019	KZE27348  coded_by=124435..124794,organism=Crenobacter luteus,definition=transcriptional regulator	1e-31	78.69
+OTU_0018	OTU_0018	KLU07545  coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-44	63.27
+OTU_0018	OTU_0018	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-43	63.00
+OTU_0018	OTU_0018	AMV35071  coded_by=5730930..5731301,organism=Pirellula sp. SH-Sr6A,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-42	59.60
+OTU_0021	OTU_0021	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	7e-46	63.64
+OTU_0021	OTU_0021	KLU07545  coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-41	61.05
+OTU_0021	OTU_0021	KON80034  coded_by=complement(940547..940906),organism=Azoarcus sp. PA01,definition=arsenic resistance operon repressor	7e-41	55.56
+OTU_0020	OTU_0020	ADG65999  coded_by=complement(198157..198501),organism=Planctomyces limnophilus DSM 3776,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-29	63.77
+OTU_0020	OTU_0020	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-29	60.87
+OTU_0020	OTU_0020	ODA34767  coded_by=complement(271970..272314),organism=Planctopirus sp. JC280,definition=transcriptional regulator	2e-29	62.32
+OTU_0023	OTU_0023	KYF56972  coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	7e-31	92.00
+OTU_0023	OTU_0023	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-30	91.84
+OTU_0023	OTU_0023	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	2e-30	91.84
+OTU_0022	OTU_0022	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	7e-42	84.93
+OTU_0022	OTU_0022	KZE27348  coded_by=124435..124794,organism=Crenobacter luteus,definition=transcriptional regulator	3e-39	76.71
+OTU_0022	OTU_0022	EFH01595  coded_by=complement(15361..15717),organism=Methylosinus trichosporium OB3b,definition=Arsenical resistance operon trans-acting repressor ArsD	5e-39	78.08
+OTU_0025	OTU_0025	KYF56972  coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	9e-35	84.93
+OTU_0025	OTU_0025	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	3e-34	83.56
+OTU_0025	OTU_0025	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	3e-34	83.56
+OTU_0024	OTU_0024	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-42	55.83
+OTU_0024	OTU_0024	ADB15888  coded_by=complement(1488334..1488696),organism=Pirellula staleyi DSM 6068,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-41	54.10
+OTU_0024	OTU_0024	ODA34767  coded_by=complement(271970..272314),organism=Planctopirus sp. JC280,definition=transcriptional regulator	2e-41	54.39
+OTU_0027	OTU_0027	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-43	62.38
+OTU_0027	OTU_0027	ABI58051  coded_by=complement(3077358..3077735),organism=Alkalilimnicola ehrlichii MLHE-1,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-40	57.00
+OTU_0027	OTU_0027	OCB01910  coded_by=8872..9234,organism=Acidithiobacillus ferrivorans,definition=transcriptional regulator	3e-38	56.44
+OTU_0026	OTU_0026	AAO31601  coded_by=complement(3864..4226),organism=Shewanella sp. ANA-3,definition=ArsD	2e-39	53.85
+OTU_0026	OTU_0026	ABK48571  coded_by=2818161..2818523,organism=Shewanella sp. ANA-3,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-39	53.85
+OTU_0026	OTU_0026	OCG70854  coded_by=10285..10644,organism=Gilliamella apicola,definition=transcriptional regulator	2e-39	50.86
+OTU_0029	OTU_0029	KLU07545  coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-35	66.20
+OTU_0029	OTU_0029	AMV35071  coded_by=5730930..5731301,organism=Pirellula sp. SH-Sr6A,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-35	64.79
+OTU_0029	OTU_0029	ADG65999  coded_by=complement(198157..198501),organism=Planctomyces limnophilus DSM 3776,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-32	67.61
+OTU_0028	OTU_0028	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	5e-51	74.07
+OTU_0028	OTU_0028	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	5e-51	74.07
+OTU_0028	OTU_0028	KYF56972  coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	5e-51	74.07
+OTU_0031	OTU_0031	KDP87284  coded_by=2860..3231,organism=Cupriavidus sp. SK-3,definition=arsenic resistance operon repressor	2e-26	75.93
+OTU_0031	OTU_0031	ADH85287  coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-25	71.70
+OTU_0031	OTU_0031	CAM76207  coded_by=complement(2287545..2287913),organism=Magnetospirillum gryphiswaldense MSR-1,definition=arsenical resistance operon trans-acting repressor arsD	2e-25	73.58
+OTU_0030	OTU_0030	EAT01648  coded_by=complement(538..924),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-42	61.00
+OTU_0030	OTU_0030	EAT03733  coded_by=complement(7611..7997),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-42	61.00
+OTU_0030	OTU_0030	KLU07545  coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	4e-42	61.22
+OTU_0034	OTU_0034	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	8e-40	95.16
+OTU_0034	OTU_0034	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	8e-40	95.16
+OTU_0034	OTU_0034	KYF56972  coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	2e-39	93.55
+OTU_0035	OTU_0035	AAZ47368  coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-40	58.16
+OTU_0035	OTU_0035	EFH01595  coded_by=complement(15361..15717),organism=Methylosinus trichosporium OB3b,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-38	56.70
+OTU_0035	OTU_0035	OBS51327  coded_by=complement(54000..54356),organism=Methylosinus sp. 3S-1,definition=transcriptional regulator	2e-38	56.70
+OTU_0032	OTU_0032	AGT95672  coded_by=complement(51554..51961),organism=Rhodococcus erythropolis CCM2595,definition=putative trans-acting repressor (ArsD)	3e-35	78.12
+OTU_0032	OTU_0032	EQM29959  coded_by=4260..4667,organism=Rhodococcus erythropolis DN1,definition=arsenic resistance operon repressor	3e-35	78.12
+OTU_0032	OTU_0032	KDQ00618  coded_by=14233..14640,organism=Rhodococcus qingshengii,definition=arsenic resistance operon repressor	3e-35	78.12
+OTU_0033	OTU_0033	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-59	78.57
+OTU_0033	OTU_0033	KYF63242  coded_by=5152..5541,organism=Sorangium cellulosum,definition=transcriptional regulator	2e-59	78.57
+OTU_0033	OTU_0033	KYF56972  coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	7e-59	77.68
+OTU_0038	OTU_0038	SHF52174  coded_by=complement(21099..21419),organism=Bacillus coagulans DSM 1 = ATCC 7050,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-51	100.00
+OTU_0038	OTU_0038	AJH77250  coded_by=3016699..3017019,organism=Bacillus coagulans DSM 1 = ATCC 7050,definition=arsenical resistance operon trans-acting repressor	6e-51	100.00
+OTU_0038	OTU_0038	AEP01181  coded_by=2177947..2178306,organism=Bacillus coagulans 36D1,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-50	100.00
+OTU_0039	OTU_0039	EAT01648  coded_by=complement(538..924),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-44	63.00
+OTU_0039	OTU_0039	EAT03733  coded_by=complement(7611..7997),organism=delta proteobacterium MLMS-1,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-44	63.00
+OTU_0039	OTU_0039	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-43	63.00
+OTU_0036	OTU_0036	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-30	63.16
+OTU_0036	OTU_0036	ADH85287  coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	6e-30	61.84
+OTU_0036	OTU_0036	AGP33845  coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	6e-29	62.16
+OTU_0037	OTU_0037	AEG02504  coded_by=4576388..4576732,organism=Methylomonas methanica MC09,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-47	83.13
+OTU_0037	OTU_0037	BAL26927  coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	1e-46	84.34
+OTU_0037	OTU_0037	SBT03702  coded_by=10667..11029,organism=Propionivibrio sp. S1,definition=Arsenical resistance operon trans-acting repressor ArsD	2e-46	81.93
+OTU_0042	OTU_0042	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-45	62.38
+OTU_0042	OTU_0042	KLU07545  coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	9e-45	65.66
+OTU_0042	OTU_0042	ADG65999  coded_by=complement(198157..198501),organism=Planctomyces limnophilus DSM 3776,definition=Arsenical resistance operon trans-acting repressor ArsD	1e-44	57.43
+OTU_0040	OTU_0040	AMV36362  coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	5e-28	72.73
+OTU_0040	OTU_0040	OAN49253  coded_by=188896..189267,organism=Magnetospirillum marisnigri,definition=transcriptional regulator	8e-26	72.73
+OTU_0040	OTU_0040	BAE50636  coded_by=1970515..1970886,organism=Magnetospirillum magneticum AMB-1,definition=Arsenical resistance operon trans-acting repressor arsD	2e-25	70.91
+OTU_0041	OTU_0041	BAE50636  coded_by=1970515..1970886,organism=Magnetospirillum magneticum AMB-1,definition=Arsenical resistance operon trans-acting repressor arsD	1e-25	69.09
+OTU_0041	OTU_0041	ABI58051  coded_by=complement(3077358..3077735),organism=Alkalilimnicola ehrlichii MLHE-1,definition=Arsenical resistance operon trans-acting repressor ArsD	3e-25	70.91
+OTU_0041	OTU_0041	OAN49253  coded_by=188896..189267,organism=Magnetospirillum marisnigri,definition=transcriptional regulator	4e-25	67.27

@@ -1,0 +1,114 @@
+OTU_0001	OTU_0001	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	6e-88	67.22
+OTU_0001	OTU_0001	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	2e-87	67.22
+OTU_0001	OTU_0001	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	4e-87	67.22
+OTU_0002	OTU_0002	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	4e-177	65.01
+OTU_0002	OTU_0002	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	4e-177	65.01
+OTU_0002	OTU_0002	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	1e-175	65.60
+OTU_0003	OTU_0003	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	9e-169	63.34
+OTU_0003	OTU_0003	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	2e-167	63.05
+OTU_0003	OTU_0003	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	6e-167	62.76
+OTU_0004	OTU_0004	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-169	63.64
+OTU_0004	OTU_0004	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	6e-168	63.34
+OTU_0004	OTU_0004	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-167	63.05
+OTU_0005	OTU_0005	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	4e-84	65.70
+OTU_0005	OTU_0005	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-81	62.21
+OTU_0005	OTU_0005	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	1e-81	62.21
+OTU_0006	OTU_0006	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-169	63.64
+OTU_0006	OTU_0006	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	6e-168	63.34
+OTU_0006	OTU_0006	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-167	63.05
+OTU_0007	OTU_0007	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-126	65.48
+OTU_0007	OTU_0007	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	2e-126	65.48
+OTU_0007	OTU_0007	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-126	65.48
+OTU_0008	OTU_0008	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	7e-109	65.91
+OTU_0008	OTU_0008	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	1e-108	65.00
+OTU_0008	OTU_0008	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-107	64.55
+OTU_0009	OTU_0009	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-110	65.47
+OTU_0009	OTU_0009	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	3e-108	64.57
+OTU_0009	OTU_0009	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	2e-107	64.13
+OTU_0010	OTU_0010	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	3e-126	65.48
+OTU_0010	OTU_0010	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	3e-126	65.48
+OTU_0010	OTU_0010	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	5e-126	65.48
+OTU_0011	OTU_0011	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	3e-74	69.08
+OTU_0011	OTU_0011	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	3e-74	69.08
+OTU_0011	OTU_0011	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	4e-74	68.42
+OTU_0012	OTU_0012	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	6e-178	66.47
+OTU_0012	OTU_0012	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	9e-177	65.01
+OTU_0012	OTU_0012	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	9e-177	65.01
+OTU_0013	OTU_0013	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	4e-92	68.13
+OTU_0013	OTU_0013	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-91	67.58
+OTU_0013	OTU_0013	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	2e-91	67.58
+OTU_0014	OTU_0014	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	6e-80	65.48
+OTU_0014	OTU_0014	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	9e-78	63.69
+OTU_0014	OTU_0014	AEM23743  coded_by=<1..>948,organism=Enterococcus faecium,definition=VanA ligase	1e-77	63.10
+OTU_0015	OTU_0015	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-121	67.37
+OTU_0015	OTU_0015	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	4e-120	66.95
+OTU_0015	OTU_0015	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	4e-120	66.95
+OTU_0016	OTU_0016	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	3e-113	66.81
+OTU_0016	OTU_0016	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-112	66.23
+OTU_0016	OTU_0016	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	1e-112	66.23
+OTU_0017	OTU_0017	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	3e-90	63.45
+OTU_0017	OTU_0017	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	3e-90	63.45
+OTU_0017	OTU_0017	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	4e-90	64.47
+OTU_0018	OTU_0018	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-180	66.18
+OTU_0018	OTU_0018	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	3e-178	65.60
+OTU_0018	OTU_0018	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	2e-177	66.18
+OTU_0019	OTU_0019	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2e-170	64.01
+OTU_0019	OTU_0019	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	2e-170	64.31
+OTU_0019	OTU_0019	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	8e-170	64.01
+OTU_0020	OTU_0020	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	6e-172	64.22
+OTU_0020	OTU_0020	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	3e-170	63.93
+OTU_0020	OTU_0020	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	2e-168	63.05
+OTU_0021	OTU_0021	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	2e-128	68.83
+OTU_0021	OTU_0021	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	4e-128	68.02
+OTU_0021	OTU_0021	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-127	67.61
+OTU_0022	OTU_0022	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	1e-178	67.06
+OTU_0022	OTU_0022	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	9e-177	65.60
+OTU_0022	OTU_0022	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-176	65.89
+OTU_0023	OTU_0023	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	1e-83	66.67
+OTU_0023	OTU_0023	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	3e-80	63.16
+OTU_0023	OTU_0023	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	4e-79	62.57
+OTU_0024	OTU_0024	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	2e-83	71.60
+OTU_0024	OTU_0024	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	3e-82	70.37
+OTU_0024	OTU_0024	ACU27887  coded_by=<1..>945,organism=Staphylococcus aureus,definition=D-alanine:D-lactate ligase	1e-81	71.60
+OTU_0025	OTU_0025	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	4e-89	66.11
+OTU_0025	OTU_0025	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-88	65.56
+OTU_0025	OTU_0025	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	1e-88	65.56
+OTU_0026	OTU_0026	CAB61227  coded_by=23..1054,organism=Bacillus circulans,definition=vana protein	1e-125	67.21
+OTU_0026	OTU_0026	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	8e-124	65.99
+OTU_0026	OTU_0026	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	8e-124	65.99
+OTU_0027	OTU_0027	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	3e-167	63.93
+OTU_0027	OTU_0027	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	9e-166	62.46
+OTU_0027	OTU_0027	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	5e-165	62.17
+OTU_0028	OTU_0028	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	4e-156	76.28
+OTU_0028	OTU_0028	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	9e-153	75.18
+OTU_0028	OTU_0028	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	1e-152	74.82
+OTU_0029	OTU_0029	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	9e-92	67.98
+OTU_0029	OTU_0029	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	9e-92	67.98
+OTU_0029	OTU_0029	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	5e-91	67.98
+OTU_0030	OTU_0030	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	4e-172	64.81
+OTU_0030	OTU_0030	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	2e-170	64.52
+OTU_0030	OTU_0030	AAT70093  coded_by=1..1032,organism=Paenibacillus apiarius,definition=D-alanyl-D-alanine ligase	1e-168	63.64
+OTU_0031	OTU_0031	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	9e-172	62.87
+OTU_0031	OTU_0031	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	8e-171	62.28
+OTU_0031	OTU_0031	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	2e-170	63.16
+OTU_0032	OTU_0032	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	3e-133	64.62
+OTU_0032	OTU_0032	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	8e-133	63.54
+OTU_0032	OTU_0032	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	8e-133	63.54
+OTU_0033	OTU_0033	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	1e-101	65.14
+OTU_0033	OTU_0033	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-100	64.22
+OTU_0033	OTU_0033	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	1e-100	64.22
+OTU_0034	OTU_0034	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	2e-80	63.31
+OTU_0034	OTU_0034	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	2e-80	63.31
+OTU_0034	OTU_0034	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	7e-80	62.72
+OTU_0035	OTU_0035	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	1e-132	67.46
+OTU_0035	OTU_0035	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1e-132	67.46
+OTU_0035	OTU_0035	AAY52005  coded_by=6070..7101,organism=Paenibacillus thiaminolyticus,definition=VanA	1e-132	67.46
+OTU_0036	OTU_0036	AAX19284  coded_by=3732..4763,organism=Paenibacillus thiaminolyticus,definition=D-alanine:D-lactate ligase	3e-93	69.27
+OTU_0036	OTU_0036	EOF88914  coded_by=<1..932,organism=Enterococcus faecium EnGen0166,definition=vancomycin/teicoplanin A-type resistance protein VanA	5e-92	69.83
+OTU_0036	OTU_0036	EOF94670  coded_by=<1..932,organism=Enterococcus faecium EnGen0167,definition=vancomycin/teicoplanin A-type resistance protein VanA	5e-92	69.83
+OTU_0037	OTU_0037	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	8e-175	66.47
+OTU_0037	OTU_0037	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	5e-171	64.14
+OTU_0037	OTU_0037	AAT70090  coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	7e-170	63.85
+OTU_0038	OTU_0038	AKF95798  coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	0.0	67.06
+OTU_0038	OTU_0038	KWX70556  coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	9e-180	67.35
+OTU_0038	OTU_0038	OAJ74723  coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	4e-178	66.18

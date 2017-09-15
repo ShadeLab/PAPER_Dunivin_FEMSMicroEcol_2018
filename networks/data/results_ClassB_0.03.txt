@@ -1,0 +1,645 @@
+OTU_0001	OTU_0001	AKJ06219  coded_by=9827708..9828598,organism=Archangium gephyra,definition=Metallo-beta-lactamase precursor	2e-67	63.89
+OTU_0001	OTU_0001	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-60	56.68
+OTU_0001	OTU_0001	KTT74915  coded_by=120768..121631,organism=Sphingomonas sanguinis,definition=beta-lactamase	1e-59	58.47
+OTU_0002	OTU_0002	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-55	57.50
+OTU_0002	OTU_0002	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-54	56.25
+OTU_0002	OTU_0002	AIA12654  coded_by=complement(34..828),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	4e-54	55.00
+OTU_0003	OTU_0003	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-76	66.48
+OTU_0003	OTU_0003	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-71	62.43
+OTU_0003	OTU_0003	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	2e-70	61.54
+OTU_0004	OTU_0004	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-110	62.77
+OTU_0004	OTU_0004	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-98	62.11
+OTU_0004	OTU_0004	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-98	62.11
+OTU_0005	OTU_0005	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-99	56.27
+OTU_0005	OTU_0005	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-95	58.75
+OTU_0005	OTU_0005	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	5e-93	55.68
+OTU_0006	OTU_0006	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-68	65.24
+OTU_0006	OTU_0006	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-62	64.02
+OTU_0006	OTU_0006	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	6e-62	64.02
+OTU_0007	OTU_0007	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	8e-81	61.17
+OTU_0007	OTU_0007	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-81	63.02
+OTU_0007	OTU_0007	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-80	61.17
+OTU_0008	OTU_0008	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	7e-70	60.80
+OTU_0008	OTU_0008	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	2e-64	62.58
+OTU_0008	OTU_0008	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	5e-56	58.82
+OTU_0009	OTU_0009	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-70	67.08
+OTU_0009	OTU_0009	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	3e-68	68.67
+OTU_0009	OTU_0009	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	1e-64	64.46
+OTU_0010	OTU_0010	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-76	66.48
+OTU_0010	OTU_0010	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-67	68.99
+OTU_0010	OTU_0010	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-67	68.99
+OTU_0011	OTU_0011	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-102	61.63
+OTU_0011	OTU_0011	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	3e-99	59.38
+OTU_0011	OTU_0011	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	9e-99	61.33
+OTU_0012	OTU_0012	KTD01017  coded_by=22074..22922,organism=Fluoribacter gormanii,definition=Metallo-beta-lactamase L1 precursor	5e-68	69.74
+OTU_0012	OTU_0012	CAB96921  coded_by=1..849,organism=Fluoribacter gormanii,definition=FEZ-1 protein	5e-68	69.74
+OTU_0012	OTU_0012	SIR77919  coded_by=complement(25556..26404),organism=Fluoribacter gormanii,definition=metallo-beta-lactamase class B	5e-68	69.74
+OTU_0013	OTU_0013	AIA13399  coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-67	59.17
+OTU_0013	OTU_0013	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-54	52.33
+OTU_0013	OTU_0013	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-50	50.00
+OTU_0014	OTU_0014	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-106	61.19
+OTU_0014	OTU_0014	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	9e-98	59.62
+OTU_0014	OTU_0014	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-97	60.08
+OTU_0015	OTU_0015	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	5e-44	53.33
+OTU_0015	OTU_0015	AIA13028  coded_by=complement(142..1059),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-43	52.00
+OTU_0015	OTU_0015	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-42	52.00
+OTU_0016	OTU_0016	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-75	65.75
+OTU_0016	OTU_0016	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-75	65.19
+OTU_0016	OTU_0016	AIA13512  coded_by=208..1095,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	7e-75	66.28
+OTU_0017	OTU_0017	AGD93319  coded_by=11790..12671,organism=uncultured bacterium,definition=class B beta-lactamase	1e-69	64.12
+OTU_0017	OTU_0017	AGD93294  coded_by=complement(19868..20749),organism=uncultured bacterium,definition=class B beta-lactamase	1e-69	64.12
+OTU_0017	OTU_0017	AIA11006  coded_by=complement(3578..>4479),organism=uncultured bacterium,definition=GOB_beta_lactamase	4e-65	64.81
+OTU_0018	OTU_0018	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-75	56.73
+OTU_0018	OTU_0018	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-74	57.49
+OTU_0018	OTU_0018	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-71	57.49
+OTU_0019	OTU_0019	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-111	60.73
+OTU_0019	OTU_0019	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	7e-102	60.70
+OTU_0019	OTU_0019	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-97	53.99
+OTU_0020	OTU_0020	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-68	71.92
+OTU_0020	OTU_0020	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3e-68	71.23
+OTU_0020	OTU_0020	AIA13512  coded_by=208..1095,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3e-64	67.12
+OTU_0021	OTU_0021	OCX53253  coded_by=715056..715934,organism=Mucilaginibacter sp. PPCGB 2223,definition=subclass B3 metallo-beta-lactamase	6e-68	65.82
+OTU_0021	OTU_0021	ANH83852  coded_by=complement(2571013..2571882),organism=Niabella sp. BS26,definition=subclass B3 metallo-beta-lactamase	4e-63	61.64
+OTU_0021	OTU_0021	ACU62014  coded_by=5716360..5717244,organism=Chitinophaga pinensis DSM 2588,definition=Beta-lactamase	4e-63	59.12
+OTU_0022	OTU_0022	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	8e-78	67.80
+OTU_0022	OTU_0022	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	4e-73	67.05
+OTU_0022	OTU_0022	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-72	66.29
+OTU_0023	OTU_0023	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	8e-105	62.35
+OTU_0023	OTU_0023	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-99	60.39
+OTU_0023	OTU_0023	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-93	59.06
+OTU_0024	OTU_0024	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-107	60.82
+OTU_0024	OTU_0024	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-101	60.70
+OTU_0024	OTU_0024	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-95	56.83
+OTU_0025	OTU_0025	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-106	60.00
+OTU_0025	OTU_0025	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-96	57.14
+OTU_0025	OTU_0025	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-96	57.14
+OTU_0026	OTU_0026	AHX12140  coded_by=380159..381052,organism=Dyella jiangningensis,definition=beta-lactamase	2e-80	55.42
+OTU_0026	OTU_0026	KZC27588  coded_by=6324..7202,organism=Rhodanobacter sp. FW104-R5,definition=subclass B3 metallo-beta-lactamase	6e-78	56.09
+OTU_0026	OTU_0026	KZC18996  coded_by=complement(25071..25949),organism=Rhodanobacter denitrificans,definition=subclass B3 metallo-beta-lactamase	6e-78	56.09
+OTU_0027	OTU_0027	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-52	54.49
+OTU_0027	OTU_0027	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-50	54.14
+OTU_0027	OTU_0027	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-50	54.14
+OTU_0028	OTU_0028	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-93	68.10
+OTU_0028	OTU_0028	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-83	60.58
+OTU_0028	OTU_0028	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-83	64.73
+OTU_0029	OTU_0029	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-105	58.58
+OTU_0029	OTU_0029	AIA12861  coded_by=70..933,organism=uncultured bacterium,definition=L1_beta_lactamase	4e-105	58.96
+OTU_0029	OTU_0029	AIA10655  coded_by=599..1495,organism=uncultured bacterium,definition=L1_beta_lactamase	8e-104	56.88
+OTU_0030	OTU_0030	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-96	66.98
+OTU_0030	OTU_0030	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-91	63.85
+OTU_0030	OTU_0030	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	5e-84	59.91
+OTU_0031	OTU_0031	AIA13399  coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-58	60.25
+OTU_0031	OTU_0031	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-45	51.74
+OTU_0031	OTU_0031	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-44	50.59
+OTU_0032	OTU_0032	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	2e-71	70.89
+OTU_0032	OTU_0032	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	5e-62	57.71
+OTU_0032	OTU_0032	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	1e-56	59.12
+OTU_0033	OTU_0033	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-104	62.26
+OTU_0033	OTU_0033	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	9e-90	54.86
+OTU_0033	OTU_0033	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-89	54.61
+OTU_0034	OTU_0034	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-66	60.23
+OTU_0034	OTU_0034	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-62	60.00
+OTU_0034	OTU_0034	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-62	60.00
+OTU_0035	OTU_0035	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-72	59.69
+OTU_0035	OTU_0035	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-70	57.36
+OTU_0035	OTU_0035	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-69	58.67
+OTU_0036	OTU_0036	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	1e-69	61.24
+OTU_0036	OTU_0036	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	4e-63	59.32
+OTU_0036	OTU_0036	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	3e-56	59.09
+OTU_0037	OTU_0037	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	9e-98	61.90
+OTU_0037	OTU_0037	AIA11435  coded_by=212..1093,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-95	61.57
+OTU_0037	OTU_0037	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-95	61.23
+OTU_0038	OTU_0038	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-83	60.09
+OTU_0038	OTU_0038	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-81	58.41
+OTU_0038	OTU_0038	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	7e-81	58.41
+OTU_0039	OTU_0039	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-97	62.08
+OTU_0039	OTU_0039	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-96	65.62
+OTU_0039	OTU_0039	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-94	63.84
+OTU_0040	OTU_0040	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-87	54.40
+OTU_0040	OTU_0040	AIA12861  coded_by=70..933,organism=uncultured bacterium,definition=L1_beta_lactamase	5e-87	54.80
+OTU_0040	OTU_0040	AIA13697  coded_by=complement(1388..2209),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-86	54.18
+OTU_0041	OTU_0041	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-96	66.98
+OTU_0041	OTU_0041	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8e-88	62.44
+OTU_0041	OTU_0041	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-85	60.38
+OTU_0042	OTU_0042	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	8e-59	59.26
+OTU_0042	OTU_0042	AIA12654  coded_by=complement(34..828),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-58	59.26
+OTU_0042	OTU_0042	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	4e-57	57.41
+OTU_0043	OTU_0043	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-73	69.62
+OTU_0043	OTU_0043	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-69	67.52
+OTU_0043	OTU_0043	KTD01017  coded_by=22074..22922,organism=Fluoribacter gormanii,definition=Metallo-beta-lactamase L1 precursor	4e-67	66.45
+OTU_0044	OTU_0044	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	6e-92	64.66
+OTU_0044	OTU_0044	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-90	64.16
+OTU_0044	OTU_0044	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-87	64.66
+OTU_0045	OTU_0045	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-80	57.21
+OTU_0045	OTU_0045	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-79	58.88
+OTU_0045	OTU_0045	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-79	58.88
+OTU_0046	OTU_0046	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-49	54.43
+OTU_0046	OTU_0046	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-48	53.80
+OTU_0046	OTU_0046	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-48	53.80
+OTU_0047	OTU_0047	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-72	60.82
+OTU_0047	OTU_0047	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	7e-72	60.85
+OTU_0047	OTU_0047	AIA13538  coded_by=complement(183..>1030),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	8e-72	59.26
+OTU_0048	OTU_0048	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-99	62.08
+OTU_0048	OTU_0048	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	7e-99	62.50
+OTU_0048	OTU_0048	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	5e-98	60.42
+OTU_0049	OTU_0049	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-107	72.48
+OTU_0049	OTU_0049	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-91	64.35
+OTU_0049	OTU_0049	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-91	64.35
+OTU_0050	OTU_0050	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-77	60.77
+OTU_0050	OTU_0050	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	6e-77	60.77
+OTU_0050	OTU_0050	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	7e-73	57.55
+OTU_0051	OTU_0051	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-81	63.83
+OTU_0051	OTU_0051	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-77	58.54
+OTU_0051	OTU_0051	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-77	58.54
+OTU_0052	OTU_0052	AIA13504  coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-53	54.44
+OTU_0052	OTU_0052	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-52	54.44
+OTU_0052	OTU_0052	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-52	54.44
+OTU_0053	OTU_0053	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-92	72.16
+OTU_0053	OTU_0053	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-78	62.37
+OTU_0053	OTU_0053	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-78	62.37
+OTU_0054	OTU_0054	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-90	55.34
+OTU_0054	OTU_0054	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-89	53.28
+OTU_0054	OTU_0054	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-84	54.22
+OTU_0055	OTU_0055	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-84	64.04
+OTU_0055	OTU_0055	AIA12568  coded_by=complement(2924..3838),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-81	61.00
+OTU_0055	OTU_0055	AIA12645  coded_by=complement(2860..3774),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-81	61.00
+OTU_0056	OTU_0056	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-93	61.57
+OTU_0056	OTU_0056	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-91	60.74
+OTU_0056	OTU_0056	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-91	60.74
+OTU_0057	OTU_0057	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-98	65.62
+OTU_0057	OTU_0057	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	4e-98	65.47
+OTU_0057	OTU_0057	AIA11435  coded_by=212..1093,organism=uncultured bacterium,definition=L1_beta_lactamase	7e-98	60.82
+OTU_0058	OTU_0058	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-105	57.82
+OTU_0058	OTU_0058	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-103	59.69
+OTU_0058	OTU_0058	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-92	55.69
+OTU_0059	OTU_0059	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-42	52.63
+OTU_0059	OTU_0059	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-39	48.05
+OTU_0059	OTU_0059	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	7e-38	49.33
+OTU_0060	OTU_0060	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-76	72.61
+OTU_0060	OTU_0060	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-68	67.72
+OTU_0060	OTU_0060	KTD01017  coded_by=22074..22922,organism=Fluoribacter gormanii,definition=Metallo-beta-lactamase L1 precursor	1e-61	61.54
+OTU_0061	OTU_0061	AHX12140  coded_by=380159..381052,organism=Dyella jiangningensis,definition=beta-lactamase	2e-88	69.27
+OTU_0061	OTU_0061	KLD65188  coded_by=complement(23146..24012),organism=Dyella japonica DSM 16301,definition=beta-lactamase	4e-85	66.83
+OTU_0061	OTU_0061	AIF49264  coded_by=complement(4464031..4464921),organism=Dyella japonica A8,definition=beta-lactamase	4e-83	71.19
+OTU_0062	OTU_0062	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	2e-58	57.71
+OTU_0062	OTU_0062	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-56	56.40
+OTU_0062	OTU_0062	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-54	54.34
+OTU_0063	OTU_0063	AIA11435  coded_by=212..1093,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-94	59.92
+OTU_0063	OTU_0063	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-93	59.09
+OTU_0063	OTU_0063	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-93	58.92
+OTU_0064	OTU_0064	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-91	56.08
+OTU_0064	OTU_0064	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-90	57.25
+OTU_0064	OTU_0064	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	7e-85	53.52
+OTU_0065	OTU_0065	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-105	64.09
+OTU_0065	OTU_0065	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-98	57.72
+OTU_0065	OTU_0065	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-98	57.72
+OTU_0066	OTU_0066	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	4e-73	52.59
+OTU_0066	OTU_0066	AIA16275  coded_by=699..1550,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-72	52.59
+OTU_0066	OTU_0066	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-72	52.42
+OTU_0067	OTU_0067	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-111	62.91
+OTU_0067	OTU_0067	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-101	60.31
+OTU_0067	OTU_0067	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	3e-98	60.00
+OTU_0068	OTU_0068	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-77	49.80
+OTU_0068	OTU_0068	AIA10655  coded_by=599..1495,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-75	47.84
+OTU_0068	OTU_0068	AIA13504  coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-75	49.60
+OTU_0069	OTU_0069	BAH40273  coded_by=complement(3829698..3830681),organism=Gemmatimonas aurantiaca T-27,definition=hypothetical protein	7e-43	55.03
+OTU_0069	OTU_0069	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	5e-42	53.69
+OTU_0069	OTU_0069	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-41	54.36
+OTU_0070	OTU_0070	AGU01671  coded_by=261..1172,organism=uncultured bacterium,definition=LRA-3 like beta-lactamase	1e-78	73.10
+OTU_0070	OTU_0070	ACH58987  coded_by=1244..2152,organism=uncultured bacterium BLR3,definition=LRA-3	9e-78	73.10
+OTU_0070	OTU_0070	AIA15038  coded_by=324..1259,organism=uncultured bacterium,definition=LRA_beta_lactamase	2e-74	68.05
+OTU_0071	OTU_0071	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-82	64.89
+OTU_0071	OTU_0071	AIW80551  coded_by=116..1045,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	2e-80	64.84
+OTU_0071	OTU_0071	AIA12294  coded_by=complement(1310..2239),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-80	64.84
+OTU_0072	OTU_0072	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-69	60.77
+OTU_0072	OTU_0072	KTD01017  coded_by=22074..22922,organism=Fluoribacter gormanii,definition=Metallo-beta-lactamase L1 precursor	1e-66	68.83
+OTU_0072	OTU_0072	CAB96921  coded_by=1..849,organism=Fluoribacter gormanii,definition=FEZ-1 protein	1e-66	68.83
+OTU_0073	OTU_0073	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-95	60.92
+OTU_0073	OTU_0073	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-95	59.41
+OTU_0073	OTU_0073	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-94	60.92
+OTU_0074	OTU_0074	AGD93319  coded_by=11790..12671,organism=uncultured bacterium,definition=class B beta-lactamase	7e-99	67.71
+OTU_0074	OTU_0074	AGD93294  coded_by=complement(19868..20749),organism=uncultured bacterium,definition=class B beta-lactamase	7e-99	67.71
+OTU_0074	OTU_0074	AIA11006  coded_by=complement(3578..>4479),organism=uncultured bacterium,definition=GOB_beta_lactamase	8e-94	65.91
+OTU_0075	OTU_0075	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-42	50.96
+OTU_0075	OTU_0075	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-36	48.08
+OTU_0075	OTU_0075	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-36	48.08
+OTU_0076	OTU_0076	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-103	60.00
+OTU_0076	OTU_0076	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-95	53.82
+OTU_0076	OTU_0076	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-95	53.82
+OTU_0077	OTU_0077	AIA13399  coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-76	66.48
+OTU_0077	OTU_0077	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-66	56.68
+OTU_0077	OTU_0077	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-65	58.15
+OTU_0078	OTU_0078	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	7e-56	57.42
+OTU_0078	OTU_0078	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-55	59.74
+OTU_0078	OTU_0078	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-53	58.44
+OTU_0079	OTU_0079	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-67	64.38
+OTU_0079	OTU_0079	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-65	63.37
+OTU_0079	OTU_0079	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	7e-65	63.37
+OTU_0080	OTU_0080	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	6e-56	65.36
+OTU_0080	OTU_0080	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-53	62.58
+OTU_0080	OTU_0080	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	9e-50	63.40
+OTU_0081	OTU_0081	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-73	62.63
+OTU_0081	OTU_0081	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-73	61.58
+OTU_0081	OTU_0081	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	2e-72	61.58
+OTU_0082	OTU_0082	AIA13030  coded_by=218..1078,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-106	69.51
+OTU_0082	OTU_0082	AIA10655  coded_by=599..1495,organism=uncultured bacterium,definition=L1_beta_lactamase	5e-105	66.09
+OTU_0082	OTU_0082	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-103	67.86
+OTU_0083	OTU_0083	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-102	67.12
+OTU_0083	OTU_0083	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-89	62.96
+OTU_0083	OTU_0083	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	5e-87	61.86
+OTU_0084	OTU_0084	KTC94529  coded_by=512870..513721,organism=Legionella erythra,definition=Metallo-beta-lactamase L1 precursor	5e-110	65.76
+OTU_0084	OTU_0084	KTD50508  coded_by=12052..12918,organism=Legionella rubrilucens,definition=Metallo-beta-lactamase L1 precursor	1e-107	64.98
+OTU_0084	OTU_0084	KTD40443  coded_by=628143..629003,organism=Legionella parisiensis,definition=Metallo-beta-lactamase L1 precursor	2e-107	65.76
+OTU_0085	OTU_0085	AIA12592  coded_by=complement(1869..2747),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-40	50.00
+OTU_0085	OTU_0085	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	5e-39	47.24
+OTU_0085	OTU_0085	AIA13030  coded_by=218..1078,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-38	46.91
+OTU_0086	OTU_0086	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-88	64.71
+OTU_0086	OTU_0086	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-79	61.42
+OTU_0086	OTU_0086	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	5e-73	61.93
+OTU_0087	OTU_0087	AIA13512  coded_by=208..1095,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-75	59.41
+OTU_0087	OTU_0087	AIA13207  coded_by=195..1082,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-75	59.41
+OTU_0087	OTU_0087	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	4e-75	60.00
+OTU_0088	OTU_0088	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-46	51.85
+OTU_0088	OTU_0088	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-46	51.85
+OTU_0088	OTU_0088	AIA13504  coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-46	50.62
+OTU_0089	OTU_0089	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-58	66.20
+OTU_0089	OTU_0089	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	9e-54	67.69
+OTU_0089	OTU_0089	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	8e-50	59.31
+OTU_0090	OTU_0090	AIA12063  coded_by=594..1490,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-57	52.63
+OTU_0090	OTU_0090	AIA13028  coded_by=complement(142..1059),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-56	52.13
+OTU_0090	OTU_0090	AIA13504  coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-56	51.58
+OTU_0091	OTU_0091	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-100	68.81
+OTU_0091	OTU_0091	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-91	65.12
+OTU_0091	OTU_0091	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-91	65.12
+OTU_0092	OTU_0092	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-92	56.52
+OTU_0092	OTU_0092	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-85	52.00
+OTU_0092	OTU_0092	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	2e-83	52.21
+OTU_0093	OTU_0093	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-69	63.28
+OTU_0093	OTU_0093	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-65	58.76
+OTU_0093	OTU_0093	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	2e-63	56.74
+OTU_0094	OTU_0094	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-87	66.67
+OTU_0094	OTU_0094	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-80	62.19
+OTU_0094	OTU_0094	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-80	62.19
+OTU_0095	OTU_0095	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	4e-63	59.88
+OTU_0095	OTU_0095	AIA12654  coded_by=complement(34..828),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-61	59.28
+OTU_0095	OTU_0095	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-60	58.33
+OTU_0096	OTU_0096	AIA13512  coded_by=208..1095,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-79	65.03
+OTU_0096	OTU_0096	AIA13207  coded_by=195..1082,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-79	65.03
+OTU_0096	OTU_0096	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	8e-79	60.91
+OTU_0097	OTU_0097	SCC37531  coded_by=47665..48513,organism=Chitinophaga costaii,definition=metallo-beta-lactamase class B	5e-73	71.43
+OTU_0097	OTU_0097	AIA15640  coded_by=complement(1736..2614),organism=uncultured bacterium,definition=GOB_beta_lactamase	7e-69	68.63
+OTU_0097	OTU_0097	ACH58990  coded_by=16573..17454,organism=uncultured bacterium BLR12,definition=LRA-12	1e-64	65.79
+OTU_0098	OTU_0098	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-45	49.67
+OTU_0098	OTU_0098	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-45	49.67
+OTU_0098	OTU_0098	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-45	49.67
+OTU_0099	OTU_0099	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-61	72.39
+OTU_0099	OTU_0099	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-49	62.81
+OTU_0099	OTU_0099	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-48	66.67
+OTU_0100	OTU_0100	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-77	66.85
+OTU_0100	OTU_0100	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-68	68.35
+OTU_0100	OTU_0100	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-68	68.35
+OTU_0101	OTU_0101	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-55	58.55
+OTU_0101	OTU_0101	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-54	58.55
+OTU_0101	OTU_0101	KTD40443  coded_by=628143..629003,organism=Legionella parisiensis,definition=Metallo-beta-lactamase L1 precursor	6e-51	55.92
+OTU_0102	OTU_0102	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-79	61.24
+OTU_0102	OTU_0102	KTC94529  coded_by=512870..513721,organism=Legionella erythra,definition=Metallo-beta-lactamase L1 precursor	2e-76	59.02
+OTU_0102	OTU_0102	KTD50508  coded_by=12052..12918,organism=Legionella rubrilucens,definition=Metallo-beta-lactamase L1 precursor	3e-76	57.07
+OTU_0103	OTU_0103	AGD93319  coded_by=11790..12671,organism=uncultured bacterium,definition=class B beta-lactamase	2e-69	65.45
+OTU_0103	OTU_0103	AGD93294  coded_by=complement(19868..20749),organism=uncultured bacterium,definition=class B beta-lactamase	2e-69	65.45
+OTU_0103	OTU_0103	AIA11006  coded_by=complement(3578..>4479),organism=uncultured bacterium,definition=GOB_beta_lactamase	3e-65	67.50
+OTU_0104	OTU_0104	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-106	62.79
+OTU_0104	OTU_0104	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-99	59.92
+OTU_0104	OTU_0104	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-95	56.99
+OTU_0105	OTU_0105	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-56	57.93
+OTU_0105	OTU_0105	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-53	55.49
+OTU_0105	OTU_0105	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	1e-53	57.23
+OTU_0106	OTU_0106	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	8e-67	60.11
+OTU_0106	OTU_0106	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	9e-67	60.11
+OTU_0106	OTU_0106	AIA16275  coded_by=699..1550,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-65	58.33
+OTU_0107	OTU_0107	AIA13538  coded_by=complement(183..>1030),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	4e-88	67.01
+OTU_0107	OTU_0107	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3e-87	67.53
+OTU_0107	OTU_0107	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-86	66.49
+OTU_0108	OTU_0108	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8e-48	55.92
+OTU_0108	OTU_0108	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-40	50.66
+OTU_0108	OTU_0108	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-38	49.67
+OTU_0109	OTU_0109	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-71	65.34
+OTU_0109	OTU_0109	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-65	68.59
+OTU_0109	OTU_0109	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-64	61.67
+OTU_0110	OTU_0110	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	6e-103	63.37
+OTU_0110	OTU_0110	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	7e-103	62.55
+OTU_0110	OTU_0110	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-102	65.49
+OTU_0111	OTU_0111	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	4e-29	43.64
+OTU_0111	OTU_0111	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	4e-29	43.64
+OTU_0111	OTU_0111	KRB48994  coded_by=complement(166950..167795),organism=Phenylobacterium sp. Root700,definition=subclass B3 metallo-beta-lactamase	2e-28	42.60
+OTU_0112	OTU_0112	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-91	64.65
+OTU_0112	OTU_0112	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-88	62.91
+OTU_0112	OTU_0112	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-84	60.83
+OTU_0113	OTU_0113	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-100	61.16
+OTU_0113	OTU_0113	AIA10473  coded_by=complement(638..1555),organism=uncultured bacterium,definition=subclassB3_beta_lactamase	3e-98	60.08
+OTU_0113	OTU_0113	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-98	59.92
+OTU_0114	OTU_0114	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-63	55.49
+OTU_0114	OTU_0114	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-59	56.25
+OTU_0114	OTU_0114	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-56	52.46
+OTU_0115	OTU_0115	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-107	62.04
+OTU_0115	OTU_0115	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	2e-102	59.93
+OTU_0115	OTU_0115	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-97	60.75
+OTU_0116	OTU_0116	KTD40443  coded_by=628143..629003,organism=Legionella parisiensis,definition=Metallo-beta-lactamase L1 precursor	2e-67	71.05
+OTU_0116	OTU_0116	KTC67359  coded_by=complement(511324..512184),organism=Legionella anisa,definition=Metallo-beta-lactamase L1 precursor	1e-66	70.39
+OTU_0116	OTU_0116	OQW27298  coded_by=1230042..1230902,organism=Legionella anisa,definition=FEZ family subclass B3 metallo-beta-lactamase	1e-66	70.39
+OTU_0117	OTU_0117	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-72	65.70
+OTU_0117	OTU_0117	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	6e-67	63.79
+OTU_0117	OTU_0117	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-64	62.07
+OTU_0118	OTU_0118	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-92	66.83
+OTU_0118	OTU_0118	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-84	65.99
+OTU_0118	OTU_0118	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-76	60.71
+OTU_0119	OTU_0119	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-100	60.08
+OTU_0119	OTU_0119	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8e-97	56.20
+OTU_0119	OTU_0119	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-88	56.64
+OTU_0120	OTU_0120	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-66	65.82
+OTU_0120	OTU_0120	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	8e-57	63.40
+OTU_0120	OTU_0120	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	8e-57	63.40
+OTU_0121	OTU_0121	KFI08010  coded_by=complement(27951..28838),organism=Massilia sp. BSC265,definition=beta-lactamase	4e-65	60.44
+OTU_0121	OTU_0121	AIW80551  coded_by=116..1045,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	1e-64	62.05
+OTU_0121	OTU_0121	AIA12294  coded_by=complement(1310..2239),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-64	62.05
+OTU_0122	OTU_0122	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-97	66.09
+OTU_0122	OTU_0122	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	9e-89	63.59
+OTU_0122	OTU_0122	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	3e-88	62.82
+OTU_0123	OTU_0123	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-84	65.00
+OTU_0123	OTU_0123	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-81	66.14
+OTU_0123	OTU_0123	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-71	59.60
+OTU_0124	OTU_0124	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-67	69.80
+OTU_0124	OTU_0124	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-59	67.35
+OTU_0124	OTU_0124	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-59	67.35
+OTU_0125	OTU_0125	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-99	59.62
+OTU_0125	OTU_0125	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-99	59.14
+OTU_0125	OTU_0125	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-93	54.95
+OTU_0126	OTU_0126	AIA13030  coded_by=218..1078,organism=uncultured bacterium,definition=L1_beta_lactamase	8e-76	60.10
+OTU_0126	OTU_0126	AIA13504  coded_by=complement(2615..3511),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-74	59.09
+OTU_0126	OTU_0126	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-74	58.59
+OTU_0127	OTU_0127	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-97	55.36
+OTU_0127	OTU_0127	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-92	54.65
+OTU_0127	OTU_0127	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-88	52.86
+OTU_0128	OTU_0128	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-72	57.92
+OTU_0128	OTU_0128	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-72	59.50
+OTU_0128	OTU_0128	AIA13512  coded_by=208..1095,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-71	57.79
+OTU_0129	OTU_0129	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-63	61.11
+OTU_0129	OTU_0129	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-61	65.16
+OTU_0129	OTU_0129	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	9e-60	60.12
+OTU_0130	OTU_0130	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-89	62.72
+OTU_0130	OTU_0130	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-83	60.53
+OTU_0130	OTU_0130	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-83	60.53
+OTU_0131	OTU_0131	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	5e-85	63.55
+OTU_0131	OTU_0131	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	1e-83	63.05
+OTU_0131	OTU_0131	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-83	63.55
+OTU_0132	OTU_0132	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-84	61.76
+OTU_0132	OTU_0132	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-83	61.27
+OTU_0132	OTU_0132	AIA12654  coded_by=complement(34..828),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-82	60.29
+OTU_0133	OTU_0133	KUO54577  coded_by=complement(2652..3551),organism=Sphingomonadales bacterium BRH_c42,definition=subclass B3 metallo-beta-lactamase	4e-75	50.00
+OTU_0133	OTU_0133	AFV00127  coded_by=3249781..3250668,organism=Simiduia agarivorans SA1 = DSM 21679,definition=beta-lactamase-like protein	2e-73	48.25
+OTU_0133	OTU_0133	KUM53635  coded_by=736344..737255,organism=Rheinheimera sp. EpRS3,definition=subclass B3 metallo-beta-lactamase	5e-73	46.69
+OTU_0134	OTU_0134	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	5e-86	58.64
+OTU_0134	OTU_0134	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	5e-86	58.64
+OTU_0134	OTU_0134	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-85	61.40
+OTU_0135	OTU_0135	AIW80551  coded_by=116..1045,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	1e-69	60.43
+OTU_0135	OTU_0135	AIA12294  coded_by=complement(1310..2239),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-69	60.43
+OTU_0135	OTU_0135	KFI08010  coded_by=complement(27951..28838),organism=Massilia sp. BSC265,definition=beta-lactamase	5e-69	59.09
+OTU_0136	OTU_0136	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-98	60.58
+OTU_0136	OTU_0136	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-96	60.58
+OTU_0136	OTU_0136	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-96	59.34
+OTU_0137	OTU_0137	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-44	52.70
+OTU_0137	OTU_0137	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-44	51.35
+OTU_0137	OTU_0137	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	2e-42	50.34
+OTU_0138	OTU_0138	ACH58987  coded_by=1244..2152,organism=uncultured bacterium BLR3,definition=LRA-3	2e-70	86.29
+OTU_0138	OTU_0138	AGU01671  coded_by=261..1172,organism=uncultured bacterium,definition=LRA-3 like beta-lactamase	4e-69	85.95
+OTU_0138	OTU_0138	AIA15199  coded_by=340..1275,organism=uncultured bacterium,definition=LRA_beta_lactamase	2e-64	77.34
+OTU_0139	OTU_0139	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-62	63.87
+OTU_0139	OTU_0139	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	2e-60	61.29
+OTU_0139	OTU_0139	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	9e-60	60.65
+OTU_0140	OTU_0140	AIA16275  coded_by=699..1550,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-68	59.46
+OTU_0140	OTU_0140	AIA13628  coded_by=complement(1539..2390),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-67	58.38
+OTU_0140	OTU_0140	AKJ06219  coded_by=9827708..9828598,organism=Archangium gephyra,definition=Metallo-beta-lactamase precursor	2e-66	54.81
+OTU_0141	OTU_0141	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	3e-64	62.50
+OTU_0141	OTU_0141	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-64	63.86
+OTU_0141	OTU_0141	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-62	62.29
+OTU_0142	OTU_0142	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-72	63.24
+OTU_0142	OTU_0142	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-72	65.03
+OTU_0142	OTU_0142	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-65	64.29
+OTU_0143	OTU_0143	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-65	61.63
+OTU_0143	OTU_0143	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-58	63.40
+OTU_0143	OTU_0143	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	6e-58	63.40
+OTU_0144	OTU_0144	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-68	65.43
+OTU_0144	OTU_0144	AIA12568  coded_by=complement(2924..3838),organism=uncultured bacterium,definition=L1_beta_lactamase	8e-67	63.12
+OTU_0144	OTU_0144	AIA12645  coded_by=complement(2860..3774),organism=uncultured bacterium,definition=L1_beta_lactamase	8e-67	63.12
+OTU_0145	OTU_0145	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-70	65.06
+OTU_0145	OTU_0145	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	6e-65	65.16
+OTU_0145	OTU_0145	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-60	60.98
+OTU_0146	OTU_0146	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-82	61.58
+OTU_0146	OTU_0146	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	5e-82	62.07
+OTU_0146	OTU_0146	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	8e-82	65.08
+OTU_0147	OTU_0147	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-48	50.30
+OTU_0147	OTU_0147	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-44	49.38
+OTU_0147	OTU_0147	AMP57181  coded_by=complement(1039..>2159),organism=uncultured bacterium,definition=subclassB3	1e-44	45.56
+OTU_0148	OTU_0148	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	6e-88	62.76
+OTU_0148	OTU_0148	AIW80554  coded_by=1046..1969,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	4e-87	63.27
+OTU_0148	OTU_0148	AIA11908  coded_by=1032..1955,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-87	62.76
+OTU_0149	OTU_0149	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-82	59.65
+OTU_0149	OTU_0149	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	6e-82	57.83
+OTU_0149	OTU_0149	AIA10473  coded_by=complement(638..1555),organism=uncultured bacterium,definition=subclassB3_beta_lactamase	3e-80	56.96
+OTU_0150	OTU_0150	AIA13399  coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3e-81	60.89
+OTU_0150	OTU_0150	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-68	52.81
+OTU_0150	OTU_0150	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-66	49.58
+OTU_0151	OTU_0151	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-91	61.02
+OTU_0151	OTU_0151	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	3e-84	58.82
+OTU_0151	OTU_0151	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-83	58.47
+OTU_0152	OTU_0152	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-83	62.56
+OTU_0152	OTU_0152	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-83	62.62
+OTU_0152	OTU_0152	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	1e-82	62.62
+OTU_0153	OTU_0153	OCX53253  coded_by=715056..715934,organism=Mucilaginibacter sp. PPCGB 2223,definition=subclass B3 metallo-beta-lactamase	1e-70	67.09
+OTU_0153	OTU_0153	ANH83852  coded_by=complement(2571013..2571882),organism=Niabella sp. BS26,definition=subclass B3 metallo-beta-lactamase	2e-64	61.39
+OTU_0153	OTU_0153	ACH59005  coded_by=3792..4694,organism=uncultured bacterium BLR19,definition=LRA-19	7e-63	61.01
+OTU_0154	OTU_0154	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	7e-56	49.25
+OTU_0154	OTU_0154	AMP57181  coded_by=complement(1039..>2159),organism=uncultured bacterium,definition=subclassB3	8e-55	48.24
+OTU_0154	OTU_0154	AGU01669  coded_by=complement(3999..4934),organism=uncultured bacterium,definition=beta-lactamase	3e-54	48.06
+OTU_0155	OTU_0155	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-102	56.79
+OTU_0155	OTU_0155	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-98	57.36
+OTU_0155	OTU_0155	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-92	53.85
+OTU_0156	OTU_0156	EEF62667  coded_by=257376..258317,organism=Pedosphaera parvula Ellin514,definition=Beta-lactamase	3e-60	60.39
+OTU_0156	OTU_0156	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-58	62.99
+OTU_0156	OTU_0156	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-58	62.99
+OTU_0157	OTU_0157	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-106	62.41
+OTU_0157	OTU_0157	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	6e-102	62.20
+OTU_0157	OTU_0157	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-92	56.60
+OTU_0158	OTU_0158	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-84	59.28
+OTU_0158	OTU_0158	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	6e-83	54.55
+OTU_0158	OTU_0158	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-77	53.36
+OTU_0159	OTU_0159	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-103	67.39
+OTU_0159	OTU_0159	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-94	63.56
+OTU_0159	OTU_0159	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	6e-94	63.56
+OTU_0160	OTU_0160	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	4e-80	61.69
+OTU_0160	OTU_0160	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-79	62.19
+OTU_0160	OTU_0160	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	9e-79	62.19
+OTU_0161	OTU_0161	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-109	64.73
+OTU_0161	OTU_0161	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-107	61.54
+OTU_0161	OTU_0161	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-107	61.54
+OTU_0162	OTU_0162	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-58	53.33
+OTU_0162	OTU_0162	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-56	55.77
+OTU_0162	OTU_0162	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-54	56.86
+OTU_0163	OTU_0163	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-95	65.18
+OTU_0163	OTU_0163	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-87	61.26
+OTU_0163	OTU_0163	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-87	61.26
+OTU_0164	OTU_0164	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-48	50.30
+OTU_0164	OTU_0164	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-48	50.30
+OTU_0164	OTU_0164	ACH59005  coded_by=3792..4694,organism=uncultured bacterium BLR19,definition=LRA-19	1e-46	54.90
+OTU_0165	OTU_0165	AIA10655  coded_by=599..1495,organism=uncultured bacterium,definition=L1_beta_lactamase	8e-48	54.00
+OTU_0165	OTU_0165	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-48	53.59
+OTU_0165	OTU_0165	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	9e-48	53.59
+OTU_0166	OTU_0166	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	4e-96	63.07
+OTU_0166	OTU_0166	KTD50508  coded_by=12052..12918,organism=Legionella rubrilucens,definition=Metallo-beta-lactamase L1 precursor	5e-86	58.90
+OTU_0166	OTU_0166	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	6e-85	61.57
+OTU_0167	OTU_0167	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-68	68.10
+OTU_0167	OTU_0167	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-66	69.33
+OTU_0167	OTU_0167	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-66	69.33
+OTU_0168	OTU_0168	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-69	68.05
+OTU_0168	OTU_0168	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-67	68.82
+OTU_0168	OTU_0168	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-61	60.61
+OTU_0169	OTU_0169	KLD65188  coded_by=complement(23146..24012),organism=Dyella japonica DSM 16301,definition=beta-lactamase	8e-76	54.15
+OTU_0169	OTU_0169	AHX12140  coded_by=380159..381052,organism=Dyella jiangningensis,definition=beta-lactamase	4e-74	57.01
+OTU_0169	OTU_0169	KRE89124  coded_by=complement(284314..285183),organism=Frateuria sp. Soil773,definition=subclass B3 metallo-beta-lactamase	4e-73	57.55
+OTU_0170	OTU_0170	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-77	59.81
+OTU_0170	OTU_0170	KTD50508  coded_by=12052..12918,organism=Legionella rubrilucens,definition=Metallo-beta-lactamase L1 precursor	2e-75	57.01
+OTU_0170	OTU_0170	KTC94529  coded_by=512870..513721,organism=Legionella erythra,definition=Metallo-beta-lactamase L1 precursor	2e-74	57.48
+OTU_0171	OTU_0171	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-65	66.24
+OTU_0171	OTU_0171	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	5e-62	63.06
+OTU_0171	OTU_0171	EKD74136  coded_by=7006..7884,organism=uncultured bacterium,definition=hypothetical protein	2e-58	62.26
+OTU_0172	OTU_0172	KFN42531  coded_by=42298..43191,organism=Arenimonas oryziterrae DSM 21050 = YC6267,definition=hypothetical protein	1e-62	59.65
+OTU_0172	OTU_0172	AKJ06219  coded_by=9827708..9828598,organism=Archangium gephyra,definition=Metallo-beta-lactamase precursor	2e-62	57.31
+OTU_0172	OTU_0172	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-57	54.86
+OTU_0173	OTU_0173	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-91	61.02
+OTU_0173	OTU_0173	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-84	59.32
+OTU_0173	OTU_0173	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-79	56.17
+OTU_0174	OTU_0174	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-70	65.27
+OTU_0174	OTU_0174	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-65	63.37
+OTU_0174	OTU_0174	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-65	63.37
+OTU_0175	OTU_0175	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-99	60.47
+OTU_0175	OTU_0175	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8e-98	58.91
+OTU_0175	OTU_0175	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	8e-91	56.64
+OTU_0176	OTU_0176	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	4e-69	60.92
+OTU_0176	OTU_0176	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	2e-66	60.92
+OTU_0176	OTU_0176	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	3e-54	56.41
+OTU_0177	OTU_0177	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-55	62.42
+OTU_0177	OTU_0177	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-55	62.42
+OTU_0177	OTU_0177	KTD16312  coded_by=complement(298326..299207),organism=Legionella jordanis,definition=Metallo-beta-lactamase L1 precursor	7e-54	58.67
+OTU_0178	OTU_0178	AMP57181  coded_by=complement(1039..>2159),organism=uncultured bacterium,definition=subclassB3	6e-54	56.49
+OTU_0178	OTU_0178	ESQ89244  coded_by=complement(37678..38475),organism=Asticcacaulis sp. AC460,definition=hypothetical protein	6e-53	57.52
+OTU_0178	OTU_0178	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	3e-52	55.56
+OTU_0179	OTU_0179	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-74	66.30
+OTU_0179	OTU_0179	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-66	67.92
+OTU_0179	OTU_0179	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-63	59.67
+OTU_0180	OTU_0180	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-91	65.12
+OTU_0180	OTU_0180	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-87	62.44
+OTU_0180	OTU_0180	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-84	61.32
+OTU_0181	OTU_0181	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-69	64.46
+OTU_0181	OTU_0181	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-65	65.16
+OTU_0181	OTU_0181	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-60	58.82
+OTU_0182	OTU_0182	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	8e-105	67.39
+OTU_0182	OTU_0182	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-94	62.67
+OTU_0182	OTU_0182	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	7e-94	62.67
+OTU_0183	OTU_0183	KFN42531  coded_by=42298..43191,organism=Arenimonas oryziterrae DSM 21050 = YC6267,definition=hypothetical protein	8e-58	57.06
+OTU_0183	OTU_0183	AKJ06219  coded_by=9827708..9828598,organism=Archangium gephyra,definition=Metallo-beta-lactamase precursor	9e-58	57.74
+OTU_0183	OTU_0183	KFN51769  coded_by=5608..6495,organism=Arenimonas malthae CC-JY-1,definition=hypothetical protein	6e-54	53.61
+OTU_0184	OTU_0184	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-64	63.41
+OTU_0184	OTU_0184	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	8e-61	59.39
+OTU_0184	OTU_0184	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-59	59.76
+OTU_0185	OTU_0185	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-102	61.36
+OTU_0185	OTU_0185	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-99	59.06
+OTU_0185	OTU_0185	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-99	59.06
+OTU_0186	OTU_0186	AIA12036  coded_by=3120..3908,organism=uncultured bacterium,definition=BJP_beta_lactamase	8e-45	49.68
+OTU_0186	OTU_0186	AMP57181  coded_by=complement(1039..>2159),organism=uncultured bacterium,definition=subclassB3	6e-44	51.32
+OTU_0186	OTU_0186	GAO40184  coded_by=26009..26839,organism=Sphingomonas changbaiensis NBRC 104936,definition=putative hydrolase	5e-43	48.68
+OTU_0187	OTU_0187	AGD93319  coded_by=11790..12671,organism=uncultured bacterium,definition=class B beta-lactamase	9e-89	58.82
+OTU_0187	OTU_0187	AGD93294  coded_by=complement(19868..20749),organism=uncultured bacterium,definition=class B beta-lactamase	9e-89	58.82
+OTU_0187	OTU_0187	AIA11006  coded_by=complement(3578..>4479),organism=uncultured bacterium,definition=GOB_beta_lactamase	2e-87	63.93
+OTU_0188	OTU_0188	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	3e-38	53.85
+OTU_0188	OTU_0188	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-36	51.94
+OTU_0188	OTU_0188	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	7e-33	48.84
+OTU_0189	OTU_0189	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-106	60.99
+OTU_0189	OTU_0189	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	9e-101	59.78
+OTU_0189	OTU_0189	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	9e-101	59.78
+OTU_0190	OTU_0190	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-59	58.08
+OTU_0190	OTU_0190	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-50	54.88
+OTU_0190	OTU_0190	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-50	54.88
+OTU_0191	OTU_0191	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	6e-60	64.74
+OTU_0191	OTU_0191	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	1e-57	62.82
+OTU_0191	OTU_0191	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	2e-57	62.34
+OTU_0192	OTU_0192	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-77	67.42
+OTU_0192	OTU_0192	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-71	67.25
+OTU_0192	OTU_0192	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-71	67.25
+OTU_0193	OTU_0193	AIA13846  coded_by=complement(<1..891),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-45	49.67
+OTU_0193	OTU_0193	AIA13735  coded_by=672..1616,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-45	49.01
+OTU_0193	OTU_0193	AIA14002  coded_by=669..1613,organism=uncultured bacterium,definition=L1_beta_lactamase	3e-45	49.01
+OTU_0194	OTU_0194	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-105	59.93
+OTU_0194	OTU_0194	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-96	55.67
+OTU_0194	OTU_0194	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-96	55.67
+OTU_0195	OTU_0195	CCD92941  coded_by=9247..10134,organism=Bradyrhizobium sp. ORS 375,definition=putative Beta-lactamase	1e-109	66.80
+OTU_0195	OTU_0195	CAL76016  coded_by=2302341..2303213,organism=Bradyrhizobium sp. ORS 278,definition=putative Beta-lactamase	2e-109	66.80
+OTU_0195	OTU_0195	CCD86095  coded_by=complement(7225..8112),organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	3e-109	65.99
+OTU_0196	OTU_0196	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	6e-89	55.19
+OTU_0196	OTU_0196	AIA13290  coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	4e-88	55.19
+OTU_0196	OTU_0196	AIA11435  coded_by=212..1093,organism=uncultured bacterium,definition=L1_beta_lactamase	1e-86	53.94
+OTU_0197	OTU_0197	KMO02375  coded_by=complement(57045..57812),organism=Chromobacterium violaceum,definition=beta-lactamase	2e-88	63.86
+OTU_0197	OTU_0197	KMN47704  coded_by=73334..74101,organism=Chromobacterium violaceum,definition=beta-lactamase	2e-88	63.86
+OTU_0197	OTU_0197	KMN91167  coded_by=complement(57049..57816),organism=Chromobacterium violaceum,definition=beta-lactamase	2e-88	63.86
+OTU_0198	OTU_0198	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4e-57	59.48
+OTU_0198	OTU_0198	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-54	58.17
+OTU_0198	OTU_0198	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-53	58.17
+OTU_0199	OTU_0199	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-59	61.78
+OTU_0199	OTU_0199	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-57	59.24
+OTU_0199	OTU_0199	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	4e-57	59.24
+OTU_0200	OTU_0200	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	7e-73	69.88
+OTU_0200	OTU_0200	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	9e-68	66.87
+OTU_0200	OTU_0200	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	9e-68	66.87
+OTU_0201	OTU_0201	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	2e-46	60.74
+OTU_0201	OTU_0201	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	1e-41	59.38
+OTU_0201	OTU_0201	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-41	64.55
+OTU_0202	OTU_0202	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	1e-37	50.39
+OTU_0202	OTU_0202	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	9e-35	48.46
+OTU_0202	OTU_0202	KTC94529  coded_by=512870..513721,organism=Legionella erythra,definition=Metallo-beta-lactamase L1 precursor	5e-34	48.46
+OTU_0203	OTU_0203	AIA15048  coded_by=complement(2139..3077),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-65	66.67
+OTU_0203	OTU_0203	AIA11905  coded_by=complement(2135..3013),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-42	51.63
+OTU_0203	OTU_0203	AIA13631  coded_by=709..1587,organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	5e-41	51.32
+OTU_0204	OTU_0204	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-109	58.45
+OTU_0204	OTU_0204	ABJ87788  coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	1e-100	59.92
+OTU_0204	OTU_0204	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-99	54.48
+OTU_0205	OTU_0205	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	6e-68	69.03
+OTU_0205	OTU_0205	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	3e-66	69.68
+OTU_0205	OTU_0205	AFL86355  coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	3e-58	61.94
+OTU_0206	OTU_0206	AIA11259  coded_by=complement(1449..2357),organism=uncultured bacterium,definition=L1_beta_lactamase	2e-50	73.11
+OTU_0206	OTU_0206	AIA13505  coded_by=457..1356,organism=uncultured bacterium,definition=L1_beta_lactamase	2e-47	65.29
+OTU_0206	OTU_0206	AIA10834  coded_by=complement(915..1820),organism=uncultured bacterium,definition=L1_beta_lactamase	1e-45	71.07
+OTU_0207	OTU_0207	ABF42880  coded_by=complement(4588484..4589377),organism=Candidatus Koribacter versatilis Ellin345,definition=beta-lactamase-like protein	1e-63	59.78
+OTU_0207	OTU_0207	AEU34841  coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	3e-63	62.15
+OTU_0207	OTU_0207	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	4e-58	57.06
+OTU_0208	OTU_0208	EYR69422  coded_by=215663..216613,organism=Lysobacter capsici AZ78,definition=hypothetical protein	5e-66	58.62
+OTU_0208	OTU_0208	KWS02749  coded_by=complement(346633..347583),organism=Lysobacter capsici AZ78,definition=Metallo-beta-lactamase precursor	5e-66	58.62
+OTU_0208	OTU_0208	ALN86129  coded_by=3254590..3255540,organism=Lysobacter capsici,definition=metallo-beta-lactamase superfamily protein	5e-65	58.05
+OTU_0209	OTU_0209	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	1e-61	64.47
+OTU_0209	OTU_0209	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	1e-61	64.47
+OTU_0209	OTU_0209	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-60	60.49
+OTU_0210	OTU_0210	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	6e-79	52.57
+OTU_0210	OTU_0210	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	3e-72	51.20
+OTU_0210	OTU_0210	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	3e-72	51.20
+OTU_0211	OTU_0211	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	5e-57	62.58
+OTU_0211	OTU_0211	KTD01017  coded_by=22074..22922,organism=Fluoribacter gormanii,definition=Metallo-beta-lactamase L1 precursor	5e-54	62.50
+OTU_0211	OTU_0211	CAB96921  coded_by=1..849,organism=Fluoribacter gormanii,definition=FEZ-1 protein	5e-54	62.50
+OTU_0212	OTU_0212	AIA11440  coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	5e-99	62.18
+OTU_0212	OTU_0212	AIA10473  coded_by=complement(638..1555),organism=uncultured bacterium,definition=subclassB3_beta_lactamase	5e-96	61.95
+OTU_0212	OTU_0212	AIA12287  coded_by=1333..2220,organism=uncultured bacterium,definition=L1_beta_lactamase	7e-96	62.83
+OTU_0213	OTU_0213	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	9e-103	69.82
+OTU_0213	OTU_0213	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-95	64.29
+OTU_0213	OTU_0213	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-95	64.29
+OTU_0214	OTU_0214	AIW80551  coded_by=116..1045,organism=uncultured bacterium,definition=class B beta-lactamase, subclass B3	6e-68	61.67
+OTU_0214	OTU_0214	AIA12294  coded_by=complement(1310..2239),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6e-68	61.67
+OTU_0214	OTU_0214	AIA13529  coded_by=complement(3048..3929),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	2e-66	60.22
+OTU_0215	OTU_0215	AIA10847  coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	3e-65	63.10
+OTU_0215	OTU_0215	KTD12545  coded_by=364588..365460,organism=Legionella hackeliae,definition=Metallo-beta-lactamase L1 precursor	2e-64	63.69
+OTU_0215	OTU_0215	CEK11960  coded_by=3119511..3120383,organism=Legionella hackeliae,definition=Zn-beta-lactamase (FEZ-1 protein)	2e-64	63.69

@@ -1,1 +1,933 @@
+OTU_0001	OTU_0001	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	4e-157	67.41
+OTU_0001	OTU_0001	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	1e-154	65.81
+OTU_0001	OTU_0001	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	3e-154	67.73
+OTU_0002	OTU_0002	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-70	67.09
+OTU_0002	OTU_0002	AAX14941  coded_by=complement(631..1578),organism=Xanthomonas campestris pv. oryzae,definition=integrase	1e-66	63.29
+OTU_0002	OTU_0002	KLC65253  coded_by=complement(173055..174002),organism=Xanthomonas perforans,definition=recombinase XerD	1e-66	63.29
+OTU_0003	OTU_0003	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-170	77.14
+OTU_0003	OTU_0003	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	3e-151	64.24
+OTU_0003	OTU_0003	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-146	66.46
+OTU_0004	OTU_0004	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-152	68.15
+OTU_0004	OTU_0004	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-143	64.22
+OTU_0004	OTU_0004	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	6e-141	59.74
+OTU_0005	OTU_0005	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	4e-153	65.61
+OTU_0005	OTU_0005	ERN41592  coded_by=complement(62017..63021),organism=Rubidibacter lacunae KORDI 51-2,definition=integron integrase	5e-153	67.30
+OTU_0005	OTU_0005	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-151	65.71
+OTU_0006	OTU_0006	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	2e-164	70.79
+OTU_0006	OTU_0006	OAM52821  coded_by=1084683..1085672,organism=Methylovorus sp. MM1,definition=integrase	7e-161	67.61
+OTU_0006	OTU_0006	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	9e-161	69.21
+OTU_0007	OTU_0007	EFO80302  coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	4e-57	69.42
+OTU_0007	OTU_0007	KXS89122  coded_by=complement(50481..51449),organism=Microcystis aeruginosa NIES-88,definition=integrase	6e-56	64.46
+OTU_0007	OTU_0007	AKV68492  coded_by=complement(2991066..2992034),organism=Microcystis panniformis FACHB-1757,definition=Integron integrase IntIPac	2e-55	64.46
+OTU_0008	OTU_0008	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-101	74.02
+OTU_0008	OTU_0008	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	5e-92	62.75
+OTU_0008	OTU_0008	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	7e-91	65.69
+OTU_0009	OTU_0009	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-80	66.67
+OTU_0009	OTU_0009	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	5e-78	63.07
+OTU_0009	OTU_0009	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-77	64.20
+OTU_0010	OTU_0010	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	1e-178	74.52
+OTU_0010	OTU_0010	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-173	71.66
+OTU_0010	OTU_0010	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-173	71.66
+OTU_0011	OTU_0011	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-113	68.85
+OTU_0011	OTU_0011	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-106	63.93
+OTU_0011	OTU_0011	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-101	62.30
+OTU_0012	OTU_0012	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	1e-133	57.19
+OTU_0012	OTU_0012	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	3e-130	57.83
+OTU_0012	OTU_0012	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-127	59.74
+OTU_0013	OTU_0013	AJF06303  coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	3e-56	70.59
+OTU_0013	OTU_0013	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	6e-56	69.17
+OTU_0013	OTU_0013	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	4e-55	65.55
+OTU_0014	OTU_0014	BAM00165  coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	3e-82	75.00
+OTU_0014	OTU_0014	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	2e-81	71.25
+OTU_0014	OTU_0014	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	2e-81	71.25
+OTU_0015	OTU_0015	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	4e-116	59.72
+OTU_0015	OTU_0015	ACP39554  coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	4e-116	59.86
+OTU_0015	OTU_0015	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	9e-116	58.13
+OTU_0016	OTU_0016	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	0.0	76.75
+OTU_0016	OTU_0016	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	0.0	73.89
+OTU_0016	OTU_0016	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	0.0	73.89
+OTU_0017	OTU_0017	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	8e-72	60.00
+OTU_0017	OTU_0017	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	9e-70	59.44
+OTU_0017	OTU_0017	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	4e-68	57.54
+OTU_0018	OTU_0018	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-177	78.73
+OTU_0018	OTU_0018	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-149	69.94
+OTU_0018	OTU_0018	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-149	69.94
+OTU_0019	OTU_0019	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-150	68.47
+OTU_0019	OTU_0019	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	4e-148	62.74
+OTU_0019	OTU_0019	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	4e-147	64.65
+OTU_0020	OTU_0020	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	7e-66	60.53
+OTU_0020	OTU_0020	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	9e-66	64.05
+OTU_0020	OTU_0020	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	2e-64	61.84
+OTU_0021	OTU_0021	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-158	71.34
+OTU_0021	OTU_0021	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	5e-144	63.17
+OTU_0021	OTU_0021	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-144	64.76
+OTU_0022	OTU_0022	KQX98035  coded_by=1291660..1292667,organism=Rhodanobacter sp. Root480,definition=hypothetical protein	1e-167	73.65
+OTU_0022	OTU_0022	KOB11912  coded_by=8062..9024,organism=Xanthomonas campestris,definition=hypothetical protein	5e-156	68.15
+OTU_0022	OTU_0022	KOB25581  coded_by=8062..9024,organism=Xanthomonas campestris,definition=hypothetical protein	5e-156	68.15
+OTU_0023	OTU_0023	KQU70252  coded_by=1306..2334,organism=Rhizobacter sp. Root29,definition=integrase	6e-66	60.48
+OTU_0023	OTU_0023	KQW00050  coded_by=1342..2370,organism=Rhizobacter sp. Root1238,definition=integrase	6e-66	60.48
+OTU_0023	OTU_0023	CUH70226  coded_by=complement(1..1041),organism=Acinetobacter johnsonii,definition=Acinetobacter johnsonii In3-6 integron, strain LIM75	8e-66	58.79
+OTU_0024	OTU_0024	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	3e-100	65.69
+OTU_0024	OTU_0024	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	7e-99	64.71
+OTU_0024	OTU_0024	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	3e-98	65.69
+OTU_0025	OTU_0025	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-180	80.63
+OTU_0025	OTU_0025	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-151	70.57
+OTU_0025	OTU_0025	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-151	70.57
+OTU_0026	OTU_0026	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	8e-132	59.11
+OTU_0026	OTU_0026	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-130	64.86
+OTU_0026	OTU_0026	AMA08911  coded_by=complement(1254305..1255273),organism=Synechococcus sp. PCC 73109,definition=integrase	3e-127	59.42
+OTU_0027	OTU_0027	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	0.0	86.05
+OTU_0027	OTU_0027	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-160	65.29
+OTU_0027	OTU_0027	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	1e-157	69.43
+OTU_0028	OTU_0028	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	2e-128	59.55
+OTU_0028	OTU_0028	ACP39554  coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	6e-128	59.67
+OTU_0028	OTU_0028	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	6e-127	57.64
+OTU_0029	OTU_0029	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-141	63.33
+OTU_0029	OTU_0029	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	5e-140	64.45
+OTU_0029	OTU_0029	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	1e-139	64.45
+OTU_0030	OTU_0030	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	5e-146	64.52
+OTU_0030	OTU_0030	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	7e-145	60.77
+OTU_0030	OTU_0030	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-143	63.99
+OTU_0031	OTU_0031	KPA13726  coded_by=150..1130,organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	4e-141	68.56
+OTU_0031	OTU_0031	ETR65720  coded_by=199..>1143,organism=Candidatus Magnetoglobus multicellularis str. Araruama,definition=integron integrase	3e-140	70.83
+OTU_0031	OTU_0031	EFK12220  coded_by=complement(51846..52826),organism=delta proteobacterium NaphS2,definition=integron integrase	2e-131	70.83
+OTU_0032	OTU_0032	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	6e-100	72.63
+OTU_0032	OTU_0032	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	9e-100	72.11
+OTU_0032	OTU_0032	EXI78034  coded_by=120..1139,organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-96	71.96
+OTU_0033	OTU_0033	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-99	65.07
+OTU_0033	OTU_0033	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	7e-97	62.20
+OTU_0033	OTU_0033	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-95	62.20
+OTU_0034	OTU_0034	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	5e-172	72.06
+OTU_0034	OTU_0034	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	2e-169	72.38
+OTU_0034	OTU_0034	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	5e-168	70.38
+OTU_0035	OTU_0035	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	5e-149	62.86
+OTU_0035	OTU_0035	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-142	64.54
+OTU_0035	OTU_0035	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-142	64.54
 OTU_0036	OTU_0036	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	6e-90	64.74
+OTU_0036	OTU_0036	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	6e-89	63.68
+OTU_0036	OTU_0036	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-88	65.97
+OTU_0037	OTU_0037	KPA16574  coded_by=complement(377..>1492),organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	2e-122	62.26
+OTU_0037	OTU_0037	KPA17561  coded_by=24262..25758,organism=Candidatus Magnetomorum sp. HK-1,definition=integron integrase	1e-118	60.08
+OTU_0037	OTU_0037	AKJ63962  coded_by=806463..807767,organism=Verrucomicrobia bacterium L21-Fru-AB,definition=Tyrosine recombinase XerD	1e-116	62.02
+OTU_0038	OTU_0038	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	2e-170	71.02
+OTU_0038	OTU_0038	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	3e-167	70.06
+OTU_0038	OTU_0038	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	3e-167	70.06
+OTU_0039	OTU_0039	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	5e-162	68.79
+OTU_0039	OTU_0039	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	5e-160	67.52
+OTU_0039	OTU_0039	BAM00165  coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	2e-159	73.57
+OTU_0040	OTU_0040	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-134	61.78
+OTU_0040	OTU_0040	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	6e-134	58.10
+OTU_0040	OTU_0040	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	6e-132	62.10
+OTU_0041	OTU_0041	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	2e-151	69.11
+OTU_0041	OTU_0041	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	68.25
+OTU_0041	OTU_0041	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	68.25
+OTU_0042	OTU_0042	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8e-100	71.63
+OTU_0042	OTU_0042	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	9e-85	56.74
+OTU_0042	OTU_0042	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	1e-84	59.53
+OTU_0043	OTU_0043	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	0.0	75.80
+OTU_0043	OTU_0043	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	1e-178	72.93
+OTU_0043	OTU_0043	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	1e-178	72.93
+OTU_0044	OTU_0044	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-161	74.44
+OTU_0044	OTU_0044	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-140	63.90
+OTU_0044	OTU_0044	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	9e-140	64.86
+OTU_0045	OTU_0045	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	5e-167	74.09
+OTU_0045	OTU_0045	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	1e-162	73.02
+OTU_0045	OTU_0045	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-158	66.46
+OTU_0046	OTU_0046	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	1e-131	60.19
+OTU_0046	OTU_0046	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-131	59.35
+OTU_0046	OTU_0046	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-131	59.35
+OTU_0047	OTU_0047	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	2e-89	60.95
+OTU_0047	OTU_0047	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	8e-89	59.81
+OTU_0047	OTU_0047	BAV32760  coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	9e-87	61.14
+OTU_0048	OTU_0048	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-165	68.89
+OTU_0048	OTU_0048	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-165	68.89
+OTU_0048	OTU_0048	EXI70581  coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	6e-161	69.13
+OTU_0049	OTU_0049	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	4e-87	64.29
+OTU_0049	OTU_0049	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	4e-87	64.29
+OTU_0049	OTU_0049	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	8e-87	60.41
+OTU_0050	OTU_0050	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	2e-153	67.09
+OTU_0050	OTU_0050	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	1e-151	66.03
+OTU_0050	OTU_0050	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	2e-149	66.46
+OTU_0051	OTU_0051	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-140	78.35
+OTU_0051	OTU_0051	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-115	69.44
+OTU_0051	OTU_0051	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-115	69.44
+OTU_0052	OTU_0052	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-120	79.37
+OTU_0052	OTU_0052	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	4e-98	62.78
+OTU_0052	OTU_0052	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	3e-96	59.64
+OTU_0053	OTU_0053	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-148	66.46
+OTU_0053	OTU_0053	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-148	66.46
+OTU_0053	OTU_0053	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	6e-148	65.40
+OTU_0054	OTU_0054	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-135	60.52
+OTU_0054	OTU_0054	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-135	60.52
+OTU_0054	OTU_0054	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-135	60.06
+OTU_0055	OTU_0055	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	6e-159	66.56
+OTU_0055	OTU_0055	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	4e-156	65.61
+OTU_0055	OTU_0055	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	6e-156	65.61
+OTU_0056	OTU_0056	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	1e-164	85.55
+OTU_0056	OTU_0056	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	8e-120	61.72
+OTU_0056	OTU_0056	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	2e-119	65.62
+OTU_0057	OTU_0057	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	2e-110	81.42
+OTU_0057	OTU_0057	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	2e-109	78.14
+OTU_0057	OTU_0057	AMV72606  coded_by=complement(2403947..2404945),organism=Desulfuromonas sp. DDH964,definition=integrase domain-containing protein	4e-105	78.69
+OTU_0058	OTU_0058	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	8e-157	67.52
+OTU_0058	OTU_0058	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	4e-155	65.61
+OTU_0058	OTU_0058	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	4e-155	65.61
+OTU_0059	OTU_0059	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	8e-122	64.39
+OTU_0059	OTU_0059	EXI64880  coded_by=36185..37201,organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	1e-120	64.03
+OTU_0059	OTU_0059	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-120	64.03
+OTU_0060	OTU_0060	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-85	69.61
+OTU_0060	OTU_0060	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-80	67.40
+OTU_0060	OTU_0060	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	6e-79	62.98
+OTU_0061	OTU_0061	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	2e-166	71.75
+OTU_0061	OTU_0061	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-162	66.88
+OTU_0061	OTU_0061	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-159	67.62
+OTU_0062	OTU_0062	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	1e-124	79.25
+OTU_0062	OTU_0062	GAO20420  coded_by=19788..20786,organism=Alicycliphilus sp. B1,definition=IntI1 protein	6e-119	77.83
+OTU_0062	OTU_0062	GAO27069  coded_by=541190..542188,organism=Alicycliphilus sp. B1,definition=IntI1 protein	6e-119	77.83
+OTU_0063	OTU_0063	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-177	79.68
+OTU_0063	OTU_0063	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	70.25
+OTU_0063	OTU_0063	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	70.25
+OTU_0064	OTU_0064	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	4e-79	67.63
+OTU_0064	OTU_0064	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	1e-77	63.01
+OTU_0064	OTU_0064	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	1e-77	62.43
+OTU_0065	OTU_0065	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	8e-132	59.42
+OTU_0065	OTU_0065	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-129	64.54
+OTU_0065	OTU_0065	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	4e-127	58.15
+OTU_0066	OTU_0066	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	2e-176	74.20
+OTU_0066	OTU_0066	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-175	73.57
+OTU_0066	OTU_0066	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-175	73.57
+OTU_0067	OTU_0067	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-139	64.59
+OTU_0067	OTU_0067	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	2e-130	62.62
+OTU_0067	OTU_0067	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-129	60.98
+OTU_0068	OTU_0068	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8e-120	68.08
+OTU_0068	OTU_0068	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	1e-109	63.08
+OTU_0068	OTU_0068	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	2e-108	60.00
+OTU_0069	OTU_0069	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-63	59.87
+OTU_0069	OTU_0069	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	2e-60	58.55
+OTU_0069	OTU_0069	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-59	60.53
+OTU_0070	OTU_0070	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-158	68.79
+OTU_0070	OTU_0070	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	4e-148	63.69
+OTU_0070	OTU_0070	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	3e-146	60.63
+OTU_0071	OTU_0071	AOG23372  coded_by=complement(3284573..3285601),organism=Acidovorax sp. RAC01,definition=integron integrase family protein	1e-61	61.25
+OTU_0071	OTU_0071	KRH98565  coded_by=complement(160738..161769),organism=Curvibacter sp. PAE-UM,definition=integrase	2e-61	61.88
+OTU_0071	OTU_0071	AAO32355  coded_by=complement(8..1048),organism=Klebsiella pneumoniae,definition=IntI3 integrase	1e-60	60.62
+OTU_0072	OTU_0072	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	4e-164	71.02
+OTU_0072	OTU_0072	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-160	66.03
+OTU_0072	OTU_0072	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-159	68.15
+OTU_0073	OTU_0073	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	1e-141	62.89
+OTU_0073	OTU_0073	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	1e-136	58.68
+OTU_0073	OTU_0073	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	1e-136	58.92
+OTU_0074	OTU_0074	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-124	62.17
+OTU_0074	OTU_0074	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	2e-123	60.86
+OTU_0074	OTU_0074	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	8e-121	58.88
+OTU_0075	OTU_0075	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	4e-141	61.17
+OTU_0075	OTU_0075	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	4e-141	61.17
+OTU_0075	OTU_0075	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	3e-137	59.74
+OTU_0076	OTU_0076	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	5e-58	54.55
+OTU_0076	OTU_0076	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-58	58.06
+OTU_0076	OTU_0076	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	1e-57	55.48
+OTU_0077	OTU_0077	BAO45626  coded_by=2968228..2969217,organism=Thiolapillus brandeum,definition=integron integrase	1e-161	70.79
+OTU_0077	OTU_0077	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	3e-158	69.11
+OTU_0077	OTU_0077	ALP54174  coded_by=3095784..3096899,organism=Gammaproteobacteria bacterium NRL1,definition=integrase	2e-152	65.29
+OTU_0078	OTU_0078	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-167	74.52
+OTU_0078	OTU_0078	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	1e-146	66.98
+OTU_0078	OTU_0078	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-145	65.71
+OTU_0079	OTU_0079	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	3e-86	69.02
+OTU_0079	OTU_0079	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-83	69.27
+OTU_0079	OTU_0079	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	9e-83	69.27
+OTU_0080	OTU_0080	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-127	62.25
+OTU_0080	OTU_0080	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-121	59.93
+OTU_0080	OTU_0080	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-121	59.93
+OTU_0081	OTU_0081	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-154	68.47
+OTU_0081	OTU_0081	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	5e-145	60.70
+OTU_0081	OTU_0081	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	1e-144	63.26
+OTU_0082	OTU_0082	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-93	57.45
+OTU_0082	OTU_0082	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-93	57.45
+OTU_0082	OTU_0082	OBS09593  coded_by=complement(609566..610579),organism=Acidihalobacter prosperus,definition=site-specific tyrosine recombinase XerD	7e-92	56.17
+OTU_0083	OTU_0083	KPK49616  coded_by=complement(4552..5538),organism=Thiotrichales bacterium SG8_50,definition=integrase	9e-80	62.29
+OTU_0083	OTU_0083	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	7e-78	64.20
+OTU_0083	OTU_0083	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	2e-76	63.64
+OTU_0084	OTU_0084	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	4e-146	74.62
+OTU_0084	OTU_0084	ACF13486  coded_by=1210265..1211332,organism=Chloroherpeton thalassium ATCC 35110,definition=integron integrase	6e-141	70.38
+OTU_0084	OTU_0084	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	2e-138	70.38
+OTU_0085	OTU_0085	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-151	65.08
+OTU_0085	OTU_0085	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-151	65.08
+OTU_0085	OTU_0085	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	9e-151	62.03
+OTU_0086	OTU_0086	BAO45626  coded_by=2968228..2969217,organism=Thiolapillus brandeum,definition=integron integrase	2e-146	66.77
+OTU_0086	OTU_0086	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	4e-144	65.06
+OTU_0086	OTU_0086	ALP54174  coded_by=3095784..3096899,organism=Gammaproteobacteria bacterium NRL1,definition=integrase	6e-144	63.58
+OTU_0087	OTU_0087	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	5e-119	62.40
+OTU_0087	OTU_0087	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	7e-119	63.67
+OTU_0087	OTU_0087	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	8e-119	62.40
+OTU_0088	OTU_0088	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-67	65.81
+OTU_0088	OTU_0088	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	2e-64	63.23
+OTU_0088	OTU_0088	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-64	61.94
+OTU_0089	OTU_0089	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-91	65.35
+OTU_0089	OTU_0089	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-91	65.35
+OTU_0089	OTU_0089	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	4e-89	60.89
+OTU_0090	OTU_0090	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	6e-133	60.71
+OTU_0090	OTU_0090	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	6e-133	60.71
+OTU_0090	OTU_0090	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-132	58.77
+OTU_0091	OTU_0091	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	5e-76	64.71
+OTU_0091	OTU_0091	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	1e-75	64.53
+OTU_0091	OTU_0091	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	2e-75	63.95
+OTU_0092	OTU_0092	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	1e-117	69.06
+OTU_0092	OTU_0092	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	1e-116	69.06
+OTU_0092	OTU_0092	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	4e-112	64.29
+OTU_0093	OTU_0093	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	0.0	77.92
+OTU_0093	OTU_0093	KLR58890  coded_by=complement(226701..227699),organism=Diaphorobacter sp. J5-51,definition=integrase	5e-177	77.27
+OTU_0093	OTU_0093	ACM34149  coded_by=complement(2889904..2890902),organism=Acidovorax ebreus TPSY,definition=integron integrase	6e-177	77.27
+OTU_0094	OTU_0094	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-148	65.51
+OTU_0094	OTU_0094	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-148	65.51
+OTU_0094	OTU_0094	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-147	62.66
+OTU_0095	OTU_0095	ADH87097  coded_by=2829867..2831264,organism=Desulfurivibrio alkaliphilus AHT2,definition=integron integrase	4e-72	67.70
+OTU_0095	OTU_0095	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	7e-69	65.84
+OTU_0095	OTU_0095	EGV33849  coded_by=3305..4600,organism=Thiorhodococcus drewsii AZ1,definition=integron integrase	4e-67	64.60
+OTU_0096	OTU_0096	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	4e-71	58.66
+OTU_0096	OTU_0096	BAV32760  coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	2e-70	60.56
+OTU_0096	OTU_0096	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	3e-69	58.66
+OTU_0097	OTU_0097	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	3e-93	63.13
+OTU_0097	OTU_0097	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-92	66.82
+OTU_0097	OTU_0097	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	6e-92	61.29
+OTU_0098	OTU_0098	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-147	61.46
+OTU_0098	OTU_0098	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-146	63.49
+OTU_0098	OTU_0098	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-145	60.51
+OTU_0099	OTU_0099	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	6e-70	61.35
+OTU_0099	OTU_0099	EFO80302  coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	3e-68	61.96
+OTU_0099	OTU_0099	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-68	60.12
+OTU_0100	OTU_0100	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-138	64.76
+OTU_0100	OTU_0100	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	6e-134	60.00
+OTU_0100	OTU_0100	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	3e-133	62.74
+OTU_0101	OTU_0101	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-161	72.29
+OTU_0101	OTU_0101	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	4e-140	62.10
+OTU_0101	OTU_0101	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-138	63.38
+OTU_0102	OTU_0102	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-142	62.38
+OTU_0102	OTU_0102	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-140	66.12
+OTU_0102	OTU_0102	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-140	66.12
+OTU_0103	OTU_0103	KPA16574  coded_by=complement(377..>1492),organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	5e-102	64.59
+OTU_0103	OTU_0103	KPA17561  coded_by=24262..25758,organism=Candidatus Magnetomorum sp. HK-1,definition=integron integrase	3e-99	63.16
+OTU_0103	OTU_0103	CCK80741  coded_by=complement(3035676..3037004),organism=Desulfobacula toluolica Tol2,definition=integrase, integron-type	3e-93	59.05
+OTU_0104	OTU_0104	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-97	63.94
+OTU_0104	OTU_0104	EFO80302  coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	1e-94	64.42
+OTU_0104	OTU_0104	AMA08911  coded_by=complement(1254305..1255273),organism=Synechococcus sp. PCC 73109,definition=integrase	1e-92	62.98
+OTU_0105	OTU_0105	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-97	60.54
+OTU_0105	OTU_0105	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	6e-97	61.43
+OTU_0105	OTU_0105	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-92	60.63
+OTU_0106	OTU_0106	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-70	67.92
+OTU_0106	OTU_0106	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	4e-68	63.52
+OTU_0106	OTU_0106	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	1e-67	62.89
+OTU_0107	OTU_0107	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	1e-73	63.16
+OTU_0107	OTU_0107	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-73	65.50
+OTU_0107	OTU_0107	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	3e-73	66.67
+OTU_0108	OTU_0108	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	2e-67	66.23
+OTU_0108	OTU_0108	KKW67536  coded_by=complement(81637..82653),organism=Lampropedia sp. CT6,definition=integrase	2e-66	65.58
+OTU_0108	OTU_0108	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	2e-66	64.94
+OTU_0109	OTU_0109	ACP39554  coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	5e-55	58.49
+OTU_0109	OTU_0109	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	1e-52	59.35
+OTU_0109	OTU_0109	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	2e-50	57.42
+OTU_0110	OTU_0110	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-107	81.38
+OTU_0110	OTU_0110	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	7e-90	64.17
+OTU_0110	OTU_0110	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	4e-89	67.91
+OTU_0111	OTU_0111	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-166	73.65
+OTU_0111	OTU_0111	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	5e-147	62.74
+OTU_0111	OTU_0111	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-144	59.37
+OTU_0112	OTU_0112	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-156	66.67
+OTU_0112	OTU_0112	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-156	66.67
+OTU_0112	OTU_0112	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-154	63.69
+OTU_0113	OTU_0113	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	3e-78	67.86
+OTU_0113	OTU_0113	KFB66857  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	3e-78	67.86
+OTU_0113	OTU_0113	OBS09593  coded_by=complement(609566..610579),organism=Acidihalobacter prosperus,definition=site-specific tyrosine recombinase XerD	8e-78	68.45
+OTU_0114	OTU_0114	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	3e-73	63.69
+OTU_0114	OTU_0114	KRW67595  coded_by=complement(134572..135534),organism=Pseudomonas sp. TTU2014-096BSC,definition=integrase	5e-73	60.69
+OTU_0114	OTU_0114	AEK77418  coded_by=complement(1522..2484),organism=Pseudomonas stutzeri,definition=integrase	6e-73	60.69
+OTU_0115	OTU_0115	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	2e-103	77.89
+OTU_0115	OTU_0115	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	9e-103	77.37
+OTU_0115	OTU_0115	AND69454  coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	2e-102	76.84
+OTU_0116	OTU_0116	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	1e-109	75.68
+OTU_0116	OTU_0116	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	5e-109	77.30
+OTU_0116	OTU_0116	AMV72606  coded_by=complement(2403947..2404945),organism=Desulfuromonas sp. DDH964,definition=integrase domain-containing protein	3e-105	76.22
+OTU_0117	OTU_0117	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	3e-88	62.96
+OTU_0117	OTU_0117	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-87	62.96
+OTU_0117	OTU_0117	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	7e-87	58.53
+OTU_0118	OTU_0118	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8e-76	71.43
+OTU_0118	OTU_0118	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-71	65.22
+OTU_0118	OTU_0118	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-70	65.84
+OTU_0119	OTU_0119	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	7e-140	60.19
+OTU_0119	OTU_0119	AND69454  coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	2e-139	60.19
+OTU_0119	OTU_0119	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	2e-138	63.06
+OTU_0120	OTU_0120	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-177	77.14
+OTU_0120	OTU_0120	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-147	67.72
+OTU_0120	OTU_0120	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-147	67.72
+OTU_0121	OTU_0121	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	4e-76	62.43
+OTU_0121	OTU_0121	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	8e-76	69.23
+OTU_0121	OTU_0121	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	1e-74	64.16
+OTU_0122	OTU_0122	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	3e-140	62.10
+OTU_0122	OTU_0122	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	2e-138	62.10
+OTU_0122	OTU_0122	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	4e-138	63.61
+OTU_0123	OTU_0123	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	4e-145	77.11
+OTU_0123	OTU_0123	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	8e-139	74.60
+OTU_0123	OTU_0123	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	8e-139	74.60
+OTU_0124	OTU_0124	KGM56941  coded_by=complement(104118..105065),organism=Lysobacter arseniciresistens ZS79,definition=hypothetical protein	5e-140	75.10
+OTU_0124	OTU_0124	KZC38994  coded_by=211..1206,organism=Rhodanobacter sp. FW104-R5,definition=integrase	2e-138	75.89
+OTU_0124	OTU_0124	KRG39908  coded_by=377..1351,organism=Stenotrophomonas maltophilia,definition=hypothetical protein	9e-133	71.15
+OTU_0125	OTU_0125	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	1e-169	74.12
+OTU_0125	OTU_0125	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	8e-169	73.80
+OTU_0125	OTU_0125	EIL89190  coded_by=complement(40777..41748),organism=Rhodanobacter spathiphylli B39,definition=putative integrase	6e-168	73.48
+OTU_0126	OTU_0126	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-154	65.92
+OTU_0126	OTU_0126	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-149	64.65
+OTU_0126	OTU_0126	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-149	64.65
+OTU_0127	OTU_0127	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-118	79.26
+OTU_0127	OTU_0127	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	6e-97	63.89
+OTU_0127	OTU_0127	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	9e-95	65.74
+OTU_0128	OTU_0128	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	3e-84	60.29
+OTU_0128	OTU_0128	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	3e-84	60.29
+OTU_0128	OTU_0128	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-82	56.25
+OTU_0129	OTU_0129	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-120	63.60
+OTU_0129	OTU_0129	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	7e-115	54.80
+OTU_0129	OTU_0129	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	5e-112	60.07
+OTU_0130	OTU_0130	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-107	68.30
+OTU_0130	OTU_0130	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	2e-103	64.13
+OTU_0130	OTU_0130	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	1e-100	62.78
+OTU_0131	OTU_0131	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-88	63.41
+OTU_0131	OTU_0131	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-88	63.41
+OTU_0131	OTU_0131	AEK77418  coded_by=complement(1522..2484),organism=Pseudomonas stutzeri,definition=integrase	9e-87	63.73
+OTU_0132	OTU_0132	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	3e-149	64.97
+OTU_0132	OTU_0132	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	5e-149	63.38
+OTU_0132	OTU_0132	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	2e-148	63.69
+OTU_0133	OTU_0133	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	2e-132	78.02
+OTU_0133	OTU_0133	CDS50120  coded_by=complement(638659..639732),organism=Polaromonas sp. CG9_12,definition=Integron integrase IntIPac	7e-128	76.52
+OTU_0133	OTU_0133	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	1e-125	72.84
+OTU_0134	OTU_0134	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-66	62.89
+OTU_0134	OTU_0134	KPK73854  coded_by=complement(2586..3605),organism=Acidithiobacillales bacterium SM23_46,definition=integrase	2e-65	62.58
+OTU_0134	OTU_0134	KPL27126  coded_by=4786..5805,organism=Acidithiobacillales bacterium SM1_46,definition=integrase	2e-65	62.58
+OTU_0135	OTU_0135	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	1e-153	65.92
+OTU_0135	OTU_0135	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	1e-152	65.29
+OTU_0135	OTU_0135	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	6e-151	64.33
+OTU_0136	OTU_0136	BAP78378  coded_by=1325531..1326496,organism=Pseudomonas sp. MT-1,definition=integron integrase	1e-51	52.60
+OTU_0136	OTU_0136	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	1e-49	51.30
+OTU_0136	OTU_0136	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-48	52.29
+OTU_0137	OTU_0137	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	5e-62	63.64
+OTU_0137	OTU_0137	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	5e-58	57.79
+OTU_0137	OTU_0137	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-57	57.05
+OTU_0138	OTU_0138	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	2e-74	66.27
+OTU_0138	OTU_0138	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	5e-73	64.46
+OTU_0138	OTU_0138	BAM00921  coded_by=complement(3578569..3579558),organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	1e-72	66.87
+OTU_0139	OTU_0139	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	5e-172	77.35
+OTU_0139	OTU_0139	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-141	64.72
+OTU_0139	OTU_0139	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-141	64.72
+OTU_0140	OTU_0140	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-99	71.05
+OTU_0140	OTU_0140	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-99	71.05
+OTU_0140	OTU_0140	EXI64880  coded_by=36185..37201,organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	7e-95	70.53
+OTU_0141	OTU_0141	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	8e-92	68.82
+OTU_0141	OTU_0141	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	3e-91	70.97
+OTU_0141	OTU_0141	EFO80302  coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	4e-91	67.20
+OTU_0142	OTU_0142	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	1e-150	65.08
+OTU_0142	OTU_0142	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	2e-150	65.40
+OTU_0142	OTU_0142	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-150	62.42
+OTU_0143	OTU_0143	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	3e-62	59.75
+OTU_0143	OTU_0143	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	3e-62	59.75
+OTU_0143	OTU_0143	AJF06303  coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	4e-62	62.26
+OTU_0144	OTU_0144	ACF13486  coded_by=1210265..1211332,organism=Chloroherpeton thalassium ATCC 35110,definition=integron integrase	4e-57	52.15
+OTU_0144	OTU_0144	AMV72606  coded_by=complement(2403947..2404945),organism=Desulfuromonas sp. DDH964,definition=integrase domain-containing protein	8e-57	53.99
+OTU_0144	OTU_0144	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	1e-56	58.28
+OTU_0145	OTU_0145	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	9e-142	59.68
+OTU_0145	OTU_0145	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	2e-141	61.15
+OTU_0145	OTU_0145	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	3e-141	61.27
+OTU_0146	OTU_0146	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	1e-76	65.27
+OTU_0146	OTU_0146	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	1e-75	65.87
+OTU_0146	OTU_0146	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	3e-75	67.07
+OTU_0147	OTU_0147	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	4e-109	66.12
+OTU_0147	OTU_0147	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	5e-107	61.57
+OTU_0147	OTU_0147	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-104	63.64
+OTU_0148	OTU_0148	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	2e-131	60.13
+OTU_0148	OTU_0148	KFB66857  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	2e-131	60.13
+OTU_0148	OTU_0148	EXI64880  coded_by=36185..37201,organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	1e-130	60.45
+OTU_0149	OTU_0149	KQX98035  coded_by=1291660..1292667,organism=Rhodanobacter sp. Root480,definition=hypothetical protein	5e-163	72.06
+OTU_0149	OTU_0149	ADP05693  coded_by=complement(<1..957),organism=uncultured microorganism,definition=putative integrase	1e-160	73.42
+OTU_0149	OTU_0149	ACP39543  coded_by=complement(<1..957),organism=uncultured microorganism,definition=putative integron integrase	4e-155	71.76
+OTU_0150	OTU_0150	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	3e-157	67.87
+OTU_0150	OTU_0150	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	3e-157	67.87
+OTU_0150	OTU_0150	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	3e-152	65.57
+OTU_0151	OTU_0151	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	1e-156	68.15
+OTU_0151	OTU_0151	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	8e-156	65.61
+OTU_0151	OTU_0151	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	2e-154	66.88
+OTU_0152	OTU_0152	AND69454  coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	2e-104	78.31
+OTU_0152	OTU_0152	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	7e-100	77.78
+OTU_0152	OTU_0152	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	3e-99	77.25
+OTU_0153	OTU_0153	CDH43256  coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	1e-180	75.16
+OTU_0153	OTU_0153	CDP81480  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-179	74.20
+OTU_0153	OTU_0153	CDQ09425  coded_by=69161..70144,organism=Acidithiobacillus ferrivorans,definition=Integrase/recombinase	4e-179	74.20
+OTU_0154	OTU_0154	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-82	65.76
+OTU_0154	OTU_0154	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-82	65.76
+OTU_0154	OTU_0154	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	2e-80	65.36
+OTU_0155	OTU_0155	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	1e-69	61.54
+OTU_0155	OTU_0155	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	2e-66	57.14
+OTU_0155	OTU_0155	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	2e-66	57.14
+OTU_0156	OTU_0156	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8e-105	70.85
+OTU_0156	OTU_0156	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-100	67.26
+OTU_0156	OTU_0156	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-100	67.26
+OTU_0157	OTU_0157	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-158	68.47
+OTU_0157	OTU_0157	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	3e-144	63.38
+OTU_0157	OTU_0157	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	6e-144	59.68
+OTU_0158	OTU_0158	KPA13726  coded_by=150..1130,organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	6e-115	58.11
+OTU_0158	OTU_0158	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-112	61.89
+OTU_0158	OTU_0158	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-112	61.89
+OTU_0159	OTU_0159	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-147	62.97
+OTU_0159	OTU_0159	BAV32760  coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	3e-146	64.13
+OTU_0159	OTU_0159	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	4e-145	63.49
+OTU_0160	OTU_0160	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-123	63.83
+OTU_0160	OTU_0160	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-121	62.41
+OTU_0160	OTU_0160	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-121	62.41
+OTU_0161	OTU_0161	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-145	63.49
+OTU_0161	OTU_0161	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-145	63.49
+OTU_0161	OTU_0161	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	5e-144	62.66
+OTU_0162	OTU_0162	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-128	63.53
+OTU_0162	OTU_0162	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	6e-127	66.54
+OTU_0162	OTU_0162	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	1e-126	65.04
+OTU_0163	OTU_0163	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	2e-169	72.84
+OTU_0163	OTU_0163	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	1e-166	72.52
+OTU_0163	OTU_0163	BAV32760  coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	6e-164	71.25
+OTU_0164	OTU_0164	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-74	66.27
+OTU_0164	OTU_0164	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-74	66.27
+OTU_0164	OTU_0164	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	4e-74	64.24
+OTU_0165	OTU_0165	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-72	64.64
+OTU_0165	OTU_0165	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	1e-68	57.46
+OTU_0165	OTU_0165	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	1e-68	57.46
+OTU_0166	OTU_0166	GAO20420  coded_by=19788..20786,organism=Alicycliphilus sp. B1,definition=IntI1 protein	4e-80	61.86
+OTU_0166	OTU_0166	GAO27069  coded_by=541190..542188,organism=Alicycliphilus sp. B1,definition=IntI1 protein	4e-80	61.86
+OTU_0166	OTU_0166	GAO27126  coded_by=10702..11700,organism=Alicycliphilus sp. B1,definition=IntI1 protein	4e-80	61.86
+OTU_0167	OTU_0167	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-60	61.39
+OTU_0167	OTU_0167	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-60	61.39
+OTU_0167	OTU_0167	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	1e-60	61.15
+OTU_0168	OTU_0168	CBI10811  coded_by=complement(390..1379),organism=mine drainage metagenome,definition=Integrase/recombinase (E2 protein)	1e-87	58.80
+OTU_0168	OTU_0168	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-86	55.56
+OTU_0168	OTU_0168	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	3e-85	58.33
+OTU_0169	OTU_0169	EXI65243  coded_by=complement(53796..54833),organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	5e-68	60.57
+OTU_0169	OTU_0169	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	7e-68	57.30
+OTU_0169	OTU_0169	BAP78378  coded_by=1325531..1326496,organism=Pseudomonas sp. MT-1,definition=integron integrase	7e-67	56.74
+OTU_0170	OTU_0170	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	2e-89	57.75
+OTU_0170	OTU_0170	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	1e-88	61.50
+OTU_0170	OTU_0170	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	3e-87	59.15
+OTU_0171	OTU_0171	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-79	68.00
+OTU_0171	OTU_0171	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	7e-74	63.64
+OTU_0171	OTU_0171	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	3e-73	61.93
+OTU_0172	OTU_0172	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	9e-156	72.22
+OTU_0172	OTU_0172	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	3e-153	72.52
+OTU_0172	OTU_0172	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	8e-148	67.44
+OTU_0173	OTU_0173	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	7e-81	64.57
+OTU_0173	OTU_0173	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	4e-78	66.28
+OTU_0173	OTU_0173	OBS09593  coded_by=complement(609566..610579),organism=Acidihalobacter prosperus,definition=site-specific tyrosine recombinase XerD	1e-77	64.74
+OTU_0174	OTU_0174	EIL89190  coded_by=complement(40777..41748),organism=Rhodanobacter spathiphylli B39,definition=putative integrase	2e-102	80.77
+OTU_0174	OTU_0174	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	4e-101	80.22
+OTU_0174	OTU_0174	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	4e-101	80.22
+OTU_0175	OTU_0175	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-157	67.94
+OTU_0175	OTU_0175	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	9e-150	65.51
+OTU_0175	OTU_0175	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	9e-150	65.51
+OTU_0176	OTU_0176	ABB33221  coded_by=3390705..3391709,organism=Geobacter metallireducens GS-15,definition=integron integrase	5e-111	70.67
+OTU_0176	OTU_0176	EHP84654  coded_by=1483..2487,organism=Geobacter metallireducens RCH3,definition=integron integrase	5e-111	70.67
+OTU_0176	OTU_0176	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-110	72.60
+OTU_0177	OTU_0177	EXI78034  coded_by=120..1139,organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-160	72.20
+OTU_0177	OTU_0177	KFB74853  coded_by=120..1139,organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-160	72.20
+OTU_0177	OTU_0177	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	4e-160	71.88
+OTU_0178	OTU_0178	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	3e-126	59.87
+OTU_0178	OTU_0178	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	1e-124	60.54
+OTU_0178	OTU_0178	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-123	57.53
+OTU_0179	OTU_0179	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	2e-74	65.43
+OTU_0179	OTU_0179	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	9e-73	66.05
+OTU_0179	OTU_0179	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-71	62.96
+OTU_0180	OTU_0180	KRF02249  coded_by=528287..529261,organism=Frateuria sp. Soil773,definition=integrase	3e-91	79.63
+OTU_0180	OTU_0180	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	7e-91	80.25
+OTU_0180	OTU_0180	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	3e-90	79.63
+OTU_0181	OTU_0181	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-158	68.79
+OTU_0181	OTU_0181	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	2e-130	59.24
+OTU_0181	OTU_0181	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	4e-129	57.01
+OTU_0182	OTU_0182	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	3e-83	60.20
+OTU_0182	OTU_0182	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-83	60.20
+OTU_0182	OTU_0182	KPK73854  coded_by=complement(2586..3605),organism=Acidithiobacillales bacterium SM23_46,definition=integrase	2e-81	58.46
+OTU_0183	OTU_0183	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	3e-164	73.18
+OTU_0183	OTU_0183	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	1e-156	69.75
+OTU_0183	OTU_0183	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-152	64.24
+OTU_0184	OTU_0184	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	8e-94	76.70
+OTU_0184	OTU_0184	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	8e-88	69.89
+OTU_0184	OTU_0184	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-84	68.75
+OTU_0185	OTU_0185	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	3e-72	67.53
+OTU_0185	OTU_0185	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	2e-71	66.88
+OTU_0185	OTU_0185	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-71	65.58
+OTU_0186	OTU_0186	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-141	74.63
+OTU_0186	OTU_0186	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-115	65.43
+OTU_0186	OTU_0186	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-115	65.43
+OTU_0187	OTU_0187	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	8e-104	61.00
+OTU_0187	OTU_0187	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	6e-103	59.69
+OTU_0187	OTU_0187	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	3e-100	57.53
+OTU_0188	OTU_0188	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	1e-47	66.04
+OTU_0188	OTU_0188	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	4e-47	63.89
+OTU_0188	OTU_0188	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	4e-47	63.89
+OTU_0189	OTU_0189	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	9e-128	65.70
+OTU_0189	OTU_0189	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-127	60.43
+OTU_0189	OTU_0189	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	2e-126	64.26
+OTU_0190	OTU_0190	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	7e-131	57.47
+OTU_0190	OTU_0190	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	8e-131	57.47
+OTU_0190	OTU_0190	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-130	57.93
+OTU_0191	OTU_0191	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-152	68.27
+OTU_0191	OTU_0191	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-152	68.27
+OTU_0191	OTU_0191	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	7e-148	64.74
+OTU_0192	OTU_0192	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	2e-161	68.79
+OTU_0192	OTU_0192	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	2e-161	68.79
+OTU_0192	OTU_0192	ESA38923  coded_by=complement(215..1180),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	1e-160	69.65
+OTU_0193	OTU_0193	ADE55922  coded_by=3515629..3516960,organism=Coraliomargarita akajimensis DSM 45221,definition=integron integrase	3e-73	57.67
+OTU_0193	OTU_0193	KKR95725  coded_by=1614..2900,organism=Parcubacteria (Uhrbacteria) bacterium GW2011_GWF2_41_16,definition=hypothetical protein	1e-72	57.45
+OTU_0193	OTU_0193	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	5e-72	62.77
+OTU_0194	OTU_0194	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	2e-152	66.88
+OTU_0194	OTU_0194	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	4e-149	65.61
+OTU_0194	OTU_0194	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-147	63.06
+OTU_0195	OTU_0195	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-122	67.45
+OTU_0195	OTU_0195	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-122	67.45
+OTU_0195	OTU_0195	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-122	66.02
+OTU_0196	OTU_0196	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	6e-108	76.59
+OTU_0196	OTU_0196	KQZ78354  coded_by=2532..3503,organism=Rhodanobacter sp. Root561,definition=integrase	2e-107	76.10
+OTU_0196	OTU_0196	AND69454  coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	4e-107	73.56
+OTU_0197	OTU_0197	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	2e-72	64.42
+OTU_0197	OTU_0197	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	9e-72	64.42
+OTU_0197	OTU_0197	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	1e-66	66.05
+OTU_0198	OTU_0198	CBI10811  coded_by=complement(390..1379),organism=mine drainage metagenome,definition=Integrase/recombinase (E2 protein)	4e-137	61.44
+OTU_0198	OTU_0198	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	2e-135	58.77
+OTU_0198	OTU_0198	AEK77418  coded_by=complement(1522..2484),organism=Pseudomonas stutzeri,definition=integrase	9e-135	61.17
+OTU_0199	OTU_0199	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	4e-40	52.17
+OTU_0199	OTU_0199	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	3e-39	61.40
+OTU_0199	OTU_0199	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-37	57.66
+OTU_0200	OTU_0200	ABB33221  coded_by=3390705..3391709,organism=Geobacter metallireducens GS-15,definition=integron integrase	4e-150	65.71
+OTU_0200	OTU_0200	EHP84654  coded_by=1483..2487,organism=Geobacter metallireducens RCH3,definition=integron integrase	4e-150	65.71
+OTU_0200	OTU_0200	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	3e-144	64.13
+OTU_0201	OTU_0201	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	1e-124	68.27
+OTU_0201	OTU_0201	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	4e-124	67.87
+OTU_0201	OTU_0201	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-119	66.27
+OTU_0202	OTU_0202	ADJ27049  coded_by=complement(70931..71914),organism=Nitrosococcus watsonii C-113,definition=integron integrase	9e-148	63.17
+OTU_0202	OTU_0202	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-147	63.06
+OTU_0202	OTU_0202	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-146	63.81
+OTU_0203	OTU_0203	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-84	63.08
+OTU_0203	OTU_0203	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-84	63.08
+OTU_0203	OTU_0203	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	2e-83	62.24
+OTU_0204	OTU_0204	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	3e-171	76.51
+OTU_0204	OTU_0204	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-151	67.94
+OTU_0204	OTU_0204	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-151	67.94
+OTU_0205	OTU_0205	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-157	66.24
+OTU_0205	OTU_0205	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	7e-155	66.03
+OTU_0205	OTU_0205	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	7e-155	66.03
+OTU_0206	OTU_0206	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	8e-143	66.03
+OTU_0206	OTU_0206	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	1e-140	62.74
+OTU_0206	OTU_0206	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	3e-137	60.51
+OTU_0207	OTU_0207	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-130	59.22
+OTU_0207	OTU_0207	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-130	59.22
+OTU_0207	OTU_0207	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	1e-126	56.49
+OTU_0208	OTU_0208	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	8e-69	67.31
+OTU_0208	OTU_0208	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	1e-67	61.15
+OTU_0208	OTU_0208	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	1e-67	61.15
+OTU_0209	OTU_0209	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-167	75.16
+OTU_0209	OTU_0209	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-138	64.65
+OTU_0209	OTU_0209	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-138	64.65
+OTU_0210	OTU_0210	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	7e-157	69.21
+OTU_0210	OTU_0210	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	2e-155	68.21
+OTU_0210	OTU_0210	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	7e-152	64.65
+OTU_0211	OTU_0211	EFO80302  coded_by=12235..13200,organism=Oscillochloris trichoides DG6,definition=integron integrase	8e-72	68.94
+OTU_0211	OTU_0211	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-70	67.70
+OTU_0211	OTU_0211	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	6e-70	67.70
+OTU_0212	OTU_0212	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-152	65.29
+OTU_0212	OTU_0212	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-151	65.92
+OTU_0212	OTU_0212	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-151	65.92
+OTU_0213	OTU_0213	EKD10875  coded_by=complement(44072..45052),organism=Arthrospira platensis C1,definition=integron integrase	3e-86	64.21
+OTU_0213	OTU_0213	CCE20895  coded_by=complement(4217..5197),organism=Arthrospira sp. PCC 8005,definition=putative site-specific tyrosine recombinase, XerD-like	3e-86	64.21
+OTU_0213	OTU_0213	CDM93498  coded_by=1196770..1197750,organism=Arthrospira sp. PCC 8005,definition=putative site-specific tyrosine recombinase, XerD-like	3e-86	64.21
+OTU_0214	OTU_0214	GAO20420  coded_by=19788..20786,organism=Alicycliphilus sp. B1,definition=IntI1 protein	6e-165	70.93
+OTU_0214	OTU_0214	GAO27069  coded_by=541190..542188,organism=Alicycliphilus sp. B1,definition=IntI1 protein	6e-165	70.93
+OTU_0214	OTU_0214	GAO27126  coded_by=10702..11700,organism=Alicycliphilus sp. B1,definition=IntI1 protein	6e-165	70.93
+OTU_0215	OTU_0215	BAV32760  coded_by=complement(434222..435274),organism=Sulfuricaulis limicola,definition=integrase	5e-158	70.10
+OTU_0215	OTU_0215	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	7e-158	67.85
+OTU_0215	OTU_0215	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-157	67.85
+OTU_0216	OTU_0216	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-161	71.11
+OTU_0216	OTU_0216	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	3e-141	63.38
+OTU_0216	OTU_0216	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	2e-137	60.51
+OTU_0217	OTU_0217	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-101	66.82
+OTU_0217	OTU_0217	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-101	66.82
+OTU_0217	OTU_0217	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	8e-100	65.02
+OTU_0218	OTU_0218	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	8e-145	62.42
+OTU_0218	OTU_0218	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	3e-142	61.15
+OTU_0218	OTU_0218	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	4e-142	61.15
+OTU_0219	OTU_0219	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-94	73.80
+OTU_0219	OTU_0219	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	2e-86	66.84
+OTU_0219	OTU_0219	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-78	56.15
+OTU_0220	OTU_0220	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	9e-141	70.97
+OTU_0220	OTU_0220	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-132	67.14
+OTU_0220	OTU_0220	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-132	67.14
+OTU_0221	OTU_0221	BAU47351  coded_by=760618..761625,organism=Sulfurifustis variabilis,definition=integrase	1e-172	74.05
+OTU_0221	OTU_0221	KPK73854  coded_by=complement(2586..3605),organism=Acidithiobacillales bacterium SM23_46,definition=integrase	4e-170	71.11
+OTU_0221	OTU_0221	KPL27126  coded_by=4786..5805,organism=Acidithiobacillales bacterium SM1_46,definition=integrase	4e-170	71.11
+OTU_0222	OTU_0222	KPK73854  coded_by=complement(2586..3605),organism=Acidithiobacillales bacterium SM23_46,definition=integrase	0.0	77.39
+OTU_0222	OTU_0222	KPL27126  coded_by=4786..5805,organism=Acidithiobacillales bacterium SM1_46,definition=integrase	0.0	77.39
+OTU_0222	OTU_0222	KPK54338  coded_by=13921..14940,organism=Thiotrichales bacterium SG8_50,definition=integrase	0.0	77.39
+OTU_0223	OTU_0223	AOF80781  coded_by=complement(2063631..2064644),organism=Methyloversatilis sp. RAC08,definition=integron integrase family protein	2e-108	71.10
+OTU_0223	OTU_0223	EGK70619  coded_by=complement(43333..44340),organism=Methyloversatilis universalis FAM5,definition=Integrase/recombinase	9e-108	69.72
+OTU_0223	OTU_0223	ACS73655  coded_by=complement(<1..944),organism=uncultured bacterium,definition=IntI1	8e-107	68.81
+OTU_0224	OTU_0224	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-153	69.11
+OTU_0224	OTU_0224	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-149	63.17
+OTU_0224	OTU_0224	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	8e-149	63.81
+OTU_0225	OTU_0225	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	2e-72	70.32
+OTU_0225	OTU_0225	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	5e-72	67.53
+OTU_0225	OTU_0225	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	1e-71	67.53
+OTU_0226	OTU_0226	ABI59614  coded_by=complement(1435095..1436084),organism=Nitrosomonas eutropha C91,definition=integron integrase	5e-89	60.78
+OTU_0226	OTU_0226	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	2e-88	60.49
+OTU_0226	OTU_0226	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	7e-88	60.78
+OTU_0227	OTU_0227	BAM00165  coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	7e-89	67.35
+OTU_0227	OTU_0227	BAM00921  coded_by=complement(3578569..3579558),organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	5e-88	66.84
+OTU_0227	OTU_0227	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	2e-85	61.54
+OTU_0228	OTU_0228	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	4e-152	64.10
+OTU_0228	OTU_0228	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	63.90
+OTU_0228	OTU_0228	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-150	63.90
+OTU_0229	OTU_0229	KQX98035  coded_by=1291660..1292667,organism=Rhodanobacter sp. Root480,definition=hypothetical protein	4e-168	74.29
+OTU_0229	OTU_0229	AKC81493  coded_by=4364415..4365377,organism=Xanthomonas campestris,definition=hypothetical protein	8e-157	70.06
+OTU_0229	OTU_0229	KOB11912  coded_by=8062..9024,organism=Xanthomonas campestris,definition=hypothetical protein	2e-156	70.06
+OTU_0230	OTU_0230	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-145	66.45
+OTU_0230	OTU_0230	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	1e-141	59.74
+OTU_0230	OTU_0230	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	4e-139	61.02
+OTU_0231	OTU_0231	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-174	78.41
+OTU_0231	OTU_0231	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	2e-145	64.97
+OTU_0231	OTU_0231	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	4e-144	67.41
+OTU_0232	OTU_0232	ACP39554  coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	1e-89	57.85
+OTU_0232	OTU_0232	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	9e-87	56.90
+OTU_0232	OTU_0232	AJF06303  coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	7e-82	57.98
+OTU_0233	OTU_0233	AMA08911  coded_by=complement(1254305..1255273),organism=Synechococcus sp. PCC 73109,definition=integrase	3e-120	56.90
+OTU_0233	OTU_0233	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	2e-119	59.93
+OTU_0233	OTU_0233	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	4e-119	57.58
+OTU_0234	OTU_0234	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	2e-74	70.39
+OTU_0234	OTU_0234	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-73	72.37
+OTU_0234	OTU_0234	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	2e-73	72.37
+OTU_0235	OTU_0235	AKR43173  coded_by=complement(1417686..1418669),organism=Methylophilus sp. TWE2,definition=integrase	1e-77	57.58
+OTU_0235	OTU_0235	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	2e-76	56.85
+OTU_0235	OTU_0235	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	3e-76	54.77
+OTU_0236	OTU_0236	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-78	64.92
+OTU_0236	OTU_0236	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	2e-77	59.69
+OTU_0236	OTU_0236	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	1e-75	56.54
+OTU_0237	OTU_0237	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-134	67.57
+OTU_0237	OTU_0237	EAT14222  coded_by=complement(3273..4280),organism=Desulfuromonas acetoxidans DSM 684,definition=Integron integrase	2e-133	61.15
+OTU_0237	OTU_0237	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	1e-132	63.85
+OTU_0238	OTU_0238	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	3e-133	57.47
+OTU_0238	OTU_0238	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	4e-132	57.14
+OTU_0238	OTU_0238	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	6e-132	57.14
+OTU_0239	OTU_0239	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	2e-108	67.12
+OTU_0239	OTU_0239	AHF04766  coded_by=complement(3072938..3074341),organism=Marichromatium purpuratum 984,definition=integrase	5e-108	69.06
+OTU_0239	OTU_0239	EGV23369  coded_by=174908..176311,organism=Marichromatium purpuratum 984,definition=integron integrase	5e-108	69.06
+OTU_0240	OTU_0240	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	2e-157	67.83
+OTU_0240	OTU_0240	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	2e-155	67.83
+OTU_0240	OTU_0240	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	4e-153	67.52
+OTU_0241	OTU_0241	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-71	67.88
+OTU_0241	OTU_0241	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	5e-70	62.20
+OTU_0241	OTU_0241	ACS73646  coded_by=complement(<1..947),organism=uncultured bacterium,definition=IntI	2e-69	61.21
+OTU_0242	OTU_0242	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	2e-88	73.94
+OTU_0242	OTU_0242	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	4e-84	72.87
+OTU_0242	OTU_0242	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	1e-83	72.87
+OTU_0243	OTU_0243	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-132	64.72
+OTU_0243	OTU_0243	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	1e-130	56.96
+OTU_0243	OTU_0243	ABL64322  coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	5e-129	57.61
+OTU_0244	OTU_0244	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	2e-135	57.88
+OTU_0244	OTU_0244	EXI64880  coded_by=36185..37201,organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	5e-130	59.35
+OTU_0244	OTU_0244	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-129	57.10
+OTU_0245	OTU_0245	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-135	60.52
+OTU_0245	OTU_0245	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	5e-135	61.17
+OTU_0245	OTU_0245	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	5e-135	61.17
+OTU_0246	OTU_0246	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	5e-89	59.36
+OTU_0246	OTU_0246	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	5e-89	59.36
+OTU_0246	OTU_0246	KRW67595  coded_by=complement(134572..135534),organism=Pseudomonas sp. TTU2014-096BSC,definition=integrase	4e-88	59.36
+OTU_0247	OTU_0247	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	1e-141	65.29
+OTU_0247	OTU_0247	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-141	65.08
+OTU_0247	OTU_0247	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-141	65.08
+OTU_0248	OTU_0248	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	3e-135	60.84
+OTU_0248	OTU_0248	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	3e-135	60.84
+OTU_0248	OTU_0248	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	3e-132	61.04
+OTU_0249	OTU_0249	AMB19636  coded_by=complement(1..1041),organism=Aeromonas sobria,definition=IntI3 integrase	1e-86	59.91
+OTU_0249	OTU_0249	CCE94499  coded_by=complement(490..1530),organism=Enterobacter cloacae,definition=IntI3 integrase	1e-86	59.91
+OTU_0249	OTU_0249	CUH70226  coded_by=complement(1..1041),organism=Acinetobacter johnsonii,definition=Acinetobacter johnsonii In3-6 integron, strain LIM75	2e-86	59.91
+OTU_0250	OTU_0250	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	7e-73	69.08
+OTU_0250	OTU_0250	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	7e-71	68.42
+OTU_0250	OTU_0250	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	7e-71	68.42
+OTU_0251	OTU_0251	EXI65243  coded_by=complement(53796..54833),organism=Candidatus Accumulibacter sp. SK-12,definition=Tyrosine recombinase XerD	8e-67	65.16
+OTU_0251	OTU_0251	EXI65316  coded_by=4957..5994,organism=Candidatus Accumulibacter sp. SK-11,definition=Tyrosine recombinase XerD	5e-66	65.16
+OTU_0251	OTU_0251	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	6e-65	62.58
+OTU_0252	OTU_0252	EAT14222  coded_by=complement(3273..4280),organism=Desulfuromonas acetoxidans DSM 684,definition=Integron integrase	1e-68	62.99
+OTU_0252	OTU_0252	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	6e-68	61.69
+OTU_0252	OTU_0252	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	7e-64	62.34
+OTU_0253	OTU_0253	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	4e-48	69.61
+OTU_0253	OTU_0253	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-47	74.51
+OTU_0253	OTU_0253	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	3e-47	68.63
+OTU_0254	OTU_0254	KXK12064  coded_by=220..1203,organism=Chloroflexi bacterium OLB14,definition=putative transposase	8e-85	64.55
+OTU_0254	OTU_0254	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	1e-82	61.26
+OTU_0254	OTU_0254	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	1e-82	60.85
+OTU_0255	OTU_0255	KPA13726  coded_by=150..1130,organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	1e-142	59.18
+OTU_0255	OTU_0255	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-142	64.01
+OTU_0255	OTU_0255	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-142	64.01
+OTU_0256	OTU_0256	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	3e-63	64.10
+OTU_0256	OTU_0256	EEV19086  coded_by=complement(11310..12590),organism=Treponema vincentii ATCC 35580,definition=integron integrase	8e-62	59.62
+OTU_0256	OTU_0256	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1e-61	64.10
+OTU_0257	OTU_0257	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	5e-72	65.87
+OTU_0257	OTU_0257	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	8e-71	64.71
+OTU_0257	OTU_0257	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-70	64.71
+OTU_0258	OTU_0258	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	4e-163	72.52
+OTU_0258	OTU_0258	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	5e-153	64.65
+OTU_0258	OTU_0258	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	2e-152	70.06
+OTU_0259	OTU_0259	KEF42025  coded_by=complement(1222..2214),organism=Cyanobium sp. CACIAM 14,definition=integrase	1e-36	64.71
+OTU_0259	OTU_0259	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	1e-36	62.75
+OTU_0259	OTU_0259	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	1e-36	62.75
+OTU_0260	OTU_0260	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	1e-122	62.45
+OTU_0260	OTU_0260	CAJ73190  coded_by=185236..186309,organism=Candidatus Kuenenia stuttgartiensis,definition=similar to site-specific tyrosine recombinase	1e-120	60.97
+OTU_0260	OTU_0260	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-120	61.57
+OTU_0261	OTU_0261	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	6e-110	61.02
+OTU_0261	OTU_0261	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	2e-109	60.63
+OTU_0261	OTU_0261	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-108	62.60
+OTU_0262	OTU_0262	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	2e-150	67.62
+OTU_0262	OTU_0262	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-149	66.46
+OTU_0262	OTU_0262	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-149	66.46
+OTU_0263	OTU_0263	AOF80781  coded_by=complement(2063631..2064644),organism=Methyloversatilis sp. RAC08,definition=integron integrase family protein	8e-67	63.35
+OTU_0263	OTU_0263	BAL25674  coded_by=3763215..3764168,organism=Azoarcus sp. KH32C,definition=phage-related integrase	1e-66	65.22
+OTU_0263	OTU_0263	AFC16429  coded_by=complement(<1..944),organism=Pseudomonas sp. 11602SL,definition=integrase	2e-66	61.73
+OTU_0264	OTU_0264	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-150	65.61
+OTU_0264	OTU_0264	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-150	65.61
+OTU_0264	OTU_0264	KPK49616  coded_by=complement(4552..5538),organism=Thiotrichales bacterium SG8_50,definition=integrase	3e-149	63.69
+OTU_0265	OTU_0265	SBT03981  coded_by=complement(14845..15846),organism=Propionivibrio sp. S1,definition=Integrase/recombinase	4e-76	61.68
+OTU_0265	OTU_0265	EXI65316  coded_by=4957..5994,organism=Candidatus Accumulibacter sp. SK-11,definition=Tyrosine recombinase XerD	7e-74	64.07
+OTU_0265	OTU_0265	KPK49616  coded_by=complement(4552..5538),organism=Thiotrichales bacterium SG8_50,definition=integrase	2e-73	60.48
+OTU_0266	OTU_0266	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	2e-121	57.96
+OTU_0266	OTU_0266	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	7e-120	57.32
+OTU_0266	OTU_0266	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	7e-120	57.32
+OTU_0267	OTU_0267	GAN35333  coded_by=complement(3995224..3996462),organism=Candidatus Brocadia sinica JPN1,definition=transcription regulator	9e-93	76.97
+OTU_0267	OTU_0267	KKR95725  coded_by=1614..2900,organism=Parcubacteria (Uhrbacteria) bacterium GW2011_GWF2_41_16,definition=hypothetical protein	1e-90	75.15
+OTU_0267	OTU_0267	AEH45231  coded_by=1432682..1433932,organism=Thermodesulfatator indicus DSM 15286,definition=integron integrase	2e-74	65.24
+OTU_0268	OTU_0268	KPK82551  coded_by=41818..42822,organism=Gemmatimonas sp. SM23_52,definition=integrase	5e-94	58.26
+OTU_0268	OTU_0268	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-91	55.79
+OTU_0268	OTU_0268	KPJ59803  coded_by=57055..58002,organism=Latescibacteria bacterium DG_63,definition=integrase	5e-89	56.20
+OTU_0269	OTU_0269	KXK37499  coded_by=930..1901,organism=Nitrosomonas europaea,definition=integron integrase	4e-138	60.39
+OTU_0269	OTU_0269	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	1e-137	61.36
+OTU_0269	OTU_0269	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	3e-137	61.49
+OTU_0270	OTU_0270	KRH98565  coded_by=complement(160738..161769),organism=Curvibacter sp. PAE-UM,definition=integrase	2e-138	63.82
+OTU_0270	OTU_0270	KTF66666  coded_by=complement(<1..985),organism=Salmonella enterica subsp. enterica serovar Derby,definition=integrase	1e-134	62.83
+OTU_0270	OTU_0270	GAO21876  coded_by=complement(17050..18057),organism=Alicycliphilus sp. B1,definition=IntI1 protein	2e-134	62.17
+OTU_0271	OTU_0271	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	3e-150	62.82
+OTU_0271	OTU_0271	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	9e-149	63.78
+OTU_0271	OTU_0271	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	6e-147	67.31
+OTU_0272	OTU_0272	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	1e-73	68.75
+OTU_0272	OTU_0272	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	5e-73	65.85
+OTU_0272	OTU_0272	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	2e-72	65.85
+OTU_0273	OTU_0273	AFY79212  coded_by=complement(4351669..4352640),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	7e-56	52.15
+OTU_0273	OTU_0273	AFY77998  coded_by=complement(2931992..2932963),organism=Pleurocapsa sp. PCC 7327,definition=integron integrase	7e-56	52.15
+OTU_0273	OTU_0273	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-55	55.69
+OTU_0274	OTU_0274	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	7e-97	68.18
+OTU_0274	OTU_0274	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	4e-87	67.86
+OTU_0274	OTU_0274	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	9e-85	58.79
+OTU_0275	OTU_0275	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	2e-74	69.33
+OTU_0275	OTU_0275	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	3e-69	59.26
+OTU_0275	OTU_0275	AHG92903  coded_by=complement(856827..857786),organism=Gemmatirosa kalamazoonesis,definition=integron integrase	7e-68	64.20
+OTU_0276	OTU_0276	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	7e-46	66.98
+OTU_0276	OTU_0276	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	7e-46	66.98
+OTU_0276	OTU_0276	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	8e-46	66.04
+OTU_0277	OTU_0277	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-120	57.01
+OTU_0277	OTU_0277	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	4e-119	58.28
+OTU_0277	OTU_0277	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	4e-118	55.10
+OTU_0278	OTU_0278	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	6e-119	61.03
+OTU_0278	OTU_0278	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-117	60.29
+OTU_0278	OTU_0278	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	5e-117	60.29
+OTU_0279	OTU_0279	AND69454  coded_by=complement(2122264..2123235),organism=Dyella thiooxydans,definition=integrase	3e-179	77.22
+OTU_0279	OTU_0279	KRB50682  coded_by=complement(40749..41720),organism=Rhodanobacter sp. Root179,definition=integrase	4e-179	76.58
+OTU_0279	OTU_0279	EIL89190  coded_by=complement(40777..41748),organism=Rhodanobacter spathiphylli B39,definition=putative integrase	4e-179	76.58
+OTU_0280	OTU_0280	KQX98035  coded_by=1291660..1292667,organism=Rhodanobacter sp. Root480,definition=hypothetical protein	3e-51	64.71
+OTU_0280	OTU_0280	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	3e-50	61.02
+OTU_0280	OTU_0280	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	3e-50	61.02
+OTU_0281	OTU_0281	ADE14437  coded_by=1272427..1273392,organism=Nitrosococcus halophilus Nc 4,definition=integron integrase	3e-149	65.81
+OTU_0281	OTU_0281	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	2e-148	62.06
+OTU_0281	OTU_0281	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-145	64.95
+OTU_0282	OTU_0282	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	4e-135	60.51
+OTU_0282	OTU_0282	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	4e-132	59.55
+OTU_0282	OTU_0282	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	4e-132	60.51
+OTU_0283	OTU_0283	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	9e-154	64.97
+OTU_0283	OTU_0283	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-153	65.71
+OTU_0283	OTU_0283	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-153	65.71
+OTU_0284	OTU_0284	CCK80741  coded_by=complement(3035676..3037004),organism=Desulfobacula toluolica Tol2,definition=integrase, integron-type	3e-141	71.04
+OTU_0284	OTU_0284	KPA16574  coded_by=complement(377..>1492),organism=Candidatus Magnetomorum sp. HK-1,definition=Integrase, integron-type	1e-133	69.50
+OTU_0284	OTU_0284	CCE23467  coded_by=complement(2049996..2051432),organism=Methylomicrobium alcaliphilum 20Z,definition=Integron integrase	8e-132	70.27
+OTU_0285	OTU_0285	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	4e-153	63.49
+OTU_0285	OTU_0285	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-153	69.11
+OTU_0285	OTU_0285	KPK42030  coded_by=9246..10211,organism=Phycisphaerae bacterium SG8_4,definition=integrase	5e-149	64.13
+OTU_0286	OTU_0286	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	2e-73	56.52
+OTU_0286	OTU_0286	BAP78378  coded_by=1325531..1326496,organism=Pseudomonas sp. MT-1,definition=integron integrase	1e-72	61.96
+OTU_0286	OTU_0286	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	1e-72	59.24
+OTU_0287	OTU_0287	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	9e-99	67.31
+OTU_0287	OTU_0287	BAS61407  coded_by=1049691..1050677,organism=Leptolyngbya boryana,definition=integron integrase	9e-99	67.31
+OTU_0287	OTU_0287	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	2e-98	66.83
+OTU_0288	OTU_0288	ABB33221  coded_by=3390705..3391709,organism=Geobacter metallireducens GS-15,definition=integron integrase	4e-161	73.54
+OTU_0288	OTU_0288	EHP84654  coded_by=1483..2487,organism=Geobacter metallireducens RCH3,definition=integron integrase	4e-161	73.54
+OTU_0288	OTU_0288	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	3e-160	74.23
+OTU_0289	OTU_0289	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	4e-100	61.75
+OTU_0289	OTU_0289	AEF99978  coded_by=1707846..1708829,organism=Methylomonas methanica MC09,definition=integron integrase	3e-98	64.06
+OTU_0289	OTU_0289	ERN41592  coded_by=complement(62017..63021),organism=Rubidibacter lacunae KORDI 51-2,definition=integron integrase	8e-95	62.96
+OTU_0290	OTU_0290	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	2e-70	69.23
+OTU_0290	OTU_0290	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	1e-69	69.23
+OTU_0290	OTU_0290	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	3e-59	58.71
+OTU_0291	OTU_0291	ABE48680  coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	1e-136	60.84
+OTU_0291	OTU_0291	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	9e-136	58.77
+OTU_0291	OTU_0291	KXK38494  coded_by=complement(841..1812),organism=Nitrosomonas europaea,definition=integron integrase	2e-135	58.77
+OTU_0292	OTU_0292	EKQ67210  coded_by=complement(737344..738309),organism=Oscillatoriales cyanobacterium JSC-12,definition=site-specific recombinase XerD	2e-98	62.50
+OTU_0292	OTU_0292	KXS89122  coded_by=complement(50481..51449),organism=Microcystis aeruginosa NIES-88,definition=integrase	7e-98	61.16
+OTU_0292	OTU_0292	BAS55059  coded_by=1049691..1050677,organism=Leptolyngbya boryana IAM M-101,definition=integron integrase	3e-97	61.16
+OTU_0293	OTU_0293	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	5e-68	66.03
+OTU_0293	OTU_0293	EUJ10735  coded_by=complement(1651402..1652391),organism=Methylophilaceae bacterium 11,definition=integron integrase	4e-65	63.87
+OTU_0293	OTU_0293	CAD86100  coded_by=complement(2376658..2377629),organism=Nitrosomonas europaea ATCC 19718,definition=Integron integrase; Phage integrase; Phage integrase N-terminal SAM-like domain	1e-63	59.87
+OTU_0294	OTU_0294	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-71	59.36
+OTU_0294	OTU_0294	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	2e-71	58.29
+OTU_0294	OTU_0294	EXI78034  coded_by=120..1139,organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	3e-71	62.37
+OTU_0295	OTU_0295	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-155	68.27
+OTU_0295	OTU_0295	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	1e-155	68.27
+OTU_0295	OTU_0295	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-154	65.27
+OTU_0296	OTU_0296	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	9e-52	58.23
+OTU_0296	OTU_0296	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	4e-49	63.69
+OTU_0296	OTU_0296	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	1e-48	63.69
+OTU_0297	OTU_0297	AAK00304  coded_by=complement(<1..947),organism=uncultured bacterium BAL3,definition=integrase IntI8	1e-100	65.89
+OTU_0297	OTU_0297	KPK05359  coded_by=complement(8265..9293),organism=Betaproteobacteria bacterium SG8_39,definition=integrase	1e-93	65.26
+OTU_0297	OTU_0297	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-93	60.47
+OTU_0298	OTU_0298	ACM34149  coded_by=complement(2889904..2890902),organism=Acidovorax ebreus TPSY,definition=integron integrase	5e-108	65.43
+OTU_0298	OTU_0298	KLR58890  coded_by=complement(226701..227699),organism=Diaphorobacter sp. J5-51,definition=integrase	7e-108	65.43
+OTU_0298	OTU_0298	ABM43488  coded_by=complement(3555809..3556807),organism=Acidovorax sp. JS42,definition=integron integrase	1e-107	65.43
+OTU_0299	OTU_0299	GAO34483  coded_by=127..1107,organism=Ferriphaselus amnicola,definition=tyrosine recombinase XerD	0.0	80.25
+OTU_0299	OTU_0299	AAZ97168  coded_by=1270724..1271704,organism=Thiobacillus denitrificans ATCC 25259,definition=integron integrase	0.0	81.21
+OTU_0299	OTU_0299	ACM34149  coded_by=complement(2889904..2890902),organism=Acidovorax ebreus TPSY,definition=integron integrase	3e-174	75.16
+OTU_0300	OTU_0300	BAL25674  coded_by=3763215..3764168,organism=Azoarcus sp. KH32C,definition=phage-related integrase	4e-87	66.16
+OTU_0300	OTU_0300	AOG23372  coded_by=complement(3284573..3285601),organism=Acidovorax sp. RAC01,definition=integron integrase family protein	2e-81	60.61
+OTU_0300	OTU_0300	KQP49235  coded_by=229951..230961,organism=Pseudorhodoferax sp. Leaf274,definition=integrase	7e-81	61.62
+OTU_0301	OTU_0301	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	7e-105	61.92
+OTU_0301	OTU_0301	AAK73287  coded_by=complement(151..1116),organism=Pseudomonas alcaligenes,definition=DNA integrase IntIPac	2e-102	59.41
+OTU_0301	OTU_0301	AMR67883  coded_by=complement(3583163..3584128),organism=Pseudomonas alcaligenes,definition=integrase	2e-102	59.41
+OTU_0302	OTU_0302	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	1e-150	65.29
+OTU_0302	OTU_0302	AMA08911  coded_by=complement(1254305..1255273),organism=Synechococcus sp. PCC 73109,definition=integrase	4e-148	63.69
+OTU_0302	OTU_0302	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	1e-147	64.33
+OTU_0303	OTU_0303	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	4e-91	61.72
+OTU_0303	OTU_0303	KQC08750  coded_by=complement(181..1161),organism=Smithella sp. SDB,definition=integrase	1e-90	59.52
+OTU_0303	OTU_0303	CUS37669  coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	7e-89	62.68
+OTU_0304	OTU_0304	AMM42008  coded_by=2238273..2239262,organism=Candidatus Desulfofervidus auxilii,definition=integron integrase	1e-163	68.04
+OTU_0304	OTU_0304	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	9e-161	68.25
+OTU_0304	OTU_0304	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	9e-161	68.25
+OTU_0305	OTU_0305	ERN41592  coded_by=complement(62017..63021),organism=Rubidibacter lacunae KORDI 51-2,definition=integron integrase	2e-151	66.67
+OTU_0305	OTU_0305	EKV00205  coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	5e-151	65.29
+OTU_0305	OTU_0305	ESA34560  coded_by=complement(371..1345),organism=Leptolyngbya sp. Heron Island J,definition=integron integrase	4e-148	64.01
+OTU_0306	OTU_0306	OAM89735  coded_by=complement(16755..17741),organism=Opitutaceae bacterium TSB47,definition=hypothetical protein	3e-70	66.27
+OTU_0306	OTU_0306	EHP33304  coded_by=complement(813194..814357),organism=Opitutaceae bacterium TAV5,definition=integron integrase	2e-68	69.88
+OTU_0306	OTU_0306	AHF89299  coded_by=complement(464653..466020),organism=Opitutaceae bacterium TAV5,definition=integrase	8e-68	69.88
+OTU_0307	OTU_0307	EXI81196  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-70	64.63
+OTU_0307	OTU_0307	KFB75639  coded_by=complement(14314..15330),organism=Candidatus Accumulibacter sp. SK-02,definition=Tyrosine recombinase XerD	8e-70	64.63
+OTU_0307	OTU_0307	EXI70581  coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	1e-69	66.46
+OTU_0308	OTU_0308	ACL73778  coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	6e-57	69.67
+OTU_0308	OTU_0308	ANJ68048  coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2e-55	67.21
+OTU_0308	OTU_0308	ADE10619  coded_by=complement(388272..389264),organism=Sideroxydans lithotrophicus ES-1,definition=integron integrase	3e-55	64.75
+OTU_0309	OTU_0309	BAM00165  coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	1e-84	62.02
+OTU_0309	OTU_0309	BAM00921  coded_by=complement(3578569..3579558),organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	1e-83	61.54
+OTU_0309	OTU_0309	BAU13466  coded_by=complement(4058409..4059374),organism=Leptolyngbya sp. NIES-3755,definition=putative transposase	6e-80	59.42
+OTU_0310	OTU_0310	ACP39554  coded_by=complement(<1..1041),organism=uncultured microorganism,definition=putative integron integrase	3e-79	75.16
+OTU_0310	OTU_0310	EAR20185  coded_by=3861..4823,organism=Nitrococcus mobilis Nb-231,definition=Integron integrase	5e-55	54.78
+OTU_0310	OTU_0310	AAZ48156  coded_by=complement(3680916..3681899),organism=Dechloromonas aromatica RCB,definition=Integron integrase	5e-54	54.14
+OTU_0311	OTU_0311	AJP48865  coded_by=complement(2330392..2331369),organism=Rhodocyclaceae bacterium PG1-Ca6,definition=integrase	9e-103	66.51
+OTU_0311	OTU_0311	EXI64704  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	2e-102	70.70
+OTU_0311	OTU_0311	KFB66857  coded_by=complement(140420..141439),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	2e-102	70.70

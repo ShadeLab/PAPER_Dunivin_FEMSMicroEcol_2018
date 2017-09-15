@@ -1,4 +1,816 @@
+OTU_0001	OTU_0001	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-81	67.92
+OTU_0001	OTU_0001	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	5e-71	63.52
+OTU_0001	OTU_0001	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	8e-70	64.78
+OTU_0002	OTU_0002	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-67	53.53
+OTU_0002	OTU_0002	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	1e-64	49.41
+OTU_0002	OTU_0002	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-62	50.60
+OTU_0003	OTU_0003	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	5e-87	76.61
+OTU_0003	OTU_0003	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	1e-15	37.58
+OTU_0003	OTU_0003	KVE70879  coded_by=182886..184649,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	5e-87	76.61
+OTU_0003	OTU_0003	KVE70879  coded_by=182886..184649,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	1e-15	37.58
+OTU_0003	OTU_0003	KVF12713  coded_by=complement(110561..112324),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	5e-87	76.61
+OTU_0003	OTU_0003	KVF12713  coded_by=complement(110561..112324),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-15	37.58
+OTU_0004	OTU_0004	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	2e-88	76.79
+OTU_0004	OTU_0004	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	6e-19	38.22
+OTU_0004	OTU_0004	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	2e-88	76.79
+OTU_0004	OTU_0004	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	9e-19	38.22
+OTU_0004	OTU_0004	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	8e-88	76.19
+OTU_0004	OTU_0004	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	5e-19	38.85
+OTU_0005	OTU_0005	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	1e-74	71.52
+OTU_0005	OTU_0005	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-74	71.52
+OTU_0005	OTU_0005	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-74	70.86
+OTU_0006	OTU_0006	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-67	53.85
+OTU_0006	OTU_0006	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	1e-63	48.81
+OTU_0006	OTU_0006	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-63	51.79
+OTU_0007	OTU_0007	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	3e-65	53.45
+OTU_0007	OTU_0007	CCH66102  coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	8e-65	54.71
+OTU_0007	OTU_0007	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	9e-65	53.85
 OTU_0008	OTU_0008	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-71	61.49
+OTU_0008	OTU_0008	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	9e-67	59.01
+OTU_0008	OTU_0008	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	3e-64	59.01
+OTU_0009	OTU_0009	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	3e-89	81.48
+OTU_0009	OTU_0009	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	1e-11	34.39
+OTU_0009	OTU_0009	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	1e-88	81.48
+OTU_0009	OTU_0009	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	9e-12	36.60
+OTU_0009	OTU_0009	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	1e-87	82.10
+OTU_0009	OTU_0009	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	5e-13	38.03
+OTU_0010	OTU_0010	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-66	54.12
+OTU_0010	OTU_0010	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	6e-65	48.82
+OTU_0010	OTU_0010	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	3e-63	51.19
+OTU_0011	OTU_0011	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2e-57	59.09
+OTU_0011	OTU_0011	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	4e-57	59.09
+OTU_0011	OTU_0011	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	7e-56	58.44
+OTU_0012	OTU_0012	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-126	55.84
+OTU_0012	OTU_0012	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-122	53.80
+OTU_0012	OTU_0012	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	1e-117	53.40
+OTU_0013	OTU_0013	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-69	57.83
+OTU_0013	OTU_0013	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	5e-66	56.02
+OTU_0013	OTU_0013	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	7e-65	55.42
+OTU_0014	OTU_0014	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-79	62.94
+OTU_0014	OTU_0014	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	1e-71	60.59
+OTU_0014	OTU_0014	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	4e-71	64.12
+OTU_0015	OTU_0015	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-67	54.12
+OTU_0015	OTU_0015	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	5e-65	50.00
+OTU_0015	OTU_0015	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	4e-63	51.19
+OTU_0016	OTU_0016	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	5e-133	74.27
+OTU_0016	OTU_0016	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	1e-130	74.27
+OTU_0016	OTU_0016	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	4e-94	56.49
+OTU_0017	OTU_0017	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	8e-75	62.13
+OTU_0017	OTU_0017	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	9e-75	62.13
+OTU_0017	OTU_0017	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	2e-74	61.54
+OTU_0018	OTU_0018	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	5e-72	68.21
+OTU_0018	OTU_0018	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	5e-72	68.21
+OTU_0018	OTU_0018	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	6e-72	68.21
+OTU_0019	OTU_0019	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	8e-60	56.02
+OTU_0019	OTU_0019	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	9e-59	55.42
+OTU_0019	OTU_0019	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-58	54.82
+OTU_0020	OTU_0020	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	2e-64	61.73
+OTU_0020	OTU_0020	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-62	50.92
+OTU_0020	OTU_0020	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	4e-61	53.70
 OTU_0021	OTU_0021	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	7e-70	63.35
+OTU_0021	OTU_0021	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	8e-70	63.35
+OTU_0021	OTU_0021	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-69	63.35
+OTU_0022	OTU_0022	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	6e-69	66.23
+OTU_0022	OTU_0022	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	6e-69	66.23
+OTU_0022	OTU_0022	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	9e-69	66.23
 OTU_0023	OTU_0023	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	2e-90	80.72
+OTU_0023	OTU_0023	ACF46974  coded_by=complement(2143808..2145025),organism=Prosthecochloris aestuarii DSM 271,definition=arsenite-activated ATPase ArsA	2e-42	44.14
+OTU_0023	OTU_0023	ACF44736  coded_by=complement(2640537..2641763),organism=Pelodictyon phaeoclathratiforme BU-1,definition=arsenite-activated ATPase ArsA	3e-42	44.14
+OTU_0024	OTU_0024	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	9e-113	49.37
+OTU_0024	OTU_0024	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-111	50.48
+OTU_0024	OTU_0024	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-107	45.19
+OTU_0025	OTU_0025	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	7e-72	62.58
+OTU_0025	OTU_0025	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-69	63.23
+OTU_0025	OTU_0025	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-68	60.00
+OTU_0026	OTU_0026	AMW06364  coded_by=4625195..4627003,organism=Gemmatimonas phototrophica,definition=arsenic ABC transporter ATPase	2e-76	73.56
+OTU_0026	OTU_0026	AMW06364  coded_by=4625195..4627003,organism=Gemmatimonas phototrophica,definition=arsenic ABC transporter ATPase	2e-15	38.26
+OTU_0026	OTU_0026	EST38756  coded_by=complement(9492..11339),organism=Streptomycetaceae bacterium MP113-05,definition=hypothetical protein	2e-75	69.23
+OTU_0026	OTU_0026	EST38756  coded_by=complement(9492..11339),organism=Streptomycetaceae bacterium MP113-05,definition=hypothetical protein	1e-17	39.74
+OTU_0026	OTU_0026	KMK76294  coded_by=1030259..1032022,organism=Bacillus pseudalcaliphilus,definition=arsenic ABC transporter ATPase	7e-75	66.27
+OTU_0026	OTU_0026	KMK76294  coded_by=1030259..1032022,organism=Bacillus pseudalcaliphilus,definition=arsenic ABC transporter ATPase	4e-24	37.42
+OTU_0027	OTU_0027	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	8e-96	80.68
+OTU_0027	OTU_0027	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	2e-14	38.78
+OTU_0027	OTU_0027	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	7e-95	78.41
+OTU_0027	OTU_0027	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	6e-13	35.85
+OTU_0027	OTU_0027	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	2e-93	77.84
+OTU_0027	OTU_0027	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	2e-16	36.13
+OTU_0028	OTU_0028	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	1e-136	74.09
+OTU_0028	OTU_0028	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	3e-136	75.71
+OTU_0028	OTU_0028	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-97	57.14
+OTU_0029	OTU_0029	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-72	69.54
+OTU_0029	OTU_0029	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	3e-72	69.54
+OTU_0029	OTU_0029	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	3e-72	69.54
+OTU_0030	OTU_0030	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-61	51.20
+OTU_0030	OTU_0030	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	8e-61	56.63
+OTU_0030	OTU_0030	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-61	56.02
+OTU_0031	OTU_0031	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-65	52.35
+OTU_0031	OTU_0031	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	4e-63	47.65
+OTU_0031	OTU_0031	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-62	50.60
+OTU_0032	OTU_0032	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-66	53.53
+OTU_0032	OTU_0032	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	4e-64	49.41
+OTU_0032	OTU_0032	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	6e-64	51.19
+OTU_0033	OTU_0033	BAE50637  coded_by=1970897..1972603,organism=Magnetospirillum magneticum AMB-1,definition=Oxyanion-translocating ATPase	9e-78	77.63
+OTU_0033	OTU_0033	BAE50637  coded_by=1970897..1972603,organism=Magnetospirillum magneticum AMB-1,definition=Oxyanion-translocating ATPase	4e-18	37.84
+OTU_0033	OTU_0033	OAN49328  coded_by=189267..190973,organism=Magnetospirillum marisnigri,definition=arsenical pump-driving ATPase	3e-77	77.48
+OTU_0033	OTU_0033	OAN49328  coded_by=189267..190973,organism=Magnetospirillum marisnigri,definition=arsenical pump-driving ATPase	9e-17	38.93
+OTU_0033	OTU_0033	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-75	75.00
+OTU_0033	OTU_0033	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	4e-19	41.89
+OTU_0034	OTU_0034	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-59	56.79
+OTU_0034	OTU_0034	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-58	56.79
+OTU_0034	OTU_0034	AFH65542  coded_by=7835627..7837021,organism=Paenibacillus mucilaginosus K02,definition=hypothetical protein	8e-58	54.32
+OTU_0034	OTU_0034	AFH65542  coded_by=7835627..7837021,organism=Paenibacillus mucilaginosus K02,definition=hypothetical protein	5e-20	58.82
+OTU_0035	OTU_0035	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	2e-90	76.88
+OTU_0035	OTU_0035	EMI41376  coded_by=complement(79904..81676),organism=Rhodopirellula sp. SWK7,definition=arsenite-activated ATPase ArsA	7e-15	40.15
+OTU_0035	OTU_0035	GAO01265  coded_by=10583..12376,organism=Anaeromyxobacter sp. PSR-1,definition=arsenical pump-driving ATPase	7e-90	78.95
+OTU_0035	OTU_0035	GAO01265  coded_by=10583..12376,organism=Anaeromyxobacter sp. PSR-1,definition=arsenical pump-driving ATPase	2e-20	41.26
+OTU_0035	OTU_0035	GAT35576  coded_by=complement(741940..743952),organism=Terrimicrobium sacchariphilum,definition=arsenite-transporting ATPase	2e-89	78.36
+OTU_0035	OTU_0035	GAT35576  coded_by=complement(741940..743952),organism=Terrimicrobium sacchariphilum,definition=arsenite-transporting ATPase	3e-17	37.66
+OTU_0036	OTU_0036	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-72	59.88
+OTU_0036	OTU_0036	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-66	53.29
+OTU_0036	OTU_0036	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	4e-65	55.09
+OTU_0037	OTU_0037	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	4e-90	86.86
+OTU_0037	OTU_0037	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	6e-87	83.14
+OTU_0037	OTU_0037	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	4e-86	75.86
 OTU_0038	OTU_0038	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	6e-75	66.88
+OTU_0038	OTU_0038	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	6e-75	66.88
+OTU_0038	OTU_0038	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	1e-74	66.88
+OTU_0039	OTU_0039	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	5e-75	61.40
+OTU_0039	OTU_0039	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	6e-75	61.40
+OTU_0039	OTU_0039	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	2e-74	60.82
+OTU_0040	OTU_0040	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	8e-111	49.01
+OTU_0040	OTU_0040	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	8e-110	45.18
+OTU_0040	OTU_0040	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	4e-108	49.19
+OTU_0041	OTU_0041	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	5e-62	51.81
+OTU_0041	OTU_0041	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	5e-62	59.04
+OTU_0041	OTU_0041	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5e-62	58.43
+OTU_0042	OTU_0042	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-72	59.88
+OTU_0042	OTU_0042	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-66	53.29
+OTU_0042	OTU_0042	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	4e-65	55.09
+OTU_0043	OTU_0043	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-108	57.94
+OTU_0043	OTU_0043	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-97	53.57
+OTU_0043	OTU_0043	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	4e-97	50.40
+OTU_0044	OTU_0044	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-66	53.53
+OTU_0044	OTU_0044	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-65	49.41
+OTU_0044	OTU_0044	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	4e-64	51.79
+OTU_0045	OTU_0045	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-65	52.35
+OTU_0045	OTU_0045	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-62	47.65
+OTU_0045	OTU_0045	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	8e-61	50.00
+OTU_0046	OTU_0046	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-68	57.83
+OTU_0046	OTU_0046	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-66	53.01
+OTU_0046	OTU_0046	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	7e-64	54.82
+OTU_0047	OTU_0047	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-73	58.43
+OTU_0047	OTU_0047	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-73	63.35
+OTU_0047	OTU_0047	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	1e-69	59.04
+OTU_0048	OTU_0048	EON12012  coded_by=50695..52698,organism=Pandoraea sp. SD6-2,definition=arsenite-activated ATPase subunit ArsA	2e-92	80.24
+OTU_0048	OTU_0048	EON12012  coded_by=50695..52698,organism=Pandoraea sp. SD6-2,definition=arsenite-activated ATPase subunit ArsA	4e-20	37.59
+OTU_0048	OTU_0048	KQW39122  coded_by=complement(445182..446954),organism=Rhizobacter sp. Root404,definition=arsenical pump-driving ATPase	8e-91	80.24
+OTU_0048	OTU_0048	KQW39122  coded_by=complement(445182..446954),organism=Rhizobacter sp. Root404,definition=arsenical pump-driving ATPase	7e-22	37.59
+OTU_0048	OTU_0048	ALP67171  coded_by=509316..511082,organism=Paraburkholderia caribensis,definition=arsenical pump-driving ATPase	3e-90	77.25
+OTU_0048	OTU_0048	ALP67171  coded_by=509316..511082,organism=Paraburkholderia caribensis,definition=arsenical pump-driving ATPase	3e-20	37.59
+OTU_0049	OTU_0049	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	6e-55	50.97
+OTU_0049	OTU_0049	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-54	51.95
+OTU_0049	OTU_0049	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-54	50.97
+OTU_0050	OTU_0050	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-62	58.28
+OTU_0050	OTU_0050	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-62	58.90
+OTU_0050	OTU_0050	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-62	58.28
+OTU_0051	OTU_0051	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-59	55.95
+OTU_0051	OTU_0051	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-59	55.95
+OTU_0051	OTU_0051	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	1e-58	52.98
+OTU_0052	OTU_0052	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	2e-81	70.30
+OTU_0052	OTU_0052	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	1e-46	48.73
+OTU_0052	OTU_0052	CUS05668  coded_by=complement(167011..168894),organism=Ardenticatena,definition=putative arsenical pump-driving ATPase	4e-81	69.77
+OTU_0052	OTU_0052	CUS05668  coded_by=complement(167011..168894),organism=Ardenticatena,definition=putative arsenical pump-driving ATPase	1e-45	49.67
+OTU_0052	OTU_0052	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	3e-80	66.47
+OTU_0052	OTU_0052	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	3e-51	51.33
+OTU_0053	OTU_0053	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-70	62.58
+OTU_0053	OTU_0053	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	8e-67	61.94
+OTU_0053	OTU_0053	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	1e-65	58.06
+OTU_0054	OTU_0054	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	2e-86	75.44
+OTU_0054	OTU_0054	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	2e-16	36.31
+OTU_0054	OTU_0054	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	3e-86	75.44
+OTU_0054	OTU_0054	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	2e-16	36.31
+OTU_0054	OTU_0054	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	6e-86	75.44
+OTU_0054	OTU_0054	EMB13297  coded_by=complement(82879..84660),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	3e-16	35.58
+OTU_0055	OTU_0055	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-62	57.76
+OTU_0055	OTU_0055	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-61	57.76
+OTU_0055	OTU_0055	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-61	57.14
+OTU_0056	OTU_0056	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-72	70.20
+OTU_0056	OTU_0056	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	2e-72	70.20
+OTU_0056	OTU_0056	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	3e-72	70.20
+OTU_0057	OTU_0057	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-113	51.96
+OTU_0057	OTU_0057	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-112	50.32
+OTU_0057	OTU_0057	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	4e-108	50.32
+OTU_0058	OTU_0058	AOG12219  coded_by=complement(4021598..4023367),organism=Agrobacterium sp. RAC06,definition=arsenical pump-driving ATPase	6e-82	72.89
+OTU_0058	OTU_0058	AOG12219  coded_by=complement(4021598..4023367),organism=Agrobacterium sp. RAC06,definition=arsenical pump-driving ATPase	8e-16	35.81
+OTU_0058	OTU_0058	KPF60009  coded_by=21264..23033,organism=Rhizobium sp. AAP116,definition=arsenical pump-driving ATPase	5e-81	72.29
+OTU_0058	OTU_0058	KPF60009  coded_by=21264..23033,organism=Rhizobium sp. AAP116,definition=arsenical pump-driving ATPase	4e-16	37.33
+OTU_0058	OTU_0058	EER59364  coded_by=7149..8906,organism=Acidovorax delafieldii 2AN,definition=arsenite-activated ATPase ArsA	1e-80	72.29
+OTU_0058	OTU_0058	EER59364  coded_by=7149..8906,organism=Acidovorax delafieldii 2AN,definition=arsenite-activated ATPase ArsA	5e-20	36.62
+OTU_0059	OTU_0059	KPK29271  coded_by=4400..5605,organism=Nitrospira bacterium SG8_3,definition=arsenic-transporting ATPase	4e-91	57.01
+OTU_0059	OTU_0059	AFM24013  coded_by=complement(1540336..1541685),organism=Desulfomonile tiedjei DSM 6799,definition=arsenite-activated ATPase ArsA	6e-89	56.74
+OTU_0059	OTU_0059	KMY68823  coded_by=complement(973626..974858),organism=Desulfocarbo indianensis,definition=hypothetical protein	5e-83	53.66
+OTU_0060	OTU_0060	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	9e-62	54.82
+OTU_0060	OTU_0060	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-61	57.23
+OTU_0060	OTU_0060	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-61	57.23
+OTU_0061	OTU_0061	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	1e-60	63.46
+OTU_0061	OTU_0061	KQQ41575  coded_by=complement(459194..460402),organism=Nocardioides sp. Leaf307,definition=arsenic-transporting ATPase	9e-60	67.32
+OTU_0061	OTU_0061	KQP66716  coded_by=618138..619346,organism=Nocardioides sp. Leaf285,definition=arsenic-transporting ATPase	3e-59	66.67
+OTU_0062	OTU_0062	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	7e-70	61.45
+OTU_0062	OTU_0062	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	1e-69	61.45
+OTU_0062	OTU_0062	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-68	60.84
+OTU_0063	OTU_0063	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-76	68.79
+OTU_0063	OTU_0063	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	3e-76	68.79
+OTU_0063	OTU_0063	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-76	68.79
+OTU_0064	OTU_0064	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-72	70.20
+OTU_0064	OTU_0064	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-72	70.20
+OTU_0064	OTU_0064	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	4e-72	70.20
+OTU_0065	OTU_0065	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	3e-88	76.47
+OTU_0065	OTU_0065	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	3e-16	38.03
+OTU_0065	OTU_0065	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-87	76.47
+OTU_0065	OTU_0065	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1e-17	35.92
+OTU_0065	OTU_0065	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-87	76.47
+OTU_0065	OTU_0065	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-17	35.92
+OTU_0066	OTU_0066	CCH66102  coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	0.0	86.12
+OTU_0066	OTU_0066	AFY91516  coded_by=230791..232020,organism=Chamaesiphon minutus PCC 6605,definition=arsenite-activated ATPase ArsA	0.0	85.49
+OTU_0066	OTU_0066	AGY58946  coded_by=complement(2848794..2850014),organism=Gloeobacter kilaueensis JS1,definition=arsenite-activated ATPase ArsA	0.0	76.27
+OTU_0067	OTU_0067	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-71	63.06
+OTU_0067	OTU_0067	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-62	59.24
+OTU_0067	OTU_0067	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	3e-60	60.26
+OTU_0068	OTU_0068	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	4e-77	66.67
+OTU_0068	OTU_0068	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	1e-48	48.72
+OTU_0068	OTU_0068	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	5e-74	63.64
+OTU_0068	OTU_0068	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	1e-46	45.91
+OTU_0068	OTU_0068	EQB87209  coded_by=complement(2648..4474),organism=Clostridium sp. BL8,definition=hypothetical protein	3e-73	63.86
+OTU_0068	OTU_0068	EQB87209  coded_by=complement(2648..4474),organism=Clostridium sp. BL8,definition=hypothetical protein	6e-47	49.02
+OTU_0069	OTU_0069	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-72	61.25
+OTU_0069	OTU_0069	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-70	60.62
+OTU_0069	OTU_0069	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-68	56.44
+OTU_0070	OTU_0070	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	3e-89	82.69
+OTU_0070	OTU_0070	ACD90283  coded_by=1312500..1313702,organism=Chlorobium limicola DSM 245,definition=arsenite-activated ATPase ArsA	9e-41	46.04
+OTU_0070	OTU_0070	KUL30575  coded_by=3753..4955,organism=Chlorobium limicola,definition=arsenic-transporting ATPase	9e-41	46.04
+OTU_0071	OTU_0071	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-129	59.57
+OTU_0071	OTU_0071	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	4e-112	51.77
+OTU_0071	OTU_0071	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-107	52.13
+OTU_0072	OTU_0072	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	8e-65	60.39
+OTU_0072	OTU_0072	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-63	61.69
+OTU_0072	OTU_0072	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	2e-61	57.79
+OTU_0073	OTU_0073	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-81	80.65
+OTU_0073	OTU_0073	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	8e-23	39.44
+OTU_0073	OTU_0073	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-81	80.65
+OTU_0073	OTU_0073	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1e-22	39.44
+OTU_0073	OTU_0073	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	3e-81	80.92
+OTU_0073	OTU_0073	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-15	37.58
+OTU_0074	OTU_0074	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	3e-67	68.07
+OTU_0074	OTU_0074	KQV72750  coded_by=complement(10598..11809),organism=Nocardioides sp. Root122,definition=arsenic-transporting ATPase	3e-60	62.65
+OTU_0074	OTU_0074	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	2e-57	63.25
+OTU_0075	OTU_0075	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	6e-89	78.11
+OTU_0075	OTU_0075	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-16	37.59
+OTU_0075	OTU_0075	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-88	78.11
+OTU_0075	OTU_0075	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	4e-19	38.30
+OTU_0075	OTU_0075	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-88	78.11
+OTU_0075	OTU_0075	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	4e-19	38.30
+OTU_0076	OTU_0076	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-114	49.83
+OTU_0076	OTU_0076	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	1e-109	53.29
+OTU_0076	OTU_0076	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-108	49.01
+OTU_0077	OTU_0077	KQV72750  coded_by=complement(10598..11809),organism=Nocardioides sp. Root122,definition=arsenic-transporting ATPase	2e-83	55.11
+OTU_0077	OTU_0077	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	5e-82	55.56
+OTU_0077	OTU_0077	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	1e-81	54.67
+OTU_0078	OTU_0078	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-69	58.68
+OTU_0078	OTU_0078	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-66	53.89
+OTU_0078	OTU_0078	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-63	53.89
+OTU_0079	OTU_0079	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	1e-57	59.48
+OTU_0079	OTU_0079	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	8e-57	58.28
+OTU_0079	OTU_0079	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-56	58.28
+OTU_0080	OTU_0080	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	1e-88	77.78
+OTU_0080	OTU_0080	KVE95511  coded_by=complement(97703..99466),organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-16	40.67
+OTU_0080	OTU_0080	KVE70879  coded_by=182886..184649,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	1e-88	77.78
+OTU_0080	OTU_0080	KVE70879  coded_by=182886..184649,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-16	40.67
+OTU_0080	OTU_0080	KVS18246  coded_by=82392..84155,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	2e-88	77.78
+OTU_0080	OTU_0080	KVS18246  coded_by=82392..84155,organism=Burkholderia vietnamiensis,definition=arsenical pump-driving ATPase	4e-16	40.67
+OTU_0081	OTU_0081	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	1e-102	76.88
+OTU_0081	OTU_0081	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	1e-95	73.12
+OTU_0081	OTU_0081	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-67	53.26
+OTU_0082	OTU_0082	BAE50637  coded_by=1970897..1972603,organism=Magnetospirillum magneticum AMB-1,definition=Oxyanion-translocating ATPase	6e-73	74.17
+OTU_0082	OTU_0082	BAE50637  coded_by=1970897..1972603,organism=Magnetospirillum magneticum AMB-1,definition=Oxyanion-translocating ATPase	1e-17	40.00
+OTU_0082	OTU_0082	CAM76206  coded_by=complement(2286200..2287534),organism=Magnetospirillum gryphiswaldense MSR-1,definition=anion-transporting ATPase family protein	1e-72	73.51
+OTU_0082	OTU_0082	OAN49328  coded_by=189267..190973,organism=Magnetospirillum marisnigri,definition=arsenical pump-driving ATPase	1e-72	73.51
+OTU_0082	OTU_0082	OAN49328  coded_by=189267..190973,organism=Magnetospirillum marisnigri,definition=arsenical pump-driving ATPase	2e-18	43.15
+OTU_0083	OTU_0083	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-61	57.83
+OTU_0083	OTU_0083	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	4e-61	57.83
+OTU_0083	OTU_0083	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-59	57.23
+OTU_0084	OTU_0084	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-62	58.28
+OTU_0084	OTU_0084	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-62	58.02
+OTU_0084	OTU_0084	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	5e-61	58.02
+OTU_0085	OTU_0085	ADH98283  coded_by=832711..834474,organism=Bacillus selenitireducens MLS10,definition=arsenite-activated ATPase ArsA	2e-75	68.42
+OTU_0085	OTU_0085	ADH98283  coded_by=832711..834474,organism=Bacillus selenitireducens MLS10,definition=arsenite-activated ATPase ArsA	7e-18	41.55
+OTU_0085	OTU_0085	KXA69486  coded_by=51399..53135,organism=Megasphaera sp. MJR8396C,definition=putative arsenite-transporting ATPase	2e-74	65.50
+OTU_0085	OTU_0085	KXA69486  coded_by=51399..53135,organism=Megasphaera sp. MJR8396C,definition=putative arsenite-transporting ATPase	9e-23	40.00
+OTU_0085	OTU_0085	OBZ33535  coded_by=complement(1127..2863),organism=Megasphaera sp. DISK 18,definition=arsenical pump-driving ATPase	5e-74	64.91
+OTU_0085	OTU_0085	OBZ33535  coded_by=complement(1127..2863),organism=Megasphaera sp. DISK 18,definition=arsenical pump-driving ATPase	6e-21	38.71
+OTU_0086	OTU_0086	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-73	68.87
+OTU_0086	OTU_0086	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	4e-73	68.87
+OTU_0086	OTU_0086	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-73	68.87
+OTU_0087	OTU_0087	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	7e-61	55.42
+OTU_0087	OTU_0087	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	7e-61	54.82
+OTU_0087	OTU_0087	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	5e-59	54.22
+OTU_0088	OTU_0088	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	7e-64	56.55
+OTU_0088	OTU_0088	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-63	56.55
+OTU_0088	OTU_0088	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	5e-63	55.95
+OTU_0089	OTU_0089	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-145	58.62
+OTU_0089	OTU_0089	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-127	52.88
+OTU_0089	OTU_0089	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-120	50.96
+OTU_0090	OTU_0090	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	8e-79	62.94
+OTU_0090	OTU_0090	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	1e-71	63.53
+OTU_0090	OTU_0090	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-71	58.82
+OTU_0091	OTU_0091	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-117	52.56
+OTU_0091	OTU_0091	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-117	50.16
+OTU_0091	OTU_0091	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	9e-115	48.54
+OTU_0092	OTU_0092	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	3e-169	71.06
+OTU_0092	OTU_0092	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-165	70.19
+OTU_0092	OTU_0092	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-118	55.19
+OTU_0093	OTU_0093	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	3e-60	59.24
+OTU_0093	OTU_0093	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	5e-59	57.96
+OTU_0093	OTU_0093	CCH66102  coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	2e-58	56.49
+OTU_0094	OTU_0094	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	2e-93	58.23
+OTU_0094	OTU_0094	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	5e-91	60.00
+OTU_0094	OTU_0094	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	6e-91	61.13
+OTU_0095	OTU_0095	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	6e-63	54.76
+OTU_0095	OTU_0095	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	9e-63	54.76
+OTU_0095	OTU_0095	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	4e-62	54.17
+OTU_0096	OTU_0096	AEA24970  coded_by=2926540..2927814,organism=Pseudonocardia dioxanivorans CB1190,definition=Arsenite-transporting ATPase	7e-74	76.92
+OTU_0096	OTU_0096	ANY05118  coded_by=complement(198317..199564),organism=Pseudonocardia sp. HH130630-07,definition=arsenic-transporting ATPase	7e-65	76.62
+OTU_0096	OTU_0096	KJK53225  coded_by=50259..51467,organism=Lechevalieria aerocolonigenes,definition=arsenic ABC transporter ATPase	7e-65	76.28
+OTU_0097	OTU_0097	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	3e-73	70.86
+OTU_0097	OTU_0097	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-73	70.86
+OTU_0097	OTU_0097	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-73	70.86
+OTU_0098	OTU_0098	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-65	52.35
+OTU_0098	OTU_0098	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	8e-64	47.06
+OTU_0098	OTU_0098	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-61	50.89
+OTU_0099	OTU_0099	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	6e-60	51.55
+OTU_0099	OTU_0099	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2e-59	55.90
+OTU_0099	OTU_0099	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-59	55.90
+OTU_0100	OTU_0100	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	4e-58	62.75
+OTU_0100	OTU_0100	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	5e-58	62.09
+OTU_0100	OTU_0100	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	2e-56	64.71
+OTU_0101	OTU_0101	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	9e-70	61.29
+OTU_0101	OTU_0101	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-67	58.71
+OTU_0101	OTU_0101	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-67	62.58
+OTU_0102	OTU_0102	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-71	63.87
+OTU_0102	OTU_0102	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	3e-67	61.29
+OTU_0102	OTU_0102	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-66	61.94
+OTU_0103	OTU_0103	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	3e-135	77.42
+OTU_0103	OTU_0103	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	6e-135	77.42
+OTU_0103	OTU_0103	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	2e-130	81.53
+OTU_0104	OTU_0104	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	4e-61	61.39
+OTU_0104	OTU_0104	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	8e-60	60.76
+OTU_0104	OTU_0104	KQP66716  coded_by=618138..619346,organism=Nocardioides sp. Leaf285,definition=arsenic-transporting ATPase	3e-56	59.62
+OTU_0105	OTU_0105	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-69	62.65
+OTU_0105	OTU_0105	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	4e-69	62.05
+OTU_0105	OTU_0105	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	7e-69	62.05
+OTU_0106	OTU_0106	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-64	59.09
+OTU_0106	OTU_0106	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-62	57.14
+OTU_0106	OTU_0106	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	5e-62	56.49
+OTU_0107	OTU_0107	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	8e-59	51.85
+OTU_0107	OTU_0107	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-58	57.41
+OTU_0107	OTU_0107	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-58	57.41
+OTU_0108	OTU_0108	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-62	64.19
+OTU_0108	OTU_0108	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	3e-62	61.64
+OTU_0108	OTU_0108	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	7e-49	53.47
+OTU_0109	OTU_0109	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	4e-90	90.00
+OTU_0109	OTU_0109	ACF10696  coded_by=287434..288651,organism=Chlorobaculum parvum NCIB 8327,definition=arsenite-activated ATPase ArsA	9e-40	41.67
+OTU_0109	OTU_0109	AAA18794  coded_by=1402..2619,organism=Prosthecochloris vibrioformis,definition=unknown	9e-40	41.67
+OTU_0110	OTU_0110	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	8e-72	68.87
+OTU_0110	OTU_0110	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-71	68.87
+OTU_0110	OTU_0110	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-71	68.87
+OTU_0111	OTU_0111	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	1e-73	67.28
+OTU_0111	OTU_0111	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	7e-14	38.26
+OTU_0111	OTU_0111	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	1e-72	66.67
+OTU_0111	OTU_0111	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	4e-16	36.60
+OTU_0111	OTU_0111	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	2e-72	66.05
+OTU_0111	OTU_0111	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	2e-16	37.25
+OTU_0112	OTU_0112	CCH66102  coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	0.0	89.94
+OTU_0112	OTU_0112	AFY91516  coded_by=230791..232020,organism=Chamaesiphon minutus PCC 6605,definition=arsenite-activated ATPase ArsA	0.0	83.96
+OTU_0112	OTU_0112	AGY58946  coded_by=complement(2848794..2850014),organism=Gloeobacter kilaueensis JS1,definition=arsenite-activated ATPase ArsA	0.0	77.04
+OTU_0113	OTU_0113	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-126	56.35
+OTU_0113	OTU_0113	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-122	53.64
+OTU_0113	OTU_0113	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	5e-119	54.22
+OTU_0114	OTU_0114	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-72	67.74
+OTU_0114	OTU_0114	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	1e-72	67.74
+OTU_0114	OTU_0114	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-72	67.74
+OTU_0115	OTU_0115	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	4e-61	69.74
+OTU_0115	OTU_0115	KQV72750  coded_by=complement(10598..11809),organism=Nocardioides sp. Root122,definition=arsenic-transporting ATPase	1e-51	61.18
+OTU_0115	OTU_0115	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	1e-51	58.44
+OTU_0116	OTU_0116	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-60	52.15
+OTU_0116	OTU_0116	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-59	56.79
+OTU_0116	OTU_0116	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-59	55.56
+OTU_0117	OTU_0117	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5e-63	55.42
+OTU_0117	OTU_0117	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-62	55.42
+OTU_0117	OTU_0117	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	1e-62	54.82
+OTU_0118	OTU_0118	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	3e-86	75.88
+OTU_0118	OTU_0118	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-19	40.43
+OTU_0118	OTU_0118	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-85	75.88
+OTU_0118	OTU_0118	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-21	41.13
+OTU_0118	OTU_0118	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-85	75.88
+OTU_0118	OTU_0118	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-21	41.13
+OTU_0119	OTU_0119	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	9e-61	52.47
+OTU_0119	OTU_0119	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2e-60	58.64
+OTU_0119	OTU_0119	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	8e-60	57.41
+OTU_0120	OTU_0120	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-94	79.78
+OTU_0120	OTU_0120	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	8e-19	39.60
+OTU_0120	OTU_0120	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1e-93	79.78
+OTU_0120	OTU_0120	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	3e-21	40.27
+OTU_0120	OTU_0120	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-93	79.78
+OTU_0120	OTU_0120	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	3e-21	40.27
+OTU_0121	OTU_0121	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	7e-77	62.57
+OTU_0121	OTU_0121	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	5e-69	55.88
+OTU_0121	OTU_0121	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	7e-66	52.63
+OTU_0122	OTU_0122	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-91	87.42
+OTU_0122	OTU_0122	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-91	87.42
+OTU_0122	OTU_0122	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	2e-91	86.75
+OTU_0123	OTU_0123	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	1e-71	65.56
+OTU_0123	OTU_0123	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-71	65.56
+OTU_0123	OTU_0123	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	4e-71	64.90
+OTU_0124	OTU_0124	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	5e-64	59.64
+OTU_0124	OTU_0124	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5e-64	56.02
+OTU_0124	OTU_0124	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	6e-64	56.02
+OTU_0125	OTU_0125	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-64	60.24
+OTU_0125	OTU_0125	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-63	59.64
+OTU_0125	OTU_0125	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	4e-63	59.64
+OTU_0126	OTU_0126	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-72	62.50
+OTU_0126	OTU_0126	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	8e-67	59.38
+OTU_0126	OTU_0126	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	1e-63	56.88
+OTU_0127	OTU_0127	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	8e-67	54.12
+OTU_0127	OTU_0127	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-65	50.00
+OTU_0127	OTU_0127	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-62	50.60
+OTU_0128	OTU_0128	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-54	50.62
+OTU_0128	OTU_0128	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	7e-52	49.68
+OTU_0128	OTU_0128	KQM10295  coded_by=76197..77402,organism=Methanomassiliicoccales archaeon RumEn M2,definition=arsenical pump-driving ATPase	8e-52	50.00
+OTU_0129	OTU_0129	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	7e-82	71.76
+OTU_0129	OTU_0129	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	1e-12	38.69
+OTU_0129	OTU_0129	EGF29969  coded_by=complement(84721..86502),organism=Rhodopirellula baltica WH47,definition=arsenite-activated ATPase ArsA	3e-81	70.59
+OTU_0129	OTU_0129	EGF29969  coded_by=complement(84721..86502),organism=Rhodopirellula baltica WH47,definition=arsenite-activated ATPase ArsA	1e-15	37.32
+OTU_0129	OTU_0129	CAD76332  coded_by=complement(265158..266939),organism=Rhodopirellula baltica SH 1,definition=ArsA-catalytic subunit of arsenic oxyanion-translocating ATPase	4e-81	70.59
+OTU_0129	OTU_0129	CAD76332  coded_by=complement(265158..266939),organism=Rhodopirellula baltica SH 1,definition=ArsA-catalytic subunit of arsenic oxyanion-translocating ATPase	1e-15	37.32
+OTU_0130	OTU_0130	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-74	65.84
+OTU_0130	OTU_0130	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-74	60.24
+OTU_0130	OTU_0130	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-68	59.62
+OTU_0131	OTU_0131	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	4e-65	52.00
+OTU_0131	OTU_0131	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-62	52.57
+OTU_0131	OTU_0131	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	2e-62	50.86
+OTU_0132	OTU_0132	BAM00119  coded_by=2601084..2602304,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-63	58.49
+OTU_0132	OTU_0132	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	3e-60	59.12
+OTU_0132	OTU_0132	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-60	59.12
+OTU_0133	OTU_0133	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	6e-71	69.54
+OTU_0133	OTU_0133	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	7e-71	69.54
+OTU_0133	OTU_0133	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	8e-71	69.54
+OTU_0134	OTU_0134	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-71	64.94
+OTU_0134	OTU_0134	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	1e-65	60.39
+OTU_0134	OTU_0134	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-61	58.44
+OTU_0135	OTU_0135	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-134	58.25
+OTU_0135	OTU_0135	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-130	54.46
+OTU_0135	OTU_0135	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-127	58.12
+OTU_0136	OTU_0136	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	4e-90	80.86
+OTU_0136	OTU_0136	ACF10696  coded_by=287434..288651,organism=Chlorobaculum parvum NCIB 8327,definition=arsenite-activated ATPase ArsA	3e-41	45.89
+OTU_0136	OTU_0136	AAA18794  coded_by=1402..2619,organism=Prosthecochloris vibrioformis,definition=unknown	3e-41	45.89
+OTU_0137	OTU_0137	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	7e-92	88.59
+OTU_0137	OTU_0137	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	8e-92	88.59
+OTU_0137	OTU_0137	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-91	87.92
+OTU_0138	OTU_0138	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-70	66.88
+OTU_0138	OTU_0138	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	2e-70	66.88
+OTU_0138	OTU_0138	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	3e-70	66.88
+OTU_0139	OTU_0139	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	1e-95	91.39
+OTU_0139	OTU_0139	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-95	91.39
+OTU_0139	OTU_0139	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	6e-94	90.07
+OTU_0140	OTU_0140	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	9e-87	75.88
+OTU_0140	OTU_0140	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	5e-20	40.43
+OTU_0140	OTU_0140	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-86	75.88
+OTU_0140	OTU_0140	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-20	40.43
+OTU_0140	OTU_0140	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-86	75.29
+OTU_0140	OTU_0140	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-18	41.13
+OTU_0141	OTU_0141	OAI10638  coded_by=complement(1817..3580),organism=Methylomonas lenta,definition=arsenical pump-driving ATPase	9e-107	88.64
+OTU_0141	OTU_0141	OAI10638  coded_by=complement(1817..3580),organism=Methylomonas lenta,definition=arsenical pump-driving ATPase	2e-15	33.12
+OTU_0141	OTU_0141	ABP77944  coded_by=complement(272310..274082),organism=Pseudomonas stutzeri A1501,definition=arsenical pump-driving ATPase	9e-106	88.64
+OTU_0141	OTU_0141	ABP77944  coded_by=complement(272310..274082),organism=Pseudomonas stutzeri A1501,definition=arsenical pump-driving ATPase	2e-15	32.28
+OTU_0141	OTU_0141	AAZ47367  coded_by=complement(2836143..2837915),organism=Dechloromonas aromatica RCB,definition=arsenite efflux ATP-binding protein ArsA	2e-104	88.07
+OTU_0141	OTU_0141	AAZ47367  coded_by=complement(2836143..2837915),organism=Dechloromonas aromatica RCB,definition=arsenite efflux ATP-binding protein ArsA	3e-17	35.81
+OTU_0142	OTU_0142	AGY58946  coded_by=complement(2848794..2850014),organism=Gloeobacter kilaueensis JS1,definition=arsenite-activated ATPase ArsA	2e-58	56.02
+OTU_0142	OTU_0142	AFY91516  coded_by=230791..232020,organism=Chamaesiphon minutus PCC 6605,definition=arsenite-activated ATPase ArsA	9e-56	54.88
+OTU_0142	OTU_0142	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-54	48.80
+OTU_0143	OTU_0143	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-75	61.40
+OTU_0143	OTU_0143	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	3e-67	54.12
+OTU_0143	OTU_0143	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-66	53.22
+OTU_0144	OTU_0144	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-57	55.00
+OTU_0144	OTU_0144	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-55	50.33
+OTU_0144	OTU_0144	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	2e-55	52.35
+OTU_0145	OTU_0145	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	1e-77	69.28
+OTU_0145	OTU_0145	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	5e-15	36.05
+OTU_0145	OTU_0145	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	1e-77	69.28
+OTU_0145	OTU_0145	EKK00616  coded_by=57310..59091,organism=Rhodopirellula baltica SH28,definition=arsenite-activated ATPase ArsA	6e-15	36.05
+OTU_0145	OTU_0145	EGF29969  coded_by=complement(84721..86502),organism=Rhodopirellula baltica WH47,definition=arsenite-activated ATPase ArsA	2e-77	69.28
+OTU_0145	OTU_0145	EGF29969  coded_by=complement(84721..86502),organism=Rhodopirellula baltica WH47,definition=arsenite-activated ATPase ArsA	6e-15	36.05
+OTU_0146	OTU_0146	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-87	77.84
+OTU_0146	OTU_0146	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	6e-18	39.01
+OTU_0146	OTU_0146	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	6e-87	77.84
+OTU_0146	OTU_0146	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-20	39.72
+OTU_0146	OTU_0146	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	7e-87	77.84
+OTU_0146	OTU_0146	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	3e-20	39.72
+OTU_0147	OTU_0147	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	1e-71	58.42
+OTU_0147	OTU_0147	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	6e-71	56.44
+OTU_0147	OTU_0147	KRB75998  coded_by=complement(283762..284973),organism=Nocardioides sp. Root190,definition=arsenic-transporting ATPase	1e-70	56.44
+OTU_0148	OTU_0148	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-71	62.05
+OTU_0148	OTU_0148	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-69	59.64
+OTU_0148	OTU_0148	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	1e-63	55.42
+OTU_0149	OTU_0149	KLU07546  coded_by=287691..289472,organism=Rhodopirellula sp. K833,definition=Arsenical pump-driving ATPase	8e-87	74.85
+OTU_0149	OTU_0149	KLU07546  coded_by=287691..289472,organism=Rhodopirellula sp. K833,definition=Arsenical pump-driving ATPase	2e-16	38.51
+OTU_0149	OTU_0149	ADB15887  coded_by=complement(1486503..1488284),organism=Pirellula staleyi DSM 6068,definition=arsenite-activated ATPase ArsA	2e-85	74.27
+OTU_0149	OTU_0149	ADB15887  coded_by=complement(1486503..1488284),organism=Pirellula staleyi DSM 6068,definition=arsenite-activated ATPase ArsA	7e-16	38.10
+OTU_0149	OTU_0149	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	4e-85	74.27
+OTU_0149	OTU_0149	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	3e-15	41.96
+OTU_0150	OTU_0150	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-106	49.67
+OTU_0150	OTU_0150	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-104	47.71
+OTU_0150	OTU_0150	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	4e-104	49.67
+OTU_0151	OTU_0151	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	7e-88	84.00
+OTU_0151	OTU_0151	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	3e-86	74.71
+OTU_0151	OTU_0151	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	1e-85	80.81
+OTU_0152	OTU_0152	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	3e-56	51.25
+OTU_0152	OTU_0152	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-55	55.00
+OTU_0152	OTU_0152	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	1e-55	55.00
+OTU_0153	OTU_0153	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-57	47.34
+OTU_0153	OTU_0153	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-57	55.62
+OTU_0153	OTU_0153	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-57	48.52
+OTU_0154	OTU_0154	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-68	55.62
+OTU_0154	OTU_0154	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	1e-63	50.00
+OTU_0154	OTU_0154	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-61	48.81
+OTU_0155	OTU_0155	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-65	52.05
+OTU_0155	OTU_0155	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	5e-64	48.54
+OTU_0155	OTU_0155	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	4e-61	50.00
+OTU_0156	OTU_0156	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-75	65.87
+OTU_0156	OTU_0156	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	1e-75	65.87
+OTU_0156	OTU_0156	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	2e-75	65.87
+OTU_0157	OTU_0157	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-75	65.16
+OTU_0157	OTU_0157	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	8e-68	62.58
+OTU_0157	OTU_0157	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	4e-65	60.00
+OTU_0158	OTU_0158	KPK29271  coded_by=4400..5605,organism=Nitrospira bacterium SG8_3,definition=arsenic-transporting ATPase	2e-93	59.33
+OTU_0158	OTU_0158	AFM24013  coded_by=complement(1540336..1541685),organism=Desulfomonile tiedjei DSM 6799,definition=arsenite-activated ATPase ArsA	2e-90	57.89
+OTU_0158	OTU_0158	KMY68823  coded_by=complement(973626..974858),organism=Desulfocarbo indianensis,definition=hypothetical protein	4e-84	53.88
+OTU_0159	OTU_0159	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	7e-59	54.25
+OTU_0159	OTU_0159	ABB27499  coded_by=complement(250060..251286),organism=Chlorobium chlorochromatii CaD3,definition=arsenite efflux ATP-binding protein ArsA	1e-53	53.25
+OTU_0159	OTU_0159	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-53	56.49
+OTU_0160	OTU_0160	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-62	52.41
+OTU_0160	OTU_0160	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	7e-61	58.43
+OTU_0160	OTU_0160	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	8e-61	57.83
+OTU_0161	OTU_0161	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-56	51.25
+OTU_0161	OTU_0161	AGY58946  coded_by=complement(2848794..2850014),organism=Gloeobacter kilaueensis JS1,definition=arsenite-activated ATPase ArsA	9e-56	48.02
+OTU_0161	OTU_0161	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-55	49.37
+OTU_0162	OTU_0162	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	8e-69	54.91
+OTU_0162	OTU_0162	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	1e-62	51.48
+OTU_0162	OTU_0162	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	4e-62	47.98
+OTU_0163	OTU_0163	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-78	65.06
+OTU_0163	OTU_0163	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-66	56.36
+OTU_0163	OTU_0163	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-62	55.76
+OTU_0164	OTU_0164	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-68	60.51
+OTU_0164	OTU_0164	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-64	57.32
+OTU_0164	OTU_0164	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-62	58.60
+OTU_0165	OTU_0165	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	8e-67	59.64
+OTU_0165	OTU_0165	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	8e-67	59.04
+OTU_0165	OTU_0165	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	9e-67	59.04
+OTU_0166	OTU_0166	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	2e-65	56.02
+OTU_0166	OTU_0166	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-65	59.64
+OTU_0166	OTU_0166	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-65	59.64
+OTU_0167	OTU_0167	KQQ41575  coded_by=complement(459194..460402),organism=Nocardioides sp. Leaf307,definition=arsenic-transporting ATPase	2e-63	64.42
+OTU_0167	OTU_0167	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	3e-63	63.80
+OTU_0167	OTU_0167	KQP66716  coded_by=618138..619346,organism=Nocardioides sp. Leaf285,definition=arsenic-transporting ATPase	3e-63	64.42
+OTU_0168	OTU_0168	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	5e-64	61.05
+OTU_0168	OTU_0168	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	1e-62	59.76
+OTU_0168	OTU_0168	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-62	51.48
+OTU_0169	OTU_0169	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	6e-60	62.82
+OTU_0169	OTU_0169	KQQ41575  coded_by=complement(459194..460402),organism=Nocardioides sp. Leaf307,definition=arsenic-transporting ATPase	6e-60	67.32
+OTU_0169	OTU_0169	KQP66716  coded_by=618138..619346,organism=Nocardioides sp. Leaf285,definition=arsenic-transporting ATPase	2e-59	66.67
+OTU_0170	OTU_0170	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-65	56.79
+OTU_0170	OTU_0170	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-65	57.41
+OTU_0170	OTU_0170	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	3e-64	56.79
+OTU_0171	OTU_0171	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-68	60.65
+OTU_0171	OTU_0171	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	4e-67	63.23
+OTU_0171	OTU_0171	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	9e-67	58.71
+OTU_0172	OTU_0172	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-68	61.39
+OTU_0172	OTU_0172	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-68	59.49
+OTU_0172	OTU_0172	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2e-67	64.33
+OTU_0173	OTU_0173	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	4e-59	52.76
+OTU_0173	OTU_0173	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	6e-59	51.85
+OTU_0173	OTU_0173	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-54	54.32
+OTU_0174	OTU_0174	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-70	64.90
+OTU_0174	OTU_0174	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	4e-70	64.90
+OTU_0174	OTU_0174	BAM00119  coded_by=2601084..2602304,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-69	64.47
+OTU_0175	OTU_0175	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-76	64.07
+OTU_0175	OTU_0175	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-66	59.28
+OTU_0175	OTU_0175	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	2e-66	58.08
+OTU_0176	OTU_0176	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	2e-57	53.37
+OTU_0176	OTU_0176	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-56	55.62
+OTU_0176	OTU_0176	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-56	55.00
+OTU_0177	OTU_0177	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	1e-59	49.70
+OTU_0177	OTU_0177	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-58	49.10
+OTU_0177	OTU_0177	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	5e-58	55.09
+OTU_0178	OTU_0178	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	2e-60	68.42
+OTU_0178	OTU_0178	KQV72750  coded_by=complement(10598..11809),organism=Nocardioides sp. Root122,definition=arsenic-transporting ATPase	1e-52	61.84
+OTU_0178	OTU_0178	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	6e-52	57.79
+OTU_0179	OTU_0179	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	4e-71	60.37
+OTU_0179	OTU_0179	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-67	56.97
+OTU_0179	OTU_0179	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	1e-66	60.37
+OTU_0180	OTU_0180	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	5e-77	70.06
+OTU_0180	OTU_0180	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	8e-77	70.06
+OTU_0180	OTU_0180	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	8e-77	70.06
+OTU_0181	OTU_0181	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	4e-65	58.68
+OTU_0181	OTU_0181	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-64	58.68
+OTU_0181	OTU_0181	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	6e-64	57.49
+OTU_0182	OTU_0182	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	2e-61	59.30
+OTU_0182	OTU_0182	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	8e-61	59.30
+OTU_0182	OTU_0182	ADB31883  coded_by=2987562..2988860,organism=Kribbella flavida DSM 17836,definition=Arsenite-transporting ATPase	2e-60	60.92
+OTU_0183	OTU_0183	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-71	66.45
+OTU_0183	OTU_0183	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	1e-71	66.45
+OTU_0183	OTU_0183	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-71	66.45
+OTU_0184	OTU_0184	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	4e-56	53.50
+OTU_0184	OTU_0184	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5e-55	54.78
+OTU_0184	OTU_0184	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	9e-55	54.78
+OTU_0185	OTU_0185	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	4e-84	76.05
+OTU_0185	OTU_0185	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-22	44.20
+OTU_0185	OTU_0185	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	4e-84	76.05
+OTU_0185	OTU_0185	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-22	44.20
+OTU_0185	OTU_0185	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-84	75.45
+OTU_0185	OTU_0185	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	8e-21	44.20
+OTU_0186	OTU_0186	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	9e-63	58.82
+OTU_0186	OTU_0186	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	3e-62	59.48
+OTU_0186	OTU_0186	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	2e-61	56.86
+OTU_0187	OTU_0187	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-126	55.78
+OTU_0187	OTU_0187	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-122	53.38
+OTU_0187	OTU_0187	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	6e-116	51.61
+OTU_0188	OTU_0188	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-115	61.54
+OTU_0188	OTU_0188	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-99	53.44
+OTU_0188	OTU_0188	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-96	54.25
+OTU_0189	OTU_0189	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	4e-72	68.87
+OTU_0189	OTU_0189	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	5e-72	68.87
+OTU_0189	OTU_0189	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	6e-72	68.87
+OTU_0190	OTU_0190	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	2e-71	66.67
+OTU_0190	OTU_0190	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	5e-11	38.41
+OTU_0190	OTU_0190	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	7e-71	66.05
+OTU_0190	OTU_0190	EMI23156  coded_by=complement(23924..25705),organism=Rhodopirellula europaea SH398,definition=arsenite-activated ATPase ArsA	5e-18	39.16
+OTU_0190	OTU_0190	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	1e-70	66.05
+OTU_0190	OTU_0190	ELP29598  coded_by=53327..55108,organism=Rhodopirellula baltica SWK14,definition=arsenite-activated ATPase ArsA	4e-18	39.86
+OTU_0191	OTU_0191	ALC81207  coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	1e-64	55.42
+OTU_0191	OTU_0191	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5e-63	57.23
+OTU_0191	OTU_0191	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	7e-63	57.83
+OTU_0192	OTU_0192	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	8e-74	70.86
+OTU_0192	OTU_0192	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-73	70.86
+OTU_0192	OTU_0192	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	3e-73	70.20
+OTU_0193	OTU_0193	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	4e-96	78.66
+OTU_0193	OTU_0193	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	2e-93	79.27
+OTU_0193	OTU_0193	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-66	60.98
+OTU_0194	OTU_0194	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	9e-71	67.53
+OTU_0194	OTU_0194	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	1e-70	67.53
+OTU_0194	OTU_0194	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-70	67.53
+OTU_0195	OTU_0195	BAL76302  coded_by=complement(3179494..3181248),organism=Bradyrhizobium sp. S23321,definition=putative arsenical translocating ATPase	3e-108	92.81
+OTU_0195	OTU_0195	BAL76302  coded_by=complement(3179494..3181248),organism=Bradyrhizobium sp. S23321,definition=putative arsenical translocating ATPase	3e-21	35.14
+OTU_0195	OTU_0195	CUT15372  coded_by=complement(6580526..6582280),organism=Bradyrhizobium sp.,definition=Arsenical pumpdriving ATPase EC 36316	1e-107	92.22
+OTU_0195	OTU_0195	CUT15372  coded_by=complement(6580526..6582280),organism=Bradyrhizobium sp.,definition=Arsenical pumpdriving ATPase EC 36316	4e-22	35.81
+OTU_0195	OTU_0195	BAM92635  coded_by=complement(7544175..7545932),organism=Bradyrhizobium oligotrophicum S58,definition=arsenite-activated ATPase ArsA	4e-105	91.02
+OTU_0195	OTU_0195	BAM92635  coded_by=complement(7544175..7545932),organism=Bradyrhizobium oligotrophicum S58,definition=arsenite-activated ATPase ArsA	2e-18	36.49
+OTU_0196	OTU_0196	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-115	47.57
+OTU_0196	OTU_0196	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-113	49.84
+OTU_0196	OTU_0196	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2e-111	48.11
+OTU_0197	OTU_0197	KQW39122  coded_by=complement(445182..446954),organism=Rhizobacter sp. Root404,definition=arsenical pump-driving ATPase	1e-77	81.08
+OTU_0197	OTU_0197	KQW39122  coded_by=complement(445182..446954),organism=Rhizobacter sp. Root404,definition=arsenical pump-driving ATPase	2e-19	35.21
+OTU_0197	OTU_0197	AFU45099  coded_by=1515043..1516875,organism=Acidovorax sp. KKS102,definition=arsenite-activated ATPase subunit ArsA	1e-75	81.33
+OTU_0197	OTU_0197	AFU45099  coded_by=1515043..1516875,organism=Acidovorax sp. KKS102,definition=arsenite-activated ATPase subunit ArsA	2e-20	35.21
+OTU_0197	OTU_0197	EON12012  coded_by=50695..52698,organism=Pandoraea sp. SD6-2,definition=arsenite-activated ATPase subunit ArsA	2e-75	79.05
+OTU_0197	OTU_0197	EON12012  coded_by=50695..52698,organism=Pandoraea sp. SD6-2,definition=arsenite-activated ATPase subunit ArsA	4e-21	37.32
+OTU_0198	OTU_0198	KQV72750  coded_by=complement(10598..11809),organism=Nocardioides sp. Root122,definition=arsenic-transporting ATPase	4e-63	61.11
+OTU_0198	OTU_0198	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	2e-62	60.49
+OTU_0198	OTU_0198	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	2e-62	60.00
+OTU_0199	OTU_0199	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-133	57.62
+OTU_0199	OTU_0199	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-129	53.40
+OTU_0199	OTU_0199	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	3e-124	54.05
+OTU_0200	OTU_0200	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	2e-131	66.67
+OTU_0200	OTU_0200	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	2e-130	65.70
+OTU_0200	OTU_0200	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	4e-129	63.49
+OTU_0201	OTU_0201	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-96	56.91
+OTU_0201	OTU_0201	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	3e-92	52.85
+OTU_0201	OTU_0201	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	3e-89	52.44
+OTU_0202	OTU_0202	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	6e-77	60.48
+OTU_0202	OTU_0202	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-70	60.48
+OTU_0202	OTU_0202	KTB49190  coded_by=91724..92947,organism=Dehalogenimonas alkenigignens,definition=arsenite efflux ATP-binding protein ArsA	1e-68	60.48
+OTU_0203	OTU_0203	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	9e-71	65.33
+OTU_0203	OTU_0203	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	2e-67	61.33
+OTU_0203	OTU_0203	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-61	54.67
+OTU_0204	OTU_0204	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	9e-128	78.97
+OTU_0204	OTU_0204	KXK51665  coded_by=10231..11433,organism=Chloroflexi bacterium OLB13,definition=arsenite-activated ATPase ArsA	3e-118	75.23
+OTU_0204	OTU_0204	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-72	50.93
+OTU_0205	OTU_0205	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-57	59.09
+OTU_0205	OTU_0205	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-57	59.09
+OTU_0205	OTU_0205	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	5e-57	59.09
+OTU_0206	OTU_0206	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	8e-69	62.05
+OTU_0206	OTU_0206	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-68	61.45
+OTU_0206	OTU_0206	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-68	62.05
+OTU_0207	OTU_0207	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1e-85	75.45
+OTU_0207	OTU_0207	AGP33846  coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	4e-20	40.43
+OTU_0207	OTU_0207	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	1e-85	75.45
+OTU_0207	OTU_0207	KYF63246  coded_by=5557..7347,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	4e-20	40.43
+OTU_0207	OTU_0207	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	4e-85	75.45
+OTU_0207	OTU_0207	KYF56973  coded_by=19106..20866,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-18	40.43
+OTU_0208	OTU_0208	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	8e-61	55.62
+OTU_0208	OTU_0208	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	8e-61	56.21
+OTU_0208	OTU_0208	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	1e-60	59.88
+OTU_0209	OTU_0209	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	8e-71	64.74
+OTU_0209	OTU_0209	ABY36137  coded_by=3944835..3946040,organism=Chloroflexus aurantiacus J-10-fl,definition=arsenite-activated ATPase ArsA	8e-71	64.74
+OTU_0209	OTU_0209	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	9e-71	64.74
+OTU_0210	OTU_0210	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-65	59.64
+OTU_0210	OTU_0210	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-64	59.64
+OTU_0210	OTU_0210	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-64	59.64
+OTU_0211	OTU_0211	AFU59968  coded_by=2386281..2387492,organism=Candidatus Nitrososphaera gargensis Ga9.2,definition=putative arsenite-activated ATPase ArsA	5e-85	80.38
+OTU_0211	OTU_0211	ACF10696  coded_by=287434..288651,organism=Chlorobaculum parvum NCIB 8327,definition=arsenite-activated ATPase ArsA	6e-42	46.53
+OTU_0211	OTU_0211	AAA18794  coded_by=1402..2619,organism=Prosthecochloris vibrioformis,definition=unknown	6e-42	46.53
+OTU_0212	OTU_0212	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	6e-61	57.40
+OTU_0212	OTU_0212	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	6e-61	57.40
+OTU_0212	OTU_0212	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	1e-59	50.30
+OTU_0213	OTU_0213	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-66	57.58
+OTU_0213	OTU_0213	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-65	53.94
+OTU_0213	OTU_0213	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-59	50.91
+OTU_0214	OTU_0214	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	3e-82	74.14
+OTU_0214	OTU_0214	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	1e-81	73.56
+OTU_0214	OTU_0214	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	4e-80	74.14
+OTU_0215	OTU_0215	KNF07309  coded_by=44758..46605,organism=[Clostridium] purinilyticum,definition=transport-energizing ATPase, TRC40/GET3/ArsA family	9e-71	64.90
+OTU_0215	OTU_0215	KNF07309  coded_by=44758..46605,organism=[Clostridium] purinilyticum,definition=transport-energizing ATPase, TRC40/GET3/ArsA family	8e-50	49.66
+OTU_0215	OTU_0215	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	2e-70	64.90
+OTU_0215	OTU_0215	KPU26322  coded_by=complement(186..1958),organism=Caloranaerobacter sp. TR13,definition=hypothetical protein	5e-51	51.01
+OTU_0215	OTU_0215	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	3e-70	65.56
+OTU_0215	OTU_0215	KLU62532  coded_by=57954..59720,organism=Peptococcaceae bacterium CEB3,definition=arsenical pump-driving ATPase	2e-46	47.68
+OTU_0216	OTU_0216	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	6e-68	54.39
+OTU_0216	OTU_0216	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	2e-66	50.29
+OTU_0216	OTU_0216	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-63	54.12
+OTU_0217	OTU_0217	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	5e-60	58.64
+OTU_0217	OTU_0217	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	7e-60	58.02
+OTU_0217	OTU_0217	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	2e-59	58.02
+OTU_0218	OTU_0218	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	7e-59	51.85
+OTU_0218	OTU_0218	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-57	56.79
+OTU_0218	OTU_0218	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	1e-57	56.79
+OTU_0219	OTU_0219	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	5e-68	54.44
+OTU_0219	OTU_0219	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-65	50.60
+OTU_0219	OTU_0219	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	3e-63	51.79
+OTU_0220	OTU_0220	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	7e-64	58.24
+OTU_0220	OTU_0220	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	4e-61	56.47
+OTU_0220	OTU_0220	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	3e-60	58.33
+OTU_0221	OTU_0221	KWX01664  coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	2e-101	71.62
+OTU_0221	OTU_0221	ABL82613  coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	2e-98	66.96
+OTU_0221	OTU_0221	ANH39095  coded_by=2791433..2792641,organism=Nocardioides dokdonensis FR1436,definition=Arsenical pump-driving ATPase	2e-98	67.39
+OTU_0222	OTU_0222	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	9e-61	57.83
+OTU_0222	OTU_0222	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	9e-61	57.83
+OTU_0222	OTU_0222	AFU16453  coded_by=complement(4958980..4960200),organism=Bacillus thuringiensis MC28,definition=Anion-transporting ATPase	3e-59	50.00
+OTU_0223	OTU_0223	EKF58899  coded_by=238712..240481,organism=Agrobacterium albertimagni AOL15,definition=arsenical translocating ATPase	1e-74	71.61
+OTU_0223	OTU_0223	EKF58899  coded_by=238712..240481,organism=Agrobacterium albertimagni AOL15,definition=arsenical translocating ATPase	2e-19	40.43
+OTU_0223	OTU_0223	KYF63196  coded_by=4242..6059,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	2e-72	71.79
+OTU_0223	OTU_0223	KYF63196  coded_by=4242..6059,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	5e-20	39.01
+OTU_0223	OTU_0223	KYF90593  coded_by=13149..14960,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	6e-72	71.79
+OTU_0223	OTU_0223	KYF90593  coded_by=13149..14960,organism=Sorangium cellulosum,definition=arsenical pump-driving ATPase	8e-22	41.13
+OTU_0224	OTU_0224	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-59	51.85
+OTU_0224	OTU_0224	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	4e-58	56.79
+OTU_0224	OTU_0224	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	8e-58	56.79
+OTU_0225	OTU_0225	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	8e-61	54.82
+OTU_0225	OTU_0225	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	1e-60	54.22
+OTU_0225	OTU_0225	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	2e-60	54.22
+OTU_0226	OTU_0226	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	2e-71	68.21
+OTU_0226	OTU_0226	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	3e-71	68.21
+OTU_0226	OTU_0226	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	3e-71	68.21
+OTU_0227	OTU_0227	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	2e-71	63.23
+OTU_0227	OTU_0227	KXK13923  coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	5e-68	60.65
+OTU_0227	OTU_0227	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-67	62.58
+OTU_0228	OTU_0228	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	0.0	83.17
+OTU_0228	OTU_0228	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	1e-121	53.80
+OTU_0228	OTU_0228	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-119	53.47
+OTU_0229	OTU_0229	AGK61927  coded_by=1772423..1773631,organism=Archaeoglobus sulfaticallidus PM70-1,definition=arsenite efflux ATP-binding protein ArsA	2e-62	50.30
+OTU_0229	OTU_0229	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	2e-62	57.99
+OTU_0229	OTU_0229	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-62	57.40
+OTU_0230	OTU_0230	SBT03703  coded_by=11048..12850,organism=Propionivibrio sp. S1,definition=Arsenical pump-driving ATPase	2e-94	85.28
+OTU_0230	OTU_0230	SBT03703  coded_by=11048..12850,organism=Propionivibrio sp. S1,definition=Arsenical pump-driving ATPase	7e-16	33.11
+OTU_0230	OTU_0230	BAP88813  coded_by=complement(1821357..1823129),organism=Burkholderiales bacterium GJ-E10,definition=arsenical pump-driving ATPase	3e-94	85.89
+OTU_0230	OTU_0230	BAP88813  coded_by=complement(1821357..1823129),organism=Burkholderiales bacterium GJ-E10,definition=arsenical pump-driving ATPase	2e-15	32.89
+OTU_0230	OTU_0230	ABP77944  coded_by=complement(272310..274082),organism=Pseudomonas stutzeri A1501,definition=arsenical pump-driving ATPase	3e-94	85.89
+OTU_0230	OTU_0230	ABP77944  coded_by=complement(272310..274082),organism=Pseudomonas stutzeri A1501,definition=arsenical pump-driving ATPase	6e-15	32.21
+OTU_0231	OTU_0231	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	1e-84	72.67
+OTU_0231	OTU_0231	EMB16429  coded_by=complement(107642..109417),organism=Rhodopirellula europaea 6C,definition=arsenite-activated ATPase ArsA	7e-13	35.29
+OTU_0231	OTU_0231	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	7e-84	70.35
+OTU_0231	OTU_0231	EMI58077  coded_by=complement(29413..31185),organism=Rhodopirellula sallentina SM41,definition=arsenite-transporting ATPase	9e-13	40.15
+OTU_0231	OTU_0231	CAD76332  coded_by=complement(265158..266939),organism=Rhodopirellula baltica SH 1,definition=ArsA-catalytic subunit of arsenic oxyanion-translocating ATPase	2e-83	71.93
+OTU_0231	OTU_0231	CAD76332  coded_by=complement(265158..266939),organism=Rhodopirellula baltica SH 1,definition=ArsA-catalytic subunit of arsenic oxyanion-translocating ATPase	8e-17	39.01
+OTU_0232	OTU_0232	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	3e-72	66.23
+OTU_0232	OTU_0232	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	4e-72	66.23
+OTU_0232	OTU_0232	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-71	65.58
+OTU_0233	OTU_0233	KPV60626  coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	3e-61	56.63
+OTU_0233	OTU_0233	KEQ25429  coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	3e-61	57.23
+OTU_0233	OTU_0233	KZE79150  coded_by=complement(323439..324653),organism=Paenibacillus elgii,definition=arsenic-transporting ATPase	1e-59	56.02
+OTU_0234	OTU_0234	BAL98496  coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1e-63	52.05
+OTU_0234	OTU_0234	ADJ26752  coded_by=complement(1440540..1441766),organism=Dehalogenimonas lykanthroporepellens BL-DC-9,definition=arsenite-activated ATPase ArsA	9e-58	50.00
+OTU_0234	OTU_0234	AKG54361  coded_by=complement(1670728..1671936),organism=Dehalogenimonas sp. WBC-2,definition=arsenical pump-driving ATPase	2e-57	48.26
+OTU_0235	OTU_0235	OAN48507  coded_by=complement(94651..95856),organism=Chloroflexus sp. isl-2,definition=arsenic-transporting ATPase	4e-72	69.54
+OTU_0235	OTU_0235	ACL23826  coded_by=complement(1137145..1138359),organism=Chloroflexus aggregans DSM 9485,definition=arsenite-activated ATPase ArsA	4e-72	69.54
+OTU_0235	OTU_0235	ACM54556  coded_by=3938076..3939281,organism=Chloroflexus sp. Y-400-fl,definition=arsenite-activated ATPase ArsA	1e-71	68.87
+OTU_0236	OTU_0236	EGD40755  coded_by=complement(27868..29085),organism=Nocardioidaceae bacterium Broad-1,definition=arsenite-activated ATPase	2e-57	60.90
+OTU_0236	OTU_0236	CCH66102  coded_by=complement(14134..15399),organism=Richelia intracellularis HM01,definition=Arsenical pump-driving ATPase	7e-57	55.19
+OTU_0236	OTU_0236	KJR05944  coded_by=complement(1996..3207),organism=Nocardioides luteus,definition=arsenic ABC transporter ATPase	2e-56	60.26

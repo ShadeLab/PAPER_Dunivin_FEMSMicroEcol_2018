@@ -1,0 +1,312 @@
+OTU_0001	OTU_0001	KOG45002  coded_by=complement(36965..37900),organism=Streptomyces decoyicus,definition=beta-lactamase	2e-112	67.54
+OTU_0001	OTU_0001	KQO63155  coded_by=complement(280877..281830),organism=Curtobacterium sp. Leaf261,definition=class A beta-lactamase	1e-106	66.52
+OTU_0001	OTU_0001	AMM21325  coded_by=complement(3310863..3311810),organism=Frondihabitans sp. PAMC 28766,definition=class A beta-lactamase	4e-105	66.37
+OTU_0002	OTU_0002	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	1e-101	59.76
+OTU_0002	OTU_0002	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	1e-93	56.61
+OTU_0002	OTU_0002	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	2e-92	54.88
+OTU_0003	OTU_0003	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	4e-95	53.61
+OTU_0003	OTU_0003	EMS41548  coded_by=147955..148836,organism=Methylobacterium mesophilicum SR1.6/6,definition=beta-lactamase	2e-94	57.69
+OTU_0003	OTU_0003	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	3e-91	52.11
+OTU_0004	OTU_0004	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	6e-57	64.00
+OTU_0004	OTU_0004	KYF63386  coded_by=complement(9888..10871),organism=Sorangium cellulosum,definition=class A beta-lactamase	3e-55	63.33
+OTU_0004	OTU_0004	EMS41548  coded_by=147955..148836,organism=Methylobacterium mesophilicum SR1.6/6,definition=beta-lactamase	1e-54	60.40
+OTU_0005	OTU_0005	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	3e-116	64.17
+OTU_0005	OTU_0005	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	5e-113	64.80
+OTU_0005	OTU_0005	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	7e-112	64.57
+OTU_0006	OTU_0006	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	6e-96	61.09
+OTU_0006	OTU_0006	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	3e-94	61.26
+OTU_0006	OTU_0006	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	7e-93	59.91
+OTU_0007	OTU_0007	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	5e-89	69.06
+OTU_0007	OTU_0007	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	7e-85	68.13
+OTU_0007	OTU_0007	CCD96924  coded_by=complement(5025..5891),organism=Bradyrhizobium sp. ORS 375,definition=putative Beta-lactamase	6e-84	68.13
+OTU_0008	OTU_0008	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	1e-85	65.24
+OTU_0008	OTU_0008	ABQ36475  coded_by=4649759..4650625,organism=Bradyrhizobium sp. BTAi1,definition=putative Beta-lactamase	6e-85	65.78
+OTU_0008	OTU_0008	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	1e-84	65.78
+OTU_0009	OTU_0009	AMP05921  coded_by=complement(3713267..3714172),organism=Collimonas pratensis,definition=beta-lactamase family protein	4e-56	59.87
+OTU_0009	OTU_0009	KYF63386  coded_by=complement(9888..10871),organism=Sorangium cellulosum,definition=class A beta-lactamase	1e-55	58.94
+OTU_0009	OTU_0009	AMP15872  coded_by=complement(3824932..3825837),organism=Collimonas pratensis,definition=beta-lactamase family protein	4e-55	60.13
+OTU_0010	OTU_0010	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	9e-114	65.98
+OTU_0010	OTU_0010	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	5e-108	63.49
+OTU_0010	OTU_0010	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	5e-105	64.94
+OTU_0011	OTU_0011	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	2e-118	66.54
+OTU_0011	OTU_0011	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	6e-113	63.14
+OTU_0011	OTU_0011	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	4e-110	65.43
+OTU_0012	OTU_0012	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	3e-83	70.59
+OTU_0012	OTU_0012	AEK61210  coded_by=1627469..1628377,organism=Collimonas fungivorans Ter331,definition=Beta-lactamase	6e-79	68.24
+OTU_0012	OTU_0012	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	3e-78	68.42
+OTU_0013	OTU_0013	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	5e-118	70.54
+OTU_0013	OTU_0013	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	1e-115	67.77
+OTU_0013	OTU_0013	ABQ36475  coded_by=4649759..4650625,organism=Bradyrhizobium sp. BTAi1,definition=putative Beta-lactamase	6e-111	65.29
+OTU_0014	OTU_0014	KMJ94243  coded_by=complement(91317..92186),organism=Bradyrhizobium japonicum,definition=beta-lactamase	2e-129	90.50
+OTU_0014	OTU_0014	BAL06250  coded_by=complement(1012787..1013656),organism=Bradyrhizobium japonicum USDA 6,definition=beta-lactamase L2 precursor	2e-129	90.50
+OTU_0014	OTU_0014	AJA59789  coded_by=complement(1010858..1011727),organism=Bradyrhizobium japonicum,definition=beta-lactamase	2e-129	90.50
+OTU_0015	OTU_0015	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	3e-112	70.22
+OTU_0015	OTU_0015	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	4e-111	72.00
+OTU_0015	OTU_0015	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	1e-107	67.56
+OTU_0016	OTU_0016	ACI93820  coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	6e-97	68.75
+OTU_0016	OTU_0016	AEI06076  coded_by=1467869..1468747,organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	6e-97	68.75
+OTU_0016	OTU_0016	AEI02500  coded_by=1469007..1469885,organism=Oligotropha carboxidovorans OM4,definition=beta-lactamase	6e-97	68.75
+OTU_0017	OTU_0017	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	4e-93	52.85
+OTU_0017	OTU_0017	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	4e-93	53.26
+OTU_0017	OTU_0017	KWT74028  coded_by=147112..147993,organism=Variovorax sp. WDL1,definition=Beta-lactamase	1e-91	55.69
+OTU_0018	OTU_0018	AKJ28364  coded_by=1903651..1904502,organism=[Polyangium] brachysporum,definition=beta-lactamase	6e-57	55.87
+OTU_0018	OTU_0018	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	7e-57	50.00
+OTU_0018	OTU_0018	AGP35118  coded_by=complement(3228915..3229901),organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	4e-55	59.51
+OTU_0019	OTU_0019	CDY77560  coded_by=215534..216442,organism=Paraburkholderia glathei,definition=Beta-lactamase	2e-64	56.42
+OTU_0019	OTU_0019	KDR44277  coded_by=215762..216670,organism=Burkholderia glathei,definition=beta-lactamase	2e-64	56.42
+OTU_0019	OTU_0019	ANN16691  coded_by=3166809..3167729,organism=Amycolatopsis orientalis,definition=class A beta-lactamase	1e-63	56.42
+OTU_0020	OTU_0020	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	4e-67	67.32
+OTU_0020	OTU_0020	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	6e-66	67.11
+OTU_0020	OTU_0020	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	8e-66	66.67
+OTU_0021	OTU_0021	KVT66437  coded_by=33149..34066,organism=Burkholderia ubonensis,definition=class A beta-lactamase	4e-94	64.73
+OTU_0021	OTU_0021	KVX98654  coded_by=complement(83214..84131),organism=Burkholderia ubonensis,definition=class A beta-lactamase	4e-94	64.73
+OTU_0021	OTU_0021	KVZ58604  coded_by=complement(122441..123358),organism=Burkholderia ubonensis,definition=class A beta-lactamase	4e-94	64.73
+OTU_0022	OTU_0022	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	3e-81	55.80
+OTU_0022	OTU_0022	EJW12267  coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	4e-81	58.74
+OTU_0022	OTU_0022	ACI93820  coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	5e-79	55.41
+OTU_0023	OTU_0023	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	7e-118	65.49
+OTU_0023	OTU_0023	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	1e-111	65.88
+OTU_0023	OTU_0023	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	2e-110	64.96
+OTU_0024	OTU_0024	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	5e-119	66.14
+OTU_0024	OTU_0024	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	2e-112	66.53
+OTU_0024	OTU_0024	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	2e-111	65.60
+OTU_0025	OTU_0025	AGP35118  coded_by=complement(3228915..3229901),organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	2e-74	67.70
+OTU_0025	OTU_0025	KYF63386  coded_by=complement(9888..10871),organism=Sorangium cellulosum,definition=class A beta-lactamase	1e-70	65.22
+OTU_0025	OTU_0025	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	5e-69	67.97
+OTU_0026	OTU_0026	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	7e-103	64.91
+OTU_0026	OTU_0026	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	8e-103	64.00
+OTU_0026	OTU_0026	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	2e-102	62.61
+OTU_0027	OTU_0027	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	5e-85	64.58
+OTU_0027	OTU_0027	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	4e-84	64.77
+OTU_0027	OTU_0027	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	2e-81	63.02
+OTU_0028	OTU_0028	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	3e-82	69.10
+OTU_0028	OTU_0028	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	8e-79	69.41
+OTU_0028	OTU_0028	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	1e-78	69.59
+OTU_0029	OTU_0029	KJC40513  coded_by=202493..203401,organism=Bradyrhizobium sp. LTSP885,definition=beta-lactamase	2e-88	56.96
+OTU_0029	OTU_0029	SCB18161  coded_by=complement(598643..599500),organism=Bradyrhizobium yuanmingense,definition=beta-lactamase class A	3e-82	56.71
+OTU_0029	OTU_0029	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	9e-82	57.14
+OTU_0030	OTU_0030	AFL90084  coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	2e-97	58.92
+OTU_0030	OTU_0030	ACC70353  coded_by=complement(1304606..1305508),organism=Burkholderia phymatum STM815,definition=Beta-lactamase	1e-93	60.59
+OTU_0030	OTU_0030	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	9e-93	59.07
+OTU_0031	OTU_0031	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	4e-99	64.49
+OTU_0031	OTU_0031	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	3e-97	65.12
+OTU_0031	OTU_0031	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	1e-92	61.40
+OTU_0032	OTU_0032	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	7e-116	70.93
+OTU_0032	OTU_0032	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	5e-112	70.48
+OTU_0032	OTU_0032	KRA64743  coded_by=complement(74794..75684),organism=Caulobacter sp. Root655,definition=class A beta-lactamase	4e-108	67.26
+OTU_0033	OTU_0033	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	2e-58	60.93
+OTU_0033	OTU_0033	KYF63386  coded_by=complement(9888..10871),organism=Sorangium cellulosum,definition=class A beta-lactamase	9e-58	61.59
+OTU_0033	OTU_0033	AMP05921  coded_by=complement(3713267..3714172),organism=Collimonas pratensis,definition=beta-lactamase family protein	2e-57	60.53
+OTU_0034	OTU_0034	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	2e-104	61.54
+OTU_0034	OTU_0034	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	4e-99	57.38
+OTU_0034	OTU_0034	AIB14801  coded_by=8870..9760,organism=Azospirillum brasilense,definition=beta-lactamase	2e-96	57.89
+OTU_0035	OTU_0035	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	6e-97	63.06
+OTU_0035	OTU_0035	ODA66637  coded_by=73297..74181,organism=Methyloligella halotolerans,definition=Beta-lactamase OXY-2 precursor	1e-89	58.82
+OTU_0035	OTU_0035	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	1e-87	60.37
+OTU_0036	OTU_0036	EMS41548  coded_by=147955..148836,organism=Methylobacterium mesophilicum SR1.6/6,definition=beta-lactamase	7e-79	59.53
+OTU_0036	OTU_0036	EJW12267  coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	8e-79	60.49
+OTU_0036	OTU_0036	KRA64743  coded_by=complement(74794..75684),organism=Caulobacter sp. Root655,definition=class A beta-lactamase	4e-78	58.50
+OTU_0037	OTU_0037	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	1e-62	67.32
+OTU_0037	OTU_0037	KYF63386  coded_by=complement(9888..10871),organism=Sorangium cellulosum,definition=class A beta-lactamase	2e-60	66.01
+OTU_0037	OTU_0037	KVM62739  coded_by=160084..160998,organism=Burkholderia gladioli,definition=class A beta-lactamase	2e-59	63.40
+OTU_0038	OTU_0038	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	2e-69	66.23
+OTU_0038	OTU_0038	KVT66437  coded_by=33149..34066,organism=Burkholderia ubonensis,definition=class A beta-lactamase	5e-64	62.09
+OTU_0038	OTU_0038	KVX98654  coded_by=complement(83214..84131),organism=Burkholderia ubonensis,definition=class A beta-lactamase	5e-64	62.09
+OTU_0039	OTU_0039	KWT74028  coded_by=147112..147993,organism=Variovorax sp. WDL1,definition=Beta-lactamase	2e-86	55.23
+OTU_0039	OTU_0039	EJW12267  coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	2e-86	56.54
+OTU_0039	OTU_0039	AGP35118  coded_by=complement(3228915..3229901),organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	4e-86	59.91
+OTU_0040	OTU_0040	CVJ37506  coded_by=52913..53788,organism=Burkholderia sp. LMG 29324,definition=beta-lactamase precursor	2e-134	72.55
+OTU_0040	OTU_0040	SAK76550  coded_by=52913..53788,organism=Burkholderia arationis,definition=beta-lactamase precursor	2e-134	72.55
+OTU_0040	OTU_0040	CVJ48735  coded_by=complement(114529..115404),organism=Paraburkholderia telluris,definition=beta-lactamase precursor	2e-132	71.76
+OTU_0041	OTU_0041	EDT41171  coded_by=complement(22562..23479),organism=Burkholderia ambifaria MEX-5,definition=Beta-lactamase	5e-77	67.26
+OTU_0041	OTU_0041	KVT66437  coded_by=33149..34066,organism=Burkholderia ubonensis,definition=class A beta-lactamase	3e-76	66.67
+OTU_0041	OTU_0041	KVX98654  coded_by=complement(83214..84131),organism=Burkholderia ubonensis,definition=class A beta-lactamase	3e-76	66.67
+OTU_0042	OTU_0042	ANJ71658  coded_by=808475..809347,organism=Ralstonia insidiosa,definition=class A beta-lactamase	1e-168	99.14
+OTU_0042	OTU_0042	EPX97320  coded_by=complement(15649..16488),organism=Ralstonia sp. AU12-08,definition=hypothetical protein	3e-166	97.84
+OTU_0042	OTU_0042	GAQ31555  coded_by=complement(8713..9552),organism=Ralstonia sp. NT80,definition=beta-lactamase	3e-166	97.84
+OTU_0043	OTU_0043	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	1e-91	62.79
+OTU_0043	OTU_0043	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	1e-88	60.28
+OTU_0043	OTU_0043	ACI93820  coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	4e-88	60.56
+OTU_0044	OTU_0044	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	1e-82	67.23
+OTU_0044	OTU_0044	KGF65746  coded_by=complement(1683703..1684596),organism=Pseudomonas lutea,definition=beta-lactamase	5e-79	64.77
+OTU_0044	OTU_0044	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	2e-77	64.57
+OTU_0045	OTU_0045	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	1e-74	70.00
+OTU_0045	OTU_0045	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	7e-71	68.12
+OTU_0045	OTU_0045	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	3e-70	68.12
+OTU_0046	OTU_0046	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	3e-62	61.15
+OTU_0046	OTU_0046	KRW75633  coded_by=25383..26264,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	3e-62	61.15
+OTU_0046	OTU_0046	KRV73768  coded_by=22906..23787,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	3e-62	61.15
+OTU_0047	OTU_0047	SCB13607  coded_by=56612..57505,organism=Rhizobium miluonense,definition=beta-lactamase class A	9e-112	74.01
+OTU_0047	OTU_0047	AGB74670  coded_by=complement(923379..924272),organism=Rhizobium tropici CIAT 899,definition=beta-lactamase family protein	1e-110	72.25
+OTU_0047	OTU_0047	OCJ07190  coded_by=504762..505655,organism=Rhizobium sp. AC27/96,definition=class A beta-lactamase	3e-108	71.37
+OTU_0048	OTU_0048	KMJ94243  coded_by=complement(91317..92186),organism=Bradyrhizobium japonicum,definition=beta-lactamase	1e-109	76.00
+OTU_0048	OTU_0048	BAL06250  coded_by=complement(1012787..1013656),organism=Bradyrhizobium japonicum USDA 6,definition=beta-lactamase L2 precursor	1e-109	76.00
+OTU_0048	OTU_0048	AJA59789  coded_by=complement(1010858..1011727),organism=Bradyrhizobium japonicum,definition=beta-lactamase	1e-109	76.00
+OTU_0049	OTU_0049	BAR98434  coded_by=complement(755750..756604),organism=Blastochloris viridis,definition=beta-lactamase	7e-106	59.60
+OTU_0049	OTU_0049	CUU44219  coded_by=3661155..3662009,organism=Blastochloris viridis,definition=Beta-lactamase OXY-1 precursor	7e-106	59.60
+OTU_0049	OTU_0049	ALK08297  coded_by=537956..538810,organism=Blastochloris viridis,definition=Beta-lactamase OXY-1 precursor	7e-106	59.60
+OTU_0050	OTU_0050	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	3e-150	82.93
+OTU_0050	OTU_0050	EJL87933  coded_by=227400..228302,organism=Herbaspirillum sp. CF444,definition=beta-lactamase class A	1e-138	76.02
+OTU_0050	OTU_0050	ALU90531  coded_by=3941350..3942249,organism=Herbaspirillum rubrisubalbicans M1,definition=beta-lactamase class A	4e-113	65.84
+OTU_0051	OTU_0051	KRA64743  coded_by=complement(74794..75684),organism=Caulobacter sp. Root655,definition=class A beta-lactamase	9e-67	67.32
+OTU_0051	OTU_0051	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	6e-65	63.64
+OTU_0051	OTU_0051	KTA73053  coded_by=4593..5513,organism=Roseomonas mucosa,definition=class A beta-lactamase	1e-64	67.10
+OTU_0052	OTU_0052	KST59369  coded_by=complement(54291..55178),organism=Methylobacterium sp. GXS13,definition=class A beta-lactamase	3e-64	58.86
+OTU_0052	OTU_0052	KOX54644  coded_by=56020..56898,organism=Streptomyces purpurogeneiscleroticus,definition=beta-lactamase	5e-64	60.00
+OTU_0052	OTU_0052	AIQ92541  coded_by=4787832..4788710,organism=Methylobacterium oryzae CBMB20,definition=Beta-lactamase	7e-64	60.57
+OTU_0053	OTU_0053	EAS50878  coded_by=604000..604899,organism=Aurantimonas manganoxydans SI85-9A1,definition=putative beta-lactamase	6e-120	71.43
+OTU_0053	OTU_0053	EAQ26416  coded_by=complement(460331..461194),organism=Roseovarius sp. 217,definition=beta lactamase	5e-103	62.28
+OTU_0053	OTU_0053	KJS40099  coded_by=complement(5628..6491),organism=Roseovarius sp. BRH_c41,definition=beta-lactamase	1e-100	61.84
+OTU_0054	OTU_0054	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	2e-105	60.98
+OTU_0054	OTU_0054	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	7e-95	58.13
+OTU_0054	OTU_0054	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	1e-93	55.10
+OTU_0055	OTU_0055	AFL90084  coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	3e-71	67.08
+OTU_0055	OTU_0055	KRA64743  coded_by=complement(74794..75684),organism=Caulobacter sp. Root655,definition=class A beta-lactamase	9e-65	62.50
+OTU_0055	OTU_0055	AMM26422  coded_by=4206182..4207069,organism=Variovorax sp. PAMC 28711,definition=class A beta-lactamase	4e-64	59.38
+OTU_0056	OTU_0056	KRW75633  coded_by=25383..26264,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	2e-60	62.91
+OTU_0056	OTU_0056	KRV73768  coded_by=22906..23787,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	2e-60	62.91
+OTU_0056	OTU_0056	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	3e-60	62.91
+OTU_0057	OTU_0057	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	2e-87	72.07
+OTU_0057	OTU_0057	AMP10801  coded_by=complement(3135381..3136238),organism=Collimonas arenae,definition=beta-lactamase	7e-81	65.17
+OTU_0057	OTU_0057	AMP00910  coded_by=complement(3150227..3151084),organism=Collimonas arenae,definition=beta-lactamase	7e-81	65.17
+OTU_0058	OTU_0058	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	5e-88	64.35
+OTU_0058	OTU_0058	KDN94982  coded_by=complement(236045..236956),organism=Hydrogenovibrio marinus,definition=hypothetical protein	1e-87	57.47
+OTU_0058	OTU_0058	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	1e-85	61.01
+OTU_0059	OTU_0059	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	8e-70	65.43
+OTU_0059	OTU_0059	ACL56019  coded_by=1081670..1082542,organism=Methylobacterium nodulans ORS 2060,definition=beta-lactamase	5e-65	63.80
+OTU_0059	OTU_0059	KQS52952  coded_by=47546..48448,organism=Methylobacterium sp. Leaf361,definition=class A beta-lactamase	1e-64	59.52
+OTU_0060	OTU_0060	KJC53924  coded_by=9600..10457,organism=Bradyrhizobium sp. LTSP849,definition=beta-lactamase	2e-100	91.03
+OTU_0060	OTU_0060	OAF02185  coded_by=complement(12093..12950),organism=Bradyrhizobium sp. BR 10245,definition=class A beta-lactamase	2e-100	91.03
+OTU_0060	OTU_0060	CUU13967  coded_by=392532..393401,organism=Bradyrhizobium sp.,definition=Betalactamase EC 3526 CDS	6e-100	91.03
+OTU_0061	OTU_0061	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	5e-90	54.13
+OTU_0061	OTU_0061	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	4e-86	54.13
+OTU_0061	OTU_0061	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	3e-85	52.89
+OTU_0062	OTU_0062	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	2e-92	55.81
+OTU_0062	OTU_0062	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	3e-92	53.91
+OTU_0062	OTU_0062	KRW75633  coded_by=25383..26264,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	8e-92	55.81
+OTU_0063	OTU_0063	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	2e-99	62.13
+OTU_0063	OTU_0063	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	7e-96	58.01
+OTU_0063	OTU_0063	EJL87933  coded_by=227400..228302,organism=Herbaspirillum sp. CF444,definition=beta-lactamase class A	1e-94	59.74
+OTU_0064	OTU_0064	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	3e-120	67.20
+OTU_0064	OTU_0064	CCD96924  coded_by=complement(5025..5891),organism=Bradyrhizobium sp. ORS 375,definition=putative Beta-lactamase	9e-114	65.83
+OTU_0064	OTU_0064	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	1e-113	65.83
+OTU_0065	OTU_0065	AFL90084  coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	4e-69	63.03
+OTU_0065	OTU_0065	ETY80144  coded_by=complement(156895..157806),organism=Burkholderia caribensis MBA4,definition=Beta-lactamase	4e-65	61.59
+OTU_0065	OTU_0065	ALL65295  coded_by=complement(2650595..2651506),organism=Burkholderia caribensis MBA4,definition=Beta-lactamase	4e-65	61.59
+OTU_0066	OTU_0066	AMP10801  coded_by=complement(3135381..3136238),organism=Collimonas arenae,definition=beta-lactamase	3e-83	64.40
+OTU_0066	OTU_0066	AMP00910  coded_by=complement(3150227..3151084),organism=Collimonas arenae,definition=beta-lactamase	3e-83	64.40
+OTU_0066	OTU_0066	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	9e-82	68.21
+OTU_0067	OTU_0067	KOG45002  coded_by=complement(36965..37900),organism=Streptomyces decoyicus,definition=beta-lactamase	2e-126	72.18
+OTU_0067	OTU_0067	ACU74022  coded_by=5931257..5932225,organism=Catenulispora acidiphila DSM 44928,definition=Beta-lactamase	4e-114	66.26
+OTU_0067	OTU_0067	KNB53269  coded_by=88954..89847,organism=Streptomyces sp. CMAA 1322,definition=beta-lactamase	1e-113	63.93
+OTU_0068	OTU_0068	KJC40513  coded_by=202493..203401,organism=Bradyrhizobium sp. LTSP885,definition=beta-lactamase	1e-85	64.95
+OTU_0068	OTU_0068	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	1e-82	61.86
+OTU_0068	OTU_0068	AMP10801  coded_by=complement(3135381..3136238),organism=Collimonas arenae,definition=beta-lactamase	1e-81	62.05
+OTU_0069	OTU_0069	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	2e-108	58.98
+OTU_0069	OTU_0069	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	1e-100	53.28
+OTU_0069	OTU_0069	KQR80197  coded_by=complement(6319..7221),organism=Burkholderia sp. Leaf177,definition=class A beta-lactamase	4e-97	55.19
+OTU_0070	OTU_0070	KGT77489  coded_by=602263..603132,organism=Bradyrhizobium japonicum,definition=beta-lactamase	3e-96	70.41
+OTU_0070	OTU_0070	OAF02185  coded_by=complement(12093..12950),organism=Bradyrhizobium sp. BR 10245,definition=class A beta-lactamase	4e-96	71.43
+OTU_0070	OTU_0070	KMJ94243  coded_by=complement(91317..92186),organism=Bradyrhizobium japonicum,definition=beta-lactamase	7e-96	70.41
+OTU_0071	OTU_0071	AEK61210  coded_by=1627469..1628377,organism=Collimonas fungivorans Ter331,definition=Beta-lactamase	3e-103	60.82
+OTU_0071	OTU_0071	ABA03618  coded_by=392871..393761,organism=Nitrobacter winogradskyi Nb-255,definition=beta-lactamase	6e-103	59.84
+OTU_0071	OTU_0071	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	8e-102	60.59
+OTU_0072	OTU_0072	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	2e-103	59.43
+OTU_0072	OTU_0072	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	4e-103	58.70
+OTU_0072	OTU_0072	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	1e-99	58.37
+OTU_0073	OTU_0073	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	3e-65	65.13
+OTU_0073	OTU_0073	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	5e-57	59.33
+OTU_0073	OTU_0073	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	7e-57	56.58
+OTU_0074	OTU_0074	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	5e-66	63.03
+OTU_0074	OTU_0074	ACI93820  coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	1e-65	61.35
+OTU_0074	OTU_0074	AEI06076  coded_by=1467869..1468747,organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	1e-65	61.35
+OTU_0075	OTU_0075	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	3e-111	68.42
+OTU_0075	OTU_0075	CCD96924  coded_by=complement(5025..5891),organism=Bradyrhizobium sp. ORS 375,definition=putative Beta-lactamase	9e-110	68.72
+OTU_0075	OTU_0075	CCD89023  coded_by=49734..50603,organism=Bradyrhizobium sp. ORS 285,definition=putative Beta-lactamase	9e-109	67.40
+OTU_0076	OTU_0076	AFL90084  coded_by=complement(4608020..4608892),organism=Terriglobus roseus DSM 18391,definition=beta-lactamase class A	4e-72	66.05
+OTU_0076	OTU_0076	EJW12267  coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	1e-63	60.62
+OTU_0076	OTU_0076	AMM26422  coded_by=4206182..4207069,organism=Variovorax sp. PAMC 28711,definition=class A beta-lactamase	2e-63	57.76
+OTU_0077	OTU_0077	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	5e-63	57.76
+OTU_0077	OTU_0077	BAQ16832  coded_by=complement(1455904..1456785),organism=Methyloceanibacter caenitepidi,definition=beta-lactamase	2e-61	58.39
+OTU_0077	OTU_0077	KRQ15425  coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	2e-61	59.63
+OTU_0078	OTU_0078	AMP05921  coded_by=complement(3713267..3714172),organism=Collimonas pratensis,definition=beta-lactamase family protein	7e-70	62.87
+OTU_0078	OTU_0078	AMP10801  coded_by=complement(3135381..3136238),organism=Collimonas arenae,definition=beta-lactamase	4e-69	62.05
+OTU_0078	OTU_0078	AMP00910  coded_by=complement(3150227..3151084),organism=Collimonas arenae,definition=beta-lactamase	4e-69	62.05
+OTU_0079	OTU_0079	ALG03677  coded_by=1..882,organism=uncultured bacterium,definition=beta-lactamase	2e-76	60.10
+OTU_0079	OTU_0079	ABI59315  coded_by=complement(1096410..1097369),organism=Nitrosomonas eutropha C91,definition=Beta-lactamase	4e-74	58.62
+OTU_0079	OTU_0079	BAL95337  coded_by=2077579..2078448,organism=Rubrivivax gelatinosus IL144,definition=beta-lactamase	3e-59	60.24
+OTU_0080	OTU_0080	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	4e-93	65.00
+OTU_0080	OTU_0080	ABA03618  coded_by=392871..393761,organism=Nitrobacter winogradskyi Nb-255,definition=beta-lactamase	9e-92	67.16
+OTU_0080	OTU_0080	KRQ15425  coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	1e-91	67.16
+OTU_0081	OTU_0081	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	5e-83	62.68
+OTU_0081	OTU_0081	KLI93904  coded_by=89209..90090,organism=Mesorhizobium sp. LC103,definition=beta-lactamase	6e-82	59.33
+OTU_0081	OTU_0081	KYF68745  coded_by=2007..2984,organism=Sorangium cellulosum,definition=class A beta-lactamase	7e-82	63.98
+OTU_0082	OTU_0082	EIL91509  coded_by=complement(110481..111392),organism=Rhodanobacter spathiphylli B39,definition=beta-lactamase	7e-90	67.80
+OTU_0082	OTU_0082	KRB35299  coded_by=83441..84325,organism=Rhodanobacter sp. Root179,definition=class A beta-lactamase	2e-88	65.85
+OTU_0082	OTU_0082	KQZ77498  coded_by=47565..48449,organism=Rhodanobacter sp. Root561,definition=class A beta-lactamase	2e-88	65.85
+OTU_0083	OTU_0083	OBQ79316  coded_by=complement(7527..8420),organism=Mesorhizobium sp. WSM3873,definition=hypothetical protein	2e-102	59.11
+OTU_0083	OTU_0083	AKZ64309  coded_by=complement(3970013..3970915),organism=Herbaspirillum hiltneri N3,definition=beta-lactamase	3e-101	59.43
+OTU_0083	OTU_0083	ACI93820  coded_by=complement(2655760..2656638),organism=Oligotropha carboxidovorans OM5,definition=beta-lactamase	8e-99	61.37
+OTU_0084	OTU_0084	AMN39775  coded_by=complement(1535599..1536489),organism=Rhodoplanes sp. Z2-YC6860,definition=beta-lactamase	3e-75	72.73
+OTU_0084	OTU_0084	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	6e-72	72.08
+OTU_0084	OTU_0084	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	1e-71	71.52
+OTU_0085	OTU_0085	OAP46803  coded_by=complement(5016..5909),organism=Sinorhizobium saheli,definition=class A beta-lactamase	2e-81	80.75
+OTU_0085	OTU_0085	SCB13607  coded_by=56612..57505,organism=Rhizobium miluonense,definition=beta-lactamase class A	3e-78	75.78
+OTU_0085	OTU_0085	OCJ07190  coded_by=504762..505655,organism=Rhizobium sp. AC27/96,definition=class A beta-lactamase	5e-78	74.53
+OTU_0086	OTU_0086	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	5e-65	65.16
+OTU_0086	OTU_0086	AIA16944  coded_by=complement(493..1407),organism=uncultured bacterium,definition=ClassA_beta_lactamase	9e-61	58.71
+OTU_0086	OTU_0086	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	3e-60	58.44
+OTU_0087	OTU_0087	CCB67763  coded_by=4385925..4386815,organism=Hyphomicrobium sp. MC1,definition=Beta-lactamase AST-1	3e-60	55.36
+OTU_0087	OTU_0087	SCB18161  coded_by=complement(598643..599500),organism=Bradyrhizobium yuanmingense,definition=beta-lactamase class A	7e-60	58.33
+OTU_0087	OTU_0087	AHY55383  coded_by=7677140..7678009,organism=Bradyrhizobium japonicum SEMIA 5079,definition=beta-lactamase L2 precursor	7e-58	57.14
+OTU_0088	OTU_0088	KRQ15425  coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	4e-119	68.03
+OTU_0088	OTU_0088	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	4e-108	63.67
+OTU_0088	OTU_0088	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	9e-107	65.96
+OTU_0089	OTU_0089	AMP10801  coded_by=complement(3135381..3136238),organism=Collimonas arenae,definition=beta-lactamase	1e-71	70.86
+OTU_0089	OTU_0089	AMP00910  coded_by=complement(3150227..3151084),organism=Collimonas arenae,definition=beta-lactamase	1e-71	70.86
+OTU_0089	OTU_0089	AEK61210  coded_by=1627469..1628377,organism=Collimonas fungivorans Ter331,definition=Beta-lactamase	9e-71	70.13
+OTU_0090	OTU_0090	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	1e-109	67.25
+OTU_0090	OTU_0090	KQZ31528  coded_by=62576..63475,organism=Caulobacter sp. Root1472,definition=class A beta-lactamase	3e-104	64.35
+OTU_0090	OTU_0090	BAR98434  coded_by=complement(755750..756604),organism=Blastochloris viridis,definition=beta-lactamase	6e-104	65.35
+OTU_0091	OTU_0091	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	7e-81	69.84
+OTU_0091	OTU_0091	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	6e-79	65.64
+OTU_0091	OTU_0091	CAL77815  coded_by=4252784..4253641,organism=Bradyrhizobium sp. ORS 278,definition=putative Beta-lactamase	2e-77	66.85
+OTU_0092	OTU_0092	CVJ48735  coded_by=complement(114529..115404),organism=Paraburkholderia telluris,definition=beta-lactamase precursor	5e-126	67.18
+OTU_0092	OTU_0092	SAL55186  coded_by=complement(114529..115404),organism=Paraburkholderia telluris,definition=beta-lactamase precursor	5e-126	67.18
+OTU_0092	OTU_0092	CVJ37506  coded_by=52913..53788,organism=Burkholderia sp. LMG 29324,definition=beta-lactamase precursor	1e-125	67.18
+OTU_0093	OTU_0093	ALG03677  coded_by=1..882,organism=uncultured bacterium,definition=beta-lactamase	5e-95	63.39
+OTU_0093	OTU_0093	ABI59315  coded_by=complement(1096410..1097369),organism=Nitrosomonas eutropha C91,definition=Beta-lactamase	3e-94	63.39
+OTU_0093	OTU_0093	ANI16503  coded_by=5125824..5126705,organism=Pseudomonas citronellolis,definition=class A beta-lactamase	7e-80	56.70
+OTU_0094	OTU_0094	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	2e-96	65.14
+OTU_0094	OTU_0094	EJW12267  coded_by=complement(149844..150788),organism=Rhodovulum sp. PH10,definition=Beta-lactamase	3e-90	63.93
+OTU_0094	OTU_0094	ALU90531  coded_by=3941350..3942249,organism=Herbaspirillum rubrisubalbicans M1,definition=beta-lactamase class A	3e-87	60.00
+OTU_0095	OTU_0095	KRQ15425  coded_by=complement(20181..21065),organism=Bradyrhizobium manausense,definition=class A beta-lactamase	7e-100	73.94
+OTU_0095	OTU_0095	ACE98926  coded_by=389770..390645,organism=Rhodopseudomonas palustris TIE-1,definition=Beta-lactamase	4e-87	71.04
+OTU_0095	OTU_0095	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	1e-86	66.49
+OTU_0096	OTU_0096	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	4e-125	70.87
+OTU_0096	OTU_0096	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	4e-120	69.88
+OTU_0096	OTU_0096	ABQ36475  coded_by=4649759..4650625,organism=Bradyrhizobium sp. BTAi1,definition=putative Beta-lactamase	1e-113	69.04
+OTU_0097	OTU_0097	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	4e-75	58.46
+OTU_0097	OTU_0097	KRB35299  coded_by=83441..84325,organism=Rhodanobacter sp. Root179,definition=class A beta-lactamase	6e-74	61.26
+OTU_0097	OTU_0097	KQZ77498  coded_by=47565..48449,organism=Rhodanobacter sp. Root561,definition=class A beta-lactamase	6e-74	61.26
+OTU_0098	OTU_0098	OBJ48907  coded_by=2904..3770,organism=Mycobacterium sp. 1423905.2,definition=class A beta-lactamase	1e-98	71.28
+OTU_0098	OTU_0098	OBK47323  coded_by=complement(5120..5953),organism=Mycobacterium szulgai,definition=class A beta-lactamase	2e-98	72.82
+OTU_0098	OTU_0098	KWX22198  coded_by=173400..174275,organism=Mycobacterium wolinskyi,definition=beta-lactamase	2e-98	72.82
+OTU_0099	OTU_0099	KRA64743  coded_by=complement(74794..75684),organism=Caulobacter sp. Root655,definition=class A beta-lactamase	1e-90	57.08
+OTU_0099	OTU_0099	KJC40513  coded_by=202493..203401,organism=Bradyrhizobium sp. LTSP885,definition=beta-lactamase	2e-89	60.37
+OTU_0099	OTU_0099	ACK49071  coded_by=79560..80435,organism=Methylocella silvestris BL2,definition=Beta-lactamase	5e-89	56.50
+OTU_0100	OTU_0100	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	3e-114	67.21
+OTU_0100	OTU_0100	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	3e-110	68.44
+OTU_0100	OTU_0100	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	4e-109	62.81
+OTU_0101	OTU_0101	ABD88276  coded_by=2962405..2963304,organism=Rhodopseudomonas palustris BisB18,definition=Beta-lactamase	7e-117	70.12
+OTU_0101	OTU_0101	BAM89568  coded_by=complement(4079715..4080584),organism=Bradyrhizobium oligotrophicum S58,definition=putative beta-lactamase	4e-116	68.60
+OTU_0101	OTU_0101	ABQ36475  coded_by=4649759..4650625,organism=Bradyrhizobium sp. BTAi1,definition=putative Beta-lactamase	2e-113	67.36
+OTU_0102	OTU_0102	ACD96293  coded_by=2768235..2769137,organism=Geobacter lovleyi SZ,definition=Beta-lactamase	2e-63	61.18
+OTU_0102	OTU_0102	ODA66637  coded_by=73297..74181,organism=Methyloligella halotolerans,definition=Beta-lactamase OXY-2 precursor	1e-61	60.90
+OTU_0102	OTU_0102	EIL91509  coded_by=complement(110481..111392),organism=Rhodanobacter spathiphylli B39,definition=beta-lactamase	3e-61	58.93
+OTU_0103	OTU_0103	EPC02648  coded_by=250537..251430,organism=Halomonas anticariensis FP35 = DSM 16096,definition=hypothetical protein	3e-71	65.64
+OTU_0103	OTU_0103	ABC21033  coded_by=complement(280082..280984),organism=Rhodospirillum rubrum ATCC 11170,definition=Twin-arginine translocation pathway signal	2e-69	67.90
+OTU_0103	OTU_0103	AEO46699  coded_by=complement(280082..280984),organism=Rhodospirillum rubrum F11,definition=twin-arginine translocation pathway signal	2e-69	67.90
+OTU_0104	OTU_0104	KRR17483  coded_by=2477..3370,organism=Bradyrhizobium retamae,definition=class A beta-lactamase	1e-119	67.86
+OTU_0104	OTU_0104	OCK63597  coded_by=5849..6703,organism=Bradyrhizobium paxllaeri,definition=class A beta-lactamase	6e-116	68.50
+OTU_0104	OTU_0104	KRR16562  coded_by=37689..38582,organism=Bradyrhizobium lablabi,definition=class A beta-lactamase	3e-113	66.80

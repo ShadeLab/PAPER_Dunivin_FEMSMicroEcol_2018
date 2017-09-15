@@ -1,0 +1,48 @@
+OTU_0001	OTU_0001	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	4e-89	60.37
+OTU_0001	OTU_0001	ABS63744  coded_by=2311663..2312484,organism=Parvibaculum lavamentivorans DS-1,definition=dihydropteroate synthase	1e-86	63.85
+OTU_0001	OTU_0001	KOU58126  coded_by=complement(40797..41600),organism=Streptomyces sp. MMG1533,definition=dihydropteroate synthase	7e-86	63.08
+OTU_0002	OTU_0002	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	6e-94	72.16
+OTU_0002	OTU_0002	CHA29443  coded_by=3641..4456,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	6e-75	60.00
+OTU_0002	OTU_0002	CGO79455  coded_by=3661..4476,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	6e-75	60.00
+OTU_0003	OTU_0003	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	1e-95	61.18
+OTU_0003	OTU_0003	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	3e-92	60.25
+OTU_0003	OTU_0003	ABS63744  coded_by=2311663..2312484,organism=Parvibaculum lavamentivorans DS-1,definition=dihydropteroate synthase	4e-86	57.92
+OTU_0004	OTU_0004	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	3e-111	65.49
+OTU_0004	OTU_0004	EJW21457  coded_by=707708..708523,organism=alpha proteobacterium IMCC14465,definition=dihydropteroate synthase	4e-106	59.61
+OTU_0004	OTU_0004	EGK20737  coded_by=2601..3416,organism=Shigella flexneri K-218,definition=dihydropteroate synthase	4e-90	58.43
+OTU_0005	OTU_0005	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	2e-92	68.81
+OTU_0005	OTU_0005	CHA29443  coded_by=3641..4456,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	6e-78	59.70
+OTU_0005	OTU_0005	CGO79455  coded_by=3661..4476,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	6e-78	59.70
+OTU_0006	OTU_0006	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	8e-109	62.35
+OTU_0006	OTU_0006	CHA29443  coded_by=3641..4456,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	2e-95	62.60
+OTU_0006	OTU_0006	CGO79455  coded_by=3661..4476,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	2e-95	62.60
+OTU_0007	OTU_0007	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	4e-76	66.48
+OTU_0007	OTU_0007	CQL47609  coded_by=1448..2263,organism=Salmonella enterica subsp. enterica serovar Typhimurium str. DT104,definition=dihydropteroate synthase 2	2e-69	61.24
+OTU_0007	OTU_0007	EGK20737  coded_by=2601..3416,organism=Shigella flexneri K-218,definition=dihydropteroate synthase	3e-69	60.67
+OTU_0008	OTU_0008	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	6e-100	62.03
+OTU_0008	OTU_0008	ABS63744  coded_by=2311663..2312484,organism=Parvibaculum lavamentivorans DS-1,definition=dihydropteroate synthase	4e-98	65.67
+OTU_0008	OTU_0008	CQL47609  coded_by=1448..2263,organism=Salmonella enterica subsp. enterica serovar Typhimurium str. DT104,definition=dihydropteroate synthase 2	1e-89	61.26
+OTU_0009	OTU_0009	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	6e-93	64.49
+OTU_0009	OTU_0009	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	3e-85	60.81
+OTU_0009	OTU_0009	ABS63744  coded_by=2311663..2312484,organism=Parvibaculum lavamentivorans DS-1,definition=dihydropteroate synthase	9e-81	58.99
+OTU_0010	OTU_0010	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	3e-103	60.63
+OTU_0010	OTU_0010	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	5e-101	59.09
+OTU_0010	OTU_0010	AKG19638  coded_by=2155301..2156116,organism=Moraxella bovoculi,definition=dihydropteroate synthase	1e-87	56.92
+OTU_0011	OTU_0011	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	4e-106	62.20
+OTU_0011	OTU_0011	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	2e-101	59.09
+OTU_0011	OTU_0011	AKG19638  coded_by=2155301..2156116,organism=Moraxella bovoculi,definition=dihydropteroate synthase	3e-88	56.92
+OTU_0012	OTU_0012	ERM67931  coded_by=complement(44400..45215),organism=Pseudomonas aeruginosa VRFPA04,definition=dihydropteroate synthase	9e-85	61.44
+OTU_0012	OTU_0012	CHA29443  coded_by=3641..4456,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	1e-84	61.44
+OTU_0012	OTU_0012	CGO79455  coded_by=3661..4476,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	1e-84	61.44
+OTU_0013	OTU_0013	AMP52013  coded_by=345..1160,organism=uncultured bacterium,definition=dihydropteroate	2e-100	63.85
+OTU_0013	OTU_0013	CQL47609  coded_by=1448..2263,organism=Salmonella enterica subsp. enterica serovar Typhimurium str. DT104,definition=dihydropteroate synthase 2	3e-100	63.85
+OTU_0013	OTU_0013	CIJ84142  coded_by=1781..2596,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	4e-100	63.46
+OTU_0014	OTU_0014	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	6e-110	61.13
+OTU_0014	OTU_0014	CQL47609  coded_by=1448..2263,organism=Salmonella enterica subsp. enterica serovar Typhimurium str. DT104,definition=dihydropteroate synthase 2	2e-98	63.46
+OTU_0014	OTU_0014	AMP52013  coded_by=345..1160,organism=uncultured bacterium,definition=dihydropteroate	2e-98	63.46
+OTU_0015	OTU_0015	OAI42590  coded_by=complement(17370..18158),organism=Rhizomicrobium sp. SCGC AG-212-E05,definition=dihydropteroate synthase	4e-103	60.63
+OTU_0015	OTU_0015	GAK46553  coded_by=complement(3124..3966),organism=Tepidicaulis marinus,definition=dihydropteroate synthase	1e-102	59.85
+OTU_0015	OTU_0015	AKG19638  coded_by=2155301..2156116,organism=Moraxella bovoculi,definition=dihydropteroate synthase	1e-88	57.31
+OTU_0016	OTU_0016	CHA29443  coded_by=3641..4456,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	1e-81	57.72
+OTU_0016	OTU_0016	CGO79455  coded_by=3661..4476,organism=Salmonella enterica subsp. enterica serovar Typhi,definition=dihydropteroate synthase 2	1e-81	57.72
+OTU_0016	OTU_0016	EMX28873  coded_by=4336..5151,organism=Escherichia coli 174750,definition=dihydropteroate synthase	1e-81	57.72

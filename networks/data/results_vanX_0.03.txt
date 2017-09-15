@@ -1,1 +1,228 @@
+OTU_0001	OTU_0001	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	8e-123	81.09
+OTU_0001	OTU_0001	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	8e-123	81.09
+OTU_0001	OTU_0001	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	1e-121	80.60
+OTU_0002	OTU_0002	AIF46777  coded_by=complement(1348197..1348877),organism=Dyella japonica A8,definition=peptidase M15	3e-75	77.78
+OTU_0002	OTU_0002	KLD62721  coded_by=44207..44926,organism=Dyella japonica DSM 16301,definition=peptidase M15	4e-75	77.08
+OTU_0002	OTU_0002	KZC33187  coded_by=complement(13114..13809),organism=Rhodanobacter sp. FW510-R10,definition=peptidase M15	1e-73	75.00
 OTU_0003	OTU_0003	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-54	71.90
+OTU_0003	OTU_0003	AMK10661  coded_by=complement(1247944..1248639),organism=Desulfovibrio sp. J2,definition=peptidase M15	5e-49	64.46
+OTU_0003	OTU_0003	ADU63686  coded_by=complement(2912763..2913455),organism=Desulfovibrio aespoeensis Aspo-2,definition=D-Ala-D-Ala dipeptidase	4e-47	62.81
+OTU_0004	OTU_0004	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-128	85.57
+OTU_0004	OTU_0004	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-128	85.57
+OTU_0004	OTU_0004	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	2e-127	84.58
+OTU_0005	OTU_0005	EUA30525  coded_by=complement(374447..375043),organism=Mycobacterium xenopi 4042,definition=D-ala-D-ala dipeptidase family protein	5e-56	77.67
+OTU_0005	OTU_0005	KMV24264  coded_by=248785..249381,organism=Mycobacterium heckeshornense,definition=D-alanyl-D-alanine dipeptidase	5e-56	77.67
+OTU_0005	OTU_0005	OBI40723  coded_by=2122..2751,organism=Mycobacterium kyorinense,definition=D-alanyl-D-alanine dipeptidase	8e-56	78.64
+OTU_0006	OTU_0006	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-122	80.60
+OTU_0006	OTU_0006	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-122	80.60
+OTU_0006	OTU_0006	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	3e-121	80.10
+OTU_0007	OTU_0007	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	5e-121	78.11
+OTU_0007	OTU_0007	CAE53345  coded_by=14289..14897,organism=Actinoplanes teichomyceticus,definition=VanX protein	5e-121	78.11
+OTU_0007	OTU_0007	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	4e-120	80.10
+OTU_0008	OTU_0008	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-96	86.18
+OTU_0008	OTU_0008	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-96	86.18
+OTU_0008	OTU_0008	AGF91736  coded_by=complement(2542..3150),organism=Streptomyces sp. WAC1420,definition=D-ala-D-ala peptidase	8e-96	84.87
+OTU_0009	OTU_0009	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	1e-76	80.00
+OTU_0009	OTU_0009	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-75	78.46
+OTU_0009	OTU_0009	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-75	78.46
+OTU_0010	OTU_0010	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	3e-109	80.56
+OTU_0010	OTU_0010	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	4e-109	80.56
+OTU_0010	OTU_0010	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	1e-108	80.00
+OTU_0011	OTU_0011	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	7e-116	80.21
+OTU_0011	OTU_0011	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	1e-115	80.21
+OTU_0011	OTU_0011	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	1e-112	80.75
+OTU_0012	OTU_0012	ANS64067  coded_by=complement(2211412..2212065),organism=Streptomyces lincolnensis,definition=D-ala-D-ala dipeptidase	9e-66	85.19
+OTU_0012	OTU_0012	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	3e-65	83.33
+OTU_0012	OTU_0012	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	3e-65	83.33
+OTU_0013	OTU_0013	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-66	78.63
+OTU_0013	OTU_0013	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-66	78.63
+OTU_0013	OTU_0013	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	3e-66	78.63
+OTU_0014	OTU_0014	EUA30525  coded_by=complement(374447..375043),organism=Mycobacterium xenopi 4042,definition=D-ala-D-ala dipeptidase family protein	1e-71	92.79
+OTU_0014	OTU_0014	KMV24264  coded_by=248785..249381,organism=Mycobacterium heckeshornense,definition=D-alanyl-D-alanine dipeptidase	1e-71	92.79
+OTU_0014	OTU_0014	OBI40723  coded_by=2122..2751,organism=Mycobacterium kyorinense,definition=D-alanyl-D-alanine dipeptidase	2e-64	82.88
+OTU_0015	OTU_0015	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	1e-129	83.58
+OTU_0015	OTU_0015	CAE53345  coded_by=14289..14897,organism=Actinoplanes teichomyceticus,definition=VanX protein	1e-129	83.58
+OTU_0015	OTU_0015	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-128	84.08
+OTU_0016	OTU_0016	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	4e-100	84.08
+OTU_0016	OTU_0016	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	4e-100	84.08
+OTU_0016	OTU_0016	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	6e-100	85.35
+OTU_0017	OTU_0017	EUA30525  coded_by=complement(374447..375043),organism=Mycobacterium xenopi 4042,definition=D-ala-D-ala dipeptidase family protein	3e-74	100.00
+OTU_0017	OTU_0017	KMV24264  coded_by=248785..249381,organism=Mycobacterium heckeshornense,definition=D-alanyl-D-alanine dipeptidase	3e-74	100.00
+OTU_0017	OTU_0017	OBI40723  coded_by=2122..2751,organism=Mycobacterium kyorinense,definition=D-alanyl-D-alanine dipeptidase	3e-62	83.18
+OTU_0018	OTU_0018	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	2e-124	79.60
+OTU_0018	OTU_0018	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	2e-124	79.60
+OTU_0018	OTU_0018	AHY99675  coded_by=complement(3690..4298),organism=Actinoplanes sp. ATCC 53533,definition=VanX	1e-123	80.60
+OTU_0019	OTU_0019	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	5e-86	85.61
+OTU_0019	OTU_0019	EWC61098  coded_by=complement(3903..4511),organism=Actinokineospora sp. EG49,definition=Vancomycin B-type resistance protein VanX	1e-83	82.73
+OTU_0019	OTU_0019	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	1e-83	84.17
+OTU_0020	OTU_0020	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	3e-103	81.87
+OTU_0020	OTU_0020	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	6e-103	80.70
+OTU_0020	OTU_0020	CAE53345  coded_by=14289..14897,organism=Actinoplanes teichomyceticus,definition=VanX protein	6e-103	80.70
+OTU_0021	OTU_0021	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	6e-83	81.12
+OTU_0021	OTU_0021	EPD66794  coded_by=complement(273811..274419),organism=Streptomyces sp. HGB0020,definition=D-alanyl-D-alanine dipeptidase	8e-83	80.42
+OTU_0021	OTU_0021	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	9e-83	81.82
+OTU_0022	OTU_0022	KTE89611  coded_by=complement(169722..170330),organism=Desulfitobacterium hafniense,definition=peptidase M15	6e-65	91.09
+OTU_0022	OTU_0022	ACL19707  coded_by=1776505..1777113,organism=Desulfitobacterium hafniense DCB-2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	6e-65	91.09
+OTU_0022	OTU_0022	EHL08298  coded_by=complement(10518..11156),organism=Desulfitobacterium hafniense DP7,definition=D-Ala-D-Ala dipeptidase	7e-65	91.09
+OTU_0023	OTU_0023	KIE45527  coded_by=294156..294779,organism=Clostridium argentinense CDC 2741,definition=D-alanyl-D-alanine dipeptidase	2e-122	82.32
+OTU_0023	OTU_0023	ADB92103  coded_by=205..876,organism=Paenibacillus popilliae,definition=putative D,D-dipeptidase	3e-122	81.82
+OTU_0023	OTU_0023	AAF36804  coded_by=6977..7648,organism=Paenibacillus popilliae,definition=putative D,D-dipeptidase VanXE	3e-122	81.82
+OTU_0024	OTU_0024	ABW16457  coded_by=complement(8717019..8717669),organism=Frankia sp. EAN1pec,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	9e-83	81.82
+OTU_0024	OTU_0024	AFS59925  coded_by=7678..8286,organism=Streptomyces sp. WAC1438,definition=VanX	2e-82	83.33
+OTU_0024	OTU_0024	ACU74650  coded_by=complement(6692470..6693078),organism=Catenulispora acidiphila DSM 44928,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	2e-81	84.09
+OTU_0025	OTU_0025	AKL65199  coded_by=1757815..1758504,organism=Streptomyces sp. Mg1,definition=D-alanyl-D-alanine dipeptidase	1e-59	59.85
+OTU_0025	OTU_0025	ERG20584  coded_by=19553..20224,organism=Pseudoalteromonas citrea NCIMB 1889,definition=D-Ala-D-Ala dipeptidase	7e-57	58.78
+OTU_0025	OTU_0025	KQC09276  coded_by=complement(2162..2926),organism=Smithella sp. SDB,definition=D-alanyl-D-alanine dipeptidase	8e-57	53.85
+OTU_0026	OTU_0026	OBG74347  coded_by=5061..5762,organism=Mycobacterium sp. E1214,definition=D-alanyl-D-alanine dipeptidase	3e-63	90.29
+OTU_0026	OTU_0026	OBH25327  coded_by=complement(5820..6521),organism=Mycobacterium sp. E1319,definition=D-alanyl-D-alanine dipeptidase	3e-63	90.29
+OTU_0026	OTU_0026	OBI10566  coded_by=19079..19744,organism=Mycobacterium sp. E2462,definition=D-alanyl-D-alanine dipeptidase	2e-62	90.20
+OTU_0027	OTU_0027	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-60	69.63
+OTU_0027	OTU_0027	ABS65906  coded_by=734510..735307,organism=Xanthobacter autotrophicus Py2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	1e-56	64.44
+OTU_0027	OTU_0027	BAF87148  coded_by=1283442..1284122,organism=Azorhizobium caulinodans ORS 571,definition=periplasmic dipeptidase	7e-56	65.93
+OTU_0028	OTU_0028	KQT45645  coded_by=complement(115381..116037),organism=Methylobacterium sp. Leaf456,definition=peptidase M15	3e-59	73.23
+OTU_0028	OTU_0028	KQQ12374  coded_by=34165..34827,organism=Methylobacterium sp. Leaf121,definition=peptidase M15	4e-59	72.87
+OTU_0028	OTU_0028	CAX22601  coded_by=897735..898397,organism=Methylobacterium extorquens DM4,definition=D-alanyl-D-alanine dipeptidase	6e-59	72.87
+OTU_0029	OTU_0029	OBF80781  coded_by=complement(56976..57689),organism=Mycobacterium sp. 852002-51163_SCH5372311,definition=D-alanyl-D-alanine dipeptidase	3e-69	96.15
+OTU_0029	OTU_0029	OBH90450  coded_by=39472..40164,organism=Mycobacterium scrofulaceum,definition=D-alanyl-D-alanine dipeptidase	2e-68	92.31
+OTU_0029	OTU_0029	OBI32013  coded_by=27770..28456,organism=Mycobacterium sp. E1386,definition=D-alanyl-D-alanine dipeptidase	4e-68	92.31
+OTU_0030	OTU_0030	CAX22601  coded_by=897735..898397,organism=Methylobacterium extorquens DM4,definition=D-alanyl-D-alanine dipeptidase	1e-46	63.55
+OTU_0030	OTU_0030	ACB78941  coded_by=823868..824542,organism=Methylobacterium populi BJ001,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	1e-46	64.49
+OTU_0030	OTU_0030	OAH32420  coded_by=complement(185803..186465),organism=Methylobacterium populi,definition=peptidase M15	1e-46	64.49
+OTU_0031	OTU_0031	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-89	68.53
+OTU_0031	OTU_0031	ADU63686  coded_by=complement(2912763..2913455),organism=Desulfovibrio aespoeensis Aspo-2,definition=D-Ala-D-Ala dipeptidase	2e-78	60.41
+OTU_0031	OTU_0031	EHP92896  coded_by=complement(2128..2790),organism=Methylobacterium extorquens DSM 13060,definition=D-Ala-D-Ala dipeptidase	8e-77	63.96
+OTU_0032	OTU_0032	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	2e-69	89.09
+OTU_0032	OTU_0032	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	2e-69	89.09
+OTU_0032	OTU_0032	EPD66794  coded_by=complement(273811..274419),organism=Streptomyces sp. HGB0020,definition=D-alanyl-D-alanine dipeptidase	2e-69	87.27
+OTU_0033	OTU_0033	OBH89480  coded_by=12310..13002,organism=Mycobacterium sp. E2989,definition=D-alanyl-D-alanine dipeptidase	4e-60	88.35
+OTU_0033	OTU_0033	OBG68270  coded_by=53832..54524,organism=Mycobacterium sp. E3339,definition=D-alanyl-D-alanine dipeptidase	4e-60	88.35
+OTU_0033	OTU_0033	OBI23568  coded_by=complement(46242..46943),organism=Mycobacterium sp. E2497,definition=D-alanyl-D-alanine dipeptidase	1e-59	86.54
+OTU_0034	OTU_0034	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	3e-92	83.89
+OTU_0034	OTU_0034	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	3e-92	83.89
+OTU_0034	OTU_0034	AGF91736  coded_by=complement(2542..3150),organism=Streptomyces sp. WAC1420,definition=D-ala-D-ala peptidase	6e-91	83.89
+OTU_0035	OTU_0035	KIA64377  coded_by=99786..100616,organism=Nocardia vulneris,definition=D-alanyl-D-alanine dipeptidase	3e-52	73.39
+OTU_0035	OTU_0035	AFT99615  coded_by=complement(1885219..1886025),organism=Nocardia brasiliensis ATCC 700358,definition=D-alanyl-D-alanine dipeptidase	7e-52	72.48
+OTU_0035	OTU_0035	EHY27207  coded_by=complement(431734..432540),organism=Nocardia brasiliensis ATCC 700358,definition=D-alanyl-D-alanine dipeptidase	7e-52	72.48
+OTU_0036	OTU_0036	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-52	74.55
+OTU_0036	OTU_0036	ADU63686  coded_by=complement(2912763..2913455),organism=Desulfovibrio aespoeensis Aspo-2,definition=D-Ala-D-Ala dipeptidase	6e-45	64.55
+OTU_0036	OTU_0036	KRP25273  coded_by=complement(487..1203),organism=OM182 bacterium BACL3 MAG-120924-bin41,definition=peptidase M15	5e-44	63.64
+OTU_0037	OTU_0037	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	1e-123	81.59
+OTU_0037	OTU_0037	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	2e-123	81.59
+OTU_0037	OTU_0037	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	3e-123	80.10
+OTU_0038	OTU_0038	KQH75670  coded_by=complement(21131..21787),organism=Mycobacterium gordonae,definition=D-alanyl-D-alanine dipeptidase	1e-52	74.29
+OTU_0038	OTU_0038	GAB44725  coded_by=54598..55206,organism=Gordonia terrae NBRC 100016,definition=putative D-alanyl-D-alanine dipeptidase	3e-52	77.67
+OTU_0038	OTU_0038	ANY21797  coded_by=505006..505797,organism=Gordonia terrae,definition=D-alanyl-D-alanine dipeptidase	4e-52	77.67
+OTU_0039	OTU_0039	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	2e-122	82.56
+OTU_0039	OTU_0039	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	3e-122	82.56
+OTU_0039	OTU_0039	AFS59925  coded_by=7678..8286,organism=Streptomyces sp. WAC1438,definition=VanX	4e-122	81.03
+OTU_0040	OTU_0040	ABW16457  coded_by=complement(8717019..8717669),organism=Frankia sp. EAN1pec,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	4e-60	82.18
+OTU_0040	OTU_0040	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	6e-58	82.35
+OTU_0040	OTU_0040	EPD66794  coded_by=complement(273811..274419),organism=Streptomyces sp. HGB0020,definition=D-alanyl-D-alanine dipeptidase	4e-57	79.21
+OTU_0041	OTU_0041	ABW16457  coded_by=complement(8717019..8717669),organism=Frankia sp. EAN1pec,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	8e-64	79.44
+OTU_0041	OTU_0041	EHP61533  coded_by=complement(73663..74271),organism=Desulfitobacterium dichloroeliminans LMG P-21439,definition=D-Ala-D-Ala dipeptidase	9e-63	80.37
+OTU_0041	OTU_0041	AGA68969  coded_by=1501003..1501611,organism=Desulfitobacterium dichloroeliminans LMG P-21439,definition=D-Ala-D-Ala dipeptidase vanX	9e-63	80.37
+OTU_0042	OTU_0042	ADU56027  coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	1e-84	84.29
+OTU_0042	OTU_0042	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-82	82.14
+OTU_0042	OTU_0042	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-82	82.14
+OTU_0043	OTU_0043	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-126	83.58
+OTU_0043	OTU_0043	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-126	83.58
+OTU_0043	OTU_0043	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	2e-126	81.59
+OTU_0044	OTU_0044	ACU74650  coded_by=complement(6692470..6693078),organism=Catenulispora acidiphila DSM 44928,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	2e-69	85.59
+OTU_0044	OTU_0044	KTE89611  coded_by=complement(169722..170330),organism=Desulfitobacterium hafniense,definition=peptidase M15	4e-68	84.68
+OTU_0044	OTU_0044	ACL19707  coded_by=1776505..1777113,organism=Desulfitobacterium hafniense DCB-2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	4e-68	84.68
+OTU_0045	OTU_0045	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	1e-90	83.89
+OTU_0045	OTU_0045	ANN20082  coded_by=complement(7790541..7791149),organism=Amycolatopsis orientalis,definition=D-Ala-D-Ala dipeptidase VanX	2e-89	79.87
+OTU_0045	OTU_0045	CCD33130  coded_by=2245..2853,organism=Amycolatopsis orientalis,definition=dipeptidase	2e-89	79.87
+OTU_0046	OTU_0046	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	9e-62	82.86
+OTU_0046	OTU_0046	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	1e-61	82.86
+OTU_0046	OTU_0046	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	7e-59	78.10
+OTU_0047	OTU_0047	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	3e-51	83.87
+OTU_0047	OTU_0047	KQT45645  coded_by=complement(115381..116037),organism=Methylobacterium sp. Leaf456,definition=peptidase M15	2e-43	70.00
+OTU_0047	OTU_0047	CCO25466  coded_by=complement(3629181..3629882),organism=Desulfovibrio hydrothermalis AM13 = DSM 14728,definition=D-alanyl-D-alanine dipeptidase	1e-41	64.71
+OTU_0048	OTU_0048	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	1e-66	80.70
+OTU_0048	OTU_0048	EME52994  coded_by=complement(340693..341301),organism=Amycolatopsis decaplanina DSM 44594,definition=D-Ala-D-Ala dipeptidase	7e-66	80.70
+OTU_0048	OTU_0048	ANN20082  coded_by=complement(7790541..7791149),organism=Amycolatopsis orientalis,definition=D-Ala-D-Ala dipeptidase VanX	4e-65	79.82
+OTU_0049	OTU_0049	ABW16457  coded_by=complement(8717019..8717669),organism=Frankia sp. EAN1pec,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	3e-60	75.70
+OTU_0049	OTU_0049	EST22955  coded_by=5214..5822,organism=Streptomyces niveus NCIMB 11891,definition=peptidase M15	1e-59	81.31
+OTU_0049	OTU_0049	AFS59925  coded_by=7678..8286,organism=Streptomyces sp. WAC1438,definition=VanX	2e-59	78.50
+OTU_0050	OTU_0050	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	1e-76	85.71
+OTU_0050	OTU_0050	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	2e-76	85.71
+OTU_0050	OTU_0050	AHY99675  coded_by=complement(3690..4298),organism=Actinoplanes sp. ATCC 53533,definition=VanX	7e-75	80.95
+OTU_0051	OTU_0051	KNB26653  coded_by=complement(111691..112461),organism=Salmonella enterica subsp. enterica serovar Infantis,definition=D-alanyl-D-alanine dipeptidase	4e-53	60.32
+OTU_0051	OTU_0051	ELX34686  coded_by=86312..87082,organism=Salmonella enterica subsp. enterica serovar Rissen str. 150,definition=D-alanyl-D-alanine dipeptidase	4e-53	60.32
+OTU_0051	OTU_0051	KNB30412  coded_by=complement(3449..4219),organism=Salmonella enterica subsp. enterica serovar Infantis,definition=D-alanyl-D-alanine dipeptidase	4e-53	60.32
+OTU_0052	OTU_0052	KQT45645  coded_by=complement(115381..116037),organism=Methylobacterium sp. Leaf456,definition=peptidase M15	3e-64	68.06
+OTU_0052	OTU_0052	EHP92896  coded_by=complement(2128..2790),organism=Methylobacterium extorquens DSM 13060,definition=D-Ala-D-Ala dipeptidase	8e-64	68.75
+OTU_0052	OTU_0052	ACS38537  coded_by=642985..643647,organism=Methylobacterium extorquens AM1,definition=D-alanyl-D-alanine dipeptidase	8e-64	68.75
+OTU_0053	OTU_0053	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	9e-62	87.13
+OTU_0053	OTU_0053	ACL19707  coded_by=1776505..1777113,organism=Desulfitobacterium hafniense DCB-2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	4e-61	84.16
+OTU_0053	OTU_0053	KTE89611  coded_by=complement(169722..170330),organism=Desulfitobacterium hafniense,definition=peptidase M15	4e-61	84.16
+OTU_0054	OTU_0054	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	9e-71	84.21
+OTU_0054	OTU_0054	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	9e-71	84.21
+OTU_0054	OTU_0054	KPU45837  coded_by=10012..10623,organism=Oxobacter pfennigii,definition=D-alanyl-D-alanine dipeptidase	1e-69	84.21
+OTU_0055	OTU_0055	ANS64067  coded_by=complement(2211412..2212065),organism=Streptomyces lincolnensis,definition=D-ala-D-ala dipeptidase	9e-73	77.17
+OTU_0055	OTU_0055	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	5e-72	75.59
+OTU_0055	OTU_0055	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	6e-72	75.59
+OTU_0056	OTU_0056	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	4e-74	70.34
+OTU_0056	OTU_0056	CCO25466  coded_by=complement(3629181..3629882),organism=Desulfovibrio hydrothermalis AM13 = DSM 14728,definition=D-alanyl-D-alanine dipeptidase	3e-65	60.00
+OTU_0056	OTU_0056	CCO01459  coded_by=complement(3629181..3629882),organism=Desulfovibrio hydrothermalis,definition=D-alanyl-D-alanine dipeptidase	3e-65	60.00
+OTU_0057	OTU_0057	KIE45527  coded_by=294156..294779,organism=Clostridium argentinense CDC 2741,definition=D-alanyl-D-alanine dipeptidase	1e-60	73.11
+OTU_0057	OTU_0057	ADB92103  coded_by=205..876,organism=Paenibacillus popilliae,definition=putative D,D-dipeptidase	3e-60	72.27
+OTU_0057	OTU_0057	AAF36804  coded_by=6977..7648,organism=Paenibacillus popilliae,definition=putative D,D-dipeptidase VanXE	3e-60	72.27
+OTU_0058	OTU_0058	OAI49158  coded_by=complement(6954..7637),organism=Gammaproteobacteria bacterium SCGC AG-212-F23,definition=hypothetical protein	6e-43	58.41
+OTU_0058	OTU_0058	KRG21132  coded_by=complement(71628..72290),organism=Coxiellaceae bacterium HT99,definition=D-alanyl-D-alanine dipeptidase	2e-42	61.11
+OTU_0058	OTU_0058	OAH32420  coded_by=complement(185803..186465),organism=Methylobacterium populi,definition=peptidase M15	5e-42	57.80
+OTU_0059	OTU_0059	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	5e-130	85.07
+OTU_0059	OTU_0059	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	5e-130	85.07
+OTU_0059	OTU_0059	CAG15004  coded_by=7682..8290,organism=Actinoplanes teichomyceticus,definition=dipeptidase	3e-129	83.08
+OTU_0060	OTU_0060	KJY41951  coded_by=complement(30408..31193),organism=Streptomyces sp. NRRL B-1568,definition=D-alanyl-D-alanine dipeptidase	8e-58	83.81
+OTU_0060	OTU_0060	EGG45634  coded_by=complement(9115..9891),organism=Streptomyces griseoaurantiacus M045,definition=D-alanyl-D-alanine dipeptidase	4e-55	78.10
+OTU_0060	OTU_0060	KUJ65529  coded_by=11508..12311,organism=Streptomyces albus subsp. albus,definition=D-alanyl-D-alanine dipeptidase	7e-55	79.05
+OTU_0061	OTU_0061	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1e-83	62.12
+OTU_0061	OTU_0061	ABS65906  coded_by=734510..735307,organism=Xanthobacter autotrophicus Py2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	9e-79	62.12
+OTU_0061	OTU_0061	ADU63686  coded_by=complement(2912763..2913455),organism=Desulfovibrio aespoeensis Aspo-2,definition=D-Ala-D-Ala dipeptidase	2e-77	59.09
+OTU_0062	OTU_0062	KES08686  coded_by=complement(253586..254194),organism=Streptomyces toyocaensis,definition=peptidase M15	6e-60	79.44
+OTU_0062	OTU_0062	AAD02118  coded_by=66891..67517,organism=Streptomyces toyocaensis,definition=D-ala-D-ala dipeptidase	7e-60	79.44
+OTU_0062	OTU_0062	ANS64067  coded_by=complement(2211412..2212065),organism=Streptomyces lincolnensis,definition=D-ala-D-ala dipeptidase	9e-60	78.50
+OTU_0063	OTU_0063	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	9e-77	84.92
+OTU_0063	OTU_0063	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	9e-77	84.92
+OTU_0063	OTU_0063	AAT38882  coded_by=1756..>2316,organism=Amycolatopsis coloradensis,definition=D-alanyl-D-alanine dipeptidase	4e-76	81.75
+OTU_0064	OTU_0064	EPD66794  coded_by=complement(273811..274419),organism=Streptomyces sp. HGB0020,definition=D-alanyl-D-alanine dipeptidase	9e-81	84.33
+OTU_0064	OTU_0064	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	2e-80	85.71
+OTU_0064	OTU_0064	ADU56081  coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	5e-80	82.71
+OTU_0065	OTU_0065	AKK30392  coded_by=complement(2032474..2033124),organism=Mycobacterium sp. EPa45,definition=D-alanyl-D-alanine dipeptidase	4e-58	83.96
+OTU_0065	OTU_0065	OBJ19592  coded_by=8852..9550,organism=Mycobacterium colombiense,definition=D-alanyl-D-alanine dipeptidase	5e-57	81.13
+OTU_0065	OTU_0065	KDE98228  coded_by=929347..930006,organism=Mycobacterium aromaticivorans JS19b1 = JCM 16368,definition=D-alanyl-D-alanine dipeptidase	9e-57	80.19
+OTU_0066	OTU_0066	AMN39019  coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	7e-84	69.78
+OTU_0066	OTU_0066	CDT09788  coded_by=4006142..4006819,organism=Sphingobacterium sp. PM2-P1-29,definition=D-alanyl-D-alanine dipeptidase	7e-74	53.85
+OTU_0066	OTU_0066	AKL65199  coded_by=1757815..1758504,organism=Streptomyces sp. Mg1,definition=D-alanyl-D-alanine dipeptidase	2e-73	61.54
+OTU_0067	OTU_0067	EHL08298  coded_by=complement(10518..11156),organism=Desulfitobacterium hafniense DP7,definition=D-Ala-D-Ala dipeptidase	4e-115	85.14
+OTU_0067	OTU_0067	KTE89611  coded_by=complement(169722..170330),organism=Desulfitobacterium hafniense,definition=peptidase M15	5e-115	85.14
+OTU_0067	OTU_0067	ACL19707  coded_by=1776505..1777113,organism=Desulfitobacterium hafniense DCB-2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	5e-115	85.14
+OTU_0068	OTU_0068	EUA30525  coded_by=complement(374447..375043),organism=Mycobacterium xenopi 4042,definition=D-ala-D-ala dipeptidase family protein	9e-67	87.96
+OTU_0068	OTU_0068	KMV24264  coded_by=248785..249381,organism=Mycobacterium heckeshornense,definition=D-alanyl-D-alanine dipeptidase	9e-67	87.96
+OTU_0068	OTU_0068	OBI40723  coded_by=2122..2751,organism=Mycobacterium kyorinense,definition=D-alanyl-D-alanine dipeptidase	1e-64	83.64
+OTU_0069	OTU_0069	ANA97932  coded_by=1875065..1875733,organism=Mycobacterium chelonae CCUG 47445,definition=D-alanyl-D-alanine dipeptidase	1e-60	82.08
+OTU_0069	OTU_0069	AKC41261  coded_by=1810695..1811360,organism=Mycobacterium chelonae,definition=D-alanyl-D-alanine dipeptidase	1e-60	82.08
+OTU_0069	OTU_0069	OLT78338  coded_by=complement(376945..377610),organism=Mycobacterium chelonae,definition=D-alanyl-D-alanine dipeptidase	1e-60	82.08
+OTU_0070	OTU_0070	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	1e-63	81.48
+OTU_0070	OTU_0070	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	1e-63	81.48
+OTU_0070	OTU_0070	KRV47292  coded_by=98000..98608,organism=Streptomyces vitaminophilus,definition=peptidase M15	4e-63	81.48
+OTU_0071	OTU_0071	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	4e-64	88.12
+OTU_0071	OTU_0071	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	4e-64	88.12
+OTU_0071	OTU_0071	CCH32244  coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	6e-64	91.09
+OTU_0072	OTU_0072	EPD66794  coded_by=complement(273811..274419),organism=Streptomyces sp. HGB0020,definition=D-alanyl-D-alanine dipeptidase	5e-75	86.07
+OTU_0072	OTU_0072	CTQ94928  coded_by=7112370..7112978,organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase (EC 3.4.13.-)	2e-74	85.25
+OTU_0072	OTU_0072	CEL19273  coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2e-74	85.25
+OTU_0073	OTU_0073	OAT67107  coded_by=36784..37452,organism=Mycobacterium immunogenum,definition=D-alanyl-D-alanine dipeptidase	4e-58	79.05
+OTU_0073	OTU_0073	AMT70577  coded_by=1997479..1998147,organism=Mycobacterium immunogenum,definition=D-alanyl-D-alanine dipeptidase	5e-58	79.05
+OTU_0073	OTU_0073	ANO03663  coded_by=2003266..2003934,organism=Mycobacterium immunogenum,definition=D-alanyl-D-alanine dipeptidase	5e-58	79.05
+OTU_0074	OTU_0074	CAX22601  coded_by=897735..898397,organism=Methylobacterium extorquens DM4,definition=D-alanyl-D-alanine dipeptidase	4e-46	64.15
+OTU_0074	OTU_0074	KQQ14827  coded_by=49438..50100,organism=Methylobacterium sp. Leaf123,definition=peptidase M15	1e-45	63.21
+OTU_0074	OTU_0074	KQQ12374  coded_by=34165..34827,organism=Methylobacterium sp. Leaf121,definition=peptidase M15	3e-45	63.21
+OTU_0075	OTU_0075	KQT45645  coded_by=complement(115381..116037),organism=Methylobacterium sp. Leaf456,definition=peptidase M15	2e-61	68.35
+OTU_0075	OTU_0075	EHP92896  coded_by=complement(2128..2790),organism=Methylobacterium extorquens DSM 13060,definition=D-Ala-D-Ala dipeptidase	2e-57	66.91
+OTU_0075	OTU_0075	ACS38537  coded_by=642985..643647,organism=Methylobacterium extorquens AM1,definition=D-alanyl-D-alanine dipeptidase	2e-57	66.91
+OTU_0076	OTU_0076	ADC61940  coded_by=1150147..1150920,organism=Allochromatium vinosum DSM 180,definition=D-Ala-D-Ala dipeptidase	4e-45	62.28
+OTU_0076	OTU_0076	OAH32420  coded_by=complement(185803..186465),organism=Methylobacterium populi,definition=peptidase M15	1e-44	65.22
+OTU_0076	OTU_0076	ACB78941  coded_by=823868..824542,organism=Methylobacterium populi BJ001,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	1e-44	65.22
