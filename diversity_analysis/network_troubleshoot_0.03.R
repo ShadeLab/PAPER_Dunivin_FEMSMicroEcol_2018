@@ -371,7 +371,7 @@ genus.group.slim <- split(as.numeric(rownames(aesthetics.slim)), list(aesthetics
 clust.network.slim.taxonomy <- qgraph(corr.genes.slim$r, minimum = "sig", sampleSize=13, 
                                       details = TRUE, layout = "spring",
                                       graph = "cor",label.cex = 0.5,
-                                      alpha = 0.01, graph = "fdr", labels = aesthetics.slim$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics.slim$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "ggplot2", groups = phylum.group.slim, vsize = 4, GLratio = 6, legend.cex = 0.35)
+                                      alpha = 0.0001, graph = "fdr", labels = aesthetics.slim$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics.slim$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "ggplot2", groups = phylum.group.slim, vsize = 4, GLratio = 6, legend.cex = 0.35)
 
 clust.network.slim.gene <- qgraph(corr.genes.slim$r, minimum = "sig", sampleSize=13, 
                                   details = TRUE, layout = "spring",

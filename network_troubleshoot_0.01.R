@@ -158,7 +158,7 @@ ggplot(cutoff, aes(x = Number_of_Sites)) +
 quantile(cutoff$Number_of_Sites, 0.96)
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 2),]
 
 #remove OTUs with presence in less than 4 sites
 otu_table_norm.slim.t <- t(otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in% rownames(abund)),])
@@ -196,15 +196,12 @@ shapes <- as.vector(r$Shape)
 r$gene.color[r$Gene == "rplB"] <- "#fffac8"
 r$gene.color[r$Group == "Metadata"] <- "#D3D3D3"
 
-#save list of remaining OTUs (for BLAST)
-write_lines(r$gene, "/output/network_contigs_0.01_output.txt")
-
 #read in BLAST output results
 setwd(paste(wd, "/../networks/data", sep = ""))
 blast.names <- list.files(pattern="*0.01.txt")
 blast <- do.call(rbind, lapply(blast.names, function(X) {
   data.frame(id = basename(X), read_delim(X, delim = "\t", col_names = FALSE))}))
-
+setwd(wd)
 #tidy blast results
 blast$id <- gsub("arsC_", "arsC", blast$id)
 blast.tidy <- blast %>%
@@ -215,26 +212,72 @@ blast.tidy <- blast %>%
   rename(OTU = X1, evalue = X4, percid = X5) %>%
   select(-c(results, X2))
 
+#remove all blast.tidy results that have e.values > 10-5
+blast.tidy <- blast.tidy[blast.tidy$evalue < 0.00001,]
+
 #subset rplB results (pre-classified)
 blast.rplB <- subset(blast.tidy, Gene == "rplB")
 blast.all <- subset(blast.tidy, Gene != "rplB")
 
-#get taxanomic information for each contig
-#will take ~2 minutes!
-blast.all[,10:14] <- tax_name(blast.all$organism, get = c("genus", "class", "phylum"), db = "ncbi")
-blast.all <- blast.all %>%
+#remove all rows with poor taxanomic identifiers (ie unknown or metagenome)
+blast.all <- blast.all[!grepl("metagenome", blast.all$organism),]
+blast.all <- blast.all[!grepl("uncultured .", blast.all$organism),]
+
+#order blast.all by e value (lowest first)
+blast.all <- blast.all[order(blast.all$evalue, decreasing = FALSE),]
+
+#read in taxize information
+taxize <- read.delim(paste(wd, "/output/taxize_0.1_results.txt", sep = ""), sep = " ")
+
+#remove duplicate matches
+blast.all.unique <- blast.all[!duplicated(blast.all[,c(1,3)]),]
+blast.all.unique <- blast.all.unique %>%
+  select(Gene, OTU, organism) %>%
+  rename(query = organism) %>%
+  left_join(taxize, by = "query")
+
+blast.all.unique.complete <- blast.all.unique[!is.na(blast.all.unique$phylum),]  
+blast.all.unique.na <- blast.all.unique[is.na(blast.all.unique$phylum),-c(4:7)] 
+
+#fill in blast results
+blast.all.unique.na[,4:8] <- tax_name(blast.all.unique.na$query, get = c("genus", "class", "phylum"), db = "ncbi")
+
+#remove duplicate query column and merge files
+blast.all.unique.na <- blast.all.unique.na[,-5]
+blast.all.unique.final <- rbind(blast.all.unique.complete, blast.all.unique.na)
+
+#save taxize results to output so that ncbi does not need to be re-searched
+write.table(blast.all.unique.final, paste(wd, "/output/taxize_0.01_results.txt", sep = ""), col.names = TRUE, row.names = FALSE)
+
+#select columns of interest in blast.all
+blast.all.unique.final <- blast.all.unique.final %>%
   select(Gene, OTU, phylum, class, genus)
 
 #tidy rplB information (ie get phyla)
 blast.rplB.tidy <- blast.rplB %>%
   separate(accno, into = c("kingdom", "phylum", "class", "order", "family", "genus"), sep = ";") %>%
-  select(Gene, OTU, phylum, class, genus)
+  select(Gene, OTU, phylum, class, genus, evalue)
+
+#remove rows that have unknown phylum
+blast.rplB.tidy <- blast.rplB.tidy[!grepl("metagenomes", blast.rplB.tidy$phylum),]
+blast.rplB.tidy <- blast.rplB.tidy[!grepl("environmentalsamples", blast.rplB.tidy$phylum),]
+blast.rplB.tidy <- blast.rplB.tidy[!grepl("artificialsequences", blast.rplB.tidy$phylum),]
+
+#order blast.all by e value (lowest first) and then remove duplicate rows
+blast.rplB.tidy <- blast.rplB.tidy[order(blast.rplB.tidy$evalue, decreasing = FALSE),]
+blast.rplB.tidy.unique <- blast.rplB.tidy[!duplicated(blast.rplB.tidy$OTU) & duplicated(blast.rplB.tidy$Gene),]
+
+#select necessary columns in rplB tidy
+blast.rplB.tidy.unique <- select(blast.rplB.tidy.unique, Gene, OTU, phylum, class, genus)
 
 #join together rplB and blast data 
-blast.final <- rbind(blast.rplB.tidy, blast.all)
+blast.final <- rbind(blast.rplB.tidy.unique, blast.all.unique.final)
 
 #replace "OTU" with gene name so it can be joined with shape
 blast.final$OTU <- with(blast.final, str_replace_all(blast.final$OTU, fixed("OTU"), blast.final$Gene))
+
+#save taxize results to output so that ncbi does not need to be re-searched
+write.table(blast.final, paste(wd, "/output/taxize_0.01_results_FINAL.txt", sep = ""), col.names = TRUE, row.names = FALSE)
 
 #add leading zeros to r otus
 r.final <- r %>%
@@ -248,19 +291,6 @@ aesthetics <- r.final %>%
   left_join(blast.final, by = c("OTU", "Gene")) %>%
   unique()
 
-aesthetics$phylum[is.na(aesthetics$phylum) & aesthetics$Group == "Metadata"] <- aesthetics$Group[is.na(aesthetics$phylum) & aesthetics$Group == "Metadata"]
-aesthetics$phylum[is.na(aesthetics$phylum)] <- "Unknown"
-aesthetics$phylum[aesthetics$phylum == "artificialsequences"] <- "metagenomes"
-aesthetics$phylum[aesthetics$phylum == "metagenomes"] <- "metagenomes"
-aesthetics$phylum[aesthetics$phylum == "environmentalsamples"] <- "metagenomes"
-aesthetics$phylum[aesthetics$phylum == "environmentalsamples"] <- "metagenomes"
-aesthetics$phylum[aesthetics$phylum == "ecologicalmetagenome"] <- "metagenomes"
-
-#fill out blast.final based on higher taxonomy
-aesthetics$phylum[is.na(aesthetics$phylum)] <- "unknown"
-aesthetics$class[is.na(aesthetics$class)] <- aesthetics$phylum[is.na(aesthetics$class)]
-aesthetics$genus[is.na(aesthetics$genus)] <- aesthetics$class[is.na(aesthetics$genus)]
-
 #read in colors for phyla
 phylum.colors <- read_delim(paste(wd, "/../networks/data/phylum_colors.txt", sep = ""), delim = " ", col_names = c("phy.color", "phylum"))
 
@@ -269,9 +299,6 @@ aesthetics <- aesthetics %>%
   left_join(phylum.colors, by = "phylum")
 
 #make taxanomic groups for network
-aesthetics$phylum <- gsub(" ", "", aesthetics$phylum)
-aesthetics$phylum <- gsub("-", "", aesthetics$phylum)
-
 phylum.group <- split(as.numeric(rownames(aesthetics)), list(aesthetics$phylum)) 
 class.group <- split(as.numeric(rownames(aesthetics)), list(aesthetics$class), drop=TRUE) 
 genus.group <- split(as.numeric(rownames(aesthetics)), list(aesthetics$genus), drop=TRUE) 
@@ -280,7 +307,7 @@ genus.group <- split(as.numeric(rownames(aesthetics)), list(aesthetics$genus), d
 clust.network <- qgraph(corr.genes$r, minimum = "sig", sampleSize=13, 
                         details = TRUE, layout = "spring",
                         graph = "cor",label.cex = 0.5,
-                        alpha = 0.01, graph = "fdr", labels = aesthetics$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "ggplot2", groups = phylum.group, vsize = 4, GLratio = 6, legend.cex = 0.35, overlay = TRUE)
+                        alpha = 0.01, graph = "fdr", labels = aesthetics$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "pastel", groups = phylum.group, vsize = 4, GLratio = 6, legend.cex = 0.35, overlay = TRUE)
 
 ##########################################
 #RESISTANCE GENE NETWORK ANALYSIS (-rplB)#
@@ -319,18 +346,6 @@ shapes.slim <- as.vector(r.slim$Shape)
 r.slim$gene.color[r.slim$Gene == "rplB"] <- "#fffac8"
 r.slim$gene.color[r.slim$Group == "Metadata"] <- "#D3D3D3"
 
-#subset rplB results (pre-classified)
-blast.all.slim <- subset(blast.tidy, Gene != "rplB")
-
-#get taxanomic information for each contig
-#will take ~2 minutes!
-blast.all.slim[,10:14] <- tax_name(blast.all.slim$organism, get = c("genus", "class", "phylum"), db = "ncbi")
-blast.all.slim <- blast.all.slim %>%
-  select(Gene, OTU, phylum, class, genus)
-
-#replace "OTU" with gene name so it can be joined with shape
-blast.all.slim$OTU <- with(blast.all.slim, str_replace_all(blast.all.slim$OTU, fixed("OTU"), blast.all.slim$Gene))
-
 #add leading zeros to r otus
 r.final.slim <- r.slim %>%
   separate(OTU, into = c("beginning", "number"), sep = "_")
@@ -340,21 +355,8 @@ r.final.slim$OTU <- paste(r.final.slim$beginning, r.final.slim$number, sep = "_"
 
 #join aesthetic (shape, taxonomy) information
 aesthetics.slim <- r.final.slim %>%
-  left_join(blast.all.slim, by = c("OTU", "Gene")) %>%
+  left_join(blast.final, by = c("OTU", "Gene")) %>%
   unique()
-
-aesthetics.slim$phylum[is.na(aesthetics.slim$phylum) & aesthetics.slim$Group == "Metadata"] <- aesthetics.slim$Group[is.na(aesthetics.slim$phylum) & aesthetics.slim$Group == "Metadata"]
-aesthetics.slim$phylum[is.na(aesthetics.slim$phylum)] <- "Unknown"
-aesthetics.slim$phylum[aesthetics.slim$phylum == "artificialsequences"] <- "metagenomes"
-aesthetics.slim$phylum[aesthetics.slim$phylum == "metagenomes"] <- "metagenomes"
-aesthetics.slim$phylum[aesthetics.slim$phylum == "environmentalsamples"] <- "metagenomes"
-aesthetics.slim$phylum[aesthetics.slim$phylum == "environmentalsamples"] <- "metagenomes"
-aesthetics.slim$phylum[aesthetics.slim$phylum == "ecologicalmetagenome"] <- "metagenomes"
-
-#fill out blast.final based on higher taxonomy
-aesthetics.slim$phylum[is.na(aesthetics.slim$phylum)] <- "unknown"
-aesthetics.slim$class[is.na(aesthetics.slim$class)] <- aesthetics.slim$phylum[is.na(aesthetics.slim$class)]
-aesthetics.slim$genus[is.na(aesthetics.slim$genus)] <- aesthetics.slim$class[is.na(aesthetics.slim$genus)]
 
 #add phylum colors to aesthetics
 aesthetics.slim <- aesthetics.slim %>%
@@ -369,7 +371,7 @@ genus.group.slim <- split(as.numeric(rownames(aesthetics.slim)), list(aesthetics
 clust.network.slim.taxonomy <- qgraph(corr.genes.slim$r, minimum = "sig", sampleSize=13, 
                                       details = TRUE, layout = "spring",
                                       graph = "cor",label.cex = 0.5,
-                                      alpha = 0.01, graph = "fdr", labels = aesthetics.slim$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics.slim$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "ggplot2", groups = phylum.group.slim, vsize = 4, GLratio = 6, legend.cex = 0.35)
+                                      alpha = 0.0001, graph = "fdr", labels = aesthetics.slim$Gene,  label.scale.equal = TRUE, label.scale = FALSE,shape = aesthetics.slim$Shape, node.resolution = 500,  negDashed = TRUE, curve = 0.2, posCol = "#808080",curveAll = TRUE, overlay = FALSE,  palette = "ggplot2", groups = phylum.group.slim, vsize = 4, GLratio = 6, legend.cex = 0.35)
 
 clust.network.slim.gene <- qgraph(corr.genes.slim$r, minimum = "sig", sampleSize=13, 
                                   details = TRUE, layout = "spring",

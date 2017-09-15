@@ -240,36 +240,39 @@ blast.all <- blast.all[order(blast.all$evalue, decreasing = FALSE),]
 blast.all.unique <- blast.all[!duplicated(blast.all[,c(1,3)]),]
 blast.all.unique <- blast.all.unique %>%
   select(Gene, OTU, organism)
-organisms <- data.frame(organism = as.character(unique(blast.all.unique$organism)))
+#organisms <- data.frame(organism = as.character(unique(blast.all.unique$organism)))
 
 #split organisms so we can curl from ncbi
-organisms1 <- as.character(organisms[1:260,])
-organisms2 <- as.character(organisms[261:520,])
-organisms3 <- as.character(organisms[521:780,])
-organisms4 <- as.character(organisms[781:1040,])
+#organisms1 <- as.character(organisms[1:260,])
+#organisms2 <- as.character(organisms[261:520,])
+#organisms3 <- as.character(organisms[521:780,])
+#organisms4 <- as.character(organisms[781:1040,])
 
 #get taxanomic information for each contig
 #will take a few minutes!
-organisms.ncbi1 <- tax_name(organisms1, get = c("genus", "class", "phylum"), db = "ncbi")
-organisms.ncbi2 <- tax_name(organisms2, get = c("genus", "class", "phylum"), db = "ncbi")
-organisms.ncbi3 <- tax_name(organisms3, get = c("genus", "class", "phylum"), db = "ncbi")
-organisms.ncbi4 <- tax_name(organisms4, get = c("genus", "class", "phylum"), db = "ncbi")
-organisms.ncbi <- rbind(organisms.ncbi1, organisms.ncbi2, organisms.ncbi3, organisms.ncbi4)
+#organisms.ncbi1 <- tax_name(organisms1, get = c("genus", "class", "phylum"), db = "ncbi")
+#organisms.ncbi2 <- tax_name(organisms2, get = c("genus", "class", "phylum"), db = "ncbi")
+#organisms.ncbi3 <- tax_name(organisms3, get = c("genus", "class", "phylum"), db = "ncbi")
+#organisms.ncbi4 <- tax_name(organisms4, get = c("genus", "class", "phylum"), db = "ncbi")
+#organisms.ncbi <- rbind(organisms.ncbi1, organisms.ncbi2, organisms.ncbi3, organisms.ncbi4)
 
 #fix poorly annotated organisms
-organisms.ncbi$phylum[is.na(organisms.ncbi$phylum)] <- organisms.ncbi$query[is.na(organisms.ncbi$phylum)]
+#organisms.ncbi$phylum[is.na(organisms.ncbi$phylum)] <- organisms.ncbi$query[is.na(organisms.ncbi$phylum)]
 
-organisms.ncbi$phylum[grepl("Parcubacteria", organisms.ncbi$phylum)] <- "Parcubacteria"
-organisms.ncbi$phylum[grepl("Polyangium", organisms.ncbi$phylum)] <- "Proteobacteria"
-organisms.ncbi$phylum[grepl("Burkholderia", organisms.ncbi$phylum)] <- "Proteobacteria"
-organisms.ncbi$phylum[grepl("Streptomyces", organisms.ncbi$phylum)] <- "Actinobacteria"
-organisms.ncbi$phylum[grepl("candidate division WOR-1", organisms.ncbi$phylum)] <- "candidate division WOR-1"
-organisms.ncbi$phylum[grepl("candidate division TM6", organisms.ncbi$phylum)] <- "candidate division TM6"
-organisms.ncbi$phylum[grepl("Microgenomates", organisms.ncbi$phylum)] <- "Candidatus Microgenomates"
-organisms.ncbi$phylum[grepl("Bacillus", organisms.ncbi$phylum)] <- "Firmicutes"
+#organisms.ncbi$phylum[grepl("Parcubacteria", organisms.ncbi$phylum)] <- "Parcubacteria"
+#organisms.ncbi$phylum[grepl("Polyangium", organisms.ncbi$phylum)] <- "Proteobacteria"
+#organisms.ncbi$phylum[grepl("Burkholderia", organisms.ncbi$phylum)] <- "Proteobacteria"
+#organisms.ncbi$phylum[grepl("Streptomyces", organisms.ncbi$phylum)] <- "Actinobacteria"
+#organisms.ncbi$phylum[grepl("candidate division WOR-1", organisms.ncbi$phylum)] <- "candidate division WOR-1"
+#organisms.ncbi$phylum[grepl("candidate division TM6", organisms.ncbi$phylum)] <- "candidate division TM6"
+#organisms.ncbi$phylum[grepl("Microgenomates", organisms.ncbi$phylum)] <- "Candidatus Microgenomates"
+#organisms.ncbi$phylum[grepl("Bacillus", organisms.ncbi$phylum)] <- "Firmicutes"
 
 #save taxize results to output so that ncbi does not need to be re-searched
-write.table(organisms.ncbi, paste(wd, "/output/taxize_0.1_results.txt", sep = ""), col.names = TRUE, row.names = FALSE)
+#write.table(organisms.ncbi, paste(wd, "/output/taxize_0.1_results.txt", sep = ""), col.names = TRUE, row.names = FALSE)
+
+#read in taxize information
+organisms.ncbi <- read.delim(paste(wd, "/output/taxize_0.1_results.txt", sep = ""), sep = " ")
 
 #select columns of interest in blast.all
 blast.all.unique <- blast.all.unique %>%
