@@ -868,3 +868,10 @@ ggplot(subset(gene_abundance_blast_final, phylum %in% top.phy), aes(x = phylum, 
   theme(axis.text.x = element_text(angle = 90, size = 8, 
                                    hjust=0.95,vjust=0.2))
 
+gene_abundance_cast <- dcast(gene_abundance_blast_final, Classification+phylum ~ Group, fun.aggregate = sum)
+la <- subset(gene_abundance_cast, phylum %in% top.phy)
+
+gene_abundance_cast %>% group_by(phylum) %>% do(tidy(cor.test(.$rplB, .$AntibioticResistance)))
+
+ggplot(subset(gene_abundance_cast, phylum %in% top.phy), aes(x = rplB, y = ArsenicResistance, color = phylum)) +
+  geom_point()
