@@ -6,15 +6,6 @@ library(dplyr)
 # load packages
 library(dplyr)
 
-# read in file 
-data=read.table("matchreadlist.txt", header=FALSE)
-
-# count unique in query_id column
-reads=summarize(data, UniqueReads=length(unique(data$V1)),TotalReads=length(data$V1))
-
-# write results,change filename to include gene name, then move to home directory
-write.table(reads, "readssummary2.txt", row.names=FALSE)
-
 # KMER ABUND DISTRIBUTION
 # read in kmer abund file
 kmer=read.table(list.files(pattern = "_abundance.txt"), header=TRUE)
