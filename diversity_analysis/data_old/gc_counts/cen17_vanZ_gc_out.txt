@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen17_vanZ_contig_0_contig_1	32.0175438596491	456	77	69	148	162

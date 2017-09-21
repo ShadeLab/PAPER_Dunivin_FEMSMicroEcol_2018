@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen16_AAC6-Ia_contig_48_contig_49	60.3448275862069	348	107	103	78	60

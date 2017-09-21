@@ -1,6 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen14_arsC_thio_contig_6_contig_7	64.8484848484848	165	54	53	33	25
-cen14_arsC_thio_contig_22_contig_23	67.8787878787879	165	63	49	28	25
-cen14_arsC_thio_contig_28_contig_29	63.030303030303	165	77	27	27	34
-cen14_arsC_thio_contig_84_contig_85	60.377358490566	159	62	34	27	36
-cen14_arsC_thio_contig_94_contig_95	59.3939393939394	165	58	40	30	37

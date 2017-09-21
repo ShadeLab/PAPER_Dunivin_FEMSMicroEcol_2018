@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=56378..57547,organism=Burkholderia sp. BT03,definition=Beta-lactamase	2.096	1.0000

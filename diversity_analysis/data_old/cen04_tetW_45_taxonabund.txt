@@ -1,6 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=100..2019,organism=uncultured bacterium,definition=mosaic tetracycline resistance protein	7.8759999999999994	0.3261
-coded_by=131..2050,organism=Megasphaera elsdenii,definition=tetracycline resistance protein	1.105	0.0457
-coded_by=199..>2087,organism=Bifidobacterium thermophilum,definition=mosaic tetracycline resistance protein	1.4	0.0580
-coded_by=1..1920,organism=Megasphaera elsdenii,definition=tetracycline resistance protein	8.729	0.3614
-coded_by=1..1920,organism=Streptococcus suis,definition=tetracycline resistance protein O/W/32/O	5.045	0.2089

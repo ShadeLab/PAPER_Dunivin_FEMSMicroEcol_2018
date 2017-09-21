@@ -1,7 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(86181..87344),organism=Sinorhizobium sp. GL2,definition=hypothetical protein	1.935	0.1061
-coded_by=complement(4073416..4074585),organism=Bordetella petrii,definition=beta-lactamase	2.511	0.1377
-coded_by=538544..539689,organism=Rhizobium sp. Root1203,definition=class C beta-lactamase	3.675	0.2016
-coded_by=complement(2459020..2460195),organism=Paraburkholderia caribensis,definition=class C beta-lactamase	4.643	0.2546
-coded_by=complement(1597079..1598296),organism=Methylobacterium populi BJ001,definition=beta-lactamase	3.404	0.1867
-coded_by=1138..2253,organism=uncultured bacterium,definition=ClassC-AmpC_beta_lactamase	2.065	0.1133

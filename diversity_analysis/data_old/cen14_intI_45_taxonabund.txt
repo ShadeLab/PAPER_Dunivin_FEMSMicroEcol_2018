@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	19.762	0.0761
-coded_by=3971..4948,organism=Candidatus Contendobacter odensis Run_B_J11,definition=Integrase/recombinase	10.208	0.0393
-coded_by=287225..288241,organism=Chlorobium phaeobacteroides DSM 266,definition=integron integrase	13.455	0.0518
-coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	167.843	0.6466
-coded_by=2660345..2661334,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=putative transposase	32.363	0.1247
-coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	2.908	0.0112
-coded_by=1344774..1345742,organism=Leptolyngbya sp. PCC 7375,definition=integron integrase	13.033	0.0502

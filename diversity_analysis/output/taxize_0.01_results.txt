@@ -5437,7 +5437,7 @@
 "arsM" "OTU_1630" "Streptomyces puniciscabiei" "ncbi" "Streptomyces" "Actinobacteria" "Actinobacteria"
 "acr3" "OTU_0325" "Acidithiobacillales bacterium SM1_46" "ncbi" NA "Acidithiobacillia" "Proteobacteria"
 "acr3" "OTU_0030" "Nitrospira bacterium SG8_35_4" "ncbi" NA "Nitrospira" "Nitrospirae"
-"arsA" "OTU_0251" "[Clostridium] purinilyticum" "ncbi" NA NA NA
+"arsA" "OTU_0251" "[Clostridium] purinilyticum" "ncbi" NA NA "Firmicutes"
 "arsCglut" "OTU_0091" "Rhizobium sp. LCM 4573" "ncbi" "Rhizobium" "Alphaproteobacteria" "Proteobacteria"
 "arsCglut" "OTU_1006" "Mycobacterium sp. 1554424.7" "ncbi" "Mycobacterium" "Actinobacteria" "Actinobacteria"
 "arsCglut" "OTU_0510" "Mycobacterium malmoense" "ncbi" "Mycobacterium" "Actinobacteria" "Actinobacteria"
@@ -5487,7 +5487,7 @@
 "dfra12" "OTU_0511" "Pseudomonas alcaligenes OT 69" "ncbi" "Pseudomonas" "Gammaproteobacteria" "Proteobacteria"
 "dfra12" "OTU_0519" "Thauera aminoaromatica S2" "ncbi" "Thauera" "Betaproteobacteria" "Proteobacteria"
 "dfra12" "OTU_0182" "Myxococcus fulvus 124B02" "ncbi" "Myxococcus" "Deltaproteobacteria" "Proteobacteria"
-"dfra12" "OTU_0302" "Microgenomates bacterium GW2011_GWC1_38_14" "ncbi" NA NA NA
+"dfra12" "OTU_0302" "Microgenomates bacterium GW2011_GWC1_38_14" "ncbi" NA NA "Candidatus Microgenomates"
 "arsCglut" "OTU_0296" "Rhizobacter sp. Root1221" "ncbi" "Rhizobacter" "Betaproteobacteria" "Proteobacteria"
 "arsCglut" "OTU_0426" "Aeromonas sp. ANNP30" "ncbi" "Aeromonas" "Gammaproteobacteria" "Proteobacteria"
 "arsCthio" "OTU_0090" "Parageobacillus thermantarcticus" "ncbi" "Parageobacillus" "Bacilli" "Firmicutes"

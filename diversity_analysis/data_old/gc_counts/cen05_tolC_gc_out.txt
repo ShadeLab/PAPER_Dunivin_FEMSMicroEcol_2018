@@ -1,5 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen05_tolC_contig_236_contig_237	66.8817204301075	465	148	163	92	62
-cen05_tolC_contig_238_contig_239	66.8411867364747	573	189	194	110	80
-cen05_tolC_contig_250_contig_251	68.2051282051282	585	185	214	110	76
-cen05_tolC_contig_308_contig_309	66.006600660066	606	196	204	108	98

@@ -1,6 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(5089..5697),organism=Anaeromyxobacter sp. PSR-1,definition=arsenical resistance operon trans-acting repressor ArsD	1.831	0.2130
-coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	1.894	0.2203
-coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	1.675	0.1949
-coded_by=complement(3077358..3077735),organism=Alkalilimnicola ehrlichii MLHE-1,definition=Arsenical resistance operon trans-acting repressor ArsD	1.782	0.2073
-coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1.414	0.1645

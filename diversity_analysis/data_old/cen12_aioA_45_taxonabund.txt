@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(40124..42583),organism=Oceanibaculum,definition=arseniteoxidase	2.803	1.0

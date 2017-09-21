@@ -1,4 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen17_arsD_contig_12_contig_13	56.3380281690141	213	71	49	43	50
-cen17_arsD_contig_52_contig_53	62.2950819672131	183	59	55	35	34
-cen17_arsD_contig_92_contig_93	52.9761904761905	168	49	40	37	42

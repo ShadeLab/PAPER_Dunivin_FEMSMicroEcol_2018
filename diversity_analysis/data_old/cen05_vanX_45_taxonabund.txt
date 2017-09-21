@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(13940..14581),organism=uncultured organism CA915,definition=hypothetical protein	1.495	0.1185
-coded_by=1899241..1899849,organism=Kibdelosporangium phytohabitans,definition=peptidase M15	1.318	0.1045
-coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	2.313	0.1834
-coded_by=complement(6609291..6609899),organism=Streptomyces sp. CNQ-509,definition=peptidase M15	1.444	0.1145
-coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	2.331	0.1848
-coded_by=complement(6152..6802),organism=uncultured organism CA37,definition=hypothetical protein	2.016	0.1598
-coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	1.6950000000000003	0.1344

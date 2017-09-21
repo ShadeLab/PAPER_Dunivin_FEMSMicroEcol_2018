@@ -13124,7 +13124,7 @@
 "arsM" "arsM_1630" "Actinobacteria" "Actinobacteria" "Streptomyces"
 "acr3" "acr3_0325" "Proteobacteria" "Acidithiobacillia" NA
 "acr3" "acr3_0030" "Nitrospirae" "Nitrospira" NA
-"arsA" "arsA_0251" NA NA NA
+"arsA" "arsA_0251" "Firmicutes" NA NA
 "arsCglut" "arsCglut_0091" "Proteobacteria" "Alphaproteobacteria" "Rhizobium"
 "arsCglut" "arsCglut_1006" "Actinobacteria" "Actinobacteria" "Mycobacterium"
 "arsCglut" "arsCglut_0510" "Actinobacteria" "Actinobacteria" "Mycobacterium"
@@ -13174,7 +13174,7 @@
 "dfra12" "dfra12_0511" "Proteobacteria" "Gammaproteobacteria" "Pseudomonas"
 "dfra12" "dfra12_0519" "Proteobacteria" "Betaproteobacteria" "Thauera"
 "dfra12" "dfra12_0182" "Proteobacteria" "Deltaproteobacteria" "Myxococcus"
-"dfra12" "dfra12_0302" NA NA NA
+"dfra12" "dfra12_0302" "Candidatus Microgenomates" NA NA
 "arsCglut" "arsCglut_0296" "Proteobacteria" "Betaproteobacteria" "Rhizobacter"
 "arsCglut" "arsCglut_0426" "Proteobacteria" "Gammaproteobacteria" "Aeromonas"
 "arsCthio" "arsCthio_0090" "Firmicutes" "Bacilli" "Parageobacillus"

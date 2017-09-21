@@ -1,7 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=886559..886927,organism=Laribacter hongkongensis HLHK9,definition=Arsenical resistance operon trans-acting repressor ArsD	1.266	0.0829
-coded_by=complement(757176..757586),organism=Planctomyces sp. SH-PL62,definition=Arsenical resistance operon trans-acting repressor ArsD	1.306	0.0855
-coded_by=complement(687296..687709),organism=Desulfurivibrio alkaliphilus AHT2,definition=Arsenical resistance operon trans-acting repressor ArsD	1.024	0.0671
-coded_by=138819..139226,organism=Rhodococcus erythropolis,definition=putative trans-acting repressor (ArsD)	1.245	0.0816
-coded_by=complement(274098..274457),organism=Pseudomonas stutzeri A1501,definition=arsenic operon regulator	7.916	0.5185
-coded_by=1970515..1970886,organism=Magnetospirillum magneticum AMB-1,definition=Arsenical resistance operon trans-acting repressor arsD	2.509	0.1644

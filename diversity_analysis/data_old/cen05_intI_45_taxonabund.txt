@@ -1,9 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(<1..944),organism=uncultured bacterium,definition=IntI1	1.96	0.0517
-coded_by=complement(26635..28083),organism=Candidatus Accumulibacter sp. SK-01,definition=Tyrosine recombinase XerD	4.04	0.1066
-coded_by=528287..529261,organism=Frateuria sp. Soil773,definition=integrase	3.762	0.0992
-coded_by=655..1695,organism=Candidatus Nitrospira nitrificans,definition=Integrase/recombinase	1.725	0.0455
-coded_by=417019..418023,organism=Methylobacillus flagellatus KT,definition=Integron integrase	2.913	0.0768
-coded_by=2845093..2846064,organism=Thioalkalivibrio sulfidophilus HL-EbGr7,definition=integron integrase	19.02	0.5017
-coded_by=1466243..1467205,organism=Geoalkalibacter subterraneus,definition=integrase	1.646	0.0434
-coded_by=complement(2752000..2752971),organism=Halothiobacillus sp. LS2,definition=integrase	2.8419999999999996	0.0750

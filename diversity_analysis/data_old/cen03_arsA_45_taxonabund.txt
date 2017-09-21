@@ -1,6 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(1255023..1256225),organism=Bacillus sp. FJAT-4402,definition=arsenic ABC transporter ATPase	9.612	0.3066
-coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	2.54	0.0810
-coded_by=complement(109237..110451),organism=Paenibacillus sp. MSt1,definition=arsenic ABC transporter ATPase	7.572	0.2416
-coded_by=complement(6901..8112),organism=Chloroflexi bacterium OLB15,definition=arsenite-activated ATPase ArsA	5.508	0.1757
-coded_by=1328900..1330702,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	6.115	0.1951

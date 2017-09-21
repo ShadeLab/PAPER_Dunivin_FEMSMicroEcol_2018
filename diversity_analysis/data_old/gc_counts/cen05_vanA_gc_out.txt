@@ -1,7 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen05_vanA_contig_8_contig_9	65.7869012707722	1023	339	334	191	159
-cen05_vanA_contig_10_contig_11	65.6891495601173	1023	338	334	192	159
-cen05_vanA_contig_34_contig_35	61.6104868913858	534	174	155	106	99
-cen05_vanA_contig_66_contig_67	65.8846529814272	1023	339	335	193	156
-cen05_vanA_contig_72_contig_73	65.6891495601173	1023	337	335	192	159
-cen05_vanA_contig_80_contig_81	65.3954802259887	708	230	233	132	113

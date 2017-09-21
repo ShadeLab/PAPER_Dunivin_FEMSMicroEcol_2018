@@ -1,5 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=4593..5513,organism=Roseomonas mucosa,definition=class A beta-lactamase	2.387	0.2120
-coded_by=complement(36965..37900),organism=Streptomyces decoyicus,definition=beta-lactamase	5.517	0.4900
-coded_by=complement(280082..280984),organism=Rhodospirillum rubrum ATCC 11170,definition=Twin-arginine.translocation.pathway.signal	1.845	0.1639
-coded_by=complement(110481..111392),organism=Rhodanobacter spathiphylli B39,definition=beta-lactamase	1.51	0.1341

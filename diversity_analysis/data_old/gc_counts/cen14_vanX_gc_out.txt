@@ -1,7 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen14_vanX_contig_200_contig_201	62.5207296849088	603	183	194	130	96
-cen14_vanX_contig_656_contig_657	65.0641025641026	312	105	98	59	50
-cen14_vanX_contig_674_contig_675	66.0766961651917	339	104	120	56	59
-cen14_vanX_contig_712_contig_713	69.5512820512821	312	104	113	41	54
-cen14_vanX_contig_758_contig_759	60.5177993527508	309	95	92	64	58
-cen14_vanX_contig_1360_contig_1361	65.7817109144543	339	106	117	56	60

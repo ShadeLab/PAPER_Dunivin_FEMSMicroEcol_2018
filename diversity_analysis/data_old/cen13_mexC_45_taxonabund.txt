@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(61792..62943),organism=Pseudomonas oryzihabitans,definition=efflux transporter periplasmic adaptor subunit	4.393	1.0000

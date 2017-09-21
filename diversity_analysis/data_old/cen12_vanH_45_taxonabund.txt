@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(5328..6287),organism=Actinoplanes sp. ATCC 53533,definition=VanH	4.027	0.5007
-coded_by=70658..71656,organism=Ktedonobacter racemifer DSM 44963,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	4.015	0.4993

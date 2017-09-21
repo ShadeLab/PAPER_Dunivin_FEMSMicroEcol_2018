@@ -1,4 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	1.553	0.0357
-coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	29.619	0.6812
-coded_by=6979..8010,organism=Enterococcus faecium,definition=Enterococcus faecium transposon Tn1546 transposase, resolvase, vanR (vanR), vanS (vanS), vanH (vanH), vanA (vanA), vanX (vanX), vanY (vanY), and teicoplanin resistance protein (vanZ) genes, complete cds	12.306000000000001	0.2830

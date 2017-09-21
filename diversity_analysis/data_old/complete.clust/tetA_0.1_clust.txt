@@ -1,7 +1,0 @@
-1	Cen04	2	cen04_tetA_contig_14_contig_15 cen04_tetA_contig_4_contig_5 
-2	Cen04	3	cen04_tetA_contig_44_contig_45 cen04_tetA_contig_46_contig_47 cen04_tetA_contig_36_contig_37 
-3	Cen04	1	cen04_tetA_contig_26_contig_27 
-4	Cen17	1	cen17_tetA_contig_42_contig_43 
-5	Cen04	1	cen04_tetA_contig_38_contig_39 
-6	Cen04	1	cen04_tetA_contig_2_contig_3 
-7	Cen04	1	cen04_tetA_contig_70_contig_71 

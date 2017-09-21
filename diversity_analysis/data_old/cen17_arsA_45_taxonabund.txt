@@ -1,5 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(3234912..3236177),organism=Streptomyces thermoautotrophicus,definition=Arsenite-transporting ATPase	1.808	0.1523
-coded_by=567572..568840,organism=Caldilinea aerophila DSM 14535 = NBRC 104270,definition=hypothetical protein	1.672	0.1408
-coded_by=complement(3313253..3314485),organism=Nocardioides sp. JS614,definition=arsenite efflux ATP-binding protein ArsA	2.7560000000000002	0.2321
-coded_by=4456..5670,organism=Paenibacillus sp. A3,definition=arsenic ABC transporter ATPase	5.636	0.4747

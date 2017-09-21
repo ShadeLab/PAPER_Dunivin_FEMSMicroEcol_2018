@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=67168..67722,organism=Burkholderia vietnamiensis,definition=aminoglycoside adenylyltransferase	3.053	1.0000

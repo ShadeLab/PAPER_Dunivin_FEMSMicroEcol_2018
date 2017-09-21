@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen01_CAT_contig_58_contig_59	55.6840077071291	519	155	134	111	119

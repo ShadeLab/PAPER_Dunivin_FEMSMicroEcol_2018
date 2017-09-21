@@ -192,23 +192,20 @@ otu_table_normPA[is.na(otu_table_normPA)] <- 0
 #########################################
 
 #list OTUs present in less than 2 samples
-abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 4),]
+abund <- otu_table_normPA[which(rowSums(otu_table_normPA) > 3),]
 
 #remove OTUs with presence in less than 4 sites
-otu_table_norm.slim <- otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in% rownames(abund)),]
-
-otu_table_norm.export <- otu_table_norm_annotated.t
-
-#transpose dataset
-otu_table_norm.slim.t <- t(otu_table_norm.slim)
+otu_table_norm.slim.t <- t(otu_table_norm_annotated.t[which(rownames(otu_table_norm_annotated.t) %in% rownames(abund)),])
 
 #perform network analysis without rplB!
 #remove column based on pattern (rplB)
 otu_table_norm.slim.t.genes <- otu_table_norm.slim.t[, -grep("rplB", colnames(otu_table_norm.slim.t))]
 
+#perform correlations
 corr.genes <- corr.test(otu_table_norm.slim.t.genes, 
                         method = "spearman", adjust = "fdr", alpha = 0.01)
 
+#extract r and p values (for iGraph)
 corr.r.genes <- as.matrix(print(corr.genes$r, long = TRUE))
 corr.p.genes <- as.matrix(print(corr.genes$p, long = TRUE))
 
@@ -227,6 +224,10 @@ E(graph)[weight < 0]$color <- "red";
 V(graph)$color <- "grey";
 tkplot(graph, edge.curved = FALSE)
 #export plot through tkplot interface! 
+clust.network <- qgraph(corr.genes$r, minimum = "sig", sampleSize=13, 
+                        layout = "spring", details = TRUE,
+                        graph = "cor", label.cex = 1,vsize = 3.5,
+                        alpha = 0.01, graph = "fdr")
 
 ####################################
 #AsRG-ARG CLUSTER NETWORK WITH RPLB#

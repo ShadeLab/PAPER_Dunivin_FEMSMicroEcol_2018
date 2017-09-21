@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(56527..59064),organism=Agrobacterium sp. D14,definition=arsenite oxidase large subunit	2.398	0.1701
-coded_by=72502..74964,organism=Nitrobacter hamburgensis X14,definition=Arsenate reductase (azurin)	1.561	0.1107
-coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	2.658	0.1885
-coded_by=225968..228442,organism=Tardiphaga sp. Vaf07,definition=arsenite oxidase large subunit	2.289	0.1624
-coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	1.739	0.1234
-coded_by=5564527..5567151,organism=Microvirga sp. V5/3M,definition=arsenite oxidase large subunit	1.397	0.0991
-coded_by=complement(40124..42583),organism=Oceanibaculum indicum P24,definition=arsenite oxidase large subunit	2.056	0.1458

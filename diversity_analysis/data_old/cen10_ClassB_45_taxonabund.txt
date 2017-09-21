@@ -1,4 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(578672..579565),organism=Granulicella mallensis MP5ACTX8,definition=beta-lactamase domain protein	2.362	0.0186
-coded_by=complement(284314..285183),organism=Frateuria sp. Soil773,definition=subclass B3 metallo-beta-lactamase	123.348	0.9687
-coded_by=complement(3242..4105),organism=Terriglobus roseus DSM 18391,definition=Zn-dependent hydrolase, glyoxylase	1.621	0.0127

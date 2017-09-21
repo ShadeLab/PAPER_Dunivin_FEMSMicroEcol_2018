@@ -1,7 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(459..1298),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	6.275	0.0947
-coded_by=complement(2817..3704),organism=uncultured bacterium,definition=BJP_beta_lactamase	42.010999999999996	0.6342
-coded_by=complement(28..909),organism=uncultured bacterium,definition=SubclassB3_beta_lactamase	3.603	0.0544
-coded_by=complement(1058..1939),organism=uncultured bacterium,definition=L1_beta_lactamase	4.776	0.0721
-coded_by=complement(8635226..8636083),organism=Candidatus Solibacter usitatus Ellin6076,definition=Beta-lactamase	4.855	0.0733
-coded_by=complement(511324..512184),organism=Legionella anisa,definition=Metallo-beta-lactamase L1 precursor	4.718	0.0712

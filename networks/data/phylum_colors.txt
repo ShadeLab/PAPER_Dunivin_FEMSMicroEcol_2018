@@ -1,15 +1,17 @@
-#e6194b Nitrospirae
-#3cb44b Proteobacteria
-#ffe119 Planctomycetes
-#0082c8 Acidobacteria
-#f58231 Firmicutes
-#911eb4 Chloroflexi
-#46f0f0 Actinobacteria
-#f032e6 Candidatus Rokubacteria
-#d2f53c Gemmatimonadetes
-#fabebe Deinococcus-Thermus
-#008080 Thermobaculum
-#e6beff Bacteroidetes
-#000080 Synergistetes
-#808080 unknown
-#aaffc3 metadata
+#E41A1C	Acidobacteria
+#377EB8	Actinobacteria
+#4DAF4A	Candidatus Rokubacteria
+#984EA3	Chlorobi
+#FF7F00	Chloroflexi
+#A65628	Cyanobacteria
+#F7FF18	Bacteroidetes
+#BF73FF	Firmicutes
+#1B9E77	Gemmatimonadetes
+#666666	Ignavibacteriae
+#FFB4EE	Nitrospirae
+#E6AB02	Planctomycetes
+#E7298A	Proteobacteria
+#8FF4FF	Synergistetes
+#7FC97F	Thaumarchaeota
+#AAAA44	Thermobaculum
+

@@ -1,4 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	8.281	0.6523
-coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	2.828	0.2227
-coded_by=6785322..6786860,organism=Variovorax sp. HW608,definition=outer membrane protein	1.587	0.1250

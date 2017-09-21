@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(672920..674209),organism=Yersinia aldovae 670-83,definition=arsenical pump membrane protein	1.0	0.1130
-coded_by=1097641..1098930,organism=Pseudomonas sp. TKP,definition=arylsulfatase	1.0	0.1130
-coded_by=904683..905981,organism=Bacillus clausii KSM-K16,definition=arsenic efflux pump	1.612	0.1822
-coded_by=3634..4926,organism=Ochrobactrum tritici,definition=ArsB	1.005	0.1136
-coded_by=complement(256399..257691),organism=Viridibacillus arenosi FSL R5-213,definition=arsenical pump membrane protein	2.0	0.2261
-coded_by=complement(2057894..2059186),organism=Variovorax paradoxus EPS,definition=arsenical pump membrane protein	1.229	0.1389
-coded_by=complement(162..1451),organism=Novosphingobium resinovorum,definition=Arsenical pump membrane protein	1.0	0.1130

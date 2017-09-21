@@ -1,6 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=287161..287655,organism=Rhodopirellula sp. K833,definition=Arsenical resistance operon trans-acting repressor ArsD	1.26	0.0468
-coded_by=complement(274098..274457),organism=Pseudomonas stutzeri A1501,definition=arsenic operon regulator	1.463	0.0544
-coded_by=complement(267002..267370),organism=Rhodopirellula baltica SH 1,definition=ArsD repressor protein	21.664	0.8051
-coded_by=1328507..1328896,organism=Sorangium cellulosum So0157-2,definition=hypothetical protein	1.043	0.0388
-coded_by=18705..19094,organism=Sorangium cellulosum,definition=transcriptional regulator	1.48	0.0550

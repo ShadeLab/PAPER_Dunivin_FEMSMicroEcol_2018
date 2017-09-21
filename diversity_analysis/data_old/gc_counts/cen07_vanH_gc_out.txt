@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen07_vanH_contig_42_contig_43	55.9105431309904	939	264	261	221	193

@@ -1,4 +1,0 @@
-1	Cen10	3	cen10_arsB_contig_4910_contig_4911 cen10_arsB_contig_3176_contig_3177 cen10_arsB_contig_7298_contig_7299 
-2	Cen10	2	cen10_arsB_contig_4510_contig_4511 cen10_arsB_contig_4496_contig_4497 
-3	Cen10	1	cen10_arsB_contig_2624_contig_2625 
-4	Cen10	1	cen10_arsB_contig_1440_contig_1441 

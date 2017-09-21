@@ -1,9 +1,0 @@
-OTU_0001	OGI47522  coded_by=1474..3981,organism=Candidatus Muproteobacteria bacterium RBG_16_65_34,definition=molybdopterin oxidoreductase	1e-109
-OTU_0002	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	4e-96
-OTU_0003	KIM00421  coded_by=complement(14041..16512),organism=Magnetospirillum magnetotacticum MS-1,definition=Anaerobic dehydrogenase typically selenocysteine-containing	2e-83
-OTU_0004	OGI47522  coded_by=1474..3981,organism=Candidatus Muproteobacteria bacterium RBG_16_65_34,definition=molybdopterin oxidoreductase	9e-110
-OTU_0005	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	0.0
-OTU_0006	OGI47522  coded_by=1474..3981,organism=Candidatus Muproteobacteria bacterium RBG_16_65_34,definition=molybdopterin oxidoreductase	3e-89
-OTU_0007	OGQ54449  coded_by=2291..4837,organism=Deltaproteobacteria bacterium RIFCSPLOWO2_02_56_12,definition=dehydrogenase	0.0
-OTU_0008	OGA50751  coded_by=470..2965,organism=Betaproteobacteria bacterium RIFCSPLOWO2_12_FULL_62_13,definition=molybdopterin oxidoreductase	7e-97
-OTU_0009	OFZ85367  coded_by=3636..6182,organism=Betaproteobacteria bacterium RBG_16_66_20,definition=dehydrogenase	0.0

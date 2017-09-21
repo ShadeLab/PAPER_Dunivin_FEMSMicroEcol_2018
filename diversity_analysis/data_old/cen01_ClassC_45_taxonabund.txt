@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(166726..167901),organism=Burkholderia stagnalis,definition=class C beta-lactamase	3.03	0.3419
-coded_by=complement(41..1204),organism=Devosia geojensis,definition=beta-lactamase/D-alanine carboxypeptidase	5.832	0.6581

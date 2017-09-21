@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1.707	0.3114
-coded_by=28755..29363,organism=uncultured organism CA878,definition=hypothetical protein	3.774	0.6886

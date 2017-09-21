@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=1776505..1777113,organism=Desulfitobacterium hafniense DCB-2,definition=peptidase M15D vanX D-ala-D-ala dipeptidase	1.554	0.0453
-coded_by=complement(625515..626123),organism=Kibdelosporangium sp. MJ126-NF4,definition=Vancomycin B-type resistance protein VanX / D-alanyl-D-alanine dipeptidase	1.56	0.0455
-coded_by=611644..612327,organism=Rhodoplanes sp. Z2-YC6860,definition=D-Ala-D-Ala dipeptidase	1.793	0.0523
-coded_by=3752..4444,organism=Mycobacterium xenopi RIVM700367,definition=lipoprotein LpqR	2.287	0.0667
-coded_by=complement(5556611..5557234),organism=Saccharothrix espanaensis DSM 44229,definition=D-alanyl-D-alanine dipeptidase	12.533	0.3654
-coded_by=5061..5762,organism=Mycobacterium sp. E1214,definition=D-alanyl-D-alanine dipeptidase	1.389	0.0405
-coded_by=complement(374447..375043),organism=Mycobacterium xenopi 4042,definition=D-ala-D-ala dipeptidase family protein	13.184000000000001	0.3844

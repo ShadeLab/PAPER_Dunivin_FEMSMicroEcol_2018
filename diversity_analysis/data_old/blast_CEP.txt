@@ -1,1 +1,0 @@
-OTU_0001	ACI54526  coded_by=complement(1245396..1246586),organism=Rhizobium leguminosarum bv. trifolii WSM2304,definition=drug resistance transporter, Bcr/CflA subfamily	1e-69

@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=127..978,organism=Mannheimia haemolytica,definition=antimicrobial resistance protein	7.612	0.6710
-coded_by=2311663..2312484,organism=Parvibaculum lavamentivorans DS-1,definition=dihydropteroate synthase	3.732	0.3290

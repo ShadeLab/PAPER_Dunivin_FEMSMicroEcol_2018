@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=2177947..2178306,organism=Bacillus coagulans 36D1,definition=Arsenical resistance operon trans-acting repressor ArsD	1.81	1.0000

@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen15_vanA_contig_4_contig_5	63.8888888888889	468	161	138	86	83

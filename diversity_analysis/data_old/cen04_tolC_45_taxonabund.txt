@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	8.318000000000001	0.6438
-coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	4.603	0.3562

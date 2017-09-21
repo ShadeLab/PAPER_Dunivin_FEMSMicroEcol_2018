@@ -1,6 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=1942381..1943697,organism=Acidimicrobium ferrooxidans DSM 10331,definition=Arsenical pump membrane protein	5.037	0.3168
-coded_by=complement(3443611..3444909),organism=Sulfobacillus acidophilus TPY,definition=ArsB	3.459	0.2175
-coded_by=complement(216287..217591),organism=Alicyclobacillus tengchongensis,definition=arsenical pump membrane protein	1.283	0.0807
-coded_by=11667..12959,organism=Acidibacillus ferrooxidans,definition=arsenic transporter	3.575	0.2248
-coded_by=complement(93641..94945),organism=Alicyclobacillus hesperidum URH17-3-68,definition=Arsenical pump membrane protein	2.548	0.1602

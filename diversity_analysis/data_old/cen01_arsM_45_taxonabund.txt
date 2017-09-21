@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite S-adenosylmethionine methyltransferase	47.690999999999995	0.1162
-coded_by=4821..5696,organism=Acidobacteria bacterium 13_1_40CM_4_58_4,definition=arsenite S-adenosylmethyltransferase	18.402	0.0448
-coded_by=complement(12352..13224),organism=Acidobacteria bacterium SCGC AG-212-P17,definition=arsenite S-adenosylmethyltransferase	11.453	0.0279
-coded_by=583..1341,organism=Actinobacteria bacterium 13_1_20CM_2_66_18,definition=hypothetical protein	13.49	0.0329
-coded_by=<1..>347,organism=uncultured bacterium,definition=arsenite s-adenosylmethyltransferase	286.783	0.6987
-coded_by=complement(599185..600096),organism=Acidobacteriales bacterium 59-55,definition=SAM-dependent methyltransferase	7.124	0.0174
-coded_by=1764327..1765274,organism=Ktedonobacter racemifer DSM 44963,definition=Methyltransferase type 11	25.480999999999998	0.0621

@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen06_AAC3-Ia_contig_0_contig_1	60.6918238993711	318	99	94	61	64

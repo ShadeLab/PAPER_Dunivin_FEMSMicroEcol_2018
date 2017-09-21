@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen10_tetX_contig_40_contig_41	42.7956989247312	465	101	98	134	132

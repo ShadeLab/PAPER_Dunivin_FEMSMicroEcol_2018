@@ -1,3 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=709694..710860,organism=Pseudolabrys sp. Root1462,definition=class C beta-lactamase	6.525	0.6707
-coded_by=2573281..2574453,organism=Mycobacterium neworleansense,definition=beta-lactamase	3.204	0.3293

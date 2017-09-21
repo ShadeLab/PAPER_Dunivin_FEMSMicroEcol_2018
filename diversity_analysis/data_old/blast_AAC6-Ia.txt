@@ -1,7 +1,0 @@
-OTU_0001	AFZ29602  coded_by=complement(1124207..1124761),organism=Gloeocapsa sp. PCC 7428,definition=Aminoglycoside N(6')-acetyltransferase	1e-59
-OTU_0002	EFH86385  coded_by=1181615..1182184,organism=Ktedonobacter racemifer DSM 44963,definition=Aminoglycoside N(6')-acetyltransferase	1e-53
-OTU_0003	AAS90626  coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	1e-61
-OTU_0004	AAS90626  coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	1e-62
-OTU_0005	AFZ29602  coded_by=complement(1124207..1124761),organism=Gloeocapsa sp. PCC 7428,definition=Aminoglycoside N(6')-acetyltransferase	2e-53
-OTU_0006	AAS90626  coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	7e-61
-OTU_0007	AAS90626  coded_by=complement(591..1148),organism=uncultured soil bacterium,definition=aminoglycoside 6'-N-acetyltransferase	1e-63

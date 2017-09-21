@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=4284..5483,organism=Salmonella enterica subsp. enterica serovar Kentucky,definition=tetracycline resistance efflux pump	1.967	1.0000

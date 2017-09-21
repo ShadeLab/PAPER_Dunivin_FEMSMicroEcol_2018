@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=28835..29863,organism=Enterococcus faecalis,definition=VanB	3.241	1.0000

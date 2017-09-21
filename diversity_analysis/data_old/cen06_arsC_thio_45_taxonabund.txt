@@ -1,5 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=1142..>1507,organism=Geobacillus sp. A1,definition=ArsC1	1.017	0.1222
-coded_by=complement(20262..20684),organism=Gracilibacillus boraciitolerans JCM 21714,definition=arsenate reductase	3.009	0.3614
-coded_by=1608651..1609046,organism=Macrococcus caseolyticus JCSC5402,definition=arsenate reductase	2.142	0.2573
-coded_by=158..559,organism=Staphylococcus sciuri,definition=arsenate reductase	2.157	0.2591

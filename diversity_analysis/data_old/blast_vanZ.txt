@@ -1,5 +1,0 @@
-OTU_0001	EGW40550  coded_by=2435..2932,organism=Desulfosporosinus sp. OT,definition=vanZ like family protein	6e-67
-OTU_0002	EGW40550  coded_by=2435..2932,organism=Desulfosporosinus sp. OT,definition=vanZ like family protein	1e-65
-OTU_0003	SAM54112  coded_by=complement(3220..3705),organism=Enterococcus faecium,definition=VanZ like family protein	9e-64
-OTU_0004	EGW40550  coded_by=2435..2932,organism=Desulfosporosinus sp. OT,definition=vanZ like family protein	6e-72
-OTU_0005	SAM54112  coded_by=complement(3220..3705),organism=Enterococcus faecium,definition=VanZ like family protein	1e-63

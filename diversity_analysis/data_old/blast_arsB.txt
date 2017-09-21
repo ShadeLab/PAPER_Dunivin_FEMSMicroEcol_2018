@@ -1,5 +1,0 @@
-OTU_0001	SDW04922  coded_by=complement(199350..200654),organism=Alicyclobacillus hesperidum,definition=arsenical pump membrane protein	0.0
-OTU_0002	AEW06847  coded_by=complement(3365545..3366843),organism=Sulfobacillus acidophilus DSM 10332,definition=arsenite efflux membrane protein ArsB TC 3.A.4.1.1	1e-84
-OTU_0003	ACU54771  coded_by=1942381..1943697,organism=Acidimicrobium ferrooxidans DSM 10331,definition=Arsenical pump membrane protein	8e-129
-OTU_0004	KPV45064  coded_by=21285..22577,organism=Alicyclobacillus ferrooxydans,definition=arsenic transporter	0.0
-OTU_0005	ACU54771  coded_by=1942381..1943697,organism=Acidimicrobium ferrooxidans DSM 10331,definition=Arsenical pump membrane protein	8e-75

@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(3859156..3860352),organism=Ensifer adhaerens,definition=chloramphenicol efflux MFS transporter	2.585	1.0000

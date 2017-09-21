@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(8718698..8719738),organism=Frankia sp. EAN1pec,definition=D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	6.608	1.0000

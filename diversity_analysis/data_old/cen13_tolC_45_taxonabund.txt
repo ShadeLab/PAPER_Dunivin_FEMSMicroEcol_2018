@@ -1,8 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=327496..328824,organism=Sulfuricella denitrificans skB26,definition=hypothetical protein	30.376000000000005	0.3353
-coded_by=17825..19240,organism=Gammaproteobacteria bacterium SG8_30,definition=hypothetical protein	18.363	0.2027
-coded_by=66849..68213,organism=Betaproteobacteria bacterium SCGC AG-212-J23,definition=hypothetical protein	19.551000000000002	0.2158
-coded_by=complement(698900..700321),organism=Steroidobacter denitrificans,definition=hypothetical protein	11.587	0.1279
-coded_by=2778336..2779649,organism=Thiobacillus denitrificans ATCC 25259,definition=type I secretion outer membrane protein, TolC	1.884	0.0208
-coded_by=complement(2674699..2676027),organism=Gallionella capsiferriformans ES-2,definition=type I secretion outer membrane protein, TolC family	3.482	0.0384
-coded_by=2638..3960,organism=Gallionella sp. ShG14-8,definition=Type I secretion outer membrane protein, TolC family	5.352	0.0591

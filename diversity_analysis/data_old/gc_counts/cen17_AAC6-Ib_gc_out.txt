@@ -1,2 +1,0 @@
-ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
-cen17_AAC6-Ib_contig_2_contig_3	70.1219512195122	492	175	170	75	72

@@ -1,7 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=154149..155282,organism=Chryseobacterium soli,definition=tetracycline resistance protein	1.118	0.0906
-coded_by=5583470..5584600,organism=Niabella sp. BS26,definition=tetracycline resistance protein	3.391	0.2748
-coded_by=complement(91927..93072),organism=Flavobacterium piscis,definition=tetracycline resistance protein	1.165	0.0944
-coded_by=complement(45250..46371),organism=Flavobacterium piscis,definition=tetracycline resistance protein	1.077	0.0873
-coded_by=964..2103,organism=Bacteroides fragilis CL03T00C08,definition=hypothetical protein	1.419	0.1150
-coded_by=50445..51578,organism=Chryseobacterium piperi,definition=tetracycline resistance protein	4.172	0.3380

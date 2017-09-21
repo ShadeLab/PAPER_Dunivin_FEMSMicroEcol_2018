@@ -1,4 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=complement(5089..5697),organism=Anaeromyxobacter sp. PSR-1,definition=arsenical resistance operon trans-acting repressor ArsD	1.29	0.3330
-coded_by=complement(2837932..2838297),organism=Dechloromonas aromatica RCB,definition=Arsenical resistance operon trans-acting repressor ArsD	1.26	0.3252
-coded_by=51934..52296,organism=Azoarcus sp. KH32C,definition=arsenical resistance operon trans-acting repressor	1.324	0.3418

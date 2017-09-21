@@ -1,2 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=1..1032,organism=Paenibacillus thiaminolyticus,definition=D-alanyl-D-alanine ligase	3.304	1.0000

@@ -1,5 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=610..1809,organism=Cloning vector pJB3Tc20,definition=TetA	1.18	0.0670
-coded_by=985..2259,organism=Shigella sonnei,definition=TetA	5.373	0.3051
-coded_by=4393..5592,organism=Klebsiella pneumoniae,definition=TetA	7.952	0.4516
-coded_by=complement(1219..>2436),organism=Escherichia coli MS 182-1,definition=transporter, major facilitator family protein	3.1029999999999998	0.1762

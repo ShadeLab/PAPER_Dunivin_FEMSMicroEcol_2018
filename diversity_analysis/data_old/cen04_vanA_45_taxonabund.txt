@@ -1,4 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=306175..307206,organism=Brevibacillus laterosporus,definition=D-alanine--D-alanine ligase	2.088	0.3160
-coded_by=1324..2355,organism=Brevibacillus sp. SKDU10,definition=D-alanine--D-alanine ligase	2.477	0.3748
-coded_by=250769..251800,organism=Paenibacillus jilunlii,definition=D-alanine--D-alanine ligase	2.043	0.3092

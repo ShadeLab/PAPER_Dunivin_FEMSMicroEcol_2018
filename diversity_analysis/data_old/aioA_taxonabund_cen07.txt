@@ -1,5 +1,0 @@
-Taxon	Abundance	Fraction Abundance
-coded_by=6311..8776,organism=Hyphomicrobium sp. SCN 65-11,definition=arsenite oxidase large subunit	2.745	0.1536
-coded_by=complement(301285..303747),organism=Bradyrhizobium sp. LMTR 3,definition=arsenite oxidase large subunit	9.468	0.5298
-coded_by=20351..22960,organism=Mesorhizobium alhagi CCNWXJ12-2,definition=arsenite oxidase large subunit	2.443	0.1367
-coded_by=17360..19972,organism=Bradyrhizobium sp. NAS96.2,definition=arsenite oxidase large subunit	3.215	0.1799
