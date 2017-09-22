@@ -1,13 +1,13 @@
 # ARG-AsRG_co-occurrence_Centralia
 Repository contains data and workflows for gene-targeted assembly of antibiotic and arsenic resistance genes (ARG and AsRG respectively). 
 
-## 1. AsRG database construction
+## 1. AsRG database construction ([seed_sequences](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/tree/master/seed_sequences))
 - [seed_sequences](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/tree/master/seed_sequences) were compiled and submitted to the RDP
 - Databases are publicly available at [FunGene](http://fungene.cme.msu.edu/)
 
-## 2. Reference gene database construction
+## 2. Reference gene database construction ([reference_sequences](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/tree/master/reference_sequences))
 - FunGene databases for ARG and AsRG were used to compile diverse, near-full length sequences 
-- Search parameters are noted in [reference_sequences](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/tree/master/reference_sequences) repository
+- Search parameters are noted in the [reference_sequences](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/tree/master/reference_sequences) repository
 - Both protein and nucleotide sequences were downloaded
 
 ## 3. Gene targeted assembly
