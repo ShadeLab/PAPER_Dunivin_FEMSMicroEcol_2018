@@ -5,7 +5,7 @@ library(tidyverse)
 wd <- paste(getwd())
 
 #read in OTU table 
-table <- read.delim(paste(wd, "/diversity_analysis/data/arsA_rformat_dist_0.1.txt", sep = ""), header = TRUE)
+table <- read.delim(paste(wd, "/diversity_analysis/data/intI_rformat_dist_0.1.txt", sep = ""), header = TRUE)
 table$X <- gsub("cen", "Cen", table$X)
 
 #read in metadata
@@ -35,7 +35,7 @@ rownames(table.normalized.t) <- sprintf("%04s", rownames(table.normalized.t))
 rownames(table.normalized.t) <- paste("OTU_", rownames(table.normalized.t), sep="")
 
 #save file
-write.csv(table.normalized.t, paste(wd, "/phylogenetic_analysis/tree_data/arsA_abund_label.csv", sep = ""),row.names = TRUE, quote = FALSE)
+write.csv(table.normalized.t, paste(wd, "/phylogenetic_analysis/tree_data/intI_abund_label.csv", sep = ""),row.names = TRUE, quote = FALSE)
 
 print(max(rowSums(table.normalized.t)))
 print(min(rowSums(table.normalized.t)))
