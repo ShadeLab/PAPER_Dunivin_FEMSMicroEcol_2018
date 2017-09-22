@@ -53,6 +53,8 @@ This directory contains scripts and notes for assessment of Xander's gene target
    * Calls on [blast.summary.pl](https://github.com/ShadeLab/Xander_arsenic/blob/master/assembly_assessments/bin/blast.summary.pl)
       * Script was written in part by ACRES REU student Susannah Yeh
       * Script querys the NCBI non-redundant database through MSU's HPC 
+      * Requirements: 
+        * BLAST
       * Inputs:
          * `final_prot.fasta`: Protein sequence outpus from xander `search`
          * non-redundant database
@@ -60,4 +62,36 @@ This directory contains scripts and notes for assessment of Xander's gene target
          * `ncbi.input.txt`: List of accession numbers of top blast hits; used for iTOL tree building
          * `gene.descriptor.final.txt`: List and counts of unique blast descriptor hits; used to see that all gene of interest & minimal hypothetical proteins/ nonspecific targets
          * `accno.final.txt`: Lists accession numbers and their occurrence (ie how many contigs hit to each)
+         
+## 4. Phylogenetic assessment
+  * This step accomplishes the following goals
+    * Obtain maximum likelihood trees for each gene of interest
+      * One of low quality with no reference sequences (for optional ecological downstream analyses in R)
+      * One of higher quality for phylogenetic assessments
+    * Construct a gene abundance table for abundance and diversity analyses
+  * Calls on [phylo.hmmalign.gene.sh](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/blob/master/assembly_assessments/bin/phylo.hmmalign.gene.sh) unless you want to compile multiple genes into one tree, which calls on [phylo.muscle.group.sh](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/blob/master/assembly_assessments/bin/phylo.muscle.group.sh)
+    * Requirements
+      * `Bioperl/1.6.923`
+      * `raxml/8.0.6`
+      * `FastTree/2.1.7`
+      * `HMMER/3.1b2`
+    * Inputs: 
+      * `final_prot_aligned.fasta`: Aligned protein sequence outputs from xander `search`
+      * `coverage.txt`: Coverage information for each assembled protein ouptus from xander `search`
+      * `get_OTUabundance.sh`: Script to dereplicate and cluster xander output sequences; written by Qiong Wang from the RDP
+      * `.seeds`: Seed sequences downloaded from FunGene and used to make hmms
+      * `root`: Fasta file containing sequences to root specific tree
+      * `matchlist.fasta`: output from BLAST against nr
+     * Outputs: 
+      * `RAxML_bipartitionsBranchLabels.${GENE}_${CLUST}_RAxML_PROTGAMMAWAG.nwk`: RAxML newick file (100 boostraps)
+      * `${GENE}_${CLUST}_FastTree.nwk`: FastTree newick file 
+      * `complete.clust_rep_seqs_${CLUST}_unaligned.fasta`: list of representative sequences (at particular cluster)
+   * For subsequent analysis in iTOL
+    * Need to extract labels and convert to iTOL format -> [names_iTOL.sh](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/blob/master/assembly_assessments/bin/names_iTOL.sh)
+      * Inputs
+        * `complete.clust_full_rep_seqs_${CLUST}_unaligned_seeds.fasta`: from phylo.hmm.align.sh script
+        * `iTOL.txt`: iTOL header
+    * To include relative abundance information, use this R script (or use code as R funciton) [tree_setup.R](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/blob/master/phylogenetic_analysis/tree_setup.R) and adjust colors, etc in iTOL forms. 
+     
+      
 
