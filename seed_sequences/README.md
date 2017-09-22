@@ -1,1 +1,1 @@
-Folder contains notes on picking seed sequences for FunGene database construction.
+Folder contains notes on picking seed sequences for FunGene database construction. Final sequences and resulting hidden markov models (HMMs) are avalable on the [FunGene](http://fungene.cme.msu.edu/) webserver. 
