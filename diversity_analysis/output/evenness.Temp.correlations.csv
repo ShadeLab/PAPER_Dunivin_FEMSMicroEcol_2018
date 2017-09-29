@@ -1,0 +1,3 @@
+group,estimate,statistic,p.value,method,alternative
+ARG,-0.472527472527473,536,0.105719185214898,Spearman's rank correlation rho,two.sided
+rplB,-0.659340659340659,604,0.017130288185381,Spearman's rank correlation rho,two.sided

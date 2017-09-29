@@ -1,29 +1,19 @@
 Gene,statistic,p.value,method,alternative
-AAC6-Ia,18,1,Wilcoxon rank sum test with continuity correction,two.sided
-arrA,20,0.498962298603761,Wilcoxon rank sum test with continuity correction,two.sided
-arsCglut,10,0.267676767676768,Wilcoxon rank sum test,two.sided
-arsCthio,10,0.267676767676768,Wilcoxon rank sum test,two.sided
-acr3,23,0.431818181818182,Wilcoxon rank sum test,two.sided
-arsA,25,0.267676767676768,Wilcoxon rank sum test,two.sided
-arsB,20,0.498962298603761,Wilcoxon rank sum test with continuity correction,two.sided
-arsD,14,0.638888888888889,Wilcoxon rank sum test,two.sided
-arsM,30,0.047979797979798,Wilcoxon rank sum test,two.sided
-aioA,4,0.0344388753941173,Wilcoxon rank sum test with continuity correction,two.sided
-arxA,20,0.498962298603761,Wilcoxon rank sum test with continuity correction,two.sided
-ClassA,6,0.0732323232323232,Wilcoxon rank sum test,two.sided
-ClassB,4,0.0303030303030303,Wilcoxon rank sum test,two.sided
-ClassC,12,0.413507654933202,Wilcoxon rank sum test with continuity correction,two.sided
-CEP,22.5,0.261209066425939,Wilcoxon rank sum test with continuity correction,two.sided
-intI,27,0.148989898989899,Wilcoxon rank sum test,two.sided
-adeB,15,0.717211570154298,Wilcoxon rank sum test with continuity correction,two.sided
-tolC,12.5,0.456925207331312,Wilcoxon rank sum test with continuity correction,two.sided
-sul2,24,0.32645279996437,Wilcoxon rank sum test with continuity correction,two.sided
-tetA,14,0.310494434317235,Wilcoxon rank sum test with continuity correction,two.sided
-tetW,14,0.310494434317235,Wilcoxon rank sum test with continuity correction,two.sided
-tetX,16,0.802838605279178,Wilcoxon rank sum test with continuity correction,two.sided
-dfra12,7,0.106060606060606,Wilcoxon rank sum test,two.sided
-vanA,5,0.0509131578018436,Wilcoxon rank sum test with continuity correction,two.sided
-vanH,7,0.101949923658611,Wilcoxon rank sum test with continuity correction,two.sided
-vanX,13,0.53030303030303,Wilcoxon rank sum test,two.sided
-vanZ,14,0.52250288175149,Wilcoxon rank sum test with continuity correction,two.sided
-rplB,17.5,NA,Wilcoxon rank sum test with continuity correction,two.sided
+AAC6-Ia,16,0.907569254067575,Wilcoxon rank sum test with continuity correction,two.sided
+ClassA,4,0.051948051948052,Wilcoxon rank sum test,two.sided
+ClassB,4,0.051948051948052,Wilcoxon rank sum test,two.sided
+ClassC,11.5,0.583024911513766,Wilcoxon rank sum test with continuity correction,two.sided
+CEP,20,0.222993861534394,Wilcoxon rank sum test with continuity correction,two.sided
+intI,19,0.536796536796537,Wilcoxon rank sum test,two.sided
+adeB,12,0.597047794349362,Wilcoxon rank sum test with continuity correction,two.sided
+tolC,6.5,0.134923551986924,Wilcoxon rank sum test with continuity correction,two.sided
+sul2,22,0.234267136170794,Wilcoxon rank sum test with continuity correction,two.sided
+tetA,12,0.361310428526179,Wilcoxon rank sum test with continuity correction,two.sided
+tetW,12,0.361310428526179,Wilcoxon rank sum test with continuity correction,two.sided
+tetX,14,0.892295118084977,Wilcoxon rank sum test with continuity correction,two.sided
+dfra12,6,0.125541125541126,Wilcoxon rank sum test,two.sided
+vanA,6,0.125541125541126,Wilcoxon rank sum test,two.sided
+vanH,5,0.08213856110809,Wilcoxon rank sum test with continuity correction,two.sided
+vanX,13,0.792207792207792,Wilcoxon rank sum test,two.sided
+vanZ,12.5,0.642346602964701,Wilcoxon rank sum test with continuity correction,two.sided
+rplB,15,NA,Wilcoxon rank sum test with continuity correction,two.sided
