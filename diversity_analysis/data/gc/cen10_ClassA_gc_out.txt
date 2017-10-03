@@ -1,0 +1,5 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen10_ClassA_contig_160_contig_161	72.463768115942	759	245	305	120	89
+cen10_ClassA_contig_678_contig_679	73.0769230769231	468	166	176	65	61
+cen10_ClassA_contig_754_contig_755	72.9292929292929	495	175	186	74	60
+cen10_ClassA_contig_2348_contig_2349	64.0776699029126	618	184	212	123	99

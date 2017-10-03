@@ -1,0 +1,3 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen14_AAC6-Ia_contig_0_contig_1	51.2820512820513	312	95	65	81	71
+cen14_AAC6-Ia_contig_74_contig_75	64.6551724137931	348	108	117	63	60

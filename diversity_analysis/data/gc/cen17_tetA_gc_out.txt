@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen17_tetA_contig_42_contig_43	58.0321285140562	498	153	136	85	124

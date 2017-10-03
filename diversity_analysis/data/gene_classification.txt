@@ -12,6 +12,7 @@ arrA	ArsenateReductase	ArsenicResistance
 arsCglut	ArsenateReductase	ArsenicResistance	#CCEBC5
 arsCthio	ArsenateReductase	ArsenicResistance	#5dfaaa
 arsM	ArseniteMethyltransferase	ArsenicResistance	#DECBE4
+adeB	MultiDrugEfflux	AntibioticResistance	#DECBE4
 ClassA	Beta-Lactam	AntibioticResistance	#CCCCCC
 ClassB	Beta-Lactam	AntibioticResistance	#FED9A6
 ClassC	Beta-Lactam	AntibioticResistance

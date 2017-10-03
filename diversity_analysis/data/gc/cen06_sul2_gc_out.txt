@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen06_sul2_contig_16_contig_17	65	600	179	211	94	116

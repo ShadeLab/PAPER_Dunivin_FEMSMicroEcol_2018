@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen12_vanA_contig_12_contig_13	62.5968992248062	516	168	155	101	92

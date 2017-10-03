@@ -1,0 +1,15 @@
+Gene,OTU,estimate,statistic,p.value,method,alternative
+dfra12,dfra12_0001,0.0183578970801439,280.749641435079,0.95484265706236,Spearman's rank correlation rho,two.sided
+dfra12,dfra12_0006,0.596631655104677,115.363346640062,0.0405712358994523,Spearman's rank correlation rho,two.sided
+dfra12,dfra12_0009,0.431410581383382,162.616573724353,0.161423073925969,Spearman's rank correlation rho,two.sided
+dfra12,dfra12_0010,-0.495663221163886,427.759681252871,0.101270637740195,Spearman's rank correlation rho,two.sided
+dfra12,dfra12_0012,-0.312084250362447,375.25609560366,0.323372025765544,Spearman's rank correlation rho,two.sided
+dfra12,dfra12_0555,0.697600089045469,86.486374532996,0.0116621742886554,Spearman's rank correlation rho,two.sided
+intI,intI_0003,0.596631655104677,115.363346640062,0.0405712358994523,Spearman's rank correlation rho,two.sided
+intI,intI_0006,0.504842169703958,141.615139464668,0.0941327562249958,Spearman's rank correlation rho,two.sided
+intI,intI_0007,-0.385515838683022,396.257529863344,0.215854064357948,Spearman's rank correlation rho,two.sided
+intI,intI_0018,0.458947427003598,154.741035876971,0.133408824185375,Spearman's rank correlation rho,two.sided
+intI,intI_0022,0.670063243425253,94.3619123803777,0.0171167665670889,Spearman's rank correlation rho,two.sided
+tolC,tolC_0017,-0.385515838683022,396.257529863344,0.215854064357948,Spearman's rank correlation rho,two.sided
+vanX,vanX_0002,0.357978993062806,183.618007984037,0.253234441914348,Spearman's rank correlation rho,two.sided
+vanX,vanX_0060,0.624168500724893,107.487808792681,0.0300595245751696,Spearman's rank correlation rho,two.sided

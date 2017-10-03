@@ -1,0 +1,2 @@
+ID	% GCContent	Total Count	G Count	C Count	A Count	T Count
+cen06_vanZ_contig_18_contig_19	31.7982456140351	456	79	66	143	168
