@@ -1,3 +1,0 @@
-GeneGroup,statistic,p.value,method,alternative
-ARG,5,0.047979797979798,Wilcoxon rank sum test,two.sided
-rplB,5,0.0509131578018436,Wilcoxon rank sum test with continuity correction,two.sided

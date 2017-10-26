@@ -1,36 +1,26 @@
-Gene	Description	Group	gene.color
+Gene	Description	Group
 AAC3-Ia	Aminoglycoside	AntibioticResistance
 AAC6-Ia	Aminoglycoside	AntibioticResistance
 AAC6-II	Aminoglycoside	AntibioticResistance
-acr3	ArseniteEffluxPump	ArsenicResistance	#FBB4AE
-arsA	ArseniteEffluxPump	ArsenicResistance	#B3CDE3
-arsD	ArseniteEffluxPump	ArsenicResistance	#d1b61d
-arsB	ArseniteEffluxPump	ArsenicResistance
-aioA	ArseniteOxidase	ArsenicResistance	#c47392
-arxA	ArseniteOxidase	ArsenicResistance
-arrA	ArsenateReductase	ArsenicResistance
-arsCglut	ArsenateReductase	ArsenicResistance	#CCEBC5
-arsCthio	ArsenateReductase	ArsenicResistance	#5dfaaa
-arsM	ArseniteMethyltransferase	ArsenicResistance	#DECBE4
-adeB	MultiDrugEfflux	AntibioticResistance	#DECBE4
-ClassA	Beta-Lactam	AntibioticResistance	#CCCCCC
-ClassB	Beta-Lactam	AntibioticResistance	#FED9A6
+adeB	MultiDrugEfflux	AntibioticResistance
+ClassA	Beta-Lactam	AntibioticResistance
+ClassB	Beta-Lactam	AntibioticResistance
 ClassC	Beta-Lactam	AntibioticResistance
 CAT	Chloramphenicol	AntibioticResistance
 CEP	Chloramphenicol	AntibioticResistance
-intI	Integrase	AntibioticResistance	#e1a78d
+intI	Integrase	AntibioticResistance
 tetA	Tetracycline	AntibioticResistance
 tetW	Tetracycline	AntibioticResistance
 tetX	Tetracycline	AntibioticResistance
-tolC	MultiDrugEfflux	AntibioticResistance	#FDDAEC
+tolC	MultiDrugEfflux	AntibioticResistance
 mexC	MultiDrugEfflux	AntibioticResistance
 adeB	MultiDrugEfflux	AntibioticResistance
-dfra12	Trimethoprim	AntibioticResistance	#FFFFCC
-sul2	Sulfonamide	AntibioticResistance	#B3E2CD
-vanA	Vancomycin	AntibioticResistance	#bbfa35
+dfra12	Trimethoprim	AntibioticResistance
+sul2	Sulfonamide	AntibioticResistance
+vanA	Vancomycin	AntibioticResistance
 vanB	Vancomycin	AntibioticResistance
 vanC	Vancomycin	AntibioticResistance
 vanT	Vancomycin	AntibioticResistance
 vanH	Vancomycin	AntibioticResistance
-vanX	Vancomycin	AntibioticResistance	#F2F2F2
+vanX	Vancomycin	AntibioticResistance
 vanZ	Vancomycin	AntibioticResistance

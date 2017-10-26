@@ -268,37 +268,47 @@ write.table(spearman_OTUtemp, file = paste(wd, "/output/spearman_OTUtemp.csv", s
 
 #summarise and all OTUs based on class
 aesthetics.blast.summary <- aesthetics.blast %>%
-  subset(Gene !="rplB") %>%
   group_by(Site, SoilTemperature_to10cm, Gene, phylum) %>%
   summarise(PhyTot = sum(normAbund)) %>%
   ungroup() %>%
-  group_by(Site) %>%
+  group_by(Site, Gene) %>%
   mutate(SiteTot = sum(PhyTot), RelAbund = PhyTot/SiteTot)
 
 #test for changes in ARG phylum (taxonomy) along chronosequence
 #against temperature
-spearman_Phytemp <- subset(aesthetics.blast.summary, Gene !="rplB") %>% group_by(Gene, phylum) %>% do(tidy(cor.test(.$PhyTot, log(.$SoilTemperature_to10cm), method = "spearman")))
+spearman_Phytemp <- subset(aesthetics.blast.summary) %>% group_by(Gene, phylum) %>% do(tidy(cor.test(.$PhyTot, log(.$SoilTemperature_to10cm), method = "spearman")))
 write.table(spearman_Phytemp, file = paste(wd, "/output/spearman_Phytemp.csv", sep = ""), quote = FALSE, row.names = FALSE, sep = ",")
 
 #test for changes in ARG NORMALIZED phylum (taxonomy) along #chronosequence against temperature
-spearman_nPhytemp <- subset(aesthetics.blast.summary, Gene !="rplB") %>% group_by(Gene, phylum) %>% do(tidy(cor.test(.$RelAbund, log(.$SoilTemperature_to10cm), method = "spearman")))
+spearman_nPhytemp <- subset(aesthetics.blast.summary) %>% group_by(Gene, phylum) %>% do(tidy(cor.test(.$RelAbund, log(.$SoilTemperature_to10cm), method = "spearman")))
 write.table(spearman_nPhytemp, file = paste(wd, "/output/spearman_nPhytemp.csv", sep = ""), quote = FALSE, row.names = FALSE, sep = ",")
 
 #examine changes in class level abundance 
-list <- c("ClassA", "ClassB","dfra12", "intI")
+list <- c("ClassA", "ClassB","dfra12", "intI", "rplB")
+
+#change proteobacteria to class
+aesthetics.blast$phylum <- ifelse((aesthetics.blast$phylum == "Proteobacteria"), aesthetics.blast$class, aesthetics.blast$phylum)
+aesthetics.blast$phylum <- ifelse((aesthetics.blast$phylum == "environmentalsamples"), "metagenomes", aesthetics.blast$phylum)
+aesthetics.blast$phylum <- ifelse((aesthetics.blast$phylum == "artificialsequences"), "metagenomes", aesthetics.blast$phylum)
+
+#order by temperature
 aesthetics.blast$Site <- factor(aesthetics.blast$Site, 
                                 aesthetics.blast$Site[order(aesthetics.blast$SoilTemperature_to10cm)])
-aesthetics.blast$Site <- factor(aesthetics.blast$Site, 
-                                aesthetics.blast$Site[order(aesthetics.blast$SoilTemperature_to10cm)])
-colors37 = c("#466791","#953ada","#4fbe6c","#ce49d3","#a7b43d","#d49f36","#552095","#507f2d","#db37aa","#84b67c","#a06fda","#df462a","#5b83db","#c76c2d","#4f49a3","#82702d","#dd6bbb","#334c22","#d83979","#55baad","#dc4555","#62aad3","#8c3025","#417d61","#862977","#bba672","#403367","#da8a6d","#a79cd4","#71482c","#c689d0","#6b2940","#d593a7","#895c8b","#bd5975", "black", "grey30","grey90")
-(class.prop <- ggplot(subset(aesthetics.blast, Gene %in% list), aes(x = Site, y = normAbund)) +
+
+colors37 = c("#466791","#953ada","#4fbe6c","#ce49d3","#a7b43d","#d49f36","#552095","#507f2d","#db37aa","#84b67c","#a06fda","#df462a","#5b83db","#c76c2d","#4f49a3","#82702d","#dd6bbb","#334c22","#d83979","#55baad","#dc4555","#62aad3","#8c3025","#417d61","#862977","#bba672","#403367","#da8a6d","#a79cd4","#71482c","#c689d0","#6b2940","#d593a7","#895c8b","#bd5975","grey90")
+
+#summarise dataset
+summary.aesthetics.blast <- aesthetics.blast %>%
+  group_by(Site, SoilTemperature_to10cm, Gene, phylum) %>%
+  summarise(sumNormAbund = sum(normAbund))
+(class.prop <- ggplot(subset(summary.aesthetics.blast, Gene %in% list), aes(x = Site, y = sumNormAbund)) +
     geom_bar(stat = "identity", position = "fill", aes(fill = phylum)) +
-    facet_wrap(~Gene) +
+    facet_wrap(~Gene, ncol = 2) +
     scale_fill_manual(values = colors37) +
     theme_bw(base_size = 16) +
     theme(axis.text.x = element_text(angle = 45, 
                                      hjust=0.95,vjust=0.9)))
-ggsave(class.prop, filename = paste(wd, "/figures/class_proportions_temp.eps", sep = ""), width = 12, units = "in")
+ggsave(class.prop, filename = paste(wd, "/figures/class_proportions_temp.eps", sep = ""), width = 12, height= 6.5,units = "in")
 
 ###############################
 #MAKE HEATMAP TO TEST PATTERNS#
@@ -372,7 +382,6 @@ g5 <- c("ClassB_0009", "dfra12_0555", "intI_0022")
     scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
     theme_bw() +
     ylim(0,0.06))
-
 
 
 g6 <- c("dfra12_0006", "intI_0004")
@@ -449,8 +458,6 @@ g13 <- ("dfra12_0012")
     scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
     theme_bw() +
     ylim(0,0.06))
-
-multiplot(p1, p2, p3, p4, p5, p6, p7, p8, p9,p10,p11,p12, p13, cols = 4)
 
 ######################
 #CORRELATION ANALYSES#
@@ -830,24 +837,6 @@ space.d=as.dist(space, diag = TRUE, upper = TRUE)
 mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
 mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
 
-##############################
-#beta-Diversity based on gene#
-##############################
-
-ARG.flip <-otu_table[-grep("rplB", colnames(otu_table))]
-row.names(ARG.flip) <- ARG.flip$Site
-ARG.flip <- data.frame(t(ARG.flip[,-1]))
-ARG.flip.otu <- otu_table(ARG.flip, taxa_are_rows = FALSE)
-ARG.flip <- ARG.flip[rowSums(ARG.flip)>0,]
-ARG.flipREL <- ARG.flip
-for(i in 1:12){ARG.flipREL[,i]=ARG.flip[,i]/sum(ARG.flip[,i])}
-
-ARG.flip.dist <- vegdist(ARG.flipREL, method = "bray")
-ARG.flip.pcoa <- cmdscale(ARG.flip.dist)
-plot(ARG.flip.pcoa[,1], ARG.flip.pcoa[,2], cex = 0)
-text(ARG.flip.pcoa[,1], ARG.flip.pcoa[,2], labels = rownames(ARG.flip.pcoa))
-
-
 #######################
 #VENN DIAGRAM ANALYSIS#
 #######################
@@ -865,29 +854,29 @@ classification.aes <- aesthetics.blast %>%
 grid.newpage()
 draw.pairwise.venn(area1 = nrow(subset(classification.aes, FireAffected > 0)), area2 = nrow(subset(classification.aes, Recovered > 0)), cross.area = nrow(subset(classification.aes, Recovered > 0 & FireAffected > 0)), category = c("Fire Affected", "Recovered"))
 
-#####################
-#GC CONTENT ANALYSIS#
-#####################
+#calculate total genes assembled (with countable abund)
+total.assembled <- (nrow(subset(classification.aes, FireAffected > 0)) + nrow(subset(classification.aes, Recovered > 0)) + nrow(subset(classification.aes, Reference > 0)))
 
-#read in gc count data for each assembled sequence
-#temporarily change working directory to data to bulk load files
-setwd(paste(wd, "/data/gc", sep = ""))
+######################################
+#TEST OCCURRENCE V ABUNDANCE DYNAMICS#
+######################################
 
-#read in abundance data
-gc.names <- list.files(pattern="*gc_out.txt")
-gc.data <- do.call(rbind, lapply(gc.names, function(X) {
-  data.frame(read_delim(X, delim = "\t", col_names = TRUE))}))
+no <- c("00NA", "0ppm", "0500", "to10cm", "Fire")
+abund.occur <- aesthetics.blast %>%
+  subset(!number %in% no) %>%
+  mutate(PA = (normAbund>0)*1) %>%
+  group_by(phylum,class,beginning,OTU) %>%
+  summarise(Mean.Perc.Abund = mean(normAbund*100), Site.Occur = sum(PA)) %>%
+  subset(Mean.Perc.Abund >0)
 
-#move back up a directory to proceed with analysis
-setwd(wd)
+#plot abundance v. occurrence
+(abund.occur.plot <- ggplot(subset(abund.occur, beginning != "rplB"), aes(x = Site.Occur, y = Mean.Perc.Abund, label = OTU)) +
+  geom_jitter(aes(color = beginning), height = 0, width = 0.25, size = 3.5, shape = 1) +
+  xlim(0.7,4.3) +
+  ylab("Normalized abundance (% rplB)") +
+    xlab("Occurrence") +
+    scale_color_discrete(name = "Gene") +
+      theme_bw(base_size = 14))
 
-#tidy gc data
-gc.data.tidy <- gc.data %>%
-  separate(ID, into = c("Site", "Gene"), sep = "_", remove = FALSE) %>%
-  left_join(meta, by = "Site")
-
-#correlate gc with temperature
-gc.genes <- c("ClassA", "ClassB", "ClassC")
-spearman_gcTemp <- subset(gc.data.tidy, Gene %in% gc.genes) %>% group_by(Gene) %>% do(tidy(cor.test(.$X..GCContent, log(.$SoilTemperature_to10cm), method = "spearman")))
-
-#dont really see changes in GC diversity
+#saveplot
+ggsave(abund.occur.plot, filename = paste(wd, "/figures/abund.occur.eps", sep = ""), width = 6, height = 4.5)

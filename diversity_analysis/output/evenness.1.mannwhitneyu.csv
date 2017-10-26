@@ -1,3 +1,0 @@
-group,statistic,p.value,method,alternative
-ARG,9,0.202020202020202,Wilcoxon rank sum test,two.sided
-rplB,3,0.0176767676767677,Wilcoxon rank sum test,two.sided
