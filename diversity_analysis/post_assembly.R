@@ -1,7 +1,6 @@
 library(vegan)
 library(psych)
 library(tidyverse)
-library(qgraph)
 library(phyloseq)
 library(reshape2)
 library(broom)
@@ -9,7 +8,6 @@ library(broom)
 #print working directory for future references
 #note the GitHub directory for this script is as follows
 #https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis
-setwd("/Users/dunivint/Documents/GitHubRepos/ARG-AsRG_co-occurrence_Centralia/diversity_analysis/")
 wd <- print(getwd())
 
 #setwd to diversity analysis
@@ -327,137 +325,11 @@ rownames(otu_table_norm.slim.t_2) <- otu_table_norm.slim.t_2$Site
 otu_table_norm.slim.t_2 <- as.matrix(otu_table_norm.slim.t_2[,c(1:349)])
 otu_table_norm.slim.t_2 <- otu_table_norm.slim.t_2[,-grep("rplB", colnames(otu_table_norm.slim.t_2))]
 library(gplots)
-heatmap(otu_table_norm.slim.t_2, Rowv = NA, scale = "col", margins = c(0.5,0.5))
-hc <- hclust(dist(t(otu_table_norm.slim.t_2)))
-plot(hc, cex = 0.5)
+my_palette <- colorRampPalette(c("red4", "red", "orange", "gold", "yellow", "white"))(n = 1000)
 
+library(pheatmap)
+pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = my_palette, cellheight = 4, cellwidth = 10, fontsize = 8, border_color = NA)
 #heatmaps/dendrograms show several groups (listed below)
-  
-  #heatmaps/dendrograms show several groups (listed below)
-  g1 <- c("dfra12_0537", "ClassA_0001", "ClassA_0006", "ClassC_0001", "dfra12_0624", "ClassA_0077", "ClassB0155", "dfra12_0402", "tolC_0017")
-(p1 <- ggplot(subset(aesthetics.blast, OTU %in% g1), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning, fill = beginning)) +
-    scale_color_manual(values = c("#377EB8", "#984EA3", "#FF7F00", "#A65628")) +
-    scale_fill_manual(values = c("#377EB8", "#984EA3", "#FF7F00", "#A65628")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g2 <- c("ClassA_0007", "intI_0012", "intI_0020", "ClassB_0001", "intI_0019", "dfra12_0533", "intI_0003", "intI_0228", "ClassB_0003", "intI_0006")
-(p2 <- ggplot(subset(aesthetics.blast, OTU %in% g2), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning, fill= beginning)) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_color_manual(values = c("#377EB8", "#4DAF4A", "#FF7F00", "gold")) +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g3 <- c("adeB_0018", "adeB_0009", "ClassB_0109", "adeB_0029", "dfra12_0004", "dfra12_0007", "dfra12_0014", "dfra12_0290", "adeB_0005", "adeB_0024")
-(p3 <- ggplot(subset(aesthetics.blast, OTU %in% g3), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning, fill = beginning)) +
-    scale_color_manual(values = c("#E41A1C", "#4DAF4A", "#FF7F00")) +
-    scale_fill_manual(values = c("#E41A1C", "#4DAF4A", "#FF7F00")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g4 <- c("intI_0029", "ClassB_0147", "intI_0222")
-(p4 <- ggplot(subset(aesthetics.blast, OTU %in% g4), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#4DAF4A", "gold")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g5 <- c("ClassB_0009", "dfra12_0555", "intI_0022")
-(p5 <- ggplot(subset(aesthetics.blast, OTU %in% g5), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#4DAF4A","#FF7F00", "gold")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g6 <- c("dfra12_0006", "intI_0004")
-(p6 <- ggplot(subset(aesthetics.blast, OTU %in% g6), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#FF7F00", "gold")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g7 <- c("intI_0028", "dfra12_0011", "dfra12_0584", "dfra12_0461", "dfra12_0060", "adeB_0012", "tolC_0001", "vanX_0003")
-(p7 <- ggplot(subset(aesthetics.blast, OTU %in% g7), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#E41A1C", "#FF7F00", "gold", "#A65628", "#999999")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g8 <- c("dfra12_0008", "dfra12_0003", "vanX_0004", "dfra12_0103", "dfra12_0001", "dfra12_0015", "dfra12_0651", "dfra12_0009", "dfra12_0425", "CEP_0001", "dfra12_0073", "ClassB_0163", "adeB_0011", "dfra12_0350", "adeB_0015", "adeB_0016", "vanX_0002", "intI_0011", "dfra12_0513", "dfra12_0005", "dfra12_0428", "dfra12_0543", "dfra12_0013")
-(p8 <- ggplot(subset(aesthetics.blast, OTU %in% g8), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#E41A1C", "#F781BF","#4DAF4A", "#FF7F00", "gold", "#999999")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g9 <- c("dfra12_0008", "dfra12_0003", "dfra12_0103", "dfra12_0001", "dfra12_0015","dfra12_0651", "dfra12_0009", "dfra12_0425", "CEP_0001", "dfra12_0073", "ClassB_0163", "adeB_0011", "dfra12_0350", "adeB_0015", "adeB_0016", "vanX_0002", "intI_0011", "dfra12_0513", "dfra12_0005", "dfra12_0428", "dfra12_0543", "dfra12_0013", "intI_0010", "dfra12_0026", "dfra12_0042", "ClassB_0006", "dfra12_0202", "ClassB_0005", "ClassA_0050", "intI_0106", "dfra12_0279", "dfra12_0457", "intI_0014", "dfra12_0567", "vanX_0060", "ClassB_0004", "ClassB_0002", "adeB_0889", "adeB_0032", "intI_0007", "dfra12_0002", "ClassA_0002", "dfra12_0483", "dfra12_0451", "dfra12_0010", "ClassB_0007", "ClassA_0004", "vanX_0005", "vanA_0002", "ClassB_0132", "ClassB_0008", "vanH_0003", "intI_0018", "intI_0002", "intI_0024", "ClassA_0070", "dfra12_0529")
-(p9 <- ggplot(subset(aesthetics.blast, OTU %in% g9), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = c("#E41A1C","#F781BF", "#377EB8", "#4DAF4A", "#FF7F00", "gold","black","brown", "#999999")) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g10 <- ("vanZ_0001")
-(p10 <- ggplot(subset(aesthetics.blast, OTU %in% g10), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    scale_color_manual(values = "grey80") +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-
-g11 <- ("adeB_0031")
-(p11 <- ggplot(subset(aesthetics.blast, OTU %in% g11), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = "#E41A1C") +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g12 <- ("sul2_0001")
-(p12 <- ggplot(subset(aesthetics.blast, OTU %in% g12), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = "#40E0D0") +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
-
-g13 <- ("dfra12_0012")
-(p13 <- ggplot(subset(aesthetics.blast, OTU %in% g13), aes(x = SoilTemperature_to10cm, y = normAbund, group = OTU, color = beginning)) +
-    scale_color_manual(values = "#FF7F00") +
-    geom_smooth(method = 'loess', span = 0.2, se = FALSE, method.args=list(degree=1)) +
-    geom_point() +
-    scale_x_log10(breaks = c(12,15,20,25,30,40,55)) +
-    theme_bw() +
-    ylim(0,0.06))
 
 ######################
 #CORRELATION ANALYSES#
@@ -547,6 +419,7 @@ sig <- c("ClassA", "ClassB", "dfra12", "tolC")
 #plot antibiotic resistance genes
 (sigTempGene <- ggplot(subset(gene_abundance_summary, subset = Gene %in% sig), aes(x = SoilTemperature_to10cm, 
                                                                                    y = Total)) +
+    geom_smooth(method = "lm") +
     geom_point(aes(shape = Classification), size = 3) +
     facet_wrap(~Gene, scales = "free_y", ncol = 2) +
     ylab("rplB-normalized abundance") +
@@ -558,6 +431,7 @@ ggsave(sigTempGene, filename = paste(wd, "/figures/sig_temp_gene.eps", sep = "")
 
 (nonTempGene <- ggplot(subset(gene_abundance_summary, subset = !Gene %in% sig), aes(x = SoilTemperature_to10cm, 
                                                                                     y = Total)) +
+    geom_smooth(method = "lm") +
     geom_point(aes(shape = Classification), size = 3) +
     facet_wrap(~Gene, scales = "free_y", ncol = 3) +
     ylab("rplB-normalized abundance") +
