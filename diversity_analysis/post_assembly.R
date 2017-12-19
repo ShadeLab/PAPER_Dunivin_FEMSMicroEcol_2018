@@ -1,3 +1,13 @@
+#######################################
+#This script analyzes data assembled from Centralia
+#metagenomes using Xander. It was written by
+#Taylor K Dunivin
+
+#For more information and input files see the 
+#corresponding GitHub repo:
+#https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017
+#######################################
+
 library(vegan)
 library(psych)
 library(tidyverse)
@@ -6,8 +16,6 @@ library(reshape2)
 library(broom)
 
 #print working directory for future references
-#note the GitHub directory for this script is as follows
-#https://github.com/ShadeLab/Xander_arsenic/tree/master/diversity_analysis
 wd <- print(getwd())
 
 #setwd to diversity analysis
@@ -17,8 +25,7 @@ setwd(paste(wd, "/diversity_analysis", sep = ""))
 wd <- print(getwd())
 
 #read in metadata
-meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", 
-                                    sep=""), sep=" ", header=TRUE))
+meta <- data.frame(read.delim(paste(wd, "/data/Centralia_FULL_map.txt", sep=""), sep=" ", header=TRUE))
 
 #####################
 #SET UP CONTIG-TABLE#
@@ -36,7 +43,7 @@ setwd(paste(wd, "/data", sep = ""))
 filenames <- list.files(pattern="*_rformat_dist_0.01.txt")
 
 #move back up directories
-setwd("../")
+setwd(wd)
 
 #make dataframes of all OTU tables
 for(i in filenames){
@@ -327,8 +334,23 @@ otu_table_norm.slim.t_2 <- otu_table_norm.slim.t_2[,-grep("rplB", colnames(otu_t
 library(gplots)
 my_palette <- colorRampPalette(c("red4", "red", "orange", "gold", "yellow", "white"))(n = 1000)
 
+#get heatmap colors
+hc=colorRampPalette(c("#91bfdb","white","#fc8d59", "darkred"), interpolate="spline")
+
+#read in gene color data
+gene.color <- read_delim(paste(wd, "/data/heatmap_gene_colors.txt",  sep=""), delim = "\t", col_names = TRUE)
+
+colors.otu.2 <- data.frame(t(otu_table_norm.slim.t_2))
+colors.otu.2_annotated <- colors.otu.2 %>%
+  rownames_to_column(var = "OTU") %>%
+  separate(col = OTU, into = c("Gene", "OTU"), sep = "_") %>%
+  left_join(gene.color, by = "Gene") %>%
+  select(Gene)
+rownames(colors.otu.2_annotated) <- rownames(colors.otu.2)
+
 library(pheatmap)
-pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = my_palette, cellheight = 4, cellwidth = 10, fontsize = 8, border_color = NA)
+pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = hc(500), cellheight = 4, cellwidth = 10, fontsize = 8, border_color = NA, show_rownames = FALSE, annotation_row = colors.otu.2_annotated, annotation_colors = blah )
+blah <- list(unique(gene.color$Color))
 #heatmaps/dendrograms show several groups (listed below)
 
 ######################
@@ -419,7 +441,7 @@ sig <- c("ClassA", "ClassB", "dfra12", "tolC")
 #plot antibiotic resistance genes
 (sigTempGene <- ggplot(subset(gene_abundance_summary, subset = Gene %in% sig), aes(x = SoilTemperature_to10cm, 
                                                                                    y = Total)) +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "lm", color = "grey50", se = FALSE) +
     geom_point(aes(shape = Classification), size = 3) +
     facet_wrap(~Gene, scales = "free_y", ncol = 2) +
     ylab("rplB-normalized abundance") +
@@ -431,7 +453,7 @@ ggsave(sigTempGene, filename = paste(wd, "/figures/sig_temp_gene.eps", sep = "")
 
 (nonTempGene <- ggplot(subset(gene_abundance_summary, subset = !Gene %in% sig), aes(x = SoilTemperature_to10cm, 
                                                                                     y = Total)) +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "lm", color = "grey50", se = FALSE) +
     geom_point(aes(shape = Classification), size = 3) +
     facet_wrap(~Gene, scales = "free_y", ncol = 3) +
     ylab("rplB-normalized abundance") +
@@ -453,36 +475,24 @@ data <- do.call(rbind, lapply(names, function(X) {
   data.frame(id = basename(X), read_delim(X, delim = "\t"))}))
 
 #move back up a directory to proceed with analysis
-setwd("../")
-wd <- print(getwd())
+setwd(wd)
 
-#split columns and tidy dataset
+#split columns, tidy dataset, and combine proteobacteria
 data <- data %>%
   separate(col = id, into = c("Site", "junk"), sep = 5, remove = TRUE) %>%
-  separate(col = junk, into = c("Gene", "junk"), sep = "_45_", remove = TRUE)
+  separate(col = junk, into = c("Gene", "junk"), sep = "_45_", remove = TRUE) %>%
+  mutate(Gene = gsub("_", "", Gene),
+         Site = gsub("cen", "Cen", Site)) 
 
-#remove awkward _ in Gene column
-data$Gene <- gsub("_", "", data$Gene)
-
-#change site from "cen" to "Cen" so it matches metadata
-data$Site <- gsub("cen", "Cen", data$Site)
-
-#separage out rplB data (not needed for gene-centric analysis)
-rplB <- data[which(data$Gene == "rplB"),]
-data <- data[-which(data$Gene == "rplB"),]
-
-#split columns 
-rplB <- rplB %>%
+#split columns and set abundance and fract. abundace
+#to numbers instead of characters
+rplB <- data %>%
   select(Site, Taxon:Fraction.Abundance) %>%
-  group_by(Site)
-
-#make sure abundance and fraction abundance are numbers
-#R will think it's a char since it started w taxon name
-rplB$Fraction.Abundance <- as.numeric(rplB$Fraction.Abundance)
-rplB$Abundance <- as.numeric(rplB$Abundance)
-
-#remove Cen13
-rplB <- rplB[!rplB$Site == "Cen13",]
+  group_by(Site) %>%
+  mutate(Fraction.Abundance = as.numeric(Fraction.Abundance),
+         Abundance = as.numeric(Abundance)) %>%
+  mutate(Taxon = gsub(".*proteobacteria", "Proteobacteria", Taxon)) %>%
+  subset(!Site == "Cen13")
 
 #double check that all fraction abundances = 1
 #slightly above or below is okay (Xander rounds)
@@ -490,7 +500,7 @@ summarised.rplB <- rplB %>%
   summarise(Total = sum(Fraction.Abundance), rplB = sum(Abundance))
 
 #decast for abundance check and call na's zero
-dcast <- acast(rplB, Taxon ~ Site, value.var = "Fraction.Abundance")
+dcast <- acast(rplB, Taxon ~ Site, value.var = "Fraction.Abundance", fun.aggregate = sum)
 dcast[is.na(dcast)] = 0
 
 #order based on abundance
@@ -553,10 +563,11 @@ rarecurve(ecol.ARG, step=1, label = FALSE, col = class.13)
 ecol.rplB.phyloseq <- otu_table(ecol.rplB, taxa_are_rows = FALSE)
 ecol.ARG.phyloseq <- otu_table(ecol.ARG, taxa_are_rows = FALSE)
 
-#rarefy to even sampling depth 
+#rarefy rplB to even sampling depth 
 ecol.rplB.rare <- rarefy_even_depth(ecol.rplB.phyloseq, rngseed = TRUE)
 rarecurve(ecol.rplB.rare, step=1, label = FALSE, col = class.13)
 
+#rarefy ARG to even sampling depth
 ecol.ARG.rare <- rarefy_even_depth(ecol.ARG.phyloseq, rngseed = TRUE)
 rarecurve(ecol.ARG.rare, step=1, label = FALSE, col = class.13)
 
@@ -568,7 +579,6 @@ plieou.ARG <- data.frame(group = "ARG", Site = rownames(ecol.ARG.rare), plieou =
 
 #join all evenness information and add metadata
 plieou.full <- rbind(plieou.ARG, plieou.rplB)
-plieou.full$Site <- gsub("cen", "Cen", plieou.full$Site)
 plieou.full <- left_join(plieou.full, meta, by = "Site")
 
 #plot evenness
@@ -732,7 +742,7 @@ draw.pairwise.venn(area1 = nrow(subset(classification.aes, FireAffected > 0)), a
 total.assembled <- (nrow(subset(classification.aes, FireAffected > 0)) + nrow(subset(classification.aes, Recovered > 0)) + nrow(subset(classification.aes, Reference > 0)))
 
 ######################################
-#TEST OCCURRENCE V ABUNDANCE DYNAMICS#
+#TEST OCCURRENCE V ABUNDANCE PATTERNS#
 ######################################
 
 no <- c("00NA", "0ppm", "0500", "to10cm", "Fire")
