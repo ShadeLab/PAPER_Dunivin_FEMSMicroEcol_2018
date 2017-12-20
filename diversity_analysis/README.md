@@ -2,7 +2,7 @@
 ### Taylor Dunivin
 
 ## Data analysis using R 
-   * [post_assembly_analysis.R](https://github.com/ShadeLab/ARG-AsRG_co-occurrence_Centralia/blob/master/diversity_analysis/post_assembly_analysis.R) contains all R workflows  
+   * [post_assembly_analysis.R](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/blob/master/diversity_analysis/post_assembly_analysis.R) contains all R workflows  
       * Calls on several outputs
          * xander `search` outputs
          * BLAST results
@@ -17,10 +17,6 @@
    * Non-figure outputs are included in /outputs
    * Figures are included in /figures
    * Goals of the analysis
-      * What is the abundance of assembled ARG and AsRG along the Centralia chronosequence?
+      * What is the abundance of assembled ARGs along the Centralia chronosequence?
       * How does diversity change?
-      * Do ARG and AsRGs co-occur on a gene level in Centralia? With geochemical/ metadata?
-      * Do specific ARG and AsRG sequences co-occur (ie network analysis)?
-          * What is the taxonomy of these sequences?
-          * What is the abundance of these sequence along the chronosequence?
-      
+  
