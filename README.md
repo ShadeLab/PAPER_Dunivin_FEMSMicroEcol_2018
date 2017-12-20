@@ -2,7 +2,7 @@
 Repository contains data and workflows for gene-targeted assembly of antibiotic ressitance genes. 
 
 ## 1. Reference gene database construction ([reference_sequences](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/tree/master/reference_sequences))
-- FunGene databases for ARG and AsRG were used to compile diverse, near-full length sequences 
+- FunGene databases for ARGs were used to compile diverse, near-full length sequences 
 - Search parameters are noted in the [reference_sequences](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/tree/master/reference_sequences) repository
 - Both protein and nucleotide sequences were downloaded
 
@@ -20,7 +20,6 @@ Repository contains data and workflows for gene-targeted assembly of antibiotic 
 - Analyze abundance of different gene groups
 - Analyze gene diversity (richness, evenness, beta-diversity)
 - Examine co-occurrence patterns between genes and environmetnal variables
-- Network analysis of ARG and AsRG 
 
 ## 5. [Phylogenetic analysis](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/tree/master/phylogenetic_analysis)
 - Use [iTOL](http://itol.embl.de/) for visualization 
