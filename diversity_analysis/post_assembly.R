@@ -331,40 +331,34 @@ otu_table_norm.slim.t_2 <- arrange(otu_table_norm.slim.t_2,SoilTemperature_to10c
 rownames(otu_table_norm.slim.t_2) <- otu_table_norm.slim.t_2$Site
 otu_table_norm.slim.t_2 <- as.matrix(otu_table_norm.slim.t_2[,c(1:349)])
 otu_table_norm.slim.t_2 <- otu_table_norm.slim.t_2[,-grep("rplB", colnames(otu_table_norm.slim.t_2))]
-library(gplots)
-my_palette <- colorRampPalette(c("red4", "red", "orange", "gold", "yellow", "white"))(n = 1000)
 
 #get heatmap colors
-hc=colorRampPalette(c("#91bfdb","white","#fc8d59", "darkred"), interpolate="spline")
+hc=colorRampPalette(c("white", "#91bfdb", "midnightblue"), interpolate="linear", bias = 3)
 
+#prep data for gene annotation on heatmap
 colors.otu.2 <- data.frame(t(otu_table_norm.slim.t_2))
 colors.otu.2_annotated <- colors.otu.2 %>%
   rownames_to_column(var = "OTU") %>%
   separate(col = OTU, into = c("Gene", "OTU"), sep = "_") %>%
-  mutate(Max = apply(colors.otu.2, 1, max), 
-         Transient_Abundant = as.integer(Max > 0.015), 
-         Occurrence = 12-apply(colors.otu.2 == 0, 1, sum)) %>%
-  select(Gene, Transient_Abundant, Occurrence)
-
+  mutate(Max = apply(colors.otu.2, 1, max)) %>%
+  select(Gene)
 rownames(colors.otu.2_annotated) <- rownames(colors.otu.2)
 
 
 #set up environment to run heatmap
 library(pheatmap)
-library(dendsort)
 callback = function(hc, mat){
   sv = svd(t(mat))$v[,1]
   dend = reorder(as.dendrogram(hc), wts = sv)
   as.hclust(dend)
 }
 
+#set gene colors for plotting
 ann_colors = list(
-  Occurrence = c("#EDF8E9", "#BAE4B3", "#74C476", "#238B45"),
-  Transient_Abundant = c(`0` = "white", `1` = "black"),
-  Gene = c(adeB = "#FF7F00", CEP = "#7570B3", ClassA = "firebrick2", ClassB = "#FBB4AE", ClassC = "#F0027F", dfra12 = "#BEBADA", intI = "#E78AC3", sul2 = "#A6D854", tolC = "#B3B3B3", vanA = "#386CB0", vanH = "#BC80BD", vanX = "#FFFFCC", vanZ = "#BF5B17"))
+  Gene = c(adeB = "#8DD3C7", CEP = "#FFFFB3", ClassA = "#BEBADA", ClassB = "#FB8072", ClassC = "#80B1D3", dfra12 = "#FDB462", intI = "#B3DE69", sul2 = "#FCCDE5", tolC = "#D9D9D9", vanA = "#BC80BD", vanH = "#CCEBC5", vanX = "chocolate4", vanZ = "grey40"))
 
 #plot heatmap
-(heatmap <- pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, clustering_method = "complete", dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = hc(500), cellheight = 9, cellwidth = 24, treeheight_row = 250, fontsize = 16, border_color = NA, show_rownames = FALSE, annotation_row = colors.otu.2_annotated, annotation_colors = ann_colors, clustering_callback = callback, width = 12, height = 16, filename = paste(wd, "/figures/heatmap.png", sep = "")))
+(heatmap <- pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, clustering_method = "complete", dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = hc(5000), cellheight = 9, cellwidth = 24, treeheight_row = 250, fontsize = 16, border_color = NA, show_rownames = FALSE, annotation_row = colors.otu.2_annotated, annotation_colors = ann_colors, clustering_callback = callback, width = 12, height = 16))
 
 #heatmaps/dendrograms show several groups (listed below)
 
