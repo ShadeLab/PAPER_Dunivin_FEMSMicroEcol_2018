@@ -327,7 +327,7 @@ otu_table_norm.slim.t_2 <- data.frame(t(otu_table_norm_annotated.t[which(rowname
 otu_table_norm.slim.t_2$Site <- rownames(otu_table_norm.slim.t_2)
 
 #order dataframe
-otu_table_norm.slim.t_2 <- arrange(otu_table_norm.slim.t_2, desc(SoilTemperature_to10cm))
+otu_table_norm.slim.t_2 <- arrange(otu_table_norm.slim.t_2,SoilTemperature_to10cm)
 rownames(otu_table_norm.slim.t_2) <- otu_table_norm.slim.t_2$Site
 otu_table_norm.slim.t_2 <- as.matrix(otu_table_norm.slim.t_2[,c(1:349)])
 otu_table_norm.slim.t_2 <- otu_table_norm.slim.t_2[,-grep("rplB", colnames(otu_table_norm.slim.t_2))]
@@ -337,20 +337,35 @@ my_palette <- colorRampPalette(c("red4", "red", "orange", "gold", "yellow", "whi
 #get heatmap colors
 hc=colorRampPalette(c("#91bfdb","white","#fc8d59", "darkred"), interpolate="spline")
 
-#read in gene color data
-gene.color <- read_delim(paste(wd, "/data/heatmap_gene_colors.txt",  sep=""), delim = "\t", col_names = TRUE)
-
 colors.otu.2 <- data.frame(t(otu_table_norm.slim.t_2))
 colors.otu.2_annotated <- colors.otu.2 %>%
   rownames_to_column(var = "OTU") %>%
   separate(col = OTU, into = c("Gene", "OTU"), sep = "_") %>%
-  left_join(gene.color, by = "Gene") %>%
-  select(Gene)
+  mutate(Max = apply(colors.otu.2, 1, max), 
+         Transient_Abundant = as.integer(Max > 0.015), 
+         Occurrence = 12-apply(colors.otu.2 == 0, 1, sum)) %>%
+  select(Gene, Transient_Abundant, Occurrence)
+
 rownames(colors.otu.2_annotated) <- rownames(colors.otu.2)
 
+
+#set up environment to run heatmap
 library(pheatmap)
-pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = hc(500), cellheight = 4, cellwidth = 10, fontsize = 8, border_color = NA, show_rownames = FALSE, annotation_row = colors.otu.2_annotated, annotation_colors = blah )
-blah <- list(unique(gene.color$Color))
+library(dendsort)
+callback = function(hc, mat){
+  sv = svd(t(mat))$v[,1]
+  dend = reorder(as.dendrogram(hc), wts = sv)
+  as.hclust(dend)
+}
+
+ann_colors = list(
+  Occurrence = c("#EDF8E9", "#BAE4B3", "#74C476", "#238B45"),
+  Transient_Abundant = c(`0` = "white", `1` = "black"),
+  Gene = c(adeB = "#FF7F00", CEP = "#7570B3", ClassA = "firebrick2", ClassB = "#FBB4AE", ClassC = "#F0027F", dfra12 = "#BEBADA", intI = "#E78AC3", sul2 = "#A6D854", tolC = "#B3B3B3", vanA = "#386CB0", vanH = "#BC80BD", vanX = "#FFFFCC", vanZ = "#BF5B17"))
+
+#plot heatmap
+(heatmap <- pheatmap(t(otu_table_norm.slim.t_2), cluster_rows = TRUE, cluster_cols = FALSE, clustering_method = "complete", dendrogram = "row", scale = "none", trace = "none", legend = TRUE, color = hc(500), cellheight = 9, cellwidth = 24, treeheight_row = 250, fontsize = 16, border_color = NA, show_rownames = FALSE, annotation_row = colors.otu.2_annotated, annotation_colors = ann_colors, clustering_callback = callback, width = 12, height = 16, filename = paste(wd, "/figures/heatmap.png", sep = "")))
+
 #heatmaps/dendrograms show several groups (listed below)
 
 ######################
@@ -545,8 +560,7 @@ spearman_rplBtemp <- melt %>% left_join(meta, by = "Site") %>% group_by(Taxon) %
 #remove cen13!
 otu_table <- otu_table[!otu_table$Site == "cen13",]
 ecol.rplB <- otu_table[, grep("rplB", colnames(otu_table))]
-ecol.ARG <- otu_table[,grep("tolC|dfra|Class|tet|van|CEP|AAC|ade|sul", 
-                            colnames(otu_table))]
+ecol.ARG <- otu_table[,grep("tolC|dfra|Class|tet|van|CEP|AAC|ade|sul", colnames(otu_table))]
 
 #add site names as row names to each contig table 
 rownames(ecol.rplB) <- otu_table[,1]
@@ -714,12 +728,48 @@ rownames(space) <- gsub("C", "cen", rownames(space))
 #that don't have metagenomes
 space <- space[names(space) %in% otu_table$Site, colnames(space) %in% otu_table$Site]
 
+#order spatial distance matrix by other matrices
+space.ordered <- space[match(rownames(ecol.rplB.rareREL.matrix), rownames(space)), ]
+
 #make space into a distance matrix
-space.d=as.dist(space, diag = TRUE, upper = TRUE)
+space.d=as.dist(space.ordered, diag = TRUE, upper = TRUE)
 
 #mantel tests v. space
 mantel(ecol.rplB.rareREL.d,space.d, method = "spear")
 mantel(ecol.ARG.rareREL.d,space.d, method = "spear")
+
+############################
+#test rplB and 16S datasets#
+############################
+#read in 16S OTU table
+otu_16s <- fread(paste(wd, "/data/MASTER_OTU_hdf5_filteredfailedalignments_rdp_rmCM_collapse_even321000.txt", sep = ""), sep = "\t", select = c("OTU_ID",	"C10", "C03", "C14", "C01", "C12", "C06", "C17", "C07", "C04", "C15", "C05", "C16"), colClasses = "numeric")
+
+#make spacial matrix names match other data
+names(otu_16s) <- gsub("C", "cen", names(otu_16s))
+
+#transpose data and add rownames
+otu_16s_prep <- t(otu_16s)
+colnames(otu_16s_prep) <- otu_16s_prep[1,]
+otu_16s_prep <- data.frame(otu_16s_prep[-1,])
+
+#make 16S matrix a numeric
+otu_16s_prep_num <- data.frame(lapply(otu_16s_prep, function(x) as.numeric(as.character(x))))
+rownames(otu_16s_prep_num) <- rownames(otu_16s_prep)
+
+#make 16s data a phyloseq otu table
+phyloseq.16s <- otu_table(otu_16s_prep_num, taxa_are_rows = FALSE)
+
+#relativize data
+phyloseq.16s.REL <-  transform_sample_counts(phyloseq.16s, function(x) x/sum(x))
+
+#extract 16s matrix 
+phyloseq.16s.REL.matrix = as(otu_table(phyloseq.16s.REL), "matrix")
+
+#calculate 16S distance matrix
+phyloseq.16s.REL.d <- vegdist(phyloseq.16s.REL.matrix, diag = TRUE, upper = TRUE)
+
+#test 16S v rplB
+mantel(ecol.rplB.rareREL.d,phyloseq.16s.REL.d, method = "spear")
 
 #######################
 #VENN DIAGRAM ANALYSIS#
