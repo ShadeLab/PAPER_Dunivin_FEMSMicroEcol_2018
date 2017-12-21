@@ -14,6 +14,7 @@ library(tidyverse)
 library(phyloseq)
 library(reshape2)
 library(broom)
+library(data.table)
 
 #print working directory for future references
 wd <- print(getwd())
