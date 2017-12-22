@@ -588,17 +588,20 @@ plieou.ARG <- data.frame(group = "ARG", Site = rownames(ecol.ARG.rare), plieou =
 
 #join all evenness information and add metadata
 plieou.full <- rbind(plieou.ARG, plieou.rplB)
-plieou.full <- left_join(plieou.full, meta, by = "Site")
+plieou.full <- plieou.full %>%
+  mutate(Site = gsub("cen", "Cen", Site)) %>%
+           left_join(meta, by = "Site")
 
 #plot evenness
 (plieou.plot <- ggplot(plieou.full, aes(x = SoilTemperature_to10cm, y = plieou)) +
+    geom_smooth(method = "lm", se = FALSE, color = "grey50") +
     geom_point(aes(shape = Classification), size = 3) +
     ylab(label = "Evenness") +
-    theme_bw(base_size = 12) +
+    theme_bw(base_size = 20) +
     facet_wrap(~group))
 
 #save evennes plots
-ggsave(plieou.plot, filename = paste(wd, "/figures/evenness.eps", sep = ""), width = 7, units = "in", height = 3)
+ggsave(plieou.plot, filename = paste(wd, "/figures/evenness.eps", sep = ""), width = 7.5, units = "in", height = 3)
 
 #correlate evenness with Temp
 spearman_evenness <- plieou.full %>% group_by(group) %>% do(tidy(cor.test(.$plieou, .$SoilTemperature_to10cm, method = "spearman")))
@@ -618,16 +621,18 @@ ecol.ARG.rare <- merge_phyloseq(ecol.ARG.rare, meta.phylo)
 
 #plot & save RICHNESS
 (richness.ecol.rplB.rare <- plot_richness(ecol.rplB.rare, x = "SoilTemperature_to10cm", measures = "Observed") +
+    geom_smooth(method = "lm", se = FALSE, color = "grey50") +
     geom_point(aes(shape = Classification), size = 3) +
-    ylim(40,175) +
-    theme_bw(base_size = 16))
-ggsave(richness.ecol.rplB.rare, filename = paste(wd, "/figures/richness.rplB.eps", sep = ""), width = 6, height = 3, units = "in")
+    ylim(35,175) +
+    theme_bw(base_size = 18))
+ggsave(richness.ecol.rplB.rare, filename = paste(wd, "/figures/richness.rplB.eps", sep = ""), width = 5, height = 3, units = "in")
 
 (richness.ecol.ARG.rare <- plot_richness(ecol.ARG.rare, x = "SoilTemperature_to10cm", measures = "Observed") +
+    geom_smooth(method = "lm", se = FALSE, color = "grey50") +
     geom_point(aes(shape = Classification), size = 3) +
-    ylim(40,175) +
-    theme_bw(base_size = 16))
-ggsave(richness.ecol.ARG.rare, filename = paste(wd, "/figures/richness.ARG.eps", sep = ""), width = 5, height = 3.5, units = "in")
+    ylim(35,175) +
+    theme_bw(base_size = 18))
+ggsave(richness.ecol.ARG.rare, filename = paste(wd, "/figures/richness.ARG.eps", sep = ""), width = 5, height = 3, units = "in")
 
 
 #extract richness and perform statistical tests
