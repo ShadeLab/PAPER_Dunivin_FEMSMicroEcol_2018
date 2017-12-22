@@ -19,10 +19,4 @@ Repository contains data and workflows for gene-targeted assembly of antibiotic 
 - Read in coverage-adjusted gene abundance tables to R
 - Analyze abundance of different gene groups
 - Analyze gene diversity (richness, evenness, beta-diversity)
-- Examine co-occurrence patterns between genes and environmetnal variables
-
-## 5. [Phylogenetic analysis](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/tree/master/phylogenetic_analysis)
-- Use [iTOL](http://itol.embl.de/) for visualization 
-- Add publication-ready labels
-- Add abundance (from step 5)
-
+- Examine correlations between genes and environmetnal variables

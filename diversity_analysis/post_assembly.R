@@ -139,7 +139,7 @@ otu_table_norm_annotated <- otu_table_norm %>%
   left_join(meta, by = "Site") %>%
   mutate(DateSince_Fire = 2014-DateFire_Elick2011) %>%
   select(rplB:As_ppm, SoilTemperature_to10cm, DateSince_Fire,
-         OrganicMatter_500:Fe_ppm)
+         OrganicMatter_500:SoilMoisture_perc)
 
 #change to df and add row names back
 #remove first two columns (redundant)
@@ -152,7 +152,7 @@ otu_table_norm_annotated <- data.matrix(otu_table_norm_annotated)
 otu_table_norm_annotated.t <- t(otu_table_norm_annotated)
 
 #replace NAs with zeros (except date since fire)
-n <- nrow(otu_table_norm_annotated.t)-11
+n <- nrow(otu_table_norm_annotated.t)-12
 otu_table_norm_annotated.t[1:n,][is.na(otu_table_norm_annotated.t[1:n,])] <- 0
 
 #make presence absence matrix
@@ -418,8 +418,8 @@ cast.gene[is.na(cast.gene)] =0
 meta.slim <- meta[meta$Site %in% gene_abundance_summary$Site,]
 
 #correlate data with temp
-corr <- print(corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30)], method = "spearman", adjust = "fdr"), short = FALSE)
-cor <- corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30)], method = "spearman", adjust = "fdr")
+corr <- print(corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30,32)], method = "spearman", adjust = "fdr"), short = FALSE)
+cor <- corr.test(x = cast.gene, y = meta.slim[,c(2,16, 20:30,32)], method = "spearman", adjust = "fdr")
 #antibiotic resistance genes are not correlated with env variables!
 
 #save as table for supplemental material

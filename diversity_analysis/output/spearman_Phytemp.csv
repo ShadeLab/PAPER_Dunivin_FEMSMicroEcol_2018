@@ -78,4 +78,4 @@ vanX,Alphaproteobacteria,-0.0961006237623034,313.484778396019,0.7663904501948,Sp
 vanX,Firmicutes,-0.100968433940792,314.876972107066,0.754869661977492,Spearman's rank correlation rho,two.sided
 vanX,Gammaproteobacteria,0.182769286032989,233.727984194565,0.569656586359638,Spearman's rank correlation rho,two.sided
 vanX,NA,-0.715957986125613,490.763984031925,0.00882491661043277,Spearman's rank correlation rho,two.sided
-NA,NA,0.327272727272727,148,0.327015951002671,Spearman's rank correlation rho,two.sided
+NA,NA,0.3,154,0.371067789395025,Spearman's rank correlation rho,two.sided
