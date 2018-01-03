@@ -2,7 +2,7 @@
 ### Taylor Dunivin
 
 ## Data analysis using R 
-   * [post_assembly_analysis.R](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/blob/master/diversity_analysis/post_assembly.R) contains all R workflows  
+   * [post_assembly.R](https://github.com/ShadeLab/PAPER_Dunivin_Antibiotics_2017/blob/master/diversity_analysis/post_assembly.R) contains all R workflows  
       * Calls on several outputs
          * xander `search` outputs
          * BLAST results
